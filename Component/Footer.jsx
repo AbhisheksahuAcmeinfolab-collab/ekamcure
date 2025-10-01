@@ -7,12 +7,11 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import Image from "next/image";
-import img from "../assets/newimage/Logo.png";
+import img from "../assets/newimage/white Logo.png";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import pic1 from "../assets/image/F1.png";
 import pic2 from "../assets/image/F2.png";
 import pic3 from "../assets/image/F3.png";
-
 import pic4 from "../assets/image/F4.png";
 
 export default function Footer() {
@@ -97,11 +96,11 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             {[
-              "About Us",
-              "Our Services",
-              "Our Team",
-              "Latest Blog",
-              "Appointments",
+              "IVF",
+              "Terms and Conditions",
+              "Privacy Policy",
+              "Disclaimer",
+              "Refund Policy",
               "Help & FAQS",
               "Contact Us",
             ].map((service, i) => (
@@ -124,16 +123,10 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             {[
-              "Breast Cancer Treatment",
-              "Brain Tumor Surgery",
-              "Endovascular Aneurysm Repair",
-              "Rhabdomyosarcoma Treatment",
-              "Kidney Transplant",
-              "Liver Transplantation",
-              "Heart Transplant",
-              "Bone Marrow Transplants",
-              "Oral Cancer",
-              "Top Hospitals",
+              "Home",
+              "About Us",
+              "Our Services",
+              "Contact Us",
             ].map((link, i) => (
               <motion.li
                 key={i}
