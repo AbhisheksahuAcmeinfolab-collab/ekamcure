@@ -395,35 +395,6 @@ export default function Home() {
           <h4 className="text-lg font-semibold text-blue-600">{name}</h4>
         </div>
       </div>
-
-      {/* <div className="bg-white py-10 overflow-hidden">
-        <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-blue-700 mb-6">
-          Countries We Proudly Serve!
-        </h2>
-        <motion.div
-          className="overflow-hidden"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-        >
-          <div className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-            {[...countries, ...countries].map((country, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center min-w-[80px] sm:min-w-[100px] md:min-w-[120px] lg:min-w-[140px]"
-              >
-                <img
-                  src={country.flag.src}
-                  alt={country.name}
-                  className="w-14 h-10 sm:w-16 sm:h-12 md:w-20 md:h-14 lg:w-24 lg:h-16 object-cover rounded shadow-md"
-                />
-                <span className="mt-2 text-xs sm:text-sm md:text-base lg:text-lg text-center text-gray-700">
-                  {country.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </div> */}
     </main>
   );
 }
