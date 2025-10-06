@@ -34,13 +34,13 @@ export default function Footer() {
   ];
 
   const lines = [
-    "Indian Health Adviser (IHA) is a healthcare facilitator seeking to make health and wellness easier for people of international residents, their families, and their friends.",
+    "Ekam cure is a healthcare facilitator seeking to make health and wellness easier for people of international residents, their families, and their friends.",
   ];
 
   return (
     <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-2 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-2 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Column 1 */}
         <div>
           <Image
