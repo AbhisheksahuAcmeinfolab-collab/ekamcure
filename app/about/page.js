@@ -77,9 +77,19 @@ export default function AboutUs() {
           <h3 className="text-lg text-blue-600 font-semibold tracking-wide uppercase">
             About Us
           </h3>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-snug mt-2">
+          {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-snug mt-2">
             "UNLOCKING THE SECRETS <br className="hidden md:block" />
             <span className="text-green-600">TO HOLISTIC HEALTH"</span>
+          </h1>
+          <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed">
+            We are dedicated to providing world-class healthcare with
+            compassion, innovation, and trust. Our mission is to guide
+            individuals toward a healthier, holistic lifestyle through expertise
+            and care.
+          </p> */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-snug mt-2">
+            &ldquo;UNLOCKING THE SECRETS <br className="hidden md:block" />
+            <span className="text-green-600">TO HOLISTIC HEALTH&rdquo;</span>
           </h1>
           <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed">
             We are dedicated to providing world-class healthcare with
