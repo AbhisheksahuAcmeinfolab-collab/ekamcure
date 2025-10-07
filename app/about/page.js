@@ -123,13 +123,13 @@ export default function AboutUs() {
             <p>
               With a commitment to accessibility and high standards, **Ekam
               transforms medical tourism into a structured, patient-focused
-              service**. The company's expertise in cross-border medical care
-              helps patients navigate complex healthcare systems, empowering
-              them to receive quality treatment without the usual complications
-              of international travel. Through Ekam's network and support,
-              patients benefit from transparent, efficient medical care
-              solutions, making quality healthcare achievable for individuals
-              worldwide.
+              service**. The company&apos;s expertise in cross-border medical
+              care helps patients navigate complex healthcare systems,
+              empowering them to receive quality treatment without the usual
+              complications of international travel. Through Ekam&apos;s network
+              and support, patients benefit from transparent, efficient medical
+              care solutions, making quality healthcare achievable for
+              individuals worldwide.
             </p>
           </div>
         </div>
