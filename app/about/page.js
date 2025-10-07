@@ -86,7 +86,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-
       {/* Content Container (to center and limit width) */}
       <div className="relative mx-auto max-w-7xl z-10">
         {/* Main Heading (Top Center) */}
@@ -135,8 +134,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-
-      {/* Accordion Section */}
+      Accordion Section
       <div className="max-w-5xl mx-auto py-6 mb-8">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
           Why Us
@@ -288,4 +286,3 @@ export default function AboutUs() {
 //     </section>
 //   );
 // }
-// hello

@@ -544,6 +544,7 @@
 // }
 
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
@@ -689,6 +690,12 @@ const hospitals = [
   { name: "Egypt", img: pic5 },
   { name: "Comoros", img: pic25 },
 ];
+
+// export const metadata = {
+//   title: "Best Medical Travel Services in India | Ekam",
+//   description:
+//     "Ekam connects patients with top hospitals and doctors in India, ensuring safe and hassle-free medical travel.",
+// };
 
 export default function Home() {
   const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
