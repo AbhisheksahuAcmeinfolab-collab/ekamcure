@@ -100,7 +100,7 @@ export default function Navbar() {
                 onClick={() => setLangOpen(!langOpen)}
                 className="font-bold text-black-1000 hover:text-blue-600 transition duration-200"
               >
-                {router.locale?.toUpperCase() || "EN"}
+                {router.locale?.toUpperCase() || ""}
               </button>
               {langOpen && (
                 <div className="absolute right-0 mt-2 w-24 bg-white border rounded-md shadow-lg z-50">
@@ -117,34 +117,44 @@ export default function Navbar() {
               )}
             </div>
 
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-black-1000 hover:text-blue-600 transition duration-200 focus:outline-none"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="flex items-center justify-end pr-4 md:pr-8">
+              <span className="mr-2">EN</span>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-black-1000 hover:text-blue-600 transition duration-200 focus:outline-none"
               >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {isOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </button>
+            </div>
+
+            {/* <button
+  onClick={() => setIsOpen(!isOpen)}
+  className="text-black-1000 hover:text-blue-600 transition duration-200 focus:outline-none mr-4 md:mr-8"
+>
+  ...
+</button> */}
           </div>
         </div>
       </div>
@@ -179,8 +189,6 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
 
 // "use client";
 
@@ -362,4 +370,3 @@ export default function Navbar() {
 //     </nav>
 //   );
 // }
-

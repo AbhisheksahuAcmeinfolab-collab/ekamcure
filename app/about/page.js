@@ -1,6 +1,13 @@
 import Image from "next/image";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+
 import Img1 from "../../assets/hero.png";
 import Img2 from "../../assets/image/female.jpg";
+import Img3 from "../../assets/image/female.jpg"; // replace with correct image paths
+import Img4 from "../../assets/image/female.jpg";
+import Img5 from "../../assets/image/female.jpg";
+import Img6 from "../../assets/image/female.jpg";
+
 import Accordion from "./Accordion"; // Client component
 
 // ✅ Metadata works only in server components
@@ -69,6 +76,53 @@ export default function AboutUs() {
     },
   ];
 
+  const teamMembers = [
+    {
+      name: "Udai Singh",
+      title: "Founder, Ekam Health Services",
+      image: Img3,
+      description:
+        "Udai Singh is a dedicated marketing expert and entrepreneur with over 15 years of experience, holding an MBA in Marketing. As the founder of Ekam Health Services and other ventures, Udai is committed to fostering well-being and enhancing access to healthcare solutions. His professional journey is driven by a passion for helping people and positively impacting lives. With deep expertise in digital strategy and brand growth, Udai combines visionary leadership with a compassionate approach to business, making a meaningful difference in every project he undertakes.",
+      socials: {
+        linkedin: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "Rahul Kanodia",
+      title: "Chief Consultant & Patient Coordinator, Ekam Health Services",
+      image: Img4,
+      description:
+        "With 14 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction.",
+      socials: {
+        linkedin: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "Udai Singh",
+      title: "Founder, Ekam Health Services",
+      image: Img5,
+      description:
+        "With over 12 years of diverse industry experience, Pratap Shankar Gautam brings a patient-centric approach to his role as a Consultant and Patient Coordinator at Ekam Health Services. Known for his compassionate, reliable, and trustworthy nature, Pratap is dedicated to guiding patients through each step of their healthcare journey with care and professionalism. His commitment to helping people access quality medical care makes him a valued and trusted partner for international patients seeking seamless and personalized healthcare solutions.",
+      socials: {
+        linkedin: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "Rahul Kanodia",
+      title: "Chief Consultant & Patient Coordinator, Ekam Health Services",
+      image: Img6,
+      description:
+        "With 14 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction, making him a trusted guide for patients navigating their healthcare journey. Rahul’s commitment to helping others and his reputation as an exceptional human being make him an invaluable asset to Ekam Health Services Linkedin.",
+      socials: {
+        linkedin: "#",
+        instagram: "#",
+      },
+    },
+  ];
+
   return (
     // Outer container with padding
     <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50 ">
@@ -134,7 +188,123 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      Accordion Section
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Vision */}
+            <div className="flex flex-col items-center text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
+                VISION
+              </h2>
+              <div className="w-full mb-6">
+                <Image
+                  src={Img1}
+                  alt="Vision"
+                  className="rounded-lg object-cover w-full h-64 md:h-80"
+                />
+              </div>
+              <p className="text-gray-700 text-base md:text-lg">
+                To be the global leader in medical travel facilitation,
+                transforming the way people access quality healthcare across
+                borders. Ekam Health Services envisions a world where medical
+                treatment is easily attainable, irrespective of geographic
+                boundaries, and where every patient enjoys a tailored,
+                compassionate, and transparent healthcare journey. Through our
+                dedication to innovation, quality, and patient-centric care, we
+                seek to redefine medical tourism and empower individuals the
+                individual needs of each client outcomes with confidence and
+                ease worldwide to pursue optimal health.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="flex flex-col items-center text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
+                MISSION
+              </h2>
+              <div className="w-full mb-6">
+                <Image
+                  src={Img2}
+                  alt="Mission"
+                  className="rounded-lg object-cover w-full h-64 md:h-80"
+                />
+              </div>
+              <p className="text-gray-700 text-base md:text-lg">
+                Ekam Health Services aims to revolutionize the medical tourism
+                industry by delivering comprehensive, personalized healthcare
+                solutions that bridge international patients with India’s top
+                medical providers. Our mission is to ensure that each patient
+                receives exceptional care through seamless coordination of
+                medical consultations, hospital appointments, and travel
+                arrangements. By upholding the highest standards of safety,
+                integrity, and patient satisfaction, we strive to make
+                world-class healthcare accessible stress-free for individuals
+                around the globe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
+            Our Team
+          </h2>
+
+          <div className="flex flex-col gap-10">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="w-40 h-40 flex-shrink-0">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-xl object-cover w-full h-full"
+                  />
+                </div>
+
+                <div className="flex flex-col text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-600 text-sm md:text-base mb-4">
+                    {member.description}
+                  </p>
+
+                  <div className="flex justify-center md:justify-start space-x-4">
+                    {member.socials.linkedin && (
+                      <a
+                        href={member.socials.linkedin}
+                        className="text-blue-700 hover:text-blue-900 transition"
+                        target="_blank"
+                      >
+                        <FaLinkedin size={28} />
+                      </a>
+                    )}
+                    {member.socials.instagram && (
+                      <a
+                        href={member.socials.instagram}
+                        className="text-pink-600 hover:text-pink-800 transition"
+                        target="_blank"
+                      >
+                        <FaInstagram size={28} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="max-w-5xl mx-auto py-6 mb-8">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
           Why Us
@@ -144,145 +314,3 @@ export default function AboutUs() {
     </section>
   );
 }
-
-// import Image from "next/image";
-// import Img1 from "../../assets/hero.png";
-// import Img2 from "../../assets/image/female.jpg";
-// import Accordion from "./Accordion"; // Client component
-
-// // ✅ Metadata works only in server components
-// export const metadata = {
-//   title: "Best Medical Travel Services in India | Ekam",
-//   description:
-//     "Ekam connects patients with top hospitals and doctors in India, ensuring safe and hassle-free medical travel.",
-// };
-
-// export default function AboutUs() {
-//   const services = [
-//     "Cost projections for the planned treatments and surgeries",
-//     "All medical appointments are scheduled",
-//     "Organizing the admissions procedure",
-//     "Processing of second opinions obtained from doctors",
-//     "Assistance with visa and travel preparations",
-//     "Reservations at hotels or serviced residences for a comfortable stay in India",
-//     "Planning for dietary restrictions",
-//     "Language translators",
-//     "Updating the patient’s relatives about their condition",
-//     "Religious settings",
-//     "Telemedicine is used for remote consultation",
-//     "Visiting the local attractions",
-//   ];
-
-//   const items = [
-//     {
-//       title: "Comprehensive Treatment Plan",
-//       content:
-//         "We provide you with detailed medical facts, cost estimate, doctor & hospital info.",
-//     },
-//     {
-//       title: "Medical Visa Support",
-//       content:
-//         "Guidance and assistance in obtaining the required medical visa quickly and efficiently.",
-//     },
-//     {
-//       title: "Airport Pickup And Drop-Off",
-//       content:
-//         "Safe and convenient transport arrangements from airport to hospital and back.",
-//     },
-//     {
-//       title: "Individual Attention And Care",
-//       content:
-//         "Personalized care tailored to your medical and personal needs during your stay.",
-//     },
-//     {
-//       title: "Kindness-Based Recovery",
-//       content:
-//         "A compassionate healing environment that promotes mental and physical well-being.",
-//     },
-//     {
-//       title: "Hospitality",
-//       content:
-//         "Comfortable accommodation options and hospitality services for patients and families.",
-//     },
-//     {
-//       title: "Communication Support",
-//       content:
-//         "Assistance in connecting with doctors, hospitals, and loved ones at all times.",
-//     },
-//     {
-//       title: "Translation Of Languages",
-//       content:
-//         "Language translators available to ensure smooth communication during your treatment.",
-//     },
-//   ];
-
-//   return (
-//     <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
-//       {/* Top Section */}
-//       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6 md:px-12 lg:px-20 py-16 gap-10">
-//         <div className="flex-1 text-center md:text-left">
-//           <h3 className="text-lg text-blue-600 font-semibold tracking-wide uppercase">
-//             About Us
-//           </h3>
-//           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-snug mt-2">
-//             &ldquo;UNLOCKING THE SECRETS <br className="hidden md:block" />
-//             <span className="text-green-600">TO HOLISTIC HEALTH&rdquo;</span>
-//           </h1>
-//           <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed">
-//             We are dedicated to providing world-class healthcare with
-//             compassion, innovation, and trust. Our mission is to guide
-//             individuals toward a healthier, holistic lifestyle through expertise
-//             and care.
-//           </p>
-//         </div>
-//         <div className="flex-1 relative flex justify-center md:justify-end">
-//           <div className="relative w-72 md:w-96 lg:w-[420px]">
-//             <Image
-//               src={Img1}
-//               alt="Doctor"
-//               className="rounded-lg object-contain drop-shadow-xl"
-//               priority
-//             />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Services Section */}
-//       <div className="py-4 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-//         <div className="flex justify-center">
-//           <div className="relative w-[320px] md:w-[420px] lg:w-[480px]">
-//             <Image
-//               src={Img2}
-//               alt="Healthcare"
-//               width={480}
-//               height={480}
-//               className="rounded-2xl shadow-lg object-cover"
-//               priority
-//             />
-//           </div>
-//         </div>
-//         <div>
-//           <h2 className="mt-6 text-2xl font-bold text-blue-800">
-//             Our Services:
-//           </h2>
-//           <ul className="mt-6 grid gap-3 text-gray-700">
-//             {services.map((service, i) => (
-//               <li key={i} className="flex items-start gap-2">
-//                 <span className="mt-1 text-blue-600">▶</span>
-//                 <span>{service}</span>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-
-//       {/* Accordion Section */}
-//       <div className="max-w-5xl mx-auto py-6 mb-8">
-//         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
-//           Why Us
-//         </h2>
-//         <Accordion items={items} />
-//       </div>
-//     </section>
-//   );
-// }
