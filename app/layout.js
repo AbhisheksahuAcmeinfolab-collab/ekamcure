@@ -4,6 +4,7 @@ import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
 import "./globals.css";
 import Footer from "@/Component/Footer";
+import Footerup from '@/Component/Footerup';
 
 export const metadata = {
   title: {
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <TopHeader />
         <Navbar />
         {children}
+        <Footerup/>
         <Footer />
       </body>
     </html>

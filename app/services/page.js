@@ -23,7 +23,7 @@ export default function ServicesPage() {
   const services = [
     {
       icon: <Stethoscope className="w-10 h-10 text-blue-600" />,
-      title: "General Consultation",
+      title: "Doctor and Hospital Selection",
       desc: "Comprehensive health checkups and expert medical advice tailored to your needs.",
     },
     {

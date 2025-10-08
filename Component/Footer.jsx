@@ -7,12 +7,8 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import Image from "next/image";
-import img from "../assets/newimage/white Logo.png";
+import img from "../assets/newimage/white Logo.webp";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
-import pic1 from "../assets/image/F1.png";
-import pic2 from "../assets/image/F2.png";
-import pic3 from "../assets/image/F3.png";
-import pic4 from "../assets/image/F4.png";
 
 export default function Footer() {
   const infoItems = [
@@ -33,14 +29,10 @@ export default function Footer() {
     },
   ];
 
-  const lines = [
-    "Ekam cure is a healthcare facilitator seeking to make health and wellness easier for people of international residents, their families, and their friends.",
-  ];
-
   return (
     <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-2 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-2 py-14 text-align grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Column 1 */}
         <div>
           <Image
@@ -51,17 +43,12 @@ export default function Footer() {
             className="rounded-md mb-2 py-2 "
           />
 
-          <div className="flex flex-col space-y-2 p-4">
-            {lines.map((line, index) => (
-              <motion.p
-                key={index}
-                className="text-sm leading-relaxed bg-transparent p-1 rounded cursor-pointer"
-                // {...hoverEffect}
-              >
-                {line}
-              </motion.p>
-            ))}
-          </div>
+          <p>
+            "Ekam cure is a healthcare facilitator seeking to make health and
+            wellness easier for people of international residents, their
+            families, and their friends."
+          </p>
+     
 
           <motion.button
             whileTap={{ scale: 0.95 }}
@@ -136,56 +123,55 @@ export default function Footer() {
             )}
           </ul>
         </div>
-        </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-3xl bg-gradient-to-r shadow-lg bg-cover bg-center bg-[url('../assets/image/footer-contact-bg.jpg')]">
-            {/* content here */}
+      {/* Bottom Bar */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="rounded-3xl bg-gradient-to-r shadow-lg bg-cover bg-center bg-[url('../assets/image/footer-contact-bg.jpg')]">
+          {/* content here */}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/20">
-              {infoItems.map(({ icon: Icon, label, text }, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-4 p-6 text-black transition transform hover:scale-105 hover:bg-white/10 rounded-3xl md:rounded-none cursor-pointer"
-                >
-                  {/* Icon inside circle */}
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/20 group-hover:bg-white/30 transition">
-                    <Icon className="w-6 h-6 text-aqua" />
-                  </div>
-
-                  {/* Text Content */}
-                  <div>
-                    <p className="text-sm font-semibold">{label}</p>
-                    <p className="text-lg font-bold">{text}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/20">
+            {infoItems.map(({ icon: Icon, label, text }, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-4 p-6 text-black transition transform hover:scale-105 hover:bg-white/10 rounded-3xl md:rounded-none cursor-pointer"
+              >
+                {/* Icon inside circle */}
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/20 group-hover:bg-white/30 transition">
+                  <Icon className="w-6 h-6 text-aqua" />
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        
-        <div className="bg-black text-white py-2 mt-4">
-          <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
-            {/* Left side */}
-            <div className="flex items-center gap-2 text-white-600">
-              <a href="#" className="hover:text-cyan-400">
-                Terms & Conditions
-              </a>
-              <span className="text-white-400">|</span>
-              <a href="#" className="hover:text-cyan-400">
-                Privacy Policy
-              </a>
-            </div>
 
-            {/* Right side */}
-            <div className="text-white mt-2 md:mt-0 hover:text-cyan-400">
-              Designed by{" "}
-              <span className="text-white-600 font-semibold">AcmeInfolabs</span>
-            </div>
+                {/* Text Content */}
+                <div>
+                  <p className="text-sm font-semibold">{label}</p>
+                  <p className="text-lg font-bold">{text}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      
+      </div>
+
+      <div className="bg-black text-white py-2 mt-4">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
+          {/* Left side */}
+          <div className="flex items-center gap-2 text-white-600">
+            <a href="#" className="hover:text-cyan-400">
+              Terms & Conditions
+            </a>
+            <span className="text-white-400">|</span>
+            <a href="#" className="hover:text-cyan-400">
+              Privacy Policy
+            </a>
+          </div>
+
+          {/* Right side */}
+          <div className="text-white mt-2 md:mt-0 hover:text-cyan-400">
+            Designed by{" "}
+            <span className="text-white-600 font-semibold">AcmeInfolabs</span>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

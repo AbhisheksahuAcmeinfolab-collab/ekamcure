@@ -1,12 +1,11 @@
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-
 import Img1 from "../../assets/hero.png";
 import Img2 from "../../assets/image/female.jpg";
-import Img3 from "../../assets/image/female.jpg"; // replace with correct image paths
-import Img4 from "../../assets/image/female.jpg";
-import Img5 from "../../assets/image/female.jpg";
-import Img6 from "../../assets/image/female.jpg";
+import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
+import Img4 from "../../assets/newimage/sanu Das.webp";
+import Img5 from "../../assets/newimage/Pratap Sir.webp";
+import Img6 from "../../assets/newimage/Vijay kumar.webp";
 
 import Accordion from "./Accordion"; // Client component
 
@@ -89,19 +88,8 @@ export default function AboutUs() {
       },
     },
     {
-      name: "Rahul Kanodia",
-      title: "Chief Consultant & Patient Coordinator, Ekam Health Services",
-      image: Img4,
-      description:
-        "With 14 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction.",
-      socials: {
-        linkedin: "#",
-        instagram: "#",
-      },
-    },
-    {
-      name: "Udai Singh",
-      title: "Founder, Ekam Health Services",
+      name: "Pratap Sankar Gautam",
+      title: "Consultant & Patient Coordinator, Ekam Health Services",
       image: Img5,
       description:
         "With over 12 years of diverse industry experience, Pratap Shankar Gautam brings a patient-centric approach to his role as a Consultant and Patient Coordinator at Ekam Health Services. Known for his compassionate, reliable, and trustworthy nature, Pratap is dedicated to guiding patients through each step of their healthcare journey with care and professionalism. His commitment to helping people access quality medical care makes him a valued and trusted partner for international patients seeking seamless and personalized healthcare solutions.",
@@ -111,11 +99,22 @@ export default function AboutUs() {
       },
     },
     {
-      name: "Rahul Kanodia",
-      title: "Chief Consultant & Patient Coordinator, Ekam Health Services",
+      name: "Sanu Das",
+      title: "Patient Coordinator, Ekam Health Services",
+      image: Img4,
+      description:
+        "With 3 years of diverse industry experience, Sanu Das excels as a Patient Coordinator at Ekam Health Services. Guided by a strong, patient-centric approach, he is committed to providing compassionate and personalized support for individuals navigating their healthcare journey. Rohit’s focus on patient well-being and his dedication to seamless care coordination make him a trusted and invaluable resource for patients seeking quality medical care.",
+      socials: {
+        linkedin: "#",
+        instagram: "#",
+      },
+    },
+    {
+      name: "Vijay Kumar",
+      title: "Patient Coordinator, Ekam Health Services",
       image: Img6,
       description:
-        "With 14 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction, making him a trusted guide for patients navigating their healthcare journey. Rahul’s commitment to helping others and his reputation as an exceptional human being make him an invaluable asset to Ekam Health Services Linkedin.",
+        "With 2.5 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction, making him a trusted guide for patients navigating their healthcare journey. Rahul’s commitment to helping others and his reputation as an exceptional human being make him an invaluable asset to Ekam Health Services Linkedin.",
       socials: {
         linkedin: "#",
         instagram: "#",
@@ -175,15 +174,15 @@ export default function AboutUs() {
 
             {/* Second Paragraph */}
             <p>
-              With a commitment to accessibility and high standards, **Ekam
+              With a commitment to accessibility and high standards, Ekam
               transforms medical tourism into a structured, patient-focused
-              service**. The company&apos;s expertise in cross-border medical
-              care helps patients navigate complex healthcare systems,
-              empowering them to receive quality treatment without the usual
-              complications of international travel. Through Ekam&apos;s network
-              and support, patients benefit from transparent, efficient medical
-              care solutions, making quality healthcare achievable for
-              individuals worldwide.
+              service. The company&apos;s expertise in cross-border medical care
+              helps patients navigate complex healthcare systems, empowering
+              them to receive quality treatment without the usual complications
+              of international travel. Through Ekam&apos;s network and support,
+              patients benefit from transparent, efficient medical care
+              solutions, making quality healthcare achievable for individuals
+              worldwide.
             </p>
           </div>
         </div>
@@ -212,9 +211,9 @@ export default function AboutUs() {
                 boundaries, and where every patient enjoys a tailored,
                 compassionate, and transparent healthcare journey. Through our
                 dedication to innovation, quality, and patient-centric care, we
-                seek to redefine medical tourism and empower individuals the
-                individual needs of each client outcomes with confidence and
-                ease worldwide to pursue optimal health.
+                seek to redefine medical tourism and empower individuals
+                worldwide to pursue optimal health outcomes with confidence and
+                ease.
               </p>
             </div>
 

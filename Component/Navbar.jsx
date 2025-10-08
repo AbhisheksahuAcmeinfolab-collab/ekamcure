@@ -22,7 +22,8 @@ export default function Navbar() {
     { name: t("About"), href: "/about" },
     { name: t("Services"), href: "/services" },
     { name: t("Treatment"), href: "/treatment" },
-    { name: t("Contact"), href: "/contact" },
+    { name: t("Our Fees"), href: "/fees" },
+    { name: t("Contact Us"), href: "/contact" },
   ];
 
   const changeLanguage = (lng) => {
