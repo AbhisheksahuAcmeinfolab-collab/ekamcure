@@ -1,5 +1,5 @@
 "use client";
-
+import i18n from "@/i18n";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
@@ -29,7 +29,6 @@ import pic20 from "../assets/flags/comoros.jpg";
 import pic21 from "../assets/flags/chad.png";
 import pic22 from "../assets/flags/african.jpg";
 import pic23 from "../assets/flags/cape verde.png";
-
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -141,7 +140,11 @@ export default function Home() {
   // Duplicate list to make seamless infinite scrolling
   const repeatedCountries = [...countries, ...countries];
 
-  
+  // useEffect(() => {
+  //   const params = new URLSearchParams(window.location.search);
+  //   const value = params.get("yourParam");
+  //   // Use value here
+  // }, []);
 
   return (
     <main>
@@ -248,7 +251,7 @@ export default function Home() {
           <div className="bg-blue-900 text-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
             <div>
               <h2 className="text-3xl font-bold mb-4 border-b-2 border-white inline-block pb-1">
-                ABOUT US 
+                ABOUT US
               </h2>
               <p className="text-lg leading-relaxed mb-6">
                 Ekam is a premier medical travel facilitator dedicated to
@@ -426,7 +429,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
     </main>
   );
 }

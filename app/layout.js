@@ -1,5 +1,4 @@
 // "use client"
-import '../i18n';
 import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
 import "./globals.css";
