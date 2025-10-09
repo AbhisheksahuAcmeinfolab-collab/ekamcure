@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "next-i18next";
 import { i18nextConfig } from "../next-i18next.config";
 
-import img from "../assets/newimage/Logo.png";
+import img from "../assets/newimage/Logo.webp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -44,9 +44,9 @@ export default function Footer() {
           />
 
           <p>
-            "Ekam cure is a healthcare facilitator seeking to make health and
+            Ekam cure is a healthcare facilitator seeking to make health and
             wellness easier for people of international residents, their
-            families, and their friends."
+            families, and their friends.
           </p>
      
 
