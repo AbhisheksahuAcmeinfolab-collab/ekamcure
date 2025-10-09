@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import img from "../../assets/newimage/bg-banner.webp";
 import Img1 from "../../assets/hero.png";
 import Img2 from "../../assets/image/female.jpg";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
@@ -123,193 +124,210 @@ export default function AboutUs() {
   ];
 
   return (
-    // Outer container with padding
-    <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50 ">
-      {/* This div creates the globe/map background image fragment.
+    <>
+      {/* Banner Section */}
+      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+        <Image
+          src={img}
+          alt="Our Fee Banner"
+          fill
+          className="object-cover brightness-30"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Our About
+          </h1>
+        </div>
+      </div>
+      {/* // Outer container with padding */}
+      <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50 ">
+        {/* This div creates the globe/map background image fragment.
         It's positioned absolutely and uses the 'before' pseudo-element
         for the background image, keeping the component clean.
       */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div aria-hidden="true" className="relative h-full">
-          {/* This is the custom class for the background element.
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div aria-hidden="true" className="relative h-full">
+            {/* This is the custom class for the background element.
             We use 'before' to place the image.
           */}
-          <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-left-top transform scale-x-[-1] custom-bg-globe opacity-10 md:opacity-10">
-            {/* The actual styling for the background image is in the CSS config below */}
+            <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-left-top transform scale-x-[-1] custom-bg-globe opacity-10 md:opacity-10">
+              {/* The actual styling for the background image is in the CSS config below */}
+            </div>
           </div>
         </div>
-      </div>
-      {/* Content Container (to center and limit width) */}
-      <div className="relative mx-auto max-w-7xl z-10">
-        {/* Main Heading (Top Center) */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-blue-900 tracking-tight sm:text-5xl uppercase">
-            About Us
-          </h1>
-        </div>
-
-        {/* Main Content Area */}
-        <div className="flex flex-col lg:flex-row lg:space-x-12">
-          {/* Left Side: 'About Us' Subtitle and Underline */}
-          <div className="lg:w-1/3 mb-8 lg:mb-0">
-            <h2 className="text-2xl font-semibold text-gray-900 border-b-4 border-blue-600 inline-block pb-1 bg-[url('../assets/image/footer-contact-bg.jpg')">
+        {/* Content Container (to center and limit width) */}
+        <div className="relative mx-auto max-w-7xl z-10">
+          {/* Main Heading (Top Center) */}
+          {/* <div className="text-center mb-12">
+            <h1 className="text-4xl font-extrabold text-blue-900 tracking-tight sm:text-5xl uppercase">
               About Us
-            </h2>
-          </div>
+            </h1>
+          </div> */}
 
-          {/* Right Side: Text Content */}
-          <div className=" space-y-8 text-gray-700 leading-relaxed text-base sm:text-lg">
-            {/* First Paragraph */}
-            <p>
-              **Ekam excels in the medical travel industry**, connecting global
-              patients with top-tier healthcare facilities across India. Focused
-              on providing a seamless healthcare journey, the company manages
-              every aspect, from initial consultation to post-treatment
-              follow-up, to ensure a comprehensive and stress-free experience
-              for each patient. By handling essential logistics, including
-              medical consultations and hospital appointments, Ekam prioritizes
-              patient safety and convenience, tailoring their services to meet
-              the individual needs of each client.
-            </p>
-
-            {/* Second Paragraph */}
-            <p>
-              With a commitment to accessibility and high standards, Ekam
-              transforms medical tourism into a structured, patient-focused
-              service. The company&apos;s expertise in cross-border medical care
-              helps patients navigate complex healthcare systems, empowering
-              them to receive quality treatment without the usual complications
-              of international travel. Through Ekam&apos;s network and support,
-              patients benefit from transparent, efficient medical care
-              solutions, making quality healthcare achievable for individuals
-              worldwide.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Vision */}
-            <div className="flex flex-col items-center text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
-                VISION
+          {/* Main Content Area */}
+          <div className="flex flex-col lg:flex-row lg:space-x-12">
+            {/* Left Side: 'About Us' Subtitle and Underline */}
+            <div className="lg:w-1/3 mb-8 lg:mb-0">
+              <h2 className="text-2xl font-semibold text-gray-900 border-b-4 border-blue-600 inline-block pb-1 bg-[url('../assets/image/footer-contact-bg.jpg')">
+                About Us
               </h2>
-              <div className="w-full mb-6">
-                <Image
-                  src={Img1}
-                  alt="Vision"
-                  className="rounded-lg object-cover w-full h-64 md:h-80"
-                />
-              </div>
-              <p className="text-gray-700 text-base md:text-lg">
-                To be the global leader in medical travel facilitation,
-                transforming the way people access quality healthcare across
-                borders. Ekam Health Services envisions a world where medical
-                treatment is easily attainable, irrespective of geographic
-                boundaries, and where every patient enjoys a tailored,
-                compassionate, and transparent healthcare journey. Through our
-                dedication to innovation, quality, and patient-centric care, we
-                seek to redefine medical tourism and empower individuals
-                worldwide to pursue optimal health outcomes with confidence and
-                ease.
-              </p>
             </div>
 
-            {/* Mission */}
-            <div className="flex flex-col items-center text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
-                MISSION
-              </h2>
-              <div className="w-full mb-6">
-                <Image
-                  src={Img2}
-                  alt="Mission"
-                  className="rounded-lg object-cover w-full h-64 md:h-80"
-                />
-              </div>
-              <p className="text-gray-700 text-base md:text-lg">
-                Ekam Health Services aims to revolutionize the medical tourism
-                industry by delivering comprehensive, personalized healthcare
-                solutions that bridge international patients with India’s top
-                medical providers. Our mission is to ensure that each patient
-                receives exceptional care through seamless coordination of
-                medical consultations, hospital appointments, and travel
-                arrangements. By upholding the highest standards of safety,
-                integrity, and patient satisfaction, we strive to make
-                world-class healthcare accessible stress-free for individuals
-                around the globe.
+            {/* Right Side: Text Content */}
+            <div className=" space-y-8 text-gray-700 leading-relaxed text-base sm:text-lg">
+              {/* First Paragraph */}
+              <p>
+                **Ekam excels in the medical travel industry**, connecting
+                global patients with top-tier healthcare facilities across
+                India. Focused on providing a seamless healthcare journey, the
+                company manages every aspect, from initial consultation to
+                post-treatment follow-up, to ensure a comprehensive and
+                stress-free experience for each patient. By handling essential
+                logistics, including medical consultations and hospital
+                appointments, Ekam prioritizes patient safety and convenience,
+                tailoring their services to meet the individual needs of each
+                client.
+              </p>
+
+              {/* Second Paragraph */}
+              <p>
+                With a commitment to accessibility and high standards, Ekam
+                transforms medical tourism into a structured, patient-focused
+                service. The company&apos;s expertise in cross-border medical
+                care helps patients navigate complex healthcare systems,
+                empowering them to receive quality treatment without the usual
+                complications of international travel. Through Ekam&apos;s
+                network and support, patients benefit from transparent,
+                efficient medical care solutions, making quality healthcare
+                achievable for individuals worldwide.
               </p>
             </div>
           </div>
         </div>
-      </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
-            Our Team
-          </h2>
-
-          <div className="flex flex-col gap-10">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="w-40 h-40 flex-shrink-0">
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              {/* Vision */}
+              <div className="flex flex-col items-center text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
+                  VISION
+                </h2>
+                <div className="w-full mb-6">
                   <Image
-                    src={member.image}
-                    alt={member.name}
-                    className="rounded-xl object-cover w-full h-full"
+                    src={Img1}
+                    alt="Vision"
+                    className="rounded-lg object-cover w-full h-64 md:h-80"
                   />
                 </div>
+                <p className="text-gray-700 text-base md:text-lg">
+                  To be the global leader in medical travel facilitation,
+                  transforming the way people access quality healthcare across
+                  borders. Ekam Health Services envisions a world where medical
+                  treatment is easily attainable, irrespective of geographic
+                  boundaries, and where every patient enjoys a tailored,
+                  compassionate, and transparent healthcare journey. Through our
+                  dedication to innovation, quality, and patient-centric care,
+                  we seek to redefine medical tourism and empower individuals
+                  worldwide to pursue optimal health outcomes with confidence
+                  and ease.
+                </p>
+              </div>
 
-                <div className="flex flex-col text-center md:text-left">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
-                    {member.title}
-                  </p>
-                  <p className="text-gray-600 text-sm md:text-base mb-4">
-                    {member.description}
-                  </p>
+              {/* Mission */}
+              <div className="flex flex-col items-center text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
+                  MISSION
+                </h2>
+                <div className="w-full mb-6">
+                  <Image
+                    src={Img2}
+                    alt="Mission"
+                    className="rounded-lg object-cover w-full h-64 md:h-80"
+                  />
+                </div>
+                <p className="text-gray-700 text-base md:text-lg">
+                  Ekam Health Services aims to revolutionize the medical tourism
+                  industry by delivering comprehensive, personalized healthcare
+                  solutions that bridge international patients with India’s top
+                  medical providers. Our mission is to ensure that each patient
+                  receives exceptional care through seamless coordination of
+                  medical consultations, hospital appointments, and travel
+                  arrangements. By upholding the highest standards of safety,
+                  integrity, and patient satisfaction, we strive to make
+                  world-class healthcare accessible stress-free for individuals
+                  around the globe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                  <div className="flex justify-center md:justify-start space-x-4">
-                    {member.socials.linkedin && (
-                      <a
-                        href={member.socials.linkedin}
-                        className="text-blue-700 hover:text-blue-900 transition"
-                        target="_blank"
-                      >
-                        <FaLinkedin size={28} />
-                      </a>
-                    )}
-                    {member.socials.instagram && (
-                      <a
-                        href={member.socials.instagram}
-                        className="text-pink-600 hover:text-pink-800 transition"
-                        target="_blank"
-                      >
-                        <FaInstagram size={28} />
-                      </a>
-                    )}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
+              Our Team
+            </h2>
+
+            <div className="flex flex-col gap-10">
+              {teamMembers.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="w-40 h-40 flex-shrink-0">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      className="rounded-xl object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <div className="flex flex-col text-center md:text-left">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
+                      {member.title}
+                    </p>
+                    <p className="text-gray-600 text-sm md:text-base mb-4">
+                      {member.description}
+                    </p>
+
+                    <div className="flex justify-center md:justify-start space-x-4">
+                      {member.socials.linkedin && (
+                        <a
+                          href={member.socials.linkedin}
+                          className="text-blue-700 hover:text-blue-900 transition"
+                          target="_blank"
+                        >
+                          <FaLinkedin size={28} />
+                        </a>
+                      )}
+                      {member.socials.instagram && (
+                        <a
+                          href={member.socials.instagram}
+                          className="text-pink-600 hover:text-pink-800 transition"
+                          target="_blank"
+                        >
+                          <FaInstagram size={28} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+        </section>
+
+        <div className="max-w-5xl mx-auto py-6 mb-8">
+          <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
+            Why Us
+          </h2>
+          <Accordion items={items} />
         </div>
       </section>
-
-      <div className="max-w-5xl mx-auto py-6 mb-8">
-        <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
-          Why Us
-        </h2>
-        <Accordion items={items} />
-      </div>
-    </section>
+    </>
   );
 }

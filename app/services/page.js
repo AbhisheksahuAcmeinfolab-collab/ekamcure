@@ -9,6 +9,7 @@ import {
   Hospital,
   Pill,
 } from "lucide-react";
+import img from "../../assets/newimage/bg-banner.webp";
 import pic1 from "../../assets/icon/1.png";
 import pic2 from "../../assets/icon/2.png";
 import pic3 from "../../assets/icon/3.png";
@@ -109,98 +110,122 @@ export default function ServicesPage() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-16 px-6 md:px-20 bg-blue">
-      {/* Section Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          Our Services
-        </h2>
-        <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
-        <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
-          Providing world-class healthcare solutions with compassion,
-          innovation, and expertise.
-        </p>
+    <>
+      {/* Banner Section */}
+      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+        <Image
+          src={img}
+          alt="Our Fee Banner"
+          fill
+          className="object-cover brightness-30"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Our Services
+          </h1>
+        </div>
       </div>
 
-      {/* Services Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
-          >
-            <div className="flex justify-center items-center mb-4">
-              {service.icon}
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              {service.title}
-            </h3>
-            <p className="text-gray-600 text-sm md:text-base">{service.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Header */}
-      <div className="py-16 px-6 md:px-20 bg-gray-50">
+      <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-16 px-6 md:px-20 bg-blue">
+        {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            How We Can Help You
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Our Services
+          </h2> */}
+          {/* <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div> */}
+          <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+            Providing world-class healthcare solutions with compassion,
+            innovation, and expertise.
+          </p>
         </div>
 
-        {/* Cards Grid */}
+        {/* Services Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {helpItems.map((item, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center border border-gray-100"
+              className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
             >
-              <div className="flex justify-center mb-4">
-                <Image src={item.img} alt={item.title} width={60} height={60} />
+              <div className="flex justify-center items-center mb-4">
+                {service.icon}
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                {item.title}
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {item.desc}
+              <p className="text-gray-600 text-sm md:text-base">
+                {service.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="bg-blue-900 text-white py-12 px-6 md:px-12 lg:px-20 text-center mt-6">
-          <div className="max-w-4xl mx-auto">
-            {/* Heading */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-              Want to Schedule an Appointment?
+        {/* Header */}
+        <div className="py-16 px-6 md:px-20 bg-gray-50">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              How We Can Help You
             </h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          </div>
 
-            {/* Subheading */}
-            <p className="text-sm md:text-base lg:text-lg text-gray-200 mb-8">
-              In a country known for world-class care and compassion, don’t get
-              lost in the process. Start your healing with guidance you can
-              trust.
-            </p>
+          {/* Cards Grid */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {helpItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center border border-gray-100"
+              >
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium transition">
-                Talk to Our Experts
-              </button>
-              <button className="bg-blue-500 hover:bg-blue-400 px-6 py-3 rounded-lg font-medium transition">
-                Appointment Form
-              </button>
+          <div className="bg-blue-900 text-white py-12 px-6 md:px-12 lg:px-20 text-center mt-6">
+            <div className="max-w-4xl mx-auto">
+              {/* Heading */}
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                Want to Schedule an Appointment?
+              </h2>
+
+              {/* Subheading */}
+              <p className="text-sm md:text-base lg:text-lg text-gray-200 mb-8">
+                In a country known for world-class care and compassion, don’t
+                get lost in the process. Start your healing with guidance you
+                can trust.
+              </p>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium transition">
+                  Talk to Our Experts
+                </button>
+                <button className="bg-blue-500 hover:bg-blue-400 px-6 py-3 rounded-lg font-medium transition">
+                  Appointment Form
+                </button>
+              </div>
+
+              {/* Footer Note */}
+              <p className="mt-8 text-xs md:text-sm italic text-gray-300">
+                No hidden charges. Just honest, personalised advice to make your
+                medical trip to India safe and successful.
+              </p>
             </div>
-
-            {/* Footer Note */}
-            <p className="mt-8 text-xs md:text-sm italic text-gray-300">
-              No hidden charges. Just honest, personalised advice to make your
-              medical trip to India safe and successful.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

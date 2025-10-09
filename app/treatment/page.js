@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import img from "../../assets/newimage/bg-banner.webp";
 import pic1 from "../../assets/icon/1.png";
 import pic2 from "../../assets/icon/2.png";
 import pic3 from "../../assets/icon/3.png";
@@ -93,6 +94,21 @@ export default function AyurvedaTreatments() {
 
   return (
     <section>
+      {/* Banner Section */}
+      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+        <Image
+          src={img}
+          alt="Our Fee Banner"
+          fill
+          className="object-cover brightness-30"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Our Treatment
+          </h1>
+        </div>
+      </div>
+
       <div className="py-8 px-6 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8">
           {/* Heading */}

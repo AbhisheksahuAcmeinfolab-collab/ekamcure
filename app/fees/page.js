@@ -14,7 +14,7 @@ const PricingBanner = () => {
           />
           <div className="relative z-10 text-center px-4">
             <h1 className="text-3xl md:text-5xl font-bold text-white">
-              Our Fee
+              Our Fees
             </h1>
           </div>
         </div>
