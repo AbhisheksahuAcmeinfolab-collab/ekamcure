@@ -142,16 +142,15 @@ export default function Home() {
 
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative w-full h-[65vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-black">
+        {/* Background Image + Overlay */}
         <div className="absolute inset-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={heroCurrent}
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 1.1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="absolute inset-0"
             >
@@ -159,64 +158,81 @@ export default function Home() {
                 src={slides[heroCurrent].img}
                 alt={slides[heroCurrent].title}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 via-blue-800/60 to-blue-600/30" />
+              {/* Animated gradient overlay */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-cyan-700/50 to-blue-600/30 mix-blend-multiply"
+              />
+              {/* Subtle animated light sweep */}
+              <motion.div
+                initial={{ x: "-100%" }}
+                animate={{ x: "100%" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="absolute inset-y-0 w-[30%] bg-white/10 blur-3xl"
+              />
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Text Content */}
-        <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20 text-center">
+        {/* Content */}
+        <div className="relative z-10 text-center px-6 md:px-12 lg:px-20 max-w-4xl">
           <AnimatePresence mode="wait">
             <motion.div
               key={heroCurrent + "-content"}
-              initial={{ opacity: 0, scale: 0.8, y: 50 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 1.2, y: -50 }}
+              initial={{ opacity: 0, y: 60 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -60 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.p
-                className="uppercase text-sm md:text-base tracking-[0.3em] text-cyan-300 font-semibold"
-                initial={{ opacity: 0, y: 20 }}
+                className="uppercase text-xs sm:text-sm md:text-base tracking-[0.4em] text-cyan-300 font-semibold"
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
+                transition={{ delay: 0.3 }}
               >
                 {slides[heroCurrent].subtitle}
               </motion.p>
 
               <motion.h1
-                className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mt-4 leading-tight drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 1.2, opacity: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mt-4 leading-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 text-transparent bg-clip-text drop-shadow-2xl"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
               >
                 {slides[heroCurrent].title}
               </motion.h1>
 
               <motion.p
-                className="mt-4 text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
+                className="mt-4 text-base sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
+                transition={{ delay: 0.6 }}
               >
                 {slides[heroCurrent].desc}
               </motion.p>
 
               <div className="mt-8 flex justify-center gap-4 flex-wrap">
                 <motion.button
-                  whileHover={{ scale: 1.1, rotate: 1 }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-xl backdrop-blur-md transition duration-300"
                 >
-                  Book Appointment
+                  Get Free Quotes
                 </motion.button>
+
                 <motion.button
-                  whileHover={{ scale: 1.1, rotate: -1 }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white hover:bg-gray-100 text-cyan-600 font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300"
+                  className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md backdrop-blur-lg transition duration-300"
                 >
                   Learn More
                 </motion.button>
@@ -230,14 +246,17 @@ export default function Home() {
           {slides.map((_, i) => (
             <button
               key={i}
-              onClick={() => setCurrent(i)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                i === heroCurrent ? "bg-cyan-400 scale-125" : "bg-white/50"
+              onClick={() => setHeroCurrent(i)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                i === heroCurrent
+                  ? "bg-cyan-400 scale-125"
+                  : "bg-white/40 hover:bg-white/70"
               }`}
             />
           ))}
         </div>
       </section>
+
       {/* About & Services Section */}
       <section className="w-full py-16 bg-gray-50 mb-2">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -369,61 +388,6 @@ export default function Home() {
           <h4 className="text-lg font-semibold text-blue-600">{name}</h4>
         </div>
       </div>
-
-      <section className="w-relative mx-auto bg-gray-50">
-        {/* Contact Bar */}
-        <div className="bg-blue-900 text-white flex flex-col md:flex-row justify-between items-center px-6 md:px-24 py-4">
-          <div className="flex items-center gap-2 text-lg font-semibold">
-            <span>📞 Call us :</span>
-            <span className="text-blue-200">+91-999 020 5353</span>
-          </div>
-          <div className="flex items-center gap-2 text-lg font-semibold mt-2 md:mt-0">
-            <span>✉️ Mail us :</span>
-            <span className="text-blue-200">info@ekamcure.com</span>
-          </div>
-        </div>
-
-        {/* Countries Section */}
-        <div className="text-center mx-auto py-10 px-6 md:px-24">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-            Countries we proudly Serve!
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-3 mb-8 rounded-full" />
-        </div>
-
-        {/* Scrolling Flags */}
-        <div className="relative w-full overflow-hidden px-6 md:px-24 mb-10">
-          <motion.div
-            className="flex lg:gap-12 md:gap-8 sm:gap-4 "
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              repeat: Infinity,
-              duration: 5,
-              ease: "linear",
-            }}
-          >
-            {repeatedCountries.map((country, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center min-w-[140px] md:min-w-[180px] hover:scale-105 transition-transform duration-300"
-              >
-                <div className="relative w-24 h-16 md:w-32 md:h-20 rounded-lg overflow-hidden shadow-lg border border-gray-200">
-                  <Image
-                    src={country.flag}
-                    alt={country.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <p className="mt-2 text-sm md:text-base font-medium text-gray-700 whitespace-nowrap">
-                  {country.name}
-                </p>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
     </main>
   );
 }
-

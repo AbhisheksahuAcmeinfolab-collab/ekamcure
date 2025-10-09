@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import img from "../../assets/newimage/bg-banner.webp";
-import Img1 from "../../assets/hero.png";
-import Img2 from "../../assets/image/female.jpg";
+import Img1 from "../../assets/newimage/vision.webp";
+import Img2 from "../../assets/newimage/vission2.webp";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
 import Img4 from "../../assets/newimage/sanu Das.webp";
 import Img5 from "../../assets/newimage/Pratap Sir.webp";
 import Img6 from "../../assets/newimage/Vijay kumar.webp";
-
 import Accordion from "./Accordion"; // Client component
 
 // ✅ Metadata works only in server components
