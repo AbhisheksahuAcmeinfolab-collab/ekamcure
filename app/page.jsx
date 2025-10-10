@@ -431,53 +431,60 @@ export default function Home() {
       </section>
 
       {/* Small Slider Section */}
-      <section className="py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-r from-white via-[#f9fafb] to-white">
-        {/* Heading Section */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
+        {/* Heading */}
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
             Explore{" "}
-            <span className="bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">
-              Top Specialties
-            </span>
+            <span className="text-blue-900 font-bold">Top Treatments</span>
           </h2>
-          <p className="text-gray-600 mt-4 max-w-3xl mx-auto text-sm md:text-base">
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
             We handle treatments that range from life-saving surgeries to
             procedures that restore confidence. Some of the most sought-after
-            treatments include:
+            treatments include
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-900 to-blue-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* Grid Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+        {/* Responsive Grid */}
+        <div
+          className="
+    w-full 
+    grid grid-cols-1 
+    sm:grid-cols-2 
+    md:grid-cols-3 
+    lg:grid-cols-4 
+    xl:grid-cols-5 
+    gap-4 sm:gap-5 md:gap-6 
+    justify-items-center
+  "
+        >
           {specialties.map((item, index) => (
             <div
               key={index}
-              className="group relative w-full max-w-[280px] rounded-2xl bg-white border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+              className="
+          w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] 
+          bg-white border border-gray-200 rounded-xl shadow-sm 
+          hover:shadow-md hover:border-red-200 
+          transition-all duration-300 flex 
+          flex-col sm:flex-row items-center overflow-hidden
+        "
             >
-              {/* Animated Gradient Border */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-blue-900 to-blue-500 rounded-2xl blur-[2px]"></div>
+              {/* Left Half - Icon */}
+              <div className="w-full sm:w-1/2 flex items-center justify-center bg-[#fff4f4] h-28 sm:h-full p-4">
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={60}
+                  height={60}
+                  className="object-contain transition-transform duration-300 hover:scale-105"
+                />
+              </div>
 
-              {/* Content Box */}
-              <div className="relative z-10 flex flex-col items-center text-center p-8 bg-white rounded-2xl transition-all duration-300 group-hover:-translate-y-1">
-                {/* Icon Container */}
-                <div className="w-20 h-20 flex items-center justify-center bg-gradient-to-r from-blue-900 to-black-50 rounded-2xl mb-5 shadow-inner group-hover:scale-110 transition-transform duration-300">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={60}
-                    height={60}
-                    className="object-contain"
-                  />
-                </div>
-
-                {/* Title */}
-                <p className="text-gray-800 font-semibold text-base md:text-lg group-hover:text-blue-600 transition-colors duration-300">
+              {/* Right Half - Title */}
+              <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
+                <p className="text-gray-900 font-semibold text-center text-sm sm:text-base md:text-[17px] leading-snug">
                   {item.title}
                 </p>
-
-                {/* Subtle underline animation */}
-                <div className="h-0.5 w-0 group-hover:w-16 bg-gradient-to-r from-blue-900 to-blue-400 transition-all duration-500 mt-3 rounded-full"></div>
               </div>
             </div>
           ))}

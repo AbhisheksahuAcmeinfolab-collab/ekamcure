@@ -18,37 +18,56 @@ const hospitals = [
 ];
 
 export default function Footerup() {
-  const repeated = [...hospitals, ...hospitals];
-
+  const repeatedHospitals = [...hospitals, ...hospitals];
   return (
-    <section className="bg-[#f7f7f7] py-8 font-[Poppins]">
-      <h2 className="text-center text-2xl font-semibold text-[#212529] mb-6">
-        Our Trusted Network of Top Hospitals
-      </h2>
+    <>
+      <section className="mb-12">
+        {/* Heading */}
+        <div className="text-center py-8 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+            Top <span className="text-blue-900">Hospitals!</span>
+          </h2>
+        </div>
 
-      <div className="relative overflow-hidden">
-        <motion.div
-          className="flex gap-6"
-          initial={{ x: 0 }}
-          animate={{ x: "-50%" }}
-          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-        >
-          {repeated.map((hospital, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="w-64 sm:w-56 md:w-64 lg:w-72 xl:w-80 flex-shrink-0 mx-auto transition-transform duration-300"
-            >
-              <Image
-                src={hospital.img}
-                alt={hospital.name}
-                className="w-full h-auto object-contain border border-[#dee2e6] rounded-lg shadow-md"
-              />
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
+        {/* Underline */}
+        <div className="w-20 h-1 bg-blue-900 mx-auto mb-10" />
+
+        {/* Carousel */}
+        <div className="overflow-hidden relative w-full mb-6 mt-4">
+          <motion.div
+            className="flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 15,
+              ease: "linear",
+            }}
+          >
+            {repeatedHospitals.map((hosp, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center min-w-[110px] sm:min-w-[140px] md:min-w-[160px] lg:min-w-[180px]"
+              >
+                {/* Image Wrapper */}
+                <div className="relative w-full h-17 sm:w-30 sm:h-10 md:w-28 md:h-28 lg:w-full lg:h-32 overflow-hidden shadow-md border border-gray-300 bg-white flex items-center justify-center">
+                  <Image
+                    src={hosp.img}
+                    alt={hosp.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
+                {/* Name */}
+                <p className="mt-2 text-xs sm:text-sm md:text-base font-medium text-gray-800 text-center whitespace-nowrap">
+                  {hosp.name}
+                </p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+    </>
   );
 }
 
