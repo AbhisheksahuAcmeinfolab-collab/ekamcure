@@ -15,7 +15,7 @@ import pic5 from "../assets/newimage/Oncology.webp";
 import pic6 from "../assets/newimage/Nephrology & Urology.webp";
 import pic7 from "../assets/newimage/Neuro _ Spine.webp";
 // import pic8 from "../assets/newimage/Orthopedic.webp";
-import pic8 from "../assets/newimage/Orthopedic.webp";
+import pic8 from "../assets/newimage/Ophthalmology.webp";
 import pic9 from "../assets/newimage/Obstetrics & Gynecology.webp";
 import pic10 from "../assets/newimage/GI & Bariatric.webp";
 import pic11 from "../assets/newimage/Cardiology.webp";
