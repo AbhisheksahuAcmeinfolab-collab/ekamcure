@@ -317,6 +317,14 @@ export default function AboutUs() {
   );
 }
 
+
+
+
+
+
+
+
+
 // import Image from "next/image";
 // import { FaLinkedin, FaInstagram } from "react-icons/fa";
 // import img from "../../assets/newimage/bg-banner.webp";

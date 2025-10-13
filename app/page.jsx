@@ -14,8 +14,7 @@ import pic4 from "../assets/newimage/Organ Transplant.webp";
 import pic5 from "../assets/newimage/Oncology.webp";
 import pic6 from "../assets/newimage/Nephrology & Urology.webp";
 import pic7 from "../assets/newimage/Neuro _ Spine.webp";
-// import pic8 from "../assets/newimage/Orthopedic.webp";
-import pic8 from "../assets/newimage/Ophthalmology.webp";
+import pic8 from "../assets/newimage/OrthopedicD.webp";
 import pic9 from "../assets/newimage/Obstetrics & Gynecology.webp";
 import pic10 from "../assets/newimage/GI & Bariatric.webp";
 import pic11 from "../assets/newimage/Cardiology.webp";
@@ -190,7 +189,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
+              transition={{ duration: 4, ease: "easeOut" }}
               className="absolute inset-0"
             >
               <Image
@@ -250,8 +249,9 @@ export default function Home() {
                 {slides[heroCurrent].title}
               </motion.h1>
 
+                {/* button animation */}
               <motion.p
-                className="mt-4 lg:text-4xl font-bold sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
+                className="mt-4 lg:text-4xl mt-50 py-10 font-bold sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
