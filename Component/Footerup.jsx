@@ -49,19 +49,20 @@ export default function Footerup() {
                 className="flex flex-col items-center min-w-[110px] sm:min-w-[140px] md:min-w-[160px] lg:min-w-[180px]"
               >
                 {/* Image Wrapper */}
-                <div className="relative w-full h-17 sm:w-30 sm:h-10 md:w-28 md:h-28 lg:w-full lg:h-32 overflow-hidden shadow-md border border-gray-300 bg-white flex items-center justify-center">
+                {/* <div className="rounded-[30px] my-[30px] relative w-full h-[110px] sm:w-30 sm:h-10 md:w-28 md:h-28 lg:w-full lg:h-32 overflow-hidden shadow-md border border-gray-300 bg-white flex items-center justify-center"> */}
+                <div className="relative w-full rounded-[30px] my-[30px] bg-transparent p-5 bg-[linear-gradient(180deg,#FFFFFF_70%,#FFFFFF00_100%)] shadow-[0px_0px_3px_0px_rgba(0,0,0,0.5)] h-[110px] flex items-center overflow-hidden shadow-md border border-gray-300 justify-center">
                   <Image
                     src={hosp.img}
                     alt={hosp.name}
                     fill
-                    className="object-contain"
+                    className="object-contain w-full h-[110px]"
                   />
                 </div>
 
                 {/* Name */}
-                <p className="mt-2 text-xs sm:text-sm md:text-base font-medium text-gray-800 text-center whitespace-nowrap">
+                {/* <p className="mt-2 text-xs sm:text-sm md:text-base font-medium text-gray-800 text-center whitespace-nowrap">
                   {hosp.name}
-                </p>
+                </p> */}
               </div>
             ))}
           </motion.div>
