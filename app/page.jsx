@@ -423,7 +423,7 @@ export default function Home() {
 
               {/* Right Half - Title */}
               <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
-                <p className="text-gray-900 font-semibold text-center text-sm sm:text-base md:text-[17px] leading-snug">
+                <p className="text-gray-900 text-center text-sm sm:text-base md:text-[1 px] leading-snug">
                   {item.title}
                 </p>
               </div>
