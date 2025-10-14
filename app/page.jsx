@@ -14,12 +14,17 @@ import pic4 from "../assets/newimage/Organ Transplant.webp";
 import pic5 from "../assets/newimage/Oncology.webp";
 import pic6 from "../assets/newimage/Nephrology & Urology.webp";
 import pic7 from "../assets/newimage/Neuro _ Spine.webp";
+<<<<<<< HEAD
 import pic8 from "../assets/newimage/Orthopedic.webp";
+=======
+import pic8 from "../assets/newimage/OrthopedicD.webp";
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
 import pic9 from "../assets/newimage/Obstetrics & Gynecology.webp";
 import pic10 from "../assets/newimage/GI & Bariatric.webp";
 import pic11 from "../assets/newimage/Cardiology.webp";
 import pic12 from "../assets/newimage/Dental.webp";
 import pic13 from "../assets/newimage/Cosmetology & Dermatology.webp";
+<<<<<<< HEAD
 import pic13i from "../assets/newimage/Ophthalmology.webp";
 
 import pic14 from "../assets/newimage/hp1.webp";
@@ -33,6 +38,13 @@ import pic20 from "../assets/flags/comoros.webp";
 import pic21 from "../assets/flags/chad.webp";
 import pic22 from "../assets/flags/african.webp";
 import pic23 from "../assets/flags/cape verde.webp";
+=======
+import pic14 from "../assets/newimage/Ophthalmology.webp";
+
+import pic15 from "../assets/newimage/hp1.webp";
+import pic16 from "../assets/newimage/hp2.webp";
+import pic17 from "../assets/newimage/hp3.webp";
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -126,43 +138,53 @@ const specialties = [
   {
     title: "Ophthalmology",
     alt: "not found",
+<<<<<<< HEAD
     icon: pic13i,
+=======
+    icon: pic14,
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
     color: "bg-red-500 hover:bg-red-500",
   },
 ];
 
-const testimonials = [
+const patients = [
   {
-    name: "John Doe",
-    image1: pic14, // Replace with actual image path
-    text: "Thanks to Ekam, my heart surgery in India was a seamless experience. The doctors were exceptional, and the support staff made me feel at home. Highly recommend their services!",
+    name: "Abhishek Sahu",
+    country: "Guinee",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    doctor: "Dr. Lalit Bafna",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic15,
+    type: "image",
   },
   {
-    name: "Layla Hassan",
-    image1: pic15,
-    text: "Ekam made my orthopedic treatment smooth and stress-free. The care was top-notch!",
+    name: "Ibrahima Kalil",
+    country: "Guinee",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    doctor: "Dr. Lalit Bafna",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic16,
+    type: "image",
   },
   {
-    name: "Ayesha Rahman",
-    image1: pic16,
-    text: "Dental treatment with Ekam was painless and professional. I felt truly cared for.",
+    name: "Sweety",
+    country: "Guinee",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    doctor: "Dr. Lalit Bafna",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic17,
+    type: "image",
   },
-];
-
-const countries = [
-  { name: "India", flag: pic17 },
-  { name: "Equatorial Guinea", flag: pic18 },
-  { name: "Egypt", flag: pic19 },
-  { name: "Comoros", flag: pic20 },
-  { name: "Chad", flag: pic21 },
-  { name: "Africa", flag: pic22 },
-  { name: "Cape Verde", flag: pic23 },
 ];
 
 export default function Home() {
   const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
   const [smallCurrent, setSmallCurrent] = useState(0); // For small slider
   const [testimonialIndex, setTestimonialIndex] = useState(0); // For testimonials
+  const [current, setCurrent] = useState(0);
 
   // Hero slider
   useEffect(() => {
@@ -172,17 +194,13 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
-  // Testimonial slider
   useEffect(() => {
     const timer = setInterval(() => {
-      setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
-    }, 1000);
+      setCurrent((prev) => (prev + 1) % patients.length);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
-  const { name, image1, text } = testimonials[testimonialIndex];
-
-  // Duplicate list to make seamless infinite scrolling
-  const repeatedCountries = [...countries, ...countries];
+  const currentPatient = patients[current];
 
   return (
     <main>
@@ -195,7 +213,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
+              transition={{ duration: 4, ease: "easeOut" }}
               className="absolute inset-0"
             >
               <Image
@@ -255,8 +273,9 @@ export default function Home() {
                 {slides[heroCurrent].title}
               </motion.h1>
 
+                {/* button animation */}
               <motion.p
-                className="mt-4 text-base sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
+                className="mt-4 lg:text-4xl mt-50 py-10 font-bold sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
@@ -402,9 +421,13 @@ export default function Home() {
         </div>
 
         {/* Responsive Grid */}
+<<<<<<< HEAD
         <div
           className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center"
         >
+=======
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
           {specialties.map((item, index) => (
             <div
               key={index}
@@ -431,23 +454,92 @@ export default function Home() {
           ))}
         </div>
       </section>
+<<<<<<< HEAD
       
+=======
 
-      <div className="relative w-full max-w-3xl mx-auto py-10 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-blue-700">
-          Happy Patients
-        </h2>
-        <div className="bg-white shadow-lg rounded-xl p-6 transition-all duration-500 ease-in-out">
-          <img
-            src={image1.src}
-            alt={name}
-            className="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-4 border-blue-500"
-          />
-          <p className="text-gray-700 italic mb-4">"{text}"</p>
-          <h4 className="text-lg font-semibold text-blue-600">{name}</h4>
+      <section className="bg-white py-12 px-4 md:px-10">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            Patient <span className="text-blue-900">Success Stories</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
+            Every patient journey tells a story of hope and healing.
+          </p>
         </div>
-      </div>
+
+        {/* Overlapping Boxes */}
+        <div className="relative max-w-xl mx-auto">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentPatient.name}
+              initial={{ opacity: 0, x: 60 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -60 }}
+              transition={{ duration: 0.6 }}
+              className="relative flex flex-col md:flex-row items-start md:items-center"
+            >
+              {/* Text Box */}
+              <div className="bg-white border-4 border-blue-900 rounded-2xl p-6 md:p-8 shadow-md w-full h-90 md:w-[70%] relative z-20">
+                <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                  {currentPatient.name}
+                </h3>
+                <ul className="text-gray-700 space-y-1 text-sm md:text-base">
+                  <li>
+                    <strong>Native Country:</strong> {currentPatient.country}
+                  </li>
+                  <li>
+                    <strong>Treatment:</strong> {currentPatient.treatment}
+                  </li>
+                  <li>
+                    <strong>Hospital:</strong> {currentPatient.hospital}
+                  </li>
+                  <li>
+                    <strong>Doctor Name:</strong> {currentPatient.doctor}
+                  </li>
+                  <li>
+                    <strong>Location:</strong> {currentPatient.location}
+                  </li>
+                </ul>
+              </div>
+
+              {/* Overlapping Image Box */}
+              <div
+                className="
+                md:absolute md:top-1/2 md:right-[-60px]
+                md:-translate-y-1/2
+                w-[230px] sm:w-[260px] md:w-[280px]
+                mt-6 md:mt-0
+                bg-white border-4 border-blue-900 rounded-xl
+                overflow-hidden shadow-lg z-20
+              "
+              >
+                <Image
+                  src={currentPatient.media}
+                  alt={currentPatient.name}
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
+
+        {/* View All Button */}
+        <div className="text-center mt-10">
+          <a
+            href="#"
+            className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
+          >
+            View All →
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
