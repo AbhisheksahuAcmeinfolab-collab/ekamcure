@@ -53,7 +53,7 @@ export default function Footer() {
           <motion.button
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.05 }}
-            className="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 rounded-full flex items-center gap-2 text-sm shadow-md transition-transform"
+            className="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 mt-2 rounded-full flex items-center gap-2 text-sm shadow-md transition-transform"
           >
             GET CONSULTATION →
           </motion.button>
@@ -109,7 +109,7 @@ export default function Footer() {
             QUICK LINKS
           </h3>
           <ul className="space-y-2 text-sm">
-            {["Home", "About Us", "Our Services", "Contact Us"].map(
+            {["Home", "About Us", "Our Services", "Our Fees", "Contact Us"].map(
               (link, i) => (
                 <motion.li
                   key={i}
