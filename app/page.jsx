@@ -14,37 +14,17 @@ import pic4 from "../assets/newimage/Organ Transplant.webp";
 import pic5 from "../assets/newimage/Oncology.webp";
 import pic6 from "../assets/newimage/Nephrology & Urology.webp";
 import pic7 from "../assets/newimage/Neuro _ Spine.webp";
-<<<<<<< HEAD
-import pic8 from "../assets/newimage/Orthopedic.webp";
-=======
 import pic8 from "../assets/newimage/OrthopedicD.webp";
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
 import pic9 from "../assets/newimage/Obstetrics & Gynecology.webp";
 import pic10 from "../assets/newimage/GI & Bariatric.webp";
 import pic11 from "../assets/newimage/Cardiology.webp";
 import pic12 from "../assets/newimage/Dental.webp";
 import pic13 from "../assets/newimage/Cosmetology & Dermatology.webp";
-<<<<<<< HEAD
-import pic13i from "../assets/newimage/Ophthalmology.webp";
-
-import pic14 from "../assets/newimage/hp1.webp";
-import pic15 from "../assets/newimage/hp2.webp";
-import pic16 from "../assets/newimage/hp3.webp";
-
-import pic17 from "../assets/flags/india.webp";
-import pic18 from "../assets/flags/guinea.webp";
-import pic19 from "../assets/flags/egypt.webp";
-import pic20 from "../assets/flags/comoros.webp";
-import pic21 from "../assets/flags/chad.webp";
-import pic22 from "../assets/flags/african.webp";
-import pic23 from "../assets/flags/cape verde.webp";
-=======
 import pic14 from "../assets/newimage/Ophthalmology.webp";
 
 import pic15 from "../assets/newimage/hp1.webp";
 import pic16 from "../assets/newimage/hp2.webp";
 import pic17 from "../assets/newimage/hp3.webp";
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -138,11 +118,7 @@ const specialties = [
   {
     title: "Ophthalmology",
     alt: "not found",
-<<<<<<< HEAD
-    icon: pic13i,
-=======
     icon: pic14,
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
     color: "bg-red-500 hover:bg-red-500",
   },
 ];
@@ -273,7 +249,7 @@ export default function Home() {
                 {slides[heroCurrent].title}
               </motion.h1>
 
-                {/* button animation */}
+              {/* button animation */}
               <motion.p
                 className="mt-4 lg:text-4xl mt-50 py-10 font-bold sm:text-lg md:text-xl text-gray-200 font-medium max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
@@ -421,13 +397,7 @@ export default function Home() {
         </div>
 
         {/* Responsive Grid */}
-<<<<<<< HEAD
-        <div
-          className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center"
-        >
-=======
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
           {specialties.map((item, index) => (
             <div
               key={index}
@@ -454,9 +424,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-<<<<<<< HEAD
-      
-=======
 
       <section className="bg-white py-12 px-4 md:px-10">
         {/* Heading */}
@@ -524,7 +491,6 @@ export default function Home() {
             </motion.div>
           </AnimatePresence>
         </div>
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359
 
         {/* View All Button */}
         <div className="text-center mt-10">
@@ -539,7 +505,4 @@ export default function Home() {
     </main>
   );
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> d76ceb467fde10e3a6dd3e1e4ad95edea42a2359

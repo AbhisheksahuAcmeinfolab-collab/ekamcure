@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: t("About"), href: "/about" },
     { name: t("Services"), href: "/services" },
     { name: t("Treatment"), href: "/treatment" },
-    { name: t("Our Fees"), href: "/fees" },
+    { name: t("Gallary"), href: "/fees" },
     { name: t("Contact Us"), href: "/contact" },
   ];
 
