@@ -15,7 +15,7 @@ export default function TopHeader() {
   return (
     <>
       {/* 🖥️ Desktop Header */}
-      <div className="hidden md:flex bg-[#053161] text-white text-sm px-20 py-2 justify-end items-center gap-6">
+      <div className="hidden md:flex bg-[#053161] text-white text-sm xl:px-65 md:px-5 py-2 justify-end items-center gap-6">
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <Image
             src={img3}
@@ -38,7 +38,7 @@ export default function TopHeader() {
           <span className="font-medium">Partner With Us</span>
         </div>
 
-        <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
+        <div className=" flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <Image
             src={img2}
             alt="Quote"
@@ -99,52 +99,3 @@ export default function TopHeader() {
     </>
   );
 }
-
-// "use client";
-// import Image from "next/image";
-// import img1 from "../assets/image/img1.png";
-// import img2 from "../assets/image/img2.png";
-// import img3 from "../assets/image/img3.png";
-
-// export default function TopHeader() {
-//   return (
-//     <div className="bg-[#053161] text-white text-sm px-20 py-1" dir="rtl">
-//       <div className="max-w-7xl mx-auto flex flex-wrap justify-right md:gap-6 md-px-6 sm:px-2 lg:px-8">
-//         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
-//           <span className="font-medium"> 9990205353(91+) </span>
-//           <Image
-//             src={img3}
-//             alt="No"
-//             width={50}
-//             height={30}
-//             className="rounded-md"
-//           />
-//         </div>
-
-//         {/* Partner With Us */}
-//         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
-//           <span className="font-medium"> Partner With Us </span>
-//           <Image
-//             src={img1}
-//             alt="No"
-//             width={30}
-//             height={20}
-//             className="rounded-md"
-//           />
-//         </div>
-
-//         {/* Get Free Quote */}
-//         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
-//           <span className="font-medium"> Get Free Quote </span>
-//           <Image
-//             src={img2}
-//             alt="No"
-//             width={30}
-//             height={30}
-//             className="rounded-md"
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import pic24 from "../assets/newimage/Appasamy.webp";
 import pic25 from "../assets/newimage/Asian hospital.webp";
 import pic26 from "../assets/newimage/Godrej.webp";
-import pic27 from "../assets/newimage/blkmax.webp";
+// import pic27 from "../assets/newimage/Seven hills.webp";
 import pic28 from "../assets/newimage/MGM.webp";
 import pic29 from "../assets/newimage/Kauvery.webp";
 import pic30 from "../assets/newimage/Moolchand.webp";
@@ -16,7 +16,7 @@ const hospitals = [
   { name: "Gleaneagles Global Hospital", img: pic24 },
   { name: "Manipal Hospital", img: pic25 },
   { name: "Global Hospital", img: pic26 },
-  { name: "BLK Hospital", img: pic27 },
+  // { name: "BLK Hospital", img: pic27 },
   { name: "Bombay Hospital", img: pic28 },
   { name: "Kauvery Hospital", img: pic29 },
   { name: "Moolchand", img: pic30 },
@@ -63,7 +63,7 @@ export default function Footerup() {
                     src={hosp.img}
                     alt={hosp.name}
                     fill
-                    className="object-contain w-full h-[110px] w-80 h-20"
+                    className="object-contain h-full w-full"
                   />
                 </div>
 
