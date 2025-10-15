@@ -20,7 +20,7 @@ import pic10 from "../assets/newimage/General Medicine.webp";
 import pic11 from "../assets/newimage/Gynecology Treatment.webp";
 import pic12 from "../assets/newimage/Heart & Cardiology Treatments.webp";
 import pic13 from "../assets/newimage/Infertility Treatments.webp";
-import pic14 from "../assets/newimage/Kidney & Urology Treatments.webp";
+import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
 import pic15 from "../assets/newimage/hp1.webp";
 import pic16 from "../assets/newimage/hp2.webp";
@@ -116,7 +116,7 @@ const specialties = [
     color: "bg-red-500 hover:bg-red-500",
   },
   {
-    title: "Kidney & Urology Treatments",
+    title: "Orthopedic Treatment",
     alt: "not found",
     icon: pic14,
     color: "bg-red-500 hover:bg-red-500",
