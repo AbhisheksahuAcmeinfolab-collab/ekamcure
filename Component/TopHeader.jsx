@@ -15,7 +15,7 @@ export default function TopHeader() {
   return (
     <>
       {/* 🖥️ Desktop Header */}
-      <div className="hidden md:flex bg-[#053161] text-white text-sm xl:px-65 md:px-5 py-2 justify-end items-center gap-6">
+      <div className="hidden md:flex bg-[#053161] text-white text-sm xl:px-25 lg:px-10 md:px-5 py-2 justify-end items-center gap-6">
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <Image
             src={img3}
@@ -24,7 +24,7 @@ export default function TopHeader() {
             height={20}
             className="rounded-md"
           />
-          <span className="font-medium">(+91)9990205353 </span>
+          <span className="font-medium">(+91) 9990205353 </span>
         </div>
 
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">

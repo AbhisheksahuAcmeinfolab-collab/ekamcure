@@ -1,136 +1,5 @@
-// "use client";
-
-// import { useState, useEffect } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import Image from "next/image";
-// import pic1 from "../assets/newimage/front1.webp";
-// import pic2 from "../assets/newimage/front2.webp";
-// import pic3 from "../assets/newimage/front3.webp";
-
-// // --- Banner Slides ---
-// const slides = [
-//   {
-//     img: pic1,
-//     label: "India’s Healthcare Edge",
-//     desc: "Bringing World-Class Healthcare Closer to You - Seamlessly, Securely, Successfully.",
-//   },
-//   {
-//     img: pic2,
-//     label: "Personalized & Efficient",
-//     desc: "Experience the Best of Indian Healthcare – Personalized, Efficient, and Hassle-Free.",
-//   },
-//   {
-//     img: pic3,
-//     label: "Global Trust, Local Care",
-//     desc: "Your Path to Quality Care Abroad – Trusted Partners, Exceptional Care.",
-//   },
-// ];
-
-// export default function BannerSlider() {
-//   const [heroCurrent, setHeroCurrent] = useState(0);
-
-//   // Auto-slide every 5s
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       setHeroCurrent((prev) => (prev + 1) % slides.length);
-//     }, 5000);
-//     return () => clearInterval(timer);
-//   }, []);
-
-//   return (
-//     <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-black text-white">
-//       {/* 🔹 Background Image with Animation */}
-//       <div className="absolute inset-0">
-//         <AnimatePresence mode="">
-//           <motion.div
-//             key={heroCurrent}
-//             initial={{ opacity: 0, scale: 1.1 }}
-//             animate={{ opacity: 1, scale: 1 }}
-//             exit={{ opacity: 0, scale: 0.95 }}
-//             transition={{ duration: 1.2, ease: "easeOut" }}
-//             className="absolute inset-0"
-//           >
-//             <Image
-//               src={slides[heroCurrent].img}
-//               alt="Banner"
-//               fill
-//               className="object-cover object-center"
-//               priority
-//             />
-//             {/* Overlay gradient */}
-//             <motion.div
-//               initial={{ opacity: 0 }}
-//               animate={{ opacity: 1 }}
-//               transition={{ duration: 1 }}
-//               className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-cyan-700/50 to-blue-600/30 mix-blend-multiply"
-//             />
-//           </motion.div>
-//         </AnimatePresence>
-//       </div>
-
-//       {/* 🔹 Animated Tab Section */}
-//       <div className="relative z-20 bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 p-4 sm:p-6 md:p-10 shadow-2xl max-w-xl w-[90%]">
-//         <nav className="flex bg-white/10 rounded-xl overflow-hidden mb-6 border border-white/20">
-//           {slides.map((slide, i) => (
-//             <motion.button
-//               key={i}
-//               onClick={() => setHeroCurrent(i)}
-//               className={`flex-1 py-2 px-4 text-sm md:text-base font-medium transition relative ${
-//                 i === heroCurrent
-//                   ? "text-cyan-300"
-//                   : "text-gray-200 hover:text-cyan-200"
-//               }`}
-//               whileTap={{ scale: 0.9 }}
-//             >
-//               {slide.label}
-//               {i === heroCurrent && (
-//                 <motion.div
-//                   layoutId="underline"
-//                   className="absolute bottom-0 left-0 right-0 h-[2px] bg-cyan-400"
-//                 />
-//               )}
-//             </motion.button>
-//           ))}
-//         </nav>
-
-//         {/* Description Animation */}
-//         <div className="text-center">
-//           <AnimatePresence mode="wait">
-//             <motion.p
-//               key={heroCurrent}
-//               initial={{ opacity: 0, y: 20 }}
-//               animate={{ opacity: 1, y: 0 }}
-//               exit={{ opacity: 0, y: -20 }}
-//               transition={{ duration: 0.6 }}
-//               className="text-gray-100 text-base sm:text-lg md:text-xl leading-relaxed"
-//             >
-//               {slides[heroCurrent].desc}
-//             </motion.p>
-//           </AnimatePresence>
-//         </div>
-//       </div>
-
-//       {/* 🔹 Indicators */}
-//       <div className="absolute bottom-6 flex gap-3 justify-center w-full z-20">
-//         {slides.map((_, i) => (
-//           <motion.button
-//             key={i}
-//             onClick={() => setHeroCurrent(i)}
-//             whileHover={{ scale: 1.2 }}
-//             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-//               i === heroCurrent
-//                 ? "bg-cyan-400 scale-125"
-//                 : "bg-white/40 hover:bg-white/70"
-//             }`}
-//           />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
-import i18n from "@/i18n";
+// import i18n from "@/i18n";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
@@ -172,13 +41,13 @@ const slides = [
     img: pic2,
     subtitle: "",
     title: "",
-    desc: "Experience the Best of Indian Healthcare – Personalized, Efficient, and Hassle-Free.",
+    desc: "Experience the Best of Indian Healthcare – Personalized, Efficient, and Hassle-Free",
   },
   {
     img: pic3,
     subtitle: "",
     title: "",
-    desc: "Your Path to Quality Care Abroad – Trusted Partners, Exceptional Care.",
+    desc: "Your Path to Quality Care Abroad – Trusted Partners, Exceptional Care",
   },
 ];
 
@@ -351,7 +220,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.p
-                className="uppercase xl:text-2xl lg:text-2xl md:text-2xl tracking-[0.4em] text-cyan-300 font-semibold"
+                className="uppercase xl:text-4xl lg:text-2xl md:text-2xl tracking-[0.4em] text-cyan-300 font-semibold"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -533,17 +402,18 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-            <a
-              href="/treatment"
-              className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
-            >
-              View All →
-            </a>
-          </div>
+          <a
+            href="/treatment"
+            className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
+          >
+            View All →
+          </a>
+        </div>
       </section>
+
       <section className="bg-white dark:bg-gray-900 py-12 px-4 md:px-10">
         {/* Heading */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 ">
           <h2 className="text-2xl md:text-3xl font-semibold">
             Patient <span className="text-blue-900">Success Stories</span>
           </h2>
@@ -564,7 +434,8 @@ export default function Home() {
               className="relative flex flex-col md:flex-row items-start md:items-center"
             >
               {/* Text Box */}
-              <div className="bg-white dark:bg-gray-900 border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md w-full md:w-[70%] relative z-20">
+
+              <div className="bg-white dark:bg-gray-900 border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
                 <h3 className="text-xl md:text-2xl font-semibold mb-3">
                   {currentPatient.name}
                 </h3>
@@ -589,8 +460,8 @@ export default function Home() {
 
               {/* Overlapping Image Box */}
               <div
-                className="
-                md:absolute md:top-1/2 md:right-[-60px]
+                className="lg:right-[-70px]
+                md:absolute md:top-1/2 md:right-[-50px]
                 md:-translate-y-1/2
                 w-[230px] sm:w-[260px] md:w-[280px]
                 mt-6 md:mt-0
@@ -611,7 +482,7 @@ export default function Home() {
         {/* View All Button */}
         <div className="text-center mt-10">
           <a
-            href="/fees"
+            href="/gallery"
             className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
           >
             View All →
