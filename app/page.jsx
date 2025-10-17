@@ -10,7 +10,7 @@ import pic1 from "../assets/newimage/front1.webp";
 import pic2 from "../assets/newimage/front2.webp";
 import pic3 from "../assets/newimage/front3.webp";
 
-import pic4 from "../assets/newimage/Ayurveda Treatments.webp";
+import pic4 from "../assets/newimage/Neurology Treatment.webp";
 import pic5 from "../assets/newimage/Cosmetic Surgeries.webp";
 import pic6 from "../assets/newimage/Cancer Treatment.webp";
 import pic7 from "../assets/newimage/Dental Treatments.webp";
@@ -53,7 +53,7 @@ const slides = [
 
 const specialties = [
   {
-    title: "Ayurveda Treatments",
+    title: "Neurology Treatment",
     alt: "not found",
     icon: pic4,
     color: "bg-orange-500",

@@ -88,6 +88,7 @@ export default function Gallery() {
               {/* Info Box */}
               <div className="bg-white dark:bg-gray-900 border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
                 <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                
                   {p.name}
                 </h3>
                 <ul className="text-gray-700 space-y-1 text-sm md:text-base">
