@@ -460,8 +460,8 @@ export default function Home() {
 
               {/* Overlapping Image Box */}
               <div
-                className="lg:right-[-70px]
-                md:absolute md:top-1/2 md:right-[-50px]
+                className="lg:right-[-200px]
+                md:absolute md:top-1/2 md:right-[-50px] 
                 md:-translate-y-1/2
                 w-[230px] sm:w-[260px] md:w-[280px]
                 mt-6 md:mt-0

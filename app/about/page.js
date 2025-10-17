@@ -162,7 +162,7 @@ export default function AboutUs() {
             <div className=" space-y-8 text-gray-700 leading-relaxed text-base sm:text-lg">
               {/* First Paragraph */}
               <p>
-                **Ekam excels in the medical travel industry**, connecting
+                Ekam excels in the medical travel industry, connecting
                 global patients with top-tier healthcare facilities across
                 India. Focused on providing a seamless healthcare journey, the
                 company manages every aspect, from initial consultation to
