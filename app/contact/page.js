@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import img from "../../assets/newimage/bg-banner.webp";
+import img from "../../assets/newimage/team-bg-bg.webp";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -38,7 +38,7 @@ export default function ContactPage() {
             src={img}
             alt="Contact Banner"
             fill
-            className="object-cover brightness-50"
+            className="object-cover brightness-80"
           />
           <div className="relative z-10 text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white">

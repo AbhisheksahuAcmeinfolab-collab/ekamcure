@@ -15,8 +15,8 @@ import pic5 from "../assets/newimage/Cosmetic Surgeries.webp";
 import pic6 from "../assets/newimage/Cancer Treatment.webp";
 import pic7 from "../assets/newimage/Dental Treatments.webp";
 import pic8 from "../assets/newimage/Heart & Cardiology Treatments.webp";
-import pic9 from "../assets/newimage/Pediatric Cardiology.webp";
-import pic10 from "../assets/newimage/Pediatrics Treatment.webp";
+import pic9 from "../assets/newimage/Kidney & Urology Treatments.webp";
+import pic10 from "../assets/newimage/Ophthalmology Surgery.webp";
 import pic11 from "../assets/newimage/Infertility Treatments.webp";
 import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
@@ -85,13 +85,13 @@ const specialties = [
     className: "hover:bg-orange-500",
   },
   {
-    title: "Pediatric Cardiology",
+    title: "Kidney & Urology Treatments",
     alt: "not found",
     icon: pic9,
     color: "bg-red-500 hover:bg-red-500",
   },
   {
-    title: "Pediatrics Treatment",
+    title: "Ophthalmology Surgery",
     alt: "not found",
     icon: pic10,
     color: "bg-blue-500 hover:bg-blue-500",
@@ -461,7 +461,7 @@ export default function Home() {
               {/* Overlapping Image Box */}
               <div
                 className="lg:right-[-200px]
-                md:absolute md:top-1/2 md:right-[-50px] 
+                md:absolute md:top-1/2 md:right-[-50px]
                 md:-translate-y-1/2
                 w-[230px] sm:w-[260px] md:w-[280px]
                 mt-6 md:mt-0

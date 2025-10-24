@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import img from "../../assets/newimage/bg-banner.webp";
+import img from "../../assets/newimage/team-bg-bg.webp";
 import pic15 from "../../assets/newimage/hp1.webp";
 import pic16 from "../../assets/newimage/hp2.webp";
 import pic17 from "../../assets/newimage/hp3.webp";
@@ -60,7 +60,7 @@ export default function Gallery() {
           src={img}
           alt="Our Fee Banner"
           fill
-          className="object-cover brightness-30"
+          className="object-cover brightness-80"
         />
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white">Gallery</h1>

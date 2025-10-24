@@ -35,7 +35,7 @@ export default function TopHeader() {
             height={15}
             className="rounded-md"
           />
-          <span className="font-medium">Partner With Us</span>
+          <span className="font-medium">Become Partner !</span>
         </div>
 
         <div className=" flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
@@ -46,7 +46,7 @@ export default function TopHeader() {
             height={25}
             className="rounded-md"
           />
-          <span className="font-medium">Get Free Quote</span>
+          <span className="font-medium">Get Quote !</span>
         </div>
       </div>
 
@@ -54,45 +54,34 @@ export default function TopHeader() {
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 shadow-md md:hidden z-50">
         <div className="flex justify-around items-center py-2 text-[#053161] text-center">
           <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer text-center">
-            {/* <FaUserMd className="text-lg mb-1" /> */}
             <Image
               src={img2}
               alt="Quote"
-              width={25}
+              width={40}
               height={25}
               className="rounded-md"
             />
-            <span>Get Free Quote!</span>
+            <span>Get Quote !</span>
           </div>
           <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
-            {/* <FaCalendarCheck className="text-lg mb-1" /> */}
             <Image
               src={img1}
               alt="Partner"
-              width={25}
+              width={35}
               height={15}
               className="rounded-md"
             />
-            <span>Partner with us!</span>
+            <span>Become Partner !</span>
           </div>
           <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
-            {/* <FaComments className="text-lg mb-1" /> */}
             <Image
               src={img3}
               alt="Phone"
-              width={35}
+              width={50}
               height={20}
               className="rounded-md"
             />
-            <span>Chat or Call</span>
-          </div>
-          {/* <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
-            <FaPhoneAlt className="text-lg mb-1" />
-            <span>Call Us</span>
-          </div> */}
-          <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
-            <FaBars className="text-lg mb-1" />
-            <span>Menu</span>
+            <span>Chat</span>
           </div>
         </div>
       </div>
