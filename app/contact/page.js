@@ -32,8 +32,8 @@ export default function ContactPage() {
   return (
     <>
       {/* Banner */}
-      <section className="w-full bg-gray-50">
-        <div className="relative w-full h-[200px] md:h-[250px] flex items-center justify-center">
+      {/* <section className="w-full bg-gray-50"> */}
+        <div className="relative w-full h-[200px] md:h-[200px] flex items-center justify-center">
           <Image
             src={img}
             alt="Contact Banner"
@@ -46,7 +46,7 @@ export default function ContactPage() {
             </h1>
           </div>
         </div>
-      </section>
+      {/* </section> */}
 
       {/* Main Section */}
       <section className="w-full min-h-screen px-4 sm:px-8 md:px-12 lg:px-20 py-12 bg-white mb-1">

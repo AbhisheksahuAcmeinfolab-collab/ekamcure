@@ -210,7 +210,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-6 md:px-12 lg:px-20 max-w-4xl">
+        <div className="relative z-10 text-center px-1 md:px-12 lg:px-20 max-w-4xl">
           <AnimatePresence mode="wait">
             <motion.div
               key={heroCurrent + "-content"}
@@ -220,7 +220,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.p
-                className="uppercase xl:text-4xl lg:text-2xl md:text-2xl tracking-[0.4em] text-cyan-300 font-semibold"
+                className="uppercase xl:text-4xl lg:text-2xl md:text-2xl sm:text-5xl tracking-[0.4em] text-cyan-300 font-semibold"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -229,7 +229,7 @@ export default function Home() {
               </motion.p>
 
               <motion.p
-                className="mt-40 xl:text-3xl lg:text-3xl md:text-3xl sm:text-3xl py-4 font-bold text-gray-200 max-w-2xl mx-auto"
+                className="mt-40 sm:mt-30 text-4xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold text-gray-200 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
@@ -237,20 +237,20 @@ export default function Home() {
                 {slides[heroCurrent].desc}
               </motion.p>
 
-              <div className="mt-8 flex justify-center gap-4 flex-wrap">
+              <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition duration-300"
                 >
-                  Get Free Quote
+                  Get Quote!
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition duration-300"
                 >
-                  Partner with Us!
+                  Become Partner!
                 </motion.button>
               </div>
             </motion.div>

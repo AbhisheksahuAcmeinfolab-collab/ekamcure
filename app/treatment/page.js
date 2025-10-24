@@ -20,8 +20,14 @@ import pic13 from "../../assets/newimage/Orthopaedic Procedures.webp";
 import pic14 from "../../assets/newimage/Pediatric Cardiology.webp";
 import pic15 from "../../assets/newimage/Gynecology Treatment.webp";
 import pic16 from "../../assets/newimage/Obesity Treatment.webp";
-import pic17 from "../../assets/newimage/Ear, Nose, and Throat (ENT).webp";
-import pic18 from "../../assets/newimage/Orthopedic Treatment.webp";
+import pic17 from "../../assets/newimage/Ayurveda Treatments.webp";
+import pic18 from "../../assets/newimage/General Medicine.webp";
+import pic19 from "../../assets/newimage/Pediatrics Treatment.webp";
+import pic20 from "../../assets/newimage/Preventive Health Check.webp";
+import pic21 from "../../assets/newimage/Ear, Nose, and Throat (ENT).webp";
+import pic22 from "../../assets/newimage/Orthopedic Treatment.webp";
+import pic23 from "../../assets/newimage/Ear, Nose, and Throat (ENT).webp";
+import pic24 from "../../assets/newimage/Orthopedic Treatment.webp";
 
 export default function TreatmentServices() {
   // const services = [
@@ -518,6 +524,206 @@ export default function TreatmentServices() {
               <div className="relative z-10 bg-indigo-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
                 <img
                   src={pic16.src}
+                  alt="Obesity Treatment"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2 md:pl-8 text-left relative">
+                <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-indigo-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-indigo-700 mb-2">
+                    Obesity Treatment
+                  </h3>
+                  <p className="text-gray-600">
+                    Our pickup and drop services ensure stress-free, smooth
+                    transport for patients and families.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            {/* Center Vertical Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-blue-500"></div>
+
+            {/* 17 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              {/* Left Content */}
+              <div className="md:w-1/2 md:pr-8 text-right relative">
+                <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-blue-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                    Ayurveda Treatments
+                  </h3>
+                  <p className="text-gray-600">
+                    Our medical expert team is always with the patients to deal
+                    with any emergency. They monitor every step of treatment
+                    closely.
+                  </p>
+                </div>
+              </div>
+              {/* Icon */}
+              <div className="relative z-10 bg-blue-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic17.src}
+                  alt="Ayurveda Treatments"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2"></div>
+            </div>
+
+            {/* 18 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2"></div>
+              <div className="relative z-10 bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic18.src}
+                  alt="General Medicine"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2 md:pl-8 text-left relative">
+                <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-pink-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-pink-700 mb-2">
+                    General Medicine
+                  </h3>
+                  <p className="text-gray-600">
+                    Our hospital assistants help in patient care, from admission
+                    to discharge, ensuring everything runs smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 19 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 md:pr-8 text-right relative">
+                <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-green-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-green-700 mb-2">
+                    Pediatrics Treatment
+                  </h3>
+                  <p className="text-gray-600">
+                    We offer comfortable accommodation options for international
+                    patients, from budget to luxury stays.
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10 bg-green-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic19.src}
+                  alt="Pediatrics Treatment"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2"></div>
+            </div>
+
+            {/* 20 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2"></div>
+              <div className="relative z-10 bg-red-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic20.src}
+                  alt="Gender Reassignment Surgery"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2 md:pl-8 text-left relative">
+                <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-red-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-red-700 mb-2">
+                    Gender Reassignment Surgery
+                  </h3>
+                  <p className="text-gray-600">
+                    Our ambulance services ensure critical patients arrive
+                    safely and on time, managed by trained professionals.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 21 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 md:pr-8 text-right relative">
+                <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-yellow-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-yellow-700 mb-2">
+                    Preventive Health Check
+                  </h3>
+                  <p className="text-gray-600">
+                    We assist with every step of visa preparation, including
+                    providing a free “Visa Invitation Letter”.
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10 bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic21.src}
+                  alt="Preventive Health Check"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2"></div>
+            </div>
+
+            {/* 22 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2"></div>
+              <div className="relative z-10 bg-purple-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic22.src}
+                  alt="Pediatric Cardiology"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2 md:pl-8 text-left relative">
+                <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-purple-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-purple-700 mb-2">
+                    Pediatric Cardiology
+                  </h3>
+                  <p className="text-gray-600">
+                    We provide safe and reliable transport facilities for
+                    patients and their families from airport to hospital.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 23 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 md:pr-8 text-right relative">
+                <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-teal-500"></span>
+                <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
+                  <h3 className="text-xl font-semibold text-teal-700 mb-2">
+                    Gynecology Treatment
+                  </h3>
+                  <p className="text-gray-600">
+                    We provide translators to help patients discuss comfortably
+                    and clearly with doctors and staff.
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10 bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic23.src}
+                  alt="Gynecology Treatment"
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+              <div className="md:w-1/2"></div>
+            </div>
+
+            {/* 24 */}
+            <div className="mb-12 flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2"></div>
+              <div className="relative z-10 bg-indigo-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
+                <img
+                  src={pic24.src}
                   alt="Obesity Treatment"
                   className="w-10 h-10 object-contain"
                 />
