@@ -57,8 +57,8 @@ export default function TopHeader() {
             <Image
               src={img2}
               alt="Quote"
-              width={40}
-              height={25}
+              width={50}
+              height={30}
               className="rounded-md"
             />
             <span>Get Quote !</span>
@@ -67,8 +67,8 @@ export default function TopHeader() {
             <Image
               src={img1}
               alt="Partner"
-              width={35}
-              height={15}
+              width={40}
+              height={30}
               className="rounded-md"
             />
             <span>Become Partner !</span>
@@ -78,7 +78,7 @@ export default function TopHeader() {
               src={img3}
               alt="Phone"
               width={50}
-              height={20}
+              height={30}
               className="rounded-md"
             />
             <span>Chat</span>

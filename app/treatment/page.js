@@ -121,7 +121,7 @@ export default function TreatmentServices() {
   return (
     <>
       {/* Banner Section */}
-      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+      <div className="bg-white relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
         <Image
           src={img}
           alt="Our Fee Banner"

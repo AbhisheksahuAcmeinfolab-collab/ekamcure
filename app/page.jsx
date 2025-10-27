@@ -180,7 +180,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-transparent">
+      <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-white">
         {/* Background Image + Overlay */}
         <div className="absolute inset-0 bg-dark">
           <AnimatePresence mode="">
