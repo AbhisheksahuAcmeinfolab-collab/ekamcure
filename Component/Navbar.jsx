@@ -3,17 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
-// import { useTranslation } from "next-i18next";
-// import { i18nextConfig } from "../next-i18next.config";
-import img from "../assets/newimage/Logo.webp";
+import { usePathname } from "next/navigation";
+import img from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
-  // const { t } = useTranslation();
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -24,12 +19,6 @@ export default function Navbar() {
     { name: "Contact Us", href: "/contact" },
   ];
 
-  // const changeLanguage = (lng) => {
-  //   const pathWithoutLocale = pathname.split("/").slice(2).join("/") || "";
-  //   router.push(`/${lng}/${pathWithoutLocale}`);
-  //   setLangOpen(false);
-  // };
-
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-12">
@@ -38,7 +27,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-4 px-4 sm:px-8">
             <Image
               src={img}
-              alt="Health India Logo"
+              alt="Ekam Logo"
               width={120}
               height={50}
               className="rounded-md"
@@ -67,32 +56,15 @@ export default function Navbar() {
               );
             })}
 
-            {/* Language Dropdown
-            <div className="relative">
-              <button
-                onClick={() => setLangOpen(!langOpen)}
-                className="font-semibold text-gray-900 dark:text-gray-100 hover:text-blue-600 transition duration-200"
-              >
-                {router.locale?.toUpperCase() || "EN"}
-              </button>
-              {langOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-md shadow-lg z-50">
-                  {i18nextConfig.i18n.locales.map((lng) => (
-                    <button
-                      key={lng}
-                      onClick={() => changeLanguage(lng)}
-                      className="block w-full text-left px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100"
-                    >
-                      {lng.toUpperCase()}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div> */}
+            {/* Single shared GTranslate Widget */}
+            <div className="gtranslate_wrapper ml-4"></div>
           </div>
 
           {/* Mobile Hamburger */}
-          <div className="flex xl:hidden items-center space-x-2 pr-4 md:pr-8">
+          <div className="flex xl:hidden items-center space-x-3 pr-4 md:pr-8">
+            {/* Same GTranslate widget (not duplicate) */}
+            <div className="gtranslate_wrapper mr-2"></div>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-900 dark:text-gray-100 hover:text-blue-600 transition duration-200 focus:outline-none"

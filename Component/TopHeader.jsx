@@ -24,7 +24,7 @@ export default function TopHeader() {
             height={20}
             className="rounded-md"
           />
-          <span className="font-medium">(+91) 9990205353 </span>
+          <span className="font-medium">{"(+91) 9990205353"}</span>
         </div>
 
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">

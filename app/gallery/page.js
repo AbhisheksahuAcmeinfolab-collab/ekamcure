@@ -38,16 +38,6 @@ const patients = [
     media: pic17,
     type: "image",
   },
-  {
-    name: "Sweety",
-    country: "Guinee",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
-    location: "Greater Kailash – 1, New Delhi, India",
-    media: pic17,
-    type: "image",
-  },
 ];
 
 export default function Gallery() {
@@ -67,6 +57,7 @@ export default function Gallery() {
         </div>
       </div>
 
+      {/* desktop responsive */}
       <section className="bg-white dark:bg-gray-900 py-12 px-4 md:px-10">
         {/* Heading */}
         <div className="text-center mb-10">
@@ -79,7 +70,7 @@ export default function Gallery() {
         </div>
 
         {/* Patients List */}
-        <div className="relative flex flex-col mx-auto items-center gap-8">
+        <div className="hidden md:flex relative flex flex-col mx-auto items-center gap-8">
           {patients.map((p, index) => (
             <div
               key={index}
@@ -88,7 +79,6 @@ export default function Gallery() {
               {/* Info Box */}
               <div className="bg-white dark:bg-gray-900 border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
                 <h3 className="text-xl md:text-2xl font-semibold mb-3">
-                
                   {p.name}
                 </h3>
                 <ul className="text-gray-700 space-y-1 text-sm md:text-base">
@@ -123,6 +113,42 @@ export default function Gallery() {
                   alt={p.name}
                   className="object-cover w-full h-auto scale-75"
                 />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ✅ Mobile Section */}
+        <div className="flex flex-col md:hidden mx-auto items-center gap-8">
+          {patients.map((p, index) => (
+            <div
+              key={index}
+              className="flex flex-col w-full sm:w-[400px] mx-auto bg-white border-2 border-blue-900 rounded-2xl shadow-md overflow-hidden"
+            >
+              <Image
+                src={p.media}
+                alt={p.name}
+                className="object-cover w-full h-[200px]"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3">{p.name}</h3>
+                <ul className="text-gray-700 space-y-1 text-sm">
+                  <li>
+                    <strong>Native Country:</strong> {p.country}
+                  </li>
+                  <li>
+                    <strong>Treatment:</strong> {p.treatment}
+                  </li>
+                  <li>
+                    <strong>Hospital:</strong> {p.hospital}
+                  </li>
+                  <li>
+                    <strong>Doctor:</strong> {p.doctor}
+                  </li>
+                  <li>
+                    <strong>Location:</strong> {p.location}
+                  </li>
+                </ul>
               </div>
             </div>
           ))}
