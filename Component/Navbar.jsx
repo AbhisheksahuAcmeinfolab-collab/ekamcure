@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white dark:bg-white text-[#0A1F44] dark:text-[#0A1F44] shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
+    <nav className="bg-white dark:text-[#0A1F44] shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-12">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
