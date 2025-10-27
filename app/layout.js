@@ -1,10 +1,11 @@
 {
   /* <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"hi","languages":["hi","fr","it","es"],"globe_color":"#66aaff","wrapper_selector":".gtranslate_wrapper","flag_size":48,"alt_flags":{"en":"usa","pt":"brazil","es":"mexico","fr":"quebec"}}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
- */
+<script>window.gtranslateSettings = {"default_language":"hi","languages":["hi","fr","it","es","af","ko",
+"de","hy"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline",
+"float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"en":"usa","pt":"brazil","es":
+"mexico","fr":"quebec"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> */
 }
-
 // "use client"
 import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
@@ -52,6 +53,44 @@ export default function RootLayout({ children }) {
           id="gtranslate-settings"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
+            __html: `
+      if (window.innerWidth < 768) {
+        // Mobile view (inline)
+        window.gtranslateSettings = {
+          default_language: "hi",
+          languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
+          wrapper_selector: ".gtranslate_mobile",
+          switcher_horizontal_position: "inline",
+          float_switcher_open_direction: "bottom",
+          flag_style: "2d",
+          alt_flags: { en: "usa", pt: "brazil", es: "mexico", fr: "quebec" }
+        };
+      } else {
+        // Desktop view (bottom-left fixed)
+        window.gtranslateSettings = {
+          default_language: "hi",
+          languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
+          wrapper_selector: ".gtranslate_desktop",
+          switcher_horizontal_position: "left",
+          switcher_vertical_position: "bottom",
+          flag_style: "2d",
+          alt_flags: { en: "usa", pt: "brazil", es: "mexico", fr: "quebec" }
+        };
+      }
+    `,
+          }}
+        />
+
+        <Script
+          src="https://cdn.gtranslate.net/widgets/latest/float.js"
+          strategy="afterInteractive"
+          defer
+        />
+
+        {/* <Script
+          id="gtranslate-settings"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
             __html: `window.gtranslateSettings = {"default_language":"en",
             "native_language_names": true,
         "detect_browser_language": true,"languages"
@@ -64,7 +103,7 @@ export default function RootLayout({ children }) {
           src="https://cdn.gtranslate.net/widgets/latest/globe.js"
           strategy="afterInteractive"
           defer
-        ></Script>
+        ></Script> */}
         <TopHeader />
         <Navbar />
         {children}

@@ -480,13 +480,13 @@ export default function Home() {
               </div>
 
               {/* MOBILE VIEW */}
-              <div className="flex md:hidden w-full">
+              <div className="relative flex md:hidden w-full justify-center -ml-8">
                 {/* Text Box */}
                 <div
                   className="
                   bg-white border-2 border-blue-900 rounded-2xl
-                  p-6 md:p-8 shadow-md
-                  lg:w-5xl md:w-[50%]
+                  p-6 shadow-md
+                  w-[60%]
                   relative z-10
                 "
                 >
@@ -512,21 +512,18 @@ export default function Home() {
                   </ul>
                 </div>
                 <div
-                  className="sm:right-[-60px]
-                sm:absolute sm:top-1/2
-                sm:-translate-y-1/2
-                w-[230px] sm:w-[260px] 
-                mt-6 md:mt-0
-                bg-white border-2 border-blue-900 rounded-xl
-                overflow-hidden shadow-lg z-20
+                  className="absolute top-1/2 right-[-10px] -translate-y-1/2
+                  w-[130px] sm:w-[100px]
+                  bg-white border-2 border-blue-900 rounded-xl
+                  overflow-hidden shadow-lg z-10
                 "
                 >
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
                     className="
-                    object-cover w-full h-auto items-center
-                    md:scale-30
+                    object-cover w-full h-50
+                    scale-75
                   "
                   />
                 </div>

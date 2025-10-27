@@ -59,17 +59,21 @@ export default function Navbar() {
               })}
 
               {/* GTranslate */}
-              <div className="gtranslate_wrapper ml-2"></div>
+              <div className="hidden md:block">
+                {/* Desktop: bottom-left fixed */}
+                <div className="gtranslate_wrapper gtranslate_desktop"></div>
+              </div>
             </div>
           </div>
 
           {/* ---------- Mobile View ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full px-4">
-            {/* Left: Globe */}
-            <div className="gtranslate_wrapper"></div>
-
+            <div className="block md:hidden w-4 h-auto">
+              {/* Mobile: inline */}
+              <div className="gtranslate_wrapper gtranslate_mobile"></div>
+            </div>
             {/* Center: Logo */}
-            <Link href="/" className="flex justify-center">
+            <Link href="/" className="flex justify-center -ml-8">
               <Image
                 src={img}
                 alt="Ekam Logo"
