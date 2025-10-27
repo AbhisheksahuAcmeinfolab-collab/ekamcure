@@ -58,7 +58,7 @@ export default function Gallery() {
       </div>
 
       {/* desktop responsive */}
-      <section className="bg-white dark:bg-gray-900 py-12 px-4 md:px-10">
+      <section className="bg-white py-12 px-4 md:px-10">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold">
