@@ -1,3 +1,10 @@
+{
+  /* <div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"hi","languages":["hi","fr","it","es"],"globe_color":"#66aaff","wrapper_selector":".gtranslate_wrapper","flag_size":48,"alt_flags":{"en":"usa","pt":"brazil","es":"mexico","fr":"quebec"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+ */
+}
+
 // "use client"
 import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
@@ -41,33 +48,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* {/* GTranslate Widget */}
-        {/* <div className="gtranslate_wrapper"></div> */}
-
         <Script
           id="gtranslate-settings"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `
-      window.gtranslateSettings = {
-        "default_language": "en",
-        "native_language_names": true,
-        "detect_browser_language": true,
-        "languages": ["en","fr","it","es","hi"],
-        "wrapper_selector": ".gtranslate_wrapper",
-        "flag_style": "3d",
-        "alt_flags": {"en": "usa"}
-      };
-    `,
+            __html: `window.gtranslateSettings = {"default_language":"en",
+            "native_language_names": true,
+        "detect_browser_language": true,"languages"
+        :["en","hi","fr","it","es","af","ko","de","hy"],"globe_color":"#66aaff","wrapper_selector"
+        :".gtranslate_wrapper","flag_size":20,"alt_flags":{"en":"usa","pt":"brazil","es"
+        :"mexico","fr":"quebec"}, "globe_size":30};`,
           }}
         />
-
         <Script
-          src="https://cdn.gtranslate.net/widgets/latest/popup.js"
+          src="https://cdn.gtranslate.net/widgets/latest/globe.js"
           strategy="afterInteractive"
           defer
-        />
-
+        ></Script>
         <TopHeader />
         <Navbar />
         {children}

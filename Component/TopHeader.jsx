@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import img1 from "../assets/image/img1.png";
 import img2 from "../assets/image/img2.png";
-import img3 from "../assets/image/img3.png";
+import img3 from "../assets/newimage/what.webp";
 
 export default function TopHeader() {
   return (
@@ -19,9 +19,9 @@ export default function TopHeader() {
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <Image
             src={img3}
-            alt="Phone"
-            width={35}
-            height={20}
+            alt="phone"
+            width={20}
+            height={10}
             className="rounded-md"
           />
           <span className="font-medium">{"(+91) 9990205353"}</span>
@@ -77,7 +77,7 @@ export default function TopHeader() {
             <Image
               src={img3}
               alt="Phone"
-              width={50}
+              width={40}
               height={30}
               className="rounded-md"
             />
