@@ -68,7 +68,7 @@ export default function Navbar() {
 
           {/* ---------- Mobile View ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full px-4">
-            <div className="block md:hidden w-4 h-auto">
+            <div className="block md:hidden w-5">
               {/* Mobile: inline */}
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
             </div>

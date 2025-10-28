@@ -125,31 +125,28 @@ const specialties = [
 
 const patients = [
   {
-    name: "Abhishek Sahu",
-    country: "Guinee",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
-    location: "Greater Kailash – 1, New Delhi, India",
+    name: "Abdullah AI Mamun",
+    country: "Bangladesh",
+    treatment: "Health Checkup",
+    hospital: "Balaji Action Hospital",
+    location: "Paschim vihar, New Delhi, India",
     media: pic15,
     type: "image",
   },
   {
     name: "Ibrahima Kalil",
-    country: "Guinee",
+    country: "Saudi Arab",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
     location: "Greater Kailash – 1, New Delhi, India",
     media: pic16,
     type: "image",
   },
   {
-    name: "Sweety",
+    name: "Abdullah AI Mamun",
     country: "Guinee",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
     location: "Greater Kailash – 1, New Delhi, India",
     media: pic17,
     type: "image",
@@ -243,14 +240,18 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition duration-300"
                 >
-                  Get Quote!
+                  <a href="/contact" rel="noopener noreferrer" target="_blank">
+                    Get Quote!
+                  </a>
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition duration-300"
                 >
-                  Become Partner!
+                  <a href="/contact" rel="noopener noreferrer" target="_blank">
+                    Become Partner!
+                  </a>
                 </motion.button>
               </div>
             </motion.div>
@@ -452,9 +453,6 @@ export default function Home() {
                       <strong>Hospital:</strong> {currentPatient.hospital}
                     </li>
                     <li>
-                      <strong>Doctor Name:</strong> {currentPatient.doctor}
-                    </li>
-                    <li>
                       <strong>Location:</strong> {currentPatient.location}
                     </li>
                   </ul>
@@ -502,9 +500,6 @@ export default function Home() {
                     </li>
                     <li>
                       <strong>Hospital:</strong> {currentPatient.hospital}
-                    </li>
-                    <li>
-                      <strong>Doctor Name:</strong> {currentPatient.doctor}
                     </li>
                     <li>
                       <strong>Location:</strong> {currentPatient.location}
