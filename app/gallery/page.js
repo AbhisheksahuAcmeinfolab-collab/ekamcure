@@ -1,6 +1,6 @@
 "use client";
+
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import img from "../../assets/newimage/team-bg-bg.webp";
 import pic15 from "../../assets/newimage/hp1.webp";
@@ -9,12 +9,11 @@ import pic17 from "../../assets/newimage/hp3.webp";
 
 const patients = [
   {
-    name: "Abhishek Sahu",
-    country: "Guinee",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
-    location: "Greater Kailash – 1, New Delhi, India",
+    name: "Abdullah AI Mamun",
+    country: "Bangladesh",
+    treatment: "Health Checkup",
+    hospital: "Balaji Action Hospital",
+    location: "Paschim vihar, New Delhi, India",
     media: pic15,
     type: "image",
   },
@@ -23,27 +22,27 @@ const patients = [
     country: "Guinee",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
     location: "Greater Kailash – 1, New Delhi, India",
     media: pic16,
     type: "image",
   },
   {
-    name: "Sweety",
+    name: "Abdullah AI Mamun",
     country: "Guinee",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
-    doctor: "Dr. Lalit Bafna",
     location: "Greater Kailash – 1, New Delhi, India",
     media: pic17,
     type: "image",
   },
 ];
 
+
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
   return (
     <>
+    {/* <GalleryPage/> */}
       {/* Banner Section */}
       <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
         <Image
@@ -92,10 +91,10 @@ export default function Gallery() {
                     <strong>Hospital:</strong> {p.hospital}
                   </li>
                   <li>
-                    <strong>Doctor Name:</strong> {p.doctor}
+                    <strong>Location:</strong> {p.location}
                   </li>
                   <li>
-                    <strong>Location:</strong> {p.location}
+                    <a href="#">Read more</a>
                   </li>
                 </ul>
               </div>
@@ -104,9 +103,9 @@ export default function Gallery() {
               <div
                 className={`md:absolute md:top-1/2 md:-translate-y-1/2
                   index % 2 === 0 ? lg:right-[-200px] md:right-[-50px]
-              w-[230px] sm:w-[260px] md:w-[280px]
-              mt-6 md:mt-0 bg-white border-2 border-blue-900 rounded-xl
-              overflow-hidden shadow-lg z-20`}
+                  w-[230px] sm:w-[260px] md:w-[280px]
+                  mt-6 md:mt-0 bg-white border-2 border-blue-900 rounded-xl
+                  overflow-hidden shadow-lg z-20`}
               >
                 <Image
                   src={p.media}
@@ -118,39 +117,55 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* ✅ Mobile Section */}
-        <div className="flex flex-col md:hidden mx-auto items-center gap-8">
+        {/* MOBILE VIEW */}
+        <div className="relative flex flex-col mx-auto items-center gap-8">
           {patients.map((p, index) => (
             <div
               key={index}
-              className="flex flex-col w-full sm:w-[400px] mx-auto bg-white border-2 border-blue-900 rounded-2xl shadow-md overflow-hidden"
+              className="relative flex md:hidden w-full justify-center -ml-12"
             >
-              <Image
-                src={p.media}
-                alt={p.name}
-                className="object-cover w-full h-[200px]"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3">{p.name}</h3>
-                <ul className="text-gray-700 space-y-1 text-sm">
+              {/* <div className="relative flex md:hidden w-full justify-center -ml-8"> */}
+              {/* Text Box */}
+              <div
+                className="
+                          bg-white border-2 border-blue-900 rounded-2xl
+                          p-6 shadow-md
+                          w-[60%]
+                          relative z-10
+                        "
+              >
+                <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                  {patients[current].name}
+                </h3>
+                <ul className="text-gray-700 space-y-1 text-sm md:text-base">
                   <li>
-                    <strong>Native Country:</strong> {p.country}
+                    <strong>Native Country:</strong> {patients[current].country}
                   </li>
                   <li>
-                    <strong>Treatment:</strong> {p.treatment}
+                    <strong>Treatment:</strong> {patients[current].treatment}
                   </li>
                   <li>
-                    <strong>Hospital:</strong> {p.hospital}
+                    <strong>Hospital:</strong> {patients[current].hospital}
                   </li>
                   <li>
-                    <strong>Doctor:</strong> {p.doctor}
-                  </li>
-                  <li>
-                    <strong>Location:</strong> {p.location}
+                    <strong>Location:</strong> {patients[current].location}
                   </li>
                 </ul>
               </div>
+              <div
+                className="absolute top-1/2 right-[-10px] -translate-y-1/2
+                w-[130px] sm:w-[100px]
+                bg-white border-2 border-blue-900 rounded-xl
+                overflow-hidden shadow-lg z-10"
+              >
+                <Image
+                  src={patients[current].media}
+                  alt={patients[current].name}
+                  className="object-cover w-full h-50 scale-75"
+                />
+              </div>
             </div>
+            // </div>
           ))}
         </div>
       </section>

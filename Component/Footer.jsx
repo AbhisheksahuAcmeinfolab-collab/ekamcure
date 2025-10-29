@@ -17,18 +17,30 @@ export default function Footer() {
       icon: MdLocationOn,
       label: "Office Address",
       text: "Delhi, India",
+      href: "https://maps.google.com?q=Delhi,India",
     },
     {
       icon: MdEmail,
       label: "Send Email",
       text: "info@ekamcure.com",
+      href: "mailto:info@ekamcure.com",
     },
     {
       icon: MdPhone,
       label: "Call Emergency",
       text: "(+91) 9990205353",
+      href: "https://wa.me/919990205353", // WhatsApp link or tel:+919990205353
     },
   ];
+
+  const services = [
+    { name: "Terms and Conditions", href: "/termscondition" },
+    { name: "Privacy Policy", href: "/privacypolicy" },
+    { name: "Disclaimer", href: "/disclaimer" },
+    { name: "Refund Policy", href: "/refundpolicy" },
+    { name: "Help & FAQS", href: "/helpfaqs" },
+  ];
+
   const links = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
@@ -62,7 +74,9 @@ export default function Footer() {
             whileHover={{ scale: 1.05 }}
             className="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 mt-2 rounded-full flex items-center gap-2 text-sm shadow-md transition-transform"
           >
-            GET CONSULTATION →
+            <Link href="/contact" className="flex items-center gap-2">
+              GET CONSULTATION →
+            </Link>
           </motion.button>
 
           {/* Social Icons */}
@@ -88,23 +102,21 @@ export default function Footer() {
           <h3 className="text-white text-lg font-semibold mb-4 border-b-2 border-cyan-500 inline-block">
             OUR SERVICES
           </h3>
+
           <ul className="space-y-2 text-sm">
-            {[
-              "IVF",
-              "Terms and Conditions",
-              "Privacy Policy",
-              "Disclaimer",
-              "Refund Policy",
-              "Help & FAQS",
-              "Contact Us",
-            ].map((service, i) => (
+            {services.map((service, i) => (
               <motion.li
                 key={i}
                 whileTap={{ scale: 0.95 }}
                 whileHover={{ x: 6, color: "#22d3ee" }}
                 className="cursor-pointer transition-all"
               >
-                {service}
+                <Link
+                  href={service.href}
+                  className="text-gray-300 hover:text-cyan-400 transition-colors"
+                >
+                  {service.name}
+                </Link>
               </motion.li>
             ))}
           </ul>
@@ -117,21 +129,20 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             {links.map((link, i) => (
-                <motion.li
-                  key={i}
-                  whileTap={{ scale: 0.95 }}
-                  whileHover={{ x: 6, color: "#22d3ee" }}
-                  className="cursor-pointer transition-all"
+              <motion.li
+                key={i}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ x: 6, color: "#22d3ee" }}
+                className="cursor-pointer transition-all"
+              >
+                <Link
+                  href={link.href}
+                  className="hover:text-teal-400 duration-200"
                 >
-                  <Link
-                    href={link.href}
-                    className="hover:text-teal-400 duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </motion.li>
-              )
-            )}
+                  {link.name}
+                </Link>
+              </motion.li>
+            ))}
           </ul>
         </div>
       </div>
@@ -142,9 +153,13 @@ export default function Footer() {
           {/* content here */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/20">
-            {infoItems.map(({ icon: Icon, label, text }, i) => (
-              <div
+            {infoItems.map(({ icon: Icon, label, text, href }, i) => (
+              // <div
+              <a
                 key={i}
+                href={href || "#"}
+                target={href?.startsWith("http") ? "_blank" : "_self"}
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-6 text-black transition transform hover:scale-105 hover:bg-white/10 rounded-3xl md:rounded-none cursor-pointer"
               >
                 {/* Icon inside circle */}
@@ -157,7 +172,7 @@ export default function Footer() {
                   <p className="text-sm font-semibold">{label}</p>
                   <p className="text-lg font-bold">{text}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -167,19 +182,27 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
           {/* Left side */}
           <div className="flex items-center gap-2 text-white-600">
-            <a href="#" className="hover:text-cyan-400">
+            <Link href="/termscondition" className="hover:text-cyan-400">
               Terms & Conditions
-            </a>
+            </Link>
             <span className="text-white-400">|</span>
-            <a href="#" className="hover:text-cyan-400">
+            <Link href="/privacypolicy" className="hover:text-cyan-400">
               Privacy Policy
-            </a>
+            </Link>
           </div>
 
           {/* Right side */}
-          <div className="text-white mt-2 md:mt-0 hover:text-cyan-400">
+          <div className="text-white mt-2 md:mt-0 ">
             Designed by{" "}
-            <span className="text-white-600 font-semibold">AcmeInfolabs</span>
+            <Link
+              href="https://www.acmeinfolabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="text-white-600 font-semibold hover:text-cyan-400">
+                AcmeInfolabs
+              </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -189,6 +212,7 @@ export default function Footer() {
 
 // "use client";
 // import { motion } from "framer-motion";
+// import Link from "next/link";
 // import {
 //   FaFacebookF,
 //   FaTwitter,
@@ -205,17 +229,27 @@ export default function Footer() {
 //       icon: MdLocationOn,
 //       label: "Office Address",
 //       text: "Delhi, India",
+//       href: "https://maps.google.com?q=Delhi,India",
 //     },
 //     {
 //       icon: MdEmail,
 //       label: "Send Email",
 //       text: "info@ekamcure.com",
+//       href: "mailto:info@ekamcure.com",
 //     },
 //     {
 //       icon: MdPhone,
 //       label: "Call Emergency",
 //       text: "(+91) 9990205353",
+//       href: "https://wa.me/919990205353", // WhatsApp link or tel:+919990205353
 //     },
+//   ];
+//   const links = [
+//     { name: "Home", href: "/" },
+//     { name: "About Us", href: "/about" },
+//     { name: "Our Services", href: "/services" },
+//     { name: "Our Fees", href: "/fees" },
+//     { name: "Contact Us", href: "/contact" },
 //   ];
 
 //   return (
@@ -243,7 +277,9 @@ export default function Footer() {
 //             whileHover={{ scale: 1.05 }}
 //             className="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 mt-2 rounded-full flex items-center gap-2 text-sm shadow-md transition-transform"
 //           >
-//             GET CONSULTATION →
+//             <Link href="/contact" className="flex items-center gap-2">
+//               GET CONSULTATION →
+//             </Link>
 //           </motion.button>
 
 //           {/* Social Icons */}
@@ -271,7 +307,6 @@ export default function Footer() {
 //           </h3>
 //           <ul className="space-y-2 text-sm">
 //             {[
-//               "IVF",
 //               "Terms and Conditions",
 //               "Privacy Policy",
 //               "Disclaimer",
@@ -297,18 +332,21 @@ export default function Footer() {
 //             QUICK LINKS
 //           </h3>
 //           <ul className="space-y-2 text-sm">
-//             {["Home", "About Us", "Our Services", "Our Fees", "Contact Us"].map(
-//               (link, i) => (
-//                 <motion.li
-//                   key={i}
-//                   whileTap={{ scale: 0.95 }}
-//                   whileHover={{ x: 6, color: "#22d3ee" }}
-//                   className="cursor-pointer transition-all"
+//             {links.map((link, i) => (
+//               <motion.li
+//                 key={i}
+//                 whileTap={{ scale: 0.95 }}
+//                 whileHover={{ x: 6, color: "#22d3ee" }}
+//                 className="cursor-pointer transition-all"
+//               >
+//                 <Link
+//                   href={link.href}
+//                   className="hover:text-teal-400 duration-200"
 //                 >
-//                   {link}
-//                 </motion.li>
-//               )
-//             )}
+//                   {link.name}
+//                 </Link>
+//               </motion.li>
+//             ))}
 //           </ul>
 //         </div>
 //       </div>
@@ -319,9 +357,13 @@ export default function Footer() {
 //           {/* content here */}
 
 //           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/20">
-//             {infoItems.map(({ icon: Icon, label, text }, i) => (
-//               <div
+//             {infoItems.map(({ icon: Icon, label, text, href }, i) => (
+//               // <div
+//               <a
 //                 key={i}
+//                 href={href || "#"}
+//                 target={href?.startsWith("http") ? "_blank" : "_self"}
+//                 rel="noopener noreferrer"
 //                 className="flex items-center gap-4 p-6 text-black transition transform hover:scale-105 hover:bg-white/10 rounded-3xl md:rounded-none cursor-pointer"
 //               >
 //                 {/* Icon inside circle */}
@@ -334,7 +376,7 @@ export default function Footer() {
 //                   <p className="text-sm font-semibold">{label}</p>
 //                   <p className="text-lg font-bold">{text}</p>
 //                 </div>
-//               </div>
+//               </a>
 //             ))}
 //           </div>
 //         </div>
@@ -344,19 +386,25 @@ export default function Footer() {
 //         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
 //           {/* Left side */}
 //           <div className="flex items-center gap-2 text-white-600">
-//             <a href="#" className="hover:text-cyan-400">
+//             <Link href="/termscondition" className="hover:text-cyan-400">
 //               Terms & Conditions
-//             </a>
+//             </Link>
 //             <span className="text-white-400">|</span>
-//             <a href="#" className="hover:text-cyan-400">
+//             <Link href="/privacypolicy" className="hover:text-cyan-400">
 //               Privacy Policy
-//             </a>
+//             </Link>
 //           </div>
 
 //           {/* Right side */}
-//           <div className="text-white mt-2 md:mt-0 hover:text-cyan-400">
+//           <div className="text-white mt-2 md:mt-0 ">
 //             Designed by{" "}
-//             <span className="text-white-600 font-semibold">AcmeInfolabs</span>
+//             <Link
+//               href="https://www.acmeinfolabs.com/"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//             >
+//               <span className="text-white-600 font-semibold hover:text-cyan-400">AcmeInfolabs</span>
+//             </Link>
 //           </div>
 //         </div>
 //       </div>

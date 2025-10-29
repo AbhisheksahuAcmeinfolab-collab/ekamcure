@@ -32,7 +32,7 @@ export default function Footerup() {
       <section className="mb-12 bg-white">
         {/* Heading */}
         <div className="text-center py-8 px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black-800">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
             Top <span className="text-blue-900">Hospitals!</span>
           </h2>
         </div>

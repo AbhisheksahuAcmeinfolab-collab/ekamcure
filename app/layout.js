@@ -1,11 +1,4 @@
-{
-  /* <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"hi","languages":["hi","fr","it","es","af","ko",
-"de","hy"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline",
-"float_switcher_open_direction":"bottom","flag_style":"3d","alt_flags":{"en":"usa","pt":"brazil","es":
-"mexico","fr":"quebec"}}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> */
-}
+
 // "use client"
 import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
@@ -57,7 +50,7 @@ export default function RootLayout({ children }) {
       if (window.innerWidth < 768) {
         // Mobile view (inline)
         window.gtranslateSettings = {
-          default_language: "hi",
+          default_language: "en",
           languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
           wrapper_selector: ".gtranslate_mobile",
           switcher_horizontal_position: "inline",
@@ -68,7 +61,7 @@ export default function RootLayout({ children }) {
       } else {
         // Desktop view (bottom-left fixed)
         window.gtranslateSettings = {
-          default_language: "hi",
+          default_language: "en",
           languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
           wrapper_selector: ".gtranslate_desktop",
           switcher_horizontal_position: "left",
@@ -80,6 +73,7 @@ export default function RootLayout({ children }) {
     `,
           }}
         />
+
 
         <Script
           src="https://cdn.gtranslate.net/widgets/latest/float.js"
@@ -114,12 +108,33 @@ export default function RootLayout({ children }) {
   );
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // "use client"
 // import TopHeader from "@/Component/TopHeader";
 // import Navbar from "@/Component/Navbar";
 // import "./globals.css";
 // import Footer from "@/Component/Footer";
-// import Footerup from '@/Component/Footerup';
+// import Footerup from "@/Component/Footerup";
+// import Script from "next/script";
 
 // export const metadata = {
 //   title: {
@@ -156,12 +171,70 @@ export default function RootLayout({ children }) {
 //   return (
 //     <html lang="en">
 //       <body>
+//         <Script
+//           id="gtranslate-settings"
+//           strategy="afterInteractive"
+//           dangerouslySetInnerHTML={{
+//             __html: `
+//       if (window.innerWidth < 768) {
+//         // Mobile view (inline)
+//         window.gtranslateSettings = {
+//           default_language: "hi",
+//           languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
+//           wrapper_selector: ".gtranslate_mobile",
+//           switcher_horizontal_position: "inline",
+//           float_switcher_open_direction: "bottom",
+//           flag_style: "2d",
+//           alt_flags: { en: "usa", pt: "brazil", es: "mexico", fr: "quebec" }
+//         };
+//       } else {
+//         // Desktop view (bottom-left fixed)
+//         window.gtranslateSettings = {
+//           default_language: "hi",
+//           languages: ["hi", "en", "fr", "it", "es", "af", "ko", "de", "hy"],
+//           wrapper_selector: ".gtranslate_desktop",
+//           switcher_horizontal_position: "left",
+//           switcher_vertical_position: "bottom",
+//           flag_style: "2d",
+//           alt_flags: { en: "usa", pt: "brazil", es: "mexico", fr: "quebec" }
+//         };
+//       }
+//     `,
+//           }}
+//         />
+
+
+//         <Script
+//           src="https://cdn.gtranslate.net/widgets/latest/float.js"
+//           strategy="afterInteractive"
+//           defer
+//         />
+
+//         {/* <Script
+//           id="gtranslate-settings"
+//           strategy="afterInteractive"
+//           dangerouslySetInnerHTML={{
+//             __html: `window.gtranslateSettings = {"default_language":"en",
+//             "native_language_names": true,
+//         "detect_browser_language": true,"languages"
+//         :["en","hi","fr","it","es","af","ko","de","hy"],"globe_color":"#66aaff","wrapper_selector"
+//         :".gtranslate_wrapper","flag_size":20,"alt_flags":{"en":"usa","pt":"brazil","es"
+//         :"mexico","fr":"quebec"}, "globe_size":30};`,
+//           }}
+//         />
+//         <Script
+//           src="https://cdn.gtranslate.net/widgets/latest/globe.js"
+//           strategy="afterInteractive"
+//           defer
+//         ></Script> */}
 //         <TopHeader />
 //         <Navbar />
 //         {children}
-//         <Footerup/>
+//         <Footerup />
 //         <Footer />
 //       </body>
 //     </html>
 //   );
 // }
+
+
