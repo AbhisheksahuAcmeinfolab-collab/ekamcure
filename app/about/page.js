@@ -7,14 +7,8 @@ import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct 
 import Img4 from "../../assets/newimage/sanu Das.webp";
 import Img5 from "../../assets/newimage/Pratap Sir.webp";
 import Img6 from "../../assets/newimage/Vijay kumar.webp";
-import Accordion from "./Accordion"; // Client component
+import Accordion from "./layout"; // Client component
 
-// ✅ Metadata works only in server components
-export const metadata = {
-  title: "Best Medical Travel Services in India | Ekam",
-  description:
-    "Ekam connects patients with top hospitals and doctors in India, ensuring safe and hassle-free medical travel.",
-};
 
 export default function AboutUs() {
   const services = [

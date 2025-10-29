@@ -74,7 +74,7 @@ export default function TopHeader() {
       {/* 📱 Mobile Bottom Sticky Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 shadow-md md:hidden z-50">
         <div className="flex justify-around items-center py-2 text-[#053161] text-center">
-          <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer text-center">
+          <div className="flex flex-col items-center justify-center text-xs hover:text-blue-600 cursor-pointer text-center">
             <a
               href="/contact"
               target="_blank"
@@ -84,13 +84,13 @@ export default function TopHeader() {
                 src={img2}
                 alt="Quote"
                 width={50}
-                height={30}
+                height={20}
                 className="rounded-md items-center"
               />
-              <span>Get Quote!</span>
+              <span className="font-bold text-md">Get Quote!</span>
             </a>
           </div>
-          <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
+          <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer justify-center">
             <a
               href="/contact"
               target="_blank"
@@ -100,10 +100,10 @@ export default function TopHeader() {
                 src={img1}
                 alt="Partner"
                 width={40}
-                height={30}
+                height={20}
                 className="rounded-md items-center"
               />
-              <span>Become Partner!</span>
+              <span className="font-bold text-md">Become Partner!</span>
             </a>
           </div>
           <div className="flex flex-col items-center text-xs hover:text-blue-600 cursor-pointer">
@@ -116,10 +116,10 @@ export default function TopHeader() {
                 src={img3}
                 alt="WhatsApp"
                 width={30}
-                height={20}
+                height={30}
                 className="rounded-md items-center"
               />
-              <span className="font-medium text-bold">Chat</span>
+              <span className="font-bold text-md">Chat</span>
             </a>
           </div>
         </div>
