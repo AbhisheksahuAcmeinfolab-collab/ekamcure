@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hi! I am Abhishek Sahu. I am a web developer in "Acme infolabs Pvt. Ltd.", It is priority in mobile application accourding to Mobile Responsive. It website also desktop responsive. This is my company website which name is "Ekamcure".
+
+Live host this website:-
+[Ekamcure](https://ekamcure.vercel.app/)
+
+Hello Good morning!
+Hello! Good Morning!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -33,7 +55,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
 
-Hello Good morning!
-Hello! Good Morning!

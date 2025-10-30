@@ -22,9 +22,9 @@ import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
 import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
-import pic15 from "../assets/newimage/hp1.webp";
+import pic15 from "../assets/newimage/image.webp";
 import pic16 from "../assets/newimage/hp2.webp";
-import pic17 from "../assets/newimage/hp3.webp";
+import pic17 from "../assets/newimage/image.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -472,7 +472,7 @@ export default function Home() {
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
-                    className="object-cover w-full h-auto scale-75"
+                    className="object-cover w-full h-50 scale-75"
                   />
                 </div>
               </div>

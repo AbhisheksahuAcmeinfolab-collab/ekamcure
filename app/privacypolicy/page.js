@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         />
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
-            Privacy Policy for Indian Health Adviser
+            Privacy Policy
           </h1>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
         <div className="max-w-5xl mx-auto bg-white shadow-md rounded-2xl p-8 md:p-12">
           {/* Page Title */}
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-            Privacy Policy for Indian Health Adviser
+            Privacy Policy
           </h1>
 
           {/* Section 1 */}

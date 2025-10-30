@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/newimage/bg.webp";
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
