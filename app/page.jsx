@@ -361,10 +361,10 @@ export default function Home() {
       </section>
 
       {/* Small Slider Section */}
-      <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
+      <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white ">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-grey">
             Explore{" "}
             <span className="text-blue-900 font-bold">Top Treatments</span>
           </h2>
@@ -415,7 +415,7 @@ export default function Home() {
       <section className="bg-white dark:text-grey py-12 px-4 md:px-10">
         {/* Heading */}
         <div className="text-center mb-10 ">
-          <h2 className="text-2xl md:text-3xl font-semibold">
+          <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
             Patient <span className="text-blue-900">Success Stories</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
@@ -439,7 +439,7 @@ export default function Home() {
               {/* Text Box */}
               <div className="hidden md:flex w-full">
                 <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-grey">
                     {currentPatient.name}
                   </h3>
                   <ul className="text-gray-700 space-y-1 text-sm md:text-base">
