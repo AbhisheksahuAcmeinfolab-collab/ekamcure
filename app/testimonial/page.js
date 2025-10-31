@@ -57,7 +57,7 @@ export default function Gallery() {
       </div>
 
       {/* desktop responsive */}
-      <section className="bg-white py-12 px-4 md:px-10">
+      <section className="bg-white dark:text-black py-12 px-4 md:px-10">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold">
@@ -76,7 +76,7 @@ export default function Gallery() {
               className="relative flex flex-col md:flex-row w-full md:w-[570px] mx-auto"
             >
               {/* Info Box */}
-              <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
+              <div className="bg-white dark:text-black border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
                 <h3 className="text-xl md:text-2xl font-semibold mb-3">
                   {p.name}
                 </h3>
@@ -134,7 +134,7 @@ export default function Gallery() {
                           relative z-10
                         "
               >
-                <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                <h3 className="text-xl dark:text-black md:text-2xl font-semibold mb-3">
                   {patients[current].name}
                 </h3>
                 <ul className="text-gray-700 space-y-1 text-sm md:text-base">
@@ -159,8 +159,8 @@ export default function Gallery() {
                 overflow-hidden shadow-lg z-10"
               >
                 <Image
-                  src={patients[current].media}
-                  alt={patients[current].name}
+                  src={p.media}
+                  alt={p.name}
                   className="object-cover w-full h-50 scale-75"
                 />
               </div>
