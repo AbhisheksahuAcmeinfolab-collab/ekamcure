@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/recent/common banner.webp";
 
 export default function PrivacyPolicy() {
   return (

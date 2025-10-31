@@ -22,9 +22,9 @@ import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
 import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
-import pic15 from "../assets/newimage/image.webp";
-import pic16 from "../assets/newimage/hp2.webp";
-import pic17 from "../assets/newimage/image.webp";
+import pic15 from "../assets/recent/patient2.webp";
+import pic16 from "../assets/recent/patient1.webp";
+import pic17 from "../assets/recent/patient2.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -364,7 +364,7 @@ export default function Home() {
       <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white ">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-grey">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-black">
             Explore{" "}
             <span className="text-blue-900 font-bold">Top Treatments</span>
           </h2>
@@ -412,7 +412,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white dark:text-grey py-12 px-4 md:px-10">
+      <section className="bg-white dark:text-black py-12 px-4 md:px-10">
         {/* Heading */}
         <div className="text-center mb-10 ">
           <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
@@ -439,7 +439,7 @@ export default function Home() {
               {/* Text Box */}
               <div className="hidden md:flex w-full">
                 <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-grey">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-black">
                     {currentPatient.name}
                   </h3>
                   <ul className="text-gray-700 space-y-1 text-sm md:text-base">
@@ -472,7 +472,7 @@ export default function Home() {
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
-                    className="object-cover w-full h-50 scale-75"
+                    className="object-cover w-full h-55 scale-75"
                   />
                 </div>
               </div>
@@ -530,7 +530,7 @@ export default function Home() {
         {/* View All Button */}
         <div className="text-center mt-10">
           <a
-            href="/gallery"
+            href="/testimonial"
             className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
           >
             View All →

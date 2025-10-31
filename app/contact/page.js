@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/recent/common banner.webp";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,

@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import img from "../../assets/newimage/team-bg-bg.webp";
-import pic15 from "../../assets/newimage/hp1.webp";
-import pic16 from "../../assets/newimage/hp2.webp";
-import pic17 from "../../assets/newimage/hp3.webp";
+import img from "../../assets/recent/common banner.webp";
+import pic15 from "../../assets/recent/patient1.webp";
+import pic16 from "../../assets/recent/patient2.webp";
+import pic17 from "../../assets/recent/patient1.webp";
 
 const patients = [
   {
@@ -93,8 +93,8 @@ export default function Gallery() {
                   <li>
                     <strong>Location:</strong> {p.location}
                   </li>
-                  <li>
-                    <a href="#">Read more</a>
+                  <li className="text-blue-700">
+                    <a href="/photogallery">Read more</a>
                   </li>
                 </ul>
               </div>
@@ -110,7 +110,7 @@ export default function Gallery() {
                 <Image
                   src={p.media}
                   alt={p.name}
-                  className="object-cover w-full h-auto scale-75"
+                  className="object-cover w-full h-50 scale-75"
                 />
               </div>
             </div>
@@ -165,7 +165,6 @@ export default function Gallery() {
                 />
               </div>
             </div>
-            // </div>
           ))}
         </div>
       </section>

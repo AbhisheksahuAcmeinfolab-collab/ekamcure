@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import img from "../../assets/newimage/bg.webp";
+import img from "../../assets/recent/aboutbanner.webp";
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
@@ -123,7 +123,7 @@ export default function AboutUs() {
           src={img}
           alt="Our Fee Banner"
           fill
-          className="object-cover brightness-80"
+          className="object-cover brightness-80 w-full h-full"
         />
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
@@ -131,6 +131,7 @@ export default function AboutUs() {
           </h1>
         </div>
       </div>
+
       {/* // Outer container with padding */}
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50 ">
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">

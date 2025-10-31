@@ -15,11 +15,11 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Treatment", href: "/treatment" },
-    { name: "Testimonal", href: "/testimonal" },
+    { name: "Testimonal", href: "/testimonial" },
     { name: "Photo Gallery", href: "/photogallery" },
     { name: "Contact Us", href: "/contact" },
   ];
-
+    
   return (
     <nav className="bg-white dark:text-[#0A1F44] shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-12">
@@ -146,4 +146,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

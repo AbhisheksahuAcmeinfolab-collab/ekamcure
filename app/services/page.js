@@ -9,7 +9,7 @@ import {
   Hospital,
   Pill,
 } from "lucide-react";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/recent/common banner.webp";
 import pic1 from "../../assets/icon/1.png";
 import pic2 from "../../assets/icon/2.png";
 import pic3 from "../../assets/icon/3.png";
@@ -129,36 +129,12 @@ export default function ServicesPage() {
       <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-16 px-6 md:px-20 bg-blue">
         {/* Section Header */}
         <div className="text-center mb-12">
-          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Our Services
-          </h2> */}
-          {/* <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div> */}
           <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
             Providing world-class healthcare solutions with compassion,
             innovation, and expertise.
           </p>
         </div>
-
-        {/* Services Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div className="flex justify-center items-center mb-4">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm md:text-base">
-                {service.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-
+        
         {/* Header */}
         <div className="py-16 px-6 md:px-20 bg-gray-50">
           <div className="text-center mb-12">

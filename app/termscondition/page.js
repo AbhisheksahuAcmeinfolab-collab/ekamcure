@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/recent/common banner.webp";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 
 export default function termscondition() {

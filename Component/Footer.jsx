@@ -47,7 +47,7 @@ export default function Footer() {
     { name: "About Us", href: "/about" },
     { name: "Our Services", href: "/services" },
     { name: "Our Treatment", href: "/treatment" },
-    { name: "Our Testimonal", href: "/testimonal" },
+    { name: "Our Testimonal", href: "/testimonial" },
     { name: "Photo Gallery", href: "/photogallery" },
     { name: "Contact Us", href: "/contact" },
   ];

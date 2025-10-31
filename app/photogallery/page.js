@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import img from "../../assets/newimage/team-bg-bg.webp";
+import img from "../../assets/recent/common banner.webp";
 import pic15 from "../../assets/newimage/hp1.webp";
 import pic16 from "../../assets/newimage/hp2.webp";
 import pic17 from "../../assets/newimage/hp3.webp";
