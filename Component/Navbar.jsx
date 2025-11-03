@@ -16,12 +16,12 @@ export default function Navbar() {
     { name: "Services", href: "/services" },
     { name: "Treatment", href: "/treatment" },
     { name: "Testimonal", href: "/testimonial" },
-    { name: "Photo Gallery", href: "/photogallery" },
+    { name: "Photo Gallery", href: "/photo-gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
     
   return (
-    <nav className="bg-white dark:text-black shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
+    <nav className="bg-white dark:text-black-100 shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-12">
         <div className="flex justify-between items-center h-16">
           {/* ---------- Desktop View ---------- */}
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* ---------- Mobile View ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full px-4">
-            <div className="block md:hidden w-5">
+            <div className="block md:hidden w-5 -h-1 mb-6 md:mb-0">
               {/* Mobile: inline */}
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
             </div>
@@ -118,7 +118,7 @@ export default function Navbar() {
 
       {/* ---------- Mobile Dropdown Menu ---------- */}
       {isOpen && (
-        <div className="xl:hidden px-4 pb-4 space-y-2 bg-white dark:text-black transition-colors duration-300">
+        <div className="xl:hidden px-4 pb-4 space-y-2 bg-white dark:text-black-100 transition-colors duration-300">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -129,7 +129,7 @@ export default function Navbar() {
                 className={`block font-semibold transition duration-200 ${
                   isActive
                     ? "text-blue-600"
-                    : "text-gray-900 dark:text-gray-100 hover:text-blue-600"
+                    : "text-gray-900 dark:text-black-100 hover:text-blue-600"
                 }`}
               >
                 <span className="relative inline-block">

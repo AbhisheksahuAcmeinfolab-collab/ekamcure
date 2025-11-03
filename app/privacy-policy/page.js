@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import img from "../../assets/recent/common banner.webp";
+import img from "../../assets/recent/Privacy Policy 1.webp";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 
 export default function PrivacyPolicy() {
@@ -27,84 +27,111 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
 
+          <div className="mb-8">
+            <p>
+              This privacy policy has been compiled and structured in order to
+              better serve those who are concerned about how their personal
+              information is being used online.{" "}
+              <strong>Ekam Health Services</strong> is committed to protecting
+              your private information. This privacy policy applies to{" "}
+              <span className="text-blue-700"> www.ekamcure.com, </span> its
+              parents, subsidiaries and/or other affiliates, and governs data
+              collection and usage. The privacy policy will bind all those who
+              visit, access and/or utilise the website in any form, regardless
+              of acting as an individual or on behalf of an entity. By using
+              this website, you consent to the practices described in this
+              policy.
+            </p>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-2">
+              Information We Collect
+            </h2>
+            <h3 className="font-bold mb-4">
+              We may collect both personal and non-personal information from
+              users in various ways:
+            </h3>
+          </div>
+
           {/* Section 1 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Greetings from Indian Health Adviser. We place a high priority on
-              protecting your privacy and your health and personal data. This
-              Privacy Policy outlines how we collect, use, disclose, and
-              safeguard your data, in compliance with India’s applicable laws.
-            </p>
+            <h2 className="text-xl font-semibold mb-2">1. Scope</h2>
+            <ul className="list-disc ml-6 space-y-2 text-gray-700">
+              <li>Name, email, phone number</li>
+              <li>Country and city of residence</li>
+              <li>Medical condition or reports (as voluntarily provided)</li>
+              <li>Passport and visa details for medical travel</li>
+              <li>
+                Information submitted via contact forms or direct communication
+              </li>
+            </ul>
           </div>
 
           {/* Section 2 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">2. Scope</h2>
-            <p className="text-gray-700 leading-relaxed">
-              This Policy applies to all data collected via our website{" "}
-              <a
-                href="https://www.indianhealthadviser.com"
-                target="_blank"
-                className="text-blue-600 font-medium hover:underline"
-              >
-                www.indianhealthadviser.com
-              </a>{" "}
-              and related digital services. Please review this policy carefully.
-              By using our services, you accept the practices outlined here.
-            </p>
-          </div>
-
-          {/* Section 3 */}
-          <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">3. Legal Framework</h2>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              We align with the following Indian legal requirements:
-            </p>
+            <h2 className="text-xl font-semibold mb-2">
+              2. Technical Information
+            </h2>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
-              <li>
-                <strong>
-                  Information Technology (Reasonable Security Practices and
-                  Procedures and Sensitive Personal Data or Information) Rules,
-                  2011:
-                </strong>{" "}
-                mandates clear policies on collection, usage, disclosure, and
-                security of sensitive personal data.
-              </li>
-              <li>
-                <strong>
-                  Digital Personal Data Protection Act, 2023 (DPDP Act):
-                </strong>{" "}
-                governs digital personal data processing, ensuring consent,
-                rights of individuals to access, correct, and withdraw consent,
-                and mandates transparency and accountability.
-              </li>
-              <li>
-                Applicable <strong>health sector guidelines</strong>, including
-                the Health Data Management Policy and ICMR principles
-                emphasizing privacy-by-design, accountability, consent
-                frameworks, and data minimisation.
-              </li>
+              <li>IP address, browser type, and operating system</li>
+              <li>Device type and usage data</li>
+              <li>Pages visited and browsing behaviour</li>
+              <li>Cookies and tracking pixels</li>
             </ul>
           </div>
 
+          {/* section 3 */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-2">
+              3. Purpose of Collection
+            </h2>
+            <h3 className="font-bold mb-4">
+              The information collected is used for:
+            </h3>
+            <ul className="list-disc ml-6 space-y-2 text-gray-700">
+              <li>
+                Responding to medical enquiries and arranging consultations
+              </li>
+              <li>
+                Coordinating treatment plans with partner hospitals and doctors
+              </li>
+              <li>Assisting with visa, travel, and accommodation</li>
+              <li>Improving our website and service delivery</li>
+              <li>
+                Sending relevant updates and communication (only with consent)
+              </li>
+              <li>Fulfilling legal and contractual obligations</li>
+            </ul>
+          </div>
+          
           {/* Section 4 */}
           <div className="mb-8">
             <h2 className="text-xl font-semibold mb-2">
-              4. What Information We Collect
+              4. Sharing and Disclosure
             </h2>
+            <h3 className="font-bold mb-4">
+              We do not sell, rent, or lease your personal data. Information may
+              be shared with:
+            </h3>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li>
-                <strong>Personal Information:</strong> Name, contact (email,
-                phone), age, gender, location.
+                Accredited hospitals, doctors, and clinics for consultation or
+                treatment planning
               </li>
               <li>
-                <strong>Health/Sensitive Data:</strong> Medical history,
-                self-reported symptoms, health assessments, diagnostic
-                information—all considered <em>sensitive personal data</em>{" "}
-                under Indian law.
+                Travel and logistics partners to support your medical journey
               </li>
+              <li>
+                Technology and analytics providers to maintain and improve our
+                site
+              </li>
+              <li>Regulatory authorities if required by law</li>
             </ul>
+            <h3 className="font-bold mb-4">
+                All shared data is protected through confidentiality agreements
+                and used only for the intended purpose.
+              </h3>
           </div>
 
           {/* Section 5 */}

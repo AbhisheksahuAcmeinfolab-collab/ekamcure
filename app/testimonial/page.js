@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import img from "../../assets/recent/common banner.webp";
@@ -14,7 +13,7 @@ const patients = [
     treatment: "Health Checkup",
     hospital: "Balaji Action Hospital",
     location: "Paschim vihar, New Delhi, India",
-    media: pic15,
+    media: pic16,
     type: "image",
   },
   {
@@ -23,7 +22,7 @@ const patients = [
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
     location: "Greater Kailash – 1, New Delhi, India",
-    media: pic16,
+    media: pic15,
     type: "image",
   },
   {
@@ -92,9 +91,6 @@ export default function Gallery() {
                   <li>
                     <strong>Location:</strong> {p.location}
                   </li>
-                  <li className="text-blue-900">
-                    <a href="/photogallery">Read more</a>
-                  </li>
                 </ul>
               </div>
 
@@ -148,9 +144,6 @@ export default function Gallery() {
                   </li>
                   <li>
                     <strong>Location:</strong> {patients[current].location}
-                  </li>
-                  <li className="text-blue-900">
-                    <a href="/photogallery">Read more</a>
                   </li>
                 </ul>
               </div>

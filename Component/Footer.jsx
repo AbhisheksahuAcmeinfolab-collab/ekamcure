@@ -6,12 +6,23 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa";
+// import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import img from "../assets/newimage/white Logo.webp";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 export default function Footer() {
+
+  const socials = [
+    { icon: FaFacebookF, link: "https://www.facebook.com/EkamCure/" },
+    { icon: FaTwitter, link: "https://x.com/EkamCare" },
+    { icon: FaInstagram, link: "https://www.instagram.com/ekamcure/" },
+    { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ekam-cure/posts/?feedView=all" },
+    { icon: FaYoutube, link: "https://www.youtube.com/@EkamCure" },
+  ];
+
   const infoItems = [
     {
       icon: MdLocationOn,
@@ -34,11 +45,12 @@ export default function Footer() {
   ];
 
   const services = [
-    { name: "Terms and Conditions", href: "/termscondition" },
-    { name: "Privacy Policy", href: "/privacypolicy" },
+    { name: "IVF", href: "/ivf-treatment-in-india" },
+    { name: "Terms and Conditions", href: "/terms-and-condition" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Disclaimer", href: "/disclaimer" },
-    { name: "Refund Policy", href: "/refundpolicy" },
-    { name: "Help & FAQS", href: "/helpfaqs" },
+    { name: "Refund Policy", href: "/refund-policy" },
+    { name: "Help & FAQS", href: "/help-faqs" },
     { name: "Our Fees", href: "/fees" },
   ];
 
@@ -48,7 +60,7 @@ export default function Footer() {
     { name: "Our Services", href: "/services" },
     { name: "Our Treatment", href: "/treatment" },
     { name: "Our Testimonal", href: "/testimonial" },
-    { name: "Photo Gallery", href: "/photogallery" },
+    { name: "Photo Gallery", href: "/photo-gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -83,20 +95,20 @@ export default function Footer() {
           </motion.button>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-6">
-            {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-              (Icon, i) => (
-                <motion.a
-                  key={i}
-                  href="#"
-                  whileTap={{ scale: 0.9 }}
-                  whileHover={{ scale: 1.1 }}
-                  className="p-2 rounded-full border border-gray-500 hover:border-cyan-400 hover:bg-cyan-500 hover:text-white transition"
-                >
-                  <Icon size={18} />
-                </motion.a>
-              )
-            )}
+           <div className="flex gap-4 mt-6">
+          {socials.map(({ icon: Icon, link }, i) => (
+            <motion.a
+              key={i}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              className="p-2 rounded-full border border-gray-500 hover:border-cyan-400 hover:bg-cyan-500 hover:text-white transition"
+            >
+              <Icon size={18} />
+            </motion.a>
+          ))}
           </div>
         </div>
 
@@ -181,15 +193,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-black text-white py-2 mt-4">
+      <div className="bg-blue-900 text-white py-2 mt-4">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
           {/* Left side */}
           <div className="flex items-center gap-2 text-white-600">
-            <Link href="/termscondition" className="hover:text-cyan-400">
+            <Link href="/terms-and-condition" className="hover:text-cyan-400">
               Terms & Conditions
             </Link>
             <span className="text-white-400">|</span>
-            <Link href="/privacypolicy" className="hover:text-cyan-400">
+            <Link href="/privacy-policy" className="hover:text-cyan-400">
               Privacy Policy
             </Link>
           </div>

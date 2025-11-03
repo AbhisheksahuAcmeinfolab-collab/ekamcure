@@ -21,7 +21,7 @@ export default function TopHeader() {
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:scale-105 hover:text-green-600 transition duration-300 cursor-pointer"
+            className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
             <Image
               src={img3}
@@ -39,7 +39,7 @@ export default function TopHeader() {
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:scale-105 hover:text-green-600 transition duration-300 cursor-pointer"
+            className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
             <Image
               src={img1}
@@ -57,7 +57,7 @@ export default function TopHeader() {
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:scale-105 hover:text-green-600 transition duration-300 cursor-pointer"
+            className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
             <Image
               src={img2}
@@ -71,7 +71,8 @@ export default function TopHeader() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-md md:hidden">
+      {/* mobile view */}
+      <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-gray-300 shadow-md md:hidden">
         <div className="flex justify-around items-center py-2 text-[#053161] text-center">
           {/* Get Quote */}
           <a
@@ -83,7 +84,7 @@ export default function TopHeader() {
             <Image
               src={img2}
               alt="Quote"
-              width={40}
+              width={60}
               height={40}
               className="object-contain"
             />
@@ -100,7 +101,7 @@ export default function TopHeader() {
             <Image
               src={img1}
               alt="Partner"
-              width={40}
+              width={50}
               height={40}
               className="object-contain"
             />

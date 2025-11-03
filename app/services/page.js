@@ -9,7 +9,7 @@ import {
   Hospital,
   Pill,
 } from "lucide-react";
-import img from "../../assets/recent/common banner.webp";
+import img from "../../assets/recent/Our Services 1.webp";
 import pic1 from "../../assets/icon/1.png";
 import pic2 from "../../assets/icon/2.png";
 import pic3 from "../../assets/icon/3.png";
@@ -127,14 +127,6 @@ export default function ServicesPage() {
       </div>
 
       <section className="relative bg-gradient-to-r from-blue-50 to-blue-100 py-16 px-6 md:px-20 bg-blue">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
-            Providing world-class healthcare solutions with compassion,
-            innovation, and expertise.
-          </p>
-        </div>
-        
         {/* Header */}
         <div className="py-16 px-6 md:px-20 bg-gray-50">
           <div className="text-center mb-12">

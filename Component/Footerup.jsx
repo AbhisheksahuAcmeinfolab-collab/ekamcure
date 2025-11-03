@@ -47,7 +47,7 @@ export default function Footerup() {
             animate={{ x: ["0%", "-50%"] }}
             transition={{
               repeat: Infinity,
-              duration: 10,
+              duration: 5,
               ease: "linear",
             }}
           >

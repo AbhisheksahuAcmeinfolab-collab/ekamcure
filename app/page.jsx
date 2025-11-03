@@ -176,7 +176,7 @@ export default function Home() {
   const currentPatient = patients[current];
 
   return (
-    <main>
+    <main className="bg-white">
       <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-white">
         {/* Background Image + Overlay */}
         <div className="absolute inset-0 bg-dark">
@@ -540,4 +540,3 @@ export default function Home() {
     </main>
   );
 }
-

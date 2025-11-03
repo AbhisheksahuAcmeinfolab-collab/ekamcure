@@ -1,13 +1,92 @@
+// "use client";
+// import { useState } from "react";
+// import Image from "next/image";
+
+// export default function MissionVisionSection() {
+//   const [active, setActive] = useState("mission");
+
+//   const missionImages = [
+//     "/images/mission1.jpg",
+//     "/images/mission2.jpg",
+//     "/images/mission3.jpg",
+//   ];
+
+//   const visionImages = [
+//     "/images/vision1.jpg",
+//     "/images/vision2.jpg",
+//     "/images/vision3.jpg",
+//   ];
+
+//   const images = active === "mission" ? missionImages : visionImages;
+
+//   return (
+//     <section className="py-14 bg-white">
+//       <div className="max-w-6xl mx-auto px-4 text-center">
+//         {/* Toggle Switch */}
+//         <div className="flex justify-center items-center space-x-3 mb-10">
+//           <span
+//             className={`font-medium ${
+//               active === "mission" ? "text-gray-900" : "text-gray-500"
+//             }`}
+//           >
+//             Our Mission
+//           </span>
+
+//           {/* Toggle button */}
+//           <button
+//             onClick={() =>
+//               setActive(active === "mission" ? "vision" : "mission")
+//             }
+//             className={`relative w-12 h-6 flex items-center rounded-full transition-all duration-300 ${
+//               active === "mission" ? "bg-blue-600" : "bg-gray-400"
+//             }`}
+//           >
+//             <span
+//               className={`absolute w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+//                 active === "mission" ? "translate-x-1" : "translate-x-6"
+//               }`}
+//             ></span>
+//           </button>
+
+//           <span
+//             className={`font-medium ${
+//               active === "vision" ? "text-gray-900" : "text-gray-500"
+//             }`}
+//           >
+//             Our Vision
+//           </span>
+//         </div>
+
+//         {/* Image grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+//           {images.map((img, i) => (
+//             <div
+//               key={i}
+//               className="relative aspect-video rounded-xl overflow-hidden shadow-md"
+//             >
+//               <Image
+//                 src={img}
+//                 alt={`Image ${i + 1}`}
+//                 fill
+//                 className="object-cover"
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import img from "../../assets/recent/aboutbanner.webp";
+import img from "../../assets/recent/common banner.webp";
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
 import Img4 from "../../assets/newimage/sanu Das.webp";
 import Img5 from "../../assets/newimage/Pratap Sir.webp";
 import Img6 from "../../assets/newimage/Vijay kumar.webp";
-
 
 export default function AboutUs() {
   const services = [
@@ -303,12 +382,3 @@ export default function AboutUs() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-

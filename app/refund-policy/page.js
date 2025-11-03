@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import img from "../../assets/recent/common banner.webp";
+import img from "../../assets/recent/Refund Policy 1.webp";
 
 export default function PrivacyPolicy() {
   return (
