@@ -48,7 +48,7 @@ export default function Navbar() {
                     className={`relative font-semibold transition duration-200 ${
                       isActive
                         ? "text-blue-600"
-                        : "text-gray-900 dark:text-gray-100 hover:text-blue-600"
+                        : "text-gray-900 dark:text-black-100 hover:text-blue-600"
                     }`}
                   >
                     {item.name}
@@ -87,7 +87,7 @@ export default function Navbar() {
             {/* Right: Hamburger */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 dark:text-gray-100 hover:text-blue-600 transition duration-200 focus:outline-none"
+              className="text-gray-900 dark:text-black-100 hover:text-blue-600 transition duration-200 focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -118,7 +118,7 @@ export default function Navbar() {
 
       {/* ---------- Mobile Dropdown Menu ---------- */}
       {isOpen && (
-        <div className="xl:hidden px-4 pb-4 space-y-2 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div className="xl:hidden px-4 pb-4 space-y-2 bg-white dark:text-black transition-colors duration-300">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (

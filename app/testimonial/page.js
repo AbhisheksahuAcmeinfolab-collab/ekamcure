@@ -37,12 +37,11 @@ const patients = [
   },
 ];
 
-
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
   return (
     <>
-    {/* <GalleryPage/> */}
+      {/* <GalleryPage/> */}
       {/* Banner Section */}
       <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
         <Image
@@ -93,7 +92,7 @@ export default function Gallery() {
                   <li>
                     <strong>Location:</strong> {p.location}
                   </li>
-                  <li className="text-blue-700">
+                  <li className="text-blue-900">
                     <a href="/photogallery">Read more</a>
                   </li>
                 </ul>
@@ -149,6 +148,9 @@ export default function Gallery() {
                   </li>
                   <li>
                     <strong>Location:</strong> {patients[current].location}
+                  </li>
+                  <li className="text-blue-900">
+                    <a href="/photogallery">Read more</a>
                   </li>
                 </ul>
               </div>
