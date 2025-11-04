@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Treatment", href: "/treatment" },
-    { name: "Testimonal", href: "/testimonial" },
+    { name: "Testimonial", href: "/testimonial" },
     { name: "Photo Gallery", href: "/photo-gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
@@ -40,7 +40,7 @@ export default function Navbar() {
             {/* Menu */}
             <div className="flex items-center space-x-10">
               {navItems.map((item) => {
-                const isActive = pathname === item.href;
+                const isActive = pathname === item.href;                  
                 return (
                   <Link
                     key={item.name}

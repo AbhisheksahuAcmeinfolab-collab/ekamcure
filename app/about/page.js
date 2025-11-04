@@ -1,86 +1,69 @@
 // "use client";
-// import { useState } from "react";
 // import Image from "next/image";
+// import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 
-// export default function MissionVisionSection() {
-//   const [active, setActive] = useState("mission");
-
-//   const missionImages = [
-//     "/images/mission1.jpg",
-//     "/images/mission2.jpg",
-//     "/images/mission3.jpg",
-//   ];
-
-//   const visionImages = [
-//     "/images/vision1.jpg",
-//     "/images/vision2.jpg",
-//     "/images/vision3.jpg",
-//   ];
-
-//   const images = active === "mission" ? missionImages : visionImages;
-
+// export default function AboutSection() {
 //   return (
-//     <section className="py-14 bg-white">
-//       <div className="max-w-6xl mx-auto px-4 text-center">
-//         {/* Toggle Switch */}
-//         <div className="flex justify-center items-center space-x-3 mb-10">
-//           <span
-//             className={`font-medium ${
-//               active === "mission" ? "text-gray-900" : "text-gray-500"
-//             }`}
-//           >
-//             Our Mission
-//           </span>
-
-//           {/* Toggle button */}
-//           <button
-//             onClick={() =>
-//               setActive(active === "mission" ? "vision" : "mission")
-//             }
-//             className={`relative w-12 h-6 flex items-center rounded-full transition-all duration-300 ${
-//               active === "mission" ? "bg-blue-600" : "bg-gray-400"
-//             }`}
-//           >
-//             <span
-//               className={`absolute w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-//                 active === "mission" ? "translate-x-1" : "translate-x-6"
-//               }`}
-//             ></span>
-//           </button>
-
-//           <span
-//             className={`font-medium ${
-//               active === "vision" ? "text-gray-900" : "text-gray-500"
-//             }`}
-//           >
-//             Our Vision
-//           </span>
+//     <section className="bg-white py-16 px-6 md:px-16">
+//       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+//         {/* Left Side: Image with frame effect */}
+//         <div className="relative w-full md:w-1/2 flex justify-center">
+//           {/* Main Image */}
+//           <div className="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-lg overflow-hidden z-10">
+//             <Image
+//               src={doctorImg}
+//               alt="About Hospital Surf"
+//               fill
+//               className="object-cover rounded-lg"
+//             />
+//           </div>
 //         </div>
 
-//         {/* Image grid */}
-//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
-//           {images.map((img, i) => (
-//             <div
-//               key={i}
-//               className="relative aspect-video rounded-xl overflow-hidden shadow-md"
-//             >
-//               <Image
-//                 src={img}
-//                 alt={`Image ${i + 1}`}
-//                 fill
-//                 className="object-cover"
-//               />
-//             </div>
-//           ))}
+//         {/* Right Side: Text Content */}
+//         <div className="md:w-1/2 text-center md:text-left">
+//           <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
+//             About Us!
+//           </h2>
+//           <p className="text-gray-600 leading-relaxed mb-4">
+//             Ekam excels in the medical travel industry, connecting global
+//             patients with top-tier healthcare facilities across India. Focused
+//             on providing a seamless healthcare journey, the company manages
+//             every aspect, from initial consultation to post-treatment follow-up,
+//             to ensure a comprehensive and stress-free experience for each
+//             patient. By handling essential logistics, including medical
+//             consultations and hospital appointments, Ekam prioritizes patient
+//             safety and convenience, tailoring their services to meet the
+//             individual needs of each client.
+//           </p>
+//           <p className="text-gray-600 leading-relaxed mb-6">
+//             With a commitment to accessibility and high standards, Ekam
+//             transforms medical tourism into a structured, patient-focused
+//             service. The company's expertise in cross-border medical care helps
+//             patients navigate complex healthcare systems, empowering them to
+//             receive quality treatment without the usual complications of
+//             international travel. Through Ekam's network and support, patients
+//             benefit from transparent, efficient medical care solutions, making
+//             quality healthcare achievable for individuals worldwide.
+//           </p>
+
+//           <a
+//             href="/contact"
+//             className="inline-block bg-[#032870] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#043d9c] transition-all"
+//           >
+//             Book an Appointment →
+//           </a>
 //         </div>
 //       </div>
 //     </section>
 //   );
 // }
 
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import img from "../../assets/recent/common banner.webp";
+import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";
 import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
@@ -89,6 +72,8 @@ import Img5 from "../../assets/newimage/Pratap Sir.webp";
 import Img6 from "../../assets/newimage/Vijay kumar.webp";
 
 export default function AboutUs() {
+  const [active, setActive] = useState("mission");
+
   const services = [
     "Cost projections for the planned treatments and surgeries",
     "All medical appointments are scheduled",
@@ -211,173 +196,229 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* // Outer container with padding */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gray-50 ">
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <div aria-hidden="true" className="relative h-full">
-            <div className="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-left-top transform scale-x-[-1] custom-bg-globe opacity-10 md:opacity-10">
-              {/* The actual styling for the background image is in the CSS config below */}
+      {/* // Outer container with padding  */}
+
+      {/* Content Container (to center and limit width) */}
+
+      <section className="bg-white py-16 px-6 md:px-16">
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* Left Side: Image with frame effect */}
+          <div className="relative w-full md:w-1/2 flex justify-center">
+            {/* Main Image */}
+            <div className="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-lg overflow-hidden z-10">
+              <Image
+                src={doctorImg}
+                alt="About Hospital Surf"
+                fill
+                className="object-cover rounded-lg"
+              />
             </div>
           </div>
-        </div>
-        {/* Content Container (to center and limit width) */}
-        <div className="relative mx-auto max-w-7xl z-10">
-          {/* Main Content Area */}
-          <div className="flex flex-col lg:flex-row lg:space-x-12">
-            {/* Left Side: 'About Us' Subtitle and Underline */}
-            <div className="lg:w-1/3 mb-8 lg:mb-0">
-              <h2 className="text-2xl font-semibold text-gray-900 border-b-4 border-blue-600 inline-block pb-1 bg-[url('../assets/image/footer-contact-bg.jpg')">
-                About Us
-              </h2>
-            </div>
 
-            {/* Right Side: Text Content */}
-            <div className=" space-y-8 text-gray-700 leading-relaxed text-base sm:text-lg">
-              {/* First Paragraph */}
-              <p>
-                Ekam excels in the medical travel industry, connecting
-                global patients with top-tier healthcare facilities across
-                India. Focused on providing a seamless healthcare journey, the
-                company manages every aspect, from initial consultation to
-                post-treatment follow-up, to ensure a comprehensive and
-                stress-free experience for each patient. By handling essential
-                logistics, including medical consultations and hospital
-                appointments, Ekam prioritizes patient safety and convenience,
-                tailoring their services to meet the individual needs of each
-                client.
-              </p>
-
-              {/* Second Paragraph */}
-              <p>
-                With a commitment to accessibility and high standards, Ekam
-                transforms medical tourism into a structured, patient-focused
-                service. The company&apos;s expertise in cross-border medical
-                care helps patients navigate complex healthcare systems,
-                empowering them to receive quality treatment without the usual
-                complications of international travel. Through Ekam&apos;s
-                network and support, patients benefit from transparent,
-                efficient medical care solutions, making quality healthcare
-                achievable for individuals worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              {/* Vision */}
-              <div className="flex flex-col items-center text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
-                  VISION
-                </h2>
-                <div className="w-full mb-6">
-                  <Image
-                    src={Img1}
-                    alt="Vision"
-                    className="rounded-lg object-cover w-full h-64 md:h-80"
-                  />
-                </div>
-                <p className="text-gray-700 text-base md:text-lg">
-                  To be the global leader in medical travel facilitation,
-                  transforming the way people access quality healthcare across
-                  borders. Ekam Health Services envisions a world where medical
-                  treatment is easily attainable, irrespective of geographic
-                  boundaries, and where every patient enjoys a tailored,
-                  compassionate, and transparent healthcare journey. Through our
-                  dedication to innovation, quality, and patient-centric care,
-                  we seek to redefine medical tourism and empower individuals
-                  worldwide to pursue optimal health outcomes with confidence
-                  and ease.
-                </p>
-              </div>
-
-              {/* Mission */}
-              <div className="flex flex-col items-center text-center md:text-left">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 relative after:block after:w-12 after:h-1 after:bg-blue-600 after:mt-2">
-                  MISSION
-                </h2>
-                <div className="w-full mb-6">
-                  <Image
-                    src={Img2}
-                    alt="Mission"
-                    className="rounded-lg object-cover w-full h-64 md:h-80"
-                  />
-                </div>
-                <p className="text-gray-700 text-base md:text-lg">
-                  Ekam Health Services aims to revolutionize the medical tourism
-                  industry by delivering comprehensive, personalized healthcare
-                  solutions that bridge international patients with India’s top
-                  medical providers. Our mission is to ensure that each patient
-                  receives exceptional care through seamless coordination of
-                  medical consultations, hospital appointments, and travel
-                  arrangements. By upholding the highest standards of safety,
-                  integrity, and patient satisfaction, we strive to make
-                  world-class healthcare accessible stress-free for individuals
-                  around the globe.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
-              Our Team
+          {/* Right Side: Text Content */}
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
+              About Us!
             </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Ekam excels in the medical travel industry, connecting global
+              patients with top-tier healthcare facilities across India. Focused
+              on providing a seamless healthcare journey, the company manages
+              every aspect, from initial consultation to post-treatment
+              follow-up, to ensure a comprehensive and stress-free experience
+              for each patient. By handling essential logistics, including
+              medical consultations and hospital appointments, Ekam prioritizes
+              patient safety and convenience, tailoring their services to meet
+              the individual needs of each client.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              With a commitment to accessibility and high standards, Ekam
+              transforms medical tourism into a structured, patient-focused
+              service. The company's expertise in cross-border medical care
+              helps patients navigate complex healthcare systems, empowering
+              them to receive quality treatment without the usual complications
+              of international travel. Through Ekam's network and support,
+              patients benefit from transparent, efficient medical care
+              solutions, making quality healthcare achievable for individuals
+              worldwide.
+            </p>
 
-            <div className="flex flex-col gap-10">
-              {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="w-40 h-40 flex-shrink-0">
+            <a
+              href="/contact"
+              className="inline-block bg-[#032870] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#043d9c] transition-all"
+            >
+              Book an Appointment →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          {/* ===== Toggle Switch ===== */}
+          <div className="flex justify-center items-center space-x-3 mb-10">
+            <span
+              className={`font-medium ${
+                active === "mission" ? "text-gray-900" : "text-gray-500"
+              }`}
+            >
+              Our Mission
+            </span>
+
+            {/* Toggle Button */}
+            <button
+              onClick={() =>
+                setActive(active === "mission" ? "vision" : "mission")
+              }
+              className={`relative w-12 h-6 flex items-center rounded-full transition-all duration-300 ${
+                active === "mission" ? "bg-blue-600" : "bg-blue-600"
+              }`}
+            >
+              <span
+                className={`absolute w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                  active === "mission" ? "translate-x-1" : "translate-x-6"
+                }`}
+              ></span>
+            </button>
+
+            <span
+              className={`font-medium ${
+                active === "vision" ? "text-gray-900" : "text-gray-500"
+              }`}
+            >
+              Our Vision
+            </span>
+          </div>
+
+          {/* ===== Content Blocks ===== */}
+          <div className="space-y-10">
+            {/* Mission Section */}
+            {active === "mission" && (
+              <>
+                {/* Block 1 */}
+                <div className="flex flex-col md:flex-row items-center gap-8 text-left">
+                  <div className="relative w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src={member.image}
-                      alt={member.name}
-                      className="rounded-xl object-cover w-full h-full"
+                      src={Img2}
+                      alt="Mission Image"
+                      fill
+                      className="object-cover"
                     />
                   </div>
-
-                  <div className="flex flex-col text-center md:text-left">
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">
-                      {member.name}
+                  <div className="md:w-1/2">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                      Mission
                     </h3>
-                    <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
-                      {member.title}
+                    <p className="text-gray-600 leading-relaxed">
+                      Ekam Health Services aims to revolutionize the medical
+                      tourism industry by delivering comprehensive, personalized
+                      healthcare solutions that bridge international patients
+                      with India’s top medical providers. Our mission is to
+                      ensure that each patient receives exceptional care through
+                      seamless coordination of medical consultations, hospital
+                      appointments, and travel arrangements. By upholding the
+                      highest standards of safety, integrity, and patient
+                      satisfaction, we strive to make world-class healthcare
+                      accessible stress-free for individuals around the globe.
                     </p>
-                    <p className="text-gray-600 text-sm md:text-base mb-4">
-                      {member.description}
-                    </p>
-
-                    <div className="flex justify-center md:justify-start space-x-4">
-                      {member.socials.linkedin && (
-                        <a
-                          href={member.socials.linkedin}
-                          className="text-blue-700 hover:text-blue-900 transition"
-                          target="_blank"
-                        >
-                          <FaLinkedin size={28} />
-                        </a>
-                      )}
-                      {member.socials.instagram && (
-                        <a
-                          href={member.socials.instagram}
-                          className="text-pink-600 hover:text-pink-800 transition"
-                          target="_blank"
-                        >
-                          <FaInstagram size={28} />
-                        </a>
-                      )}
-                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </>
+            )}
+
+            {/* Vision Section */}
+            {active === "vision" && (
+              <>
+                {/* Block 1 */}
+                <div className="flex flex-col md:flex-row items-center gap-8 text-left">
+                  <div className="relative w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-md">
+                    <Image
+                      src={Img1}
+                      alt="Vision Image"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="md:w-1/2">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                      Vision
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      To be the global leader in medical travel facilitation,
+                      transforming the way people access quality healthcare
+                      across borders. Ekam Health Services envisions a world
+                      where medical treatment is easily attainable, irrespective
+                      of geographic boundaries, and where every patient enjoys a
+                      tailored, compassionate, and transparent healthcare
+                      journey. Through our dedication to innovation, quality,
+                      and patient-centric care, we seek to redefine medical
+                      tourism and empower individuals worldwide to pursue
+                      optimal health outcomes with confidence and ease.
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
-        </section>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
+            Our Team
+          </h2>
+
+          <div className="flex flex-col gap-10">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="w-40 h-40 flex-shrink-0">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-xl object-cover w-full h-full"
+                  />
+                </div>
+
+                <div className="flex flex-col text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-600 text-sm md:text-base mb-4">
+                    {member.description}
+                  </p>
+
+                  <div className="flex justify-center md:justify-start space-x-4">
+                    {member.socials.linkedin && (
+                      <a
+                        href={member.socials.linkedin}
+                        className="text-blue-700 hover:text-blue-900 transition"
+                        target="_blank"
+                      >
+                        <FaLinkedin size={28} />
+                      </a>
+                    )}
+                    {member.socials.instagram && (
+                      <a
+                        href={member.socials.instagram}
+                        className="text-pink-600 hover:text-pink-800 transition"
+                        target="_blank"
+                      >
+                        <FaInstagram size={28} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );

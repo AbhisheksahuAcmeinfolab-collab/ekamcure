@@ -72,23 +72,23 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
-      <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-gray-300 shadow-md md:hidden">
-        <div className="flex justify-around items-center py-2 text-[#053161] text-center">
+      <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-lg md:hidden">
+        <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
           {/* Get Quote */}
           <a
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-xs hover:text-blue-600"
+            className="flex flex-col items-center justify-center text-[11px] flex-1"
           >
             <Image
               src={img2}
               alt="Quote"
               width={60}
-              height={40}
-              className="object-contain"
+              height={30}
+              className="object-contain mb-1"
             />
-            <span className="font-bold text-sm">Get Quote!</span>
+            <span className="font-semibold text-lg">Get Quote</span>
           </a>
 
           {/* Become Partner */}
@@ -96,33 +96,33 @@ export default function TopHeader() {
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-xs hover:text-blue-600"
+            className="flex flex-col items-center justify-center text-[10px] flex-1"
           >
             <Image
               src={img1}
               alt="Partner"
               width={50}
-              height={40}
-              className="object-contain"
+              height={30}
+              className="object-contain mb-1"
             />
-            <span className="font-bold text-sm">Become Partner!</span>
+            <span className="font-semibold text-center text-lg">Partner</span>
           </a>
-
+        
           {/* WhatsApp Chat */}
           <a
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-xs hover:text-green-600"
+            className="flex flex-col items-center justify-center text-[11px] flex-1"
           >
             <Image
               src={img3}
               alt="WhatsApp"
               width={40}
-              height={40}
+              height={30}
               className="object-contain"
             />
-            <span className="font-bold text-sm">Chat</span>
+            <span className="font-semibold text-lg">Chat</span>
           </a>
         </div>
       </div>

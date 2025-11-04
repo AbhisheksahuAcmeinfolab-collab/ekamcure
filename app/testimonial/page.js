@@ -148,7 +148,7 @@ export default function Gallery() {
                 </ul>
               </div>
               <div
-                className="absolute top-1/2 right-[-10px] -translate-y-1/2
+                className="absolute top-1/2 right-[-14px] -translate-y-1/2
                 w-[130px] sm:w-[100px]
                 bg-white border-2 border-blue-900 rounded-xl
                 overflow-hidden shadow-lg z-10"
@@ -156,7 +156,7 @@ export default function Gallery() {
                 <Image
                   src={p.media}
                   alt={p.name}
-                  className="object-cover w-full h-50 scale-75"
+                  className="object-cover w-full h-40 scale-75"
                 />
               </div>
             </div>
