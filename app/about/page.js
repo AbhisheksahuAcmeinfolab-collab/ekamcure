@@ -23,7 +23,7 @@ export default function AboutUs() {
     "Reservations at hotels or serviced residences for a comfortable stay in India",
     "Planning for dietary restrictions",
     "Language translators",
-    "Updating the patient’s relatives about their condition",
+    "Updating the patient&apos;s relatives about their condition",
     "Religious settings",
     "Telemedicine is used for remote consultation",
     "Visiting the local attractions",
@@ -177,7 +177,7 @@ export default function AboutUs() {
               service. The company&apos;s expertise in cross-border medical care
               helps patients navigate complex healthcare systems, empowering
               them to receive quality treatment without the usual complications
-              of international travel. Through Ekam's network and support,
+              of international travel. Through Ekam&apos;s network and support,
               patients benefit from transparent, efficient medical care
               solutions, making quality healthcare achievable for individuals
               worldwide.
