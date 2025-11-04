@@ -1,62 +1,4 @@
-// "use client";
-// import Image from "next/image";
-// import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 
-// export default function AboutSection() {
-//   return (
-//     <section className="bg-white py-16 px-6 md:px-16">
-//       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-//         {/* Left Side: Image with frame effect */}
-//         <div className="relative w-full md:w-1/2 flex justify-center">
-//           {/* Main Image */}
-//           <div className="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-lg overflow-hidden z-10">
-//             <Image
-//               src={doctorImg}
-//               alt="About Hospital Surf"
-//               fill
-//               className="object-cover rounded-lg"
-//             />
-//           </div>
-//         </div>
-
-//         {/* Right Side: Text Content */}
-//         <div className="md:w-1/2 text-center md:text-left">
-//           <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
-//             About Us!
-//           </h2>
-//           <p className="text-gray-600 leading-relaxed mb-4">
-//             Ekam excels in the medical travel industry, connecting global
-//             patients with top-tier healthcare facilities across India. Focused
-//             on providing a seamless healthcare journey, the company manages
-//             every aspect, from initial consultation to post-treatment follow-up,
-//             to ensure a comprehensive and stress-free experience for each
-//             patient. By handling essential logistics, including medical
-//             consultations and hospital appointments, Ekam prioritizes patient
-//             safety and convenience, tailoring their services to meet the
-//             individual needs of each client.
-//           </p>
-//           <p className="text-gray-600 leading-relaxed mb-6">
-//             With a commitment to accessibility and high standards, Ekam
-//             transforms medical tourism into a structured, patient-focused
-//             service. The company's expertise in cross-border medical care helps
-//             patients navigate complex healthcare systems, empowering them to
-//             receive quality treatment without the usual complications of
-//             international travel. Through Ekam's network and support, patients
-//             benefit from transparent, efficient medical care solutions, making
-//             quality healthcare achievable for individuals worldwide.
-//           </p>
-
-//           <a
-//             href="/contact"
-//             className="inline-block bg-[#032870] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#043d9c] transition-all"
-//           >
-//             Book an Appointment →
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 "use client";
 import { useState } from "react";
@@ -234,7 +176,7 @@ export default function AboutUs() {
             <p className="text-gray-600 leading-relaxed mb-6">
               With a commitment to accessibility and high standards, Ekam
               transforms medical tourism into a structured, patient-focused
-              service. The company's expertise in cross-border medical care
+              service. The company&apos;s expertise in cross-border medical care
               helps patients navigate complex healthcare systems, empowering
               them to receive quality treatment without the usual complications
               of international travel. Through Ekam's network and support,
