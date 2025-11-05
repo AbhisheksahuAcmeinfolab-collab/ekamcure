@@ -1,255 +1,2161 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import img from "../../assets/recent/Plan your Travel 1.webp";
+// You can replace these image paths with your own service icons/images
 import pic1 from "../../assets/newimage/Neurology Treatment.webp";
 import pic2 from "../../assets/newimage/Cosmetic Surgeries.webp";
+import pic3 from "../../assets/newimage/Cancer Treatment.webp";
+import pic4 from "../../assets/newimage/Dental Treatments.webp";
+import pic5 from "../../assets/newimage/Heart & Cardiology Treatments.webp";
+import pic6 from "../../assets/newimage/Kidney & Urology Treatments.webp";
+import pic7 from "../../assets/newimage/Ophthalmology Surgery.webp";
+import pic8 from "../../assets/newimage/Infertility Treatments.webp";
+import pic9 from "../../assets/newimage/Transplant Programs.webp";
+import pic10 from "../../assets/newimage/Ear, Nose, and Throat (ENT).webp";
 
-export default function AyurvedaTreatments() {
+export default function TreatmentServices() {
+  // export default function CosmeticSurgeries() {
+  const [activeLink, setActiveLink] = useState(null);
+
+  const neurology = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const cosmetic = [
+    [
+      {
+        name: "Liposuction",
+        link: "#",
+      },
+      {
+        name: "Eyelid Surgery",
+        link: "#",
+      },
+      {
+        name: "Breast Implant",
+        link: "#",
+      },
+      {
+        name: "Nose Jobs",
+        link: "#",
+      },
+      {
+        name: "Brow Lift",
+        link: "#",
+      },
+    ],
+    [
+      {
+        name: "Face Lift",
+        link: "#",
+      },
+      {
+        name: "Hair Transplant",
+        link: "#",
+      },
+      {
+        name: "Rhinoplasty Surgery",
+        link: "#",
+      },
+      { name: "Lip Augmentation", link: "#" },
+      { name: "Chin Augmentation", link: "#" },
+    ],
+    [
+      {
+        name: "Tummy Tuck Surgery",
+        link: "#",
+      },
+      {
+        name: "Mommy Makeover",
+        link: "#",
+      },
+      {
+        name: "Abdominoplasty",
+        link: "#",
+      },
+      { name: "Buttock Lift", link: "#" },
+      { name: "Thigh Lift", link: "#" },
+    ],
+  ];
+
+  const cancer = [
+    [
+      {
+        name: "Rhabdomyosarcoma Treatment",
+        link: "#",
+      },
+      {
+        name: "Robotic Prostate Cancer Surgery",
+        link: "#",
+      },
+      {
+        name: "Pancreatic Cancer Treatment",
+        link: "#",
+      },
+      {
+        name: "Ovarian Cancer Treatment",
+        link: "#",
+      },
+      {
+        name: "Oral Cancer Treatment",
+        link: "#",
+      },
+      {
+        name: "Liver Cancer",
+        link: "#",
+      },
+      {
+        name: "Brain Cancer (Tumour) Treatment",
+        link: "#",
+      },
+      {
+        name: "Prostate Cancer",
+        link: "#",
+      },
+      {
+        name: "Cervical Cancer",
+        link: "#",
+      },
+      {
+        name: "Gastrointestinal Cancer",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Breast Cancer",
+        link: "#",
+      },
+      {
+        name: "Head And Neck Cancer",
+        link: "#",
+      },
+      {
+        name: "Lung Cancer",
+        link: "#",
+      },
+      { name: "Blood Cancer", link: "#" },
+      { name: "Thyroid Cancer", link: "#" },
+      {
+        name: "Bladder Cancer",
+        link: "#",
+      },
+      {
+        name: "Esophagus Cancer",
+        link: "#",
+      },
+      { name: "Penile Cancer", link: "#" },
+      { name: "Nasopharyngeal Cancer", link: "#" },
+      {
+        name: "Uterine Cancer",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Anal Cancer",
+        link: "#",
+      },
+      {
+        name: "Vulvar Cancer",
+        link: "#",
+      },
+      { name: "Primary Bone Cancer", link: "#" },
+      { name: "Vaginal Cancer", link: "#" },
+      {
+        name: "Bone Cancer",
+        link: "#",
+      },
+      {
+        name: "Skin Cancer",
+        link: "#",
+      },
+      { name: "Colon Cancer", link: "#" },
+      { name: "Gallbladder Cancer", link: "#" },
+      { name: "Salivary Cancer Cancer", link: "#" },
+      { name: "Bile Duct Cancer", link: "#" },
+    ],
+  ];
+
+  const dental = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const heart = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const kidney = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const ophthalmology = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const infertility = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const transplant = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
+  const ent = [
+    [
+      {
+        name: "Epilepsy Treatment",
+        link: "#",
+      },
+      {
+        name: "Cerebrospinal Fluid Shunt",
+        link: "#",
+      },
+      {
+        name: "Skull Base Surgery",
+        link: "#",
+      },
+      {
+        name: "Brain Tumor",
+        link: "#",
+      },
+      {
+        name: "Parkinson's Treatment",
+        link: "#",
+      },
+    ],
+
+    [
+      {
+        name: "Cyber Knife Robotic Radiation",
+        link: "#",
+      },
+      {
+        name: "Stroke Rehabilitation",
+        link: "#",
+      },
+      {
+        name: "Multiple Sclerosis",
+        link: "#",
+      },
+      { name: "Alzheimer", link: "#" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+    ],
+
+    [
+      {
+        name: " Deep Brain Stimulation Surgery",
+        link: "#",
+      },
+      {
+        name: "Epidural Stimulation",
+        link: "#",
+      },
+      {
+        name: "Intrathecal Baclofen Pump",
+        link: "#",
+      },
+      { name: "Focal Seizure", link: "#" },
+      { name: "Sacral Nerve Stimulation", link: "#" },
+    ],
+  ];
+
   return (
     <>
-      {/* 1.) Neurology Treatment */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-rounded-full">
-        {/* Header Section */}
-        <div className="flex items-center justify-center mb-8 flex-wrap text-center bg-blue-900">
-          <div className="flex items-center gap-3">
-            <Image
-              src={pic1}
-              alt="Neurology Treatment"
-              width={50}
-              height={50}
-              className="w-12 h-12 object-contain"
-            />
-            <h2 className="text-2xl md:text-3xl font-bold text-[white]">
-              Neurology Treatment
-            </h2>
-          </div>
+      {/* Banner Section */}
+      <div className="bg-white relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+        <Image
+          src={img}
+          alt="Our Fee Banner"
+          fill
+          className="object-cover brightness-80"
+        />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Treatment
+          </h1>
+        </div>
+      </div>
+
+      {/*1st Neurology Treatment */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic1}
+            alt="Neurology Treatment"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Neurology Treatment
+          </h2>
         </div>
 
-
         {/* Treatments Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-200 pt-6">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
           {/* Column 1 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Epilepsy Treatment",
-                link: "https://www.indianhealthadviser.com/Udvarthanam/",
-              },
-              {
-                name: "Cerebrospinal Fluid Shunt",
-                link: "https://www.indianhealthadviser.com/navarakizhi/",
-              },
-              {
-                name: "Brain Tumor",
-                link: "https://www.indianhealthadviser.com/elakizhi/",
-              },
-              {
-                name: "Parkinson's Treatment",
-                link: "https://www.indianhealthadviser.com/thalapothichil/",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900 hover:text-black-900 transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
-            
-          {/* Column 2 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Cyber Knife Robotic Radiation",
-                link: "https://www.indianhealthadviser.com/pizhichil/",
-              },
-              {
-                name: "Stroke Rehabilitation",
-                link: "https://www.indianhealthadviser.com/thalam/",
-              },
-              {
-                name: "Multiple Sclerosis",
-                link: "https://www.indianhealthadviser.com/lepanam-ayurvedic-therapy/",
-              },
-              {
-                name: "Alzheimer",
-                link: "#",
-              },
-              {
-                name: "Chronic Cerebrospinal Venous Insufficiency",
-                link: "#",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900 transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
 
           {/* Column 3 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Udvartthanam",
-                link: "https://www.indianhealthadviser.com/Udvarthanam/",
-              },
-              {
-                name: "Navarakizhi",
-                link: "https://www.indianhealthadviser.com/navarakizhi/",
-              },
-              {
-                name: "Elakizhi",
-                link: "https://www.indianhealthadviser.com/elakizhi/",
-              },
-              {
-                name: "Thalapothichil",
-                link: "https://www.indianhealthadviser.com/thalapothichil/",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900  transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* 2nd.) Cosmetic Surgeries */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-rounded-full">
-        {/* Header Section */}
-        <div className="flex items-center justify-center mb-8 flex-wrap text-center bg-blue-900">
-          <div className="flex items-center gap-3">
-            <Image
-              src={pic2}
-              alt="Cosmetic Surgeries"
-              width={50}
-              height={50}
-              className="w-12 h-12 object-contain"
-            />
-            <h2 className="text-2xl md:text-3xl font-bold text-[white]">
-              Cosmetic Surgeries
-            </h2>
-          </div>
+      {/*2nd Cosmetic Surgeries */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic2}
+            alt="Cosmetic Surgeries"
+            width={50}
+            height={50}
+            className="w-[70px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Cosmetic Surgeries
+          </h2>
         </div>
 
         {/* Treatments Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-200 pt-6">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
           {/* Column 1 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Udvartthanam",
-                link: "#",
-              },
-              {
-                name: "Navarakizhi",
-                link: "#",
-              },
-              {
-                name: "Elakizhi",
-                link: "#",
-              },
-              {
-                name: "Thalapothichil",
-                link: "#",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900 group-hover:bg-blue-900 transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cosmetic[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
 
-            
-          {/* Column 2 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Pizhichil",
-                link: "#",
-              },
-              {
-                name: "Thalam",
-                link: "#",
-              },
-              {
-                name: "Lepanam",
-                link: "#",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900 group-hover:bg-blue-900 transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cosmetic[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cosmetic[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*3rd Cancer Treatment */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic3}
+            alt="Cancer Treatment"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Cancer Treatment
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cancer[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[550px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cancer[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
 
           {/* Column 3 */}
-          <ul className="space-y-3">
-            {[
-              {
-                name: "Udvartthanam",
-                link: "#",
-              },
-              {
-                name: "Navarakizhi",
-                link: "#",
-              },
-              {
-                name: "Elakizhi",
-                link: "#",
-              },
-              {
-                name: "Thalapothichil",
-                link: "#",
-              },
-            ].map((item, index) => (
-              <li key={index} className="flex items-center gap-2 group">
-                <div className="w-2 h-2 rounded-full bg-blue-900  transition-all"></div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-blue-900 font-medium"
-                >
-                  {item.name}
-                </a>
+          <div className="hidden md:block w-[2px] h-[550px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {cancer[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*4th Dental Treatments */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic4}
+            alt="Dental Treatments"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Dental Treatments
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {dental[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {dental[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {dental[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*5th Heart & Cardiology Treatments */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic5}
+            alt="Heart & Cardiology Treatments"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Heart & Cardiology Treatments
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {heart[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {heart[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {heart[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*6th Kidney & Urology Treatments */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic6}
+            alt="Kidney & Urology Treatments"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Kidney & Urology Treatments
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {kidney[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {kidney[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {kidney[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*7th Ophthalmology Surgery */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic7}
+            alt="Ophthalmology Surgery"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Ophthalmology Surgery
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ophthalmology[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ophthalmology[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ophthalmology[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*8th Infertility Treatments */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic8}
+            alt="Infertility Treatments"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Infertility Treatments
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {infertility[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {infertility[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {infertility[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*9th Transplant Programs */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic9}
+            alt="Transplant Programs"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Transplant Programs
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {transplant[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {transplant[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {transplant[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/*10th Ear, Nose, and Throat (ENT) */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic10}
+            alt="Ear, Nose, and Throat (ENT)"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Ear, Nose, and Throat (ENT)
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ent[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ent[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {ent[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 1st Neurology Treatment */}
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+        {/* Header */}
+        <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
+          <Image
+            src={pic1}
+            alt="Neurology Treatment"
+            width={50}
+            height={50}
+            className="w-[60px] h-[50px] flex-shrink-0"
+          />
+          <h2 className="text-white text-[1.8rem] font-semibold m-0">
+            Neurology Treatment
+          </h2>
+        </div>
+
+        {/* Treatments Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-[30px] items-start">
+          {/* Column 1 */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[0].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column Divider */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          {/* Column 2 (with same arrow on left side) */}
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[1].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Right Column Arrow (same as left) */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* Column 3 */}
+          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+
+          <ul className="list-none p-0 m-0 space-y-[12px]">
+            {neurology[2].map((item, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[rgba(74,144,226,0.1)] hover:translate-x-[5px] hover:shadow-[0_2px_8px_rgba(74,144,226,0.15)]"
+              >
+                {/* Left Column Arrow */}
+                <span
+                  className="w-[25px] h-[25px] bg-center bg-no-repeat bg-contain flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                  style={{
+                    backgroundImage: "url('/recent/right-arrow.webp')",
+                  }}
+                ></span>
+                {item.link ? (
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setActiveLink(item.name)}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                    {item.name}
+                  </span>
+                )}
               </li>
             ))}
           </ul>
@@ -258,317 +2164,3 @@ export default function AyurvedaTreatments() {
     </>
   );
 }
-
-// "use client";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-
-// import img from "../../assets/recent/Plan your Travel 1.webp";
-// // You can replace these image paths with your own service icons/images
-// import pic1 from "../../assets/newimage/Neurology Treatment.webp";
-// import pic2 from "../../assets/newimage/Cosmetic Surgeries.webp";
-// import pic3 from "../../assets/newimage/Cancer Treatment.webp";
-// import pic4 from "../../assets/newimage/Dental Treatments.webp";
-// import pic5 from "../../assets/newimage/Heart & Cardiology Treatments.webp";
-// import pic6 from "../../assets/newimage/Kidney & Urology Treatments.webp";
-// import pic7 from "../../assets/newimage/Ophthalmology Surgery.webp";
-// import pic8 from "../../assets/newimage/Infertility Treatments.webp";
-// import pic9 from "../../assets/newimage/Transplant Programs.webp";
-// import pic10 from "../../assets/newimage/Ear, Nose, and Throat (ENT).webp";
-
-// export default function TreatmentServices() {
-//   return (
-//     <>
-//       {/* Banner Section */}
-//       <div className="bg-white relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center text-left">
-//         <Image
-//           src={img}
-//           alt="Our Fee Banner"
-//           fill
-//           className="object-cover brightness-80"
-//         />
-//         <div className="relative z-10 text-center px-4">
-//           <h1 className="text-3xl md:text-5xl font-bold text-white">
-//             Plan your Travel
-//           </h1>
-//         </div>
-//       </div>
-
-//       <section className="py-16 bg-gray-50">
-//         <div className="max-w-6xl mx-auto px-6">
-//           {/* Heading */}
-//           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-//             Our Services at a <span className="text-blue-900">Glance</span>
-//             <p className="relative text-sm">
-//               Planning to travel to India for medical treatment?
-//             </p>
-//           </h2>
-
-//           {/* content  */}
-//           <div className="relative">
-//             {/* Center Vertical Line */}
-//             <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-blue-500"></div>
-
-//             {/* 1 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               {/* Left Content */}
-//               <div className="md:w-1/2 md:pr-8 text-right relative">
-//                 <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-blue-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-blue-700 mb-2">
-//                     Know Our Services:
-//                   </h3>
-//                   <p className="text-gray-600 text-left">
-//                     Explore our range of medical services and specialties. You
-//                     can contact us by phone or WhatsApp for initial guidance and
-//                     consultation.
-//                   </p>
-//                 </div>
-//               </div>
-//               {/* Icon */}
-//               <div className="relative z-10 bg-blue-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic1.src}
-//                   alt="Neurology Treatment"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2"></div>
-//             </div>
-
-//             {/* 2 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2"></div>
-//               <div className="relative z-10 bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic2.src}
-//                   alt="Cosmetic Surgeries"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2 md:pl-8 text-left relative">
-//                 <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-pink-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-pink-700 mb-2">
-//                     Contact Us:
-//                   </h3>
-//                   <p className="text-gray-600">
-//                     Fill out the inquiry form or share your latest medical
-//                     reports for a free review and treatment opinion from our
-//                     network of top hospitals in India.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* 3 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2 md:pr-8 text-right relative">
-//                 <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-green-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-green-700 mb-2">
-//                     Receive a Treatment Plan:
-//                   </h3>
-//                   <p className="text-gray-600 text-left">
-//                     Our medical experts will review your reports and provide a
-//                     detailed treatment plan within 1–2 working days, including
-//                     estimated cost and duration.
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="relative z-10 bg-green-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic3.src}
-//                   alt="Cancer Treatment"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2"></div>
-//             </div>
-
-//             {/* 4 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2"></div>
-//               <div className="relative z-10 bg-red-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic4.src}
-//                   alt="Dental Treatments"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2 md:pl-8 text-left relative">
-//                 <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-red-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-red-700 mb-2">
-//                     Get a Visa Invitation Letter:
-//                   </h3>
-//                   <p className="text-gray-600">
-//                     Once you confirm your treatment, we’ll issue an official
-//                     invitation letter to help you apply for a Medical Visa
-//                     (M-Visa) at the nearest Indian Embassy.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* 5 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2 md:pr-8 text-right relative">
-//                 <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-yellow-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-yellow-700 mb-2">
-//                     Book Your Flight:
-//                   </h3>
-//                   <p className="text-gray-600 text-left">
-//                     After receiving your visa, share your flight details with us
-//                     so we can arrange airport pickup and comfortable
-//                     accommodation near the hospital.
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="relative z-10 bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic5.src}
-//                   alt="Heart & Cardiology Treatments"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2"></div>
-//             </div>
-
-//             {/* 6 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2"></div>
-//               <div className="relative z-10 bg-purple-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic6.src}
-//                   alt="Kidney & Urology Treatments"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2 md:pl-8 text-left relative">
-//                 <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-purple-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-purple-700 mb-2">
-//                     Special Assistance (If Required):
-//                   </h3>
-//                   <p className="text-gray-600">
-//                     We provide extra care for patients with special needs, such
-//                     as air ambulance services, wheelchair assistance, or medical
-//                     escorts.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* 7 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2 md:pr-8 text-right relative">
-//                 <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-teal-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-teal-700 mb-2">
-//                     Carry Essential Documents:
-//                   </h3>
-//                   <p className="text-gray-600 text-left">
-//                     Don’t forget your passport, visa, medical records, and
-//                     credit/debit cards. Keep copies of all important travel and
-//                     health documents.
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="relative z-10 bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic7.src}
-//                   alt="Ophthalmology Surgery"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2"></div>
-//             </div>
-
-//             {/* 8 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2"></div>
-//               <div className="relative z-10 bg-indigo-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic8.src}
-//                   alt="Infertility Treatments"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2 md:pl-8 text-left relative">
-//                 <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-indigo-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-//                     Stay in India:
-//                   </h3>
-//                   <p className="text-gray-600">
-//                     Enjoy secure and comfortable accommodation during your
-//                     stay—ranging from luxury hotels to budget guest houses. Our
-//                     team is available 24/7 to assist you with all arrangements.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* 9 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2 md:pr-8 text-right relative">
-//                 <span className="hidden md:block absolute right-0 top-1/2 w-8 border-t-4 border-teal-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-teal-700 mb-2">
-//                     Treatment & Recovery:
-//                   </h3>
-//                   <p className="text-gray-600 text-left">
-//                     Undergo your treatment under the supervision of highly
-//                     qualified doctors. After the procedure, our team ensures
-//                     your comfort and complete recovery support until discharge.
-//                   </p>
-//                 </div>
-//               </div>
-//               <div className="relative z-10 bg-teal-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic7.src}
-//                   alt="Ophthalmology Surgery"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2"></div>
-//             </div>
-
-//             {/* 10 */}
-//             <div className="mb-12 flex flex-col md:flex-row items-center">
-//               <div className="md:w-1/2"></div>
-//               <div className="relative z-10 bg-indigo-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md mx-auto my-4">
-//                 <img
-//                   src={pic8.src}
-//                   alt="Infertility Treatments"
-//                   className="w-10 h-10 object-contain"
-//                 />
-//               </div>
-//               <div className="md:w-1/2 md:pl-8 text-left relative">
-//                 <span className="hidden md:block absolute left-0 top-1/2 w-8 border-t-4 border-indigo-500"></span>
-//                 <div className="bg-white p-6 rounded-2xl shadow-md inline-block">
-//                   <h3 className="text-xl font-semibold text-indigo-700 mb-2">
-//                     Post-Treatment Care:
-//                   </h3>
-//                   <p className="text-gray-600">
-//                     Even after you return home, we stay connected through online
-//                     consultations and follow-ups to ensure a smooth recovery
-//                     process.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <ul className="text-center font-bold">
-//           <p className="capitalize">
-//             We’re with you every step of the way—from your first inquiry to your
-//             complete recovery.
-//           </p>
-//         </ul>
-//       </section>
-//     </>
-//   );
-// }

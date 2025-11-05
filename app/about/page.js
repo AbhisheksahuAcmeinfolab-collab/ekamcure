@@ -302,7 +302,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
+              
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">

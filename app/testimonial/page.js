@@ -50,7 +50,7 @@ export default function Gallery() {
           className="object-cover brightness-80"
         />
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">Gallery</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white">Testimonial</h1>
         </div>
       </div>
 
