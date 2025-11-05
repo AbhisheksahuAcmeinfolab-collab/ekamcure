@@ -14,64 +14,6 @@ import Img6 from "../../assets/newimage/Vijay kumar.webp";
 export default function AboutUs() {
   const [active, setActive] = useState("mission");
 
-  const services = [
-    "Cost projections for the planned treatments and surgeries",
-    "All medical appointments are scheduled",
-    "Organizing the admissions procedure",
-    "Processing of second opinions obtained from doctors",
-    "Assistance with visa and travel preparations",
-    "Reservations at hotels or serviced residences for a comfortable stay in India",
-    "Planning for dietary restrictions",
-    "Language translators",
-    "Updating the patient&apos;s relatives about their condition",
-    "Religious settings",
-    "Telemedicine is used for remote consultation",
-    "Visiting the local attractions",
-  ];
-
-  const items = [
-    {
-      title: "Comprehensive Treatment Plan",
-      content:
-        "We provide you with detailed medical facts, cost estimate, doctor & hospital info.",
-    },
-    {
-      title: "Medical Visa Support",
-      content:
-        "Guidance and assistance in obtaining the required medical visa quickly and efficiently.",
-    },
-    {
-      title: "Airport Pickup And Drop-Off",
-      content:
-        "Safe and convenient transport arrangements from airport to hospital and back.",
-    },
-    {
-      title: "Individual Attention And Care",
-      content:
-        "Personalized care tailored to your medical and personal needs during your stay.",
-    },
-    {
-      title: "Kindness-Based Recovery",
-      content:
-        "A compassionate healing environment that promotes mental and physical well-being.",
-    },
-    {
-      title: "Hospitality",
-      content:
-        "Comfortable accommodation options and hospitality services for patients and families.",
-    },
-    {
-      title: "Communication Support",
-      content:
-        "Assistance in connecting with doctors, hospitals, and loved ones at all times.",
-    },
-    {
-      title: "Translation Of Languages",
-      content:
-        "Language translators available to ensure smooth communication during your treatment.",
-    },
-  ];
-
   const teamMembers = [
     {
       name: "Udai Singh",
@@ -125,7 +67,7 @@ export default function AboutUs() {
       <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
         <Image
           src={img}
-          alt="Our Fee Banner"
+          alt="Our Banner"
           fill
           className="object-cover brightness-80 w-full h-full"
         />
@@ -145,10 +87,10 @@ export default function AboutUs() {
           {/* Left Side: Image with frame effect */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             {/* Main Image */}
-            <div className="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-lg overflow-hidden z-10">
+            <div className="relative w-[500px] h-[500px] md:w-[500px] md:h-[500px] sm:w-[550] sm:h-[900] rounded-lg overflow-hidden z-10">
               <Image
                 src={doctorImg}
-                alt="About Hospital Surf"
+                alt="About Hospital"
                 fill
                 className="object-cover rounded-lg"
               />
@@ -253,7 +195,7 @@ export default function AboutUs() {
                       Ekam Health Services aims to revolutionize the medical
                       tourism industry by delivering comprehensive, personalized
                       healthcare solutions that bridge international patients
-                      with India’s top medical providers. Our mission is to
+                      with India&apos;s top medical providers. Our mission is to
                       ensure that each patient receives exceptional care through
                       seamless coordination of medical consultations, hospital
                       appointments, and travel arrangements. By upholding the

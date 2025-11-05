@@ -1,12 +1,5 @@
 "use client";
 import Image from "next/image";
-import {
-  FaUserMd,
-  FaCalendarCheck,
-  FaComments,
-  FaPhoneAlt,
-  FaBars,
-} from "react-icons/fa";
 import img1 from "../assets/image/img1.png";
 import img2 from "../assets/image/img2.png";
 import img3 from "../assets/newimage/what.webp";
@@ -72,7 +65,7 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
-      <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-lg md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-gray-300 shadow-lg md:hidden">
         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
           {/* Get Quote */}
           <a
@@ -85,7 +78,7 @@ export default function TopHeader() {
               src={img2}
               alt="Quote"
               width={60}
-              height={30}
+              height={20}
               className="object-contain mb-1"
             />
             <span className="font-semibold text-lg">Get Quote</span>
@@ -101,7 +94,7 @@ export default function TopHeader() {
             <Image
               src={img1}
               alt="Partner"
-              width={50}
+              width={60}
               height={30}
               className="object-contain mb-1"
             />
@@ -118,9 +111,9 @@ export default function TopHeader() {
             <Image
               src={img3}
               alt="WhatsApp"
-              width={40}
-              height={30}
-              className="object-contain"
+              width={50}
+              height={50}
+              className="object-contain mb-3"
             />
             <span className="font-semibold text-lg">Chat</span>
           </a>
