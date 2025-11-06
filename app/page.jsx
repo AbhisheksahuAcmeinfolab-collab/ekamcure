@@ -387,8 +387,8 @@ export default function Home() {
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                   className="object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>

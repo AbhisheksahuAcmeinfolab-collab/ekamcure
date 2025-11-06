@@ -87,7 +87,7 @@ export default function AboutUs() {
           {/* Left Side: Image with frame effect */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             {/* Main Image */}
-            <div className="relative w-[500px] h-[500px] md:w-[500px] md:h-[500px] sm:w-[550] sm:h-[900] rounded-lg overflow-hidden z-10">
+            <div className="relative w-[500px] h-[300px] md:h-[500px] sm:h-[350px] rounded-lg overflow-hidden z-10">
               <Image
                 src={doctorImg}
                 alt="About Hospital"
