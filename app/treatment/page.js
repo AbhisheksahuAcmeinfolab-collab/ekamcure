@@ -239,413 +239,493 @@ export default function TreatmentServices() {
   const dental = [
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Bridges",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Crowns",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Dentures",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Veneers",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "Braces",
+        link: "#",
+      },
+      {
+        name: "Bone Graft Treatment",
+        link: "#",
+      },
+      {
+        name: "Denture Treatment",
         link: "#",
       },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Fillings",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Root Canal Treatment",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Gum Treatment",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Tooth Extraction", link: "#" },
+      { name: "Dental Bonding", link: "#" },
+      { name: "Complete Denture", link: "#" },
+      { name: "Fixed Braces", link: "#" },
     ],
 
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "Dental Implants",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Teeth Whitening",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Invisalign",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Oral Surgery", link: "#" },
+      { name: "Pediatric Dentistry", link: "#" },
+      { name: "Wisdom Tooth Extraction", link: "#" },
     ],
   ];
 
   const heart = [
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Heart Transplant",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Heart Diseases",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Endovascular Aneurysm Repair",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Coronary Heart Diseases",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "Robotic Heart Bypass Surgery",
+        link: "#",
+      },
+      {
+        name: "Ventricular Septal Defect (VSD)",
+        link: "#",
+      },
+      {
+        name: "Atrial Septal Defect",
+        link: "#",
+      },
+      {
+        name: "Endoscopic Vein Harvesting",
+        link: "#",
+      },
+      {
+        name: "Bentall Procedure",
+        link: "#",
+      },
+      {
+        name: "Aortic Valve Repair",
         link: "#",
       },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Coronary Angioplasty",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Heart Bypass Surgery",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Heart Valve Surgery",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Atherosclerosis Treatment", link: "#" },
+      { name: "Aortic Stenosis Treatment", link: "#" },
+      {
+        name: "Balloon Mitral Valvuloplasty",
+        link: "#",
+      },
+      {
+        name: "Balloon Pulmonary Valvuloplasty",
+        link: "#",
+      },
+      {
+        name: "Cardiac Asthma Treatment",
+        link: "#",
+      },
+      { name: "Coronary Artery Disease", link: "#" },
+      { name: "Hypertension Treatment", link: "#" },
     ],
 
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "Paediatric Heart Surgery",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Robotic Heart Surgery",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Pacemaker Implantation",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Mitral Valve Repair", link: "#" },
+      { name: "Myocardial Bridge Treatment", link: "#" },
+      {
+        name: "Pericarditis Treatment",
+        link: "#",
+      },
+      {
+        name: "Transcatheter Aortic Valve Implantation",
+        link: "#",
+      },
+      {
+        name: "Aortopulmonary Window",
+        link: "#",
+      },
+      { name: "Cardioversion Treatment", link: "#" },
+      { name: "Double Valve Replacement", link: "#" },
     ],
   ];
 
   const kidney = [
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Hydronephrosis Treatment",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Kidney Cyst",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Kidney Stones",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Percutaneous Nephrolithotomy (PCNL)",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "TURP Surgery",
+        link: "#",
+      },
+      {
+        name: "Nephrectomy Surgery",
         link: "#",
       },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Renal Angiography",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Kidney Dialysis",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Kidney Tumor",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Undescended Testicle Surgery", link: "#" },
+      { name: "Bladder Stone Removal", link: "#" },
+      { name: "Prostate Biopsy", link: "#" },
     ],
 
+    //
+    //
+    // Pyeloplasty Surgery
+    //
+    //
+    //
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "RIRS Surgery",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Endopyelotomy Procedure",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Pyeloplasty Surgery",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Peyronie's Disease Treatment", link: "#" },
+      { name: "Penile Prosthesis", link: "#" },
+      { name: "Urethral Surgery", link: "#" },
     ],
   ];
 
   const ophthalmology = [
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Refractive Surgery",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Cornea Transplant Surgery",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Laser Eye Surgery",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "LASIK Surgery",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "PRK Surgery",
         link: "#",
       },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Cataract Surgery",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Glaucoma Surgery",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Vitreoretinal Surgery",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Retinal Detachment Surgery", link: "#" },
+      { name: "Macular Hole Surgery", link: "#" },
     ],
 
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "Eye Muscle Repair",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Artificial Iris Implantation",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Astigmatism Correction",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Blepharoplasty", link: "#" },
+      { name: "Retinal detachment", link: "#" },
     ],
   ];
 
   const infertility = [
     [
       {
-        name: "Epilepsy Treatment",
+        name: "In Vitro Fertilization (IVF)",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Embryo Transfer",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Hysterosalpingography (HSG)",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Sperm Collection",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "Fertility Testing",
         link: "#",
       },
     ],
-
+    //
+    //
+    //
+    //
+    //
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Ovulation Induction",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Laparoscopic Ovarian Drilling (LOD)",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Blastocyst Transfer",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Intrauterine Insemination (IUI)", link: "#" },
+      { name: "Fertility Preservation", link: "#" },
     ],
-
+  
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "Retrograde Ejaculation Treatment",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Assisted Hatching",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Intracytoplasmic Sperm Injection (ICSI)",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Gamete Intrafallopian Transfer (GIFT)", link: "#" },
+      { name: "Surrogacy", link: "#" },
     ],
   ];
 
-  const transplant = [
+  const transplant = [ 
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Bone Marrow Transplants (BMT)",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Kidney Transplant",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Liver Transplant",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Heart Transplant",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "Lung Transplant",
         link: "#",
       },
+    ],
+// 
+// 
+// 
+// 
+// 
+    [
+      {
+        name: "Pancreas Transplant",
+        link: "#",
+      },
+      {
+        name: "Intestine Transplant",
+        link: "#",
+      },
+      {
+        name: "Face Transplant Surgery",
+        link: "#",
+      },
+      { name: "Bilateral Hand Transplant", link: "#" },
+      { name: "Corneal Transplant", link: "#" },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Stem Cell Transplant",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Multi-Organ Transplant",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Living Donor Transplant",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
-    ],
-
-    [
-      {
-        name: " Deep Brain Stimulation Surgery",
-        link: "#",
-      },
-      {
-        name: "Epidural Stimulation",
-        link: "#",
-      },
-      {
-        name: "Intrathecal Baclofen Pump",
-        link: "#",
-      },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Cadaveric Transplant", link: "#" },
+      { name: "Pediatric Transplant", link: "#" },
     ],
   ];
 
   const ent = [
+
     [
       {
-        name: "Epilepsy Treatment",
+        name: "Cochlear Implant Surgery",
         link: "#",
       },
       {
-        name: "Cerebrospinal Fluid Shunt",
+        name: "Endoscopic Sinus",
         link: "#",
       },
       {
-        name: "Skull Base Surgery",
+        name: "Vertigo Surgery",
         link: "#",
       },
       {
-        name: "Brain Tumor",
+        name: "Tonsillectomy",
         link: "#",
       },
       {
-        name: "Parkinson's Treatment",
+        name: "Adenoidectomy",
         link: "#",
       },
     ],
 
     [
       {
-        name: "Cyber Knife Robotic Radiation",
+        name: "Laryngotracheoplasty",
         link: "#",
       },
       {
-        name: "Stroke Rehabilitation",
+        name: "Thyroid Surgery Treatment",
         link: "#",
       },
       {
-        name: "Multiple Sclerosis",
+        name: "Turbinate Reduction Surgery",
         link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Septoplasty", link: "#" },
+      { name: "Rhinoplasty", link: "#" },
     ],
 
     [
       {
-        name: " Deep Brain Stimulation Surgery",
+        name: "Thyroidectomy Surgery",
         link: "#",
       },
       {
-        name: "Epidural Stimulation",
+        name: "Bone Conduction Hearing Aid",
         link: "#",
       },
       {
-        name: "Intrathecal Baclofen Pump",
+        name: "Tympanoplasty Surgery",
         link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Myringotomy", link: "#" },
+      { name: "Mastoidectomy", link: "#" },
     ],
   ];
 
