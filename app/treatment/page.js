@@ -954,470 +954,230 @@ export default function TreatmentServices() {
   ];
 
   const obesity = [
+
     [
-      {
-        name: "Refractive Surgery",
-        link: "#",
-      },
-      {
-        name: "Cornea Transplant Surgery",
-        link: "#",
-      },
-      {
-        name: "Laser Eye Surgery",
-        link: "#",
-      },
-      {
-        name: "LASIK Surgery",
-        link: "#",
-      },
-      {
-        name: "PRK Surgery",
-        link: "#",
-      },
+      { name: "Bariatric Surgery", link: "#" },
+      { name: "Gastric Bypass Surgery", link: "#" },
+      { name: "Gastric Sleeve", link: "#" },
+      { name: "Medical Weight Management", link: "#" },
+      { name: "Nutrition Counseling", link: "#" },
     ],
 
     [
-      {
-        name: "Cataract Surgery",
-        link: "#",
-      },
-      {
-        name: "Glaucoma Surgery",
-        link: "#",
-      },
-      {
-        name: "Vitreoretinal Surgery",
-        link: "#",
-      },
-      { name: "Retinal Detachment Surgery", link: "#" },
-      { name: "Macular Hole Surgery", link: "#" },
+      { name: "Gastric Balloon", link: "#" },
+      { name: "Weight Loss Treatment", link: "#" },
+      { name: "Gastric Plication", link: "#" },
+      { name: "Endoscopic Sleeve Gastroplasty", link: "#" },
+      { name: "Behavioral Therapy", link: "#" },
     ],
 
     [
-      {
-        name: "Eye Muscle Repair",
-        link: "#",
-      },
-      {
-        name: "Artificial Iris Implantation",
-        link: "#",
-      },
-      {
-        name: "Astigmatism Correction",
-        link: "#",
-      },
-      { name: "Blepharoplasty", link: "#" },
-      { name: "Retinal detachment", link: "#" },
+      { name: "Gastric Band Surgery", link: "#" },
+      { name: "Biliopancreatic Diversion With Duodenal Switch", link: "#" },
+      { name: "Primary Obesity Surgery Endolumenal", link: "#" },
+      { name: "Metabolic Surgery", link: "#" },
+      { name: "Exercise Physiology", link: "#" },
     ],
   ];
+
 
   const orthopedic = [
     [
-      {
-        name: "In Vitro Fertilization (IVF)",
-        link: "#",
-      },
-      {
-        name: "Embryo Transfer",
-        link: "#",
-      },
-      {
-        name: "Hysterosalpingography (HSG)",
-        link: "#",
-      },
-      {
-        name: "Sperm Collection",
-        link: "#",
-      },
-      {
-        name: "Fertility Testing",
-        link: "#",
-      },
+      { name: "Anterior Cruciate Ligament (ACL)", link: "#" },
+      { name: "Hip Replacement Surgery", link: "#" },
+      { name: "Shoulder Replacement", link: "#" },
+      { name: "Knee Replacement Surgery", link: "#" },
+      { name: "Arthroscopy Surgery", link: "#" },
+      { name: "Limb Lengthening Surgery", link: "#" },
+      { name: "Bone Tumor", link: "#" },
+      { name: "Joint Replacement Surgery", link: "#" },
     ],
 
     [
-      {
-        name: "Ovulation Induction",
-        link: "#",
-      },
-      {
-        name: "Laparoscopic Ovarian Drilling (LOD)",
-        link: "#",
-      },
-      {
-        name: "Blastocyst Transfer",
-        link: "#",
-      },
-      { name: "Intrauterine Insemination (IUI)", link: "#" },
-      { name: "Fertility Preservation", link: "#" },
+      { name: "Limb Amputation", link: "#" },
+      { name: "Dislocated Hip Treatment", link: "#" },
+      { name: "Femur Fracture Treatment", link: "#" },
+      { name: "Carpal Tunnel Release Surgery", link: "#" },
+      { name: "Club Foot Treatment", link: "#" },
+      { name: "Ankle Arthroscopy", link: "#" },
+      { name: "Elbow Arthroscopy Surgery", link: "#" },
+      { name: "Dynamic Hip Screw", link: "#" },
     ],
 
     [
-      {
-        name: "Retrograde Ejaculation Treatment",
-        link: "#",
-      },
-      {
-        name: "Assisted Hatching",
-        link: "#",
-      },
-      {
-        name: "Intracytoplasmic Sperm Injection (ICSI)",
-        link: "#",
-      },
-      { name: "Gamete Intrafallopian Transfer (GIFT)", link: "#" },
-      { name: "Surrogacy", link: "#" },
+
+      { name: "Baker's Cyst Treatment", link: "#" },
+      { name: "Shoulder Impingement Syndrome Treatment", link: "#" },
+      { name: "ACL Reconstruction Surgery", link: "#" },
+      { name: "Pinched Nerve Treatment", link: "#" },
+      { name: "Achilles Tendinitis Treatment", link: "#" },
+      { name: "Ankle Fracture Treatment", link: "#" },
+      { name: "Dislocated Elbow Treatment", link: "#" },
     ],
   ];
+
 
   const pulmonology = [
     [
-      {
-        name: "Bone Marrow Transplants (BMT)",
-        link: "#",
-      },
-      {
-        name: "Kidney Transplant",
-        link: "#",
-      },
-      {
-        name: "Liver Transplant",
-        link: "#",
-      },
-      {
-        name: "Heart Transplant",
-        link: "#",
-      },
-      {
-        name: "Lung Transplant",
-        link: "#",
-      },
+      { name: "Bronchoscopic Lung Volume Reduction", link: "#" },
+      { name: "Bronchoscopy Surgery", link: "#" },
+      { name: "Pulmonary Lobectomy", link: "#" },
+      { name: "Asthma Treatment", link: "#" },
+      { name: "Pneumonia Treatment", link: "#" },
     ],
 
     [
-      {
-        name: "Pancreas Transplant",
-        link: "#",
-      },
-      {
-        name: "Intestine Transplant",
-        link: "#",
-      },
-      {
-        name: "Face Transplant Surgery",
-        link: "#",
-      },
-      { name: "Bilateral Hand Transplant", link: "#" },
-      { name: "Corneal Transplant", link: "#" },
+      { name: "Lung Biopsy", link: "#" },
+      { name: "Pleural Biopsy", link: "#" },
+      { name: "Thoracentesis Surgery", link: "#" },
+      { name: "Interstitial Lung Disease Treatment", link: "#" },
+      { name: "Pulmonary Rehabilitation", link: "#" },
     ],
 
     [
-      {
-        name: "Stem Cell Transplant",
-        link: "#",
-      },
-      {
-        name: "Multi-Organ Transplant",
-        link: "#",
-      },
-      {
-        name: "Living Donor Transplant",
-        link: "#",
-      },
-      { name: "Cadaveric Transplant", link: "#" },
-      { name: "Pediatric Transplant", link: "#" },
+      { name: "Thoracoscopy Surgery", link: "#" },
+      { name: "Tuberculosis Treatment", link: "#" },
+      { name: "Chronic Obstructive Pulmonary Disease Treatment", link: "#" },
+      { name: "Sleep Apnea Treatment", link: "#" },
+      { name: "Lung Cancer Treatment", link: "#" },
     ],
   ];
+
 
   const rheumatology = [
     [
-      {
-        name: "Cochlear Implant Surgery",
-        link: "#",
-      },
-      {
-        name: "Endoscopic Sinus",
-        link: "#",
-      },
-      {
-        name: "Vertigo Surgery",
-        link: "#",
-      },
-      {
-        name: "Tonsillectomy",
-        link: "#",
-      },
-      {
-        name: "Adenoidectomy",
-        link: "#",
-      },
+      { name: "Biologic Response Modifiers", link: "#" },
+      { name: "Lupus Erythematosus", link: "#" },
+      { name: "Fibromyalgia Treatment", link: "#" },
+      { name: "Gout Treatment", link: "#" },
+      { name: "Vasculitis Treatment", link: "#" },
     ],
 
     [
-      {
-        name: "Laryngotracheoplasty",
-        link: "#",
-      },
-      {
-        name: "Thyroid Surgery Treatment",
-        link: "#",
-      },
-      {
-        name: "Turbinate Reduction Surgery",
-        link: "#",
-      },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Sjogren's Syndrome Treatment", link: "#" },
+      { name: "Rheumatoid Arthritis Treatment", link: "#" },
+      { name: "Autoinflammatory Diseases", link: "#" },
+      { name: "Psoriatic Arthritis Treatment", link: "#" },
+      { name: "Ankylosing Spondylitis Treatment", link: "#" },
     ],
 
     [
-      {
-        name: "Thyroidectomy Surgery",
-        link: "#",
-      },
-      {
-        name: "Bone Conduction Hearing Aid",
-        link: "#",
-      },
-      {
-        name: "Tympanoplasty Surgery",
-        link: "#",
-      },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Autoimmune Diseases Treatment", link: "#" },
+      { name: "Osteoarthritis Surgery", link: "#" },
+      { name: "Systemic Lupus Erythematosus", link: "#" },
+      { name: "Scleroderma Treatment", link: "#" },
+      { name: "Polymyalgia Rheumatica", link: "#" },
     ],
   ];
+
+
   const spine = [
     [
-      {
-        name: "Cochlear Implant Surgery",
-        link: "#",
-      },
-      {
-        name: "Endoscopic Sinus",
-        link: "#",
-      },
-      {
-        name: "Vertigo Surgery",
-        link: "#",
-      },
-      {
-        name: "Tonsillectomy",
-        link: "#",
-      },
-      {
-        name: "Adenoidectomy",
-        link: "#",
-      },
+      { name: "Scoliosis Spine Surgery", link: "#" },
+      { name: "Spine Surgery", link: "#" },
+      { name: "Spine Tumor Surgery", link: "#" },
+      { name: "Laminectomy", link: "#" },
+      { name: "Spinal Fusion", link: "#" },
     ],
 
     [
-      {
-        name: "Laryngotracheoplasty",
-        link: "#",
-      },
-      {
-        name: "Thyroid Surgery Treatment",
-        link: "#",
-      },
-      {
-        name: "Turbinate Reduction Surgery",
-        link: "#",
-      },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Disc Replacement Surgery", link: "#" },
+      { name: "Kyphoplasty Surgery", link: "#" },
+      { name: "Cervical Spondylosis Treatment", link: "#" },
+      { name: "Microdiscectomy", link: "#" },
+      { name: "Artificial Disc Replacement", link: "#" },
     ],
 
     [
-      {
-        name: "Thyroidectomy Surgery",
-        link: "#",
-      },
-      {
-        name: "Bone Conduction Hearing Aid",
-        link: "#",
-      },
-      {
-        name: "Tympanoplasty Surgery",
-        link: "#",
-      },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Corpectomy Surgery", link: "#" },
+      { name: "Foraminotomy Surgery", link: "#" },
+      { name: "Vertebroplasty Surgery", link: "#" },
+      { name: "Spinal Decompression", link: "#" },
+      { name: "Minimally Invasive Spine Surgery", link: "#" },
     ],
   ];
+
+
   const surgical = [
     [
-      {
-        name: "Cochlear Implant Surgery",
-        link: "#",
-      },
-      {
-        name: "Endoscopic Sinus",
-        link: "#",
-      },
-      {
-        name: "Vertigo Surgery",
-        link: "#",
-      },
-      {
-        name: "Tonsillectomy",
-        link: "#",
-      },
-      {
-        name: "Adenoidectomy",
-        link: "#",
-      },
+      { name: "Cryosurgery", link: "#" },
+      { name: "Radiofrequency Ablation", link: "#" },
+      { name: "Laparoscopic Surgery", link: "#" },
+      { name: "Breast Cancer Surgery", link: "#" },
+      { name: "Colorectal Cancer Surgery", link: "#" },
     ],
 
     [
-      {
-        name: "Laryngotracheoplasty",
-        link: "#",
-      },
-      {
-        name: "Thyroid Surgery Treatment",
-        link: "#",
-      },
-      {
-        name: "Turbinate Reduction Surgery",
-        link: "#",
-      },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Robotic Surgery", link: "#" },
+      { name: "Thoracic Surgery", link: "#" },
+      { name: "Endoscopy Surgery", link: "#" },
+      { name: "Head and Neck Cancer Surgery", link: "#" },
+      { name: "Gynecologic Oncology Surgery", link: "#" },
     ],
 
     [
-      {
-        name: "Thyroidectomy Surgery",
-        link: "#",
-      },
-      {
-        name: "Bone Conduction Hearing Aid",
-        link: "#",
-      },
-      {
-        name: "Tympanoplasty Surgery",
-        link: "#",
-      },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Diagnostic Surgery", link: "#" },
+      { name: "Reconstructive Surgery", link: "#" },
+      { name: "Melanoma Surgery", link: "#" },
+      { name: "Sarcoma Surgery", link: "#" },
+      { name: "Hepatobiliary Surgery", link: "#" },
     ],
   ];
+
+
   const orthopaedic = [
     [
-      {
-        name: "Cochlear Implant Surgery",
-        link: "#",
-      },
-      {
-        name: "Endoscopic Sinus",
-        link: "#",
-      },
-      {
-        name: "Vertigo Surgery",
-        link: "#",
-      },
-      {
-        name: "Tonsillectomy",
-        link: "#",
-      },
-      {
-        name: "Adenoidectomy",
-        link: "#",
-      },
+      { name: "Cochlear Implant Surgery", link: "#" },
+      { name: "Endoscopic Sinus", link: "#" },
+      { name: "Vertigo Surgery", link: "#" },
+      { name: "Tonsillectomy", link: "#" },
+      { name: "Adenoidectomy", link: "#" },
     ],
 
     [
-      {
-        name: "Laryngotracheoplasty",
-        link: "#",
-      },
-      {
-        name: "Thyroid Surgery Treatment",
-        link: "#",
-      },
-      {
-        name: "Turbinate Reduction Surgery",
-        link: "#",
-      },
+      { name: "Laryngotracheoplasty", link: "#" },
+      { name: "Thyroid Surgery Treatment", link: "#" },
+      { name: "Turbinate Reduction Surgery", link: "#" },
       { name: "Septoplasty", link: "#" },
       { name: "Rhinoplasty", link: "#" },
     ],
 
     [
-      {
-        name: "Thyroidectomy Surgery",
-        link: "#",
-      },
-      {
-        name: "Bone Conduction Hearing Aid",
-        link: "#",
-      },
-      {
-        name: "Tympanoplasty Surgery",
-        link: "#",
-      },
+      { name: "Thyroidectomy Surgery", link: "#" },
+      { name: "Bone Conduction Hearing Aid", link: "#" },
+      { name: "Tympanoplasty Surgery", link: "#" },
       { name: "Myringotomy", link: "#" },
       { name: "Mastoidectomy", link: "#" },
     ],
   ];
+
+
   const stem = [
     [
-      {
-        name: "Cochlear Implant Surgery",
-        link: "#",
-      },
-      {
-        name: "Endoscopic Sinus",
-        link: "#",
-      },
-      {
-        name: "Vertigo Surgery",
-        link: "#",
-      },
-      {
-        name: "Tonsillectomy",
-        link: "#",
-      },
-      {
-        name: "Adenoidectomy",
-        link: "#",
-      },
+      { name: "Diabetes", link: "#" },
+      { name: "Various Blood Cancers", link: "#" },
+      { name: "Spinal Cord Injuries", link: "#" },
+      { name: "Retinal Diseases", link: "#" },
+      { name: "Brain Stroke", link: "#" },
+      { name: "Multiple Sclerosis", link: "#" },
     ],
 
     [
-      {
-        name: "Laryngotracheoplasty",
-        link: "#",
-      },
-      {
-        name: "Thyroid Surgery Treatment",
-        link: "#",
-      },
-      {
-        name: "Turbinate Reduction Surgery",
-        link: "#",
-      },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Hearing Loss", link: "#" },
+      { name: "Osteoarthritis, Rheumatoid Arthritis", link: "#" },
+      { name: "Lung Diseases", link: "#" },
+      { name: "Autism", link: "#" },
+      { name: "Parkinson's Disease", link: "#" },
+      { name: "Heart Disease", link: "#" },
     ],
 
     [
-      {
-        name: "Thyroidectomy Surgery",
-        link: "#",
-      },
-      {
-        name: "Bone Conduction Hearing Aid",
-        link: "#",
-      },
-      {
-        name: "Tympanoplasty Surgery",
-        link: "#",
-      },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Knee Injuries", link: "#" },
+      { name: "Kidney Failure", link: "#" },
+      { name: "Sickle Cell Anemia / Sickle Cell Disease", link: "#" },
+      { name: "Alzheimer's Disease", link: "#" },
+      { name: "Liver Disease", link: "#" },
+      { name: "Muscular Dystrophy", link: "#" },
     ],
   ];
 
@@ -1476,11 +1236,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1516,11 +1275,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1555,11 +1313,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1612,11 +1369,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1652,11 +1408,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1691,11 +1446,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1748,11 +1502,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1788,11 +1541,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1827,11 +1579,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1884,11 +1635,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1924,11 +1674,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -1963,11 +1712,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2020,11 +1768,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2060,11 +1807,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2099,11 +1845,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2156,11 +1901,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2196,11 +1940,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2235,11 +1978,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2292,11 +2034,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2332,11 +2073,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2371,11 +2111,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2428,11 +2167,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2468,11 +2206,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2507,11 +2244,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2564,11 +2300,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2604,11 +2339,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2643,11 +2377,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2700,11 +2433,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2740,11 +2472,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2779,11 +2510,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2836,11 +2566,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2876,11 +2605,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2933,11 +2661,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -2973,11 +2700,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3012,11 +2738,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3069,11 +2794,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3109,11 +2833,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3148,11 +2871,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3205,11 +2927,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3245,11 +2966,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3284,11 +3004,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3341,11 +3060,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3381,11 +3099,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3420,11 +3137,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3477,11 +3193,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3517,11 +3232,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3556,11 +3270,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3613,11 +3326,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3653,11 +3365,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3692,11 +3403,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3749,11 +3459,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3789,11 +3498,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3828,11 +3536,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3885,11 +3592,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3925,11 +3631,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -3964,11 +3669,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4021,11 +3725,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4061,11 +3764,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4100,11 +3802,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4157,11 +3858,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4197,11 +3897,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4236,11 +3935,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4293,11 +3991,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4333,11 +4030,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4372,11 +4068,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4429,11 +4124,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4469,11 +4163,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4508,11 +4201,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4565,11 +4257,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4605,11 +4296,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -4644,11 +4334,10 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
+                      ? "text-[#082859] font-semibold"
+                      : "text-[#082859] hover:text-[#0C3D88]"
+                      }`}
                   >
                     {item.name}
                   </Link>

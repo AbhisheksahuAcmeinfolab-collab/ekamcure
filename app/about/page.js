@@ -87,18 +87,19 @@ export default function AboutUs() {
           {/* Left Side: Image with frame effect */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             {/* Main Image */}
-            <div className="relative w-[500px] h-[300px] md:h-[500px] sm:h-[350px] rounded-lg overflow-hidden z-10">
+            <div className="w-full max-w-[500px]">
               <Image
                 src={doctorImg}
                 alt="About Hospital"
-                fill
-                className="object-cover rounded-lg"
+                width={500}
+                height={300}
+                className="w-full h-auto rounded-lg"
               />
             </div>
           </div>
 
           {/* Right Side: Text Content */}
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-center md:text-left mt-2">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
               About Us!
             </h2>
@@ -140,9 +141,8 @@ export default function AboutUs() {
           {/* ===== Toggle Switch ===== */}
           <div className="flex justify-center items-center space-x-3 mb-10">
             <span
-              className={`font-medium ${
-                active === "mission" ? "text-gray-900" : "text-gray-500"
-              }`}
+              className={`font-medium ${active === "mission" ? "text-gray-900" : "text-gray-500"
+                }`}
             >
               Our Mission
             </span>
@@ -152,21 +152,18 @@ export default function AboutUs() {
               onClick={() =>
                 setActive(active === "mission" ? "vision" : "mission")
               }
-              className={`relative w-12 h-6 flex items-center rounded-full transition-all duration-300 ${
-                active === "mission" ? "bg-blue-600" : "bg-blue-600"
-              }`}
+              className={`relative w-12 h-6 flex items-center rounded-full transition-all duration-300 ${active === "mission" ? "bg-blue-600" : "bg-blue-600"
+                }`}
             >
               <span
-                className={`absolute w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                  active === "mission" ? "translate-x-1" : "translate-x-6"
-                }`}
+                className={`absolute w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ${active === "mission" ? "translate-x-1" : "translate-x-6"
+                  }`}
               ></span>
             </button>
 
             <span
-              className={`font-medium ${
-                active === "vision" ? "text-gray-900" : "text-gray-500"
-              }`}
+              className={`font-medium ${active === "vision" ? "text-gray-900" : "text-gray-500"
+                }`}
             >
               Our Vision
             </span>
@@ -244,7 +241,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-              
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">

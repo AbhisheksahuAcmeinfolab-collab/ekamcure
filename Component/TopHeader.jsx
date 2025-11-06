@@ -1,3 +1,4 @@
+
 "use client";
 import Image from "next/image";
 import img1 from "../assets/image/img1.png";
@@ -79,6 +80,7 @@ export default function TopHeader() {
               alt="Quote"
               width={60}
               height={20}
+              priority
               className="object-contain mb-1"
             />
             <span className="font-semibold text-lg">Get Quote</span>
@@ -96,6 +98,7 @@ export default function TopHeader() {
               alt="Partner"
               width={60}
               height={30}
+              priority
               className="object-contain mb-1"
             />
             <span className="font-semibold text-center text-lg">Partner</span>
@@ -113,6 +116,7 @@ export default function TopHeader() {
               alt="WhatsApp"
               width={50}
               height={50}
+              priority
               className="object-contain mb-3"
             />
             <span className="font-semibold text-lg">Chat</span>
@@ -122,6 +126,23 @@ export default function TopHeader() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,7 +217,7 @@ export default function TopHeader() {
 //       </div>
 
 //       {/* mobile view */}
-//       <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-gray-300 shadow-lg md:hidden">
+//       <div className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform">
 //         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
 //           {/* Get Quote */}
 //           <a
@@ -253,3 +274,10 @@ export default function TopHeader() {
 //     </>
 //   );
 // }
+
+
+
+
+
+
+
