@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
 
           {/* Section 1 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">1. Scope</h2>
+            <h2 className="text-xl font-semibold mb-2">1. Personal Information</h2>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
               <li>Name, email, phone number</li>
               <li>Country and city of residence</li>
