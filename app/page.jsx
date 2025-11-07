@@ -37,6 +37,13 @@ const slides = [
 
 export default function Home() {
   const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setHeroCurrent((prev) => (prev + 1) % slides.length);
+  }, 5000); // 5 seconds per slide
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <main className="bg-white relative isolate">

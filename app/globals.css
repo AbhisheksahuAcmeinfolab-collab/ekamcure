@@ -33,7 +33,3 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-.fixed {
-  contain: paint layout style;
-  isolation: isolate;
-}

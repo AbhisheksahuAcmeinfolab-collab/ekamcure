@@ -1,4 +1,3 @@
-
 "use client";
 import Image from "next/image";
 import img1 from "../assets/image/img1.png";
@@ -66,7 +65,18 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
-      <div className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform backface-hidden">
+      <div
+        className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
+        style={{
+          transform: "translateZ(0)",
+          WebkitTransform: "translateZ(0)",
+          backfaceVisibility: "hidden",
+          WebkitBackfaceVisibility: "hidden",
+          contain: "paint layout style",
+          isolation: "isolate",
+          willChange: "transform",
+        }}
+      >
         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
           {/* Get Quote */}
           <a
@@ -103,7 +113,7 @@ export default function TopHeader() {
             />
             <span className="font-semibold text-center text-lg">Partner</span>
           </a>
-        
+
           {/* WhatsApp Chat */}
           <a
             href="https://wa.me/919990205353"
@@ -126,29 +136,6 @@ export default function TopHeader() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // "use client";
 // import Image from "next/image";
@@ -252,7 +239,7 @@ export default function TopHeader() {
 //             />
 //             <span className="font-semibold text-center text-lg">Partner</span>
 //           </a>
-        
+
 //           {/* WhatsApp Chat */}
 //           <a
 //             href="https://wa.me/919990205353"
@@ -274,10 +261,3 @@ export default function TopHeader() {
 //     </>
 //   );
 // }
-
-
-
-
-
-
-
