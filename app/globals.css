@@ -33,3 +33,22 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+.fixed-footer {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  contain: strict;
+  isolation: isolate;
+  perspective: 1000px;
+}
+
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+

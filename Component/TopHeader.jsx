@@ -65,53 +65,58 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
+      {/* ===== Mobile Bottom Fixed Footer ===== */}
       <div
-        className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
+        className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-[0_-2px_10px_rgba(0,0,0,0.08)] md:hidden"
         style={{
           transform: "translateZ(0)",
           WebkitTransform: "translateZ(0)",
+          willChange: "transform",
           backfaceVisibility: "hidden",
           WebkitBackfaceVisibility: "hidden",
-          contain: "paint layout style",
+          contain: "layout paint style",
           isolation: "isolate",
-          willChange: "transform",
         }}
       >
-        <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
+        <div className="flex justify-around items-center py-2 px-2 text-[#053161] text-center select-none">
           {/* Get Quote */}
           <a
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-[11px] flex-1"
+            className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <Image
-              src={img2}
-              alt="Quote"
-              width={60}
-              height={20}
-              priority
-              className="object-contain mb-1"
-            />
-            <span className="font-semibold text-lg">Get Quote</span>
+            <div className="w-[36px] h-[36px] mb-1 relative">
+              <Image
+                src={img2}
+                alt="Get Quote"
+                fill
+                className="object-contain"
+                sizes="40px"
+                unoptimized
+              />
+            </div>
+            <span className="font-semibold text-[13px]">Get Quote</span>
           </a>
 
-          {/* Become Partner */}
+          {/* Partner */}
           <a
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-[10px] flex-1"
+            className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <Image
-              src={img1}
-              alt="Partner"
-              width={60}
-              height={30}
-              priority
-              className="object-contain mb-1"
-            />
-            <span className="font-semibold text-center text-lg">Partner</span>
+            <div className="w-[36px] h-[36px] mb-1 relative">
+              <Image
+                src={img1}
+                alt="Partner"
+                fill
+                className="object-contain"
+                sizes="40px"
+                unoptimized
+              />
+            </div>
+            <span className="font-semibold text-[13px]">Partner</span>
           </a>
 
           {/* WhatsApp Chat */}
@@ -119,17 +124,19 @@ export default function TopHeader() {
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center text-[11px] flex-1"
+            className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <Image
-              src={img3}
-              alt="WhatsApp"
-              width={50}
-              height={50}
-              priority
-              className="object-contain mb-3"
-            />
-            <span className="font-semibold text-lg">Chat</span>
+            <div className="w-[36px] h-[36px] mb-1 relative">
+              <Image
+                src={img3}
+                alt="Chat"
+                fill
+                className="object-contain"
+                sizes="40px"
+                unoptimized
+              />
+            </div>
+            <span className="font-semibold text-[13px]">Chat</span>
           </a>
         </div>
       </div>
