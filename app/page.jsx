@@ -1,4 +1,4 @@
- "use client";
+"use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
@@ -172,11 +172,11 @@ export default function Home() {
           <AnimatePresence mode="">
             <motion.div
               key={heroCurrent}
-              initial={{ opacity: 0, scale: 1.1 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className="absolute inset-0 will-change-transform"
+              className="absolute inset-0"
             >
               <Image
                 src={slides[heroCurrent].img}
@@ -200,15 +200,15 @@ export default function Home() {
           <AnimatePresence mode="wait">
             <motion.div
               key={heroCurrent + "-content"}
-              initial={{ opacity: 0, y: 60 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -60 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.p
                 className="uppercase xl:text-4xl lg:text-2xl md:text-2xl sm:text-5xl tracking-[0.4em] text-cyan-300 font-semibold"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
                 {slides[heroCurrent].subtitle}
@@ -216,8 +216,8 @@ export default function Home() {
 
               <motion.p
                 className="mt-40 sm:mt-30 text-4xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold text-gray-200 max-w-2xl mx-auto"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
                 {slides[heroCurrent].desc}
@@ -225,8 +225,8 @@ export default function Home() {
 
               <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.97 }}
                   className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition duration-300"
                 >
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
@@ -234,8 +234,8 @@ export default function Home() {
                   </a>
                 </motion.button>
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.97 }}
                   className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition duration-300"
                 >
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
@@ -529,70 +529,6 @@ export default function Home() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // no blinking code
 // "use client";

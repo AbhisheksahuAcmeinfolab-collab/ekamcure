@@ -66,76 +66,47 @@ export default function TopHeader() {
 
       {/* mobile view */}
       {/* ===== Mobile Bottom Fixed Footer ===== */}
+      {/* ===== Mobile Bottom Fixed Footer (no blink) ===== */}
       <div
         className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-[0_-2px_10px_rgba(0,0,0,0.08)] md:hidden"
         style={{
-          transform: "translateZ(0)",
-          WebkitTransform: "translateZ(0)",
-          willChange: "transform",
-          backfaceVisibility: "hidden",
-          WebkitBackfaceVisibility: "hidden",
-          contain: "layout paint style",
-          isolation: "isolate",
+          position: "fixed",
+          backfaceVisibility: "visible",
+          WebkitBackfaceVisibility: "visible",
+          transform: "none",
+          WebkitTransform: "none",
+          willChange: "auto",
+          contain: "none",
+          isolation: "auto",
         }}
       >
         <div className="flex justify-around items-center py-2 px-2 text-[#053161] text-center select-none">
-          {/* Get Quote */}
           <a
             href="/contact"
-            target="_blank"
-            rel="noopener noreferrer"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <div className="w-[36px] h-[36px] mb-1 relative">
-              <Image
-                src={img2}
-                alt="Get Quote"
-                fill
-                className="object-contain"
-                sizes="40px"
-                unoptimized
-              />
-            </div>
+            <img
+              src="/images/what.webp"
+              alt="Get Quote"
+              className="w-[32px] h-[32px] mb-1"
+            />
             <span className="font-semibold text-[13px]">Get Quote</span>
           </a>
 
-          {/* Partner */}
           <a
             href="/contact"
-            target="_blank"
-            rel="noopener noreferrer"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <div className="w-[36px] h-[36px] mb-1 relative">
-              <Image
-                src={img1}
-                alt="Partner"
-                fill
-                className="object-contain"
-                sizes="40px"
-                unoptimized
-              />
-            </div>
+            <img src="/images/img1.png" alt="Partner" className="w-[32px] h-[32px] mb-1" />
             <span className="font-semibold text-[13px]">Partner</span>
           </a>
 
-          {/* WhatsApp Chat */}
           <a
             href="https://wa.me/919990205353"
             target="_blank"
-            rel="noopener noreferrer"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <div className="w-[36px] h-[36px] mb-1 relative">
-              <Image
-                src={img3}
-                alt="Chat"
-                fill
-                className="object-contain"
-                sizes="40px"
-                unoptimized
-              />
-            </div>
+            <img src="/images/img2.png" alt="Chat" className="w-[32px] h-[32px] mb-1" />
             <span className="font-semibold text-[13px]">Chat</span>
           </a>
         </div>
