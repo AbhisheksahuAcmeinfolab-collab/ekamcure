@@ -298,18 +298,25 @@ const patients = [
 
 export default function Home() {
   const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
-  const [smallCurrent, setSmallCurrent] = useState(0); // For small slider
-  const [testimonialIndex, setTestimonialIndex] = useState(0); // For testimonials
+  // const [smallCurrent, setSmallCurrent] = useState(0); // For small slider
+  // const [testimonialIndex, setTestimonialIndex] = useState(0); // For testimonials
   const [current, setCurrent] = useState(0);
 
   // 🕒 Auto slide every 5 seconds
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setHeroCurrent((prev) => (prev + 1) % slides.length);
+  //   }, 5000);
+  //   return () => clearInterval(timer);
+  // }, []);
+
   useEffect(() => {
-    const timer = setInterval(() => {
-      setHeroCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
- 
+  const interval = setInterval(() => {
+    setHeroCurrent((prev) => (prev + 1) % slides.length);
+  }, 5000); // 5 seconds per slide
+
+  return () => clearInterval(interval);
+}, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
