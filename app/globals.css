@@ -70,5 +70,27 @@ img, picture, video, canvas {
   contain: layout paint style;
   isolation: isolate;
 }
+/* Prevent mobile footer flickering */
+.mobile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+  backface-visibility: hidden !important;
+  transform: none !important;
+  will-change: auto !important;
+  contain: layout paint;
+  isolation: isolate;
+}
+
+/* Prevent banner recomposition */
+.hero-section {
+  transform: none !important;
+  will-change: opacity !important;
+  contain: paint;
+  backface-visibility: hidden;
+}
 
 
