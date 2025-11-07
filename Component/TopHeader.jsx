@@ -65,21 +65,8 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
-      {/* ===== Mobile Bottom Fixed Footer ===== */}
       {/* ===== Mobile Bottom Fixed Footer (no blink) ===== */}
-      <div
-        className="fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-[0_-2px_10px_rgba(0,0,0,0.08)] md:hidden"
-        style={{
-          position: "fixed",
-          backfaceVisibility: "visible",
-          WebkitBackfaceVisibility: "visible",
-          transform: "none",
-          WebkitTransform: "none",
-          willChange: "auto",
-          contain: "none",
-          isolation: "auto",
-        }}
-      >
+      <div className="mobile-footer fixed bottom-0 left-0 right-0 z-[9999] bg-white border-t border-gray-300 shadow-[0_-2px_10px_rgba(0,0,0,0.08)] md:hidden">
         <div className="flex justify-around items-center py-2 px-2 text-[#053161] text-center select-none">
           <a
             href="/contact"
@@ -97,7 +84,11 @@ export default function TopHeader() {
             href="/contact"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <img src="/images/img1.png" alt="Partner" className="w-[32px] h-[32px] mb-1" />
+            <img
+              src="/images/img1.png"
+              alt="Partner"
+              className="w-[32px] h-[32px] mb-1"
+            />
             <span className="font-semibold text-[13px]">Partner</span>
           </a>
 
@@ -106,7 +97,11 @@ export default function TopHeader() {
             target="_blank"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
-            <img src="/images/img2.png" alt="Chat" className="w-[32px] h-[32px] mb-1" />
+            <img
+              src="/images/img2.png"
+              alt="Chat"
+              className="w-[32px] h-[32px] mb-1"
+            />
             <span className="font-semibold text-[13px]">Chat</span>
           </a>
         </div>

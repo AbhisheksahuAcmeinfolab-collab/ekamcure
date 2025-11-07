@@ -52,3 +52,23 @@ img, picture, video, canvas {
   transform: translateZ(0);
 }
 
+/* 🚫 Prevent Android blinking caused by overlapping GPU layers */
+.hero-section,
+.banner-container,
+.motion-slide {
+  transform: none !important;
+  will-change: opacity !important;
+  contain: paint;
+  backface-visibility: hidden;
+}
+
+/* 🧱 Give footer its own GPU layer */
+.mobile-footer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  contain: layout paint style;
+  isolation: isolate;
+}
+
+
