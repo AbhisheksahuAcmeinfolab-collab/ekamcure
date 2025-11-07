@@ -297,7 +297,7 @@ const patients = [
 export default function Home() {
   const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
   const [current, setCurrent] = useState(0);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setHeroCurrent((prev) => (prev + 1) % slides.length);
@@ -315,8 +315,8 @@ export default function Home() {
   const currentPatient = patients[current];
 
   return (
-    <main className="bg-white relative isolate">
-      <section className="relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white">
+    <main className="bg-white ">
+      <section className="relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white relative isolate">
         {/* Background Image + Overlay */}
         <div className="absolute inset-0 bg-dark">
           <AnimatePresence mode="">
@@ -851,13 +851,13 @@ export default function Home() {
 //   return () => clearInterval(interval);
 // }, []);
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrent((prev) => (prev + 1) % patients.length);
-  //   }, 5000);
-  //   return () => clearInterval(timer);
-  // }, []);
-  // const currentPatient = patients[current];
+// useEffect(() => {
+//   const timer = setInterval(() => {
+//     setCurrent((prev) => (prev + 1) % patients.length);
+//   }, 5000);
+//   return () => clearInterval(timer);
+// }, []);
+// const currentPatient = patients[current];
 
 //   return (
 //     <main className="bg-white relative isolate">
