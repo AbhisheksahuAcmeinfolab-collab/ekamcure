@@ -76,11 +76,11 @@ export default function TopHeader() {
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
             <img
-              src="/images/what.webp"
+              src="/images/img2.png"
               alt="Get Quote"
-              className="w-[32px] h-[32px] mb-1"
+              className="w-[50px] h-[50px] mb-1"
             />
-            <span className="font-semibold text-[13px]">Get Quote</span>
+            <span className="font-bold text-[13px]">Get Quote</span>
           </a>
 
           <a
@@ -90,9 +90,9 @@ export default function TopHeader() {
             <img
               src="/images/img1.png"
               alt="Partner"
-              className="w-[32px] h-[32px] mb-1"
+              className="w-[50px] h-[50px] mb-1"
             />
-            <span className="font-semibold text-[13px]">Partner</span>
+            <span className="font-bold text-[13px]">Partner</span>
           </a>
 
           <a
@@ -101,11 +101,11 @@ export default function TopHeader() {
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
             <img
-              src="/images/img2.png"
+              src="/images/what.webp"
               alt="Chat"
-              className="w-[32px] h-[32px] mb-1"
+              className="w-[40px] h-[40px] mb-1"
             />
-            <span className="font-semibold text-[13px]">Chat</span>
+            <span className="font-bold text-[13px]">Chat</span>
           </a>
         </div>
       </div>
