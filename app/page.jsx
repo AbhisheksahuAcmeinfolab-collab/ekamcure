@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 "use client";
 // import i18n from "@/i18n";
 import { useState, useEffect } from "react";
@@ -115,12 +124,6 @@ const specialties = [
     icon: pic13,
     color: "bg-red-500 hover:bg-red-500",
   },
-  // {
-  //   title: "Orthopedic Treatment",
-  //   alt: "not found",
-  //   icon: pic14,
-  //   color: "bg-red-500 hover:bg-red-500",
-  // },
 ];
 
 const patients = [
@@ -181,14 +184,22 @@ export default function Home() {
         {/* Background Image + Overlay */}
         <div className="absolute inset-0 bg-dark">
           <AnimatePresence mode="">
-            <motion.div
+            {/* <motion.div
               key={heroCurrent}
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
+              className="absolute inset-0" */}
+            <motion.div
+              key={heroCurrent}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
               className="absolute inset-0"
             >
+
               <Image
                 src={slides[heroCurrent].img}
                 alt={slides[heroCurrent].title}
@@ -264,11 +275,10 @@ export default function Home() {
             <button
               key={i}
               onClick={() => setHeroCurrent(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === heroCurrent
-                  ? "bg-cyan-400 scale-125"
-                  : "bg-white/40 hover:bg-white/70"
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${i === heroCurrent
+                ? "bg-cyan-400 scale-125"
+                : "bg-white/40 hover:bg-white/70"
+                }`}
             />
           ))}
         </div>
@@ -558,6 +568,16 @@ export default function Home() {
 
 
 
+
+
+
+
+
+
+
+
+
+
 // "use client";
 // // import i18n from "@/i18n";
 // import { useState, useEffect } from "react";
@@ -675,12 +695,6 @@ export default function Home() {
 //     icon: pic13,
 //     color: "bg-red-500 hover:bg-red-500",
 //   },
-//   // {
-//   //   title: "Orthopedic Treatment",
-//   //   alt: "not found",
-//   //   icon: pic14,
-//   //   color: "bg-red-500 hover:bg-red-500",
-//   // },
 // ];
 
 // const patients = [
@@ -737,7 +751,7 @@ export default function Home() {
 
 //   return (
 //     <main className="bg-white">
-//       <section className="relative w-full h-[75vh] flex items-center justify-center overflow-hidden bg-white">
+//       <section className="relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white">
 //         {/* Background Image + Overlay */}
 //         <div className="absolute inset-0 bg-dark">
 //           <AnimatePresence mode="">
@@ -1100,3 +1114,22 @@ export default function Home() {
 //     </main>
 //   );
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

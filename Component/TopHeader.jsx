@@ -66,7 +66,9 @@ export default function TopHeader() {
       </div>
 
       {/* mobile view */}
-      <div className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform">
+      <div className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
+      style={{ perspective: "1px" }}>
+       
         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
           {/* Get Quote */}
           <a

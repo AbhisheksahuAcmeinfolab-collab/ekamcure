@@ -4,11 +4,11 @@ export const metadata = {
 };
 
 export default function GalleryLayout({ children }) {
-  return(
-   <>
-   {children}
-   </>
-   )
+  return (
+    <>
+      {children}
+    </>
+  )
 }
 
 
