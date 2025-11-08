@@ -2,9 +2,12 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import img from "../../assets/recent/common banner.webp";
-import pic15 from "../../assets/recent/patient1.webp";
-import pic16 from "../../assets/recent/patient2.webp";
-import pic17 from "../../assets/recent/patient1.webp";
+import pic1 from "../../assets/recent/Abdullah AI Mamun.webp";
+import pic2 from "../../assets/recent/Christopher muja.webp";
+import pic3 from "../../assets/recent/Keshwan Prasad.webp";
+import pic4 from "../../assets/recent/Sunilduth Putty.webp";
+import pic5 from "../../assets/recent/Yogita Singh.webp";
+
 
 const patients = [
   {
@@ -13,25 +16,43 @@ const patients = [
     treatment: "Health Checkup",
     hospital: "Balaji Action Hospital",
     location: "Paschim vihar, New Delhi, India",
-    media: pic16,
+    media: pic1,
     type: "image",
   },
   {
-    name: "Ibrahima Kalil",
-    country: "Guinee",
+    name: "Christopher muja",
+    country: "Fiji",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
     location: "Greater Kailash – 1, New Delhi, India",
-    media: pic15,
+    media: pic2,
     type: "image",
   },
   {
-    name: "Abdullah AI Mamun",
-    country: "Guinee",
+    name: "Keshwan Prasad",
+    country: "Fiji",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
     location: "Greater Kailash – 1, New Delhi, India",
-    media: pic17,
+    media: pic3,
+    type: "image",
+  },
+  {
+    name: "Sunilduth Putty",
+    country: "Mauritius",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic4,
+    type: "image",
+  },
+  {
+    name: "Yogita Singh",
+    country: "Fiji",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic5,
     type: "image",
   },
 ];

@@ -29,9 +29,11 @@ import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
 import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
-import pic15 from "../assets/recent/patient2.webp";
-import pic16 from "../assets/recent/patient1.webp";
-import pic17 from "../assets/recent/patient2.webp";
+import pic15 from "../assets/recent/Abdullah AI Mamun.webp";
+import pic16 from "../assets/recent/Christopher muja.webp";
+import pic17 from "../assets/recent/Keshwan Prasad.webp";
+import pic18 from "../assets/recent/Sunilduth Putty.webp";
+import pic19 from "../assets/recent/Yogita Singh.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -134,8 +136,8 @@ const patients = [
     type: "image",
   },
   {
-    name: "Ibrahima Kalil",
-    country: "Saudi Arab",
+    name: "Christopher muja",
+    country: "Fiji",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
     location: "Greater Kailash – 1, New Delhi, India",
@@ -143,12 +145,30 @@ const patients = [
     type: "image",
   },
   {
-    name: "Abdullah AI Mamun",
-    country: "Guinee",
+    name: "Keshwan Prasad",
+    country: "Fiji",
     treatment: "ACL Reconstruction Surgery",
     hospital: "SCI International Hospital",
     location: "Greater Kailash – 1, New Delhi, India",
     media: pic17,
+    type: "image",
+  },
+  {
+    name: "Sunilduth Putty",
+    country: "Mauritius",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic18,
+    type: "image",
+  },
+  {
+    name: "Yogita Singh",
+    country: "Fiji",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
+    media: pic19,
     type: "image",
   },
 ];
@@ -522,7 +542,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div
-                  className="absolute top-1/2 right-[-10px] -translate-y-1/2
+                  className="absolute top-1/2 right-[-11px] -translate-y-1/2
                    w-[130px] sm:w-[100px]
                    bg-white border-2 border-blue-900 rounded-xl
                    overflow-hidden shadow-lg z-10
@@ -532,7 +552,7 @@ export default function Home() {
                     src={currentPatient.media}
                     alt={currentPatient.name}
                     className="
-                     object-cover w-full h-50
+                     object-cover w-full h-40
                      scale-75
                    "
                   />
