@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import img from "../../assets/recent/Plan your Travel 1.webp";
+
 // You can replace these image paths with your own service icons/images
 import pic1 from "../../assets/newimage/Neurology Treatment.webp";
 import pic2 from "../../assets/newimage/Cosmetic Surgeries.webp";

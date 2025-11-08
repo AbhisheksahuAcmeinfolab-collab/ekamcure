@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .android-footer-fix {
     /* This forces a new rendering layer for stability on some Android devices */
     perspective: 1px; 
