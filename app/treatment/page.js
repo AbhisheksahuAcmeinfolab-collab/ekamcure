@@ -1200,7 +1200,7 @@ export default function TreatmentServices() {
       </div>
 
       {/*1st Neurology Treatment */}
-      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
+      <section className="max-w-[1240px] mx-auto bg-[#f7f7f7] dark:bg-white rounded-[20px] p-5 shadow-[0_8px_32px_rgba(0,0,0,0.2)] font-sans mb-10 mt-10">
         {/* Header */}
         <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
           <Image

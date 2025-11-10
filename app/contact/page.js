@@ -1,3 +1,75 @@
+// "use client"
+
+// import emailjs from "emailjs-com";
+// import { useRef } from "react";
+
+// export default function ContactForm() {
+//   const form = useRef();
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm(
+//         "service_9e1jco5", // from your EmailJS account
+//         "template_vawd8f8",
+//         form.current,
+//         "user_KMN3IfQzcgrdE7OE" // your EmailJS public key
+//       )
+//       .then(
+//         (result) => {
+//           alert("Message sent successfully!");
+//         },
+//         (error) => {
+//           alert("Error sending message!");
+//         }
+//       );
+//   };
+
+//   return (
+//     <form ref={form} onSubmit={sendEmail} className="space-y-4">
+//       <input
+//         type="text"
+//         name="name"
+//         placeholder="Your Name"
+//         required
+//         className="border border-gray-300 rounded-md px-4 py-2 w-full"
+//       />
+//       <input
+//         type="email"
+//         name="email"
+//         placeholder="Your Email"
+//         required
+//         className="border border-gray-300 rounded-md px-4 py-2 w-full"
+//       />
+//       <textarea
+//         name="message"
+//         placeholder="Your Message"
+//         required
+//         className="border border-gray-300 rounded-md px-4 py-2 w-full"
+//       />
+//       <button
+//         type="submit"
+//         className="bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition"
+//       >
+//         Submit
+//       </button>
+//     </form>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
 import { useState } from "react";
 import Image from "next/image";
@@ -33,19 +105,19 @@ export default function ContactPage() {
     <>
       {/* Banner */}
       {/* <section className="w-full bg-gray-50"> */}
-        <div className="relative w-full h-[200px] md:h-[200px] flex items-center justify-center">
-          <Image
-            src={img}
-            alt="Contact Banner"
-            fill
-            className="object-cover brightness-80"
-          />
-          <div className="relative z-10 text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">
-              Our Contact
-            </h1>
-          </div>
+      <div className="relative w-full h-[200px] md:h-[200px] flex items-center justify-center">
+        <Image
+          src={img}
+          alt="Contact Banner"
+          fill
+          className="object-cover brightness-80"
+        />
+        <div className="relative z-10 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Our Contact
+          </h1>
         </div>
+      </div>
       {/* </section> */}
 
       {/* Main Section */}
@@ -56,7 +128,14 @@ export default function ContactPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 border-b-2 border-blue-900 inline-block pb-1">
               SEND MESSAGE
             </h2>
-            <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            <form
+              // action="https://formspree.io/f/xyzlgqyv"  //info@ekamcure.com
+              method="POST"
+              className="space-y-4"
+              action="https://formspree.io/f/meovjbqj" 
+              //abhisheksahuacmeinfolab@gmail.com
+              // onSubmit={handleSubmit} className="mt-6 space-y-4"
+            >
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
@@ -204,4 +283,3 @@ export default function ContactPage() {
     </>
   );
 }
-

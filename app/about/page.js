@@ -99,7 +99,7 @@ export default function AboutUs() {
           </div>
 
           {/* Right Side: Text Content */}
-          <div className="md:w-1/2 text-center md:text-left mt-2">
+          <div className="md:w-1/2 text-justify md:text-left mt-2">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
               About Us!
             </h2>
@@ -184,7 +184,7 @@ export default function AboutUs() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="md:w-1/2">
+                  <div className="md:w-1/2 text-justify">
                     <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                       Mission
                     </h3>
@@ -218,7 +218,7 @@ export default function AboutUs() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="md:w-1/2">
+                  <div className="md:w-1/2 text-justify">
                     <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                       Vision
                     </h3>
@@ -262,7 +262,7 @@ export default function AboutUs() {
                   />
                 </div>
 
-                <div className="flex flex-col text-center md:text-left">
+                <div className="flex flex-col text-justify md:text-left">
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900">
                     {member.name}
                   </h3>
