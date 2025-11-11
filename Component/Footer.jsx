@@ -14,12 +14,14 @@ import img from "../assets/newimage/white Logo.webp";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 export default function Footer() {
-
   const socials = [
     { icon: FaFacebookF, link: "https://www.facebook.com/EkamCure/" },
     { icon: FaTwitter, link: "https://x.com/EkamCare" },
     { icon: FaInstagram, link: "https://www.instagram.com/ekamcure/" },
-    { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ekam-cure/posts/?feedView=all" },
+    {
+      icon: FaLinkedinIn,
+      link: "https://www.linkedin.com/company/ekam-cure/posts/?feedView=all",
+    },
     { icon: FaYoutube, link: "https://www.youtube.com/@EkamCure" },
   ];
 
@@ -66,7 +68,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300">
+      <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300 bg:white dark:bg-white">
         {/* Top Section */}
         <div className="max-w-7xl mx-auto px-2 py-14 text-align grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Column 1 */}
@@ -223,10 +225,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="flex md:hidden mt-20">
-
-      </div>
+      <div className="flex md:hidden mt-20"></div>
     </>
   );
 }
-

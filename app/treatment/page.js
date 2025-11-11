@@ -37,58 +37,47 @@ export default function TreatmentServices() {
     [
       {
         name: "Epilepsy Treatment",
-        link: "#",
       },
       {
         name: "Cerebrospinal Fluid Shunt",
-        link: "#",
       },
       {
         name: "Skull Base Surgery",
-        link: "#",
       },
       {
         name: "Brain Tumor",
-        link: "#",
       },
       {
         name: "Parkinson's Treatment",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Cyber Knife Robotic Radiation",
-        link: "#",
       },
       {
         name: "Stroke Rehabilitation",
-        link: "#",
       },
       {
         name: "Multiple Sclerosis",
-        link: "#",
       },
-      { name: "Alzheimer", link: "#" },
-      { name: "Chronic Cerebrospinal Venous Insufficiency", link: "#" },
+      { name: "Alzheimer" },
+      { name: "Chronic Cerebrospinal Venous Insufficiency" },
     ],
 
     [
       {
         name: " Deep Brain Stimulation Surgery",
-        link: "#",
       },
       {
         name: "Epidural Stimulation",
-        link: "#",
       },
       {
         name: "Intrathecal Baclofen Pump",
-        link: "#",
       },
-      { name: "Focal Seizure", link: "#" },
-      { name: "Sacral Nerve Stimulation", link: "#" },
+      { name: "Focal Seizure" },
+      { name: "Sacral Nerve Stimulation" },
     ],
   ];
 
@@ -96,56 +85,45 @@ export default function TreatmentServices() {
     [
       {
         name: "Liposuction",
-        link: "#",
       },
       {
         name: "Eyelid Surgery",
-        link: "#",
       },
       {
         name: "Breast Implant",
-        link: "#",
       },
       {
         name: "Nose Jobs",
-        link: "#",
       },
       {
         name: "Brow Lift",
-        link: "#",
       },
     ],
     [
       {
         name: "Face Lift",
-        link: "#",
       },
       {
         name: "Hair Transplant",
-        link: "#",
       },
       {
         name: "Rhinoplasty Surgery",
-        link: "#",
       },
-      { name: "Lip Augmentation", link: "#" },
-      { name: "Chin Augmentation", link: "#" },
+      { name: "Lip Augmentation" },
+      { name: "Chin Augmentation" },
     ],
     [
       {
         name: "Tummy Tuck Surgery",
-        link: "#",
       },
       {
         name: "Mommy Makeover",
-        link: "#",
       },
       {
         name: "Abdominoplasty",
-        link: "#",
       },
-      { name: "Buttock Lift", link: "#" },
-      { name: "Thigh Lift", link: "#" },
+      { name: "Buttock Lift" },
+      { name: "Thigh Lift" },
     ],
   ];
 
@@ -153,100 +131,80 @@ export default function TreatmentServices() {
     [
       {
         name: "Rhabdomyosarcoma Treatment",
-        link: "#",
       },
       {
         name: "Robotic Prostate Cancer Surgery",
-        link: "#",
       },
       {
         name: "Pancreatic Cancer Treatment",
-        link: "#",
       },
       {
         name: "Ovarian Cancer Treatment",
-        link: "#",
       },
       {
         name: "Oral Cancer Treatment",
-        link: "#",
       },
       {
         name: "Liver Cancer",
-        link: "#",
       },
       {
         name: "Brain Cancer (Tumour) Treatment",
-        link: "#",
       },
       {
         name: "Prostate Cancer",
-        link: "#",
       },
       {
         name: "Cervical Cancer",
-        link: "#",
       },
       {
         name: "Gastrointestinal Cancer",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Breast Cancer",
-        link: "#",
       },
       {
         name: "Head And Neck Cancer",
-        link: "#",
       },
       {
         name: "Lung Cancer",
-        link: "#",
       },
-      { name: "Blood Cancer", link: "#" },
-      { name: "Thyroid Cancer", link: "#" },
+      { name: "Blood Cancer" },
+      { name: "Thyroid Cancer" },
       {
         name: "Bladder Cancer",
-        link: "#",
       },
       {
         name: "Esophagus Cancer",
-        link: "#",
       },
-      { name: "Penile Cancer", link: "#" },
-      { name: "Nasopharyngeal Cancer", link: "#" },
+      { name: "Penile Cancer" },
+      { name: "Nasopharyngeal Cancer" },
       {
         name: "Uterine Cancer",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Anal Cancer",
-        link: "#",
       },
       {
         name: "Vulvar Cancer",
-        link: "#",
       },
-      { name: "Primary Bone Cancer", link: "#" },
-      { name: "Vaginal Cancer", link: "#" },
+      { name: "Primary Bone Cancer" },
+      { name: "Vaginal Cancer" },
       {
         name: "Bone Cancer",
-        link: "#",
       },
       {
         name: "Skin Cancer",
-        link: "#",
       },
-      { name: "Colon Cancer", link: "#" },
-      { name: "Gallbladder Cancer", link: "#" },
-      { name: "Salivary Cancer Cancer", link: "#" },
-      { name: "Bile Duct Cancer", link: "#" },
+      { name: "Colon Cancer" },
+      { name: "Gallbladder Cancer" },
+      { name: "Salivary Cancer Cancer" },
+      { name: "Bile Duct Cancer" },
     ],
   ];
 
@@ -254,69 +212,56 @@ export default function TreatmentServices() {
     [
       {
         name: "Bridges",
-        link: "#",
       },
       {
         name: "Crowns",
-        link: "#",
       },
       {
         name: "Dentures",
-        link: "#",
       },
       {
         name: "Veneers",
-        link: "#",
       },
       {
         name: "Braces",
-        link: "#",
       },
       {
         name: "Bone Graft Treatment",
-        link: "#",
       },
       {
         name: "Denture Treatment",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Fillings",
-        link: "#",
       },
       {
         name: "Root Canal Treatment",
-        link: "#",
       },
       {
         name: "Gum Treatment",
-        link: "#",
       },
-      { name: "Tooth Extraction", link: "#" },
-      { name: "Dental Bonding", link: "#" },
-      { name: "Complete Denture", link: "#" },
-      { name: "Fixed Braces", link: "#" },
+      { name: "Tooth Extraction" },
+      { name: "Dental Bonding" },
+      { name: "Complete Denture" },
+      { name: "Fixed Braces" },
     ],
 
     [
       {
         name: "Dental Implants",
-        link: "#",
       },
       {
         name: "Teeth Whitening",
-        link: "#",
       },
       {
         name: "Invisalign",
-        link: "#",
       },
-      { name: "Oral Surgery", link: "#" },
-      { name: "Pediatric Dentistry", link: "#" },
-      { name: "Wisdom Tooth Extraction", link: "#" },
+      { name: "Oral Surgery" },
+      { name: "Pediatric Dentistry" },
+      { name: "Wisdom Tooth Extraction" },
     ],
   ];
 
@@ -324,106 +269,84 @@ export default function TreatmentServices() {
     [
       {
         name: "Heart Transplant",
-        link: "#",
       },
       {
         name: "Heart Diseases",
-        link: "#",
       },
       {
         name: "Endovascular Aneurysm Repair",
-        link: "#",
       },
       {
         name: "Coronary Heart Diseases",
-        link: "#",
       },
       {
         name: "Robotic Heart Bypass Surgery",
-        link: "#",
       },
       {
         name: "Ventricular Septal Defect (VSD)",
-        link: "#",
       },
       {
         name: "Atrial Septal Defect",
-        link: "#",
       },
       {
         name: "Endoscopic Vein Harvesting",
-        link: "#",
       },
       {
         name: "Bentall Procedure",
-        link: "#",
       },
       {
         name: "Aortic Valve Repair",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Coronary Angioplasty",
-        link: "#",
       },
       {
         name: "Heart Bypass Surgery",
-        link: "#",
       },
       {
         name: "Heart Valve Surgery",
-        link: "#",
       },
-      { name: "Atherosclerosis Treatment", link: "#" },
-      { name: "Aortic Stenosis Treatment", link: "#" },
+      { name: "Atherosclerosis Treatment" },
+      { name: "Aortic Stenosis Treatment" },
       {
         name: "Balloon Mitral Valvuloplasty",
-        link: "#",
       },
       {
         name: "Balloon Pulmonary Valvuloplasty",
-        link: "#",
       },
       {
         name: "Cardiac Asthma Treatment",
-        link: "#",
       },
-      { name: "Coronary Artery Disease", link: "#" },
-      { name: "Hypertension Treatment", link: "#" },
+      { name: "Coronary Artery Disease" },
+      { name: "Hypertension Treatment" },
     ],
 
     [
       {
         name: "Paediatric Heart Surgery",
-        link: "#",
       },
       {
         name: "Robotic Heart Surgery",
-        link: "#",
       },
       {
         name: "Pacemaker Implantation",
-        link: "#",
       },
-      { name: "Mitral Valve Repair", link: "#" },
-      { name: "Myocardial Bridge Treatment", link: "#" },
+      { name: "Mitral Valve Repair" },
+      { name: "Myocardial Bridge Treatment" },
       {
         name: "Pericarditis Treatment",
-        link: "#",
       },
       {
         name: "Transcatheter Aortic Valve Implantation",
-        link: "#",
       },
       {
         name: "Aortopulmonary Window",
-        link: "#",
       },
-      { name: "Cardioversion Treatment", link: "#" },
-      { name: "Double Valve Replacement", link: "#" },
+      { name: "Cardioversion Treatment" },
+      { name: "Double Valve Replacement" },
     ],
   ];
 
@@ -431,64 +354,52 @@ export default function TreatmentServices() {
     [
       {
         name: "Hydronephrosis Treatment",
-        link: "#",
       },
       {
         name: "Kidney Cyst",
-        link: "#",
       },
       {
         name: "Kidney Stones",
-        link: "#",
       },
       {
         name: "Percutaneous Nephrolithotomy (PCNL)",
-        link: "#",
       },
       {
         name: "TURP Surgery",
-        link: "#",
       },
       {
         name: "Nephrectomy Surgery",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Renal Angiography",
-        link: "#",
       },
       {
         name: "Kidney Dialysis",
-        link: "#",
       },
       {
         name: "Kidney Tumor",
-        link: "#",
       },
-      { name: "Undescended Testicle Surgery", link: "#" },
-      { name: "Bladder Stone Removal", link: "#" },
-      { name: "Prostate Biopsy", link: "#" },
+      { name: "Undescended Testicle Surgery" },
+      { name: "Bladder Stone Removal" },
+      { name: "Prostate Biopsy" },
     ],
 
     [
       {
         name: "RIRS Surgery",
-        link: "#",
       },
       {
         name: "Endopyelotomy Procedure",
-        link: "#",
       },
       {
         name: "Pyeloplasty Surgery",
-        link: "#",
       },
-      { name: "Peyronie's Disease Treatment", link: "#" },
-      { name: "Penile Prosthesis", link: "#" },
-      { name: "Urethral Surgery", link: "#" },
+      { name: "Peyronie's Disease Treatment" },
+      { name: "Penile Prosthesis" },
+      { name: "Urethral Surgery" },
     ],
   ];
 
@@ -496,58 +407,47 @@ export default function TreatmentServices() {
     [
       {
         name: "Refractive Surgery",
-        link: "#",
       },
       {
         name: "Cornea Transplant Surgery",
-        link: "#",
       },
       {
         name: "Laser Eye Surgery",
-        link: "#",
       },
       {
         name: "LASIK Surgery",
-        link: "#",
       },
       {
         name: "PRK Surgery",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Cataract Surgery",
-        link: "#",
       },
       {
         name: "Glaucoma Surgery",
-        link: "#",
       },
       {
         name: "Vitreoretinal Surgery",
-        link: "#",
       },
-      { name: "Retinal Detachment Surgery", link: "#" },
-      { name: "Macular Hole Surgery", link: "#" },
+      { name: "Retinal Detachment Surgery" },
+      { name: "Macular Hole Surgery" },
     ],
 
     [
       {
         name: "Eye Muscle Repair",
-        link: "#",
       },
       {
         name: "Artificial Iris Implantation",
-        link: "#",
       },
       {
         name: "Astigmatism Correction",
-        link: "#",
       },
-      { name: "Blepharoplasty", link: "#" },
-      { name: "Retinal detachment", link: "#" },
+      { name: "Blepharoplasty" },
+      { name: "Retinal detachment" },
     ],
   ];
 
@@ -555,58 +455,47 @@ export default function TreatmentServices() {
     [
       {
         name: "In Vitro Fertilization (IVF)",
-        link: "#",
       },
       {
         name: "Embryo Transfer",
-        link: "#",
       },
       {
         name: "Hysterosalpingography (HSG)",
-        link: "#",
       },
       {
         name: "Sperm Collection",
-        link: "#",
       },
       {
         name: "Fertility Testing",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Ovulation Induction",
-        link: "#",
       },
       {
         name: "Laparoscopic Ovarian Drilling (LOD)",
-        link: "#",
       },
       {
         name: "Blastocyst Transfer",
-        link: "#",
       },
-      { name: "Intrauterine Insemination (IUI)", link: "#" },
-      { name: "Fertility Preservation", link: "#" },
+      { name: "Intrauterine Insemination (IUI)" },
+      { name: "Fertility Preservation" },
     ],
 
     [
       {
         name: "Retrograde Ejaculation Treatment",
-        link: "#",
       },
       {
         name: "Assisted Hatching",
-        link: "#",
       },
       {
         name: "Intracytoplasmic Sperm Injection (ICSI)",
-        link: "#",
       },
-      { name: "Gamete Intrafallopian Transfer (GIFT)", link: "#" },
-      { name: "Surrogacy", link: "#" },
+      { name: "Gamete Intrafallopian Transfer (GIFT)" },
+      { name: "Surrogacy" },
     ],
   ];
 
@@ -614,58 +503,47 @@ export default function TreatmentServices() {
     [
       {
         name: "Bone Marrow Transplants (BMT)",
-        link: "#",
       },
       {
         name: "Kidney Transplant",
-        link: "#",
       },
       {
         name: "Liver Transplant",
-        link: "#",
       },
       {
         name: "Heart Transplant",
-        link: "#",
       },
       {
         name: "Lung Transplant",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Pancreas Transplant",
-        link: "#",
       },
       {
         name: "Intestine Transplant",
-        link: "#",
       },
       {
         name: "Face Transplant Surgery",
-        link: "#",
       },
-      { name: "Bilateral Hand Transplant", link: "#" },
-      { name: "Corneal Transplant", link: "#" },
+      { name: "Bilateral Hand Transplant" },
+      { name: "Corneal Transplant" },
     ],
 
     [
       {
         name: "Stem Cell Transplant",
-        link: "#",
       },
       {
         name: "Multi-Organ Transplant",
-        link: "#",
       },
       {
         name: "Living Donor Transplant",
-        link: "#",
       },
-      { name: "Cadaveric Transplant", link: "#" },
-      { name: "Pediatric Transplant", link: "#" },
+      { name: "Cadaveric Transplant" },
+      { name: "Pediatric Transplant" },
     ],
   ];
 
@@ -673,219 +551,203 @@ export default function TreatmentServices() {
     [
       {
         name: "Cochlear Implant Surgery",
-        link: "#",
       },
       {
         name: "Endoscopic Sinus",
-        link: "#",
       },
       {
         name: "Vertigo Surgery",
-        link: "#",
       },
       {
         name: "Tonsillectomy",
-        link: "#",
       },
       {
         name: "Adenoidectomy",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Laryngotracheoplasty",
-        link: "#",
       },
       {
         name: "Thyroid Surgery Treatment",
-        link: "#",
       },
       {
         name: "Turbinate Reduction Surgery",
-        link: "#",
       },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Septoplasty" },
+      { name: "Rhinoplasty" },
     ],
 
     [
       {
         name: "Thyroidectomy Surgery",
-        link: "#",
       },
       {
         name: "Bone Conduction Hearing Aid",
-        link: "#",
       },
       {
         name: "Tympanoplasty Surgery",
-        link: "#",
       },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Myringotomy" },
+      { name: "Mastoidectomy" },
     ],
   ];
 
   const ayurveda = [
     [
-      { name: "Udvartthanam", link: "#" },
-      { name: "Navarakizhi", link: "#" },
-      { name: "Elakizhi", link: "#" },
-      { name: "Thalapothichil", link: "#" },
+      { name: "Udvartthanam" },
+      { name: "Navarakizhi" },
+      { name: "Elakizhi" },
+      { name: "Thalapothichil" },
     ],
-    [
-      { name: "Pizhichil", link: "#" },
-      { name: "Thalam", link: "#" },
-      { name: "Lepanam", link: "#" },
-    ],
+    [{ name: "Pizhichil" }, { name: "Thalam" }, { name: "Lepanam" }],
   ];
 
   const pediatrics = [
     [
-      { name: "Fontan Procedure", link: "#" },
-      { name: "Coarctation Of The Aorta (CoA)", link: "#" },
-      { name: "Tetralogy Of Fallot (TOF)", link: "#" },
-      { name: "Heart Surgery", link: "#" },
-      { name: "Nursemaid's Elbow Treatment", link: "#" },
-      { name: "Incision And Drainage Abscess", link: "#" },
+      { name: "Fontan Procedure" },
+      { name: "Coarctation Of The Aorta (CoA)" },
+      { name: "Tetralogy Of Fallot (TOF)" },
+      { name: "Heart Surgery" },
+      { name: "Nursemaid's Elbow Treatment" },
+      { name: "Incision And Drainage Abscess" },
     ],
     [
-      { name: "Arrhythmias", link: "#" },
-      { name: "Fetal Cardiology", link: "#" },
-      { name: "ASD Closure Surgery", link: "#" },
-      { name: "Atrioventricular Canal Defect", link: "#" },
-      { name: "Laceration Repair", link: "#" },
-      { name: "Splinting Fracture", link: "#" },
+      { name: "Arrhythmias" },
+      { name: "Fetal Cardiology" },
+      { name: "ASD Closure Surgery" },
+      { name: "Atrioventricular Canal Defect" },
+      { name: "Laceration Repair" },
+      { name: "Splinting Fracture" },
     ],
     [
-      { name: "Patent Ductus Arteriosus (PDA) Device Closure", link: "#" },
-      { name: "Arterial Switch Operation", link: "#" },
+      { name: "Patent Ductus Arteriosus (PDA) Device Closure" },
+      { name: "Arterial Switch Operation" },
       {
         name: "Total Anomalous Pulmonary Venous Connection (TAPVC)",
-        link: "#",
       },
-      { name: "Right Heart Catheterization", link: "#" },
-      { name: "Transposition Of The Great Arteries", link: "#" },
-      { name: "Balloon Atrial Septostomy", link: "#" },
+      { name: "Right Heart Catheterization" },
+      { name: "Transposition Of The Great Arteries" },
+      { name: "Balloon Atrial Septostomy" },
     ],
   ];
 
   const gender = [
     [
-      { name: "Sex Reassignment Surgery", link: "#" },
-      { name: "Adams Apple Removal Surgery", link: "#" },
-      { name: "Mastectomy Surgery", link: "#" },
-      { name: "Vaginoplasty", link: "#" },
-      { name: "Phalloplasty", link: "#" },
+      { name: "Sex Reassignment Surgery" },
+      { name: "Adams Apple Removal Surgery" },
+      { name: "Mastectomy Surgery" },
+      { name: "Vaginoplasty" },
+      { name: "Phalloplasty" },
     ],
     [
-      { name: "Facial Feminization Surgery", link: "#" },
-      { name: "Labia Surgery", link: "#" },
-      { name: "Reduction Clitoroplasty", link: "#" },
-      { name: "Orchiectomy", link: "#" },
-      { name: "Hysterectomy", link: "#" },
+      { name: "Facial Feminization Surgery" },
+      { name: "Labia Surgery" },
+      { name: "Reduction Clitoroplasty" },
+      { name: "Orchiectomy" },
+      { name: "Hysterectomy" },
     ],
     [
-      { name: "Salpingo-Oophorectomy", link: "#" },
-      { name: "Metoidioplasty Surgery", link: "#" },
-      { name: "Voice Feminization Surgery", link: "#" },
-      { name: "Breast Augmentation", link: "#" },
-      { name: "Body Contouring", link: "#" },
+      { name: "Salpingo-Oophorectomy" },
+      { name: "Metoidioplasty Surgery" },
+      { name: "Voice Feminization Surgery" },
+      { name: "Breast Augmentation" },
+      { name: "Body Contouring" },
     ],
   ];
 
   const medicine = [
     [
-      { name: "Asthma", link: "#" },
-      { name: "Geriatric Medicine", link: "#" },
-      { name: "Hypertension", link: "#" },
-      { name: "Diabetes Management", link: "#" },
-      { name: "Respiratory Infections", link: "#" },
+      { name: "Asthma" },
+      { name: "Geriatric Medicine" },
+      { name: "Hypertension" },
+      { name: "Diabetes Management" },
+      { name: "Respiratory Infections" },
     ],
     [
-      { name: "Internal Medicine", link: "#" },
-      { name: "Hyperbaric Medicine", link: "#" },
-      { name: "Preventive Medicine", link: "#" },
-      { name: "Chronic Disease Management", link: "#" },
-      { name: "Health Screening", link: "#" },
+      { name: "Internal Medicine" },
+      { name: "Hyperbaric Medicine" },
+      { name: "Preventive Medicine" },
+      { name: "Chronic Disease Management" },
+      { name: "Health Screening" },
     ],
     [
-      { name: "Extracorporeal Shockwave Therapy", link: "#" },
-      { name: "Anal Fissure Treatment", link: "#" },
-      { name: "Vaccination Services", link: "#" },
-      { name: "Travel Medicine", link: "#" },
-      { name: "Pain Management", link: "#" },
+      { name: "Extracorporeal Shockwave Therapy" },
+      { name: "Anal Fissure Treatment" },
+      { name: "Vaccination Services" },
+      { name: "Travel Medicine" },
+      { name: "Pain Management" },
     ],
   ];
 
   const gynecology = [
     [
-      { name: "Gynecology & Obstetrics", link: "#" },
-      { name: "Bartholin's Cyst Treatment", link: "#" },
-      { name: "Colposcopy", link: "#" },
-      { name: "Breast Biopsy", link: "#" },
-      { name: "Cervical Cautery", link: "#" },
-      { name: "Endometriosis Treatment", link: "#" },
-      { name: "Dilation And Curettage", link: "#" },
-      { name: "Myomectomy", link: "#" },
-      { name: "Female Sterilization", link: "#" },
-      { name: "Ovarian Cyst Removal", link: "#" },
-      { name: "Oophorectomy", link: "#" },
-      { name: "Contraceptive Implant", link: "#" },
-      { name: "Cesarean Section", link: "#" },
-      { name: "Tubal Ligation Reversal", link: "#" },
-      { name: "Vaginoplasty", link: "#" },
-      { name: "Ectopic Pregnancy Surgery", link: "#" },
-      { name: "Pelvic Floor Repair", link: "#" },
-      { name: "Hysterectomy", link: "#" },
+      { name: "Gynecology & Obstetrics" },
+      { name: "Bartholin's Cyst Treatment" },
+      { name: "Colposcopy" },
+      { name: "Breast Biopsy" },
+      { name: "Cervical Cautery" },
+      { name: "Endometriosis Treatment" },
+      { name: "Dilation And Curettage" },
+      { name: "Myomectomy" },
+      { name: "Female Sterilization" },
+      { name: "Ovarian Cyst Removal" },
+      { name: "Oophorectomy" },
+      { name: "Contraceptive Implant" },
+      { name: "Cesarean Section" },
+      { name: "Tubal Ligation Reversal" },
+      { name: "Vaginoplasty" },
+      { name: "Ectopic Pregnancy Surgery" },
+      { name: "Pelvic Floor Repair" },
+      { name: "Hysterectomy" },
     ],
 
     [
-      { name: "Ovarian Tumor Removal", link: "#" },
-      { name: "Cervical Biopsy", link: "#" },
-      { name: "Uterine Prolapse Surgery", link: "#" },
-      { name: "Cystocele Repair", link: "#" },
-      { name: "Intrauterine Device (IUD) Placement", link: "#" },
-      { name: "Vaginal Vault Prolapse Surgery", link: "#" },
-      { name: "Endometrial Biopsy", link: "#" },
-      { name: "Hormone Replacement Therapy (HRT)", link: "#" },
-      { name: "Hysteroscopy", link: "#" },
-      { name: "Vaginal Childbirth", link: "#" },
-      { name: "Pelvic Adhesiolysis", link: "#" },
-      { name: "Cervical Polyp Removal", link: "#" },
-      { name: "Vulval Biopsy", link: "#" },
-      { name: "Antenatal Care (ANC)", link: "#" },
-      { name: "Pessary Placement", link: "#" },
-      { name: "Fetal Echocardiography", link: "#" },
-      { name: "Intrauterine Device (IUD) Removal", link: "#" },
-      { name: "Vaginectomy", link: "#" },
-      { name: "Hysterosonography", link: "#" },
-      { name: "Hymenotomy", link: "#" },
+      { name: "Ovarian Tumor Removal" },
+      { name: "Cervical Biopsy" },
+      { name: "Uterine Prolapse Surgery" },
+      { name: "Cystocele Repair" },
+      { name: "Intrauterine Device (IUD) Placement" },
+      { name: "Vaginal Vault Prolapse Surgery" },
+      { name: "Endometrial Biopsy" },
+      { name: "Hormone Replacement Therapy (HRT)" },
+      { name: "Hysteroscopy" },
+      { name: "Vaginal Childbirth" },
+      { name: "Pelvic Adhesiolysis" },
+      { name: "Cervical Polyp Removal" },
+      { name: "Vulval Biopsy" },
+      { name: "Antenatal Care (ANC)" },
+      { name: "Pessary Placement" },
+      { name: "Fetal Echocardiography" },
+      { name: "Intrauterine Device (IUD) Removal" },
+      { name: "Vaginectomy" },
+      { name: "Hysterosonography" },
+      { name: "Hymenotomy" },
     ],
 
     [
-      { name: "Uterosacral Nerve Ablation", link: "#" },
-      { name: "Vulval Skin Treatment", link: "#" },
-      { name: "Cervical Cerclage", link: "#" },
-      { name: "Amniocentesis", link: "#" },
-      { name: "Pelvic Floor Electrical Stimulator", link: "#" },
-      { name: "Presacral Neurectomy", link: "#" },
-      { name: "Vaginismus Treatment", link: "#" },
-      { name: "Urodynamic Evaluation", link: "#" },
-      { name: "Vulvectomy", link: "#" },
-      { name: "Episiotomy Repair", link: "#" },
-      { name: "Cardiotocography (CTG)", link: "#" },
-      { name: "Ovarian Transposition Surgery", link: "#" },
-      { name: "Molar Pregnancy Treatment", link: "#" },
-      { name: "Fetal Surgery", link: "#" },
-      { name: "Microdochectomy", link: "#" },
-      { name: "Uterine Artery Embolization (UAE)", link: "#" },
-      { name: "Robotic Hysterectomy", link: "#" },
-      { name: "Vaginal Hysterectomy", link: "#" },
-      { name: "Fibroid Removal", link: "#" },
-      { name: "Uterus Transplant", link: "#" },
+      { name: "Uterosacral Nerve Ablation" },
+      { name: "Vulval Skin Treatment" },
+      { name: "Cervical Cerclage" },
+      { name: "Amniocentesis" },
+      { name: "Pelvic Floor Electrical Stimulator" },
+      { name: "Presacral Neurectomy" },
+      { name: "Vaginismus Treatment" },
+      { name: "Urodynamic Evaluation" },
+      { name: "Vulvectomy" },
+      { name: "Episiotomy Repair" },
+      { name: "Cardiotocography (CTG)" },
+      { name: "Ovarian Transposition Surgery" },
+      { name: "Molar Pregnancy Treatment" },
+      { name: "Fetal Surgery" },
+      { name: "Microdochectomy" },
+      { name: "Uterine Artery Embolization (UAE)" },
+      { name: "Robotic Hysterectomy" },
+      { name: "Vaginal Hysterectomy" },
+      { name: "Fibroid Removal" },
+      { name: "Uterus Transplant" },
     ],
   ];
 
@@ -893,292 +755,271 @@ export default function TreatmentServices() {
     [
       {
         name: "Master Health Check-up",
-        link: "#",
       },
       {
         name: "Executive Health Check",
-        link: "#",
       },
       {
         name: "Heart Check-up",
-        link: "#",
       },
       {
         name: "Advanced Cardiac Package (Male / Female)",
-        link: "#",
       },
       {
         name: "Wellness Check-up",
-        link: "#",
       },
       {
         name: "Senior Citizen Health Package",
-        link: "#",
       },
     ],
 
     [
       {
         name: "Diabetic Health Check – I",
-        link: "#",
       },
       {
         name: "Diabetic Health Check – II",
-        link: "#",
       },
       {
         name: "Child Health Check-up (MCHC)",
-        link: "#",
       },
-      { name: "Cancer Screening – Level 1 – Female", link: "#" },
-      { name: "Thyroid Profile Package", link: "#" },
-      { name: "Liver Function Package", link: "#" },
+      { name: "Cancer Screening – Level 1 – Female" },
+      { name: "Thyroid Profile Package" },
+      { name: "Liver Function Package" },
     ],
 
     [
       {
         name: "Cancer Screening – Level 1 – Male",
-        link: "#",
       },
       {
         name: "Cancer Screening – Level 2 – Female",
-        link: "#",
       },
       {
         name: "Cancer Screening – Level 2 – Male",
-        link: "#",
       },
-      { name: "Kidney Function Package", link: "#" },
-      { name: "Women's Health Package", link: "#" },
-      { name: "Men's Health Package", link: "#" },
+      { name: "Kidney Function Package" },
+      { name: "Women's Health Package" },
+      { name: "Men's Health Package" },
     ],
   ];
 
   const obesity = [
-
     [
-      { name: "Bariatric Surgery", link: "#" },
-      { name: "Gastric Bypass Surgery", link: "#" },
-      { name: "Gastric Sleeve", link: "#" },
-      { name: "Medical Weight Management", link: "#" },
-      { name: "Nutrition Counseling", link: "#" },
+      { name: "Bariatric Surgery" },
+      { name: "Gastric Bypass Surgery" },
+      { name: "Gastric Sleeve" },
+      { name: "Medical Weight Management" },
+      { name: "Nutrition Counseling" },
     ],
 
     [
-      { name: "Gastric Balloon", link: "#" },
-      { name: "Weight Loss Treatment", link: "#" },
-      { name: "Gastric Plication", link: "#" },
-      { name: "Endoscopic Sleeve Gastroplasty", link: "#" },
-      { name: "Behavioral Therapy", link: "#" },
+      { name: "Gastric Balloon" },
+      { name: "Weight Loss Treatment" },
+      { name: "Gastric Plication" },
+      { name: "Endoscopic Sleeve Gastroplasty" },
+      { name: "Behavioral Therapy" },
     ],
 
     [
-      { name: "Gastric Band Surgery", link: "#" },
-      { name: "Biliopancreatic Diversion With Duodenal Switch", link: "#" },
-      { name: "Primary Obesity Surgery Endolumenal", link: "#" },
-      { name: "Metabolic Surgery", link: "#" },
-      { name: "Exercise Physiology", link: "#" },
+      { name: "Gastric Band Surgery" },
+      { name: "Biliopancreatic Diversion With Duodenal Switch" },
+      { name: "Primary Obesity Surgery Endolumenal" },
+      { name: "Metabolic Surgery" },
+      { name: "Exercise Physiology" },
     ],
   ];
-
 
   const orthopedic = [
     [
-      { name: "Anterior Cruciate Ligament (ACL)", link: "#" },
-      { name: "Hip Replacement Surgery", link: "#" },
-      { name: "Shoulder Replacement", link: "#" },
-      { name: "Knee Replacement Surgery", link: "#" },
-      { name: "Arthroscopy Surgery", link: "#" },
-      { name: "Limb Lengthening Surgery", link: "#" },
-      { name: "Bone Tumor", link: "#" },
-      { name: "Joint Replacement Surgery", link: "#" },
+      { name: "Anterior Cruciate Ligament (ACL)" },
+      { name: "Hip Replacement Surgery" },
+      { name: "Shoulder Replacement" },
+      { name: "Knee Replacement Surgery" },
+      { name: "Arthroscopy Surgery" },
+      { name: "Limb Lengthening Surgery" },
+      { name: "Bone Tumor" },
+      { name: "Joint Replacement Surgery" },
     ],
 
     [
-      { name: "Limb Amputation", link: "#" },
-      { name: "Dislocated Hip Treatment", link: "#" },
-      { name: "Femur Fracture Treatment", link: "#" },
-      { name: "Carpal Tunnel Release Surgery", link: "#" },
-      { name: "Club Foot Treatment", link: "#" },
-      { name: "Ankle Arthroscopy", link: "#" },
-      { name: "Elbow Arthroscopy Surgery", link: "#" },
-      { name: "Dynamic Hip Screw", link: "#" },
+      { name: "Limb Amputation" },
+      { name: "Dislocated Hip Treatment" },
+      { name: "Femur Fracture Treatment" },
+      { name: "Carpal Tunnel Release Surgery" },
+      { name: "Club Foot Treatment" },
+      { name: "Ankle Arthroscopy" },
+      { name: "Elbow Arthroscopy Surgery" },
+      { name: "Dynamic Hip Screw" },
     ],
 
     [
-
-      { name: "Baker's Cyst Treatment", link: "#" },
-      { name: "Shoulder Impingement Syndrome Treatment", link: "#" },
-      { name: "ACL Reconstruction Surgery", link: "#" },
-      { name: "Pinched Nerve Treatment", link: "#" },
-      { name: "Achilles Tendinitis Treatment", link: "#" },
-      { name: "Ankle Fracture Treatment", link: "#" },
-      { name: "Dislocated Elbow Treatment", link: "#" },
+      { name: "Baker's Cyst Treatment" },
+      { name: "Shoulder Impingement Syndrome Treatment" },
+      { name: "ACL Reconstruction Surgery" },
+      { name: "Pinched Nerve Treatment" },
+      { name: "Achilles Tendinitis Treatment" },
+      { name: "Ankle Fracture Treatment" },
+      { name: "Dislocated Elbow Treatment" },
     ],
   ];
-
 
   const pulmonology = [
     [
-      { name: "Bronchoscopic Lung Volume Reduction", link: "#" },
-      { name: "Bronchoscopy Surgery", link: "#" },
-      { name: "Pulmonary Lobectomy", link: "#" },
-      { name: "Asthma Treatment", link: "#" },
-      { name: "Pneumonia Treatment", link: "#" },
+      { name: "Bronchoscopic Lung Volume Reduction" },
+      { name: "Bronchoscopy Surgery" },
+      { name: "Pulmonary Lobectomy" },
+      { name: "Asthma Treatment" },
+      { name: "Pneumonia Treatment" },
     ],
 
     [
-      { name: "Lung Biopsy", link: "#" },
-      { name: "Pleural Biopsy", link: "#" },
-      { name: "Thoracentesis Surgery", link: "#" },
-      { name: "Interstitial Lung Disease Treatment", link: "#" },
-      { name: "Pulmonary Rehabilitation", link: "#" },
+      { name: "Lung Biopsy" },
+      { name: "Pleural Biopsy" },
+      { name: "Thoracentesis Surgery" },
+      { name: "Interstitial Lung Disease Treatment" },
+      { name: "Pulmonary Rehabilitation" },
     ],
 
     [
-      { name: "Thoracoscopy Surgery", link: "#" },
-      { name: "Tuberculosis Treatment", link: "#" },
-      { name: "Chronic Obstructive Pulmonary Disease Treatment", link: "#" },
-      { name: "Sleep Apnea Treatment", link: "#" },
-      { name: "Lung Cancer Treatment", link: "#" },
+      { name: "Thoracoscopy Surgery" },
+      { name: "Tuberculosis Treatment" },
+      { name: "Chronic Obstructive Pulmonary Disease Treatment" },
+      { name: "Sleep Apnea Treatment" },
+      { name: "Lung Cancer Treatment" },
     ],
   ];
-
 
   const rheumatology = [
     [
-      { name: "Biologic Response Modifiers", link: "#" },
-      { name: "Lupus Erythematosus", link: "#" },
-      { name: "Fibromyalgia Treatment", link: "#" },
-      { name: "Gout Treatment", link: "#" },
-      { name: "Vasculitis Treatment", link: "#" },
+      { name: "Biologic Response Modifiers" },
+      { name: "Lupus Erythematosus" },
+      { name: "Fibromyalgia Treatment" },
+      { name: "Gout Treatment" },
+      { name: "Vasculitis Treatment" },
     ],
 
     [
-      { name: "Sjogren's Syndrome Treatment", link: "#" },
-      { name: "Rheumatoid Arthritis Treatment", link: "#" },
-      { name: "Autoinflammatory Diseases", link: "#" },
-      { name: "Psoriatic Arthritis Treatment", link: "#" },
-      { name: "Ankylosing Spondylitis Treatment", link: "#" },
+      { name: "Sjogren's Syndrome Treatment" },
+      { name: "Rheumatoid Arthritis Treatment" },
+      { name: "Autoinflammatory Diseases" },
+      { name: "Psoriatic Arthritis Treatment" },
+      { name: "Ankylosing Spondylitis Treatment" },
     ],
 
     [
-      { name: "Autoimmune Diseases Treatment", link: "#" },
-      { name: "Osteoarthritis Surgery", link: "#" },
-      { name: "Systemic Lupus Erythematosus", link: "#" },
-      { name: "Scleroderma Treatment", link: "#" },
-      { name: "Polymyalgia Rheumatica", link: "#" },
+      { name: "Autoimmune Diseases Treatment" },
+      { name: "Osteoarthritis Surgery" },
+      { name: "Systemic Lupus Erythematosus" },
+      { name: "Scleroderma Treatment" },
+      { name: "Polymyalgia Rheumatica" },
     ],
   ];
-
 
   const spine = [
     [
-      { name: "Scoliosis Spine Surgery", link: "#" },
-      { name: "Spine Surgery", link: "#" },
-      { name: "Spine Tumor Surgery", link: "#" },
-      { name: "Laminectomy", link: "#" },
-      { name: "Spinal Fusion", link: "#" },
+      { name: "Scoliosis Spine Surgery" },
+      { name: "Spine Surgery" },
+      { name: "Spine Tumor Surgery" },
+      { name: "Laminectomy" },
+      { name: "Spinal Fusion" },
     ],
 
     [
-      { name: "Disc Replacement Surgery", link: "#" },
-      { name: "Kyphoplasty Surgery", link: "#" },
-      { name: "Cervical Spondylosis Treatment", link: "#" },
-      { name: "Microdiscectomy", link: "#" },
-      { name: "Artificial Disc Replacement", link: "#" },
+      { name: "Disc Replacement Surgery" },
+      { name: "Kyphoplasty Surgery" },
+      { name: "Cervical Spondylosis Treatment" },
+      { name: "Microdiscectomy" },
+      { name: "Artificial Disc Replacement" },
     ],
 
     [
-      { name: "Corpectomy Surgery", link: "#" },
-      { name: "Foraminotomy Surgery", link: "#" },
-      { name: "Vertebroplasty Surgery", link: "#" },
-      { name: "Spinal Decompression", link: "#" },
-      { name: "Minimally Invasive Spine Surgery", link: "#" },
+      { name: "Corpectomy Surgery" },
+      { name: "Foraminotomy Surgery" },
+      { name: "Vertebroplasty Surgery" },
+      { name: "Spinal Decompression" },
+      { name: "Minimally Invasive Spine Surgery" },
     ],
   ];
-
 
   const surgical = [
     [
-      { name: "Cryosurgery", link: "#" },
-      { name: "Radiofrequency Ablation", link: "#" },
-      { name: "Laparoscopic Surgery", link: "#" },
-      { name: "Breast Cancer Surgery", link: "#" },
-      { name: "Colorectal Cancer Surgery", link: "#" },
+      { name: "Cryosurgery" },
+      { name: "Radiofrequency Ablation" },
+      { name: "Laparoscopic Surgery" },
+      { name: "Breast Cancer Surgery" },
+      { name: "Colorectal Cancer Surgery" },
     ],
 
     [
-      { name: "Robotic Surgery", link: "#" },
-      { name: "Thoracic Surgery", link: "#" },
-      { name: "Endoscopy Surgery", link: "#" },
-      { name: "Head and Neck Cancer Surgery", link: "#" },
-      { name: "Gynecologic Oncology Surgery", link: "#" },
+      { name: "Robotic Surgery" },
+      { name: "Thoracic Surgery" },
+      { name: "Endoscopy Surgery" },
+      { name: "Head and Neck Cancer Surgery" },
+      { name: "Gynecologic Oncology Surgery" },
     ],
 
     [
-      { name: "Diagnostic Surgery", link: "#" },
-      { name: "Reconstructive Surgery", link: "#" },
-      { name: "Melanoma Surgery", link: "#" },
-      { name: "Sarcoma Surgery", link: "#" },
-      { name: "Hepatobiliary Surgery", link: "#" },
+      { name: "Diagnostic Surgery" },
+      { name: "Reconstructive Surgery" },
+      { name: "Melanoma Surgery" },
+      { name: "Sarcoma Surgery" },
+      { name: "Hepatobiliary Surgery" },
     ],
   ];
-
 
   const orthopaedic = [
     [
-      { name: "Cochlear Implant Surgery", link: "#" },
-      { name: "Endoscopic Sinus", link: "#" },
-      { name: "Vertigo Surgery", link: "#" },
-      { name: "Tonsillectomy", link: "#" },
-      { name: "Adenoidectomy", link: "#" },
+      { name: "Cochlear Implant Surgery" },
+      { name: "Endoscopic Sinus" },
+      { name: "Vertigo Surgery" },
+      { name: "Tonsillectomy" },
+      { name: "Adenoidectomy" },
     ],
 
     [
-      { name: "Laryngotracheoplasty", link: "#" },
-      { name: "Thyroid Surgery Treatment", link: "#" },
-      { name: "Turbinate Reduction Surgery", link: "#" },
-      { name: "Septoplasty", link: "#" },
-      { name: "Rhinoplasty", link: "#" },
+      { name: "Laryngotracheoplasty" },
+      { name: "Thyroid Surgery Treatment" },
+      { name: "Turbinate Reduction Surgery" },
+      { name: "Septoplasty" },
+      { name: "Rhinoplasty" },
     ],
 
     [
-      { name: "Thyroidectomy Surgery", link: "#" },
-      { name: "Bone Conduction Hearing Aid", link: "#" },
-      { name: "Tympanoplasty Surgery", link: "#" },
-      { name: "Myringotomy", link: "#" },
-      { name: "Mastoidectomy", link: "#" },
+      { name: "Thyroidectomy Surgery" },
+      { name: "Bone Conduction Hearing Aid" },
+      { name: "Tympanoplasty Surgery" },
+      { name: "Myringotomy" },
+      { name: "Mastoidectomy" },
     ],
   ];
 
-
   const stem = [
     [
-      { name: "Diabetes", link: "#" },
-      { name: "Various Blood Cancers", link: "#" },
-      { name: "Spinal Cord Injuries", link: "#" },
-      { name: "Retinal Diseases", link: "#" },
-      { name: "Brain Stroke", link: "#" },
-      { name: "Multiple Sclerosis", link: "#" },
+      { name: "Diabetes" },
+      { name: "Various Blood Cancers" },
+      { name: "Spinal Cord Injuries" },
+      { name: "Retinal Diseases" },
+      { name: "Brain Stroke" },
+      { name: "Multiple Sclerosis" },
     ],
 
     [
-      { name: "Hearing Loss", link: "#" },
-      { name: "Osteoarthritis, Rheumatoid Arthritis", link: "#" },
-      { name: "Lung Diseases", link: "#" },
-      { name: "Autism", link: "#" },
-      { name: "Parkinson's Disease", link: "#" },
-      { name: "Heart Disease", link: "#" },
+      { name: "Hearing Loss" },
+      { name: "Osteoarthritis, Rheumatoid Arthritis" },
+      { name: "Lung Diseases" },
+      { name: "Autism" },
+      { name: "Parkinson's Disease" },
+      { name: "Heart Disease" },
     ],
 
     [
-      { name: "Knee Injuries", link: "#" },
-      { name: "Kidney Failure", link: "#" },
-      { name: "Sickle Cell Anemia / Sickle Cell Disease", link: "#" },
-      { name: "Alzheimer's Disease", link: "#" },
-      { name: "Liver Disease", link: "#" },
-      { name: "Muscular Dystrophy", link: "#" },
+      { name: "Knee Injuries" },
+      { name: "Kidney Failure" },
+      { name: "Sickle Cell Anemia / Sickle Cell Disease" },
+      { name: "Alzheimer's Disease" },
+      { name: "Liver Disease" },
+      { name: "Muscular Dystrophy" },
     ],
   ];
 
@@ -1237,15 +1078,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1276,15 +1118,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1314,15 +1157,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1370,15 +1214,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1409,15 +1254,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1447,15 +1293,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1503,15 +1350,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1542,15 +1390,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1580,15 +1429,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1636,15 +1486,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1675,15 +1526,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1713,15 +1565,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1769,15 +1622,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1808,15 +1662,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1846,15 +1701,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1902,15 +1758,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1941,15 +1798,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -1979,15 +1837,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2035,15 +1894,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2074,15 +1934,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2112,15 +1973,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2168,15 +2030,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2207,15 +2070,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2245,15 +2109,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2301,15 +2166,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2340,15 +2206,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2378,15 +2245,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2434,15 +2302,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2473,15 +2342,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2511,15 +2381,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2567,15 +2438,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2606,15 +2478,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2662,15 +2535,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2701,15 +2575,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2739,15 +2614,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2795,15 +2671,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2834,15 +2711,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2872,15 +2750,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2928,15 +2807,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -2967,15 +2847,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3005,15 +2886,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3061,15 +2943,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3100,15 +2983,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3138,15 +3022,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3194,15 +3079,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3233,15 +3119,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3271,15 +3158,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3327,15 +3215,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3366,15 +3255,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3404,15 +3294,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3460,10 +3351,11 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
@@ -3499,15 +3391,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3537,15 +3430,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3593,15 +3487,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3632,15 +3527,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3670,15 +3566,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3726,15 +3623,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3765,15 +3663,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3803,15 +3702,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3859,15 +3759,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3898,15 +3799,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3936,15 +3838,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3992,15 +3895,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4031,15 +3935,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4069,15 +3974,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4125,15 +4031,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4164,15 +4071,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4202,15 +4110,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4258,15 +4167,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4293,19 +4203,20 @@ export default function TreatmentServices() {
                 ></span>
                 {item.link ? (
                   <Link
-                    href={item.link}
+                    
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -4335,15 +4246,16 @@ export default function TreatmentServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${activeLink === item.name
-                      ? "text-[#082859] font-semibold"
-                      : "text-[#082859] hover:text-[#0C3D88]"
-                      }`}
+                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+                      activeLink === item.name
+                        ? "text-[#082859] font-semibold"
+                        : "text-[#082859] hover:text-[#0C3D88]"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}

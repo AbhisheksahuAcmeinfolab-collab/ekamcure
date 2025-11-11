@@ -8,7 +8,6 @@ import pic3 from "../../assets/recent/Keshwan Prasad.webp";
 import pic4 from "../../assets/recent/Sunilduth Putty.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
 
-
 const patients = [
   {
     name: "Abdullah AI Mamun",
@@ -20,38 +19,38 @@ const patients = [
     type: "image",
   },
   {
-    name: "Christopher muja",
+    name: "Christopher Muja",
     country: "Fiji",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    location: "Greater Kailash – 1, New Delhi, India",
+    treatment: "Health Checkup",
+    hospital: "Yatharth Hospital",
+    location: "Greater Noida, India",
     media: pic2,
     type: "image",
   },
   {
     name: "Keshwan Prasad",
     country: "Fiji",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    location: "Greater Kailash – 1, New Delhi, India",
+    treatment: "Cardiac Surgery",
+    hospital: "Max Super Speciality Hospital",
+    location: "Noida Sec-128, India",
     media: pic3,
     type: "image",
   },
   {
     name: "Sunilduth Putty",
     country: "Mauritius",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    location: "Greater Kailash – 1, New Delhi, India",
+    treatment: "Cardiac Surgery",
+    hospital: "Max Super Speciality Hospital",
+    location: "Noida Sec-128, India",
     media: pic4,
     type: "image",
   },
   {
     name: "Yogita Singh",
     country: "Fiji",
-    treatment: "ACL Reconstruction Surgery",
-    hospital: "SCI International Hospital",
-    location: "Greater Kailash – 1, New Delhi, India",
+    treatment: "Ca Cervix",
+    hospital: "Yatharth Hospital",
+    location: "Greater Noida, India",
     media: pic5,
     type: "image",
   },
@@ -71,7 +70,9 @@ export default function Gallery() {
           className="object-cover brightness-80"
         />
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">Testimonial</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Testimonial
+          </h1>
         </div>
       </div>
 
