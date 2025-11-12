@@ -68,7 +68,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300 bg:white dark:bg-white">
+      <footer className="bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300 dark:bg-white">
         {/* Top Section */}
         <div className="max-w-7xl mx-auto px-2 py-14 text-align grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Column 1 */}

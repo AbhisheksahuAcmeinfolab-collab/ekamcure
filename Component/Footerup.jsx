@@ -66,7 +66,6 @@ export default function Footerup() {
                     className="object-contain h-full w-full"
                   />
                 </div>
-
                 {/* Name */}
                 {/* <p className="mt-2 text-xs sm:text-sm md:text-base font-medium text-gray-800 text-center whitespace-nowrap">
                   {hosp.name}
