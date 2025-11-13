@@ -2456,7 +2456,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[200px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -2553,7 +2553,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -2593,7 +2593,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {pediatrics[2].map((item, i) => (
@@ -2689,7 +2689,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -2729,7 +2729,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {gender[2].map((item, i) => (
@@ -2825,7 +2825,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -2865,7 +2865,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {medicine[2].map((item, i) => (
@@ -2961,7 +2961,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[1100px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3001,7 +3001,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[1100px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {gynecology[2].map((item, i) => (
@@ -3097,7 +3097,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3137,7 +3137,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {preventive[2].map((item, i) => (
@@ -3360,7 +3360,7 @@ export default function TreatmentServices() {
                     {item.name}
                   </Link>
                 ) : (
-                  <span className="text-[#777] text-[18px] font-medium flex-1 cursor-default">
+                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
                   </span>
                 )}
@@ -3369,7 +3369,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[450px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3409,7 +3409,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[450px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {orthopedic[2].map((item, i) => (
@@ -3641,7 +3641,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3681,7 +3681,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {rheumatology[2].map((item, i) => (
@@ -3777,7 +3777,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3817,7 +3817,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {spine[2].map((item, i) => (
@@ -3913,7 +3913,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -3953,7 +3953,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {surgical[2].map((item, i) => (
@@ -4049,7 +4049,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -4089,7 +4089,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[250px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {orthopaedic[2].map((item, i) => (
@@ -4185,7 +4185,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column Divider */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           {/* Column 2 (with same arrow on left side) */}
           <ul className="list-none p-0 m-0 space-y-[12px]">
@@ -4225,7 +4225,7 @@ export default function TreatmentServices() {
           </ul>
 
           {/* Column 3 */}
-          <div className="hidden md:block w-[2px] h-[300px] bg-[#ddd] mx-auto"></div>
+          <div className="hidden md:block w-[2px] h-[350px] bg-[#ddd] mx-auto"></div>
 
           <ul className="list-none p-0 m-0 space-y-[12px]">
             {stem[2].map((item, i) => (

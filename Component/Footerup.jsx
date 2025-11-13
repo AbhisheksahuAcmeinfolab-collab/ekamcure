@@ -63,6 +63,8 @@ export default function Footerup() {
                     alt={hosp.name}
                     fill
                     className="object-contain h-full w-full"
+                    loading="eager"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -73,15 +75,3 @@ export default function Footerup() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-

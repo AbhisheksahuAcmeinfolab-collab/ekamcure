@@ -78,7 +78,9 @@ export default function Footer() {
               alt="Health India Logo"
               width={170}
               height={50}
-              className="rounded-md mb-2 py-2 "
+              className="rounded-md mb-2 py-2"
+              loading="eager"
+              unoptimized
             />
 
             <p>
@@ -95,7 +97,7 @@ export default function Footer() {
               <Link href="/contact" className="flex items-center gap-2">
                 GET QUOTE →
               </Link>
-            </motion.button>
+            </motion.button>  
 
             {/* Social Icons */}
             <div className="flex gap-4 mt-6">
@@ -172,7 +174,6 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/20">
               {infoItems.map(({ icon: Icon, label, text, href }, i) => (
-                // <div
                 <a
                   key={i}
                   href={href || "#"}
@@ -210,7 +211,7 @@ export default function Footer() {
             </div>
 
             {/* Right side */}
-            <div className="text-white mt-2 md:mt-0 ">
+            <div className="text-white mt-2 md:mt-0">
               Designed by{" "}
               <Link
                 href="https://www.acmeinfolabs.com/"
