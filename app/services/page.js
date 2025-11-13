@@ -9,7 +9,7 @@ import {
   Hospital,
   Pill,
 } from "lucide-react";
-import img from "../../assets/recent/Our Services 1.webp";
+import img from "../../assets/recent/Our Services.webp";
 import pic1 from "../../assets/icon/1.png";
 import pic2 from "../../assets/icon/2.png";
 import pic3 from "../../assets/icon/3.png";

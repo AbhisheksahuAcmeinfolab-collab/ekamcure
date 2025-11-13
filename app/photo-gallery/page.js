@@ -5,8 +5,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import img from "../../assets/recent/Gallery 1.webp";
-// import pic18 from "../../assets/recent/Christopher muja.webp";
-// import pic17 from "../../assets/recent/Keshwan Prasad.webp";
+import pic23 from "../../assets/recent/Patient  (17).webp";
+import pic22 from "../../assets/recent/Patient  (16).webp";
+import pic21 from "../../assets/recent/Patient  (15).webp";
+import pic20 from "../../assets/recent/Patient  (14).webp";
+import pic19 from "../../assets/recent/Patient  (13).webp";
+import pic18 from "../../assets/recent/Patient  (12).webp";
+import pic17 from "../../assets/recent/Patient  (11).webp";
 import pic16 from "../../assets/recent/Patient  (10).webp";
 import pic15 from "../../assets/recent/Patient (9).webp";
 import pic14 from "../../assets/recent/Patient (8).webp";
@@ -24,7 +29,7 @@ import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
 import pic2 from "../../assets/recent/Sunilduth Putty.webp";
 import pic1 from "../../assets/recent/Yogita Singh.webp";
 
-const images = [pic16, pic15, pic14, pic13, pic12, pic11, pic10, pic9, pic8, pic7, 
+const images = [pic23, pic22, pic21, pic20, pic19, pic18, pic17, pic16, pic15, pic14, pic13, pic12, pic11, pic10, pic9, pic8, pic7, 
   pic6, pic5, pic4, pic3, pic2, pic1];
 
 export default function Gallery() {
@@ -49,7 +54,7 @@ export default function Gallery() {
       <section className="bg-white py-10 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-center text-3xl font-semibold text-gray-800 mb-10">
-            Our <span className="text-blue-700">Photo Gallery</span>
+            Our <span className="text-blue-900">Photo Gallery</span>
           </h2>
 
           {/* ✅ Display images directly */}

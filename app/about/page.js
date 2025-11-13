@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import img from "../../assets/recent/common banner.webp";
+import img from "../../assets/recent/Common.webp";
 import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";

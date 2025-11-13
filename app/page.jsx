@@ -127,7 +127,7 @@ const patients = [
     type: "image",
   },
   {
-    name: "Christopher Muja",
+    name: "Christopher Muza",
     country: "Fiji",
     treatment: "Health Checkup",
     hospital: "Yatharth Hospital",
@@ -416,6 +416,8 @@ export default function Home() {
                   width={50}
                   height={50}
                   className="object-contain transition-transform duration-300 hover:scale-105"
+                  loading="eager"
+                  unoptimized
                 />
               </div>
 
@@ -492,7 +494,7 @@ export default function Home() {
               </div>
               {/* MOBILE VIEW */}
               <div className="relative flex md:hidden w-full justify-center -ml-12">
-              {/* Text Box */}
+                {/* Text Box */}
                 <div className="bg-white border-2 border-blue-900 rounded-2xl p-6 shadow-md w-[60%] relative z-10">
                   <h3 className="text-xl md:text-2xl font-semibold mb-3">
                     {currentPatient.name}
@@ -512,8 +514,10 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="absolute top-1/2 right-[-14px] -translate-y-1/2 w-[130px] sm:w-[100px] bg-white
-                border-2 border-blue-900 rounded-xl overflow-hidden shadow-lg z-10 ">
+                <div
+                  className="absolute top-1/2 right-[-14px] -translate-y-1/2 w-[130px] sm:w-[100px] bg-white
+                border-2 border-blue-900 rounded-xl overflow-hidden shadow-lg z-10 "
+                >
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
@@ -537,4 +541,3 @@ export default function Home() {
     </main>
   );
 }
-
