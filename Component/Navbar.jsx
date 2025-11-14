@@ -15,14 +15,16 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Treatment", href: "/treatment" },
-    { name: "Testimonial", href: "/testimonial" },
-    { name: "Photo Gallery", href: "/photo-gallery" },
+    { name: "Top Hospitals", href: "#" },
+    { name: "Top Doctors", href: "#" },
+    { name: "Patient Story", href: "/patient-story" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
     
   return (
     <nav className="bg-white dark:text-black-100 shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto sm:px-6">
         <div className="flex justify-between items-center h-16">
           {/* ---------- Desktop View ---------- */}
           <div className="hidden xl:flex justify-between w-full items-center">

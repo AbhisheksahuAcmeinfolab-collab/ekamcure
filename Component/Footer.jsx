@@ -38,7 +38,7 @@ export default function Footer() {
       text: "info@ekamcure.com",
       href: "mailto:info@ekamcure.com",
     },
-    {
+    {  
       icon: MdPhone,
       label: "Call Emergency",
       text: "(+91) 9990205353",
@@ -61,8 +61,10 @@ export default function Footer() {
     { name: "About Us", href: "/about" },
     { name: "Our Services", href: "/services" },
     { name: "Our Treatment", href: "/treatment" },
-    { name: "Our Testimonial", href: "/testimonial" },
-    { name: "Photo Gallery", href: "/photo-gallery" },
+    { name: "Top Hospitals", href: "#" },
+    { name: "Top Doctors", href: "#" },
+    { name: "Patient Story", href: "/patient-story" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
 

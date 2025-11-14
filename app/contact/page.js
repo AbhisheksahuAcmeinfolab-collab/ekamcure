@@ -58,18 +58,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 import { useState } from "react";
 import Image from "next/image";
@@ -81,6 +69,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa";
 
 export default function ContactPage() {
@@ -104,7 +94,6 @@ export default function ContactPage() {
   return (
     <>
       {/* Banner */}
-      {/* <section className="w-full bg-gray-50"> */}
       <div className="relative w-full h-[200px] md:h-[200px] flex items-center justify-center">
         <Image
           src={img}
@@ -131,8 +120,8 @@ export default function ContactPage() {
             <form
               // action="https://formspree.io/f/xyzlgqyv"  //info@ekamcure.com
               method="POST"
-              className="space-y-4"
-              action="https://formspree.io/f/meovjbqj" 
+              className="space-y-4 dark:text-black-700"
+              action="https://formspree.io/f/meovjbqj"
               //abhisheksahuacmeinfolab@gmail.com
               // onSubmit={handleSubmit} className="mt-6 space-y-4"
             >
@@ -204,11 +193,18 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-orange-500 mt-1" />
-                  <p>
-                    LOGIX TECHNOVA, B-138, Tower B,
-                    <br />
-                    Sector 132, Noida, Uttar Pradesh 201304
-                  </p>
+                  <a
+                    href="https://www.google.com/maps?q=LOGIX+TECHNOVA,+B-138,+Tower+B,+Sector+132,+Noida"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    <p>
+                      LOGIX TECHNOVA, B-138, Tower B,
+                      <br />
+                      Sector 132, Noida, Uttar Pradesh 201304
+                    </p>
+                  </a>
                 </div>
               </div>
 
@@ -218,7 +214,9 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex items-center gap-3">
                   <FaPhoneAlt className="text-orange-500" />
-                  <p>+91-9990205353</p>
+                  <a className="hover:underline" href="tel:+919990205353">
+                    <p>+91-9990205353</p>
+                  </a>
                 </div>
               </div>
 
@@ -228,7 +226,12 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex items-center gap-3">
                   <FaEnvelope className="text-orange-500" />
-                  <p>info@ekamcare.com</p>
+                  <a
+                    className="hover:underline"
+                    href="mailto:info@ekamcure.com"
+                  >
+                    <p>info@ekamcare.com</p>
+                  </a>
                 </div>
               </div>
 
@@ -238,22 +241,34 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex items-center gap-4 mt-2">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/EkamCure/"
                     className="bg-blue-900 text-white p-2 rounded-full hover:bg-orange-500 transition"
                   >
                     <FaFacebookF />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/EkamCare"
                     className="bg-black text-white p-2 rounded-full hover:bg-orange-500 transition"
                   >
                     <FaTwitter />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/ekamcure/"
                     className="bg-pink-600 text-white p-2 rounded-full hover:bg-orange-500 transition"
                   >
                     <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ekam-cure/posts/?feedView=all"
+                    className="bg-blue-900 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@EkamCure"
+                    className="bg-red-700 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                  >
+                    <FaYoutube />
                   </a>
                 </div>
               </div>
@@ -271,7 +286,10 @@ export default function ContactPage() {
           {/* Responsive Map Container */}
           <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-2xl shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224348.9470810114!2d77.0688994782996!3d28.527582000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a28b1b5e9b%3A0x2b7e71e87a0a2d5c!2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1696878725487!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30763742.28330565!2d109.
+            92918005000001!3d-19.740719679432154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d2
+            57006c1633a5%3A0x3de93d00462b99ae!2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1763102615891
+            !5m2!1sen!2sin%22"
               className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen=""
               loading="lazy"

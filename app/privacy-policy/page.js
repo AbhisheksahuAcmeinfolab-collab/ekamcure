@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
         </div>
       </div>
 
-      <section className="bg-gray-50 py-12 px-4 md:px-10 text-gray-800">
+      <section className="text-justify bg-gray-50 py-12 px-4 md:px-10 text-gray-800">
         <div className="max-w-5xl mx-auto bg-white shadow-md rounded-2xl p-8 md:p-12">
           {/* Page Title */}
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">

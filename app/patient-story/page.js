@@ -10,23 +10,23 @@ import pic2 from "../../assets/recent/Christopher muja.webp";
 import pic3 from "../../assets/recent/Keshwan Prasad.webp";
 import pic4 from "../../assets/recent/Sunilduth Putty.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
-import pic6 from "../../assets/recent/patient1.webp";
-import pic7 from "../../assets/recent/Patient (1).webp";
-import pic8 from "../../assets/recent/Patient  (2).webp";
-import pic9 from "../../assets/recent/Patient (3).webp";
-import pic10 from "../../assets/recent/Patient (4).webp";
-import pic11 from "../../assets/recent/Patient (5).webp";
-import pic12 from "../../assets/recent/Patient (6).webp";
-import pic13 from "../../assets/recent/Patient (7).webp";
-import pic14 from "../../assets/recent/Patient (8).webp";
-import pic15 from "../../assets/recent/Patient (9).webp";
-import pic16 from "../../assets/recent/Patient  (10).webp";
-import pic17 from "../../assets/recent/Patient  (11).webp";
-import pic18 from "../../assets/recent/Patient  (12).webp";
-import pic19 from "../../assets/recent/Patient  (13).webp";
-import pic20 from "../../assets/recent/Patient  (14).webp";
-import pic21 from "../../assets/recent/Patient  (15).webp";
-import pic22 from "../../assets/recent/Patient  (16).webp";
+import pic6 from "../../assets/recent/Patient(17).webp";
+import pic7 from "../../assets/recent/Patient(1).webp";
+import pic8 from "../../assets/recent/Patient(2).webp";
+import pic9 from "../../assets/recent/Patient(3).webp";
+import pic10 from "../../assets/recent/Patient(4).webp";
+import pic11 from "../../assets/recent/Patient(5).webp";
+import pic12 from "../../assets/recent/Patient(6).webp";
+import pic13 from "../../assets/recent/Patient(7).webp";
+import pic14 from "../../assets/recent/Patient(8).webp";
+import pic15 from "../../assets/recent/Patient(9).webp";
+import pic16 from "../../assets/recent/Patient(10).webp";
+import pic17 from "../../assets/recent/Patient(11).webp";
+import pic18 from "../../assets/recent/Patient(12).webp";
+import pic19 from "../../assets/recent/Patient(13).webp";
+import pic20 from "../../assets/recent/Patient(14).webp";
+import pic21 from "../../assets/recent/Patient(15).webp";
+import pic22 from "../../assets/recent/Patient(16).webp";
 
 const patients = [
   {
@@ -275,7 +275,7 @@ export default function Gallery() {
                 >
                   <div
                     className="bg-white dark:text-black  border-blue-900 rounded-2xl h-[270px]
-                p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20"
+                    p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20"
                   >
                     <h3 className="text-xl md:text-2xl font-semibold mb-3 text-blue-900">
                       {p.name}
@@ -301,12 +301,12 @@ export default function Gallery() {
                 w-[230px] sm:w-[260px] md:w-[280px] mt-6 md:mt-0 bg-white border-2 border-blue-900
                 rounded-xl overflow-hidden shadow-lg z-20`}
                   >
-                    <div className="relative w-full h-48">
+                    <div className="relative w-full h-50">
                       <Image
                         src={p.media}
                         alt={p.name}
                         fill
-                        className="object-cover w-full h-40 scale-75"
+                        className="object-cover w-full h-auto scale-75"
                       />
                     </div>
                   </div>
