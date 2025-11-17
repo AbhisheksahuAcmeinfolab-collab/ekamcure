@@ -6,27 +6,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import img from "../../assets/recent/Testimonial.webp";
 
 import pic1 from "../../assets/recent/Abdullah AI Mamun.webp";
-import pic2 from "../../assets/recent/Christopher muja.webp";
+import pic2 from "../../assets/recent/Christopher Muza1.webp";
 import pic3 from "../../assets/recent/Keshwan Prasad.webp";
 import pic4 from "../../assets/recent/Sunilduth Putty.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
-import pic6 from "../../assets/recent/Patient(17).webp";
+import pic6 from "../../assets/recent/Vidya Wati.webp";
 import pic7 from "../../assets/recent/Patient(1).webp";
 import pic8 from "../../assets/recent/Patient(2).webp";
 import pic9 from "../../assets/recent/Patient(3).webp";
 import pic10 from "../../assets/recent/Patient(4).webp";
-import pic11 from "../../assets/recent/Patient(5).webp";
+import pic11 from "../../assets/recent/Christopher Muza2.webp";
 import pic12 from "../../assets/recent/Patient(6).webp";
 import pic13 from "../../assets/recent/Patient(7).webp";
 import pic14 from "../../assets/recent/Patient(8).webp";
 import pic15 from "../../assets/recent/Patient(9).webp";
 import pic16 from "../../assets/recent/Patient(10).webp";
 import pic17 from "../../assets/recent/Patient(11).webp";
-import pic18 from "../../assets/recent/Patient(12).webp";
-import pic19 from "../../assets/recent/Patient(13).webp";
+import pic18 from "../../assets/recent/Christopher Muza3.webp";
+import pic19 from "../../assets/recent/Christopher Muza3.webp";
 import pic20 from "../../assets/recent/Patient(14).webp";
 import pic21 from "../../assets/recent/Patient(15).webp";
-import pic22 from "../../assets/recent/Patient(16).webp";
+import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
 
 const patients = [
   {
@@ -39,10 +39,10 @@ const patients = [
   },
   {
     name: "Christopher Muza",
-    country: "Fiji",
-    treatment: "Health Checkup",
+    country: "Zimbabwe",
+    treatment: "Urology",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic2,
   },
   {
@@ -71,11 +71,11 @@ const patients = [
     type: "image",
   },
   {
-    name: "Yogita Singh",
+    name: "Vidya Wati",
     country: "Fiji",
-    treatment: "Ca Cervix",
-    hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    treatment: "Eye",
+    hospital: "The Sight Avenue",
+    location: "New Delhi",
     media: pic6,
     type: "image",
   },
@@ -89,8 +89,8 @@ const patients = [
   },
   {
     name: "Christopher Muza",
-    country: "Fiji",
-    treatment: "Health Checkup",
+    country: "Zimbabwe",
+    treatment: "Urology",
     hospital: "Yatharth Hospital",
     location: "Greater Noida, India",
     media: pic8,
@@ -112,11 +112,11 @@ const patients = [
     media: pic10,
   },
   {
-    name: "Yogita Singh",
-    country: "Fiji",
-    treatment: "Ca Cervix",
+    name: "Christopher Muza",
+    country: "Zimbabwe",
+    treatment: "Urology",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic11,
     type: "image",
   },
@@ -142,7 +142,7 @@ const patients = [
     country: "Fiji",
     treatment: "Health Checkup",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic14,
   },
   {
@@ -171,19 +171,20 @@ const patients = [
     type: "image",
   },
   {
-    name: "Yogita Singh",
-    country: "Fiji",
-    treatment: "Ca Cervix",
+    name: "Christopher Muza",
+    country: "Zimbabwe",
+    treatment: "Urology",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic18,
     type: "image",
   },
   {
-    name: "Abdullah AI Mamun",
-    country: "Bangladesh",
-    treatment: "Health Checkup",
-    hospital: "Balaji Action Hospital",
+    name: "Christopher Muza",
+    country: "Zimbabwe",
+    treatment: "Urology",
+    hospital: "Yatharth Hospital",
+    location: "Noida",
     location: "Paschim Vihar, New Delhi, India",
     media: pic19,
   },
@@ -204,11 +205,11 @@ const patients = [
     media: pic21,
   },
   {
-    name: "Sunilduth Putty",
-    country: "Mauritius",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    name: "Shylotte Kativhu",
+    country: "Zimbabwe",
+    treatment: "Heal Pain",
+    hospital: "Yatharth hospital",
+    location: "Noida",
     media: pic22,
   },
 ];

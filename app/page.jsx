@@ -21,7 +21,7 @@ import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
 // import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
 import pic15 from "../assets/recent/Abdullah AI Mamun.webp";
-import pic16 from "../assets/recent/Christopher muja.webp";
+import pic16 from "../assets/recent/Christopher Muza1.webp";
 import pic17 from "../assets/recent/Keshwan Prasad.webp";
 import pic18 from "../assets/recent/Sunilduth Putty.webp";
 import pic19 from "../assets/recent/Yogita Singh.webp";
