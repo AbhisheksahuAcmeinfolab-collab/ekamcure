@@ -120,7 +120,7 @@ export default function ContactPage() {
             <form
               // action="https://formspree.io/f/xyzlgqyv"  //info@ekamcure.com
               method="POST"
-              className="space-y-4 dark:text-black-700"
+              className="space-y-4 text-black dark:text-black"
               action="https://formspree.io/f/meovjbqj"
               //abhisheksahuacmeinfolab@gmail.com
               // onSubmit={handleSubmit} className="mt-6 space-y-4"
@@ -132,7 +132,7 @@ export default function ContactPage() {
                   placeholder="Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                   required
                 />
                 <input
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   placeholder="Phone No."
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                   required
                 />
               </div>
@@ -152,7 +152,7 @@ export default function ContactPage() {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                 required
               />
 
@@ -163,7 +163,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 rows="5"
                 maxLength={180}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                 required
               ></textarea>
 
@@ -173,7 +173,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition"
+                className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
               >
                 Submit
               </button>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   ADDRESS
                 </h3>
                 <div className="flex items-start gap-3">
-                  <FaMapMarkerAlt className="text-orange-500 mt-1" />
+                  <FaMapMarkerAlt className="text-blue-900 mt-1" />
                   <a
                     href="https://www.google.com/maps?q=LOGIX+TECHNOVA,+B-138,+Tower+B,+Sector+132,+Noida"
                     target="_blank"
@@ -213,7 +213,7 @@ export default function ContactPage() {
                   PHONE
                 </h3>
                 <div className="flex items-center gap-3">
-                  <FaPhoneAlt className="text-orange-500" />
+                  <FaPhoneAlt className="text-blue-900" />
                   <a className="hover:underline" href="tel:+919990205353">
                     <p>+91-9990205353</p>
                   </a>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                   EMAIL
                 </h3>
                 <div className="flex items-center gap-3">
-                  <FaEnvelope className="text-orange-500" />
+                  <FaEnvelope className="text-blue-900" />
                   <a
                     className="hover:underline"
                     href="mailto:info@ekamcure.com"
@@ -242,31 +242,31 @@ export default function ContactPage() {
                 <div className="flex items-center gap-4 mt-2">
                   <a
                     href="https://www.facebook.com/EkamCure/"
-                    className="bg-blue-900 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                    className="bg-blue-900 text-white p-2 rounded-full bg-blue-900 transition"
                   >
                     <FaFacebookF />
                   </a>
                   <a
                     href="https://x.com/EkamCare"
-                    className="bg-black text-white p-2 rounded-full hover:bg-orange-500 transition"
+                    className="bg-black text-white p-2 rounded-full bg-black-500 transition"
                   >
                     <FaTwitter />
                   </a>
                   <a
                     href="https://www.instagram.com/ekamcure/"
-                    className="bg-pink-600 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                    className="bg-pink-600 text-white p-2 rounded-full bg-pink-500 transition"
                   >
                     <FaInstagram />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/ekam-cure/posts/?feedView=all"
-                    className="bg-blue-900 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                    className="bg-blue-900 text-white p-2 rounded-full bg-blue-900 transition"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a
                     href="https://www.youtube.com/@EkamCure"
-                    className="bg-red-700 text-white p-2 rounded-full hover:bg-orange-500 transition"
+                    className="bg-red-700 text-white p-2 rounded-full bg-red-500 transition"
                   >
                     <FaYoutube />
                   </a>
@@ -277,20 +277,20 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="w-full bg-gray-50 px-4">
+      <section className="w-full px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-6">
             Find Us On The Map
           </h2>
 
           {/* Responsive Map Container */}
-          <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-2xl shadow-lg">
+          <div className="relative w-full h-100 pb-[56.25%] overflow-hidden rounded-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30763742.28330565!2d109.
-            92918005000001!3d-19.740719679432154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d2
-            57006c1633a5%3A0x3de93d00462b99ae!2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1763102615891
-            !5m2!1sen!2sin%22"
-              className="absolute top-0 left-0 w-full h-full border-0"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59763676.667022385!2d99.
+           206524!3d-23.900774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d257006c1633a5%3A0x3de93d00462b99ae!
+           2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1763441321849!5m2!1sen!2sin%22 
+           "
+              className="absolute top-0 left-0 w-full h-100 border-0"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

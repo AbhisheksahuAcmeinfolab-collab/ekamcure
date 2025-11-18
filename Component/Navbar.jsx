@@ -17,7 +17,7 @@ export default function Navbar() {
     { name: "Treatments", href: "/treatment" },
     { name: "Top Hospitals", href: "/top-hospitals" },
     // { name: "Top Doctors", href: "/top-doctors" },
-    { name: "Patient Story", href: "/patient-story" },
+    { name: "Patient's Story", href: "/patient-story" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
   ];

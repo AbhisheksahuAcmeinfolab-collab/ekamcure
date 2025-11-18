@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import Link from "next/link";
 import {
   Stethoscope,
   HeartPulse,
@@ -177,12 +177,19 @@ export default function ServicesPage() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium transition">
+                <Link
+                  href="/contact"
+                  className="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium transition text-white text-center"
+                >
                   Talk to Our Experts
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-400 px-6 py-3 rounded-lg font-medium transition">
+                </Link>
+
+                <Link
+                  href="/contact"
+                  className="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-medium transition text-white text-center"
+                >
                   Appointment Form
-                </button>
+                </Link>
               </div>
 
               {/* Footer Note */}

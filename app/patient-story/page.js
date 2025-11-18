@@ -11,21 +11,21 @@ import pic3 from "../../assets/recent/Keshwan Prasad.webp";
 import pic4 from "../../assets/recent/Sunilduth Putty.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
 import pic6 from "../../assets/recent/Vidya Wati.webp";
-import pic7 from "../../assets/recent/Patient(1).webp";
+import pic7 from "../../assets/recent/SunilDuth Putty2.webp";
 import pic8 from "../../assets/recent/Patient(2).webp";
-import pic9 from "../../assets/recent/Patient(3).webp";
-import pic10 from "../../assets/recent/Patient(4).webp";
+import pic9 from "../../assets/recent/Narendra Chand.webp";
+import pic10 from "../../assets/recent/Brij Lata.webp";
 import pic11 from "../../assets/recent/Christopher Muza2.webp";
-import pic12 from "../../assets/recent/Patient(6).webp";
-import pic13 from "../../assets/recent/Patient(7).webp";
-import pic14 from "../../assets/recent/Patient(8).webp";
+import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
+// import pic13 from "../../assets/recent/Patient(7).webp";
+import pic14 from "../../assets/recent/Shylotte Kativhu2.webp";
 import pic15 from "../../assets/recent/Patient(9).webp";
-import pic16 from "../../assets/recent/Patient(10).webp";
-import pic17 from "../../assets/recent/Patient(11).webp";
-import pic18 from "../../assets/recent/Christopher Muza3.webp";
+import pic16 from "../../assets/recent/Satish Chandra.webp";
+import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
+// import pic18 from "../../assets/recent/Christopher Muza3.webp";
 import pic19 from "../../assets/recent/Christopher Muza3.webp";
-import pic20 from "../../assets/recent/Patient(14).webp";
-import pic21 from "../../assets/recent/Patient(15).webp";
+import pic20 from "../../assets/recent/Bissun Prasad.webp";
+import pic21 from "../../assets/recent/Deepak Dhookoo.webp";
 import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
 
 const patients = [
@@ -80,11 +80,11 @@ const patients = [
     type: "image",
   },
   {
-    name: "Abdullah AI Mamun",
-    country: "Bangladesh",
-    treatment: "Health Checkup",
-    hospital: "Balaji Action Hospital",
-    location: "Paschim Vihar, New Delhi, India",
+    name: "SunilDuth Putty",
+    country: "Mauritius",
+    treatment: "Cardiac surgery",
+    hospital: "Max Hospital",
+    location: "Noida",
     media: pic7,
   },
   {
@@ -96,19 +96,19 @@ const patients = [
     media: pic8,
   },
   {
-    name: "Keshwan Prasad",
+    name: "Narendra Chand",
     country: "Fiji",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    treatment: "Glucoma",
+    hospital: "The Sight Avenue",
+    location: "Delhi",
     media: pic9,
   },
   {
-    name: "Sunilduth Putty",
-    country: "Mauritius",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    name: "Brij Lata",
+    country: "Fiji",
+    treatment: "ENT",
+    hospital: "Max Hospital",
+    location: "Noida",
     media: pic10,
   },
   {
@@ -121,27 +121,27 @@ const patients = [
     type: "image",
   },
   {
-    name: "Yogita Singh",
-    country: "Fiji",
-    treatment: "Ca Cervix",
+    name: "Kamurayi Mambayo",
+    country: "Zimbabwe",
+    treatment: "Hip Replacement",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic12,
     type: "image",
   },
+  // {
+  //   name: "Abdullah AI Mamun",
+  //   country: "Bangladesh",
+  //   treatment: "Health Checkup",
+  //   hospital: "Balaji Action Hospital",
+  //   location: "Paschim Vihar, New Delhi, India",
+  //   media: pic13,
+  // },
   {
-    name: "Abdullah AI Mamun",
-    country: "Bangladesh",
-    treatment: "Health Checkup",
-    hospital: "Balaji Action Hospital",
-    location: "Paschim Vihar, New Delhi, India",
-    media: pic13,
-  },
-  {
-    name: "Christopher Muza",
-    country: "Fiji",
-    treatment: "Health Checkup",
-    hospital: "Yatharth Hospital",
+    name: "Shylotte Kativhu",
+    country: "Zimbabwe",
+    treatment: "Heal Pain",
+    hospital: "Yatharth hospital",
     location: "Noida",
     media: pic14,
   },
@@ -154,31 +154,31 @@ const patients = [
     media: pic15,
   },
   {
-    name: "Sunilduth Putty",
-    country: "Mauritius",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    name: "Satish Chandra",
+    country: "Fiji",
+    treatment: "Eye",
+    hospital: "The Sight Avenue",
+    location: "Delhi",
     media: pic16,
   },
   {
-    name: "Yogita Singh",
-    country: "Fiji",
-    treatment: "Ca Cervix",
-    hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    name: "Adbul Aziim Ramzan",
+    country: "Mauritius",
+    treatment: "Joint Surgery",
+    hospital: "Max Hospital",
+    location: "Noida",
     media: pic17,
     type: "image",
   },
-  {
-    name: "Christopher Muza",
-    country: "Zimbabwe",
-    treatment: "Urology",
-    hospital: "Yatharth Hospital",
-    location: "Noida",
-    media: pic18,
-    type: "image",
-  },
+  // {
+  //   name: "Christopher Muza",
+  //   country: "Zimbabwe",
+  //   treatment: "Urology",
+  //   hospital: "Yatharth Hospital",
+  //   location: "Noida",
+  //   media: pic18,
+  //   type: "image",
+  // },
   {
     name: "Christopher Muza",
     country: "Zimbabwe",
@@ -189,19 +189,19 @@ const patients = [
     media: pic19,
   },
   {
-    name: "Christopher Muza",
+    name: "Bissun Prasad",
     country: "Fiji",
-    treatment: "Health Checkup",
+    treatment: "Sinus",
     hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    location: "Noida",
     media: pic20,
   },
   {
-    name: "Keshwan Prasad",
-    country: "Fiji",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    name: "Deepak Dhookoo",
+    country: "Mauritius",
+    treatment: "Spine",
+    hospital: "Max Hospital",
+    location: "Noida",
     media: pic21,
   },
   {
@@ -241,7 +241,9 @@ export default function Gallery() {
           className="object-cover brightness-80"
         />
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">Testimonial</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
+            Testimonial
+          </h1>
         </div>
       </div>
 
