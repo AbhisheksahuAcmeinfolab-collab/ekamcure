@@ -1,16 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import pic24 from "../assets/newimage/appasamy.webp";
-import pic25 from "../assets/newimage/asian hospital.webp";
-import pic26 from "../assets/newimage/godrej.webp";
-// import pic27 from "../assets/newimage/Seven hills.webp";
-import pic28 from "../assets/newimage/mgm.webp";
-import pic29 from "../assets/newimage/kauvery.webp";
-import pic30 from "../assets/newimage/moolchand.webp";
-import pic31 from "../assets/newimage/primus.webp";
-import pic32 from "../assets/newimage/saroj.webp";
-import pic33 from "../assets/newimage/seven hills.webp";
+import pic24 from "../assets/hospitals/appasamy.webp";
+import pic25 from "../assets/hospitals/asian hospital.webp";
+import pic26 from "../assets/hospitals/godrej.webp";
+// import pic27 from "../assets/hospitals/Seven hills.webp";
+import pic28 from "../assets/hospitals/mgm.webp";
+import pic29 from "../assets/hospitals/kauvery.webp";
+import pic30 from "../assets/hospitals/moolchand.webp";
+import pic31 from "../assets/hospitals/primus.webp";
+import pic32 from "../assets/hospitals/saroj.webp";
+import pic33 from "../assets/hospitals/seven hills.webp";
 
 const hospitals = [
   { name: "Gleaneagles Global Hospital", img: pic24 },
