@@ -531,7 +531,7 @@ export default function Home() {
         {/* View All Button */}
         <div className="text-center mt-10">
           <a
-            href="/testimonial"
+            href="/patient-story"
             className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
           >
             View All →
