@@ -52,7 +52,7 @@ const images = [
   pic2,
   pic1,
 ];
-
+  
 const videos = [
   "../../assets/Videos/video1.mp4",
   "../../assets/Videos/video2.mp4",
