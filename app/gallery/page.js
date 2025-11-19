@@ -125,7 +125,7 @@ const VideoReels = ({ videos }) => {
           {/* Video element */}
           <video
             src={v.src}
-            muted
+            // muted
             playsInline
             loop // Reels usually loop
             controls
