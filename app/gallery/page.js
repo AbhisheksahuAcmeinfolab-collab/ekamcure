@@ -20,7 +20,7 @@ import pic10 from "../../assets/recent/Brij Lata.webp";
 import pic9 from "../../assets/recent/Narendra Chand.webp";
 import pic8 from "../../assets/recent/Patient(2).webp";
 import pic7 from "../../assets/recent/SunilDuth Putty2.webp";
-import pic6 from "../../assets/recent/patient1.webp";
+
 import pic5 from "../../assets/recent/Christopher Muza1.webp";
 import pic4 from "../../assets/recent/Keshwan Prasad.webp";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
@@ -44,7 +44,7 @@ const images = [
   pic9,
   pic8,
   pic7,
-  pic6,
+  
   pic5,
   pic4,
   pic3,
@@ -329,7 +329,7 @@ export default function Gallery() {
                         )}
                         <video
                           src={v.src}
-                          muted
+                          // muted
                           playsInline
                           controls={playingIndex === i} // Only show controls for the currently playing video (optional, you can keep it always)
                           ref={(el) => (videoRefs.current[i] = el)}
