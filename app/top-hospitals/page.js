@@ -245,7 +245,7 @@ export default function tophospitals() {
               <Image
                 src={hosImg}
                 alt="Top Hospitals"
-                width={350}
+                width={400}
                 height={350}
                 className="rounded-xl shadow-lg object-cover"
                 loading="eager"

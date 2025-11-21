@@ -255,7 +255,7 @@ useEffect(() => {
                 >
                   <div
                     className="bg-white dark:text-black  border-blue-900 rounded-2xl h-[270px]
-                    p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20"
+                    p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20 font-karla text-[17px]"
                   >
                     <h3 className="text-xl md:text-2xl font-semibold mb-3 text-blue-900">
                       {p.name}

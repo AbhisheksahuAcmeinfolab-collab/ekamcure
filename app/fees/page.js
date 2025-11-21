@@ -42,10 +42,10 @@ const PricingBanner = () => {
         </div>
       </div>
 
-      <section className="w-full bg-gray-50 py-12 px-6 md:px-20 font-normal font-raleway text-[20px]">
+      <section className="w-full bg-gray-50 py-12 px-6 md:px-20 font-karla text-[17px]">
         {/* Pricing Philosophy */}
         <div className="text-center max-w-12xl mx-auto px-6 md:px-12 py-10 ">
-          <p className="text-sm md:text-xl text-gray-700 leading-relaxed ">
+          <p className=" text-gray-700 leading-relaxed font-karla text-[17px]">
             At <strong>Ekam Health Services,</strong> we offer transparent and
             affordable pricing for medical travelers who want reliable,
             high-quality support every step of the way. Whether you need basic
@@ -55,7 +55,7 @@ const PricingBanner = () => {
         </div>
 
         {/* Section Title */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 font-karla text-[17px]">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
             Choose Your Plan
           </h2>
@@ -69,16 +69,16 @@ const PricingBanner = () => {
         <section className="py-16 bg-white text-center">
           <div className="max-w-6xl mx-auto px-4">
             {/* Grid Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-karla text-[17px]">
               {/* BASIC PLAN */}
               <div className="bg-white rounded-xl shadow-md p-8 border-4 border-blue-900">
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">
                   Basic Plan
                 </h3>
-                <p className="text-bold text-gray-600 mb-6">
-                  Perfect for individuals who need essential medical travel
-                  guidance.
+                <p className="text-gray-600 mb-6">
+                  Perfect for individuals who need essential medical travel guidance.
                 </p>
+
 
                 <div className="flex items-baseline gap-1 mb-5 bg-[#0910572e] flex justify-center">
                   <span className="text-gray-900 text-5xl font-bold">$</span>
@@ -97,7 +97,7 @@ const PricingBanner = () => {
                   ))}
                 </ul>
 
-                <p className="text-bold text-gray-600 mb-6">
+                <p className="text-bold text-gray-600 mb-6 font-karla text-[17px]">
                   Best For: Independent travelers with straightforward needs or
                   prior experience with medical travel.
                 </p>
@@ -111,7 +111,7 @@ const PricingBanner = () => {
               </div>
 
               {/* PREMIUM PLAN */}
-              <div className="bg-white rounded-xl shadow-md p-8 border-4 border-blue-900">
+              <div className="bg-white rounded-xl shadow-md p-8 border-4 border-blue-900 font-karla text-[17px]">
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">
                   Comprehensive Plan
                 </h3>
@@ -140,7 +140,7 @@ const PricingBanner = () => {
                 </ul>
 
 
-                <p className="text-bold text-gray-600 mb-6">
+                <p className="font-karla text-[17px] text-gray-600 mb-6">
                   Best For: First-time medical travelers, patients with complex
                   conditions, or anyone who wants total peace of mind with
                   expert assistance.

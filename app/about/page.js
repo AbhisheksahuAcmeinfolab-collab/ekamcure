@@ -144,7 +144,7 @@ export default function AboutUs() {
           {/* ===== Toggle Switch ===== */}
           <div className="flex justify-center items-center space-x-3 mb-10">
             <span
-              className={`font-medium ${
+              className={`font-medium text-2xl ${
                 active === "mission" ? "text-gray-900" : "text-gray-500"
               }`}
             >
@@ -156,19 +156,19 @@ export default function AboutUs() {
               onClick={() =>
                 setActive(active === "mission" ? "vision" : "mission")
               }
-              className={`relative w-20 h-10 flex items-center rounded-full transition-all duration-500 ${
+              className={`relative w-15 h-7 flex items-center rounded-full transition-all duration-500 ${
                 active === "mission" ? "bg-blue-600" : "bg-blue-600"
               }`}
             >
               <span
-                className={`absolute w-9 h-9 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                  active === "mission" ? "translate-x-1" : "translate-x-10"
+                className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                  active === "mission" ? "translate-x-1" : "translate-x-8"
                 }`}
               ></span>
             </button>
 
             <span
-              className={`font-medium ${
+              className={`font-medium text-2xl ${
                 active === "vision" ? "text-gray-900" : "text-gray-500"
               }`}
             >
