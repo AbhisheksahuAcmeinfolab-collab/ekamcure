@@ -118,7 +118,7 @@ import img from "../../assets/recent/Testimonial.webp";
 import pic1 from "../../assets/recent/Abdullah AI Mamun.webp";
 import pic2 from "../../assets/recent/Christopher Muza2.webp";
 import pic3 from "../../assets/recent/Keshwan Prasad.webp";
-import pic4 from "../../assets/recent/Sunilduth Putty2.webp";
+import pic4 from "../../assets/recent/SunilDuth Putty2.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
 import pic6 from "../../assets/recent/Vidya Wati.webp";
 import pic8 from "../../assets/recent/Patient(2).webp";
