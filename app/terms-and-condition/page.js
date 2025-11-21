@@ -68,7 +68,7 @@ export default function termscondition() {
             <h2 className="text-xl font-semibold mb-2">1. Use of Website</h2>
             <h3 className="font-bold mb-4">
               You agree to use{" "}
-              <span className="text-blue-700">www.ekamcure.com</span> in a
+              <a className="text-blue-900" href="https://www.ekamcure.com/" target="_blank" rel="noopener noreferrer">www.ekamcure.com</a> in a
               lawful and responsible manner. You must not:
             </h3>
             <ul className="list-disc ml-6 space-y-2 text-gray-700">
@@ -161,8 +161,8 @@ export default function termscondition() {
             </h2>
             <ul className="list-disc space-y-2 text-gray-700">
               <p>
-                All text, images, graphics, icons, designs, and content on
-                www.ekamcure.com are the intellectual property of Ekam Health
+                All text, images, graphics, icons, designs, and content on{" "}
+                <a className="text-blue-900 font-semibold" href="https://www.ekamcure.com/" target="_blank" rel="noopener noreferrer">www.ekamcure.com</a> are the intellectual property of Ekam Health
                 Services or are used with permission. You are not permitted to
                 reproduce, distribute, modify, or publicly display any content
                 without prior written consent.

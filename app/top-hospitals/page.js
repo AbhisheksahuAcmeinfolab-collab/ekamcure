@@ -191,11 +191,8 @@ export default function tophospitals() {
 
           {/* Last 2 logos centered */}
           <div className="hidden md:flex grid-col-1 sm:grid-col-1 md:col-span-4 flex justify-center gap-6">
-            {hospitals.slice(28,30).map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center w-75"
-              >
+            {hospitals.slice(28, 30).map((item, index) => (
+              <div key={index} className="flex items-center w-75">
                 <Image
                   src={item.src}
                   alt={item.alt}
@@ -210,56 +207,58 @@ export default function tophospitals() {
         </div>
       </section>
 
-      <section className="py-6 px-4 bg-white mt-5">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* LEFT CONTENT */}
-          <div className="px-10">
-            <h2 className="text-2xl font-semibold text-[#082859] mb-4">
-              Exploring India&apos;s Top Hospitals:
-            </h2>
+      <div className="px-[20px] py-[20px] md:px-[15px] md:py-[15px]">
+        <section className="py-10 px-10 bg-white mt-5 flex md:justify-center">
+          <div className="container grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto items-center">
+            {/* LEFT CONTENT */}
+            <div className="lg:gap-0">
+              <h2 className="text-2xl font-semibold text-[#082859] mb-4">
+                Exploring India&apos;s Top Hospitals:
+              </h2>
 
-            <p className="text-gray-600 mb-6 text-justify">
-              India boasts a plethora of world-class hospitals. Institutions
-              like Apollo Hospitals, Fortis Healthcare, and AIIMS consistently
-              rank among the best. These hospitals offer state-of-the-art
-              facilities, renowned medical experts, and a wide range of
-              specialized services, making India a global healthcare
-              destination.
-            </p>
+              <p className="text-gray-600 mb-6 text-justify ">
+                India boasts a plethora of world-class hospitals. Institutions
+                like Apollo Hospitals, Fortis Healthcare, and AIIMS consistently
+                rank among the best. These hospitals offer state-of-the-art
+                facilities, renowned medical experts, and a wide range of
+                specialized services, making India a global healthcare
+                destination.
+              </p>
 
-            <h2 className="text-2xl font-semibold text-[#082859] mb-4">
-              Excellence in Healthcare:
-            </h2>
+              <h2 className="text-2xl font-semibold text-[#082859] mb-4">
+                Excellence in Healthcare:
+              </h2>
 
-            <p className="text-gray-600 text-justify">
-              The top hospitals of India are known for their excellence in
-              medical care, cutting-edge technology, and a patient-centric
-              approach. Whether you seek complex surgeries, diagnostics, or
-              specialized treatments, these hospitals provide comprehensive
-              solutions.
-            </p>
+              <p className="text-gray-600 text-justify">
+                The top hospitals of India are known for their excellence in
+                medical care, cutting-edge technology, and a patient-centric
+                approach. Whether you seek complex surgeries, diagnostics, or
+                specialized treatments, these hospitals provide comprehensive
+                solutions.
+              </p>
 
-            <p className="text-gray-600 mt-4 text-justify">
-              In conclusion, India&apos;s top hospitals, featured on Indian
-              Health Adviser, set a benchmark for quality healthcare, making the
-              nation a hub for medical tourism.
-            </p>
+              <p className="text-gray-600 mt-4 text-justify">
+                In conclusion, India&apos;s top hospitals, featured on Indian
+                Health Adviser, set a benchmark for quality healthcare, making
+                the nation a hub for medical tourism.
+              </p>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="flex md:justify-end">
+              <Image
+                src={hosImg}
+                alt="Top Hospitals"
+                width={350}
+                height={350}
+                className="rounded-xl shadow-lg object-cover"
+                loading="eager"
+                unoptimized
+              />
+            </div>
           </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="flex md:justify-end px-5">
-            <Image
-              src={hosImg}
-              alt="Top Hospitals"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-lg object-cover"
-              loading="eager"
-              unoptimized
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 }

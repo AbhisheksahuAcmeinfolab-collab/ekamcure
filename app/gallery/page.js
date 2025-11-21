@@ -10,17 +10,19 @@ import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
 import pic21 from "../../assets/recent/Deepak Dhookoo.webp";
 import pic20 from "../../assets/recent/Bissun Prasad.webp";
 import pic19 from "../../assets/recent/Christopher Muza3.webp";
+//18
 import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
 import pic16 from "../../assets/recent/Satish Chandra.webp";
 import pic15 from "../../assets/recent/Patient(9).webp";
 import pic14 from "../../assets/recent/Shylotte Kativhu2.webp";
+//13
 import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
 import pic11 from "../../assets/recent/Christopher Muza2.webp";
 import pic10 from "../../assets/recent/Brij Lata.webp";
 import pic9 from "../../assets/recent/Narendra Chand.webp";
 import pic8 from "../../assets/recent/Patient(2).webp";
 import pic7 from "../../assets/recent/SunilDuth Putty2.webp";
-
+import pic6 from "../../assets/recent/Junior Goredema.webp";
 import pic5 from "../../assets/recent/Christopher Muza1.webp";
 import pic4 from "../../assets/recent/Keshwan Prasad.webp";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
@@ -44,7 +46,7 @@ const images = [
   pic9,
   pic8,
   pic7,
-  
+  pic6,
   pic5,
   pic4,
   pic3,
@@ -53,27 +55,26 @@ const images = [
 ];
 
 const videos = [
-  { src: "/videos/video1.mp4", title: "Knee Surgery", desc: "Fast recovery." },
+  { src: "/videos/video1.mp4", title: "Vidya Wati", desc: "Eye" },
   {
     src: "/videos/video2.mp4",
-    title: "Heart Treatment",
-    desc: "Successful case.",
+    title: "Christopher Muza",
+    desc: "Urology",
   },
-  { src: "/videos/video3.mp4", title: "Neuro Case", desc: "Recovered fully." },
+  { src: "/videos/video3.mp4", title: "Junior Goredema", desc: "Eye" },
   {
     src: "/videos/video4.mp4",
-    title: "Liver Treatment",
-    desc: "Quick recovery.",
+    title: "Narendra Chand",
+    desc: "Glucoma",
   },
   {
     src: "/videos/video5.mp4",
-    title: "Child Specialist",
-    desc: "Happy result.",
+    title: "Abdullah AI Mamun",
+    desc: "Health Checkup",
   },
 ];
 
-/**
- * 🎥 Mobile Reels View Component */
+/* 🎥 Mobile Reels View Component */
 const VideoReels = ({ videos }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRefs = useRef([]);
@@ -348,52 +349,6 @@ export default function Gallery() {
                       </div>
                     ))}
                   </div>
-
-                  {/* 🔥 LIGHTBOX POPUP WITH NEXT / PREV (Desktop only) */}
-                  <AnimatePresence>
-                    {openIndex !== null && (
-                      <motion.div
-                        className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[9999]"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                      >
-                        {/* Close overlay click */}
-                        <div
-                          className="absolute inset-0"
-                          onClick={handleCloseLightbox}
-                        />
-
-                        {/* Video - The video inside the lightbox should have the same ref */}
-                        <motion.video
-                          key={openIndex}
-                          src={videos[openIndex].src}
-                          controls
-                          autoPlay // Play immediately when the lightbox opens
-                          ref={(el) => (videoRefs.current[openIndex] = el)}
-                          className="w-[90%] md:w-[60%] lg:w-[45%] rounded-xl shadow-xl relative z-[10000]"
-                          initial={{ scale: 0.7 }}
-                          animate={{ scale: 1 }}
-                          exit={{ scale: 0.7 }}
-                        />
-
-                        {/* Prev Button */}
-                        <button
-                          onClick={prevVideo}
-                          className="absolute left-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full hover:bg-opacity-60 transition"
-                        >
-                          ❮
-                        </button>
-                        {/* Next Button */}
-                        <button
-                          onClick={nextVideo}
-                          className="absolute right-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full hover:bg-opacity-60 transition"
-                        >
-                          ❯
-                        </button>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </div>
               </>
             )}
@@ -405,36 +360,37 @@ export default function Gallery() {
 }
 
 // "use client";
-// // import { useState, useEffect } from "react";
 // import { useState, useEffect, useRef } from "react";
 // import { motion, AnimatePresence } from "framer-motion";
 // import Image from "next/image";
-// // import { motion } from "framer-motion";
+
+// // Your image imports
 // import img from "../../assets/recent/Gallery 1.webp";
 // import pic23 from "../../assets/recent/Vidya Wati.webp";
 // import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
 // import pic21 from "../../assets/recent/Deepak Dhookoo.webp";
 // import pic20 from "../../assets/recent/Bissun Prasad.webp";
 // import pic19 from "../../assets/recent/Christopher Muza3.webp";
-// // import pic18 from "../../assets/recent/Christopher Muza3.webp";
+// //18
 // import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
 // import pic16 from "../../assets/recent/Satish Chandra.webp";
 // import pic15 from "../../assets/recent/Patient(9).webp";
 // import pic14 from "../../assets/recent/Shylotte Kativhu2.webp";
-// // import pic13 from "../../assets/recent/Patient(7).webp";
+// //13
 // import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
 // import pic11 from "../../assets/recent/Christopher Muza2.webp";
 // import pic10 from "../../assets/recent/Brij Lata.webp";
 // import pic9 from "../../assets/recent/Narendra Chand.webp";
 // import pic8 from "../../assets/recent/Patient(2).webp";
 // import pic7 from "../../assets/recent/SunilDuth Putty2.webp";
-// import pic6 from "../../assets/recent/patient1.webp";
+// import pic6 from "../../assets/recent/Junior Goredema.webp";
 // import pic5 from "../../assets/recent/Christopher Muza1.webp";
 // import pic4 from "../../assets/recent/Keshwan Prasad.webp";
 // import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
 // import pic2 from "../../assets/recent/Sunilduth Putty.webp";
 // import pic1 from "../../assets/recent/Yogita Singh.webp";
 
+// // Your image and video data
 // const images = [
 //   pic23,
 //   pic22,
@@ -460,45 +416,175 @@ export default function Gallery() {
 // ];
 
 // const videos = [
-//   { src: "/videos/video1.mp4", title: "Knee Surgery", desc: "Fast recovery." },
-//   { src: "/videos/video2.mp4", title: "Heart Treatment", desc: "Successful case." },
-//   { src: "/videos/video3.mp4", title: "Neuro Case", desc: "Recovered fully." },
-//   { src: "/videos/video4.mp4", title: "Liver Treatment", desc: "Quick recovery." },
-//   { src: "/videos/video5.mp4", title: "Child Specialist", desc: "Happy result." },
+//   { src: "/videos/video1.mp4", title: "Vidya Wati", desc: "Eye" },
+//   {
+//     src: "/videos/video2.mp4",
+//     title: "Christopher Muza",
+//     desc: "Urology",
+//   },
+//   { src: "/videos/video3.mp4", title: "Junior Goredema", desc: "Eye" },
+//   {
+//     src: "/videos/video4.mp4",
+//     title: "Narendra Chand",
+//     desc: "Glucoma",
+//   },
+//   {
+//     src: "/videos/video5.mp4",
+//     title: "Abdullah AI Mamun",
+//     desc: "Health Checkup",
+//   },
 // ];
 
-// export default function Gallery() {
-//   const [active, setActive] = useState("mission");
-//   const [current, setCurrent] = useState(0);
-//    const [openIndex, setOpenIndex] = useState(null);
-//   const [loaded, setLoaded] = useState(false);
+// /* 🎥 Mobile Reels View Component */
+// const VideoReels = ({ videos }) => {
+//   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 //   const videoRefs = useRef([]);
+//   const containerRef = useRef(null);
 
-//   // 🔥 Auto Play on Scroll
+//   // Intersection Observer for autoplay on scroll
 //   useEffect(() => {
 //     const observer = new IntersectionObserver(
 //       (entries) => {
 //         entries.forEach((entry) => {
 //           const video = entry.target;
-//           if (entry.isIntersecting) video.play().catch(() => {});
-//           else video.pause();
+//           if (entry.isIntersecting) {
+//             // Find the index of the video that is currently intersecting
+//             const index = videoRefs.current.indexOf(video);
+//             if (index !== -1) {
+//               setCurrentVideoIndex(index);
+//               video.play().catch(() => {});
+//             }
+//           } else {
+//             video.pause();
+//             video.currentTime = 0; // Rewind video for next play
+//           }
 //         });
 //       },
-//       { threshold: 0.6 }
+//       // Ensure the video is mostly in view before playing
+//       { threshold: 0.9 }
 //     );
 
+//     // Observe all videos
 //     videoRefs.current.forEach((v) => v && observer.observe(v));
+
+//     // Cleanup
+//     return () => {
+//       videoRefs.current.forEach((v) => v && observer.unobserve(v));
+//     };
 //   }, []);
 
-//   // Next video
+//   return (
+//     // Fixed height container with snapping scroll for Reels effect
+//     <div
+//       ref={containerRef}
+//       className="h-[calc(100vh-100px)] snap-y snap-mandatory overflow-y-scroll bg-black"
+//     >
+//       {videos.map((v, i) => (
+//         <div
+//           key={i}
+//           className="h-full w-full flex items-center justify-center snap-start relative"
+//         >
+//           {/* Video element */}
+//           <video
+//             src={v.src}
+//             // muted
+//             playsInline
+//             loop // Reels usually loop
+//             controls
+//             ref={(el) => (videoRefs.current[i] = el)}
+//             className="w-full h-full object-contain bg-black"
+//           />
+//           {/* Info overlay (optional) */}
+//           <div className="absolute bottom-10 left-5 text-white p-3 bg-black/50 rounded-lg">
+//             <h3 className="font-bold text-xl">{v.title}</h3>
+//             <p className="text-sm">{v.desc}</p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// // ----------------------------------------------------
+
+// export default function Gallery() {
+//   const [active, setActive] = useState("mission");
+//   const [openIndex, setOpenIndex] = useState(null);
+//   const [loaded, setLoaded] = useState(false);
+//   const videoRefs = useRef([]);
+//   const [playingIndex, setPlayingIndex] = useState(null);
+
+//   // Check if the screen is mobile (you can adjust this breakpoint)
+//   const [isMobile, setIsMobile] = useState(false);
+//   useEffect(() => {
+//     const handleResize = () => {
+//       // Assuming a mobile device is anything less than a medium screen (768px)
+//       setIsMobile(window.innerWidth < 768);
+//     };
+
+//     // Set initial state
+//     handleResize();
+
+//     // Add event listener for real-time responsiveness
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+
+//   /**
+//    * 🔥 Handle Video Play/Click for Desktop
+//    * 1. Pauses all other videos.
+//    * 2. Plays the clicked video.
+//    * 3. Set the playing index state.
+//    */
+//   const handleVideoClick = (index) => {
+//     // Desktop: Stop other videos and play the clicked one
+//     if (!isMobile) {
+//       if (playingIndex !== index) {
+//         // Pause the previously playing video
+//         if (playingIndex !== null && videoRefs.current[playingIndex]) {
+//           videoRefs.current[playingIndex].pause();
+//         }
+
+//         // Play the new video (optional: can be done via controls)
+//         // videoRefs.current[index]?.play().catch(() => {});
+//         setPlayingIndex(index);
+//       }
+
+//       // Also open the Lightbox (Popup)
+//       setOpenIndex(index);
+//     }
+//   };
+
+//   // Lightbox Navigation
 //   const nextVideo = () => {
 //     setOpenIndex((prev) => (prev + 1) % videos.length);
 //   };
-
-//   // Previous video
 //   const prevVideo = () => {
 //     setOpenIndex((prev) => (prev - 1 + videos.length) % videos.length);
 //   };
+
+//   // Lightbox Close handler - Pause the video when lightbox closes
+//   const handleCloseLightbox = () => {
+//     // If the video is playing in the lightbox, pause it on close
+//     if (openIndex !== null && videoRefs.current[openIndex]) {
+//       videoRefs.current[openIndex].pause();
+//     }
+//     setOpenIndex(null);
+//   };
+
+//   // Effect to ensure the correct video reference is playing in Lightbox
+//   useEffect(() => {
+//     if (openIndex !== null && videoRefs.current[openIndex]) {
+//       // Stop the current video in the background grid if it's not the one in the lightbox
+//       videoRefs.current.forEach((video, i) => {
+//         if (video && i !== openIndex) {
+//           video.pause();
+//         }
+//       });
+//       // Start/Continue playing the video in the lightbox
+//       videoRefs.current[openIndex].play().catch(() => {});
+//     }
+//   }, [openIndex]);
 
 //   return (
 //     <>
@@ -516,7 +602,6 @@ export default function Gallery() {
 //       </div>
 
 //       {/* Gallery Section */}
-
 //       <section className="py-16 bg-white">
 //         <div className="max-w-6xl mx-auto px-4 text-center">
 //           {/* ===== Toggle Switch ===== */}
@@ -528,7 +613,6 @@ export default function Gallery() {
 //             >
 //               Our Photos
 //             </span>
-
 //             {/* Toggle Button */}
 //             <button
 //               onClick={() =>
@@ -544,7 +628,6 @@ export default function Gallery() {
 //                 }`}
 //               ></span>
 //             </button>
-
 //             <span
 //               className={`font-medium ${
 //                 active === "vision" ? "text-gray-900" : "text-gray-500"
@@ -556,16 +639,14 @@ export default function Gallery() {
 
 //           {/* ===== Content Blocks ===== */}
 //           <div className="space-y-10">
-//             {/* Mission Section */}
+//             {/* Mission Section (Photos) */}
 //             {active === "mission" && (
 //               <>
-//                 {/* Block 1 */}
 //                 <section className="bg-white py-10 px-4">
 //                   <div className="max-w-7xl mx-auto">
 //                     <h2 className="text-2xl font-semibold mb-6 text-center">
 //                       Photo Gallery
 //                     </h2>
-//                     {/* ✅ Display images directly */}
 //                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-cols-4 gap-6">
 //                       {images.map((src, i) => (
 //                         <motion.div
@@ -581,10 +662,7 @@ export default function Gallery() {
 //                             alt={`Portfolio ${i + 1}`}
 //                             width={400}
 //                             height={350}
-//                             className="w-full h-70 object-cover
-//                             transition-transform duration-500 ease-in-out
-//                             [&::before]:box-border [&::after]:box-border
-//                             hover:scale-110 hover:rotate-[5deg]"
+//                             className="w-full h-70 object-cover transition-transform duration-500 ease-in-out [&::before]:box-border [&::after]:box-border hover:scale-110 hover:rotate-[5deg]"
 //                           />
 //                         </motion.div>
 //                       ))}
@@ -594,12 +672,16 @@ export default function Gallery() {
 //               </>
 //             )}
 
-//             {/* Vision Section */}
+//             {/* Vision Section (Videos) */}
 //             {active === "vision" && (
 //               <>
-//                 {/* Block 1 */}
-//                 <div className="px-4 py-10">
-//                   {/* Masonry Layout (Responsive) */}
+//                 {/* 📱 Mobile Reels View (Visible only on mobile/small screens) */}
+//                 <div className="md:hidden">
+//                   <VideoReels videos={videos} />
+//                 </div>
+
+//                 {/* 🖥️ Desktop Grid View (Visible only on desktop/large screens) */}
+//                 <div className="hidden md:block px-4 py-10">
 //                   <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
 //                     {videos.map((v, i) => (
 //                       <div key={i} className="break-inside-avoid">
@@ -607,20 +689,19 @@ export default function Gallery() {
 //                         {!loaded && (
 //                           <div className="w-full h-60 bg-gray-200 animate-pulse rounded-xl mb-3"></div>
 //                         )}
-
 //                         <video
 //                           src={v.src}
-//                           muted
+//                           // muted
 //                           playsInline
-//                           controls
+//                           controls={playingIndex === i} // Only show controls for the currently playing video (optional, you can keep it always)
 //                           ref={(el) => (videoRefs.current[i] = el)}
-//                           onClick={() => setOpenIndex(i)}
+//                           // Desktop: Stop other videos and play/open the clicked one
+//                           onClick={() => handleVideoClick(i)}
 //                           onLoadedData={() => setLoaded(true)}
 //                           className={`rounded-xl shadow-md cursor-pointer hover:opacity-80 transition ${
 //                             !loaded ? "hidden" : ""
 //                           }`}
 //                         />
-
 //                         {/* Title + Description */}
 //                         <h3 className="font-semibold text-lg mt-2">
 //                           {v.title}
@@ -630,7 +711,7 @@ export default function Gallery() {
 //                     ))}
 //                   </div>
 
-//                   {/* 🔥 LIGHTBOX POPUP WITH NEXT / PREV */}
+//                   {/* 🔥 LIGHTBOX POPUP WITH NEXT / PREV (Desktop only) */}
 //                   <AnimatePresence>
 //                     {openIndex !== null && (
 //                       <motion.div
@@ -642,15 +723,16 @@ export default function Gallery() {
 //                         {/* Close overlay click */}
 //                         <div
 //                           className="absolute inset-0"
-//                           onClick={() => setOpenIndex(null)}
+//                           onClick={handleCloseLightbox}
 //                         />
 
-//                         {/* Video */}
+//                         {/* Video - The video inside the lightbox should have the same ref */}
 //                         <motion.video
 //                           key={openIndex}
 //                           src={videos[openIndex].src}
 //                           controls
-//                           autoPlay
+//                           autoPlay // Play immediately when the lightbox opens
+//                           ref={(el) => (videoRefs.current[openIndex] = el)}
 //                           className="w-[90%] md:w-[60%] lg:w-[45%] rounded-xl shadow-xl relative z-[10000]"
 //                           initial={{ scale: 0.7 }}
 //                           animate={{ scale: 1 }}
@@ -660,15 +742,14 @@ export default function Gallery() {
 //                         {/* Prev Button */}
 //                         <button
 //                           onClick={prevVideo}
-//                           className="absolute left-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full"
+//                           className="absolute left-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full hover:bg-opacity-60 transition"
 //                         >
 //                           ❮
 //                         </button>
-
 //                         {/* Next Button */}
 //                         <button
 //                           onClick={nextVideo}
-//                           className="absolute right-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full"
+//                           className="absolute right-5 text-white text-4xl font-bold z-[10001] bg-black bg-opacity-40 px-4 py-2 rounded-full hover:bg-opacity-60 transition"
 //                         >
 //                           ❯
 //                         </button>

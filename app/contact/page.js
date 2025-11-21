@@ -115,7 +115,7 @@ export default function ContactPage() {
           {/* Left: Form */}
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 border-b-2 border-blue-900 inline-block pb-1">
-              SEND MESSAGE
+              Send Message
             </h2>
             <form
               // action="https://formspree.io/f/xyzlgqyv"  //info@ekamcure.com
@@ -183,13 +183,13 @@ export default function ContactPage() {
           {/* Right: Contact Details */}
           <div className="mr-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 border-b-2 border-blue-900 inline-block pb-1">
-              CONTACT DETAIL
+              Contact Details
             </h2>
 
             <div className="mt-6 space-y-6 text-gray-700">
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
-                  ADDRESS
+                  Address
                 </h3>
                 <div className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-blue-900 mt-1" />
@@ -210,7 +210,7 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
-                  PHONE
+                  Phone
                 </h3>
                 <div className="flex items-center gap-3">
                   <FaPhoneAlt className="text-blue-900" />
@@ -222,7 +222,7 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
-                  EMAIL
+                  Email
                 </h3>
                 <div className="flex items-center gap-3">
                   <FaEnvelope className="text-blue-900" />
@@ -237,7 +237,7 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
-                  SOCIAL MEDIA
+                  Social Media
                 </h3>
                 <div className="flex items-center gap-4 mt-2">
                   <a
