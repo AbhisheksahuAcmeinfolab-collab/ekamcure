@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -18,7 +27,7 @@ import pic10 from "../assets/newimage/Ophthalmology Surgery.webp";
 import pic11 from "../assets/newimage/Infertility Treatments.webp";
 import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
-// import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
+import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
 import pic15 from "../assets/recent/Abdullah AI Mamun.webp";
 import pic16 from "../assets/recent/Christopher Muza2.webp";
@@ -127,38 +136,38 @@ const patients = [
     type: "image",
   },
   {
-    name: "Christopher Muza",
+    name: "Christopher muja",
     country: "Fiji",
-    treatment: "Health Checkup",
-    hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
     media: pic16,
     type: "image",
   },
   {
     name: "Keshwan Prasad",
     country: "Fiji",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
     media: pic17,
     type: "image",
   },
   {
     name: "Sunilduth Putty",
     country: "Mauritius",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
     media: pic18,
     type: "image",
   },
   {
     name: "Yogita Singh",
     country: "Fiji",
-    treatment: "Ca Cervix",
-    hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    treatment: "ACL Reconstruction Surgery",
+    hospital: "SCI International Hospital",
+    location: "Greater Kailash – 1, New Delhi, India",
     media: pic19,
     type: "image",
   },
@@ -186,7 +195,7 @@ export default function Home() {
 
   return (
     <main className="bg-white ">
-      <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] bg-cover bg-center flex items-center justify-center overflow-hidden bg-white isolate">
+      <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
         {/* Background Image + Overlay */}
         <div className="absolute inset-0 bg-dark">
           <AnimatePresence mode="">
@@ -204,12 +213,13 @@ export default function Home() {
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="absolute inset-0"
-            >
+              >
+
               <Image
                 src={slides[heroCurrent].img}
                 alt={slides[heroCurrent].title}
                 fill
-                className="object-cover object-center object-fill"
+                className="object-cover object-center"
                 priority
               />
               <motion.div
@@ -251,7 +261,7 @@ export default function Home() {
               </motion.p>
 
               <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.97 }}
                   className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition duration-300"
@@ -268,8 +278,8 @@ export default function Home() {
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
                     Become Partner!
                   </a>
-                </motion.button>
-                {/* <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
+                </motion.button> */}
+                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
                     Get Quote!
                   </a>
@@ -278,7 +288,7 @@ export default function Home() {
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
                     Become Partner!
                   </a>
-                </button> */}
+                </button>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -290,11 +300,10 @@ export default function Home() {
             <button
               key={i}
               onClick={() => setHeroCurrent(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === heroCurrent
-                  ? "bg-cyan-400 scale-125"
-                  : "bg-white/40 hover:bg-white/70"
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${i === heroCurrent
+                ? "bg-cyan-400 scale-125"
+                : "bg-white/40 hover:bg-white/70"
+                }`}
             />
           ))}
         </div>
@@ -416,8 +425,6 @@ export default function Home() {
                   width={50}
                   height={50}
                   className="object-contain transition-transform duration-300 hover:scale-105"
-                  loading="eager"
-                  unoptimized
                 />
               </div>
 
@@ -450,6 +457,7 @@ export default function Home() {
             Every patient journey tells a story of hope and healing.
           </p>
         </div>
+
         {/* Overlapping Boxes */}
         <div className="relative max-w-xl mx-auto xl:w-[570px]">
           {/* DESKTOP VIEW */}
@@ -462,9 +470,10 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative flex flex-col md:flex-row items-start md:items-center"
             >
-              {/* DESKTOP VIEW */} {/* Text Box */}
+              {/* DESKTOP VIEW */}
+              {/* Text Box */}
               <div className="hidden md:flex w-full">
-                <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[70%] relative z-20">
+                <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
                   <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-black">
                     {currentPatient.name}
                   </h3>
@@ -483,8 +492,18 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+
                 {/* Overlapping Image Box */}
-                <div className="lg:right-[-200px] md:absolute md:top-1/2 md:right-[-50px] md:-translate-y-1/2 w-[230px] sm:w-[260px] md:w-[280px] mt-6 md:mt-0 bg-white border-2 border-blue-900 rounded-xl overflow-hidden shadow-lg z-20 ">
+                <div
+                  className="lg:right-[-200px]
+                 md:absolute md:top-1/2 md:right-[-50px]
+                 md:-translate-y-1/2
+                 w-[230px] sm:w-[260px] md:w-[280px]
+                 mt-6 md:mt-0
+                 bg-white border-2 border-blue-900 rounded-xl
+                 overflow-hidden shadow-lg z-20
+                 "
+                >
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
@@ -492,10 +511,18 @@ export default function Home() {
                   />
                 </div>
               </div>
+
               {/* MOBILE VIEW */}
-              <div className="relative flex md:hidden w-full justify-center -ml-12">
+              <div className="relative flex md:hidden w-full justify-center -ml-8">
                 {/* Text Box */}
-                <div className="bg-white border-2 border-blue-900 rounded-2xl p-6 shadow-md w-[60%] relative z-10">
+                <div
+                  className="
+                   bg-white border-2 border-blue-900 rounded-2xl
+                   p-6 shadow-md
+                   w-[60%]
+                   relative z-10
+                 "
+                >
                   <h3 className="text-xl md:text-2xl font-semibold mb-3">
                     {currentPatient.name}
                   </h3>
@@ -515,23 +542,30 @@ export default function Home() {
                   </ul>
                 </div>
                 <div
-                  className="absolute top-1/2 right-[-14px] -translate-y-1/2 w-[130px] sm:w-[100px] bg-white
-                border-2 border-blue-900 rounded-xl overflow-hidden shadow-lg z-10 "
+                  className="absolute top-1/2 right-[-11px] -translate-y-1/2
+                   w-[130px] sm:w-[100px]
+                   bg-white border-2 border-blue-900 rounded-xl
+                   overflow-hidden shadow-lg z-10
+                 "
                 >
                   <Image
                     src={currentPatient.media}
                     alt={currentPatient.name}
-                    className=" object-cover w-full h-35 scale-75 "
+                    className="
+                     object-cover w-full h-40
+                     scale-75
+                   "
                   />
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
+
         {/* View All Button */}
         <div className="text-center mt-10">
           <a
-            href="/patient-story"
+            href="/testimonial"
             className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
           >
             View All →

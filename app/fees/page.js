@@ -71,7 +71,7 @@ const PricingBanner = () => {
             {/* Grid Container */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-karla text-[17px] ">
               {/* BASIC PLAN */}
-              <div className="bg-white rounded-xl shadow-md p-8 border-5 border-blue-900 min-h-[150px]">
+              <div className="bg-white rounded-xl shadow-md p-8 border-5 border-blue-900 md:h-155">
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">
                   Basic Plan
                 </h3>
@@ -122,7 +122,7 @@ const PricingBanner = () => {
                   journey.
                 </p>
 
-                <div className="flex items-center mb-5 gap-1 bg-[#0910572e] flex justify-center">
+                <div className="flex items-center mb-5 gap-1 bg-[#0910572e] justify-center">
                   <span className="text-gray-900 text-5xl font-bold">$</span>
                   <span className="text-5xl text-center font-semibold text-gray-900">
                     200 USD
