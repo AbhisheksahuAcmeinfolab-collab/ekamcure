@@ -11,11 +11,11 @@ import pic3 from "../../assets/recent/Keshwan Prasad.webp";
 import pic4 from "../../assets/recent/SunilDuth Putty2.webp";
 import pic5 from "../../assets/recent/Yogita Singh.webp";
 import pic6 from "../../assets/recent/Vidya Wati.webp";
-import pic8 from "../../assets/recent/Patient(2).webp";
+import pic8 from "../../assets/recent/Junior Goredema.webp";
 import pic9 from "../../assets/recent/Narendra Chand.webp";
 import pic10 from "../../assets/recent/Brij Lata.webp";
 import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
-import pic15 from "../../assets/recent/Patient(9).webp";
+// import pic15 from "../../assets/recent/Patient(9).webp";
 import pic16 from "../../assets/recent/Satish Chandra.webp";
 import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
 import pic20 from "../../assets/recent/Bissun Prasad.webp";
@@ -77,12 +77,12 @@ const patients = [
     media: pic6,
     type: "image",
   },
-  {
-    name: "Christopher Muza",
+   {
+    name: "Junior Goredema",
     country: "Zimbabwe",
-    treatment: "Urology",
-    hospital: "Yatharth Hospital",
-    location: "Greater Noida, India",
+    treatment: "Eye",
+    hospital: "The Sight Avenue",
+    location: "Delhi",
     media: pic8,
     type: "image",
   },
@@ -111,15 +111,6 @@ const patients = [
     hospital: "Yatharth Hospital",
     location: "Noida",
     media: pic12,
-    type: "image",
-  },
-  {
-    name: "Keshwan Prasad",
-    country: "Fiji",
-    treatment: "Cardiac Surgery",
-    hospital: "Max Super Speciality Hospital",
-    location: "Noida Sec-128, India",
-    media: pic15,
     type: "image",
   },
   {
