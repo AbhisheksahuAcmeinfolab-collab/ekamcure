@@ -326,12 +326,15 @@ export default function Gallery() {
 
                 {/* 🖥️ Desktop Grid View (Visible only on desktop/large screens) */}
                 <div className="hidden md:block px-4 py-10">
-                   <h2 className="text-2xl font-semibold mb-6 text-center">
-                      Video Gallery
-                    </h2>
+                  <h2 className="text-2xl font-semibold mb-6 text-center">
+                    Video Gallery
+                  </h2>
                   <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
                     {videos.map((v, i) => (
-                      <div key={i} className="break-inside-avoid font-karla text-[17px]">
+                      <div
+                        key={i}
+                        className="break-inside-avoid font-karla text-[17px]"
+                      >
                         {/* Skeleton Loader */}
                         {!loaded && (
                           <div className="w-full h-60 bg-gray-200 animate-pulse rounded-xl mb-3"></div>
@@ -366,4 +369,3 @@ export default function Gallery() {
     </>
   );
 }
-
