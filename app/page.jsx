@@ -27,13 +27,13 @@ import pic10 from "../assets/newimage/Ophthalmology Surgery.webp";
 import pic11 from "../assets/newimage/Infertility Treatments.webp";
 import pic12 from "../assets/newimage/Transplant Programs.webp";
 import pic13 from "../assets/newimage/Ear, Nose, and Throat (ENT).webp";
-import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
+// import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
 import pic15 from "../assets/recent/Abdullah AI Mamun.webp";
-import pic16 from "../assets/recent/Christopher Muza2.webp";
-import pic17 from "../assets/recent/Keshwan Prasad.webp";
-import pic18 from "../assets/recent/Sunilduth Putty.webp";
-import pic19 from "../assets/recent/Yogita Singh.webp";
+import pic16 from "../assets/recent/Christopher Muza3.png";
+import pic17 from "../assets/recent/Keshwan Prasad.png";
+import pic18 from "../assets/recent/SunilDuth Putty2.png";
+import pic19 from "../assets/recent/Yogita Singh.png";
 
 import "swiper/css";
 import "swiper/css/navigation";

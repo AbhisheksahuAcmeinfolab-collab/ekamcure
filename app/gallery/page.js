@@ -5,29 +5,29 @@ import Image from "next/image";
 
 // Your image imports
 import img from "../../assets/recent/Gallery 1.webp";
-import pic23 from "../../assets/recent/Vidya Wati.webp";
-import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
-import pic21 from "../../assets/recent/Deepak Dhookoo.webp";
-import pic20 from "../../assets/recent/Bissun Prasad.webp";
-import pic19 from "../../assets/recent/Christopher Muza3.webp";
+import pic23 from "../../assets/recent/Vidya Wati.png";
+import pic22 from "../../assets/recent/Shylotte Kativhu.png";
+import pic21 from "../../assets/recent/Deepak Dhookoo.png";
+import pic20 from "../../assets/recent/Bissun Prasad.png";
+import pic19 from "../../assets/recent/Christopher Muza3.png";
 //18
-import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
-import pic16 from "../../assets/recent/Satish Chandra.webp";
+import pic17 from "../../assets/recent/Adbul Aziim Ramzan.png";
+import pic16 from "../../assets/recent/Satish Chandra.png";
 import pic15 from "../../assets/recent/Patient(9).webp";
-import pic14 from "../../assets/recent/Shylotte Kativhu2.webp";
+import pic14 from "../../assets/recent/Shylotte Kativhu2.png";
 //13
-import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
-import pic11 from "../../assets/recent/Christopher Muza2.webp";
-import pic10 from "../../assets/recent/Brij Lata.webp";
-import pic9 from "../../assets/recent/Narendra Chand.webp";
-import pic8 from "../../assets/recent/Patient(2).webp";
-import pic7 from "../../assets/recent/SunilDuth Putty2.webp";
-import pic6 from "../../assets/recent/Junior Goredema.webp";
-// import pic5 from "../../assets/recent/Christopher Muza1.webp";
-import pic4 from "../../assets/recent/Keshwan Prasad.webp";
+import pic12 from "../../assets/recent/Kamurayi Mambayo.png";
+import pic11 from "../../assets/recent/Christopher Muza2.png";
+import pic10 from "../../assets/recent/Brij Lata.png";
+import pic9 from "../../assets/recent/Narendra Chand.png";
+// import pic8 from "../../assets/recent/Patient(2).png";
+import pic7 from "../../assets/recent/SunilDuth Putty2.png";
+import pic6 from "../../assets/recent/Junior Goredema.png";
+// import pic5 from "../../assets/recent/Christopher Muza1.png";
+import pic4 from "../../assets/recent/Keshwan Prasad.png";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
-import pic2 from "../../assets/recent/Sunilduth Putty.webp";
-import pic1 from "../../assets/recent/Yogita Singh.webp";
+import pic2 from "../../assets/recent/Sunilduth Putty3.png";
+import pic1 from "../../assets/recent/Yogita Singh.png";
 
 // Your image and video data
 const images = [
@@ -44,7 +44,7 @@ const images = [
   pic11,
   pic10,
   pic9,
-  pic8,
+  // pic8,
   pic7,
   pic6,
   // pic5,

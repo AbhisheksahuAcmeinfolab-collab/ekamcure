@@ -230,7 +230,7 @@ export default function ContactPage() {
                     className="hover:underline"
                     href="mailto:info@ekamcure.com"
                   >
-                    <p>info@ekamcare.com</p>
+                    <p>info@ekamcure.com</p>
                   </a>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export default function ContactPage() {
           </h2>
 
           {/* Responsive Map Container */}
-          <div className="relative w-full h-100 pb-[56.25%] overflow-hidden rounded-2xl">
+          <div className="relative w-full h-100 pt-[30%] pb-[40.25%] overflow-hidden rounded-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59763676.667022385!2d99.
            206524!3d-23.900774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d257006c1633a5%3A0x3de93d00462b99ae!

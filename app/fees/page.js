@@ -103,7 +103,7 @@ const PricingBanner = () => {
                 </p>
 
                 <Link
-                  href="https://www.ekamcure.com/contact-us/"
+                  href="https://ekamcure.vercel.app/contact"
                   className="w-50 block mx-auto text-center bg-[#172962] text-white py-3 font-medium transition"
                 >
                   Buy Now
@@ -144,7 +144,7 @@ const PricingBanner = () => {
                 </p>
 
                 <Link
-                  href="https://www.ekamcure.com/contact-us/"
+                  href="https://ekamcure.vercel.app/contact"
                   className="w-50 block mx-auto text-center bg-[#172962] text-white py-3 font-medium transition"
                 >
                   Buy Now

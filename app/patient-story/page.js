@@ -6,21 +6,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import img from "../../assets/recent/Testimonial.webp";
 
 import pic1 from "../../assets/recent/Abdullah AI Mamun.webp";
-import pic2 from "../../assets/recent/Christopher Muza2.webp";
-import pic3 from "../../assets/recent/Keshwan Prasad.webp";
-import pic4 from "../../assets/recent/SunilDuth Putty2.webp";
-import pic5 from "../../assets/recent/Yogita Singh.webp";
-import pic6 from "../../assets/recent/Vidya Wati.webp";
-import pic8 from "../../assets/recent/Junior Goredema.webp";
-import pic9 from "../../assets/recent/Narendra Chand.webp";
-import pic10 from "../../assets/recent/Brij Lata.webp";
-import pic12 from "../../assets/recent/Kamurayi Mambayo.webp";
-// import pic15 from "../../assets/recent/Patient(9).webp";
-import pic16 from "../../assets/recent/Satish Chandra.webp";
-import pic17 from "../../assets/recent/Adbul Aziim Ramzan.webp";
-import pic20 from "../../assets/recent/Bissun Prasad.webp";
-import pic21 from "../../assets/recent/Deepak Dhookoo.webp";
-import pic22 from "../../assets/recent/Shylotte Kativhu.webp";
+import pic2 from "../../assets/recent/Christopher Muza3.png";
+import pic3 from "../../assets/recent/Keshwan Prasad.png";
+import pic4 from "../../assets/recent/SunilDuth Putty2.png";
+import pic5 from "../../assets/recent/Yogita Singh.png";
+import pic6 from "../../assets/recent/Vidya Wati.png";
+import pic8 from "../../assets/recent/Junior Goredema.png";
+import pic9 from "../../assets/recent/Narendra Chand.png";
+import pic10 from "../../assets/recent/Brij Lata.png";
+import pic12 from "../../assets/recent/Kamurayi Mambayo.png";
+// import pic15 from "../../assets/recent/Patient(9).png";
+import pic16 from "../../assets/recent/Satish Chandra.png";
+import pic17 from "../../assets/recent/Adbul Aziim Ramzan.png";
+import pic20 from "../../assets/recent/Bissun Prasad.png";
+import pic21 from "../../assets/recent/Deepak Dhookoo.png";
+import pic22 from "../../assets/recent/Shylotte Kativhu2.png";
 
 const patients = [
   {
