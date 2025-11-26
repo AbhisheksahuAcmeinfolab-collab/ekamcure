@@ -26,7 +26,7 @@ import pic6 from "../../assets/recent/Junior Goredema.png";
 // import pic5 from "../../assets/recent/Christopher Muza1.png";
 import pic4 from "../../assets/recent/Keshwan Prasad.png";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
-import pic2 from "../../assets/recent/Sunilduth Putty3.png";
+import pic2 from "../../assets/recent/SunilDuth Putty3.png";
 import pic1 from "../../assets/recent/Yogita Singh.png";
 
 // Your image and video data
