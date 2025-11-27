@@ -31,27 +31,68 @@ import pic1 from "../../assets/recent/Yogita Singh.png";
 
 // Your image and video data
 const images = [
-  pic23,
-  pic22,
-  pic21,
-  pic20,
-  pic19,
-  pic17,
-  pic16,
-  pic15,
-  pic14,
-  pic12,
-  pic11,
-  pic10,
-  pic9,
+  { src: pic23, title: "Vidya Wati" },
+  {
+    src: pic22,
+    title: "Shylotte Kativhu",
+  },
+  {
+    src: pic21,
+    title: "Deepak Dhookoo",
+  },
+  {
+    src: pic20,
+    title: "Bissun Prasad",
+  },
+  {
+    src: pic19,
+    title: "Christopher Muza",
+  },
+  {
+    src: pic17,
+    title: "Adbul Aziim Ramzan",
+  },
+  {
+    src: pic16,
+    title: "Satish Chandra",
+  },
+
+  { src: pic15, title: "hello" },
+  {
+    src: pic14,
+    title: "Shylotte Kativhu",
+  },
+  { src: pic12, title: "Kamurayi Mambayo" },
+  {
+    src: pic11,
+    title: "Christopher Muza",
+  },
+  {
+    src: pic10,
+    title: "Brij Lata",
+  },
+  {
+    src: pic9,
+    title: "Narendra Chand",
+  },
   // pic8,
-  pic7,
-  pic6,
+  { src: pic7, title: "SunilDuth Putty" },
+  { src: pic6, title: "Junior Goredema" },
+
   // pic5,
-  pic4,
-  pic3,
-  pic2,
-  pic1,
+  { src: pic4, title: "Keshwan Prasad" },
+  {
+    src: pic3,
+    title: "Abdullah AI Mamun",
+  },
+  {
+    src: pic2,
+    title: "SunilDuth Putty",
+  },
+  {
+    src: pic1,
+    title: "Yogita Singh",
+  },
 ];
 
 const videos = [
@@ -82,7 +123,8 @@ const videos = [
   },
   //shorts
   {
-    src: "https://youtube.com/embed/NQRfdU546DQ?si=RM1obEKzmnLXp9i7",
+    // src: "https://youtube.com/embed/NQRfdU546DQ?si=RM1obEKzmnLXp9i7",
+    src: "https://youtube.com/embed/m4Ocj1jPiCc?si=MFFc0z2ULvdyyNC-",
     title: "Abdullah AI Mamun",
     desc: "Health Checkup",
     type: "shorts",
@@ -129,30 +171,18 @@ const VideoReels = ({ videos }) => {
 
   return (
     // Fixed height container with snapping scroll for Reels effect
-    <div
-      ref={containerRef}
-      className="h-[calc(100vh-100px)] snap-y snap-mandatory overflow-y-scroll bg-black"
-    >
-      {videos.map((v, i) => (
-        <div
-          key={i}
-          className="h-full w-full flex items-center justify-center snap-start relative"
-        >
-          {/* Video element */}
-          <video
-            src={v.src}
-            // muted
-            playsInline
-            loop // Reels usually loop
-            controls
-            ref={(el) => (videoRefs.current[i] = el)}
-            className="w-full h-full object-contain bg-black"
+    <div className="columns-1 sm:columns-2 gap-6 space-y-6">
+      {videos.map((item, i) => (
+        <div key={i} className="w-full">
+          <iframe
+            width="100%"
+            height="250"
+            src={item.src}
+            title={item.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="rounded-lg w-full aspect-video"
           />
-          {/* Info overlay (optional) */}
-          <div className="absolute bottom-10 left-5 text-white p-3 bg-black/50 rounded-lg">
-            <h3 className="font-bold text-xl">{v.title}</h3>
-            <p className="text-sm">{v.desc}</p>
-          </div>
         </div>
       ))}
     </div>
@@ -302,22 +332,37 @@ export default function Gallery() {
                       Photo Gallery
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                      {images.map((src, i) => (
+                      {images.map((item, i) => (
                         <motion.div
                           key={i}
-                          className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+                          className="relative group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
                           initial={{ opacity: 0, y: 30 }}
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
                           transition={{ delay: i * 0.05 }}
                         >
+                          {/* IMAGE */}
                           <Image
-                            src={src}
+                            src={item.src}
                             alt={`Portfolio ${i + 1}`}
                             width={400}
                             height={350}
-                            className="w-full h-70 object-cover transition-transform duration-500 ease-in-out [&::before]:box-border [&::after]:box-border hover:scale-110 hover:rotate-[5deg]"
+                            className="w-full h-70 object-cover transition-transform duration-500 ease-in-out 
+                            group-hover:scale-110 group-hover:rotate-[3deg]"
                           />
+
+                          {/* SLIDE-UP OVERLAY */}
+                          <div
+                            className="
+                              absolute bottom-0 left-0 w-full
+                              bg-[rgba(0,0,0,0.6)] text-white
+                              py-3 px-4 text-[15px] sm:text-[17px] font-medium
+                              translate-y-full group-hover:translate-y-0
+                              transition-all duration-500 ease-out
+                            "
+                          >
+                            {item.title}
+                          </div>
                         </motion.div>
                       ))}
                     </div>
@@ -353,11 +398,6 @@ export default function Gallery() {
                             className="rounded-lg"
                           />
                         ) : (
-                          // <iframe
-                          //   src={`${item.src}&autoplay=1&mute=1&playsinline=1&controls=0&loop=1`}
-                          //   allow="autoplay; encrypted-media; fullscreen"
-                          //   className="w-full h-full object-contain bg-black"
-                          // ></iframe>
                           <iframe
                             src={item.src}
                             controls
@@ -410,27 +450,68 @@ export default function Gallery() {
 
 // // Your image and video data
 // const images = [
-//   pic23,
-//   pic22,
-//   pic21,
-//   pic20,
-//   pic19,
-//   pic17,
-//   pic16,
-//   pic15,
-//   pic14,
-//   pic12,
-//   pic11,
-//   pic10,
-//   pic9,
+//   { src: pic23, title: "Vidya Wati" },
+//   {
+//     src: pic22,
+//     title: "Shylotte Kativhu",
+//   },
+//   {
+//     src: pic21,
+//     title: "Deepak Dhookoo",
+//   },
+//   {
+//     src: pic20,
+//     title: "Bissun Prasad",
+//   },
+//   {
+//     src: pic19,
+//     title: "Christopher Muza",
+//   },
+//   {
+//     src: pic17,
+//     title: "Adbul Aziim Ramzan",
+//   },
+//   {
+//     src: pic16,
+//     title: "Satish Chandra",
+//   },
+
+//   { src: pic15, title: "hello" },
+//   {
+//     src: pic14,
+//     title: "Shylotte Kativhu",
+//   },
+//   { src: pic12, title: "Kamurayi Mambayo" },
+//   {
+//     src: pic11,
+//     title: "Christopher Muza",
+//   },
+//   {
+//     src: pic10,
+//     title: "Brij Lata",
+//   },
+//   {
+//     src: pic9,
+//     title: "Narendra Chand",
+//   },
 //   // pic8,
-//   pic7,
-//   pic6,
+//   { src: pic7, title: "SunilDuth Putty" },
+//   { src: pic6, title: "Junior Goredema" },
+
 //   // pic5,
-//   pic4,
-//   pic3,
-//   pic2,
-//   pic1,
+//   { src: pic4, title: "Keshwan Prasad" },
+//   {
+//     src: pic3,
+//     title: "Abdullah AI Mamun",
+//   },
+//   {
+//     src: pic2,
+//     title: "SunilDuth Putty",
+//   },
+//   {
+//     src: pic1,
+//     title: "Yogita Singh",
+//   },
 // ];
 
 // const videos = [
@@ -464,24 +545,6 @@ export default function Gallery() {
 //     src: "https://youtube.com/embed/NQRfdU546DQ?si=RM1obEKzmnLXp9i7",
 //     title: "Abdullah AI Mamun",
 //     desc: "Health Checkup",
-//     type: "shorts",
-//   },
-//   {
-//     src: "https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy",
-//     title: "Christopher Muza",
-//     desc: "Urology",
-//     type: "shorts",
-//   },
-//   {
-//     src: "https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy",
-//     title: "Abdullah AI Mamun",
-//     desc: "Health Checkup",
-//     type: "shorts",
-//   },
-//   {
-//     src: "https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy",
-//     title: "Christopher Muza",
-//     desc: "Urology",
 //     type: "shorts",
 //   },
 // ];
@@ -699,22 +762,37 @@ export default function Gallery() {
 //                       Photo Gallery
 //                     </h2>
 //                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-//                       {images.map((src, i) => (
+//                       {images.map((item, i) => (
 //                         <motion.div
 //                           key={i}
-//                           className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+//                           className="relative group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
 //                           initial={{ opacity: 0, y: 30 }}
 //                           whileInView={{ opacity: 1, y: 0 }}
 //                           viewport={{ once: true }}
 //                           transition={{ delay: i * 0.05 }}
 //                         >
+//                           {/* IMAGE */}
 //                           <Image
-//                             src={src}
+//                             src={item.src}
 //                             alt={`Portfolio ${i + 1}`}
 //                             width={400}
 //                             height={350}
-//                             className="w-full h-70 object-cover transition-transform duration-500 ease-in-out [&::before]:box-border [&::after]:box-border hover:scale-110 hover:rotate-[5deg]"
+//                             className="w-full h-70 object-cover transition-transform duration-500 ease-in-out
+//                             group-hover:scale-110 group-hover:rotate-[3deg]"
 //                           />
+
+//                           {/* SLIDE-UP OVERLAY */}
+//                           <div
+//                             className="
+//                               absolute bottom-0 left-0 w-full
+//                               bg-[rgba(0,0,0,0.6)] text-white
+//                               py-3 px-4 text-[15px] sm:text-[17px] font-medium
+//                               translate-y-full group-hover:translate-y-0
+//                               transition-all duration-500 ease-out
+//                             "
+//                           >
+//                             {item.title}
+//                           </div>
 //                         </motion.div>
 //                       ))}
 //                     </div>
@@ -750,15 +828,12 @@ export default function Gallery() {
 //                             className="rounded-lg"
 //                           />
 //                         ) : (
-//                           <video
+//                           <iframe
 //                             src={item.src}
 //                             controls
-//                             className="w-full rounded-lg"
-//                           ></video>
+//                             className="w-full rounded-lg aspect-[9/16] max-w-[360px]"
+//                           ></iframe>
 //                         )}
-
-//                         {/* <h3>{item.title}</h3>
-//                         <p>{item.desc}</p> */}
 //                       </div>
 //                     ))}
 //                   </div>
