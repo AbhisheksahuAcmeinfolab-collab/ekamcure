@@ -57,7 +57,7 @@ const images = [
     title: "Satish Chandra",
   },
 
-  { src: pic15, title: "hello" },
+  { src: pic15, title: "" },
   {
     src: pic14,
     title: "Shylotte Kativhu",
@@ -76,7 +76,7 @@ const images = [
     title: "Narendra Chand",
   },
   // pic8,
-  { src: pic7, title: "SunilDuth Putty" },
+  { src: pic7, title: "Sunilduth Putty" },
   { src: pic6, title: "Junior Goredema" },
 
   // pic5,
