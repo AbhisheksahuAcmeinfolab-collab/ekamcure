@@ -1,114 +1,150 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Stethoscope,
-  HeartPulse,
-  Microscope,
-  Syringe,
-  Hospital,
-  Pill,
-} from "lucide-react";
+
 import img from "../../assets/recent/Our Services.webp";
-import pic1 from "../../assets/icon/1.jpg";
-import pic2 from "../../assets/icon/2.jpg";
-import pic3 from "../../assets/icon/3.jpg";
-import pic4 from "../../assets/icon/4.jpg";
-import pic5 from "../../assets/uses/A3.png";
-import pic6 from "../../assets/icon/5.jpg";
-import pic7 from "../../assets/icon/6.png";
-import pic8 from "../../assets/icon/7.jpg";
-import pic9 from "../../assets/icon/8.jpg";
 
 export default function ServicesPage() {
-  const services = [
-    {
-      icon: <Stethoscope className="w-10 h-10 text-blue-600" />,
-      title: "Doctor and Hospital Selection",
-      desc: "Comprehensive health checkups and expert medical advice tailored to your needs.",
-    },
-    {
-      icon: <HeartPulse className="w-10 h-10 text-green-600" />,
-      title: "Cardiology",
-      desc: "Advanced heart care with modern diagnostics and personalized treatment plans.",
-    },
-    {
-      icon: <Microscope className="w-10 h-10 text-purple-600" />,
-      title: "Diagnostics",
-      desc: "Accurate lab testing and imaging services with cutting-edge equipment.",
-    },
-    {
-      icon: <Syringe className="w-10 h-10 text-red-600" />,
-      title: "Vaccination",
-      desc: "Safe and effective immunization for all age groups to prevent major illnesses.",
-    },
-    {
-      icon: <Hospital className="w-10 h-10 text-orange-600" />,
-      title: "Emergency Care",
-      desc: "24/7 emergency services to handle critical health conditions promptly.",
-    },
-    {
-      icon: <Pill className="w-10 h-10 text-pink-600" />,
-      title: "Pharmacy",
-      desc: "On-site pharmacy providing genuine medicines and healthcare essentials.",
-    },
-  ];
-
   const helpItems = [
     {
-      img: pic1, // put your image in public/icons/
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.128 1.152.487V8.25c4.335 0 7.5 1.5 9.5 4.5-2 3-5.165 4.5-9.5 4.5v4.717c0 .615-.713.926-1.152.487L2.25 12z"
+            />
+          </svg>
+        </div>
+      ),
       title: "Communications Support",
-      desc: "To help you stay in touch with your loved ones back home, we will assist you in finding an activated telephone number from the local service provider. We can also help you acquire an internet dongle to continue accessing the internet and your email.",
+      desc: "We help you stay connected by arranging local SIM cards and internet dongles so you can easily communicate with your loved ones.",
     },
+
     {
-      img: pic2,
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg shadow-purple-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 13.5l1.664-8.32A2.25 2.25 0 016.88 3h10.24a2.25 2.25 0 012.216 1.82L21 13.5M3 13.5h18M3 13.5l1.5 6.75M21 13.5l-1.5 6.75M4.5 20.25h15"
+            />
+          </svg>
+        </div>
+      ),
       title: "Transportation",
-      desc: "To make it simple for you to travel and navigate the city without difficulties, we will help you arrange a car for all of your local transfers inside the city. We’ll also recommend alternate, more convenient, and secure ways of transportation.",
+      desc: "We arrange cars for all local transfers and recommend safe, convenient travel options around the city.",
     },
+
     {
-      img: pic3,
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg shadow-green-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12h6m-6 4h6m-9 4h12a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0018 4.5H6A2.25 2.25 0 003.75 6.75v11.25A2.25 2.25 0 006 20.25z"
+            />
+          </svg>
+        </div>
+      ),
       title: "Pickup At Airport",
-      desc: "Following receipt of the patient’s travel schedule, our executive will arrange transport for you. They will meet you and any family members at the airport and assist you in reaching your final destination safely.",
+      desc: "Our executive meets you at the airport and arranges safe transportation to your final destination.",
     },
+
     {
-      img: pic4,
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 21h15M4.5 10.5h15M3 7.5l9-4.5 9 4.5M12 7.5V21"
+            />
+          </svg>
+        </div>
+      ),
       title: "Accommodation",
-      desc: "We assist in finding suitable accommodations near the hospital or city center, ensuring comfort and convenience during your treatment stay.",
+      desc: "We help you find comfortable and nearby accommodations to make your treatment stay convenient.",
     },
+
     {
-      img: pic5,
-      width: 1000,
-      height: 500,
-      //   className={w-full h-72 object-cover rounded-lg},
-      //   <div className="container">
-      //     <img src="../../assets/uses/3.png" alt="Doctors team smiling" width="500" height="300" />
-      // </div>
-      //
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center shadow-lg shadow-red-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M7.5 14.25L12 9.75l4.5 4.5m-9 3.75H9m6 0h1.5M3 6.75h18"
+            />
+          </svg>
+        </div>
+      ),
       title: "Medical Assistance",
-      desc: "Our healthcare team provides continuous support, ensuring your treatment and recovery process is smooth and stress-free.",
+      desc: "Our care team supports you at every step to ensure your treatment and recovery are smooth and stress-free.",
     },
+
     {
-      img: pic6,
+      icon: (
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center shadow-lg shadow-teal-300/40">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="w-9 h-9"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M18 18.75A8.25 8.25 0 116.33 6.33M12 6.75v6l3.75 1.5"
+            />
+          </svg>
+        </div>
+      ),
       title: "Dedicated Support",
-      desc: "From start to finish, our team is available 24/7 to answer queries, provide guidance, and assist you with anything you need.",
-    },
-    {
-      img: pic7, // put your image in public/icons/
-      title: "Communications Support",
-      desc: "To help you stay in touch with your loved ones back home, we will assist you in finding an activated telephone number from the local service provider. We can also help you acquire an internet dongle to continue accessing the internet and your email.",
-    },
-    {
-      img: pic8,
-      title: "Transportation",
-      desc: "To make it simple for you to travel and navigate the city without difficulties, we will help you arrange a car for all of your local transfers inside the city. We’ll also recommend alternate, more convenient, and secure ways of transportation.",
-    },
-    {
-      img: pic9,
-      title: "Pickup At Airport",
-      desc: "Following receipt of the patient’s travel schedule, our executive will arrange transport for you. They will meet you and any family members at the airport and assist you in reaching your final destination safely.",
+      desc: "We provide 24/7 support to answer your questions and help with anything you need throughout your journey.",
     },
   ];
-
+  
   return (
     <>
       {/* Banner Section */}
@@ -144,12 +180,7 @@ export default function ServicesPage() {
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center border border-gray-100"
               >
                 <div className="flex justify-center mb-4">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={60}
-                    height={60}
-                  />
+                  <div className="mb-4">{item.icon}</div>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {item.title}
