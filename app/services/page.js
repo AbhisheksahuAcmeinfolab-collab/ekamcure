@@ -10,15 +10,15 @@ import {
   Pill,
 } from "lucide-react";
 import img from "../../assets/recent/Our Services.webp";
-import pic1 from "../../assets/icon/1.png";
-import pic2 from "../../assets/icon/2.png";
-import pic3 from "../../assets/icon/3.png";
-import pic4 from "../../assets/icon/1.png";
+import pic1 from "../../assets/icon/1.jpg";
+import pic2 from "../../assets/icon/2.jpg";
+import pic3 from "../../assets/icon/3.jpg";
+import pic4 from "../../assets/icon/4.jpg";
 import pic5 from "../../assets/uses/A3.png";
-import pic6 from "../../assets/icon/2.png";
-import pic7 from "../../assets/icon/3.png";
-import pic8 from "../../assets/icon/1.png";
-import pic9 from "../../assets/icon/2.png";
+import pic6 from "../../assets/icon/5.jpg";
+import pic7 from "../../assets/icon/6.png";
+import pic8 from "../../assets/icon/7.jpg";
+import pic9 from "../../assets/icon/8.jpg";
 
 export default function ServicesPage() {
   const services = [
