@@ -127,47 +127,47 @@ const tabData = {
   "Infertility Treatments": [
     {
       title: "IVF - Invitro Fertilization",
-      img: "/img/ivf/Invitro.webp",
+      img: "/img/Invitro.webp",
       desc: "IVF, where the best egg and sperm are fertilized with advanced techniques. The ovaries are stimulated with safe medications to produce more eggs and combine with healthy sperm to create embryos.",
     },
     {
       title: "ICSI - Intra Cytoplasmic Sperm Injection",
-      img: "/img/ivf/Cytoplasmic.webp",
+      img: "/img/Cytoplasmic.webp",
       desc: "ICSI, an IVF version where a healthy sperm is injected into an egg. A healthy sperm is selected with sperm and injected directly into an egg to form a healthy embryo which is transferred into the uterus.",
     },
     {
       title: "OITI - Ovulation Induction with Timed Intercourse",
-      img: "/img/ivf/Ovulation.webp",
+      img: "/img/Ovulation.webp",
       desc: "OITI is a simple fertility treatment that involves safe medications to trigger ovaries for increased egg production and couple is advised to have intercourse during the best time of ovulation to increase the chances of pregnancy.",
     },
     {
       title: "IUI – Intrauterine Insemination",
-      img: "/img/ivf/Intrauterine.webp",
+      img: "/img/Intrauterine.webp",
       desc: "IUI is an affordable fertility treatment that involves safe medications to increase egg production and sperm sorting techniques to select healthy sperm, followed by transfer of healthy sperm into uterus during ovulation.",
     },
     {
       title: "IVM - Invitro Maturation of Oocytes",
-      img: "/img/ivf/Invitro Maturation.webp",
+      img: "/img/Invitro Maturation.webp",
       desc: "IVM, a specialised fertility treatment for women with PCOS. Immature eggs are collected from the ovaries, are matured in the lab and fertilized with healthy sperm to form an embryo.",
     },
     {
       title: "Laparoscopy",
-      img: "/img/ivf/Laparoscopy.webp",
+      img: "/img/Laparoscopy.webp",
       desc: "Laparoscopy is a minimally invasive surgical procedure to check for fallopian tube blockages and for fibroids in the uterus. It is also used in treating adhesions, polyps or fibroids without the need for surgery.",
     },
     {
       title: "Hysteroscopy",
-      img: "/img/ivf/Hysteroscopy.webp",
+      img: "/img/Hysteroscopy.webp",
       desc: "Hysteroscopy is a simple diagnostic procedure to view the cervix and the uterus for any abnormalities. This procedure is also used to remove a polyp, fibroid, and adhesions or for biopsy.",
     },
     {
       title: "Laser Assisted Hatching (LAH)",
-      img: "/img/ivf/Hatching.webp",
+      img: "/img/Hatching.webp",
       desc: "Laser Assisted Hatching is an advanced technique that ensures implantation of the embryo to the uterine wall using,before the embryo transfer. This procedure lowers the risk of miscarriage and IVF failure.",
     },
     {
       title: "Microfluidics",
-      img: "/img/ivf/Microfluidics.webp",
+      img: "/img/Microfluidics.webp",
       desc: "Microfluidic Sperm Sorting is a recent advancement, where a processed semen sample is loaded on a chip with micro channels to select best quality sperm with good DNA and increase the success rate.",
     },
   ],
@@ -175,22 +175,22 @@ const tabData = {
   "Infertility Testing": [
     {
       title: "Infertility Workup",
-      img: "/img/ivf/Infertility.webp",
+      img: "/img/Infertility.webp",
       desc: "Infertility workup is a thorough analysis that helps in understanding the possible reasons behind a couple’s fertility challenges. It plays an important role in designing a customised treatment plan for the couple.",
     },
     {
       title: "Semen Analysis",
-      img: "/img/ivf/Semen_Analysis.webp",
+      img: "/img/Semen_Analysis.webp",
       desc: "Semen analysis, a common fertility test that helps in detailed assessment of sperm health. It involves assessing semen sample for factors such as sperm count, motility, appearance and other parameters.",
     },
     {
       title: "AMH Testing",
-      img: "/img/ivf/AMH_Testing.webp",
+      img: "/img/AMH_Testing.webp",
       desc: "Egg reserve in a woman is crucial factor in estimating the fertility potential. AMH testing, a simple blood test is used to estimate Anti-Mullerian Hormone levels in the blood which indicates a woman’s egg count.",
     },
     {
       title: "Scanning",
-      img: "/img/ivf/Scanning.webp",
+      img: "/img/Scanning.webp",
       desc: "Presence of any structural abnormalities in the ovaries, fallopian tubes, and uterus cause infertility. These can be detected through an abdominal ultrasound scan which creates images.",
     },
   ],
@@ -198,22 +198,22 @@ const tabData = {
   "Advanced Treatments": [
     {
       title: "DFI Testing",
-      img: "/img/ivf/DFI.webp",
+      img: "/img/DFI.webp",
       desc: "DNA Fragmentation Index is the amount of damaged DNA in the sperm. High DFI increases the risk of miscarriage and babies born with genetic disorders. In DFI testing, a semen sample is processed and tested for the percentage of damaged DNA in sperm.",
     },
     {
       title: "Micro TESE",
-      img: "/img/ivf/MicroTese.webp",
+      img: "/img/MicroTese.webp",
       desc: "Microscopic Testicular Sperm Extraction (MicroTESE) is a minimally-invasive surgical sperm extraction method for men with low sperm count or zero sperm count (Azoospermia). A powerful microscope is used to locate and collect sperm directly from the testes to use for IVF.",
     },
     {
       title: "PGT-A (Preimplantation Genetic Testing – Aneuploidy)",
-      img: "/img/ivf/PGT-A.webp",
+      img: "/img/PGT-A.webp",
       desc: "In IVF, before embryo transfer, the embryos are tested through Preimplantation Genetic testing,for any genetic or chromosomal defects and only the healthy embryos are selected to avoid the risk of miscarriage or a baby with genetic disorders.",
     },
     {
       title: "CAPA-IVM",
-      img: "/img/ivf/CAPA-IVM.webp",
+      img: "/img/CAPA-IVM.webp",
       desc: "CAPA-IVM is a Drug-Free IVF treatment, only available at Oasis Fertility in India. CAPA-IVM has less number of injections, side effects, and no risk of ovarian hyper-stimulation syndrome (OHSS). It is the best option for women with PCOS, cancer, and Resistant Ovary Syndrome.",
     },
   ],
@@ -221,12 +221,12 @@ const tabData = {
   "Fertility Preservations": [
     {
       title: "Egg and Sperm Freezing",
-      img: "/img/ivf/EggSpermFreezing.webp",
+      img: "/img/EggSpermFreezing.webp",
       desc: "Fertility preservation helps in preserving the fertility potential for people with medical conditions like cancer, or couples who are not ready to have a baby by freezing eggs, sperm, or embryos at very low temperatures.",
     },
     {
       title: "Freezing/Vitrification",
-      img: "/img/ivf/Freezing_Vitrification.webp",
+      img: "/img/Freezing_Vitrification.webp",
       desc: "Vitrification is a specialised version of fertility preservation which takes few minutes to freeze and offers better post-thaw survival and success rates. Eggs, sperm, and embryos are quickly frozen in a liquid, into a glass-like structure.",
     },
   ],
@@ -234,12 +234,12 @@ const tabData = {
   "Donor Program": [
     {
       title: "Donor Sperm",
-      img: "/img/ivf/Donor_Sperm.webp",
+      img: "/img/Donor_Sperm.webp",
       desc: "Donor sperm offers a best option for couples struggling with infertility due to low sperm count or any other structural abnormalities in the sperm. In such cases, good quality donor sperm are used for egg fertilization.",
     },
     {
       title: "Donor Egg",
-      img: "/img/ivf/Donor_Egg.webp",
+      img: "/img/Donor_Egg.webp",
       desc: "In women, struggling with low egg quality or poor ovarian reserve due to age or hormonal issues, using donor eggs is a good alternative. Healthy donor eggs are collected from external egg donors and used.",
     },
   ],
@@ -294,7 +294,7 @@ export default function ChooseEkam() {
       <section className="relative w-full h-[50%] flex items-center">
         {/* FULL SCREEN BACKGROUND IMAGE */}
         <Image
-          src="/img/ivf/ivf.png"
+          src="/img/ivf.png"
           alt="Mother with baby"
           fill
           priority
@@ -632,7 +632,7 @@ export default function ChooseEkam() {
               <div className="w-56 h-56 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
                 {/* Ensure Next.js Image component is imported and used correctly */}
                 <Image
-                  src="/img/ivf/Dr. Shobha Gupta.webp"
+                  src="/img/Dr. Shobha Gupta.webp"
                   alt={doctorName}
                   width={224}
                   height={224}
