@@ -261,24 +261,7 @@ export default function Home() {
               </motion.p>
 
               <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
-                {/* <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition duration-300"
-                >
-                  <a href="/contact" rel="noopener noreferrer" target="_blank">
-                    Get Quote!
-                  </a>
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition duration-300"
-                >
-                  <a href="/contact" rel="noopener noreferrer" target="_blank">
-                    Become Partner!
-                  </a>
-                </motion.button> */}
+                
                 <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
                   <a href="/contact" rel="noopener noreferrer" target="_blank">
                     Get Quote!
@@ -565,7 +548,7 @@ export default function Home() {
         {/* View All Button */}
         <div className="text-center mt-10">
           <a
-            href="/testimonial"
+            href="/patient-story"
             className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
           >
             View All →
