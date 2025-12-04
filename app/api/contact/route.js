@@ -22,7 +22,6 @@ export async function POST(req) {
       Name: ${name}
       Phone: ${phone}
       Email: ${email}
-
       Message:
       ${message}
        `,

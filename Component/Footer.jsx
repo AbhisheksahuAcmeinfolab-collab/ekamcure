@@ -52,7 +52,7 @@ export default function Footer() {
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Disclaimer", href: "/disclaimer" },
     { name: "Refund Policy", href: "/refund-policy" },
-    { name: "Help & FAQS", href: "/help-faqs" },
+    // { name: "Help & FAQS", href: "/help-faqs" },
     { name: "Our Fees", href: "/fees" },
   ];
 
