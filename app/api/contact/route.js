@@ -40,7 +40,10 @@ import { Resend } from "resend";
 export async function POST(req) {
   try {
     const { name, email, phone, message } = await req.json();
-
+    
+      // Debugging: check if API key is available
+  console.log("Resend API Key:", process.env.RESEND_API_KEY);
+    
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
