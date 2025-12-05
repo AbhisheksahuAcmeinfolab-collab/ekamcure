@@ -51,8 +51,7 @@ export async function POST(req) {
       from: "noreply@acmeinfolabs.com",
       to: "abhisheksahuacmeinfolab@gmail.com",
       subject: `New Message from ${name}`,
-      phone: `Mobile No. ${phone}`,
-      text: `Email: ${email}\n\n${message}`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     });
 
     return Response.json({ success: true });
