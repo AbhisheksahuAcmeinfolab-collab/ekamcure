@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // <-- import router
 import Image from "next/image";
 import img from "../../assets/recent/Our Contact 1.webp";
 import {
@@ -14,6 +15,8 @@ import {
 } from "react-icons/fa";
 
 export default function ContactPage() {
+  const router = useRouter(); // <-- initialize router
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -38,8 +41,10 @@ export default function ContactPage() {
       const data = await res.json();
 
       if (data.success) {
-        alert("Message sent successfully!");
         setFormData({ name: "", phone: "", email: "", message: "" });
+
+        // Redirect to Thank You page
+        router.push("/contact/thank-you");
       } else {
         alert("Failed to send message.");
       }
@@ -65,7 +70,6 @@ export default function ContactPage() {
           </h1>
         </div>
       </div>
-      {/* </section> */}
 
       {/* Main Section */}
       <section className="w-full min-h-screen px-4 sm:px-8 md:px-12 lg:px-20 py-12 bg-white mb-1">
@@ -77,7 +81,6 @@ export default function ContactPage() {
             </h2>
             <form
               onSubmit={handleSubmit}
-              // method="POST"
               className="space-y-4 text-black dark:text-black"
               action="#"
             >
@@ -143,6 +146,7 @@ export default function ContactPage() {
             </h2>
 
             <div className="mt-6 space-y-6 text-gray-700">
+              {/* Address */}
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
                   Address
@@ -164,6 +168,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {/* Phone */}
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
                   Phone
@@ -176,6 +181,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {/* Email */}
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
                   Email
@@ -191,6 +197,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {/* Social Media */}
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">
                   Social Media
@@ -198,31 +205,31 @@ export default function ContactPage() {
                 <div className="flex items-center gap-4 mt-2">
                   <a
                     href="https://www.facebook.com/EkamCure/"
-                    className="bg-blue-900 text-white p-2 rounded-full bg-blue-900 transition"
+                    className="bg-blue-900 text-white p-2 rounded-full transition"
                   >
                     <FaFacebookF />
                   </a>
                   <a
                     href="https://x.com/EkamCare"
-                    className="bg-black text-white p-2 rounded-full bg-black-500 transition"
+                    className="bg-black text-white p-2 rounded-full transition"
                   >
                     <FaTwitter />
                   </a>
                   <a
                     href="https://www.instagram.com/ekamcure/"
-                    className="bg-pink-600 text-white p-2 rounded-full bg-pink-500 transition"
+                    className="bg-pink-600 text-white p-2 rounded-full transition"
                   >
                     <FaInstagram />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/ekam-cure/posts/?feedView=all"
-                    className="bg-blue-900 text-white p-2 rounded-full bg-blue-900 transition"
+                    className="bg-blue-900 text-white p-2 rounded-full transition"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a
                     href="https://www.youtube.com/@EkamCure"
-                    className="bg-red-700 text-white p-2 rounded-full bg-red-500 transition"
+                    className="bg-red-700 text-white p-2 rounded-full transition"
                   >
                     <FaYoutube />
                   </a>
@@ -233,19 +240,15 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Map Section */}
       <section className="w-full px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-6">
             Find Us On The Map
           </h2>
-
-          {/* Responsive Map Container */}
           <div className="relative w-full h-100 pb-[40.25%] overflow-hidden rounded-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59763676.667022385!2d99.
-           206524!3d-23.900774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d257006c1633a5%3A0x3de93d00462b99ae!
-           2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1763441321849!5m2!1sen!2sin%22
-           "
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59763676.667022385!2d99.206524!3d-23.900774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67d257006c1633a5%3A0x3de93d00462b99ae!2sEkam%20Health%20Services!5e0!3m2!1sen!2sin!4v1763441321849!5m2!1sen!2sin"
               className="absolute top-0 left-0 w-full h-100 border-0"
               allowFullScreen=""
               loading="lazy"

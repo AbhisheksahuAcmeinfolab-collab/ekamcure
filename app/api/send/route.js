@@ -1,62 +1,49 @@
-// import nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
-// export async function POST(req) {
-//   try {
-//     const { name, phone, email, message } = await req.json();
+export async function POST(req) {
+  try {
+    const { name, phone, email, message } = await req.json();
 
-//     const transporter = nodemailer.createTransport({
-//       host: process.env.SMTP_HOST,
-//       port: Number(process.env.SMTP_PORT),
-//       secure: false,
-//       auth: {
-//         user: process.env.SMTP_USER,
-//         pass: process.env.SMTP_PASS,
-//       },
-//     });
+    // Validation
+    if (!name || !phone || !email || !message) {
+      return new Response(JSON.stringify({ success: false, message: "All fields required" }), { status: 400 });
+    }
 
-//     await transporter.sendMail({
-//       from: process.env.SMTP_USER,
-//       to: "abhisheksahuacmeinfolab@gmail.com",
-//       subject: `New Contact Form Message`,
-//       text: `
-//       Name: ${name}
-//       Phone: ${phone}
-//       Email: ${email}
-//       Message:
-//       ${message}
-//        `,
-//     });
-//     return Response.json({ success: true });
-//   } catch (error) {
-//     console.log("Email error:", error);
-//     return Response.json({ success: false, error });
-//   }
-// }
+    // Switch between Zoho and Gmail
+    const useZoho = true; // change to false if you want Gmail
 
+    const transporter = nodemailer.createTransport(
+      useZoho
+        ? {
+            host: "smtp.zoho.com",
+            port: 465,
+            secure: true, // SSL
+            auth: { user: process.env.ZOHO_USER, pass: process.env.ZOHO_APP_PASS },
+          }
+        : {
+            service: "gmail",
+            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+          }
+    );
 
-// // Resend
-// import { Resend } from "resend";
+    // Send mail
+    await transporter.sendMail({
+      from: `"Contact Form" <${useZoho ? process.env.ZOHO_USER : process.env.GMAIL_USER}>`,
+      to: useZoho ? process.env.ZOHO_USER : process.env.GMAIL_USER,
+      subject: "New Contact Form Message",
+      html: `
+        <h3>New Message</h3>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Phone:</b> ${phone}</p>
+        <p><b>Email:</b> ${email}</p>
+        <p><b>Message:</b> ${message}</p>
+      `,
+    });
 
-// export async function POST(req) {
-//   try {
-//     const { name, email, phone, message } = await req.json();
-    
-//       // Debugging: check if API key is available
-//   console.log("Resend API Key:", process.env.RESEND_API_KEY);
-    
-//     const resend = new Resend(process.env.RESEND_API_KEY);
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
 
-//     await resend.emails.send({
-//     //   from: "onboarding@resend.dev",
-//       from: "noreply@acmeinfolabs.com",
-//       to: "abhisheksahuacmeinfolab@gmail.com",
-//       subject: `New Message from ${name}`,
-//       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-//     });
-
-//     return Response.json({ success: true });
-//   } catch (error) {
-//     console.log(error);
-//     return Response.json({ success: false, error: error.message }, { status: 500 });
-//   }
-// }
+  } catch (error) {
+    console.error(error);
+    return new Response(JSON.stringify({ success: false, message: "Server Error" }), { status: 500 });
+  }
+}
