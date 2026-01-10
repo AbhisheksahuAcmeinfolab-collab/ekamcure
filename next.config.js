@@ -7,21 +7,7 @@ const nextConfig = {
     config.externals.push({ animejs: "animejs" });
     return config;
   },
-
   output: "export", 
 };
 
 module.exports = nextConfig;
-
-
-
-
-
-
-
-
-
-
-
-
- 
