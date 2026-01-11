@@ -1,4 +1,4 @@
-"use client"; // <- add this at the top
+// "use client"; // <- add this at the top
 
 import TopHeader from "@/Component/TopHeader";
 import Navbar from "@/Component/Navbar";
@@ -6,7 +6,7 @@ import Footer from "@/Component/Footer";
 import Footerup from "@/Component/Footerup";
 import "./globals.css";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
+import Canonical from "../Component/Canonical";
 
 export const defaultMetadata = {
   
@@ -22,9 +22,7 @@ export const defaultMetadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname(); // ✅ now works in client component
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.ekamcure.com";
-  const canonicalUrl = `${baseUrl}${pathname}`;
+  
 
   return (
     <html lang="en">
@@ -41,9 +39,8 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content={defaultMetadata.openGraph.images[0]} />
         <meta property="og:type" content={defaultMetadata.openGraph.type} />
 
-        {/* Canonical */}
-        <link rel="canonical" href={canonicalUrl} />
-
+{/* Canonical */}
+        <Canonical />
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         {/* Google Tag Manager */}
@@ -61,7 +58,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         {/* <!-- Google Tag Manager (noscript) --> */}
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBQZV94"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 {/* <!-- End Google Tag Manager (noscript) --> */}
 
         {/* GTranslate Scripts */}
