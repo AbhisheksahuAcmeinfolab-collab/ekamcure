@@ -1,6 +1,11 @@
 export const metadata = {
-  title: "Fees | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "EkamCure Fees | Health Treatment Cost & Medical Care Packages",
+  description: "Explore EkamCure fees for healthcare and treatments in India. Transparent pricing, customized care plans, and trusted medical support.",
+  keywords: [
+    "ekamcure fees",
+    "treatment cost",
+    "medical treatment charges",
+  ],
 };
 
 export default function GalleryLayout({ children }) {

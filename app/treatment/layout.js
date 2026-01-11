@@ -1,6 +1,12 @@
 export const metadata = {
-  title: "Treatment | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "EkamCure Treatments | Best Medical & Healthcare Services in India",
+  description: "Discover EkamCure treatments across multiple specialties, including IVF and advanced healthcare services from India’s top hospitals.",
+  keywords: [
+    "medical treatments",
+    "healthcare services",
+    "ekamcure treatment",
+    "fertility treatment",
+  ],
 };
 
 export default function GalleryLayout({ children }) {

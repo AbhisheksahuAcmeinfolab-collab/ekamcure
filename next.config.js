@@ -8,6 +8,8 @@ const nextConfig = {
     return config;
   },
   output: "export", 
+    turbopack: {}, // ⚡ add this line
+
 };
 
 module.exports = nextConfig;
