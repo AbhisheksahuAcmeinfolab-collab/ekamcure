@@ -267,12 +267,12 @@ export default function Home() {
               <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
                 
                 <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
-                  <a href="/contact" rel="noopener noreferrer" target="_blank">
+                  <a href="/contact" rel="noopener noreferrer">
                     Get Quote!
                   </a>
                 </button>
                 <button className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:scale-105 duration-300">
-                  <a href="/contact" rel="noopener noreferrer" target="_blank">
+                  <a href="/contact" rel="noopener noreferrer" >
                     Become Partner!
                   </a>
                 </button>

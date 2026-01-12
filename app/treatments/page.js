@@ -1035,7 +1035,7 @@ export default function TreatmentServices() {
         />
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
-            Treatment
+            Treatments
           </h1>
         </div>
       </div>
@@ -1046,13 +1046,13 @@ export default function TreatmentServices() {
         <div className="flex justify-center items-center gap-4 bg-[#082859] rounded-[15px] py-[30px] px-[20px] mb-[30px]">
           <Image
             src={pic1}
-            alt="Neurology Treatment"
+            alt="Neurology Treatments"
             width={50}
             height={50}
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Neurology Treatment
+            Neurology Treatments
           </h2>
         </div>
 
@@ -1324,7 +1324,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Cancer Treatment
+            Cancer Treatments
           </h2>
         </div>
 
@@ -2509,7 +2509,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Pediatrics Treatment
+            Pediatrics Treatments
           </h2>
         </div>
 
@@ -2917,7 +2917,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Gynecology Treatment
+            Gynecology Treatments
           </h2>
         </div>
 
@@ -3189,7 +3189,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Obesity Treatment
+            Obesity Treatments
           </h2>
         </div>
 
@@ -3325,7 +3325,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Orthopedic Treatment
+            Orthopedic Treatments
           </h2>
         </div>
 
@@ -3461,7 +3461,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Pulmonology Treatment
+            Pulmonology Treatments
           </h2>
         </div>
 
@@ -3597,7 +3597,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Rheumatology Treatment
+            Rheumatology Treatments
           </h2>
         </div>
 
@@ -3733,7 +3733,7 @@ export default function TreatmentServices() {
             className="w-[60px] h-[50px] flex-shrink-0"
           />
           <h2 className="text-white text-[1.8rem] font-semibold m-0">
-            Spine Surgery Treatment
+            Spine Surgery Treatments
           </h2>
         </div>
 

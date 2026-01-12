@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Treatments", href: "/treatment" },
+    { name: "Treatments", href: "/treatments" },
     { name: "Top Hospitals", href: "/top-hospitals" },
     // { name: "Top Doctors", href: "/top-doctors" },
     { name: "Patient's Story", href: "/patient-story" },

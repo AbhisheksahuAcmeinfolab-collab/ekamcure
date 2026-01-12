@@ -60,7 +60,7 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Our Services", href: "/services" },
-    { name: "Our Treatments", href: "/treatment" },
+    { name: "Our Treatments", href: "/treatments" },
     { name: "Top Hospitals", href: "/top-hospitals" },
     // { name: "Top Doctors", href: "/top-doctors" },
     { name: "Patient's Story", href: "/patient-story" },
