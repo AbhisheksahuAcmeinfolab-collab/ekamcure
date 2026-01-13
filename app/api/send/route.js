@@ -4,46 +4,49 @@ export async function POST(req) {
   try {
     const { name, phone, email, message } = await req.json();
 
-    // Validation
     if (!name || !phone || !email || !message) {
-      return new Response(JSON.stringify({ success: false, message: "All fields required" }), { status: 400 });
+      return Response.json({ success:false, message:"All fields required" }, {status:400});
     }
 
-    // Switch between Zoho and Gmail
-    const useZoho = true; // change to false if you want Gmail
+    const transporter = nodemailer.createTransport({
+      host: "smtppro.zoho.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.ZOHO_USER,
+        pass: process.env.ZOHO_APP_PASS,
+      },
+    });
 
-    const transporter = nodemailer.createTransport(
-      useZoho
-        ? {
-            host: "smtp.zoho.com",
-            port: 465,
-            secure: true, // SSL
-            auth: { user: process.env.ZOHO_USER, pass: process.env.ZOHO_APP_PASS },
-          }
-        : {
-            service: "gmail",
-            auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
-          }
-    );
-
-    // Send mail
     await transporter.sendMail({
-      from: `"Contact Form" <${useZoho ? process.env.ZOHO_USER : process.env.GMAIL_USER}>`,
-      to: useZoho ? process.env.ZOHO_USER : process.env.GMAIL_USER,
-      subject: "New Contact Form Message",
+      from: `"Ekam Contact" <${process.env.ZOHO_USER}>`,
+      to: [
+        "shikhaacmeinfolab@gmail.com",
+        "info@ekamcure.com"
+      ],
+      CC: "kumar.amit.100894@gmail.com",    // Main Recipient (Admin/You)
+      
+      subject: "New Contact Lead",
       html: `
-        <h3>New Message</h3>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Phone:</b> ${phone}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Message:</b> ${message}</p>
+       <div style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.6; color: #333;">
+    <h2 style="margin:0 0 10px 0; color:#0e3a8a;">New Contact Enquiry</h2>
+
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong><br>${message}</p>
+
+    <hr style="margin: 20px 0; border:0; border-top:1px solid #ccc;" />
+
+    <p style="font-size:13px; color:#777;">Received on: ${new Date().toLocaleString()}</p>
+  </div>
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }), { status: 200 });
+    return Response.json({ success:true }, {status:200});
 
-  } catch (error) {
-    console.error(error);
-    return new Response(JSON.stringify({ success: false, message: "Server Error" }), { status: 500 });
+  } catch (err) {
+    console.log("SMTP ERROR:", err);
+    return Response.json({ success:false, message:err.message }, {status:500});
   }
 }
