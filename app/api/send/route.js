@@ -24,22 +24,18 @@ export async function POST(req) {
         "shikhaacmeinfolab@gmail.com",
         "info@ekamcure.com"
       ],
-      CC: "kumar.amit.100894@gmail.com",    // Main Recipient (Admin/You)
-      
+      cc: "kumar.amit.100894@gmail.com",
       subject: "New Contact Lead",
       html: `
        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.6; color: #333;">
-    <h2 style="margin:0 0 10px 0; color:#0e3a8a;">New Contact Enquiry</h2>
-
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Phone:</strong> ${phone}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Message:</strong><br>${message}</p>
-
-    <hr style="margin: 20px 0; border:0; border-top:1px solid #ccc;" />
-
-    <p style="font-size:13px; color:#777;">Received on: ${new Date().toLocaleString()}</p>
-  </div>
+        <h2 style="margin:0 0 10px 0; color:#0e3a8a;">New Contact Enquiry</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+        <hr style="margin: 20px 0; border:0; border-top:1px solid #ccc;" />
+        <p style="font-size:13px; color:#777;">Received on: ${new Date().toLocaleString()}</p>
+      </div>
       `,
     });
 
