@@ -21,25 +21,23 @@ import {
 export default function ContactPage() {
   const router = useRouter();
 
-  const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
     message: "",
   });
-
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-const res = await fetch("/api/send", {
+      const res = await fetch("/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -47,14 +45,14 @@ const res = await fetch("/api/send", {
 
       const data = await res.json();
 
-      if (data.success) {
+      if (res.ok && data.success) {
         setFormData({ name: "", phone: "", email: "", message: "" });
         router.push("/contact/thank-you");
       } else {
         alert(data.message || "Failed to send message.");
       }
-    } catch (error) {
-      console.error("FORM ERROR:", error);
+    } catch (err) {
+      console.error("FORM ERROR:", err);
       alert("Error sending message!");
     }
 
