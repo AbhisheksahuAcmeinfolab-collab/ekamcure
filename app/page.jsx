@@ -3,13 +3,14 @@
 import HomeClient from "./HomeClient"; // Client Component
 
 export const metadata = {
-  title: "Home | Ekam Cure",
+  title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
   description:
-    "Explore patient success stories, treatments, and world-class healthcare services with Ekam Cure.",
+    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
+    keywords :"medical tourism in India, healthcare services India, EkamCure",
   openGraph: {
-    title: "Home | Ekam Cure",
-    description:
-      "Trusted healthcare platform connecting patients with top hospitals and doctors in India.",
+   title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
+  description:
+    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
     images: ["/og-home.jpg"],
   },
   alternates: {

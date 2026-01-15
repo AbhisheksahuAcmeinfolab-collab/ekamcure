@@ -1,10 +1,11 @@
 "use client";
+import { useRouter } from "next/navigation";
+
 import { useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
 // 🚨 IMPORTANT: You must import the Next.js Image component
 import Image from "next/image";
 import Link from "next/link";
-
 import icon30 from "../../assets/icon/30.jpg";
 import icon29 from "../../assets/icon/29.jpg";
 import icon28 from "../../assets/icon/28.jpg";
@@ -287,7 +288,50 @@ const featuresData = [
 
 // 4. ✅ MAIN EXPORT COMPONENT (now clean)
 export default function ChooseEkam() {
+    const router = useRouter();   // ✅ YAHAN
+
   const [activeTab, setActiveTab] = useState("Infertility Treatments");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setFormData({ name: "", phone: "", email: "", message: "" });
+        // alert("Thank you! We will contact you soon.");
+        router.push("/contact/thank-you");
+
+      } else {
+        alert(data.message || "Failed to send");
+      }
+    } catch (err) {
+      alert("Error sending form");
+    }
+
+    setLoading(false);
+  };
 
   return (
     <>
@@ -332,36 +376,59 @@ export default function ChooseEkam() {
                 Free consultation with Top IVF Specialist in India.
               </h3>
 
-              <form className="space-y-3">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="w-full px-3 py-2 rounded-md border outline-none"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full px-3 py-2 rounded-md border outline-none"
-                />
-                <input
-                  type="text"
-                  placeholder="Phone No."
-                  className="w-full px-3 py-2 rounded-md border outline-none"
-                />
-                <textarea
-                  rows={5}
-                  maxLength={180}
-                  placeholder="Message"
-                  className="w-full px-3 py-2 rounded-md border outline-none"
-                ></textarea>
+<form onSubmit={handleSubmit} className="space-y-3">
 
-                <button
-                  type="submit"
-                  className="bg-[#F59E0B] text-white px-5 py-2 rounded-md hover:bg-[#d78a06] transition w-full"
-                >
-                  Submit
-                </button>
-              </form>
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    value={formData.name}
+    onChange={handleChange}
+    required
+    className="w-full px-3 py-2 rounded-md border outline-none"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    value={formData.email}
+    onChange={handleChange}
+    required
+    className="w-full px-3 py-2 rounded-md border outline-none"
+  />
+
+  <input
+    type="text"
+    name="phone"
+    placeholder="Phone No."
+    value={formData.phone}
+    onChange={handleChange}
+    required
+    className="w-full px-3 py-2 rounded-md border outline-none"
+  />
+
+  <textarea
+    name="message"
+    rows={5}
+    maxLength={180}
+    placeholder="Message"
+    value={formData.message}
+    onChange={handleChange}
+    required
+    className="w-full px-3 py-2 rounded-md border outline-none"
+  ></textarea>
+
+  <button
+    type="submit"
+    disabled={loading}
+    className="bg-[#F59E0B] text-white px-5 py-2 rounded-md hover:bg-[#d78a06] transition w-full"
+  >
+    {loading ? "Sending..." : "Submit"}
+  </button>
+
+</form>
+
             </div>
           </div>
         </div>
@@ -378,35 +445,57 @@ export default function ChooseEkam() {
             Free consultation with Top IVF Specialist in India.
           </h3>
 
-          <form className="space-y-3">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full px-3 py-2 rounded-md border outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full px-3 py-2 rounded-md border outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Phone No."
-              className="w-full px-3 py-2 rounded-md border outline-none"
-            />
-            <textarea
-              rows={5}
-              maxLength={180}
-              placeholder="Message"
-              className="w-full px-3 py-2 rounded-md border outline-none"
-            ></textarea>
+<form onSubmit={handleSubmit} className="space-y-3">
 
-            <button
-              type="submit"
-              className="bg-[#F59E0B] text-white px-5 py-2 rounded-md hover:bg-[#d78a06] transition w-full"
-            >
-              Submit
-            </button>
+           <input
+  type="text"
+  name="name"
+  placeholder="Name"
+  value={formData.name}
+  onChange={handleChange}
+  required
+  className="w-full px-3 py-2 rounded-md border"
+/>
+
+<input
+  type="email"
+  name="email"
+  placeholder="Email"
+  value={formData.email}
+  onChange={handleChange}
+  required
+  className="w-full px-3 py-2 rounded-md border"
+/>
+
+<input
+  type="text"
+  name="phone"
+  placeholder="Phone No."
+  value={formData.phone}
+  onChange={handleChange}
+  required
+  className="w-full px-3 py-2 rounded-md border"
+/>
+
+<textarea
+  name="message"
+  rows={5}
+  maxLength={180}
+  placeholder="Message"
+  value={formData.message}
+  onChange={handleChange}
+  required
+  className="w-full px-3 py-2 rounded-md border"
+/>
+
+<button
+  type="submit"
+  disabled={loading}
+  className="bg-[#F59E0B] text-white px-5 py-2 rounded-md w-full"
+>
+  {loading ? "Sending..." : "Submit"}
+</button>
+
           </form>
         </div>
       </div>
@@ -585,7 +674,11 @@ export default function ChooseEkam() {
               />
             </svg>
             <p>
-              <span className="font-semibold">Call us :</span> +91-999 020 5353
+             <span className="font-semibold">Call us :</span> 
+<a href="tel:+919990205353" className="text-white-600 hover:underline">
+  +91-999 020 5353
+</a>
+
             </p>
           </div>
 
@@ -610,7 +703,11 @@ export default function ChooseEkam() {
               />
             </svg>
             <p>
-              <span className="font-semibold">Mail us :</span> info@ekamcure.com
+              <span className="font-semibold">Mail us :</span> 
+<a href="mailto:info@ekamcure.com" className="text-white-600 hover:underline">
+  info@ekamcure.com
+</a>
+
             </p>
           </div>
         </div>

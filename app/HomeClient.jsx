@@ -31,14 +31,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export const metadata = {
-  title: "Home | Ekam Cure",
+  title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
   description:
-    "Explore patient success stories, treatments, and world-class healthcare services with Ekam Cure.",
+    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
+    keywords :"medical tourism in India, healthcare services India, EkamCure",
 
   openGraph: {
-    title: "Home | Ekam Cure",
-    description:
-      "Trusted healthcare platform connecting patients with top hospitals and doctors in India.",
+    title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
+  description:
+    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
     images: ["/og-home.jpg"],
   },
 };
@@ -426,7 +427,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center mt-10">
           <a
-            href="/treatment"
+            href="/treatments"
             className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
           >
             View All →

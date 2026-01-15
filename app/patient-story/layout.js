@@ -1,7 +1,10 @@
 export const metadata = {
-  title: "Testimonial | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "Patient Success Stories – EkamCure Healthcare",
+  description:
+    "Read real patient success stories and experiences of international patients treated at leading hospitals in India with EkamCure.",
+  keywords: ["patient success stories", "medical tourism success stories"],
 };
+
 
 export default function GalleryLayout({ children }) {
   return(

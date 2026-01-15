@@ -1,7 +1,10 @@
 export const metadata = {
-  title: "Disclaimer | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "Disclaimer – EkamCure",
+  description:
+    "Read EkamCure’s disclaimer to understand limitations, medical information usage, and responsibilities related to healthcare services.",
+  keywords: ["EkamCure disclaimer"],
 };
+
 
 export default function GalleryLayout({ children }) {
   return(

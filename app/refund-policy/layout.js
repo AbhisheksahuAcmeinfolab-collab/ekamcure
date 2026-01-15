@@ -1,7 +1,10 @@
 export const metadata = {
-  title: "Refund Policy | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "Refund Policy – EkamCure",
+  description:
+    "Understand EkamCure’s refund policy, eligibility criteria, timelines, and conditions for medical service refunds.",
+  keywords: ["EkamCure refund policy"],
 };
+
 
 export default function GalleryLayout({ children }) {
   return(

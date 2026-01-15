@@ -39,7 +39,13 @@ const nextConfig = {
         source: '/treatments-in-india',
         destination: '/treatment',
         permanent: true,
-      },
+      },      
+      {
+ source: '/treatment',
+      destination: '/treatments',
+  permanent: true,
+}
+,
     ]
   },
 };

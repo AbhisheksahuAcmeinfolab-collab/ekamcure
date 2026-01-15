@@ -14,8 +14,9 @@ export const defaultMetadata = {
   publisher: "Ekam Cure",
   robots: "index, follow",
   openGraph: {
-    title: "Ekam Cure - Trusted Healthcare",
-    description: "Connecting patients with top hospitals and doctors in India.",
+    title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
+  description:
+    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
     images: ["/og-home.jpg"],
     type: "website",
   },

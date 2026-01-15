@@ -1,7 +1,10 @@
 export const metadata = {
-  title: "Terms & Condition | Ekam Cure",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "Terms & Conditions – EkamCure",
+  description:
+    "Review EkamCure’s terms and conditions to understand service usage, responsibilities, and policies for medical tourism in India.",
+  keywords: ["EkamCure terms and conditions"],
 };
+
 
 export default function GalleryLayout({ children }) {
   return(

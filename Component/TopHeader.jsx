@@ -12,7 +12,7 @@ export default function TopHeader() {
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <a
             href="https://wa.me/919990205353"
-            target="_blank"
+            
             rel="noopener noreferrer"
             className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
@@ -30,7 +30,7 @@ export default function TopHeader() {
         <div className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <a
             href="/contact"
-            target="_blank"
+            
             rel="noopener noreferrer"
             className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
@@ -48,7 +48,7 @@ export default function TopHeader() {
         <div className=" flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer">
           <a
             href="/contact"
-            target="_blank"
+            
             rel="noopener noreferrer"
             className="flex items-center gap-1 hover:scale-105 transition duration-300 cursor-pointer"
           >
@@ -97,7 +97,7 @@ export default function TopHeader() {
 
           <a
             href="https://wa.me/919990205353"
-            target="_blank"
+            
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
             <img

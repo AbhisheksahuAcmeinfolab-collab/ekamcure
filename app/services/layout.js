@@ -1,7 +1,10 @@
 export const metadata = {
-  title: "Our Services | Ekam Cure – End-to-End Medical Tourism & Patient Care Solutions",
-  description: "Explore patient success stories and treatment journeys with Ekam Cure.",
+  title: "Medical Services in India – Treatment & Care",
+  description:
+    "EkamCure offers end-to-end medical services in India including IVF, surgeries, consultations, and post-treatment care.",
+  keywords: ["medical services in India", "healthcare services India"],
 };
+
 
 export default function GalleryLayout({ children }) {
   return(

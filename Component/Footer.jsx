@@ -1,13 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 // import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import img from "../assets/newimage/white Logo.webp";
@@ -15,15 +11,13 @@ import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 export default function Footer() {
   const socials = [
-    { icon: FaFacebookF, link: "https://www.facebook.com/EkamCure/" },
-    { icon: FaTwitter, link: "https://x.com/EkamCare" },
-    { icon: FaInstagram, link: "https://www.instagram.com/ekamcure/" },
-    {
-      icon: FaLinkedinIn,
-      link: "https://www.linkedin.com/company/ekam-cure/posts/?feedView=all",
-    },
-    { icon: FaYoutube, link: "https://www.youtube.com/@EkamCure" },
-  ];
+  { icon: FaFacebookF, link: "https://www.facebook.com/EkamCure/" },
+  { icon: FaXTwitter, link: "https://x.com/EkamCare" },
+  { icon: FaInstagram, link: "https://www.instagram.com/ekamcure/" },
+  { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ekam-cure/" },
+  { icon: FaYoutube, link: "https://www.youtube.com/@EkamCure" },
+];
+
 
   const infoItems = [
     {
@@ -75,15 +69,17 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-2 py-14 text-align grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Column 1 */}
           <div>
-            <Image
-              src={img}
-              alt="Health India Logo"
-              width={170}
-              height={50}
-              className="rounded-md mb-2 py-2"
-              loading="eager"
-              unoptimized
-            />
+            <Link href="/">
+  <Image
+    src={img}
+    alt="Health India Logo"
+    width={170}
+    height={50}
+    className="rounded-md mb-2 py-2 cursor-pointer"
+    loading="eager"
+    unoptimized
+  />
+</Link>
 
             <p>
               Ekam cure is a healthcare facilitator seeking to make health and
@@ -228,6 +224,24 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+      {/* WhatsApp Floating Button */}
+<a
+  href="https://wa.me/919990205353"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center z-50"
+>
+  {/* WhatsApp Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-6 h-6"
+  >
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.121.556 4.093 1.52 5.832L0 24l6.32-1.494A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.25 17.625c-.294.825-1.598 1.55-2.207 1.625-.572.074-1.245.106-3.124-.911-2.56-1.352-4.18-4.123-4.303-4.285-.123-.162-1.032-1.53-1.032-2.918 0-1.387.748-2.069 1.012-2.352.26-.281.572-.35.767-.35.197 0 .388.004.556.007.181.004.424-.07.664.5.244.574.824 1.986.898 2.132.074.147.123.321.025.517-.098.196-.145.321-.291.496-.146.175-.307.385-.44.516-.146.136-.3.295-.129.583.172.288.767 1.267 1.644 2.048 1.135 1.03 2.084 1.332 2.399 1.48.316.146.5.123.683-.074.182-.197.781-.916.988-1.234.205-.318.409-.268.69-.161.281.107 1.765.83 2.072.983.306.154.511.23.586.36.074.13.074.754-.22 1.579z" />
+  </svg>
+</a>
+
       <div className="flex md:hidden mt-20"></div>
     </>
   );

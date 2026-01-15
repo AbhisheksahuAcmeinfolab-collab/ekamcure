@@ -2,7 +2,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
+
 import img from "../../assets/recent/Our Contact 1.webp";
+import { FaXTwitter } from "react-icons/fa6";
+
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -165,10 +169,15 @@ const res = await fetch("/api/send", {
                 </h3>
                 <div className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-blue-900 mt-1" />
-                  <p>
-                    LOGIX TECHNOVA, B-138, Tower B,<br />
-                    Sector 132, Noida, Uttar Pradesh 201304
-                  </p>
+                  <a
+      href="https://maps.app.goo.gl/LHb8o3igQWcmr4Vq7"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-900 transition cursor-pointer"
+    >
+      LOGIX TECHNOVA, B-138, Tower B,<br />
+      Sector 132, Noida, Uttar Pradesh 201304
+    </a>
                 </div>
               </div>
 
@@ -177,7 +186,12 @@ const res = await fetch("/api/send", {
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">Phone</h3>
                 <div className="flex items-center gap-3">
                   <FaPhoneAlt className="text-blue-900" />
-                  <p>+91-9990205353</p>
+                  <a
+      href="tel:+919990205353"
+      className="hover:text-blue-900 transition"
+    >
+      +91-9990205353
+    </a>
                 </div>
               </div>
 
@@ -186,20 +200,81 @@ const res = await fetch("/api/send", {
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">Email</h3>
                 <div className="flex items-center gap-3">
                   <FaEnvelope className="text-blue-900" />
-                  <p>info@ekamcure.com</p>
+                  <a
+      href="mailto:info@ekamcure.com"
+      className="hover:text-blue-900 transition"
+    >
+      info@ekamcure.com
+    </a>
                 </div>
               </div>
 
               {/* Social Media */}
               <div>
                 <h3 className="text-sm font-semibold text-gray-800 mb-1">Social Media</h3>
-                <div className="flex items-center gap-4 mt-2">
-                  <FaFacebookF className="bg-blue-900 text-white p-2 rounded-full" />
-                  <FaTwitter className="bg-black text-white p-2 rounded-full" />
-                  <FaInstagram className="bg-pink-600 text-white p-2 rounded-full" />
-                  <FaLinkedinIn className="bg-blue-900 text-white p-2 rounded-full" />
-                  <FaYoutube className="bg-red-700 text-white p-2 rounded-full" />
-                </div>
+               <div className="flex items-center gap-4 mt-2">
+    <Link
+      href="https://www.facebook.com/EkamCure/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+    >
+      <FaFacebookF
+        size={40}
+        className="bg-blue-900 text-white p-2  hover:scale-110 transition"
+      />
+    </Link>
+
+    
+
+    <Link
+      href="https://www.instagram.com/ekamcure/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      <FaInstagram
+        size={40}
+        className="bg-pink-600 text-white p-2  hover:scale-110 transition"
+      />
+    </Link>
+
+    <Link
+      href="https://www.linkedin.com/company/ekam-cure/posts/?feedView=all"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <FaLinkedinIn
+        size={40}
+        className="bg-blue-900 text-white p-2  hover:scale-110 transition"
+      />
+    </Link>
+{/* X (New) */}
+  <a
+    href="https://x.com/EkamCare"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="X"
+  >
+    <FaXTwitter
+      size={40}
+      className="bg-black text-white p-2 hover:scale-110 transition"
+    />
+  </a>
+    <Link
+      href="https://www.youtube.com/@EkamCure/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="YouTube"
+    >
+      <FaYoutube
+        size={40}
+        className="bg-red-700 text-white p-2  hover:scale-110 transition"
+      />
+    </Link>
+  </div>
+
               </div>
             </div>
           </div>
