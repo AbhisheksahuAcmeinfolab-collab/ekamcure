@@ -320,7 +320,6 @@ export default function ChooseEkam() {
 
       if (data.success) {
         setFormData({ name: "", phone: "", email: "", message: "" });
-        // alert("Thank you! We will contact you soon.");
         router.push("/contact/thank-you");
 
       } else {
