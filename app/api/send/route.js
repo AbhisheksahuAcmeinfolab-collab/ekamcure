@@ -8,25 +8,30 @@ export async function POST(req) {
       return Response.json({ success:false, message:"All fields required" }, {status:400});
     }
 
-    const transporter = nodemailer.createTransport({
-      host: "smtppro.zoho.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.ZOHO_USER,
-        pass: process.env.ZOHO_APP_PASS,
-      },
-    });
+   const transporter = nodemailer.createTransport({
+  host: "smtp.zoho.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.ZOHO_USER,
+    pass: process.env.ZOHO_APP_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
 
-    await transporter.sendMail({
-      from: `"Ekam Contact" <${process.env.ZOHO_USER}>`,
-      to: [
-        "shikhaacmeinfolab@gmail.com",
-        "info@ekamcure.com"
-      ],
-      cc: "kumar.amit.100894@gmail.com",
-      subject: "New Contact Lead",
-      html: `
+await transporter.verify();
+
+await transporter.sendMail({
+  from: `"Ekam Contact" <${process.env.ZOHO_USER}>`,
+  to: [
+    "shikhaacmeinfolab@gmail.com",
+    "info@ekamcure.com"
+  ],
+  cc: "kumar.amit.100894@gmail.com",
+  subject: "New Contact Lead",
+  html: `
        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.6; color: #333;">
         <h2 style="margin:0 0 10px 0; color:#0e3a8a;">New Contact Enquiry</h2>
         <p><strong>Name:</strong> ${name}</p>
