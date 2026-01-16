@@ -1,5 +1,6 @@
-// app/api/send/route.js
 import nodemailer from "nodemailer";
+
+export const dynamic = "force-dynamic"; // <-- yeh line add karo
 
 export async function POST(req) {
   try {
@@ -53,7 +54,6 @@ export async function POST(req) {
   }
 }
 
-// Prevent GET request errors
 export async function GET() {
   return new Response(
     JSON.stringify({ message: "Method Not Allowed" }),
