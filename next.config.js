@@ -9,7 +9,7 @@ const nextConfig = {
     return config;
   },
 
-  
+ 
 
   turbopack: {},
 
@@ -27,7 +27,13 @@ const nextConfig = {
       },
       {
         source: '/ivf-section',
-        destination: '/ivf-treatment-in-india',
+        destination: '/ivf-treatments-in-india',
+        permanent: true,
+      },
+    
+      {
+        source: '/ivf-treatment-in-india',
+        destination: '/ivf-treatments-in-india',
         permanent: true,
       },
       {
