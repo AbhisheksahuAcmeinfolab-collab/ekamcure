@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Script from "next/script";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -197,8 +198,132 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
   const currentPatient = patients[current];
-
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is breast cancer treatable if detected early?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Early detection allows timely medical intervention and structured treatment planning. Doctors can often offer multiple treatment options when the disease is identified at an early stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does breast cancer treatment usually take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments last a few months, while others may involve long-term follow-up care."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can breast cancer treatment be personalized?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, treatment is commonly personalized based on tumor characteristics, medical condition, and patient needs. Doctors aim to choose therapies that provide the best balance of effectiveness and tolerance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should someone consult a breast cancer specialist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A specialist should be consulted if persistent breast changes, unusual symptoms, or abnormal test results are noticed. Early consultation helps ensure accurate diagnosis and timely care."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is breast cancer and how does it start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breast cancer develops when abnormal cells in breast tissue begin to grow uncontrollably. These changes usually occur due to genetic or hormonal factors that affect normal cell regulation. Over time, these abnormal cells may form a lump or mass and require medical evaluation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the early signs of breast cancer in women?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Early signs may include a new lump in the breast or underarm, changes in breast size or shape, skin dimpling, or nipple-related changes. These symptoms are not always painful, which is why regular awareness and timely medical consultation are important."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the stages of breast cancer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breast cancer is classified into stages based on tumor size, lymph node involvement, and spread. Early stages are limited to the breast, while advanced stages involve nearby or distant organs. Staging helps doctors plan the most appropriate treatment approach."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is breast cancer diagnosed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Diagnosis usually involves a combination of clinical examination, imaging tests such as mammography or ultrasound, and a biopsy. The biopsy confirms whether cancer cells are present and helps doctors understand the type of breast cancer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the best breast cancer treatment options in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Treatment options may include surgery, chemotherapy, radiation therapy, hormone therapy, or targeted therapy. The choice depends on cancer stage, tumor characteristics, and the patient’s overall health. Treatment planning is always personalized by specialists."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does breast cancer treatment cost in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of breast cancer treatment in India varies depending on treatment type, hospital facilities, and duration of care. Since each patient’s treatment plan is different, doctors usually provide cost estimates only after reviewing medical reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who are breast cancer specialists in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breast cancer is treated by a team of specialists that may include surgical oncologists, medical oncologists, and radiation oncologists. These experts work together to design and manage a coordinated treatment plan for each patient."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is breast cancer treatable if detected early?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When breast cancer is detected at an early stage, treatment options are usually broader and more structured. Early diagnosis allows doctors to begin timely care and plan treatment more effectively."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does breast cancer treatment usually take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments are completed within months, while others may require ongoing follow-up and long-term care planning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I book an appointment with a breast cancer specialist online in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many hospitals and cancer centers in India offer online appointment or consultation options. This allows patients to share reports, seek expert guidance, and plan further evaluation conveniently."
+        }
+      }
+    ]
+  };
   return (
+<>
+ <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="beforeInteractive" // Head me inject karne ke liye
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <main className="bg-white ">
       <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
         {/* Background Image + Overlay */}
@@ -561,5 +686,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
   );
 }

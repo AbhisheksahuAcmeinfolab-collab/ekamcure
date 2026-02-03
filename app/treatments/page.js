@@ -128,84 +128,42 @@ export default function TreatmentServices() {
   ];
 
   const cancer = [
-    [
-      {
-        name: "Rhabdomyosarcoma Treatment",
-      },
-      {
-        name: "Robotic Prostate Cancer Surgery",
-      },
-      {
-        name: "Pancreatic Cancer Treatment",
-      },
-      {
-        name: "Ovarian Cancer Treatment",
-      },
-      {
-        name: "Oral Cancer Treatment",
-      },
-      {
-        name: "Liver Cancer",
-      },
-      {
-        name: "Brain Cancer (Tumour) Treatment",
-      },
-      {
-        name: "Prostate Cancer",
-      },
-      {
-        name: "Cervical Cancer",
-      },
-      {
-        name: "Gastrointestinal Cancer",
-      },
-    ],
-
-    [
-      {
-        name: "Breast Cancer",
-      },
-      {
-        name: "Head And Neck Cancer",
-      },
-      {
-        name: "Lung Cancer",
-      },
-      { name: "Blood Cancer" },
-      { name: "Thyroid Cancer" },
-      {
-        name: "Bladder Cancer",
-      },
-      {
-        name: "Esophagus Cancer",
-      },
-      { name: "Penile Cancer" },
-      { name: "Nasopharyngeal Cancer" },
-      {
-        name: "Uterine Cancer",
-      },
-    ],
-
-    [
-      {
-        name: "Anal Cancer",
-      },
-      {
-        name: "Vulvar Cancer",
-      },
-      { name: "Primary Bone Cancer" },
-      { name: "Vaginal Cancer" },
-      {
-        name: "Bone Cancer",
-      },
-      {
-        name: "Skin Cancer",
-      },
-      { name: "Colon Cancer" },
-      { name: "Gallbladder Cancer" },
-      { name: "Salivary Cancer Cancer" },
-      { name: "Bile Duct Cancer" },
-    ],
+   [
+    { name: "Rhabdomyosarcoma Treatment", url: "#" },
+    { name: "Robotic Prostate Cancer Surgery", url: "#" },
+    { name: "Pancreatic Cancer Treatment", url: "#" },
+    { name: "Ovarian Cancer Treatment", url: "#" },
+    { name: "Oral Cancer Treatment", url: "#" },
+    { name: "Liver Cancer", url: "#" },
+    { name: "Brain Cancer (Tumour) Treatment", url: "#" },
+    { name: "Prostate Cancer", url: "#" },
+    { name: "Cervical Cancer", url: "#" },
+    { name: "Gastrointestinal Cancer", url: "#" },
+  ],
+  [
+    { name: "Breast Cancer", url: "/treatments/breast-cancer-treatment-in-india" },
+    { name: "Head And Neck Cancer", url: "#" },
+    { name: "Lung Cancer", url: "#" },
+    { name: "Blood Cancer", url: "#" },
+    { name: "Thyroid Cancer", url: "#" },
+    { name: "Bladder Cancer", url: "#" },
+    { name: "Esophagus Cancer", url: "#" },
+    { name: "Penile Cancer", url: "#" },
+    { name: "Nasopharyngeal Cancer", url: "#" },
+    { name: "Uterine Cancer", url: "#" },
+  ],
+  [
+    { name: "Anal Cancer", url: "#" },
+    { name: "Vulvar Cancer", url: "#" },
+    { name: "Primary Bone Cancer", url: "#" },
+    { name: "Vaginal Cancer", url: "#" },
+    { name: "Bone Cancer", url: "#" },
+    { name: "Skin Cancer", url: "#" },
+    { name: "Colon Cancer", url: "#" },
+    { name: "Gallbladder Cancer", url: "#" },
+    { name: "Salivary Cancer", url: "#" },
+    { name: "Bile Duct Cancer", url: "#" },
+  ],
   ];
 
   const dental = [
@@ -1344,25 +1302,26 @@ export default function TreatmentServices() {
                     backgroundImage: "url('/recent/right-arrow.webp')",
                   }}
                 ></span>
-                {item.link ? (
-                  <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
-                    {item.name}
-                  </span>
-                )}
+               {item.url ? (
+  <Link
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => setActiveLink(item.name)}
+    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+      activeLink === item.name
+        ? "text-[#082859] font-semibold"
+        : "text-[#082859] hover:text-[#0C3D88]"
+    }`}
+  >
+    {item.name}
+  </Link>
+) : (
+  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
+    {item.name}
+  </span>
+)}
+
               </li>
             ))}
           </ul>
@@ -1384,25 +1343,26 @@ export default function TreatmentServices() {
                     backgroundImage: "url('/recent/right-arrow.webp')",
                   }}
                 ></span>
-                {item.link ? (
-                  <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
-                    {item.name}
-                  </span>
-                )}
+               {item.url ? (
+  <Link
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => setActiveLink(item.name)}
+    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+      activeLink === item.name
+        ? "text-[#082859] font-semibold"
+        : "text-[#082859] hover:text-[#0C3D88]"
+    }`}
+  >
+    {item.name}
+  </Link>
+) : (
+  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
+    {item.name}
+  </span>
+)}
+
               </li>
             ))}
           </ul>
@@ -1423,25 +1383,26 @@ export default function TreatmentServices() {
                     backgroundImage: "url('/recent/right-arrow.webp')",
                   }}
                 ></span>
-                {item.link ? (
-                  <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
-                    {item.name}
-                  </span>
-                )}
+               {item.url ? (
+  <Link
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => setActiveLink(item.name)}
+    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+      activeLink === item.name
+        ? "text-[#082859] font-semibold"
+        : "text-[#082859] hover:text-[#0C3D88]"
+    }`}
+  >
+    {item.name}
+  </Link>
+) : (
+  <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
+    {item.name}
+  </span>
+)}
+
               </li>
             ))}
           </ul>

@@ -1,5 +1,9 @@
 import Script from "next/script";
 import React from 'react';
+import Link from "next/link";
+import CTA from "../../../Component/cta";
+
+
 import { Calendar, Heart, Shield, Hospital, Users, Award, CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
 
 export const metadata = {
@@ -8,7 +12,12 @@ export const metadata = {
     "Comprehensive guide on breast cancer treatment in India, including cost, specialists, hospitals, diagnosis, and advanced treatment options.",
 };
 
-
+ const countries = [
+    "Nigeria", "Kenya", "Tanzania", "Uganda", "Ethiopia", "Sudan",
+    "South Sudan", "Ghana", "Zambia", "Zimbabwe", "Rwanda", "DR Congo",
+    "Sierra Leone", "Liberia", "Malawi", "Maldives", "Fiji",
+    "Papua New Guinea", "Solomon Islands"
+  ];
 
 export default function BreastCancerTreatment() {
   return (
@@ -842,6 +851,112 @@ export default function BreastCancerTreatment() {
           </div>
         </section>
 
+      <section className="min-h-screen text-black font-sans relative overflow-hidden">
+
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+
+    {/* ─── H2: Patient Reviews ─── */}
+    <div className="text-center mb-20">
+      <p className="inline-flex items-center gap-2 text-[#032870] text-xs sm:text-sm font-semibold tracking-widest uppercase mb-4">
+        <span className="w-8 h-px bg-[#032870]" />
+        Testimonials
+        <span className="w-8 h-px bg-[#032870]" />
+      </p>
+
+     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-[#4678bd]">
+  Patient <span className="text-[#032870]">Reviews</span>
+</h2>
+
+
+      <div className="mt-5 mx-auto w-16 h-[2px] rounded-full bg-black" />
+    </div>
+
+    {/* ─── International Patient Experiences ─── */}
+    <div className="mb-20">
+      <div className="relative rounded-2xl border border-black/10 bg-white overflow-hidden">
+
+        <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-black rounded-tl-2xl" />
+        <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-black rounded-br-2xl" />
+
+        <div className="p-6 sm:p-10 lg:p-14">
+
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-1 h-7 rounded-full bg-black" />
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-black tracking-tight">
+              International Patient Experiences
+            </h3>
+          </div>
+
+          <p className="text-black text-base sm:text-lg leading-relaxed w-full mb-6">
+            India is a preferred destination for breast cancer treatment among{" "}
+            <span className="font-medium italic">patients traveling</span>{" "}
+            from{" "}
+            <span className="font-medium">
+              {countries.slice(0, -1).join(", ")} and {countries[countries.length - 1]}
+            </span>.{" "}
+            Patients choose India for structured cancer care, experienced specialists,
+            and access to modern treatment facilities under internationally accepted
+            clinical practices.
+          </p>
+
+          <p className="text-black text-base sm:text-lg leading-relaxed w-full">
+            Patients have shared that timely assistance, clear medical guidance,
+            and personalized attention helped them feel confident while undergoing
+            treatment in a foreign country.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-2">
+            {countries.map((country) => (
+              <span
+                key={country}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-black/20 bg-white text-black text-xs sm:text-sm"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-black" />
+                {country}
+              </span>
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {/* ─── Patient Reviews and Experiences ─── */}
+    <div>
+      <div className="relative rounded-2xl border border-black/10 bg-white overflow-hidden">
+
+        <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-black rounded-tl-2xl" />
+        <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-black rounded-br-2xl" />
+
+        <div className="p-6 sm:p-10 lg:p-14">
+
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-1 h-7 rounded-full bg-black" />
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-black tracking-tight">
+              Patient Reviews and Experiences
+            </h3>
+          </div>
+
+          <p className="text-black text-base sm:text-lg leading-relaxed w-full mb-4">
+            Patient experiences play an important role in understanding the quality
+            of medical tourism services. Over the years, international patients from
+            different countries have shared positive feedback about their treatment
+            journey in India.
+          </p>
+
+          <p className="text-black text-base sm:text-lg leading-relaxed w-full">
+            Their reviews highlight not only medical outcomes but also the overall
+            support, coordination, and care they received throughout the process.
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
         {/* Book Appointment Section */}
         <section id="book-appointment-with-breast-cancer-specialist-in-india" className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
@@ -891,6 +1006,8 @@ export default function BreastCancerTreatment() {
             </div>
           </div>
         </section>
+        {/* CTA */}
+      <CTA />
 
         {/* FAQs Section */}
         <section id="frequently-asked-questions-faqs-" className="mb-16">
@@ -978,9 +1095,11 @@ export default function BreastCancerTreatment() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Take the Next Step?</h2>
           <p className="text-xl text-pink-100 mb-8">Book your consultation with our breast cancer specialists today</p>
-          <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-            Book Appointment Now
-          </button>
+         <Link href="/contact" passHref>
+  <button className="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+    Book Appointment Now
+  </button>
+</Link>
         </div>
       </div>
     </div>

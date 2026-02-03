@@ -27,37 +27,50 @@ export default function ContactPage() {
     email: "",
     message: "",
   });
+  const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+  const [reportFile, setReportFile] = useState(null);
+
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      const res = await fetch("/api/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("message", formData.message);
+    formDataToSend.append("report", reportFile); // ✅ FILE
 
-      const data = await res.json();
+    const res = await fetch("/api/send", {
+      method: "POST",
+      body: formDataToSend, // ✅ FormData
+    });
 
-      if (res.ok && data.success) {
-        setFormData({ name: "", phone: "", email: "", message: "" });
-        router.push("/contact/thank-you");
-      } else {
-        alert(data.message || "Failed to send message.");
-      }
-    } catch (err) {
-      console.error("FORM ERROR:", err);
-      alert("Error sending message!");
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      setFormData({ name: "", phone: "", email: "", message: "" });
+      setReportFile(null);
+      router.push("/contact/thank-you");
+    } else {
+      alert(data.message || "Failed to send message.");
     }
+  } catch (err) {
+    console.error("FORM ERROR:", err);
+    alert("Error sending message!");
+  }
 
-    setLoading(false);
-  };
+  setLoading(false);
+};
 
   return (
     <>
@@ -142,6 +155,20 @@ export default function ContactPage() {
               <p className="text-right text-sm text-gray-500">
                 {formData.message.length}/180
               </p>
+              {/* Upload Report */}
+<div>
+  <label className="block text-sm font-medium text-gray-700 mb-1">
+    Upload Report
+  </label>
+  <input
+  type="file"
+  name="report"
+  required
+  onChange={(e) => setReportFile(e.target.files[0])}
+  className="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-900"
+/>
+</div>
+
 
               <button
                 type="submit"

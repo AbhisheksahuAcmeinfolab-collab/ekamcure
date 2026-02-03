@@ -1,17 +1,25 @@
 import nodemailer from "nodemailer";
 
-export const dynamic = "force-dynamic"; // <-- yeh line add karo
+export const dynamic = "force-dynamic";
 
 export async function POST(req) {
   try {
-    const { name, phone, email, message } = await req.json();
+    const formData = await req.formData();
 
-    if (!name || !phone || !email || !message) {
+    const name = formData.get("name");
+    const phone = formData.get("phone");
+    const email = formData.get("email");
+    const message = formData.get("message");
+    const file = formData.get("report"); // 📎 FILE
+
+    if (!name || !phone || !email || !message || !file) {
       return new Response(
-        JSON.stringify({ success: false, message: "All fields are required" }),
+        JSON.stringify({ success: false, message: "All fields required" }),
         { status: 400 }
       );
     }
+
+    const fileBuffer = Buffer.from(await file.arrayBuffer());
 
     const transporter = nodemailer.createTransport({
       host: "smtp.zoho.com",
@@ -24,24 +32,24 @@ export async function POST(req) {
       tls: { rejectUnauthorized: false },
     });
 
-    await transporter.verify();
-
     await transporter.sendMail({
       from: `"Ekam Contact" <${process.env.ZOHO_USER}>`,
       to: ["shikhaacmeinfolab@gmail.com", "info@ekamcure.com"],
       cc: "kumar.amit.100894@gmail.com",
-      subject: "New Contact Lead",
+      subject: "New Contact Lead (With Report)",
       html: `
-        <div style="font-family: Arial; font-size:14px; line-height:1.6;">
-          <h2>New Contact Enquiry</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Phone:</strong> ${phone}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong><br/>${message}</p>
-          <hr/>
-          <p style="font-size:12px; color:#555;">Received on: ${new Date().toLocaleString()}</p>
-        </div>
+        <h2>New Contact Enquiry</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
       `,
+      attachments: [
+        {
+          filename: file.name,
+          content: fileBuffer,
+        },
+      ],
     });
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
