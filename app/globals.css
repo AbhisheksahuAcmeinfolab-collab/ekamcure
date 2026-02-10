@@ -31,3 +31,61 @@ body {
     /* This forces a new rendering layer for stability on some Android devices */
     perspective: 1px; 
 }
+
+
+/* ===== BACK TO TOP WRAP ===== */
+.progress-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 140px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.20);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms linear;
+  transform: translateY(15px);
+}
+
+.progress-wrap::after {
+  position: absolute;
+  content: '↑'; /* Unicode arrow */
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #1447e6; /* default black */
+  left: 0;
+  top: 0;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+  stroke: #fff; /* default black */
+  stroke-width: 4;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* DARK MODE VERSION: white arrow + circle */
+body.dark-mode .progress-wrap::after,
+body.dark-mode .progress-wrap svg path {
+  color: #fff;
+  stroke: #fff;
+}

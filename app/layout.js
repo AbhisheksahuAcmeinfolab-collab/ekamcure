@@ -7,7 +7,7 @@ import Footerup from "@/Component/Footerup";
 import "./globals.css";
 import Script from "next/script";
 import Canonical from "../Component/Canonical";
-
+import BackToTopProgress from '@/Component/BackToTopProgress';
 export const defaultMetadata = {
   
   author: "Ekam Cure",
@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={defaultMetadata.openGraph.description} />
         <meta property="og:image" content={defaultMetadata.openGraph.images[0]} />
         <meta property="og:type" content={defaultMetadata.openGraph.type} />
+        <meta name="google-site-verification" content="lgeYJo-n2hX5ARZ4Oaa_oqOTMBldRm6ofEI8VkeStjE" />
 
 {/* Canonical */}
         <Canonical />
@@ -100,6 +101,8 @@ height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
         {children}
         <Footerup />
         <Footer />
+        {/* Back To Top Progress */}
+      <BackToTopProgress />
       </body>
     </html>
   );
