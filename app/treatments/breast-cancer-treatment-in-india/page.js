@@ -2,6 +2,7 @@ import Script from "next/script";
 import React from 'react';
 import Link from "next/link";
 import CTA from "../../../Component/cta";
+import Image from "next/image";
 
 
 import { Calendar, Heart, Shield, Hospital, Users, Award, CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
@@ -680,61 +681,90 @@ export default function BreastCancerTreatment() {
             {/* Our Cancer Specialists */}
             <h3 className="text-2xl font-bold text-pink-600 mb-6">Our Cancer Specialists</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
-                <div className="flex items-start">
-                  <div className="bg-pink-200 rounded-full p-3 mr-4">
-                    <Users className="text-pink-700" size={32} />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Dr (Prof) Navneet Kaur</h4>
-                    <p className="text-pink-700 font-semibold mb-2">Senior Director & Unit Head - Breast Surgical Oncology</p>
-                    <p className="text-gray-700 text-sm mb-2">Cancer Care / Oncology, Breast Cancer, Oncology Reconstructive Surgery</p>
-                    <p className="text-gray-600 text-sm font-semibold">Experience: 36+ Years</p>
-                  </div>
-                </div>
-              </div>
+  {/* Dr. Navneet Kaur */}
+  <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-pink-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/Dr_Navneet_kaur.jpeg"
+          alt="Dr Navneet Kaur"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr (Prof) Navneet Kaur</h4>
+        <p className="text-pink-700 font-semibold mb-2">Senior Director & Unit Head - Breast Surgical Oncology</p>
+        <p className="text-gray-700 text-sm mb-2">Cancer Care / Oncology, Breast Cancer, Oncology Reconstructive Surgery</p>
+        <p className="text-gray-600 text-sm font-semibold">Experience: 36+ Years</p>
+      </div>
+    </div>
+  </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-                <div className="flex items-start">
-                  <div className="bg-purple-200 rounded-full p-3 mr-4">
-                    <Users className="text-purple-700" size={32} />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Raghav Kesri</h4>
-                    <p className="text-purple-700 font-semibold mb-2">Senior Consultant and HOD Of Medical Oncology</p>
-                    <p className="text-gray-700 text-sm mb-2">MBBS, MD, DrNB (Medical Oncology)</p>
-                    <p className="text-gray-600 text-sm">Cancer Transplant, Medical Oncology</p>
-                  </div>
-                </div>
-              </div>
+  {/* Dr. Raghav Kesri */}
+  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/dr-raghav-kesri.jpeg"
+          alt="Dr. Raghav Kesri"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Raghav Kesri</h4>
+        <p className="text-purple-700 font-semibold mb-2">Senior Consultant and HOD Of Medical Oncology</p>
+        <p className="text-gray-700 text-sm mb-2">MBBS, MD, DrNB (Medical Oncology)</p>
+        <p className="text-gray-600 text-sm">Cancer Transplant, Medical Oncology</p>
+      </div>
+    </div>
+  </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
-                <div className="flex items-start">
-                  <div className="bg-blue-200 rounded-full p-3 mr-4">
-                    <Users className="text-blue-700" size={32} />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Rajesh Kapoor</h4>
-                    <p className="text-blue-700 font-semibold mb-2">Senior Director - GI & Hepato–Pancreatico-Biliary Surgery</p>
-                    <p className="text-gray-700 text-sm">Bariatric Surgery / Metabolic, Liver Transplant and Biliary Sciences, Department of General Surgery and Robotics, Gastrointestinal & Hepatobiliary Oncology, Gastrointestinal Surgery, Robotic Surgery</p>
-                  </div>
-                </div>
-              </div>
+  {/* Dr. Rajesh Kapoor */}
+  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-blue-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/Dr_Rajesh_Kapoor.jpg"
+          alt="Dr. Rajesh Kapoor"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Rajesh Kapoor</h4>
+        <p className="text-blue-700 font-semibold mb-2">Senior Director - GI & Hepato–Pancreatico-Biliary Surgery</p>
+        <p className="text-gray-700 text-sm">Bariatric Surgery / Metabolic, Liver Transplant and Biliary Sciences, Department of General Surgery and Robotics, Gastrointestinal & Hepatobiliary Oncology, Gastrointestinal Surgery, Robotic Surgery</p>
+      </div>
+    </div>
+  </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-green-500">
-                <div className="flex items-start">
-                  <div className="bg-green-200 rounded-full p-3 mr-4">
-                    <Users className="text-green-700" size={32} />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. S. M. Shuaib Zaidi</h4>
-                    <p className="text-green-700 font-semibold mb-2">Principal Director & Unit Head – Surgical Oncology</p>
-                    <p className="text-gray-700 text-sm mb-2">Surgical Oncology, Cancer Care / Oncology, Thoracic Oncology, Gynecologic Oncology, Head & Neck Oncology, Gastro Intestinal & Hepatopancreatobiliary Surgical Oncology</p>
-                    <p className="text-gray-600 text-sm font-semibold">Experience: 27+ Years</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Dr. S. M. Shuaib Zaidi */}
+  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-green-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-green-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/Dr_S_M_Shuaib_Zaidi.jpeg"
+          alt="Dr. S. M. Shuaib Zaidi"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. S. M. Shuaib Zaidi</h4>
+        <p className="text-green-700 font-semibold mb-2">Principal Director & Unit Head – Surgical Oncology</p>
+        <p className="text-gray-700 text-sm mb-2">Surgical Oncology, Cancer Care / Oncology, Thoracic Oncology, Gynecologic Oncology, Head & Neck Oncology, Gastro Intestinal & Hepatopancreatobiliary Surgical Oncology</p>
+        <p className="text-gray-600 text-sm font-semibold">Experience: 27+ Years</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             {/* Who Treats and Roles */}
             <div className="space-y-6 mt-8">
