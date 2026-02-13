@@ -3,6 +3,7 @@ import React from 'react';
 import Link from "next/link";
 import CTA from "../../../Component/cta";
 import Image from "next/image";
+import ContactForm from "../../../Component/ContactForm";
 
 
 import { Calendar, Heart, Shield, Hospital, Users, Award, CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
@@ -22,7 +23,11 @@ export const metadata = {
 
 export default function BreastCancerTreatment() {
   return (
+
+    
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
+     
+
       {/* Hero Section */}
 <div className="relative bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -40,7 +45,11 @@ export default function BreastCancerTreatment() {
           </div>
         </div>
       </div>
+<div className="w-full px-4 lg:px-8 py-10">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
+    {/* LEFT CONTENT - 70% */}
+  <div className="lg:col-span-7 order-2 lg:order-1">
       {/* Table of Contents */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
         <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-pink-500">
@@ -1132,6 +1141,25 @@ export default function BreastCancerTreatment() {
 </Link>
         </div>
       </div>
+
+</div>  {/* ✅ CLOSE LEFT HERE */}
+
+    {/* RIGHT SIDEBAR - 30% */}
+  <div className="lg:col-span-3 order-1 lg:order-2">
+      <div className="lg:sticky lg:top-24">
+        <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">
+            Book Free Consultation
+          </h3>
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      
     </div>
   );
 }

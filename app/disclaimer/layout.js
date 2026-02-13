@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Disclaimer – EkamCure",
+  title: "Disclaimer – Ekam Health Services",
   description:
-    "Read EkamCure’s disclaimer to understand limitations, medical information usage, and responsibilities related to healthcare services.",
+    "Read Ekam’s disclaimer to understand limitations, medical information usage, and responsibilities related to healthcare services.",
   keywords: ["EkamCure disclaimer"],
 };
 

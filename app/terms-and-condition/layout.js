@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Terms & Conditions – EkamCure",
+  title: "Terms & Conditions – Ekam Health Services",
   description:
-    "Review EkamCure’s terms and conditions to understand service usage, responsibilities, and policies for medical tourism in India.",
+    "Review Ekam’s terms and conditions to understand service usage, responsibilities, and policies for medical tourism in India.",
   keywords: ["EkamCure terms and conditions"],
 };
 

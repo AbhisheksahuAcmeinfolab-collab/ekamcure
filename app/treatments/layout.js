@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "EkamCure Treatments | Best Medical & Healthcare Services in India",
-  description: "Discover EkamCure treatments across multiple specialties, including IVF and advanced healthcare services from India’s top hospitals.",
+  title: "Ekam Treatments | Best Medical & Healthcare treatments in India",
+  description: "Discover Ekam treatments across multiple specialties, including IVF and advanced healthcare services from India’s top hospitals.",
   keywords: [
     "medical treatments",
     "healthcare services",

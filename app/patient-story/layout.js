@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Patient Success Stories – EkamCure Healthcare",
+  title: "Patient Success Stories – Ekam Health Services",
   description:
-    "Read real patient success stories and experiences of international patients treated at leading hospitals in India with EkamCure.",
+    "Read real patient success stories and experiences of international patients treated at leading hospitals in India with Ekam.",
   keywords: ["patient success stories", "medical tourism success stories"],
 };
 

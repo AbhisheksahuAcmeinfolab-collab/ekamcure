@@ -49,6 +49,8 @@ export default function ContactPage() {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("message", formData.message);
     formDataToSend.append("report", reportFile); // ✅ FILE
+          formDataToSend.append("pageUrl", window.location.href);
+
 
     const res = await fetch("/api/send", {
       method: "POST",

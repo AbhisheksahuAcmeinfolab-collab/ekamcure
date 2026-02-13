@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Refund Policy – EkamCure",
+  title: "Refund Policy – Ekam Health Services",
   description:
-    "Understand EkamCure’s refund policy, eligibility criteria, timelines, and conditions for medical service refunds.",
+    "Understand Ekam’s refund policy, eligibility criteria, timelines, and conditions for medical service refunds.",
   keywords: ["EkamCure refund policy"],
 };
 

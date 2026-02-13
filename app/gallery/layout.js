@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Gallery – EkamCure Hospitals & Patient Care",
+  title: "Gallery – Ekam Hospitals & Patient Care",
   description:
-    "Explore EkamCure’s gallery showcasing partner hospitals, advanced facilities, patient journeys, and healthcare excellence in India.",
+    "Explore Ekam’s gallery showcasing partner hospitals, advanced facilities, patient journeys, and healthcare excellence in India.",
   keywords: ["EkamCure gallery", "hospital gallery India"],
 };
 
