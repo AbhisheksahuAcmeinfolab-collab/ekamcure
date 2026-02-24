@@ -14,9 +14,9 @@ import {
 
 export const metadata = {
   title:
-    "Heart Valve Surgery in India – Types, Cost, Success Rate & Treatment Options",
+    "Heart Valve Surgery in India – Cost, Types, TAVI, Success Rate & Recovery",
   description:
-    "Complete guide to heart valve surgery in India including types, cost, recovery, success rate, TAVI, minimally invasive surgery, and best cardiac specialists.",
+    "Explore heart valve surgery in India including valve repair, valve replacement, TAVI, Bentall procedure, cost in India (USD comparison), recovery time, risks, success rate, and medical tourism support. Learn symptoms, diagnosis, ICU care, and long-term outcomes from experienced cardiac specialists.",
 };
 
 export default function HeartValveSurgery() {
