@@ -28,70 +28,57 @@ import pic4 from "../../assets/recent/Keshwan Prasad.png";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
 import pic2 from "../../assets/recent/SunilDuth Putty3.png";
 import pic1 from "../../assets/recent/Yogita Singh.png";
-
+import g1 from "../../assets/gallery/g-1.jpeg";
+import g2 from "../../assets/gallery/g-2.jpeg";
+import g3 from "../../assets/gallery/g-3.jpeg";
+import g4 from "../../assets/gallery/g-4.jpeg";
+import g5 from "../../assets/gallery/g-5.jpeg";
+import g6 from "../../assets/gallery/g-6.jpeg";
+import g7 from "../../assets/gallery/g-7.jpeg";
+import g8 from "../../assets/gallery/g-8.jpeg";
+import g9 from "../../assets/gallery/g-9.jpeg";
+import g10 from "../../assets/gallery/g-10.jpeg";
+import g11 from "../../assets/gallery/g-11.jpeg";
+import g12 from "../../assets/gallery/g-12.jpeg";
+import g13 from "../../assets/gallery/g-13.jpeg";
 // Your image and video data
 const images = [
+
+  // ✅ NEW PATIENT GALLERY IMAGES FIRST
+  { src: g1, title: "Patient" },
+  { src: g2, title: "Patient" },
+  { src: g3, title: "Patient" },
+  { src: g4, title: "Patient" },
+  { src: g5, title: "Patient" },
+  { src: g6, title: "Patient" },
+  { src: g7, title: "Patient" },
+  { src: g8, title: "Patient" },
+  { src: g9, title: "Patient" },
+  { src: g10, title: "Patient" },
+  { src: g11, title: "Patient" },
+  { src: g12, title: "Patient" },
+  { src: g13, title: "Patient" },
+
+  // ✅ EXISTING GALLERY
   { src: pic23, title: "Vidya Wati" },
-  {
-    src: pic22,
-    title: "Shylotte Kativhu",
-  },
-  {
-    src: pic21,
-    title: "Deepak Dhookoo",
-  },
-  {
-    src: pic20,
-    title: "Bissun Prasad",
-  },
-  {
-    src: pic19,
-    title: "Christopher Muza",
-  },
-  {
-    src: pic17,
-    title: "Adbul Aziim Ramzan",
-  },
-  {
-    src: pic16,
-    title: "Satish Chandra",
-  },
+  { src: pic22, title: "Shylotte Kativhu" },
+  { src: pic21, title: "Deepak Dhookoo" },
+  { src: pic20, title: "Bissun Prasad" },
+  { src: pic19, title: "Christopher Muza" },
+  { src: pic17, title: "Adbul Aziim Ramzan" },
+  { src: pic16, title: "Satish Chandra" },
   { src: pic15, title: "Kamurayi Mambayo" },
-  {
-    src: pic14,
-    title: "Shylotte Kativhu",
-  },
+  { src: pic14, title: "Shylotte Kativhu" },
   { src: pic12, title: "Kamurayi Mambayo" },
-  {
-    src: pic11,
-    title: "Christopher Muza",
-  },
-  {
-    src: pic10,
-    title: "Brij Lata",
-  },
-  {
-    src: pic9,
-    title: "Narendra Chand",
-  },
-  // pic8,
+  { src: pic11, title: "Christopher Muza" },
+  { src: pic10, title: "Brij Lata" },
+  { src: pic9, title: "Narendra Chand" },
   { src: pic7, title: "Sunilduth Putty" },
   { src: pic6, title: "Junior Goredema" },
-
-  // pic5,
   { src: pic4, title: "Keshwan Prasad" },
-  {
-    src: pic3,
-    title: "Abdullah AI Mamun",
-  },
-  {
-    src: pic2,
-    title: "SunilDuth Putty",
-  },
-  {
-    src: pic1,
-    title: "Yogita Singh",
-  },
+  { src: pic3, title: "Abdullah AI Mamun" },
+  { src: pic2, title: "SunilDuth Putty" },
+  { src: pic1, title: "Yogita Singh" },
 ];
 
 const videos = [

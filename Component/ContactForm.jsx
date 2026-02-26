@@ -107,7 +107,9 @@ export default function ContactForm() {
         onChange={(e) => setReportFile(e.target.files[0])}
         className="w-full border px-4 py-2 rounded-md"
       />
-
+<p className="text-sm text-gray-500">
+  Please upload file with extension (jpg, png, pdf).
+</p>
       <button
         type="submit"
         disabled={loading}

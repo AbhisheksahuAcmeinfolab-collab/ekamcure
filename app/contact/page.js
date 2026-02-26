@@ -170,7 +170,9 @@ export default function ContactPage() {
   className="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-900"
 />
 </div>
-
+<p className="text-sm text-gray-500">
+  Please upload file with extension (jpg, png, pdf).
+</p>
 
               <button
                 type="submit"
