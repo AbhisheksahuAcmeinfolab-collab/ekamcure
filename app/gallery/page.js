@@ -35,7 +35,7 @@ import g4 from "../../assets/gallery/g-4.jpeg";
 import g5 from "../../assets/gallery/g-5.jpeg";
 import g6 from "../../assets/gallery/g-6.jpeg";
 import g7 from "../../assets/gallery/g-7.jpeg";
-import g8 from "../../assets/gallery/g-8.jpeg";
+import g8 from "../../assets/gallery/g-8.jpg";
 import g9 from "../../assets/gallery/g-9.jpeg";
 import g10 from "../../assets/gallery/g-10.jpeg";
 import g11 from "../../assets/gallery/g-11.jpeg";

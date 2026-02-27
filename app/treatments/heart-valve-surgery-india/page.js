@@ -289,6 +289,7 @@ export default function HeartValveSurgery() {
               </p>
             </div>
           </section>
+          
 
           {/* TYPES */}
           <section id="types-of-heart-valve-surgery-available-in-india" className="mb-16">
