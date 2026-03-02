@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import CTA from "../../../Component/cta";
+import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
 import {
   HeartPulse,
@@ -290,6 +291,66 @@ export default function HeartValveSurgery() {
             </div>
           </section>
           
+ {/* Specialists Section */}
+        <section id="breast-cancer-specialists-in-india" className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+            Doctor Profile
+          </h2>
+          <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
+            
+
+            {/* Our Cancer Specialists */}
+            <h3 className="text-2xl font-bold text-pink-600 mb-6"></h3>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+  {/* Dr. Manoj Luthra */}
+  <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-pink-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/Dr-Manoj.png"
+          alt="Dr Navneet Kaur"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Manoj Luthra</h4>
+        <p className="text-pink-700 font-semibold mb-2">Vice Chairman – Cardiac Surgery</p>
+        <p className="text-gray-800 text-sm mb-2">Cardiac Sciences | Paediatric Cardiac Surgery | Cardiothoracic & Vascular Surgery (CTVS)</p>
+        <p className="text-gray-600 text-sm font-semibold"></p>
+      </div>
+    </div>
+  </div>
+
+  {/* Dr. Ved Prakash */}
+  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+    <div className="flex items-start">
+      <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+        <Image
+          src="/doctor/Dr-ved.png"
+          alt="Dr. Ved Prakash"
+          width={96}
+          height={96}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Ved Prakash</h4>
+        <p className="text-purple-700 font-semibold mb-2">Director & HOD – CTVS (Cardiothoracic & Vascular Surgery)</p>
+        <p className="text-gray-700 text-sm mb-2"> MBBS | MS (General Surgery) | MCh (Cardiothoracic & Vascular Surgery)  Cardiology | Cardiac Sciences | Cardiac Surgery</p>
+        <p className="text-gray-600 text-sm"></p>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+           
+          </div>
+        </section>
 
           {/* TYPES */}
           <section id="types-of-heart-valve-surgery-available-in-india" className="mb-16">
@@ -627,13 +688,12 @@ export default function HeartValveSurgery() {
         </div>
 
         {/* SIDEBAR */}
-        <div className="lg:col-span-3">
-          <div className="sticky top-24 bg-gray-100 p-6 rounded-xl shadow">
-            <h3 className="font-bold text-lg mb-4 text-blue-900">
-              Book Free Consultation
-            </h3>
-            <ContactForm />
+        <div className="lg:col-span-3 ">
+          <div className="sticky top-24 bg-gray-100 rounded-xl shadow">
+             <ContactForm />
+           
           </div>
+          
         </div>
       </div>
     </div>
