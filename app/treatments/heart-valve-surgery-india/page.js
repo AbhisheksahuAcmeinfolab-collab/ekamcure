@@ -1,3 +1,4 @@
+import Script from "next/script";
 import React from "react";
 import Link from "next/link";
 import CTA from "../../../Component/cta";
@@ -22,6 +23,43 @@ export const metadata = {
 
 export default function HeartValveSurgery() {
   return (
+    <>
+    <Script
+  id="heart-valve-faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is valve replacement a serious surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, heart valve replacement is a major cardiac procedure because it involves repairing or replacing a damaged heart valve. However, with modern surgical techniques, advanced ICU monitoring, and experienced cardiac teams, outcomes have significantly improved. The level of risk depends on age, overall health, and the specific valve condition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the recovery time for heart valve surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Recovery time depends on the type of surgery performed. Open-heart valve surgery usually requires several weeks for healing, while minimally invasive procedures may allow faster recovery. Most patients resume light activities within a few weeks and gradually regain full strength under guided cardiac rehabilitation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you lead a normal life after heart valve replacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many patients return to an active and fulfilling life after heart valve replacement. With proper medication, regular follow-ups, and healthy lifestyle changes, individuals often experience improved breathing and energy levels."
+          }
+        }
+      ]
+    })
+  }}
+/>
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
       {/* HERO */}
       <div className="bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 text-center px-4">
@@ -29,9 +67,7 @@ export default function HeartValveSurgery() {
           Heart Valve Surgery in India
         </h1>
         <p className="text-xl max-w-4xl mx-auto text-pink-100">
-          Advanced valve repair and replacement procedures with experienced
-          cardiac surgeons, modern technology, high success rates and affordable
-          cost.
+          
         </p>
       </div>
 
@@ -697,6 +733,7 @@ export default function HeartValveSurgery() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

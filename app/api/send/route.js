@@ -38,8 +38,11 @@ export async function POST(req) {
 
     await transporter.sendMail({
   from: `"Ekam Contact" <${process.env.ZOHO_USER}>`,
-  to: ["shikhaacmeinfolab@gmail.com", "info@ekamcure.com"],
-  cc: "kumar.amit.100894@gmail.com",
+  to: [
+  "udai@acmeinfolabs.com",
+  // "info@ekamcure.com"
+],
+cc: "info@ekamcure.com",
   subject: "New Contact Lead (With Report)",
   html: `
   <div style="font-family: Arial, sans-serif; background-color: #f4f6f8; padding: 20px;">

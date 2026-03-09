@@ -224,89 +224,45 @@ export default function TreatmentServices() {
   ];
 
   const heart = [
-    [
-      {
-        name: "Heart Transplant",
-      },
-      {
-        name: "Heart Diseases",
-      },
-      {
-        name: "Endovascular Aneurysm Repair",
-      },
-      {
-        name: "Coronary Heart Diseases",
-      },
-      {
-        name: "Robotic Heart Bypass Surgery",
-      },
-      {
-        name: "Ventricular Septal Defect (VSD)",
-      },
-      {
-        name: "Atrial Septal Defect",
-      },
-      {
-        name: "Endoscopic Vein Harvesting",
-      },
-      {
-        name: "Bentall Procedure",
-      },
-      {
-        name: "Aortic Valve Repair",
-      },
-    ],
+  [
+    { name: "Heart Transplant", link: "#" },
+    { name: "Heart Diseases", link: "#" },
+    { name: "Endovascular Aneurysm Repair", link: "#" },
+    { name: "Coronary Heart Diseases", link: "#" },
+    { name: "Robotic Heart Bypass Surgery", link: "#" },
+    { name: "Ventricular Septal Defect (VSD)", link: "#" },
+    { name: "Atrial Septal Defect", link: "#" },
+    { name: "Endoscopic Vein Harvesting", link: "#" },
+    { name: "Bentall Procedure", link: "#" },
+    { name: "Aortic Valve Repair", link: "#" },
+  ],
 
-    [
-      {
-        name: "Coronary Angioplasty",
-      },
-      {
-        name: "Heart Bypass Surgery",
-      },
-      {
-        name: "Heart Valve Surgery",
-      },
-      { name: "Atherosclerosis Treatment" },
-      { name: "Aortic Stenosis Treatment" },
-      {
-        name: "Balloon Mitral Valvuloplasty",
-      },
-      {
-        name: "Balloon Pulmonary Valvuloplasty",
-      },
-      {
-        name: "Cardiac Asthma Treatment",
-      },
-      { name: "Coronary Artery Disease" },
-      { name: "Hypertension Treatment" },
-    ],
+  [
+    { name: "Coronary Angioplasty", link: "#" },
+    { name: "Heart Bypass Surgery", link: "#" },
+    { name: "Heart Valve Surgery", link: "/treatments/heart-valve-surgery-india" },
+    { name: "Atherosclerosis Treatment", link: "#" },
+    { name: "Aortic Stenosis Treatment", link: "#" },
+    { name: "Balloon Mitral Valvuloplasty", link: "#" },
+    { name: "Balloon Pulmonary Valvuloplasty", link: "#" },
+    { name: "Cardiac Asthma Treatment", link: "#" },
+    { name: "Coronary Artery Disease", link: "#" },
+    { name: "Hypertension Treatment", link: "#" },
+  ],
 
-    [
-      {
-        name: "Paediatric Heart Surgery",
-      },
-      {
-        name: "Robotic Heart Surgery",
-      },
-      {
-        name: "Pacemaker Implantation",
-      },
-      { name: "Mitral Valve Repair" },
-      { name: "Myocardial Bridge Treatment" },
-      {
-        name: "Pericarditis Treatment",
-      },
-      {
-        name: "Transcatheter Aortic Valve Implantation",
-      },
-      {
-        name: "Aortopulmonary Window",
-      },
-      { name: "Cardioversion Treatment" },
-      { name: "Double Valve Replacement" },
-    ],
-  ];
+  [
+    { name: "Paediatric Heart Surgery", link: "#" },
+    { name: "Robotic Heart Surgery", link: "#" },
+    { name: "Pacemaker Implantation", link: "#" },
+    { name: "Mitral Valve Repair", link: "#" },
+    { name: "Myocardial Bridge Treatment", link: "#" },
+    { name: "Pericarditis Treatment", link: "#" },
+    { name: "Transcatheter Aortic Valve Implantation", link: "#" },
+    { name: "Aortopulmonary Window", link: "#" },
+    { name: "Cardioversion Treatment", link: "#" },
+    { name: "Double Valve Replacement", link: "#" },
+  ],
+];
 
   const kidney = [
     [
@@ -1579,18 +1535,16 @@ export default function TreatmentServices() {
                 ></span>
                 {item.link ? (
                   <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+  href={item.link}
+  onClick={() => setActiveLink(item.name)}
+  className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+    activeLink === item.name
+      ? "text-[#082859] font-semibold"
+      : "text-[#082859] hover:text-[#0C3D88]"
+  }`}
+>
+  {item.name}
+</Link>
                 ) : (
                   <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
@@ -1619,18 +1573,16 @@ export default function TreatmentServices() {
                 ></span>
                 {item.link ? (
                   <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+  href={item.link}
+  onClick={() => setActiveLink(item.name)}
+  className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+    activeLink === item.name
+      ? "text-[#082859] font-semibold"
+      : "text-[#082859] hover:text-[#0C3D88]"
+  }`}
+>
+  {item.name}
+</Link>
                 ) : (
                   <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}
@@ -1658,18 +1610,16 @@ export default function TreatmentServices() {
                 ></span>
                 {item.link ? (
                   <Link
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setActiveLink(item.name)}
-                    className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
-                      activeLink === item.name
-                        ? "text-[#082859] font-semibold"
-                        : "text-[#082859] hover:text-[#0C3D88]"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
+  href={item.link}
+  onClick={() => setActiveLink(item.name)}
+  className={`text-[18px] font-medium flex-1 transition-colors duration-300 ${
+    activeLink === item.name
+      ? "text-[#082859] font-semibold"
+      : "text-[#082859] hover:text-[#0C3D88]"
+  }`}
+>
+  {item.name}
+</Link>
                 ) : (
                   <span className="text-[#082859] text-[18px] font-medium flex-1 cursor-default">
                     {item.name}

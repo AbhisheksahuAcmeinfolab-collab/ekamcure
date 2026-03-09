@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-
+import { FaUser, FaPhone, FaCommentDots, FaPaperclip } from "react-icons/fa";
 import img from "../../assets/recent/Our Contact 1.webp";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -100,88 +100,99 @@ export default function ContactPage() {
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-4 text-black dark:text-black">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
-                  required
-                />
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Phone No."
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full sm:w-1/2 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
-                  required
-                />
-              </div>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
-                required
-              />
-              {/* <input
-  type="email"
-  name="email"
-  placeholder="Email"
-  value={formData.email}
-  onChange={handleChange}
-  autoComplete="off"
-  spellCheck="false"
-  autoCapitalize="off"
-  autoCorrect="off"
-  required
-/> */}
+  {/* Name + Phone */}
+  <div className="flex flex-col sm:flex-row gap-4">
 
-              <textarea
-                name="message"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="5"
-                maxLength={180}
-                className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
-                required
-              ></textarea>
+    {/* Name */}
+    <div className="relative w-full sm:w-1/2">
+      <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+        className="w-full border border-gray-300 rounded-md pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
+        required
+      />
+    </div>
 
-              <p className="text-right text-sm text-gray-500">
-                {formData.message.length}/180
-              </p>
-              {/* Upload Report */}
-<div>
-  <label className="block text-sm font-medium text-gray-700 mb-1">
-    Upload Report
-  </label>
-  <input
-  type="file"
-  name="report"
-  required
-  onChange={(e) => setReportFile(e.target.files[0])}
-  className="w-full border border-gray-300 rounded-md px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-900"
-/>
-</div>
-<p className="text-sm text-gray-500">
-  Please upload file with extension (jpg, png, pdf).
-</p>
+    {/* Phone */}
+    <div className="relative w-full sm:w-1/2">
+      <FaPhone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+      <input
+        type="text"
+        name="phone"
+        placeholder="Phone No."
+        value={formData.phone}
+        onChange={handleChange}
+        className="w-full border border-gray-300 rounded-md pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
+        required
+      />
+    </div>
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition disabled:opacity-50"
-              >
-                {loading ? "Sending..." : "Submit"}
-              </button>
-            </form>
+  </div>
+
+  {/* Email */}
+  <div className="relative">
+    <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      value={formData.email}
+      onChange={handleChange}
+      className="w-full border border-gray-300 rounded-md pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
+      required
+    />
+  </div>
+
+  {/* Message */}
+  <div className="relative">
+    <FaCommentDots className="absolute left-3 top-3 text-gray-500" />
+    <textarea
+      name="message"
+      placeholder="Message"
+      value={formData.message}
+      onChange={handleChange}
+      rows="5"
+      maxLength={180}
+      className="w-full border border-gray-300 rounded-md pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
+      required
+    ></textarea>
+  </div>
+
+  <p className="text-right text-sm text-gray-500">
+    {formData.message.length}/180
+  </p>
+
+  {/* Upload Report */}
+  <div className="relative">
+    <FaPaperclip className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+    <input
+      type="file"
+      name="report"
+      required
+      onChange={(e) => setReportFile(e.target.files[0])}
+      className="w-full border border-gray-300 rounded-md pl-10 pr-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-900"
+    />
+  </div>
+
+  <p className="text-sm text-gray-500">
+    Please upload file with extension (jpg, png, pdf).
+  </p>
+
+  {/* Submit */}
+  <button
+    type="submit"
+    disabled={loading}
+    className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition disabled:opacity-50"
+  >
+    {loading ? "Sending..." : "Submit"}
+  </button>
+
+</form>
           </div>
 
           {/* Right: Contact Details */}
