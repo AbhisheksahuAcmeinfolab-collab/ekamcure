@@ -1,6 +1,7 @@
 import Script from "next/script";
 import React from 'react';
 import Link from "next/link";
+
 import CTA from "../../../Component/cta";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
@@ -508,6 +509,86 @@ export default function GlaucomaSurgeryIndia() {
                   </div>
                 </div>
               </section>
+
+              {/*  DOCTOR */}
+                        
+
+<section id="spine-specialist-doctor-india" className="mb-16">
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+    Glaucoma Surgery  Doctor India
+  </h2>
+
+  {/* <p className="bg-white p-6 rounded-xl shadow mb-8">
+    
+  </p> */}
+
+  {/* Doctor Profiles */}
+  <div className="bg-white rounded-xl shadow-lg p-8">
+    <h3 className="text-2xl font-bold text-pink-600 mb-6">Doctor Profile</h3>
+
+    <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+      {/* Doctor 1 */}
+      <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
+        <div className="flex items-start">
+          
+          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-pink-200 rounded-full mr-4 overflow-hidden">
+            <Image
+              src="/doctor/dr-sumit.png"
+              alt="Dr. Sumit Goyal"
+              width={96}
+              height={96}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-gray-900 mb-2">
+              Dr. Sumit Goyal
+            </h4>
+            <p className="text-pink-700 font-semibold mb-2">
+              Director & HOD – Neurosurgery | Group Director – Neurointervention
+            </p>
+            <p className="text-gray-800 text-sm">
+              MBBS | DNB (Neurosurgery) | FINR (France) | Neurosciences | Neurosurgery | Neurointervention
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Doctor 2 */}
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+        <div className="flex items-start">
+          
+          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+            <Image
+              src="/doctor/Dr_Pramod_Saini.png"
+              alt="Dr. Pramod Saini"
+              width={96}
+              height={96}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-gray-900 mb-2">
+              Dr. Pramod Saini
+            </h4>
+            <p className="text-purple-700 font-semibold mb-2">
+              Associate Director – Spine Surgery
+            </p>
+            <p className="text-gray-700 text-sm">
+              Spine Surgery | Minimally Invasive Spine Specialist
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
               {/* Medical Tourism Support */}
               <section id="how-medical-tourism-support-helps-international-patients" className="mb-16">

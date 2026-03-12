@@ -1004,7 +1004,7 @@ export default function BestSpineSurgeryInIndia() {
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-pink-200 rounded-full mr-4 overflow-hidden">
                         <Image
-                          src="/doctor/dr-Sumit.png"
+                          src="/doctor/dr-sumit.png"
                           alt="Dr. Sumit Goyal"
                           width={96}
                           height={96}
