@@ -1022,7 +1022,7 @@ export default function BestSpineSurgeryInIndia() {
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-20 sm:w-24 md:w-24 lg:w-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
                         <Image
-                          src="/doctor/Dr_Pramod_Saini.jpeg"
+                          src="/doctor/Dr_Pramod_Saini.png"
                           alt="Dr. Pramod Saini"
                           width={96}
                           height={96}
@@ -1031,8 +1031,8 @@ export default function BestSpineSurgeryInIndia() {
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Pramod Saini</h4>
-                        <p className="text-purple-700 font-semibold mb-2">Senior Spine Specialist</p>
-                        <p className="text-gray-700 text-sm mb-2">Neurosurgery | Spinal Cord Surgery | Complex Spine Disorders | Fusion Procedures</p>
+                        <p className="text-purple-700 font-semibold mb-2">Associate Director – Spine Surgery</p>
+                        <p className="text-gray-700 text-sm mb-2">Spine Surgery | Minimally Invasive Spine Specialist</p>
                       </div>
                     </div>
                   </div>
