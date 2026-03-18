@@ -1148,9 +1148,7 @@ export default function BreastCancerTreatment() {
   <div className="lg:col-span-3 order-1 lg:order-2">
       <div className="lg:sticky lg:top-24">
         <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
-          <h3 className="text-xl font-bold mb-4 text-blue-900">
-            Book Free Consultation
-          </h3>
+          
           <ContactForm />
         </div>
       </div>

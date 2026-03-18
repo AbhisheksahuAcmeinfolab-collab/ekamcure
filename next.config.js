@@ -50,8 +50,17 @@ const nextConfig = {
  source: '/treatment',
       destination: '/treatments',
   permanent: true,
-}
-,
+},
+{
+        source: '/category/uncategorized',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/our-services',
+        destination: '/services',
+        permanent: true,
+      },
     ]
   },
 };

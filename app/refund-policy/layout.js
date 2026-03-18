@@ -3,6 +3,7 @@ export const metadata = {
   description:
     "Understand Ekam’s refund policy, eligibility criteria, timelines, and conditions for medical service refunds.",
   keywords: ["EkamCure refund policy"],
+  
 };
 
 

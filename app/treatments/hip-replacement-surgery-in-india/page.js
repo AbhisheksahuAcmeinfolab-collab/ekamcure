@@ -22,16 +22,7 @@ export default function HipReplacementIndia() {
               Hip Replacement Surgery in India
             </h1>
 
-            <p className="text-xl md:text-2xl text-pink-100 max-w-4xl mx-auto">
-              Hip pain can slowly reduce your independence. What begins as mild discomfort may progress into stiffness, limited movement, and constant pain that affects sleep and daily activities. For many patients, hip replacement surgery in India offers a reliable solution to restore mobility and improve overall quality of life.
-
-            </p>
-
-            
-
-            <p className="text-lg mt-6 text-pink-100 max-w-4xl mx-auto">
-              This guide explains the fundamentals — from understanding hip anatomy to recognizing when surgery becomes necessary. Whether you are a local patient or considering medical travel, the goal is to provide clarity and confidence in your decision-making.
-            </p>
+           
           </div>
         </div>
 
@@ -39,11 +30,86 @@ export default function HipReplacementIndia() {
         <div className="w-full px-4 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
+
+            
+
             {/* LEFT CONTENT */}
             <div className="lg:col-span-7 order-2 lg:order-1">
+             {/* TABLE OF CONTENTS */}
+              <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-pink-500 mb-10">
+                <div className="flex items-center mb-6">
+                  <h2 className="text-2xl font-bold text-gray-800">
+                    In this page
+                  </h2>
+                </div>
 
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+
+                  <a href="#introduction" className="toc-link">› Introduction – Restoring Mobility and Quality of Life</a>
+                  <a href="#hip-anatomy" className="toc-link">› Understanding the Hip Joint – Anatomy & Function</a>
+                  <a href="#cartilage" className="toc-link">› How Cartilage Protects the Joint</a>
+                  <a href="#hip-degeneration" className="toc-link">› What Happens When the Hip Degenerates</a>
+
+                  <a href="#need-hip-replacement" className="toc-link">› Do You Really Need Hip Replacement?</a>
+                  <a href="#warning-signs" className="toc-link">› Warning Signs That Indicate Advanced Hip Damage</a>
+                  <a href="#clinical-evaluation-imaging-tests" className="toc-link">› Clinical Evaluation & Imaging Tests (X-ray, MRI, CT Scan)</a>
+                  <a href="#pain-vs-disability" className="toc-link">› Pain vs. Disability – When Surgery Becomes Necessary</a>
+                  <a href="#age-factor" className="toc-link">› Age Considerations – Is There an Ideal Age for THR?</a>
+
+                  <a href="#common-causes-hip-replacement" className="toc-link">› Common Causes of Hip Replacement Surgery</a>
+                  <a href="#osteoarthritis" className="toc-link">› Osteoarthritis – The Wear and Tear Condition</a>
+                  <a href="#avn" className="toc-link">› Avascular Necrosis (AVN) in Younger Patients</a>
+                  <a href="#rheumatoid" className="toc-link">› Rheumatoid Arthritis & Autoimmune Joint Damage</a>
+                  <a href="#trauma" className="toc-link">› Post-Traumatic Arthritis After Fractures</a>
+                  <a href="#dysplasia" className="toc-link">› Hip Dysplasia & Congenital Conditions</a>
+
+                  <a href="#non-surgical-treatments" className="toc-link">› Non-Surgical Treatments Before Considering Surgery</a>
+                  <a href="#physiotherapy" className="toc-link">› Physical Therapy & Strengthening Programs</a>
+                  <a href="#medication" className="toc-link">› Medications & Anti-Inflammatory Treatments</a>
+                  <a href="#injection" className="toc-link">› Injection Therapies (Steroid, PRP)</a>
+                  <a href="#lifestyle" className="toc-link">› Lifestyle Modifications & Weight Management</a>
+
+                  <a href="#types-of-hip-replacement" className="toc-link">› Types of Hip Replacement Procedures</a>
+                  <a href="#thr" className="toc-link">› Total Hip Replacement (THR)</a>
+                  <a href="#partial" className="toc-link">› Partial Hip Replacement (Hemiarthroplasty)</a>
+                  <a href="#resurfacing" className="toc-link">› Hip Resurfacing – Who Is a Candidate?</a>
+                  <a href="#bilateral" className="toc-link">› Bilateral Hip Replacement (Single vs. Staged)</a>
+
+                  <a href="#advanced-technology" className="toc-link">› Advanced Technology in Hip Replacement</a>
+                  <a href="#robotic" className="toc-link">› Robotic-Assisted Hip Replacement</a>
+                  <a href="#navigation" className="toc-link">› Computer-Aided Navigation Systems</a>
+
+                  <a href="#cost-india" className="toc-link">› Hip Replacement Cost in India</a>
+                  <a href="#cost-comparison" className="toc-link">› Cost Comparison: India vs USA vs UK vs Canada vs Australia</a>
+
+                  <a href="#patient-journey" className="toc-link">› The Ekam Cure Patient Journey – Step-by-Step Process</a>
+                  <a href="#surgery-day" className="toc-link">› What Happens on Surgery Day?</a>
+                  <a href="#recovery" className="toc-link">› Recovery & Rehabilitation Timeline</a>
+                  <a href="#precautions" className="toc-link">› Post-Operative Precautions & Lifestyle Changes</a>
+                  <a href="#risks" className="toc-link">› Risks, Complications & Safety Protocols</a>
+
+                  <a href="#faq" className="toc-link">› Frequently Asked Questions (FAQs)</a>
+                  <a href="#conclusion" className="toc-link">› Conclusion – Your Journey Toward Pain-Free Mobility</a>
+
+                </div>
+              </div>
+
+
+
+<div className="bg-white rounded-xl shadow-lg p-8 mt-8 mb-8">
+               <p className="text-gray-700 leading-relaxed mb-4">
+              Hip pain can slowly reduce your independence. What begins as mild discomfort may progress into stiffness, limited movement, and constant pain that affects sleep and daily activities. For many patients, hip replacement surgery in India offers a reliable solution to restore mobility and improve overall quality of life.
+
+            </p>
+
+            
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              This guide explains the fundamentals — from understanding hip anatomy to recognizing when surgery becomes necessary. Whether you are a local patient or considering medical travel, the goal is to provide clarity and confidence in your decision-making.
+            </p>
+</div>
               {/* INTRODUCTION */}
-              <section className="mb-16">
+              <section className="mb-16" id="introduction">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Introduction – Restoring Mobility and Quality of Life
                 </h2>
@@ -125,7 +191,7 @@ export default function HipReplacementIndia() {
               </section>
 
               {/* HIP ANATOMY */}
-              <section className="mb-16">
+              <section className="mb-16" id="hip-anatomy">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Understanding the Hip Joint – Anatomy & Function
                 </h2>
@@ -152,7 +218,7 @@ export default function HipReplacementIndia() {
               </section>
 
               {/* HOW CARTILAGE PROTECTS THE JOINT */}
-<section className="mb-16">
+              <section className="mb-16" id="cartilage">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     How Cartilage Protects the Joint
   </h3>
@@ -176,8 +242,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* WHAT HAPPENS WHEN HIP DEGENERATES */}
-<section className="mb-16">
+ {/* WHAT HAPPENS WHEN HIP DEGENERATES */}
+              <section className="mb-16" id="hip-degeneration">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     What Happens When the Hip Degenerates
   </h3>
@@ -208,7 +274,7 @@ export default function HipReplacementIndia() {
 </section>
 
 {/* DO YOU REALLY NEED HIP REPLACEMENT */}
-<section className="mb-16">
+              <section className="mb-16" id="need-hip-replacement">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Do You Really Need Hip Replacement?
   </h2>
@@ -222,7 +288,7 @@ export default function HipReplacementIndia() {
 </section>
 
 {/* WARNING SIGNS */}
-<section className="mb-16">
+              <section className="mb-16" id="warning-signs">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Warning Signs That Indicate Advanced Hip Damage
   </h3>
@@ -250,7 +316,7 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 {/* CLINICAL EVALUATION */}
-<section id="clinical-evaluation-imaging-tests" className="mb-16">
+              <section id="clinical-evaluation-imaging-tests" className="mb-16">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Clinical Evaluation & Imaging Tests (X-ray, MRI, CT Scan)
   </h3>
@@ -288,8 +354,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* PAIN VS DISABILITY */}
-<section className="mb-16">
+    {/* PAIN VS DISABILITY */}
+              <section className="mb-16" id="pain-vs-disability">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Pain vs. Disability – When Surgery Becomes Necessary
   </h3>
@@ -317,7 +383,7 @@ export default function HipReplacementIndia() {
 </section>
 
 {/* AGE CONSIDERATIONS */}
-<section className="mb-16">
+              <section className="mb-16" id="age-factor">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Age Considerations – Is There an Ideal Age for THR?
   </h3>
@@ -342,7 +408,7 @@ export default function HipReplacementIndia() {
 </section>
 
 {/* COMMON CAUSES */}
-<section id="common-causes-hip-replacement" className="mb-16">
+              <section id="common-causes-hip-replacement" className="mb-16">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Common Causes of Hip Replacement Surgery
   </h2>
@@ -357,8 +423,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* OSTEOARTHRITIS */}
-<section className="mb-16">
+   {/* OSTEOARTHRITIS */}
+              <section className="mb-16" id="osteoarthritis">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Osteoarthritis – The Wear and Tear Condition
   </h3>
@@ -378,8 +444,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* AVASCULAR NECROSIS */}
-<section className="mb-16">
+   {/* AVASCULAR NECROSIS */}
+              <section className="mb-16" id="avn">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Avascular Necrosis (AVN) in Younger Patients
   </h3>
@@ -408,7 +474,7 @@ export default function HipReplacementIndia() {
 </section>
 
 {/* RHEUMATOID ARTHRITIS */}
-<section className="mb-16">
+              <section className="mb-16" id="rheumatoid">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Rheumatoid Arthritis & Autoimmune Joint Damage
   </h3>
@@ -429,8 +495,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* POST TRAUMATIC ARTHRITIS */}
-<section className="mb-16">
+   {/* POST TRAUMATIC ARTHRITIS */}
+              <section className="mb-16" id="trauma">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Post-Traumatic Arthritis After Fractures
   </h3>
@@ -445,8 +511,8 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 
-{/* HIP DYSPLASIA */}
-<section className="mb-16">
+  {/* HIP DYSPLASIA */}
+              <section className="mb-16" id="dysplasia">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Hip Dysplasia & Congenital Conditions
   </h3>
@@ -464,7 +530,7 @@ export default function HipReplacementIndia() {
   </div>
 </section>
 {/* NON SURGICAL TREATMENTS */}
-<section id="non-surgical-treatments" className="mb-16">
+              <section id="non-surgical-treatments" className="mb-16">
 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
 Non-Surgical Treatments Before Considering Surgery
 </h2>
@@ -477,7 +543,7 @@ Before recommending hip replacement surgery, orthopedic specialists typically ex
 </section>
 
 {/* PHYSICAL THERAPY */}
-<section className="mb-16">
+    <section className="mb-16" id="physiotherapy">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Physical Therapy & Strengthening Programs
 </h3>
@@ -503,7 +569,7 @@ While therapy cannot reverse cartilage damage, it can significantly improve func
 </section>
 
 {/* MEDICATION */}
-<section className="mb-16">
+              <section className="mb-16" id="medication">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Medications & Anti-Inflammatory Treatments
 </h3>
@@ -526,7 +592,7 @@ These medications reduce inflammation and alleviate discomfort. However, long-te
 </section>
 
 {/* INJECTION THERAPIES */}
-<section className="mb-16">
+              <section className="mb-16" id="injection">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Injection Therapies (Steroid, PRP)
 </h3>
@@ -548,8 +614,8 @@ Platelet-Rich Plasma (PRP) therapy aims to stimulate healing using components de
 </div>
 </section>
 
-{/* LIFESTYLE */}
-<section className="mb-16">
+       {/* LIFESTYLE */}
+              <section className="mb-16" id="lifestyle">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Lifestyle Modifications & Weight Management
 </h3>
@@ -599,7 +665,7 @@ At this stage, hip replacement provides a long-term solution rather than tempora
 </section>
 
 {/* TYPES OF HIP REPLACEMENT */}
-<section className="mb-16">
+              <section className="mb-16" id="types-of-hip-replacement">
 
 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
 Types of Hip Replacement Procedures
@@ -614,8 +680,8 @@ Not all hip surgeries are identical. The choice of procedure depends on the unde
 </div>
 </section>
 
-{/* THR */}
-<section className="mb-16">
+ {/* THR */}
+              <section className="mb-16" id="thr">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Total Hip Replacement (THR)
 </h3>
@@ -638,7 +704,7 @@ Modern implants are designed for durability and long-term stability.
 </section>
 
 {/* PARTIAL HIP */}
-<section className="mb-16">
+              <section className="mb-16" id="partial">
 <h3 className="text-2xl font-bold text-pink-600 mb-6">
 Partial Hip Replacement (Hemiarthroplasty)
 </h3>
@@ -662,7 +728,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* HIP RESURFACING */}
-<section className="mb-16">
+              <section className="mb-16" id="resurfacing">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Hip Resurfacing – Who Is a Candidate?
   </h3>
@@ -682,8 +748,8 @@ The choice depends on fracture pattern and overall joint condition.
   </div>
 </section>
 
-{/* BILATERAL HIP REPLACEMENT */}
-<section className="mb-16">
+ {/* BILATERAL HIP REPLACEMENT */}
+              <section className="mb-16" id="bilateral">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Bilateral Hip Replacement (Single vs. Staged)
   </h3>
@@ -807,7 +873,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* ADVANCED TECHNOLOGY */}
-<section className="mb-16">
+              <section className="mb-16" id="advanced-technology">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Advanced Technology in Hip Replacement
   </h2>
@@ -819,8 +885,8 @@ The choice depends on fracture pattern and overall joint condition.
   </div>
 </section>
 
-{/* ROBOTIC ASSISTED */}
-<section className="mb-16">
+   {/* ROBOTIC ASSISTED */}
+              <section className="mb-16" id="robotic">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Robotic-Assisted Hip Replacement
   </h3>
@@ -841,7 +907,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* COMPUTER AIDED NAVIGATION */}
-<section className="mb-16">
+              <section className="mb-16" id="navigation">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Computer-Aided Navigation Systems
   </h3>
@@ -1349,7 +1415,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* HIP REPLACEMENT COST IN INDIA */}
-<section className="mb-16">
+              <section className="mb-16" id="cost-india">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Hip Replacement Cost in India
   </h2>
@@ -1375,7 +1441,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* COST COMPARISON TABLE */}
-<section className="mb-16">
+              <section className="mb-16" id="cost-comparison">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
     Cost Comparison: India vs USA vs UK vs Canada vs Australia
   </h3>
@@ -1486,7 +1552,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* EKAM CURE PATIENT JOURNEY */}
-<section className="mb-16">
+              <section className="mb-16" id="patient-journey">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     The Ekam Cure Patient Journey – Step-by-Step Process
   </h2>
@@ -1546,7 +1612,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* WHAT HAPPENS ON SURGERY DAY */}
-<section className="mb-16">
+              <section className="mb-16" id="surgery-day">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     What Happens on Surgery Day?
   </h2>
@@ -1737,7 +1803,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* RECOVERY & REHABILITATION TIMELINE */}
-<section className="mb-16">
+              <section className="mb-16" id="recovery">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Recovery & Rehabilitation Timeline
   </h2>
@@ -1844,7 +1910,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* POST OPERATIVE PRECAUTIONS */}
-<section className="mb-16">
+              <section className="mb-16" id="precautions">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Post-Operative Precautions & Lifestyle Changes
   </h2>
@@ -1984,7 +2050,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* RISKS COMPLICATIONS SAFETY */}
-<section className="mb-16">
+              <section className="mb-16" id="risks">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Risks, Complications & Safety Protocols
   </h2>
@@ -2125,7 +2191,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* FAQS */}
-<section className="mb-16">
+              <section className="mb-16" id="faq">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Frequently Asked Questions (FAQs)
   </h2>
@@ -2173,7 +2239,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* CONCLUSION */}
-<section className="mb-16">
+              <section className="mb-16" id="conclusion">
   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
     Conclusion – Your Journey Toward Pain-Free Mobility
   </h2>
@@ -2265,7 +2331,7 @@ The choice depends on fracture pattern and overall joint condition.
             {/* RIGHT SIDEBAR */}
             <div className="lg:col-span-3 order-1 lg:order-2">
               <div className="lg:sticky lg:top-24">
-                <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
+                <div className="shadow-lg">
                   {/* <h3 className="text-xl font-bold mb-4 text-blue-900">
                     Book Free Consultation
                   </h3> */}

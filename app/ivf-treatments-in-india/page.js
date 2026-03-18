@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-
+import ContactForm from "../../Component/ContactForm";
 import { useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
 // 🚨 IMPORTANT: You must import the Next.js Image component
@@ -368,66 +368,11 @@ export default function ChooseEkam() {
           <div className="hidden md:flex ml-auto">
             <div
               id="appointment-form"
-              className="relative z-10 bg-white/90 backdrop-blur-md
+              className="relative z-10 
       p-6 rounded-lg w-full md:w-[360px] text-black "
             >
-              <h3 className="text-lg font-semibold mb-4">
-                Free consultation with Top IVF Specialist in India.
-              </h3>
-
-<form onSubmit={handleSubmit} className="space-y-3">
-
-  <input
-    type="text"
-    name="name"
-    placeholder="Name"
-    value={formData.name}
-    onChange={handleChange}
-    required
-    className="w-full px-3 py-2 rounded-md border outline-none"
-  />
-
-  <input
-    type="email"
-    name="email"
-    placeholder="Email"
-    value={formData.email}
-    onChange={handleChange}
-    required
-    className="w-full px-3 py-2 rounded-md border outline-none"
-  />
-
-  <input
-    type="text"
-    name="phone"
-    placeholder="Phone No."
-    value={formData.phone}
-    onChange={handleChange}
-    required
-    className="w-full px-3 py-2 rounded-md border outline-none"
-  />
-
-  <textarea
-    name="message"
-    rows={5}
-    maxLength={180}
-    placeholder="Message"
-    value={formData.message}
-    onChange={handleChange}
-    required
-    className="w-full px-3 py-2 rounded-md border outline-none"
-  ></textarea>
-
-  <button
-    type="submit"
-    disabled={loading}
-    className="bg-[#F59E0B] text-white px-5 py-2 rounded-md hover:bg-[#d78a06] transition w-full"
-  >
-    {loading ? "Sending..." : "Submit"}
-  </button>
-
-</form>
-
+              
+ <ContactForm />
             </div>
           </div>
         </div>
@@ -504,7 +449,14 @@ export default function ChooseEkam() {
           {/* Left Side: YouTube Video Embed */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
-              <iframe
+              <Image
+          src="/img/y-dream.png"
+          alt="Mother with baby"
+          fill
+          priority
+          className="object-cover"
+        />
+              {/* <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy"
@@ -514,35 +466,23 @@ export default function ChooseEkam() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
                 className="rounded-xl"
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
 
           {/* Right Side: Text Content */}
           <div className="md:w-1/2 text-justify md:text-left mt-2">
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
-              About Us!
-            </h3>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
+             IVF Treatments In India
+            </h1>
             <p className="text-gray-600 leading-relaxed mb-4 font-karla text-[17px]">
-              Embarking on the journey to parenthood can be both exciting and
-              overwhelming, but with our acclaimed IVF experts by your side, you
-              can rest assured you&apos;re in the best hands. Our team of highly
-              skilled specialists combines years of experience with the latest
-              advancements in fertility care, tailoring every treatment to suit
-              your unique needs. With a proven track record of high success
-              rates, we take pride in turning hopes into reality, helping
-              countless families achieve their dream of having a baby.
+             Embarking on the journey to parenthood can be both exciting and overwhelming, but with our acclaimed fertility experts specializing in IVF Treatments in India, you can feel confident that you are in the best hands. Our team of highly experienced IVF specialists combines years of expertise with the latest advancements in fertility care to deliver personalized treatment plans tailored to your unique needs. With a strong track record of success in IVF treatments in India, we take pride in helping couples turn their dreams of parenthood into reality.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-              We believe that exceptional care should be accessible to everyone,
-              which is why our treatments are designed to be both high-quality
-              and affordable. Transparency and compassion are at the core of
-              everything we do, ensuring you feel supported every step of the
-              way. Understanding the emotional rollercoaster that often
-              accompanies this process, we provide 24/7 care to address your
-              questions and concerns whenever they arise. From the moment you
-              walk through our doors, our mission is to guide you with empathy,
-              expertise, and unwavering dedication toward the joy of parenthood.
+              We believe that world-class IVF treatments in India should be accessible and affordable for everyone. That is why our fertility programs are designed to provide high-quality care at competitive costs without compromising on medical excellence. Transparency, trust, and compassionate care are at the heart of everything we do, ensuring you feel supported throughout your fertility journey.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
+             Understanding that the path to parenthood can be emotionally challenging, our dedicated team offers 24/7 patient support to answer your questions and guide you at every stage of your IVF treatment in India. From your first consultation to the joyful moment of welcoming your baby, our mission is to support you with empathy, advanced medical expertise, and unwavering commitment to helping you achieve successful parenthood through the best IVF treatments in India.
             </p>
           </div>
         </div>

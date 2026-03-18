@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import img from "../../assets/recent/Refund Policy 1.webp";
-
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 export default function PrivacyPolicy() {
   return (
     <>
@@ -22,9 +27,7 @@ export default function PrivacyPolicy() {
       <section className="text-justify bg-gray-50 py-12 px-4 md:px-10 text-gray-800">
         <div className="max-w-5xl mx-auto bg-white shadow-md rounded-2xl p-8 md:p-12">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-            Refund Policy
-          </h1>
+          
 
           {/* Section 1 */}
           <ul className="mb-8">
