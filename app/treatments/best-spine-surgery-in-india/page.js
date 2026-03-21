@@ -4,6 +4,8 @@ import Link from "next/link";
 import CTA from "../../../Component/cta";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
+import Sidebar from "../../../Component/Sidebar";
+
 import {
   Activity,
   Brain,
@@ -71,7 +73,7 @@ export default function BestSpineSurgeryInIndia() {
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-10 gap-8 px-4 py-10">
           {/* LEFT CONTENT */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 order-2">
 
             {/* TOC */}
             <div className="bg-white rounded-xl shadow-lg p-6 mb-10 border-t-4 border-pink-500">
@@ -1264,9 +1266,11 @@ export default function BestSpineSurgeryInIndia() {
           </div>
 
           {/* SIDEBAR */}
-          <div className="lg:col-span-3">
-            <div className="sticky top-24 bg-gray-100 rounded-xl shadow">
+          <div className="lg:col-span-3 order-1">
+  <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+               <Sidebar />
               <ContactForm />
+             
             </div>
           </div>
         </div>
