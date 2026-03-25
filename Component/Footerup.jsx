@@ -28,7 +28,7 @@ export default function Footerup() {
   const repeatedHospitals = [...hospitals, ...hospitals];
 
   return (
-    <section className="bg-white dark:bg-white">
+    <section className="footer-s bg-white dark:bg-white">
       {/* Heading */}
       <div className="text-center py-8 px-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">

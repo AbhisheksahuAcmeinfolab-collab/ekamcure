@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
     
   return (
-    <nav className="bg-white dark:text-black-100 shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
+    <nav className="menu-bar bg-white dark:text-black-100 shadow-md sticky top-0 z-50 py-3 transition-colors duration-300">
       <div className="max-w-7xl mx-auto sm:px-6">
         <div className="flex justify-between items-center h-16">
           {/* ---------- Desktop View ---------- */}
