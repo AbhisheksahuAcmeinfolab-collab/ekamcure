@@ -34,8 +34,11 @@
 }
 
 .owner-section {
-  margin-top: -50px;
-  padding: 0 20px;
+  display: flex;
+    margin-top: -50px;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .owner-img {
