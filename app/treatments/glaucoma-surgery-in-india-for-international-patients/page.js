@@ -549,9 +549,7 @@ export default function GlaucomaSurgeryIndia() {
             <p className="text-pink-700 font-semibold mb-2">
               Director & HOD – Neurosurgery | Group Director – Neurointervention
             </p>
-            <p className="text-gray-800 text-sm">
-              MBBS | DNB (Neurosurgery) | FINR (France) | Neurosciences | Neurosurgery | Neurointervention
-            </p>
+            
           </div>
 
         </div>
