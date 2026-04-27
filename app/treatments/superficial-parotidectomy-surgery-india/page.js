@@ -10,9 +10,150 @@ export const metadata = {
     "Learn about superficial parotidectomy surgery in India, including procedure, treatment options, recovery, and cost comparison with other countries.",
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ekamcure.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Treatments",
+      "item": "https://www.ekamcure.com/treatments"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Superficial Parotidectomy Surgery",
+      "item": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is superficial parotidectomy a major surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, superficial parotidectomy is considered a significant surgical procedure because it involves operating near the facial nerve and major salivary glands. However, experienced surgeons use specialized techniques to perform the surgery safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does recovery usually take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recovery time varies depending on the patient's condition, the extent of surgery, and overall health. Most patients gradually resume normal activities after their doctor confirms adequate healing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there risks associated with parotidectomy surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possible risks include facial nerve weakness, infection, swelling, and other surgical complications. Doctors discuss these risks with patients before surgery to help them understand the procedure."
+      }
+    }
+  ]
+};
+
+const medicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntity": {
+    "@type": "MedicalProcedure",
+    "name": "Superficial Parotidectomy Surgery",
+    "alternateName": "Parotid Gland Surgery",
+    "description": "A surgical procedure to remove tumors or abnormal growths from the superficial lobe of the parotid gland while preserving the facial nerve.",
+    "procedureType": "SurgicalProcedure",
+    "bodyLocation": "Parotid Gland",
+    "indication": [
+      {
+        "@type": "MedicalIndication",
+        "name": "Benign Parotid Tumors"
+      },
+      {
+        "@type": "MedicalIndication",
+        "name": "Pleomorphic Adenoma"
+      },
+      {
+        "@type": "MedicalIndication",
+        "name": "Early-stage Malignant Tumors"
+      }
+    ],
+    "outcome": "Removal of parotid mass with facial nerve preservation",
+    "preparation": "Pre-surgical evaluation including CT/MRI scans and Fine Needle Aspiration (FNA) biopsy.",
+    "howItWorks": "The surgeon makes an incision near the ear, identifies and protects the facial nerve, and removes the affected superficial lobe of the parotid gland.",
+    "followup": "Wound care, monitoring facial nerve function, and management of potential complications like Frey's syndrome."
+  },
+  "audience": {
+    "@type": "Patient",
+    "healthCondition": {
+      "@type": "MedicalCondition",
+      "name": "Parotid Gland Tumors"
+    }
+  },
+  "lastReviewed": "2024-05-20"
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Medical Facilitation for Parotid Surgery",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Ekam Cure",
+    "image": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
+    "telephone": "+919990205353",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressCountry": "IN"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "lowPrice": "1500",
+    "highPrice": "2800",
+    "description": "Estimated cost for superficial parotidectomy surgery in India."
+  }
+};
+
 export default function SuperficialParotidectomyIndia() {
   return (
     <>
+      {/* ── Schema.org JSON-LD Scripts ── */}
+      <Script
+        id="schema-breadcrumb"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Script
+        id="schema-faq"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-medical-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }}
+      />
+      <Script
+        id="schema-service"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
 
         {/* HERO SECTION */}
@@ -44,7 +185,7 @@ export default function SuperficialParotidectomyIndia() {
                   <a href="#cost" className="toc-link">› Superficial Parotidectomy Surgery Cost in India</a>
                   <a href="#best-hospital" className="toc-link">› Choosing the Best Hospital for Superficial Parotidectomy in India</a>
                   <a href="#best-surgeon" className="toc-link">› Finding the Best Surgeon for Superficial Parotidectomy in India</a>
-                  <a href="#doctors" className="toc-link">› Best Surgeon for Superficial Parotidectomy</a>
+                  
                   <a href="#recovery" className="toc-link">› Recovery After Parotidectomy Surgery in India</a>
                   <a href="#risks" className="toc-link">› Risks and Complications of Parotidectomy Surgery</a>
                   <a href="#faq" className="toc-link">› Frequently Asked Questions About Superficial Parotidectomy</a>
@@ -506,38 +647,7 @@ export default function SuperficialParotidectomyIndia() {
                 </div>
               </section>
 
-              {/* DOCTORS */}
-              <section className="mb-16" id="doctors">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 pb-4 border-b-4 border-pink-500 inline-block">
-                  Best Surgeon for Superficial Parotidectomy
-                </h2>
-
-                <p className="text-gray-700 mb-8">
-                  India is home to highly experienced ENT and head-and-neck surgeons who specialize in parotid gland procedures. These specialists are trained to perform complex surgeries involving delicate structures such as the facial nerve, ensuring safe and effective treatment outcomes for patients.
-                </p>
-
-                {/* Placeholder doctor card - replace with actual doctor details */}
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg p-8 mb-10">
-                  <div className="flex flex-col md:flex-row gap-6 items-start">
-                    <img
-                      src="/doctor/placeholder-doctor.png"
-                      alt="Best Surgeon for Superficial Parotidectomy"
-                      className="w-40 h-40 rounded-xl object-cover shadow-md"
-                    />
-                    <div>
-                      <h3 className="text-2xl font-bold text-pink-600 mb-4">
-                        Senior ENT & Head-Neck Surgeon
-                      </h3>
-                      <p className="text-gray-700">
-                        An experienced ENT and head-and-neck surgeon specializing in parotid gland surgeries, salivary gland disorders, and facial nerve preservation procedures. With advanced training and years of expertise, the surgeon provides precise, patient-focused care for complex parotid conditions.
-                      </p>
-                      <p className="text-gray-700 mt-3">
-                        <strong>Expertise:</strong> Parotid Gland Surgery | Salivary Gland Disorders | Facial Nerve Preservation | Head & Neck Oncology
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
+             
 
               {/* RECOVERY */}
               <section className="mb-16" id="recovery">
