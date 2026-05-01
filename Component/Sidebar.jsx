@@ -55,7 +55,7 @@ export default function Sidebar() {
         width: "100%",
         maxWidth: "420px",
         overflow: "hidden",
-        fontFamily: "'Segoe UI', system-ui, sans-serif",
+        
         boxShadow: "0 20px 60px rgba(13,61,138,0.45), 0 4px 16px rgba(0,0,0,0.15)",
       }}
     >

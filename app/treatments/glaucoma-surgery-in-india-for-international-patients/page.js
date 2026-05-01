@@ -5,6 +5,8 @@ import Link from "next/link";
 import CTA from "../../../Component/cta";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
+import Sidebar from "../../../Component/Sidebar";
+
 
 import { Calendar, Heart, Shield, Hospital, Users, Award, CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
 
@@ -73,22 +75,30 @@ export default function GlaucomaSurgeryIndia() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)'
-        }}></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Glaucoma Surgery in India for International Patients
-            </h1>
-            <p className="text-xl md:text-2xl text-pink-100 max-w-4xl mx-auto leading-relaxed">
-              Glaucoma is a serious eye condition that gradually damages the optic nerve and can lead to permanent vision loss if not treated on time. For many patients around the world, accessing advanced glaucoma care can be expensive or delayed. This is why thousands of international patients now choose Advanced glaucoma surgery in India for safe, modern, and affordable glaucoma surgery.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div
+  className="relative text-white h-[400px] overflow-hidden bg-cover bg-center flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/banner/glaucoma-banner.png')", // ensure correct file name
+  }}
+>
+  {/* Black overlay */}
+  <div className="absolute inset-0 bg-black opacity-80"></div>
+
+  {/* Optional gradient overlay */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage:
+        "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)",
+    }}
+  ></div>
+
+  <div className="relative z-10 text-center px-4">
+    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+      Glaucoma Surgery in India for International Patients
+    </h1>
+  </div>
+</div>
 
       <div className="w-full px-4 lg:px-8 py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
@@ -97,7 +107,7 @@ export default function GlaucomaSurgeryIndia() {
           <div className="lg:col-span-7 order-2 lg:order-1">
 
             {/* Table of Contents */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 relative z-20">
               <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-pink-500">
                 <div className="flex items-center mb-6">
                   <CheckCircle className="text-pink-600 mr-3" size={28} />
@@ -137,6 +147,11 @@ export default function GlaucomaSurgeryIndia() {
 
               {/* Overview Section */}
               <section id="understanding-glaucoma-and-when-surgery-is-needed" className="mb-16">
+<div className="bg-white rounded-xl shadow-lg p-8 mt-8">
+                  <p className="text-xl md:text-2xl text-pink-100 max-w-4xl mx-auto leading-relaxed">
+              Glaucoma is a serious eye condition that gradually damages the optic nerve and can lead to permanent vision loss if not treated on time. For many patients around the world, accessing advanced glaucoma care can be expensive or delayed. This is why thousands of international patients now choose Advanced glaucoma surgery in India for safe, modern, and affordable glaucoma surgery.
+            </p>
+</div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Understanding Glaucoma and When Surgery is Needed
                 </h2>
@@ -201,49 +216,68 @@ export default function GlaucomaSurgeryIndia() {
 
                   {/* Doctors */}
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
-                      <div className="flex-1">
-                        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Suraj Munjal</h4>
-                        <p className="text-pink-700 font-semibold mb-2">Founder &amp; Chief Medical Officer</p>
-                        <p className="text-gray-700 text-sm mb-2">The Sight Avenue Eye Hospital (Delhi &amp; Gurugram)</p>
-                        <p className="text-gray-600 text-sm font-semibold mb-3">Experience: 20+ Years | Specialty: Ophthalmology &amp; Refractive Surgery</p>
-                        <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                          Dr. Suraj Munjal is a senior ophthalmologist with over two decades of experience in advanced eye care. He completed his MBBS and MS (Ophthalmology) and pursued specialized training in cataract and refractive surgeries in India and Germany.
-                        </p>
-                        <div className="bg-pink-50 rounded-lg p-3">
-                          <p className="text-sm font-semibold text-gray-800 mb-1">Areas of Expertise:</p>
-                          <ul className="text-sm text-gray-700 space-y-1">
-                            <li>• LASIK, SMILE &amp; ICL Surgery</li>
-                            <li>• Advanced Cataract Surgery</li>
-                            <li>• Corneal Transplant &amp; Keratoconus Treatment</li>
-                            <li>• Squint &amp; Pediatric Eye Surgery</li>
-                            <li>• Glaucoma Management</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
                     <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-                      <div className="flex-1">
-                        <h4 className="text-xl font-bold text-gray-900 mb-2">Dr. Rahil Chaudhary</h4>
-                        <p className="text-purple-700 font-semibold mb-2">Managing Director &amp; Ophthalmologist</p>
-                        <p className="text-gray-700 text-sm mb-2">Eye7 Eye Hospitals, Lajpat Nagar, New Delhi</p>
-                        <p className="text-gray-600 text-sm font-semibold mb-3">Experience: 15+ years | MBBS, Postgraduate degree in Ophthalmology</p>
-                        <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                          Dr. Rahil Chaudhary is a leading eye surgeon known for his expertise in refractive and cataract surgery, particularly in specs removal procedures like LASIK and Contoura Vision. He holds Guinness and Limca World Records for high-volume and advanced eye surgeries.
-                        </p>
-                        <div className="bg-purple-50 rounded-lg p-3">
-                          <p className="text-sm font-semibold text-gray-800 mb-1">Key Highlights:</p>
-                          <ul className="text-sm text-gray-700 space-y-1">
-                            <li>• Pioneer of advanced laser vision correction techniques in India</li>
-                            <li>• Guinness World Record: 250 Contoura Vision LASIK surgeries in a single day</li>
-                            <li>• Limca World Record: correcting highest spectacle power (-32.5D)</li>
-                            <li>• Recognized internationally with awards in refractive surgery</li>
-                            <li>• Languages: English, Hindi</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+        <div className="flex items-start">
+          
+          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+            <Image
+              src="/doctor/dr-suraj.png"
+              alt="Dr. Suraj Munjal"
+              width={96}
+              height={96}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-gray-900 mb-2">
+              Dr. Suraj Munjal
+            </h4>
+            <p className="text-purple-700 font-semibold mb-2">
+              Founder & Chief Medical Officer
+
+
+            </p>
+            <p className="text-gray-700 text-sm">
+              The Sight Avenue Eye Hospital (Delhi & Gurugram)
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+        <div className="flex items-start">
+          
+          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+            <Image
+              src="/doctor/dr-rahil.png"
+              alt="Dr. Rahil Chaudhary"
+              width={96}
+              height={96}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-gray-900 mb-2">
+             Dr. Rahil Chaudhary
+            </h4>
+            <p className="text-purple-700 font-semibold mb-2">
+              Managing Director & Ophthalmologist
+
+
+            </p>
+           <p class="text-gray-700 text-sm mb-2">Eye7 Eye Hospitals, Lajpat Nagar, New Delhi</p>
+           <p class="text-gray-600 text-sm font-semibold mb-3">Experience: 15+ years | MBBS, Postgraduate degree in Ophthalmology</p>
+          </div>
+
+        </div>
+      </div>
+                   
+
+                    
                   </div>
                 </div>
               </section>
@@ -513,80 +547,6 @@ export default function GlaucomaSurgeryIndia() {
               {/*  DOCTOR */}
                         
 
-<section id="spine-specialist-doctor-india" className="mb-16">
-  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
-    Glaucoma Surgery  Doctor India
-  </h2>
-
-  {/* <p className="bg-white p-6 rounded-xl shadow mb-8">
-    
-  </p> */}
-
-  {/* Doctor Profiles */}
-  <div className="bg-white rounded-xl shadow-lg p-8">
-    <h3 className="text-2xl font-bold text-pink-600 mb-6">Doctor Profile</h3>
-
-    <div className="grid md:grid-cols-2 gap-6 mb-8">
-
-      {/* Doctor 1 */}
-      <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-pink-500">
-        <div className="flex items-start">
-          
-          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-pink-200 rounded-full mr-4 overflow-hidden">
-            <Image
-              src="/doctor/dr-sumit.png"
-              alt="Dr. Sumit Goyal"
-              width={96}
-              height={96}
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          <div className="flex-1">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">
-              Dr. Sumit Goyal
-            </h4>
-            <p className="text-pink-700 font-semibold mb-2">
-              Director & HOD – Neurosurgery | Group Director – Neurointervention
-            </p>
-            
-          </div>
-
-        </div>
-      </div>
-
-      {/* Doctor 2 */}
-      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-        <div className="flex items-start">
-          
-          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
-            <Image
-              src="/doctor/Dr_Pramod_Saini.png"
-              alt="Dr. Pramod Saini"
-              width={96}
-              height={96}
-              className="object-cover w-full h-full"
-            />
-          </div>
-
-          <div className="flex-1">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">
-              Dr. Pramod Saini
-            </h4>
-            <p className="text-purple-700 font-semibold mb-2">
-              Associate Director – Spine Surgery
-            </p>
-            <p className="text-gray-700 text-sm">
-              Spine Surgery | Minimally Invasive Spine Specialist
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
               {/* Medical Tourism Support */}
               <section id="how-medical-tourism-support-helps-international-patients" className="mb-16">
@@ -837,16 +797,14 @@ export default function GlaucomaSurgeryIndia() {
           </div> {/* END LEFT COL */}
 
           {/* RIGHT SIDEBAR - 30% */}
-          <div className="lg:col-span-3 order-1 lg:order-2">
-            <div className="lg:sticky lg:top-24">
-              <div className="bg-gray-100 p-6 rounded-xl shadow-lg">
-                <h3 className="text-xl font-bold mb-4 text-blue-900">
-                  Book Free Consultation
-                </h3>
-                <ContactForm />
-              </div>
-            </div>
-          </div>
+          <div className="lg:col-span-3 order-1">
+            <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+                         
+                        <ContactForm />
+                        <Sidebar />
+                       
+                      </div>
+                    </div>
 
         </div>
       </div>

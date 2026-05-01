@@ -4,6 +4,8 @@ import Link from "next/link";
 import CTA from "../../../Component/cta";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
+import Sidebar from "../../../Component/Sidebar";
+
 import {
   HeartPulse,
   Activity,
@@ -62,18 +64,35 @@ export default function HeartValveSurgery() {
 />
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
       {/* HERO */}
-      <div className="bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Heart Valve Surgery in India
-        </h1>
-        <p className="text-xl max-w-4xl mx-auto text-pink-100">
-          
-        </p>
-      </div>
+      <div
+  className="relative text-white h-[400px] overflow-hidden bg-cover bg-center flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/banner/heart-v-banner.png')", // make sure file name matches
+  }}
+>
+  {/* Black overlay */}
+  <div className="absolute inset-0 bg-black opacity-80"></div>
+
+  {/* Optional gradient overlay */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage:
+        "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)",
+    }}
+  ></div>
+
+  <div className="relative z-10 text-center px-4">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+      Heart Valve Surgery in India
+    </h1>
+  </div>
+</div>
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-10 gap-8 px-4 py-10">
         {/* LEFT CONTENT */}
-        <div className="lg:col-span-7">
+        {/* LEFT CONTENT - 70% */}
+          <div className="lg:col-span-7 order-2 lg:order-2">
 
           {/* TOC */}
           <div className="bg-white rounded-xl shadow-lg p-6 mb-10 border-t-4 border-pink-500">
@@ -724,13 +743,15 @@ export default function HeartValveSurgery() {
         </div>
 
         {/* SIDEBAR */}
-        <div className="lg:col-span-3 ">
-          <div className="sticky top-24 bg-gray-100 rounded-xl shadow">
-             <ContactForm />
-           
-          </div>
-          
-        </div>
+        {/* RIGHT SIDEBAR - 30% */}
+          <div className="lg:col-span-3 order-1">
+            <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+                         
+                        <ContactForm />
+                        <Sidebar />
+                       
+                      </div>
+                    </div>
       </div>
     </div>
     </>

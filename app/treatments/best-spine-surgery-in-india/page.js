@@ -64,12 +64,30 @@ export default function BestSpineSurgeryInIndia() {
       />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
         {/* HERO */}
-        <div className="bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Best Spine Surgery in India
-          </h1>
-          
-        </div>
+        <div
+  className="relative text-white h-[400px] overflow-hidden bg-cover bg-center flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/banner/spin-banner.png')", // check file name: spin vs spine
+  }}
+>
+  {/* Black overlay */}
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+
+  {/* Optional gradient overlay */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage:
+        "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)",
+    }}
+  ></div>
+
+  <div className="relative z-10 text-center px-4">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+      Best Spine Surgery in India
+    </h1>
+  </div>
+</div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-10 gap-8 px-4 py-10">
           {/* LEFT CONTENT */}
@@ -1268,8 +1286,9 @@ export default function BestSpineSurgeryInIndia() {
           {/* SIDEBAR */}
           <div className="lg:col-span-3 order-1">
   <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
-               <Sidebar />
+               
               <ContactForm />
+              <Sidebar />
              
             </div>
           </div>
