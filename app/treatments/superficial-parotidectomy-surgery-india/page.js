@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
-
+import Sidebar from "../../../Component/Sidebar";
 export const metadata = {
   title: "Superficial Parotidectomy Surgery in India | Treatment & Cost",
   description:
@@ -170,7 +170,7 @@ export default function SuperficialParotidectomyIndia() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
             {/* LEFT CONTENT */}
-            <div className="lg:col-span-7 order-2 lg:order-1">
+            <div className="lg:col-span-7 order-2 lg:order-2">
 
               {/* TABLE OF CONTENTS */}
               <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-pink-500 mb-10">
@@ -791,13 +791,14 @@ export default function SuperficialParotidectomyIndia() {
             </div>
 
             {/* RIGHT SIDEBAR */}
-            <div className="lg:col-span-3 order-1 lg:order-2">
-              <div className="lg:sticky lg:top-24">
-                <div className="shadow-lg">
-                  <ContactForm />
-                </div>
-              </div>
-            </div>
+            <div className="lg:col-span-3 order-1">
+              <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+                           
+                          <ContactForm />
+                          <Sidebar />
+                         
+                        </div>
+                      </div>
 
           </div>
         </div>
