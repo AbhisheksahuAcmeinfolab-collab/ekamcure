@@ -93,13 +93,14 @@ export default function Sidebar() {
 
       {/* Nav list */}
       <div
-        style={{
-          maxHeight: open ? "400px" : "0px",
-          overflow: "hidden",
-          transition: "max-height 0.35s cubic-bezier(0.4,0,0.2,1)",
-        }}
-      >
-        <ul className="flex flex-col gap-1 px-4 py-3">
+  style={{
+    maxHeight: open ? "500px" : "0px",
+    overflowY: "auto",
+    overflowX: "hidden",
+    transition: "all 0.35s cubic-bezier(0.4,0,0.2,1)",
+  }}
+  className="custom-sidebar-scroll"
+><ul className="flex flex-col gap-1 px-4 py-3">
           {treatments.map((item, i) => {
             const isActive = pathname === item.href;
             return (
@@ -166,6 +167,26 @@ export default function Sidebar() {
           </p>
         </div>
       </div>
+      <style jsx>{`
+    .custom-sidebar-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .custom-sidebar-scroll::-webkit-scrollbar-track {
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+
+    .custom-sidebar-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.35);
+      border-radius: 10px;
+    }
+
+    .custom-sidebar-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,0.55);
+    }
+  `}</style>
     </div>
+    
   );
 }
