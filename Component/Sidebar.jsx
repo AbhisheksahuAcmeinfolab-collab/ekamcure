@@ -12,6 +12,8 @@ import {
   FaChevronUp,
   FaChevronDown,
   FaMedkit,
+  FaUserMd,
+  FaWheelchair,
 } from "react-icons/fa";
 
 const treatments = [
@@ -40,6 +42,16 @@ const treatments = [
     href: "/treatments/hip-replacement-surgery-in-india",
     icon: <FaWalking className="flex-shrink-0 text-base" />,
   },
+  {
+  label: "Superficial Parotidectomy Surgery in India",
+  href: "/treatments/superficial-parotidectomy-surgery-india",
+  icon: <FaUserMd className="flex-shrink-0 text-base" />,
+},
+{
+  label: "Knee Replacement Surgery in India",
+  href: "/treatments/knee-replacement-surgery-in-india",
+  icon: <FaWheelchair className="flex-shrink-0 text-base" />,
+},
 ];
 
 export default function Sidebar() {
