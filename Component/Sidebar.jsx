@@ -52,6 +52,11 @@ const treatments = [
   href: "/treatments/knee-replacement-surgery-in-india",
   icon: <FaWheelchair className="flex-shrink-0 text-base" />,
 },
+{
+  label: "Best Prostate Cancer Treatment in India",
+  href: "/treatments/best-prostate-cancer-treatment-india",
+  icon: <FaUserMd className="flex-shrink-0 text-base" />,
+},
 ];
 
 export default function Sidebar() {
