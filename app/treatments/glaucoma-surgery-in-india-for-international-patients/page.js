@@ -53,44 +53,104 @@ export default function GlaucomaSurgeryIndia() {
     <>
       {/* ✅ FAQ SCHEMA */}
       <Script
-        id="faq-schema"
+        id="glaucoma-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
+            "@graph": [
               {
-                "@type": "Question",
-                name: "What is glaucoma and why is surgery needed?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Glaucoma is an eye condition that damages the optic nerve due to increased eye pressure. Surgery is recommended when medicines and eye drops are not enough to control this pressure.",
+                "@type": "MedicalWebPage",
+                "@id":
+                  "https://www.ekamcure.com/treatments/glaucoma-surgery-in-india-for-international-patients/#webpage",
+                url: "https://www.ekamcure.com/treatments/glaucoma-surgery-in-india-for-international-patients",
+                name: "Glaucoma Surgery in India | Cost & Best Eye Care Hospitals for Foreign Patients",
+                description:
+                  "Affordable Glaucoma treatment and surgery in India for international patients. Advanced laser treatments and specialized eye care with high success rates.",
+                audience: {
+                  "@type": "Audience",
+                  audienceType: "Patient",
+                },
+                relevantSpecialty: {
+                  "@type": "MedicalSpecialty",
+                  name: "Ophthalmology",
                 },
               },
               {
-                "@type": "Question",
-                name: "How much does glaucoma surgery cost in India?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The cost depends on the type of surgery, hospital, and patient condition. India is known for offering affordable glaucoma treatment.",
+                "@type": "Service",
+                name: "International Eye Care Support Services",
+                serviceType: "Ophthalmology & Medical Tourism",
+                provider: {
+                  "@type": "LocalBusiness",
+                  name: "Ekam Cure",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "LOGIX TECHNOVA, Block B, Sector 132",
+                    addressLocality: "Noida",
+                    addressRegion: "Uttar Pradesh",
+                    postalCode: "201304",
+                    addressCountry: "IN",
+                  },
+                },
+                areaServed: [
+                  { "@type": "Continent", name: "Africa" },
+                  { "@type": "Country", name: "Kenya" },
+                  { "@type": "Country", name: "Ghana" },
+                  { "@type": "Country", name: "Mauritius" },
+                  { "@type": "Country", name: "Fiji" },
+                  { "@type": "Country", name: "Zimbabwe" },
+                  { "@type": "Country", name: "South Africa" },
+                  { "@type": "Country", name: "Bangladesh" },
+                ],
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Glaucoma Surgery Benefits",
+                  itemListElement: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Pre-travel Virtual Eye Consultation",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Assistance with Specialized Eye Care Centers",
+                      },
+                    },
+                  ],
                 },
               },
               {
-                "@type": "Question",
-                name: "Is glaucoma surgery painful?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The surgery is performed under anesthesia, and patients usually experience minimal discomfort.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Which cities in India are best for glaucoma surgery?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Delhi, Chennai, Mumbai, and other major cities have specialized eye hospitals for glaucoma care.",
-                },
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "How much does Glaucoma surgery cost in India for international patients?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "The cost of Glaucoma surgery in India for international patients is very affordable, typically ranging from $800 to $1,500 per eye, depending on the technique like Trabeculectomy or Laser surgery.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Are there specialized eye hospitals in India for foreign patients?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, India has world-class eye care centers like Eye7, Medanta, and specialized wings in Manipal Hospitals that cater specifically to international patients with advanced diagnostics.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What is the recovery time for Glaucoma surgery?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Most patients can fly back within 7-10 days after the surgery. Ekam Cure ensures all follow-up checks are completed before your departure.",
+                    },
+                  },
+                ],
               },
             ],
           }),
@@ -264,137 +324,168 @@ export default function GlaucomaSurgeryIndia() {
 
                 {/* Best Doctor Section */}
                 {/* Best Doctor Section */}
-<section
-  id="best-doctor-for-glaucoma-surgery-in-india"
-  className="mb-16"
->
-  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
-    Best Doctor for Glaucoma Surgery in India
-  </h2>
-  <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
-    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-      Finding the best doctor for glaucoma surgery in India is
-      essential for patients who want safe, precise, and
-      long-term protection of their vision. Leading glaucoma
-      specialists in India are highly experienced in diagnosing
-      complex eye conditions and providing the right Glaucoma
-      surgery treatment in India based on the patient's eye
-      pressure, optic nerve health, and stage of disease.
-    </p>
-    <h3 className="text-2xl font-bold text-pink-600 mb-6">
-      Best Glaucoma Surgeon in India
-    </h3>
-    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-      When it comes to protecting your vision and getting
-      effective glaucoma care, choosing the best glaucoma
-      surgeon in India makes all the difference. India is
-      recognized globally for world-class eye specialists who
-      combine extensive surgical expertise with advanced
-      technology to deliver top-tier glaucoma treatment.
-    </p>
-    <p className="text-lg text-gray-700 leading-relaxed mb-8">
-      The best glaucoma surgeons in India are highly trained in
-      managing all forms of glaucoma, including open angle
-      glaucoma, closed angle glaucoma, and acute angle closure
-      glaucoma. Their deep understanding of glaucoma
-      diagnostics, progression, and treatment enables them to
-      design personalized care plans based on the patient's
-      condition and needs.
-    </p>
+                <section
+                  id="best-doctor-for-glaucoma-surgery-in-india"
+                  className="mb-16"
+                >
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                    Best Doctor for Glaucoma Surgery in India
+                  </h2>
+                  <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
+                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                      Finding the best doctor for glaucoma surgery in India is
+                      essential for patients who want safe, precise, and
+                      long-term protection of their vision. Leading glaucoma
+                      specialists in India are highly experienced in diagnosing
+                      complex eye conditions and providing the right Glaucoma
+                      surgery treatment in India based on the patient's eye
+                      pressure, optic nerve health, and stage of disease.
+                    </p>
+                    <h3 className="text-2xl font-bold text-pink-600 mb-6">
+                      Best Glaucoma Surgeon in India
+                    </h3>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                      When it comes to protecting your vision and getting
+                      effective glaucoma care, choosing the best glaucoma
+                      surgeon in India makes all the difference. India is
+                      recognized globally for world-class eye specialists who
+                      combine extensive surgical expertise with advanced
+                      technology to deliver top-tier glaucoma treatment.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                      The best glaucoma surgeons in India are highly trained in
+                      managing all forms of glaucoma, including open angle
+                      glaucoma, closed angle glaucoma, and acute angle closure
+                      glaucoma. Their deep understanding of glaucoma
+                      diagnostics, progression, and treatment enables them to
+                      design personalized care plans based on the patient's
+                      condition and needs.
+                    </p>
 
-    {/* Doctors */}
-    <div className="grid md:grid-cols-2 gap-6">
-      {/* Dr. Suraj Munjal */}
-      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-        <div className="flex items-start mb-4">
-          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
-            <Image
-              src="/doctor/dr-suraj.png"
-              alt="Dr. Suraj Munjal"
-              width={96}
-              height={96}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="flex-1">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">
-              Dr. Suraj Munjal
-            </h4>
-            <p className="text-purple-700 font-semibold mb-1">
-              Founder & Chief Medical Officer
-            </p>
-            <p className="text-gray-700 text-sm mb-1">
-              The Sight Avenue Eye Hospital (Delhi & Gurugram)
-            </p>
-            <p className="text-gray-600 text-sm font-semibold">
-              Experience: 20+ Years | Specialty: Ophthalmology & Refractive Surgery
-            </p>
-          </div>
-        </div>
-        <p className="text-gray-700 text-sm leading-relaxed mb-4">
-          Dr. Suraj Munjal is a senior ophthalmologist with over two decades of experience in advanced eye care. He completed his MBBS and MS (Ophthalmology) and pursued specialized training in cataract and refractive surgeries in India and Germany.
-        </p>
-        <div>
-          <p className="text-sm font-bold text-purple-700 mb-2">🔹 Areas of Expertise:</p>
-          <ul className="text-sm text-gray-700 space-y-1 list-none pl-2">
-            <li>• LASIK, SMILE & ICL Surgery</li>
-            <li>• Advanced Cataract Surgery</li>
-            <li>• Corneal Transplant & Keratoconus Treatment</li>
-            <li>• Squint & Pediatric Eye Surgery</li>
-            <li>• Glaucoma Management</li>
-          </ul>
-        </div>
-        <p className="text-gray-600 text-sm leading-relaxed mt-4">
-          Dr. Munjal is known for using advanced technology and providing personalized, ethical eye care to both Indian and international patients.
-        </p>
-      </div>
+                    {/* Doctors */}
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {/* Dr. Suraj Munjal */}
+                      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+                        <div className="flex items-start mb-4">
+                          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+                            <Image
+                              src="/doctor/dr-suraj.png"
+                              alt="Dr. Suraj Munjal"
+                              width={96}
+                              height={96}
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-xl font-bold text-gray-900 mb-2">
+                              Dr. Suraj Munjal
+                            </h4>
+                            <p className="text-purple-700 font-semibold mb-1">
+                              Founder & Chief Medical Officer
+                            </p>
+                            <p className="text-gray-700 text-sm mb-1">
+                              The Sight Avenue Eye Hospital (Delhi & Gurugram)
+                            </p>
+                            <p className="text-gray-600 text-sm font-semibold">
+                              Experience: 20+ Years | Specialty: Ophthalmology &
+                              Refractive Surgery
+                            </p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                          Dr. Suraj Munjal is a senior ophthalmologist with over
+                          two decades of experience in advanced eye care. He
+                          completed his MBBS and MS (Ophthalmology) and pursued
+                          specialized training in cataract and refractive
+                          surgeries in India and Germany.
+                        </p>
+                        <div>
+                          <p className="text-sm font-bold text-purple-700 mb-2">
+                            🔹 Areas of Expertise:
+                          </p>
+                          <ul className="text-sm text-gray-700 space-y-1 list-none pl-2">
+                            <li>• LASIK, SMILE & ICL Surgery</li>
+                            <li>• Advanced Cataract Surgery</li>
+                            <li>
+                              • Corneal Transplant & Keratoconus Treatment
+                            </li>
+                            <li>• Squint & Pediatric Eye Surgery</li>
+                            <li>• Glaucoma Management</li>
+                          </ul>
+                        </div>
+                        <p className="text-gray-600 text-sm leading-relaxed mt-4">
+                          Dr. Munjal is known for using advanced technology and
+                          providing personalized, ethical eye care to both
+                          Indian and international patients.
+                        </p>
+                      </div>
 
-      {/* Dr. Rahil Chaudhary */}
-      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
-        <div className="flex items-start mb-4">
-          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
-            <Image
-              src="/doctor/dr-rahil.png"
-              alt="Dr. Rahil Chaudhary"
-              width={96}
-              height={96}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="flex-1">
-            <h4 className="text-xl font-bold text-gray-900 mb-2">
-              Dr. Rahil Chaudhary
-            </h4>
-            <p className="text-purple-700 font-semibold mb-1">
-              Managing Director & Ophthalmologist
-            </p>
-            <p className="text-gray-700 text-sm mb-1">
-              Eye7 Eye Hospitals, Lajpat Nagar, New Delhi
-            </p>
-            <p className="text-gray-600 text-sm font-semibold">
-              Experience: 15+ years | MBBS, Postgraduate degree in Ophthalmology
-            </p>
-          </div>
-        </div>
-        <p className="text-gray-700 text-sm leading-relaxed mb-4">
-          Dr. Rahil Chaudhary is a leading eye surgeon known for his expertise in refractive and cataract surgery, particularly in specs removal procedures like LASIK and Contoura Vision. He holds Guinness and Limca World Records for high-volume and advanced eye surgeries.
-        </p>
-        <div>
-          <p className="text-sm font-bold text-purple-700 mb-2">🔹 Key Highlights:</p>
-          <ul className="text-sm text-gray-700 space-y-1 list-none pl-2">
-            <li>• Pioneer of advanced laser vision correction techniques in India.</li>
-            <li>• Guinness World Record for performing 250 Contoura Vision LASIK surgeries in a single day.</li>
-            <li>• Limca World Record for correcting the highest spectacle power (-32.5D).</li>
-            <li>• Recognized internationally with awards in refractive surgery.</li>
-          </ul>
-        </div>
-        <p className="text-gray-600 text-sm mt-4">
-          <span className="font-semibold">Languages:</span> English, Hindi
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+                      {/* Dr. Rahil Chaudhary */}
+                      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500">
+                        <div className="flex items-start mb-4">
+                          <div className="flex-shrink-0 w-24 h-24 flex items-center justify-center bg-purple-200 rounded-full mr-4 overflow-hidden">
+                            <Image
+                              src="/doctor/dr-rahil.png"
+                              alt="Dr. Rahil Chaudhary"
+                              width={96}
+                              height={96}
+                              className="object-cover w-full h-full"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-xl font-bold text-gray-900 mb-2">
+                              Dr. Rahil Chaudhary
+                            </h4>
+                            <p className="text-purple-700 font-semibold mb-1">
+                              Managing Director & Ophthalmologist
+                            </p>
+                            <p className="text-gray-700 text-sm mb-1">
+                              Eye7 Eye Hospitals, Lajpat Nagar, New Delhi
+                            </p>
+                            <p className="text-gray-600 text-sm font-semibold">
+                              Experience: 15+ years | MBBS, Postgraduate degree
+                              in Ophthalmology
+                            </p>
+                          </div>
+                        </div>
+                        <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                          Dr. Rahil Chaudhary is a leading eye surgeon known for
+                          his expertise in refractive and cataract surgery,
+                          particularly in specs removal procedures like LASIK
+                          and Contoura Vision. He holds Guinness and Limca World
+                          Records for high-volume and advanced eye surgeries.
+                        </p>
+                        <div>
+                          <p className="text-sm font-bold text-purple-700 mb-2">
+                            🔹 Key Highlights:
+                          </p>
+                          <ul className="text-sm text-gray-700 space-y-1 list-none pl-2">
+                            <li>
+                              • Pioneer of advanced laser vision correction
+                              techniques in India.
+                            </li>
+                            <li>
+                              • Guinness World Record for performing 250
+                              Contoura Vision LASIK surgeries in a single day.
+                            </li>
+                            <li>
+                              • Limca World Record for correcting the highest
+                              spectacle power (-32.5D).
+                            </li>
+                            <li>
+                              • Recognized internationally with awards in
+                              refractive surgery.
+                            </li>
+                          </ul>
+                        </div>
+                        <p className="text-gray-600 text-sm mt-4">
+                          <span className="font-semibold">Languages:</span>{" "}
+                          English, Hindi
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
 
                 {/* Types of Surgeries */}
                 <section
@@ -1016,6 +1107,24 @@ export default function GlaucomaSurgeryIndia() {
                   <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
                     <div className="space-y-6">
                       {[
+                        {
+                          question:
+                            "How much does glaucoma surgery cost in India for international patients?",
+                          answer:
+                            "The cost of Glaucoma surgery in India for international patients is very affordable, typically ranging from $800 to $1,500 per eye, depending on the technique like Trabeculectomy or Laser surgery.",
+                        },
+                        {
+                          question:
+                            "Are there specialized eye hospitals in India for foreign patients?",
+                          answer:
+                            "Yes, India has world-class eye care centers like Eye7, Medanta, and specialized wings in Manipal Hospitals that cater specifically to international patients with advanced diagnostics.",
+                        },
+                        {
+                          question:
+                            "What is the recovery time for glaucoma surgery?",
+                          answer:
+                            "Most patients can fly back within 7-10 days after the surgery. Ekam Cure ensures all follow-up checks are completed before your departure.",
+                        },
                         {
                           question:
                             "What is glaucoma and why is surgery needed?",

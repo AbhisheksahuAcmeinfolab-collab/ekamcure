@@ -23,7 +23,7 @@ export default function Footer() {
     {
       icon: MdLocationOn,
       label: "Office Address",
-      text: "Delhi, India",
+      text: "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
       href: "https://maps.google.com?q=Delhi,India",
     },
     {

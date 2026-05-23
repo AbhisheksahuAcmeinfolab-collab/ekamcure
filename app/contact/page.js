@@ -215,8 +215,7 @@ export default function ContactPage() {
       rel="noopener noreferrer"
       className="hover:text-blue-900 transition cursor-pointer"
     >
-      LOGIX TECHNOVA, B-138, Tower B,<br />
-      Sector 132, Noida, Uttar Pradesh 201304
+      LOGIX TECHNOVA, Block B, Sector 132,<b/> Noida, Uttar Pradesh 201304
     </a>
                 </div>
               </div>

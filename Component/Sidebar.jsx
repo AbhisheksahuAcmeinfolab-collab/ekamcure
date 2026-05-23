@@ -57,6 +57,11 @@ const treatments = [
   href: "/treatments/best-prostate-cancer-treatment-india",
   icon: <FaUserMd className="flex-shrink-0 text-base" />,
 },
+{
+  label: "IVF Treatment in India",
+  href: "/ivf-treatments-in-india",
+  icon: <FaUserMd className="flex-shrink-0 text-base" />,
+},
 ];
 
 export default function Sidebar() {
