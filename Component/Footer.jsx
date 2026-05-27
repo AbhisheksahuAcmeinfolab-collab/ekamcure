@@ -12,7 +12,7 @@ import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 export default function Footer() {
   const socials = [
   { icon: FaFacebookF, link: "https://www.facebook.com/EkamCure/" },
-  { icon: FaXTwitter, link: "https://x.com/EkamCare" },
+  { icon: FaXTwitter, link: "https://x.com/ekamcure" },
   { icon: FaInstagram, link: "https://www.instagram.com/ekamcure/" },
   { icon: FaLinkedinIn, link: "https://www.linkedin.com/company/ekam-cure/" },
   { icon: FaYoutube, link: "https://www.youtube.com/@EkamCure" },
@@ -82,7 +82,7 @@ export default function Footer() {
 </Link>
 
             <p>
-              Ekam cure is a healthcare facilitator seeking to make health and
+              Ekamcure is a healthcare facilitator seeking to make health and
               wellness easier for people of international residents, their
               families, and their friends.
             </p>

@@ -291,7 +291,7 @@ export default function ContactPage() {
     </Link>
 {/* X (New) */}
   <a
-    href="https://x.com/EkamCare"
+    href="https://x.com/ekamcure"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="X"
