@@ -348,7 +348,7 @@ export default function ChooseEkam() {
         <div className="absolute inset-0 bg-black/20"></div>
 
         {/* CONTENT WRAPPER */}
-        <div className="relative  w-full grid md:grid-cols-2 items-center gap-10 px-6">
+        <div className="relative  max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
           {/* LEFT TEXT */}
           <div className="space-y-6 text-white z-10">
             <h2 className="text-3xl md:text-5xl font-bold leading-snug drop-shadow-xl">
@@ -444,8 +444,8 @@ export default function ChooseEkam() {
         </div>
       </div>
 
-      <section className="bg-white py-16 px-6 md:px-16">
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <section className="bg-white py-16 px-6 md:px-16 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
           {/* Left Side: YouTube Video Embed */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
@@ -473,18 +473,25 @@ export default function ChooseEkam() {
           {/* Right Side: Text Content */}
           <div className="md:w-1/2 text-justify md:text-left mt-2">
             <h1 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
-             IVF Treatments In India
+             IVF Treatment in India
             </h1>
             <p className="text-gray-600 leading-relaxed mb-4 font-karla text-[17px]">
-             Embarking on the journey to parenthood can be both exciting and overwhelming, but with our acclaimed fertility experts specializing in IVF Treatments in India, you can feel confident that you are in the best hands. Our team of highly experienced IVF specialists combines years of expertise with the latest advancements in fertility care to deliver personalized treatment plans tailored to your unique needs. With a strong track record of success in IVF treatments in India, we take pride in helping couples turn their dreams of parenthood into reality.
+             Starting a family is a deeply emotional journey, and for many couples, fertility challenges can make the path to parenthood stressful and uncertain. With advanced IVF treatment in India, international patients now have access to world-class fertility care, experienced specialists, and affordable reproductive treatments in a supportive and compassionate environment. At Ekam Cure, we help patients connect with trusted fertility experts and modern hospitals that provide personalized infertility solutions tailored to individual medical needs.
+
             </p>
-            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-              We believe that world-class IVF treatments in India should be accessible and affordable for everyone. That is why our fertility programs are designed to provide high-quality care at competitive costs without compromising on medical excellence. Transparency, trust, and compassionate care are at the heart of everything we do, ensuring you feel supported throughout your fertility journey.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-             Understanding that the path to parenthood can be emotionally challenging, our dedicated team offers 24/7 patient support to answer your questions and guide you at every stage of your IVF treatment in India. From your first consultation to the joyful moment of welcoming your baby, our mission is to support you with empathy, advanced medical expertise, and unwavering commitment to helping you achieve successful parenthood through the best IVF treatments in India.
-            </p>
+            
           </div>
+        </div>
+        <div className="pt-5">
+          <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
+              India has become one of the most preferred destinations for fertility care due to its advanced reproductive technologies, highly skilled doctors, and significantly lower treatment costs compared to many Western countries. Whether couples are dealing with male infertility, female infertility, unexplained infertility, recurrent pregnancy loss, or age-related fertility concerns, the country offers comprehensive and evidence-based fertility solutions with modern laboratory support and internationally accepted treatment protocols.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
+             At Ekam Cure, we understand that choosing the right IVF centre in India can feel overwhelming, especially for international patients traveling from countries such as the USA, UK, Africa, Bangladesh, Nepal, and the Middle East. Our goal is to simplify the entire process by offering complete medical tourism assistance, including doctor consultations, hospital coordination, treatment planning, visa support, accommodation assistance, and post-treatment guidance.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
+             Our network of fertility specialists focuses on patient-centered care, transparency, and realistic treatment expectations. We believe every patient deserves compassionate support throughout their fertility journey. From the first consultation to embryo transfer and pregnancy care, our team remains committed to helping couples receive safe, affordable, and advanced infertility care in India.
+            </p>
         </div>
       </section>
 
