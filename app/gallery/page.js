@@ -82,38 +82,71 @@ const images = [
 ];
 
 const videos = [
-  //videos
   {
-    src: "https://www.youtube.com/embed/mtwVy2uLgmw?si=pmOHOqAa_nktu7aA",
-    type: "youtube",
-    title: "Vidya Wati",
-    desc: "Eye",
-  },
-  {
-    src: "https://www.youtube.com/embed/myRz4-oj2V8?si=1nGFpfqP6FzpzJ-V",
-    title: "Christopher Muza",
-    desc: "Urology",
+    src: "https://www.youtube.com/embed/FuX4pQNBNEY",
+    title: "Mr. Kamurayi Mambayo",
+    desc: "Patient Story",
     type: "youtube",
   },
   {
-    src: "https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy",
-    title: "Junior Goredema",
-    desc: "Eye",
+    src: "https://www.youtube.com/embed/76eBbyVs1tk",
+    title: "Shylotte’s",
+    desc: "Patient Story",
     type: "youtube",
   },
   {
-    src: "https://www.youtube.com/embed/FuX4pQNBNEY?si=SSOMvbtjsaojYYNL",
-    title: "Narendra Chand",
-    desc: "Glucoma",
+    src: "https://www.youtube.com/embed/kFUijCYIHAU",
+    title: "Mr. Keshwan Prasad",
+    desc: "Patient Story",
     type: "youtube",
   },
-  //shorts
   {
-    // src: "https://youtube.com/embed/NQRfdU546DQ?si=RM1obEKzmnLXp9i7",
-    src: "https://youtube.com/embed/m4Ocj1jPiCc?si=MFFc0z2ULvdyyNC-",
-    title: "Abdullah AI Mamun",
-    desc: "Health Checkup",
-    type: "shorts",
+    src: "https://www.youtube.com/embed/u--DGk3BKYk",
+    title: "Mr. Aziim Ramzan",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/12FGoVnCtzs",
+    title: "Dennis Goredema",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/2UnjdXoTSNo",
+    title: "Florence",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/-byO8roa5vI",
+    title: "Sunilduth Putty",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/AjRSPGuUq50",
+    title: "Kamal Prakash Nadi",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/22At_3bi8q8",
+    title: "Marie Line",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/n0NJUBqqGtk",
+    title: "Miss Priscilla Danso",
+    desc: "Patient Story",
+    type: "youtube",
+  },
+  {
+    src: "https://www.youtube.com/embed/DPQEiGFSWok",
+    title: "Noor Mohammad",
+    desc: "Patient Story",
+    type: "youtube",
   },
 ];
 
@@ -359,42 +392,52 @@ export default function Gallery() {
 
             {/* Vision Section (Videos) */}
             {active === "vision" && (
-              <>
-                {/* 📱 Mobile Reels View (Visible only on mobile/small screens) */}
-                <div className="md:hidden">
-                  <VideoReels videos={videos} />
-                </div>
+               <>
+    <section className="bg-[#f5f5f5] py-12 px-4">
+      <div className="max-w-7xl mx-auto">
 
-                {/* 🖥️ Desktop Grid View (Visible only on desktop/large screens) */}
-                <div className="hidden md:block px-4 py-10">
-                  <h2 className="text-2xl font-semibold mb-6 text-center">
-                    Video Gallery
-                  </h2>
-                  <div className="columns-1 sm:columns-2 gap-6 space-y-6">
-                    {videos.map((item, i) => (
-                      <div key={i}>
-                        {item.type === "youtube" ? (
-                          <iframe
-                            width="100%"
-                            height="250"
-                            src={item.src}
-                            title={item.title}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="rounded-lg"
-                          />
-                        ) : (
-                          <iframe
-                            src={item.src}
-                            controls
-                            className="w-full rounded-lg aspect-[9/16] max-w-[360px]"
-                          ></iframe>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </>
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-[#0097a7] mb-10">
+          Patient Success Stories From Around The World International Patients Sharing Their Healing Journeys in Indi
+
+        </h2>
+
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          {videos.map((item, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+            >
+              {/* Video */}
+              <div className="relative w-full overflow-hidden">
+                <iframe
+                  src={item.src}
+                  title={item.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-[260px] md:h-[300px]"
+                ></iframe>
+              </div>
+
+              {/* Content */}
+              <div className="p-4 text-center">
+                <h3 className="text-[24px] leading-[36px] font-normal text-[#111]">
+                  {item.title}
+                </h3>
+
+                <p className="text-[20px] leading-[32px] text-[#222] mt-2">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+
+        </div>
+      </div>
+    </section>
+  </>
             )}
           </div>
         </div>

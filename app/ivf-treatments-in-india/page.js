@@ -1,794 +1,795 @@
-"use client";
-import { useRouter } from "next/navigation";
-import ContactForm from "../../Component/ContactForm";
-import { useState } from "react";
-import DOMPurify from "isomorphic-dompurify";
-// 🚨 IMPORTANT: You must import the Next.js Image component
-import Image from "next/image";
+import Script from "next/script";
+import React from "react";
 import Link from "next/link";
-import icon30 from "../../assets/icon/30.jpg";
-import icon29 from "../../assets/icon/29.jpg";
-import icon28 from "../../assets/icon/28.jpg";
-import icon27 from "../../assets/icon/27.jpg";
-import icon26 from "../../assets/icon/26.jpg";
-import icon25 from "../../assets/icon/25.jpg";
-import icon24 from "../../assets/icon/24.jpg";
-import icon23 from "../../assets/icon/23.jpg";
-import icon22 from "../../assets/icon/22.jpg";
-import icon21 from "../../assets/icon/21.jpg";
-import icon20 from "../../assets/icon/20.jpg";
-import icon19 from "../../assets/icon/19.jpg";
-import icon18 from "../../assets/icon/18.jpg";
-import icon17 from "../../assets/icon/17.jpg";
-import icon16 from "../../assets/icon/16.jpg";
-import icon15 from "../../assets/icon/15.jpg";
-import icon14 from "../../assets/icon/14.jpg";
-import icon13 from "../../assets/icon/13.jpg";
-import icon12 from "../../assets/icon/12.jpg";
-import icon11 from "../../assets/icon/11.jpg";
-import icon10 from "../../assets/icon/10.jpg";
-import icon9 from "../../assets/icon/9.jpg";
-import icon8 from "../../assets/icon/8.jpg";
-import icon7 from "../../assets/icon/7.jpg";
-import icon6 from "../../assets/icon/6.png";
-import icon5 from "../../assets/icon/5.jpg";
-import icon4 from "../../assets/icon/4.jpg";
-import icon3 from "../../assets/icon/3.jpg";
-import icon2 from "../../assets/icon/2.jpg";
-import icon1 from "../../assets/icon/1.jpg";
+import CTA from "../../Component/cta";
+import Image from "next/image";
+import ContactForm from "../../Component/ContactForm";
+import Sidebar from "../../Component/Sidebar";
 
-// import DoctorImage from "../../assets/doctors/Dr. Shobha Gupta.webp";
+import {
+  Activity,
+  Brain,
+  Stethoscope,
+  Timer,
+  ShieldCheck,
+  CheckCircle,
+  Zap,
+} from "lucide-react";
 
-// Happy Smile
-const images = [
-  icon30,
-  icon29,
-  icon28,
-  icon27,
-  icon26,
-  icon25,
-  icon24,
-  icon23,
-  icon22,
-  icon21,
-  icon20,
-  icon19,
-  icon18,
-  icon17,
-  icon16,
-  icon15,
-  icon14,
-  icon13,
-  icon12,
-  icon11,
-  icon10,
-  icon9,
-  icon8,
-  icon7,
-  icon6,
-  icon5,
-  icon4,
-  icon3,
-  icon2,
-  icon1,
-];
-
-// 1. ✅ DEFINE DOCTOR IMAGE VARIABLES HERE (for use in the profile section)
-// Doctor section
-const doctorName = "Dr. Shobha Gupta";
-const specialization = "IVF Specialist";
-const experience =
-  "Over 16+ years of experience in the field of reproductive medicine infertility specialist in Delhi";
-const profileTextPart1 =
-  "Dr Shobha Gupta is one of the **IVF specialist doctor in Delhi** who has got the reputation of contributing best of the services in the field of IVF specialist doctor in Delhi and infertility treatment in Delhi. No doubt she is among the most sought infertility doctor in Delhi and belongs to an eminent group of IVF specialist in India who are widely known for their clinical work and performance in the area of IVF treatment procedure as a stand and deliver IVF doctor in India and IVF doctor in Delhi that fulfills the dreams of many childless couples who are striving hard to conceive through infertility doctor in Delhi. Therefore she is an adorable IVF doctor in Delhi among the patients.";
-const profileTextPart2 =
-  "Dr Shobha Gupta is considered a prestigious IVF specialist doctor in Delhi and leading infertility doctor in Delhi. She has concluded her **MBBS from the well-known Lady Hardinge Medical College** and **PG from equally notable Maulana Azad Medical College (MAMC), New Delhi (India)**. Dr Shobha Gupta, an IVF Doctor in Delhi, is the Director of **Mother's Lap IVF centre**, her own self governing test tube baby centre in Delhi. IVF Specialist in India Providing Excellence in Treatment";
-const profileTextPart3 =
-  "She is a qualified and impeccable IVF specialist in Delhi who has gain massive popularity for rendering her service to this profession and as an IVF doctor in India for more than 20 years which is quite a remarkable achievement for any IVF specialist in India. Being an IVF doctor in Delhi she has dedicated herself to the impassionate pursuit in the sphere of infertility or childlessness and has received infertility training from the exalted **Justus Liebig University in Germany**. Her team comprises of the best IVF doctor in Delhi and IVF specialist in India.";
-
-// 2. ✅ MOVE FEATURE BOX COMPONENT OUTSIDE
-function FeatureBox({ title, description, iconSvg }) {
-  const safeSvg = DOMPurify.sanitize(iconSvg);
-  const safeTitle = DOMPurify.sanitize(title);
-  const safeDescription = DOMPurify.sanitize(description);
-
-  return (
-    <div className="icon-box-component p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center border border-gray-200 bg-white">
-      <div className="elementor-icon-box-icon mb-4">
-        <span
-          className="elementor-icon inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full p-3"
-          dangerouslySetInnerHTML={{ __html: safeSvg }}
-        ></span>
-      </div>
-      <div className="elementor-icon-box-content mt-2">
-        <h3 className="elementor-icon-box-title text-xl font-semibold text-gray-800 mb-2">
-          <span>{safeTitle}</span>
-        </h3>
-        <p
-          className="elementor-icon-box-description text-base text-gray-600 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: safeDescription }}
-        />
-      </div>
-    </div>
-  );
-}
-
-const tabs = [
-  "Infertility Treatments",
-  "Infertility Testing",
-  "Advanced Treatments",
-  "Fertility Preservations",
-  "Donor Program",
-];
-
-// -------------------------
-// DATA FOR EACH TAB
-// -------------------------
-const tabData = {
-  "Infertility Treatments": [
-    {
-      title: "IVF - Invitro Fertilization",
-      img: "/img/Invitro.webp",
-      desc: "IVF, where the best egg and sperm are fertilized with advanced techniques. The ovaries are stimulated with safe medications to produce more eggs and combine with healthy sperm to create embryos.",
-    },
-    {
-      title: "ICSI - Intra Cytoplasmic Sperm Injection",
-      img: "/img/Cytoplasmic.webp",
-      desc: "ICSI, an IVF version where a healthy sperm is injected into an egg. A healthy sperm is selected with sperm and injected directly into an egg to form a healthy embryo which is transferred into the uterus.",
-    },
-    {
-      title: "OITI - Ovulation Induction with Timed Intercourse",
-      img: "/img/Ovulation.webp",
-      desc: "OITI is a simple fertility treatment that involves safe medications to trigger ovaries for increased egg production and couple is advised to have intercourse during the best time of ovulation to increase the chances of pregnancy.",
-    },
-    {
-      title: "IUI – Intrauterine Insemination",
-      img: "/img/Intrauterine.webp",
-      desc: "IUI is an affordable fertility treatment that involves safe medications to increase egg production and sperm sorting techniques to select healthy sperm, followed by transfer of healthy sperm into uterus during ovulation.",
-    },
-    {
-      title: "IVM - Invitro Maturation of Oocytes",
-      img: "/img/Invitro Maturation.webp",
-      desc: "IVM, a specialised fertility treatment for women with PCOS. Immature eggs are collected from the ovaries, are matured in the lab and fertilized with healthy sperm to form an embryo.",
-    },
-    {
-      title: "Laparoscopy",
-      img: "/img/Laparoscopy.webp",
-      desc: "Laparoscopy is a minimally invasive surgical procedure to check for fallopian tube blockages and for fibroids in the uterus. It is also used in treating adhesions, polyps or fibroids without the need for surgery.",
-    },
-    {
-      title: "Hysteroscopy",
-      img: "/img/Hysteroscopy.webp",
-      desc: "Hysteroscopy is a simple diagnostic procedure to view the cervix and the uterus for any abnormalities. This procedure is also used to remove a polyp, fibroid, and adhesions or for biopsy.",
-    },
-    {
-      title: "Laser Assisted Hatching (LAH)",
-      img: "/img/Hatching.webp",
-      desc: "Laser Assisted Hatching is an advanced technique that ensures implantation of the embryo to the uterine wall using,before the embryo transfer. This procedure lowers the risk of miscarriage and IVF failure.",
-    },
-    {
-      title: "Microfluidics",
-      img: "/img/Microfluidics.webp",
-      desc: "Microfluidic Sperm Sorting is a recent advancement, where a processed semen sample is loaded on a chip with micro channels to select best quality sperm with good DNA and increase the success rate.",
-    },
-  ],
-
-  "Infertility Testing": [
-    {
-      title: "Infertility Workup",
-      img: "/img/Infertility.webp",
-      desc: "Infertility workup is a thorough analysis that helps in understanding the possible reasons behind a couple’s fertility challenges. It plays an important role in designing a customised treatment plan for the couple.",
-    },
-    {
-      title: "Semen Analysis",
-      img: "/img/Semen_Analysis.webp",
-      desc: "Semen analysis, a common fertility test that helps in detailed assessment of sperm health. It involves assessing semen sample for factors such as sperm count, motility, appearance and other parameters.",
-    },
-    {
-      title: "AMH Testing",
-      img: "/img/AMH_Testing.webp",
-      desc: "Egg reserve in a woman is crucial factor in estimating the fertility potential. AMH testing, a simple blood test is used to estimate Anti-Mullerian Hormone levels in the blood which indicates a woman’s egg count.",
-    },
-    {
-      title: "Scanning",
-      img: "/img/Scanning.webp",
-      desc: "Presence of any structural abnormalities in the ovaries, fallopian tubes, and uterus cause infertility. These can be detected through an abdominal ultrasound scan which creates images.",
-    },
-  ],
-
-  "Advanced Treatments": [
-    {
-      title: "DFI Testing",
-      img: "/img/DFI.webp",
-      desc: "DNA Fragmentation Index is the amount of damaged DNA in the sperm. High DFI increases the risk of miscarriage and babies born with genetic disorders. In DFI testing, a semen sample is processed and tested for the percentage of damaged DNA in sperm.",
-    },
-    {
-      title: "Micro TESE",
-      img: "/img/MicroTese.webp",
-      desc: "Microscopic Testicular Sperm Extraction (MicroTESE) is a minimally-invasive surgical sperm extraction method for men with low sperm count or zero sperm count (Azoospermia). A powerful microscope is used to locate and collect sperm directly from the testes to use for IVF.",
-    },
-    {
-      title: "PGT-A (Preimplantation Genetic Testing – Aneuploidy)",
-      img: "/img/PGT-A.webp",
-      desc: "In IVF, before embryo transfer, the embryos are tested through Preimplantation Genetic testing,for any genetic or chromosomal defects and only the healthy embryos are selected to avoid the risk of miscarriage or a baby with genetic disorders.",
-    },
-    {
-      title: "CAPA-IVM",
-      img: "/img/CAPA-IVM.webp",
-      desc: "CAPA-IVM is a Drug-Free IVF treatment, only available at Oasis Fertility in India. CAPA-IVM has less number of injections, side effects, and no risk of ovarian hyper-stimulation syndrome (OHSS). It is the best option for women with PCOS, cancer, and Resistant Ovary Syndrome.",
-    },
-  ],
-
-  "Fertility Preservations": [
-    {
-      title: "Egg and Sperm Freezing",
-      img: "/img/EggSpermFreezing.webp",
-      desc: "Fertility preservation helps in preserving the fertility potential for people with medical conditions like cancer, or couples who are not ready to have a baby by freezing eggs, sperm, or embryos at very low temperatures.",
-    },
-    {
-      title: "Freezing/Vitrification",
-      img: "/img/Freezing_Vitrification.webp",
-      desc: "Vitrification is a specialised version of fertility preservation which takes few minutes to freeze and offers better post-thaw survival and success rates. Eggs, sperm, and embryos are quickly frozen in a liquid, into a glass-like structure.",
-    },
-  ],
-
-  "Donor Program": [
-    {
-      title: "Donor Sperm",
-      img: "/img/Donor_Sperm.webp",
-      desc: "Donor sperm offers a best option for couples struggling with infertility due to low sperm count or any other structural abnormalities in the sperm. In such cases, good quality donor sperm are used for egg fertilization.",
-    },
-    {
-      title: "Donor Egg",
-      img: "/img/Donor_Egg.webp",
-      desc: "In women, struggling with low egg quality or poor ovarian reserve due to age or hormonal issues, using donor eggs is a good alternative. Healthy donor eggs are collected from external egg donors and used.",
-    },
-  ],
+export const metadata = {
+  title:
+    "IVF Treatment in India | Best IVF Centre & Infertility Treatment India",
+  description:
+    "Get advanced IVF treatment in India at leading fertility centers. Connect with experienced specialists for personalized infertility treatment, high success rates, and affordable care at the best IVF clinic India.",
 };
 
-// 3. ✅ DEFINE FEATURES DATA OUTSIDE (where it was already, good!)
-const featuresData = [
-  {
-    title: "Clinical Excellence",
-    description: "Science and evidence-based fertility care...",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hospital"> <line x1="12" y1="18" x2="12" y2="10"></line> <line x1="8" y1="14" x2="16" y2="14"></line> <rect x="3" y="2" width="18" height="20" rx="2" ry="2"></rect> </svg>`,
-  },
-  // ... all other featureData items ...
-  {
-    title: "Personalized Treatments",
-    description:
-      "Treatments that are tailored to suit your specific needs and ensure the best outcomes.",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check"> <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path> <circle cx="8.5" cy="7" r="4"></circle> <polyline points="17 11 19 13 23 9"></polyline> </svg>`,
-  },
-  {
-    title: "Comprehensive Care",
-    description:
-      "Patient-centric nutritional, psychological, and holistic support in every step of the fertility journey.",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"> <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path> </svg>`,
-  },
-  {
-    title: "Transparent Pricing",
-    description:
-      "No hidden costs. Clear pricing on every test, scan, and procedure.",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"> <path d="M20.59 13.41l-7.15 7.15a.5.5 0 0 1-.71 0L2.24 10.71a.5.5 0 0 1 0-.71L9.95 2.24a.5.5 0 0 1 .71 0l7.15 7.15a.5.5 0 0 1 0 .71l-7.15 7.15a.5.5 0 0 1-.71 0z"></path> <circle cx="7" cy="7" r="2"></circle> </svg>`,
-  },
-  {
-    title: "Trusted Experts",
-    description:
-      "Ekam cure delivers personalized, affordable, and safe medical tourism services with complete support and clear communication.",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"> <circle cx="12" cy="8" r="7"></circle> <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.89"></polyline> </svg>`,
-  },
-  {
-    title: "High Success Rates",
-    description:
-      "Ekam cure is proud to deliver consistently high success rates through expert care, advanced techniques, and personalized solutions.",
-    iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"> <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline> <polyline points="17 6 23 6 23 12"></polyline> </svg>`,
-  },
-];
-
-// 4. ✅ MAIN EXPORT COMPONENT (now clean)
-export default function ChooseEkam() {
-    const router = useRouter();   // ✅ YAHAN
-
-  const [activeTab, setActiveTab] = useState("Infertility Treatments");
-
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    try {
-      const res = await fetch("/api/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-
-      if (data.success) {
-        setFormData({ name: "", phone: "", email: "", message: "" });
-        router.push("/contact/thank-you");
-
-      } else {
-        alert(data.message || "Failed to send");
-      }
-    } catch (err) {
-      alert("Error sending form");
-    }
-
-    setLoading(false);
-  };
-
+export default function IVFTreatmentInIndia() {
   return (
     <>
-      <section className="relative w-full h-[50%] flex items-center">
-        {/* FULL SCREEN BACKGROUND IMAGE */}
-        <Image
-          src="/img/ivf.png"
-          alt="Mother with baby"
-          fill
-          priority
-          className="object-cover"
-        />
+      <Script
+        id="ivf-treatment-faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Is IVF treatment in India safe for international patients?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, many fertility hospitals and IVF centers in India follow internationally accepted medical standards and use advanced reproductive technologies for patient care.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the success rate of IVF treatment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "IVF success rates vary depending on factors such as age, fertility condition, embryo quality, and overall reproductive health. Fertility specialists can provide individualized guidance after evaluation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long should international patients stay in India for IVF treatment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The duration depends on the treatment plan, but many IVF procedures may require patients to stay for a few weeks for monitoring, egg retrieval, embryo transfer, and recovery.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
+        {/* HERO */}
+        <div
+          className="relative text-white h-[400px] overflow-hidden bg-cover bg-center flex items-center justify-center"
+          style={{
+            backgroundImage: "url('/banner/ivf-banner.png')",
+          }}
+        >
+          {/* Black overlay */}
+          <div className="absolute inset-0 bg-black opacity-50"></div>
 
-        {/* OVERLAY FOR DARKNESS (OPTIONAL) */}
-        <div className="absolute inset-0 bg-black/20"></div>
+          {/* Optional gradient overlay */}
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)",
+            }}
+          ></div>
 
-        {/* CONTENT WRAPPER */}
-        <div className="relative  max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
-          {/* LEFT TEXT */}
-          <div className="space-y-6 text-white z-10">
-            <h2 className="text-3xl md:text-5xl font-bold leading-snug drop-shadow-xl">
-              Helping You Build the Family <br /> You’ve Always Dreamed.
-            </h2>
-
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#0A49A1] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#083a7d] transition"
-            >
-              Book an Appointment →
-            </Link>
-          </div>
-
-          {/* RIGHT APPOINTMENT FORM */}
-          {/* Desktop view */}
-          <div className="hidden md:flex ml-auto">
-            <div
-              id="appointment-form"
-              className="relative z-10 
-      p-6 rounded-lg w-full md:w-[360px] text-black "
-            >
-              
- <ContactForm />
-            </div>
+          <div className="relative z-10 text-center px-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              IVF Treatment in India
+            </h1>
           </div>
         </div>
-      </section>
 
-      {/* mobile view */}
-      <div className="flex md:hidden mt-2">
-        <div
-          id="appointment-form"
-          className=" relative z-10 bg-white/90 backdrop-blur-md
-      p-6 rounded-lg shadow-xl w-full md:w-[360px] text-black"
-        >
-          <h3 className="text-lg font-semibold mb-4">
-            Free consultation with Top IVF Specialist in India.
-          </h3>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-10 gap-8 px-4 py-10">
+          {/* LEFT CONTENT */}
+          <div className="lg:col-span-7 order-2">
 
-<form onSubmit={handleSubmit} className="space-y-3">
+            {/* TOC */}
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10 border-t-4 border-pink-500">
+              <h2 className="font-bold text-xl mb-4 flex items-center">
+                <CheckCircle className="mr-2 text-pink-600" />
+                In this page
+              </h2>
+              <div className="grid md:grid-cols-2 gap-3 text-sm">
+                {[
+                  "Understanding Infertility and Fertility Treatments",
+                  "What Is Infertility",
+                  "Common Causes of Infertility",
+                  "When Should Patients Seek Fertility Treatment",
+                  "Why Choose India for IVF and Fertility Treatments",
+                  "Advanced Medical Infrastructure",
+                  "Experienced Fertility Specialists",
+                  "IVF Treatment Cost in India",
+                  "Shorter Waiting Times",
+                  "Fertility and IVF Treatments Available in India",
+                  "IVF – In Vitro Fertilization",
+                  "ICSI – Intracytoplasmic Sperm Injection",
+                  "IUI – Intrauterine Insemination",
+                  "Ovulation Induction with Timed Intercourse",
+                  "IVM – In Vitro Maturation",
+                  "Laser Assisted Hatching",
+                  "Fertility Preservation",
+                  "Advanced Technologies Used in IVF Treatment",
+                  "Treatment Process for International Patients",
+                  "Choosing the Best IVF Clinic India",
+                  "Cost of IVF Treatment in India",
+                  "Why Choose Ekam Cure for Infertility Treatment India",
+                  "Frequently Asked Questions",
+                ].map((item, i) => (
+                  <a
+                    key={i}
+                    href={`#${item.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                    className="hover:text-pink-600"
+                  >
+                    › {item}
+                  </a>
+                ))}
+              </div>
+            </div>
 
-           <input
-  type="text"
-  name="name"
-  placeholder="Name"
-  value={formData.name}
-  onChange={handleChange}
-  required
-  className="w-full px-3 py-2 rounded-md border"
-/>
+            {/* INTRO PARAGRAPH */}
+            <div className="bg-white p-6 rounded-xl shadow mb-10">
+              <p className="text-gray-700">
+                Starting a family is a deeply emotional journey, and for many couples, fertility challenges can make the path to parenthood stressful and uncertain. With advanced IVF treatment in India, international patients now have access to world-class fertility care, experienced specialists, and affordable reproductive treatments in a supportive and compassionate environment. At Ekam Cure, we help patients connect with trusted fertility experts and modern hospitals that provide personalized infertility solutions tailored to individual medical needs.
+              </p>
+              <p className="text-gray-700 mt-4">
+                India has become one of the most preferred destinations for fertility care due to its advanced reproductive technologies, highly skilled doctors, and significantly lower treatment costs compared to many Western countries. Whether couples are dealing with male infertility, female infertility, unexplained infertility, recurrent pregnancy loss, or age-related fertility concerns, the country offers comprehensive and evidence-based fertility solutions with modern laboratory support and internationally accepted treatment protocols.
+              </p>
+              <p className="text-gray-700 mt-4">
+                At Ekam Cure, we understand that choosing the right IVF centre in India can feel overwhelming, especially for international patients traveling from countries such as the USA, UK, Africa, Bangladesh, Nepal, and the Middle East. Our goal is to simplify the entire process by offering complete medical tourism assistance, including doctor consultations, hospital coordination, treatment planning, visa support, accommodation assistance, and post-treatment guidance.
+              </p>
+              <p className="text-gray-700 mt-4">
+               Our network of fertility specialists focuses on patient-centered care, transparency, and realistic treatment expectations. We believe every patient deserves compassionate support throughout their fertility journey. From the first consultation to embryo transfer and pregnancy care, our team remains committed to helping couples receive safe, affordable, and advanced infertility care in India.
+              </p>
+            </div>
 
-<input
-  type="email"
-  name="email"
-  placeholder="Email"
-  value={formData.email}
-  onChange={handleChange}
-  required
-  className="w-full px-3 py-2 rounded-md border"
-/>
+            {/* UNDERSTANDING INFERTILITY */}
+            <section id="understanding-infertility-and-fertility-treatments" className="mb-16">
+              <h2 className="text-3xl font-bold border-b-4 border-pink-500 inline-block pb-2 mb-6">
+                Understanding Infertility and Fertility Treatments
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                Modern reproductive medicine now offers several effective treatment options that improve the chances of conception. Understanding infertility helps couples make informed decisions about the right treatment path.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div id="what-is-infertility" className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold text-lg mb-3">What Is Infertility?</h3>
+                  <p className="text-gray-700 text-sm">Infertility is a medical condition where a couple is unable to achieve pregnancy naturally after trying for a significant period. Both men and women can contribute to fertility challenges, and in many cases, infertility may involve multiple underlying factors. Modern reproductive medicine now offers several effective treatment options that improve the chances of conception.</p>
+                </div>
+                <div id="common-causes-of-infertility" className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold text-lg mb-3">Common Causes of Infertility</h3>
+                  <p className="text-gray-700 text-sm mb-3">Infertility can occur due to a wide range of medical conditions and lifestyle factors. Common causes in women include ovulation disorders, PCOS, blocked fallopian tubes, endometriosis, hormonal imbalance, fibroids, and age-related fertility decline. Male infertility may result from low sperm count, poor sperm motility, abnormal sperm structure, infections, or hormonal issues.</p>
+                 
+                  <p className="text-sm text-gray-700 mt-3">Stress, obesity, smoking, alcohol consumption, and certain medical conditions may also affect fertility in both men and women. Advanced diagnostic testing helps fertility specialists identify the root cause and recommend the most suitable treatment approach.</p>
+                </div>
+                <div id="when-should-patients-seek-fertility-treatment" className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold text-lg mb-3">When Should Patients Seek Fertility Treatment?</h3>
+                  <p className="text-gray-700 text-sm">Couples are generally advised to consult a fertility specialist if pregnancy does not occur after one year of regular unprotected intercourse. Women above the age of 35 may benefit from earlier evaluation after six months of trying to conceive. Patients with irregular periods, recurrent miscarriages, or known reproductive disorders should also seek timely medical advice.</p>
+                  <p className="text-gray-700 text-sm">Early diagnosis and expert-guided infertility treatment India programs can significantly improve the chances of successful conception and healthy pregnancy outcomes.</p>
+                </div>
+              </div>
+            </section>
 
-<input
-  type="text"
-  name="phone"
-  placeholder="Phone No."
-  value={formData.phone}
-  onChange={handleChange}
-  required
-  className="w-full px-3 py-2 rounded-md border"
-/>
+            {/* WHY CHOOSE INDIA */}
+            <section id="why-choose-india-for-ivf-and-fertility-treatments" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Why Choose India for IVF and Fertility Treatments?
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <Card
+                  icon={<Activity />}
+                  title="Advanced Medical Infrastructure"
+                  text="India is home to many modern fertility hospitals and reproductive medicine centers equipped with advanced embryology laboratories, high-end imaging technologies, and minimally invasive surgical facilities. Many fertility centers follow internationally accepted clinical protocols and maintain high standards of patient care.
+The availability of advanced technologies such as ICSI, blastocyst culture, embryo freezing, laser-assisted hatching, genetic screening, and fertility preservation has made India a trusted destination for fertility care.
+"
+                />
+                <Card
+                  icon={<Brain />}
+                  title="Experienced Fertility Specialists"
+                  text="One of the biggest advantages of choosing an IVF centre in India is access to highly experienced fertility doctors, embryologists, and reproductive specialists. Indian fertility experts handle a large number of complex infertility cases and are experienced in treating both domestic and international patients.
+Patients receive individualized treatment plans based on age, fertility history, hormonal evaluation, and overall reproductive health. The focus remains on safe, ethical, and evidence-based fertility treatment.
+"
+                />
+               
+              </div>
+            </section>
 
-<textarea
-  name="message"
-  rows={5}
-  maxLength={180}
-  placeholder="Message"
-  value={formData.message}
-  onChange={handleChange}
-  required
-  className="w-full px-3 py-2 rounded-md border"
-/>
+            {/* IVF COST */}
+            <section id="ivf-treatment-cost-in-india" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                IVF Treatment Cost Comparison by Country (Approximate)
+              </h2>
+             
+              <p className="text-sm text-gray-600 mb-4">Approximate average IVF cost per cycle (USD):</p>
+              <div className="bg-white rounded-xl shadow overflow-hidden mb-6">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-[#053161] to-[#6796cc] text-white">
+                      <th className="p-4 text-left font-bold">Country</th>
+                      <th className="p-4 text-left font-bold">Average IVF Cost Per Cycle (USD)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["India", "USD 2,500 – 5,500"],
+                      ["United States (USA)", "USD 12,000 – 20,000"],
+                      ["United Kingdom", "USD 6,500 – 12,000"],
+                      ["Australia", "USD 7,000 – 11,000"],
+                      ["Canada", "USD 8,000 – 15,000"],
+                    ].map(([country, cost], i) => (
+                      <tr key={i} className={i % 2 === 0 ? "bg-pink-50" : "bg-white"}>
+                        <td className="p-4 font-medium">{country}</td>
+                        <td className="p-4 text-pink-700 font-semibold">{cost}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-gray-500 italic mb-6">These figures are approximate and may vary by clinic and individual case.</p>
 
-<button
-  type="submit"
-  disabled={loading}
-  className="bg-[#F59E0B] text-white px-5 py-2 rounded-md w-full"
->
-  {loading ? "Sending..." : "Submit"}
-</button>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold mb-2">Affordable  IVF Treatment Cost in India</h3>
+                  <p className="text-sm text-gray-700 mb-2">Compared to countries like the USA, UK, Canada, and Australia, the cost of IVF Treatment Cost in India is significantly lower while maintaining high medical standards. This affordability allows international patients to access advanced fertility procedures without compromising on quality care.</p>
+                  <p className="text-sm text-gray-700 mb-2">Lower operational costs, affordable healthcare infrastructure, and competitive pricing make India one of the most cost-effective destinations for fertility treatment and medical tourism.</p>
+                 
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold mb-2">Shorter Waiting Times</h3>
+                  <p className="text-sm text-gray-700">Many international patients choose India because fertility treatments can begin much faster compared to long waiting periods in several countries. Quick access to consultations, diagnostic testing, and fertility procedures helps couples avoid unnecessary delays in their treatment journey.</p>
+                  
+                </div>
+              </div>
+            </section>
 
-          </form>
+            {/* TREATMENTS AVAILABLE */}
+            <section id="fertility-and-ivf-treatments-available-in-india" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Fertility and IVF Treatments Available in India
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                Spine surgery in India includes a wide range of procedures. Similarly, India offers comprehensive fertility treatments designed to address diverse infertility causes. The type of treatment depends on:
+              </p>
+              <div className="bg-white p-6 rounded-xl shadow mb-6">
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Type and cause of infertility (male, female, unexplained)</li>
+                  <li>• Patient's age and reproductive history</li>
+                  <li>• Hormonal evaluation results</li>
+                  <li>• Previous fertility treatment history</li>
+                  <li>• Overall health of both partners</li>
+                </ul>
+                <p className="text-gray-700 mt-4">Modern fertility care in India includes IVF, ICSI, IUI, fertility preservation, donor programs, genetic testing, and advanced minimally invasive procedures.</p>
+              </div>
+            </section>
+
+            {/* IVF */}
+            <section id="ivf-in-vitro-fertilization" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                IVF – In Vitro Fertilization
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                IVF is one of the most commonly recommended fertility procedures for couples struggling with infertility. During IVF treatment, eggs are collected from the ovaries and fertilized with sperm in a laboratory. The resulting embryos are carefully monitored before being transferred into the uterus.
+              </p>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                Modern best IVF clinic India facilities use advanced embryo culture techniques and laboratory monitoring systems to improve fertilization and implantation outcomes.
+
+              </p>
+             
+            </section>
+
+            {/* ICSI */}
+            <section id="icsi-intracytoplasmic-sperm-injection" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                ICSI – Intracytoplasmic Sperm Injection
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                ICSI is an advanced version of IVF where a single healthy sperm is injected directly into the egg to support fertilization. This procedure is often recommended for male infertility conditions such as low sperm count or poor sperm motility.
+                <br>
+                </br>
+                ICSI has become a highly effective fertility procedure and is widely available at leading fertility centers across India.
+
+              </p>
+              
+            </section>
+
+            {/* IUI */}
+            <section id="iui-intrauterine-insemination" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                IUI – Intrauterine Insemination
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-4">
+                IUI is a less invasive fertility procedure that involves placing specially prepared sperm directly into the uterus during ovulation. It is commonly recommended for mild male infertility, unexplained infertility, or ovulation-related issues.<br></br>
+IUI is often considered an affordable first-step fertility treatment before moving toward IVF procedures.
+
+              </p>
+              
+            </section>
+
+            {/* OTHER TREATMENTS */}
+            <section id="ovulation-induction-with-timed-intercourse" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Ovulation Induction with Timed Intercourse
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                This fertility treatment involves medications that stimulate ovulation and improve egg production. Couples are advised regarding the best timing for intercourse to maximize pregnancy chances naturally.<br></br>
+This treatment is commonly used for women with irregular ovulation or hormonal imbalance.
+
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <div id="ivm-in-vitro-maturation" className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold mb-2">IVM – In Vitro Maturation</h3>
+                  <p className="text-sm text-gray-700">IVM is a specialized fertility treatment where immature eggs are collected from the ovaries and matured in the laboratory before fertilization. This procedure may be suitable for women with PCOS or those at risk of ovarian hyperstimulation syndrome.</p>
+                </div>
+                <div id="laser-assisted-hatching" className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold mb-2">Laser Assisted Hatching (LAH)</h3>
+                  <p className="text-sm text-gray-700">Laser-assisted hatching is an advanced laboratory technique used during IVF treatment to help embryos implant successfully into the uterine lining. It may be recommended in cases of repeated IVF failure or advanced maternal age.</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+                  <h3 className="font-bold mb-2">Microfluidic Sperm Sorting</h3>
+                  <p className="text-sm text-gray-700">Microfluidic sperm sorting is a modern sperm selection technique that helps identify healthier sperm with improved DNA quality. This technology may improve fertilization rates and embryo quality during IVF treatment.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* FERTILITY PRESERVATION */}
+            <section id="fertility-preservation" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Fertility Preservation
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-4">
+                Fertility preservation services such as egg freezing, sperm freezing, and embryo freezing are increasingly popular among patients who wish to delay parenthood or preserve fertility before cancer treatment or other medical therapies.
+              </p>
+              
+              
+                
+            </section>
+            <section id="fertility-preservation" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+               Laparoscopy and Hysteroscopy
+              </h2>
+              <p className="bg-white p-6 rounded-xl shadow mb-4">
+                Minimally invasive procedures such as laparoscopy and hysteroscopy are used to diagnose and treat conditions affecting fertility, including fibroids, endometriosis, adhesions, polyps, and blocked fallopian tubes.
+              </p>
+              
+              
+            </section>
+
+            {/* ADVANCED TECHNOLOGIES */}
+            <section id="advanced-technologies-used-in-ivf-treatment" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Advanced Technologies Used in IVF Treatment in India
+              </h2>
+             
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+
+  {/* Modern Embryology Laboratories */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Modern Embryology Laboratories
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      Leading fertility centers in India use advanced embryology laboratories
+      equipped with temperature-controlled incubators, embryo monitoring
+      systems, and sterile laboratory environments to support embryo
+      development.
+    </p>
+  </div>
+
+  {/* Genetic Screening */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Genetic Screening and Testing
+    </h3>
+
+    <p className="text-sm text-gray-700 mb-2">
+      Some fertility centers offer preimplantation genetic testing (PGT) to identify certain genetic abnormalities in embryos before transfer. This can help reduce the risk of inherited conditions and improve embryo selection.
+
+    </p>
+
+  </div>
+
+  {/* Cryopreservation */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Cryopreservation Techniques
+    </h3>
+
+    <p className="text-sm text-gray-700 mb-2">
+      Modern freezing techniques allow embryos, eggs, and sperm to be preserved safely for future fertility treatments. Cryopreservation offers flexibility and additional treatment opportunities for patients.
+
+    </p>
+
+    
+  </div>
+
+  {/* Minimally Invasive Surgery */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Minimally Invasive Fertility Surgery
+    </h3>
+
+    <p className="text-sm text-gray-700">
+     Advanced laparoscopic and hysteroscopic procedures help treat reproductive conditions with smaller incisions, reduced pain, shorter recovery time, and lower risk of complications.
+
+    </p>
+  </div>
+
+</div>
+            </section>
+
+            {/* TREATMENT PROCESS */}
+            <section id="treatment-process-for-international-patients" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Treatment Process for International Patients
+              </h2>
+              
+
+              <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+
+  
+  <div className="grid md:grid-cols-3 gap-4 mb-4">
+
+    {/* Step 1 */}
+    <div className="bg-pink-50 p-4 rounded-lg">
+      <p className="font-bold text-pink-700 mb-2">
+        Initial Online Consultation
+      </p>
+
+      <p className="text-sm text-gray-700">
+        International patients can begin their fertility journey with an online consultation. Fertility specialists review medical reports, fertility history, hormone tests, ultrasound findings, and previous treatment records to recommend the most appropriate treatment plan.
+      </p>
+    </div>
+
+    {/* Step 2 */}
+    <div className="bg-pink-50 p-4 rounded-lg">
+      <p className="font-bold text-pink-700 mb-2">
+        Personalized Treatment Planning
+      </p>
+
+      <p className="text-sm text-gray-700">
+        Each fertility journey is unique. Doctors create individualized treatment plans based on the patient's age, reproductive health, infertility diagnosis, and fertility goals.
+      </p>
+
+      <p className="text-sm text-gray-700 mt-2">
+        Treatment schedules are carefully designed to ensure convenience for international patients traveling to India.
+      </p>
+    </div>
+
+    {/* Step 3 */}
+    <div className="bg-pink-50 p-4 rounded-lg">
+      <p className="font-bold text-pink-700 mb-2">
+        Visa and Travel Assistance
+      </p>
+
+      <p className="text-sm text-gray-700">
+        Ekam Cure provides complete support for international medical travelers, including medical visa guidance, travel coordination, accommodation assistance, and airport pickup services.
+      </p>
+
+      <p className="text-sm text-gray-700 mt-2">
+        Our patient support team helps simplify the medical tourism process and ensures a comfortable experience throughout the stay in India.
+      </p>
+    </div>
+
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+    {/* Step 4 */}
+    <div className="bg-pink-50 p-4 rounded-lg">
+      <p className="font-bold text-pink-700 mb-2">
+        Hospital Admission and Treatment
+      </p>
+
+      <p className="text-sm text-gray-700">
+        Upon arrival, patients undergo final evaluations, fertility monitoring, and treatment preparation. Fertility specialists and coordinators guide patients through every stage of the procedure with transparency and compassionate support.
+      </p>
+    </div>
+
+    {/* Step 5 */}
+    <div className="bg-pink-50 p-4 rounded-lg">
+      <p className="font-bold text-pink-700 mb-2">
+        Recovery and Follow-Up
+      </p>
+
+      <p className="text-sm text-gray-700">
+        After embryo transfer or fertility procedures, patients receive detailed recovery instructions and follow-up guidance. Many consultations can continue online after patients return to their home countries.
+      </p>
+    </div>
+
+  </div>
+</div>
+            </section>
+
+            {/* CHOOSING BEST IVF CLINIC */}
+            <section id="choosing-the-best-ivf-clinic-india" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Choosing the Best IVF Clinic India
+              </h2>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+  {/* Importance of Experienced Specialists */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Importance of Experienced Specialists
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      When selecting the best IVF clinic India, patients should consider the experience of fertility specialists, embryologists, and reproductive medicine teams. Experienced doctors play an important role in managing complex fertility conditions and designing personalized treatment plans.
+    </p>
+  </div>
+
+  {/* Advanced Fertility Technologies */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Advanced Fertility Technologies
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      A high-quality fertility center should provide access to advanced reproductive technologies, modern laboratories, and comprehensive fertility diagnostics.
+    </p>
+  </div>
+
+  {/* Ethical and Transparent Care */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Ethical and Transparent Care
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      Transparency is essential during fertility treatment. Patients should choose fertility centers that provide clear communication regarding treatment plans, procedures, and expected outcomes.
+    </p>
+  </div>
+
+  {/* International Patient Support Services */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      International Patient Support Services
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      Dedicated international patient departments help overseas patients coordinate appointments, travel arrangements, accommodation, and language support during treatment in India.
+    </p>
+  </div>
+
+</div>
+            </section>
+
+            {/* COST OF IVF TREATMENT IN INDIA */}
+<section id="cost-of-ivf-treatment-in-india" className="mb-16">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+    Cost of IVF Treatment in India
+  </h2>
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    {/* Factors Affecting Fertility Treatment Costs */}
+    <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+      <h3 className="font-bold mb-2">
+        Factors Affecting Fertility Treatment Costs
+      </h3>
+
+      <p className="text-sm text-gray-700">
+        The cost of IVF treatment in India can vary depending on several factors, including the type of procedure, fertility medications, diagnostic tests, laboratory technologies, hospital infrastructure, and the patient’s medical condition.
+      </p>
+
+      <p className="text-sm text-gray-700 mt-2">
+        Additional procedures such as ICSI, embryo freezing, genetic testing, or donor programs may influence overall treatment expenses.
+      </p>
+    </div>
+
+    {/* Why India Offers Affordable Fertility Care */}
+    <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+      <h3 className="font-bold mb-2">
+        Why India Offers Affordable Fertility Care
+      </h3>
+
+      <p className="text-sm text-gray-700">
+        India remains one of the most affordable destinations for advanced fertility treatment because of lower healthcare operational costs and efficient medical infrastructure. International patients can often save a significant amount compared to treatment costs in Western countries.
+
+      </p>
+
+     
+    </div>
+
+    {/* Additional Expenses International Patients Should Consider */}
+    <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+      <h3 className="font-bold mb-2">
+        Additional Expenses International Patients Should Consider
+      </h3>
+
+      <p className="text-sm text-gray-700">
+        Patients traveling for fertility treatment may also need to consider accommodation, transportation, medications, meals, interpreter services, and follow-up consultations during their stay.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+           
+
+            {/* WHY CHOOSE EKAM CURE */}
+            <section id="why-choose-ekam-cure-for-infertility-treatment-india" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Why Choose Ekam Cure for Infertility Treatment India?
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+
+  {/* Personalized Fertility Support */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Personalized Fertility Support
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      Ekam Cure understands the emotional and physical challenges associated with infertility. Our team provides compassionate and personalized assistance throughout the treatment journey.
+    </p>
+  </div>
+
+  {/* Trusted Hospital Coordination */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Trusted Hospital Coordination
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      We help international patients connect with reputable fertility hospitals and experienced reproductive specialists across India for safe and advanced fertility care.
+    </p>
+  </div>
+
+</div>
+
+{/* End-to-End Medical Tourism Assistance */}
+<div className="bg-white p-6 rounded-xl shadow mb-6 border-l-4 border-pink-500 mt-6">
+  
+  <h3 className="font-bold mb-3">
+    End-to-End Medical Tourism Assistance
+  </h3>
+
+  <p className="text-sm text-gray-700">
+    Our services include online consultations, medical visa support, travel assistance, accommodation coordination, airport pickup, treatment scheduling, and post-treatment follow-up support.
+  </p>
+
+</div>
+
+<div className="grid md:grid-cols-2 gap-6">
+
+  {/* Multilingual and International Patient Support */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Multilingual and International Patient Support
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      We assist patients from different countries and cultural backgrounds by providing smooth communication and dedicated international patient care services.
+    </p>
+  </div>
+
+  {/* Focus on Transparency and Trust */}
+  <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
+    <h3 className="font-bold mb-2">
+      Focus on Transparency and Trust
+    </h3>
+
+    <p className="text-sm text-gray-700">
+      We believe in ethical medical tourism support with realistic guidance, transparent communication, and patient-centered care throughout the fertility treatment journey.
+    </p>
+  </div>
+
+</div>
+            </section>
+
+            {/* FAQ */}
+            <section id="frequently-asked-questions" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Frequently Asked Questions
+              </h2>
+              <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
+                <div className="space-y-6">
+                  {[
+                    {
+                      q: "Is IVF treatment in India safe for international patients?",
+                      a: "Yes, many fertility hospitals and IVF centers in India follow internationally accepted medical standards and use advanced reproductive technologies for patient care.",
+                    },
+                    {
+                      q: "How long should international patients stay in India for IVF treatment?",
+                      a: "The duration depends on the treatment plan, but many IVF procedures may require patients to stay for a few weeks for monitoring, egg retrieval, embryo transfer, and recovery.",
+                    },
+                    {
+                      q: "Can Ekam Cure help with medical visas?",
+                      a: "Yes, Ekam Cure assists international patients with medical visa guidance, treatment coordination, and travel planning.",
+                    },
+                    {
+                      q: "What is the success rate of IVF treatment?",
+                      a: "IVF success rates vary depending on factors such as age, fertility condition, embryo quality, and overall reproductive health. Fertility specialists can provide individualized guidance after evaluation.",
+                    },
+                    {
+                      q: "Is India affordable for fertility treatment?",
+                      a: "Yes, India is considered one of the most affordable destinations for advanced fertility care compared to many Western countries.",
+                    },
+                    {
+                      q: "What fertility treatments are available in India?",
+                      a: "India offers IVF, ICSI, IUI, fertility preservation, donor programs, genetic testing, laparoscopy, hysteroscopy, and several advanced reproductive procedures.",
+                    },
+                    {
+                      q: "Can international patients consult fertility doctors online before traveling?",
+                      a: "Yes, many fertility specialists in India provide online consultations and medical record reviews for international patients before treatment planning.",
+                    },
+                    {
+                      q: "What should patients carry while traveling for IVF treatment?",
+                      a: "Patients should carry medical reports, previous fertility treatment records, hormonal test results, identification documents, and prescribed medications.",
+                    },
+                  ].map((faq, index) => (
+                    <div
+                      key={index}
+                      className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+                    >
+                      <h3 className="text-lg font-bold text-pink-700 mb-3">{faq.q}</h3>
+                      <p className="text-gray-700 leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+             {/* CONCLUSION */}
+            <section className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Conclusion
+              </h2>
+              <div className="bg-white p-6 rounded-xl shadow">
+                <p className="text-gray-700 mb-4">
+                  Choosing the right fertility destination is an important step for couples seeking parenthood support. With advanced medical infrastructure, experienced fertility specialists, modern reproductive technologies, and affordable healthcare services, IVF treatment in India has become a preferred choice for international patients worldwide.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Whether patients are searching for a trusted IVF centre in India, comprehensive infertility treatment India services, or the best IVF clinic India, Ekam Cure helps simplify the medical journey with personalized support and trusted healthcare coordination.
+                </p>
+                <p className="text-gray-700">
+                  Our mission is to help international patients receive compassionate, safe, and affordable fertility care while making their treatment journey in India smooth and stress-free. Contact Ekam Cure today to learn more about fertility treatment options in India and receive personalized guidance for your parenthood journey.
+                </p>
+              </div>
+            </section>
+
+            <CTA />
+          </div>
+
+          {/* SIDEBAR */}
+          <div className="lg:col-span-3 order-1">
+            <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+              <ContactForm />
+              <Sidebar />
+            </div>
+          </div>
         </div>
       </div>
-
-      <section className="bg-white py-16 px-6 md:px-16 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
-          {/* Left Side: YouTube Video Embed */}
-          <div className="relative w-full md:w-1/2 flex justify-center">
-            <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
-              <Image
-          src="/img/y-dream.png"
-          alt="Mother with baby"
-          fill
-          priority
-          className="object-cover"
-        />
-              {/* <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                className="rounded-xl"
-              ></iframe> */}
-            </div>
-          </div>
-
-          {/* Right Side: Text Content */}
-          <div className="md:w-1/2 text-justify md:text-left mt-2">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
-             IVF Treatment in India
-            </h1>
-            <p className="text-gray-600 leading-relaxed mb-4 font-karla text-[17px]">
-             Starting a family is a deeply emotional journey, and for many couples, fertility challenges can make the path to parenthood stressful and uncertain. With advanced IVF treatment in India, international patients now have access to world-class fertility care, experienced specialists, and affordable reproductive treatments in a supportive and compassionate environment. At Ekam Cure, we help patients connect with trusted fertility experts and modern hospitals that provide personalized infertility solutions tailored to individual medical needs.
-
-            </p>
-            
-          </div>
-        </div>
-        <div className="pt-5">
-          <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-              India has become one of the most preferred destinations for fertility care due to its advanced reproductive technologies, highly skilled doctors, and significantly lower treatment costs compared to many Western countries. Whether couples are dealing with male infertility, female infertility, unexplained infertility, recurrent pregnancy loss, or age-related fertility concerns, the country offers comprehensive and evidence-based fertility solutions with modern laboratory support and internationally accepted treatment protocols.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-             At Ekam Cure, we understand that choosing the right IVF centre in India can feel overwhelming, especially for international patients traveling from countries such as the USA, UK, Africa, Bangladesh, Nepal, and the Middle East. Our goal is to simplify the entire process by offering complete medical tourism assistance, including doctor consultations, hospital coordination, treatment planning, visa support, accommodation assistance, and post-treatment guidance.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6 font-karla text-[17px]">
-             Our network of fertility specialists focuses on patient-centered care, transparency, and realistic treatment expectations. We believe every patient deserves compassionate support throughout their fertility journey. From the first consultation to embryo transfer and pregnancy care, our team remains committed to helping couples receive safe, affordable, and advanced infertility care in India.
-            </p>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#b8d5f9] py-10 ">
-        {/* ----------------- TABS ----------------- */}
-        {/* Desktop view */}
-        {/* DESKTOP TABS */}
-        <div className="w-full my-6 hidden md:flex justify-center gap-6">
-          {tabs.map((tab, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(tab)}
-              className={`px-6 py-2 rounded-lg text-base font-medium transition
-        ${
-          activeTab === tab
-            ? "bg-blue-600 text-white shadow-md"
-            : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
-        }
-      `}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-
-        {/* MOBILE TABS */}
-        <div className="w-full my-6 md:hidden">
-          <div className="flex flex-col items-center gap-4 mb-8">
-            {tabs.map((tab, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 text-lg font-medium transition-all
-          ${
-            activeTab === tab
-              ? "bg-[#082859] text-white rounded-full shadow-md"
-              : "text-[#082859] opacity-80"
-          }
-        `}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* ----- ------------CONTENT SECTION ----------------- */}
-        {/* <section className="w-full bg-[#b8d5f9] py-10"> */}
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#082859] mb-10">
-            {activeTab}
-          </h2>
-
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
-            {tabData[activeTab].map((item, index) => (
-              <div
-                key={index}
-                className="
-          flex flex-col md:flex-row 
-          bg-white rounded-xl shadow-sm p-5 gap-4
-        "
-              >
-                {/* IMAGE BOX */}
-                <div className="w-full md:w-1/3 flex-shrink-0">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={350}
-                    height={250}
-                    className="rounded-md w-full h-auto object-cover"
-                  />
-                </div>
-
-                {/* CONTENT BOX */}
-                <div className="w-full md:w-2/3">
-                  <h3 className="text-lg font-semibold text-[#082859] mb-2 text-justify">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed text-justify">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* --- FEATURES SECTION --- */}
-      <section className="w-full py-10 px-4 md:px-10 lg:px-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 leading-snug">
-            Why Choose Ekam For IVF Treatments?
-          </h2>
-          <div className="w-20 h-1 bg-blue-900 mx-auto mb-10" />
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuresData.map((feature, index) => (
-            <FeatureBox
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              iconSvg={feature.iconSvg}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="w-full bg-[#0B4AA1] text-white py-3">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 px-4">
-          {/* Phone */}
-          <div className="flex items-center gap-2 text-[15px] sm:text-[16px]">
-            <svg
-              className="w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-1.516.758a11.042 11.042 0 005.516 5.516l.758-1.516a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 18.72V21a2 2 0 01-2 2h-1C9.163 23 3 16.837 3 9V5z"
-              />
-            </svg>
-            <p>
-             <span className="font-semibold">Call us :</span> 
-<a href="tel:+919990205353" className="text-white-600 hover:underline">
-  +91-999 020 5353
-</a>
-
-            </p>
-          </div>
-
-          {/* Divider (Only on Desktop) */}
-          <div className="hidden sm:block w-[1px] h-6 bg-white/40"></div>
-
-          {/* Email */}
-          <div className="flex items-center gap-2 text-[15px] sm:text-[16px]">
-            <svg
-              className="w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              id="Layer_1"
-              fill="none"
-              viewBox="0 0 122.879 88.855"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="5"
-                d="M7.048,0h108.784c1.939,0,3.701,0.794,4.977,2.069c1.277,1.277,2.07,3.042,2.07,4.979v74.759 c0,1.461-0.451,2.822-1.221,3.951c-0.141,0.365-0.361,0.705-0.662,0.994c-0.201,0.189-0.422,0.344-0.656,0.461 c-1.225,1.021-2.799,1.643-4.508,1.643H7.048c-1.937,0-3.701-0.793-4.979-2.07C0.794,85.51,0,83.748,0,81.807V7.048 c0-1.941,0.792-3.704,2.068-4.979C3.344,0.792,5.107,0,7.048,0L7.048,0z M5.406,78.842l38.124-38.22L5.406,9.538V78.842 L5.406,78.842z M47.729,44.045L8.424,83.449h105.701L76.563,44.051L64.18,54.602l0,0c-0.971,0.83-2.425,0.877-3.453,0.043 L47.729,48.045L47.729,44.045z M80.674,40.549l36.799,38.598V9.198L80.674,40.549L80.674,40.549z M8.867,5.406l53.521,43.639 l51.223-43.639H8.867L8.867,5.406z"
-              />
-            </svg>
-            <p>
-              <span className="font-semibold">Mail us :</span> 
-<a href="mailto:info@ekamcure.com" className="text-white-600 hover:underline">
-  info@ekamcure.com
-</a>
-
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* --- SPECIALIST PROFILE SECTION --- */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-100">
-        <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 inline-block border-b-4 border-blue-700 pb-2">
-            Our Specialist
-          </h2>
-        </div>
-
-        <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
-          <div className="md:grid md:grid-cols-12">
-            {/* Left Column (Image & Details) */}
-            <div className="md:col-span-4 p-8 bg-blue-100 flex flex-col items-center text-center">
-              {/* Image Container */}
-              <div className="w-56 h-56 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
-                {/* Ensure Next.js Image component is imported and used correctly */}
-                <Image
-                  src="/img/Dr. Shobha Gupta.webp"
-                  alt={doctorName}
-                  width={224}
-                  height={224}
-                  className="object-cover w-full h-full"
-                  priority
-                />
-              </div>
-
-              {/* Name and Specialization - NOW VARIABLES ARE IN SCOPE */}
-              <h3 className="text-2xl font-bold text-blue-900 mb-1 font-karla text-[28px]">
-                {doctorName}
-              </h3>
-
-              <p className="text-lg font-semibold text-orange-600 mb-4 font-karla text-[18px]">
-                {specialization}
-              </p>
-
-              {/* Experience */}
-              <p className="text-gray-700 text-sm mb-6 max-w-xs font-karla text-[18px]">
-                {experience}
-              </p>
-
-              {/* Book Appointment Button */}
-              <Link
-                href="/contact"
-                className="bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-800 flex items-center shadow-lg"
-              >
-                Book an Appointment
-                <span className="ml-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-              </Link>
-            </div>
-
-            {/* Right Column (Description) */}
-            <div className="md:col-span-8 p-8 md:p-10">
-              <div className="space-y-6 text-gray-700 leading-relaxed text-base font-karla text-[17px]">
-                {/* Profile Text Blocks - NOW VARIABLES ARE IN SCOPE */}
-                <p>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: profileTextPart1.replace(
-                        /\*\*(.*?)\*\*/g,
-                        "<strong>$1</strong>"
-                      ),
-                    }}
-                  />
-                </p>
-                <p>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: profileTextPart2.replace(
-                        /\*\*(.*?)\*\*/g,
-                        "<strong>$1</strong>"
-                      ),
-                    }}
-                  />
-                </p>
-                <p>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: profileTextPart3.replace(
-                        /\*\*(.*?)\*\*/g,
-                        "<strong>$1</strong>"
-                      ),
-                    }}
-                  />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 px-4 bg-white">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#082859] mb-6">
-          Happy Smiles
-        </h2>
-        <hr className="w-24 mx-auto border-2 border-[#082859] mb-8" />
-
-        <div className="md:px-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-3">
-          {images.map((src, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-            >
-              <Image
-                src={src}
-                alt={`Happy smile ${index + 1}`}
-                width={50}
-                height={50}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
     </>
   );
 }
+
+/* COMPONENTS */
+const Card = ({ icon, title, text }) => (
+  <div className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+    <div className="text-pink-600 mb-3">{icon}</div>
+    <h3 className="font-bold mb-2">{title}</h3>
+    <p className="text-sm text-gray-600">{text}</p>
+  </div>
+);
+
+const GradientCard = ({ title, text }) => (
+  <div className="bg-gradient-to-br from-pink-100 to-purple-50 p-6 rounded-xl shadow">
+    <h3 className="font-bold mb-2">{title}</h3>
+    <p className="text-sm text-gray-700">{text}</p>
+  </div>
+);
