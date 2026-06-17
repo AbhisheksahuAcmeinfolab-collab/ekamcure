@@ -397,8 +397,8 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-[#0097a7] mb-10">
-          Patient Success Stories From Around The World International Patients Sharing Their Healing Journeys in Indi
+        <h2 className="text-4xl font-bold text-[#000] mb-10">
+          Patient Success Stories From Around The World International Patients Sharing Their Healing Journeys in India 
 
         </h2>
 
