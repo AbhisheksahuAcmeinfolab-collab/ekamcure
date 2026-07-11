@@ -420,6 +420,9 @@ export default function HipReplacementIndia() {
       Understanding the underlying cause helps patients make informed decisions
       and choose the most appropriate treatment approach.
     </p>
+     <p className="text-gray-700 mt-4">
+     If hip pain is related to a spinal disorder, expert<a href="https://www.ekamfertility.com/spine-surgery-in-india/" target="_blank" rel="noopener noreferrer"> <strong> spine surgery in India</strong> </a> may be recommended for effective treatment. 
+    </p>
   </div>
 </section>
 

@@ -142,6 +142,9 @@ export default function IVFTreatmentInIndia() {
                 Starting a family is a deeply emotional journey, and for many couples, fertility challenges can make the path to parenthood stressful and uncertain. With advanced IVF treatment in India, international patients now have access to world-class fertility care, experienced specialists, and affordable reproductive treatments in a supportive and compassionate environment. At Ekam Cure, we help patients connect with trusted fertility experts and modern hospitals that provide personalized infertility solutions tailored to individual medical needs.
               </p>
               <p className="text-gray-700 mt-4">
+                Women's reproductive health can sometimes be affected by serious medical conditions that require specialized care. For patients seeking advanced oncology services, Ekam Cure also facilitates comprehensive <a href="https://www.ekamcure.com/treatments/breast-cancer-treatment-in-india"><strong>breast cancer treatment in India</strong> </a> through leading cancer hospitals equipped with modern diagnostic and treatment technologies. 
+              </p>
+              <p className="text-gray-700 mt-4">
                 India has become one of the most preferred destinations for fertility care due to its advanced reproductive technologies, highly skilled doctors, and significantly lower treatment costs compared to many Western countries. Whether couples are dealing with male infertility, female infertility, unexplained infertility, recurrent pregnancy loss, or age-related fertility concerns, the country offers comprehensive and evidence-based fertility solutions with modern laboratory support and internationally accepted treatment protocols.
               </p>
               <p className="text-gray-700 mt-4">
@@ -284,6 +287,9 @@ Patients receive individualized treatment plans based on age, fertility history,
                 Modern best IVF clinic India facilities use advanced embryo culture techniques and laboratory monitoring systems to improve fertilization and implantation outcomes.
 
               </p>
+              <p className="bg-white p-6 rounded-xl shadow mb-6">
+                In addition to advanced reproductive treatments, Ekam provides access to comprehensive healthcare services, including <a href="https://www.ekamfertility.com/heart-valve-surgery-in-india/" target="_blank" rel="noopener noreferrer"><strong> heart valve surgery in India </strong></a>, ensuring international patients receive expert care across multiple medical specialties.
+              </p>
              
             </section>
 
@@ -299,6 +305,7 @@ Patients receive individualized treatment plans based on age, fertility history,
                 ICSI has become a highly effective fertility procedure and is widely available at leading fertility centers across India.
 
               </p>
+              
               
             </section>
 

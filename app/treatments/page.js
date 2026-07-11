@@ -90,7 +90,7 @@ export default function TreatmentServices() {
       { name: "Oral Cancer Treatment", url: "#" },
       { name: "Liver Cancer", url: "#" },
       { name: "Brain Cancer (Tumour) Treatment", url: "#" },
-      { name: "Prostate Cancer", url: "#" },
+      { name: "Prostate Cancer", url: "/treatments/best-prostate-cancer-treatment-india" },
       { name: "Cervical Cancer", url: "#" },
       { name: "Gastrointestinal Cancer", url: "#" },
     ],
@@ -241,7 +241,7 @@ export default function TreatmentServices() {
 
   const infertility = [
     [
-      { name: "In Vitro Fertilization (IVF)", link: "#" },
+      { name: "IVF Treatment", link: "/ivf-treatments-in-india" },
       { name: "Embryo Transfer", link: "#" },
       { name: "Hysterosalpingography (HSG)", link: "#" },
       { name: "Sperm Collection", link: "#" },
@@ -266,7 +266,7 @@ export default function TreatmentServices() {
   const transplant = [
     [
       { name: "Bone Marrow Transplants (BMT)", link: "#" },
-      { name: "Kidney Transplant", link: "#" },
+      { name: "Kidney Transplant", link: "/treatments/kidney-transplant-in-india" },
       { name: "Liver Transplant", link: "#" },
       { name: "Heart Transplant", link: "#" },
       { name: "Lung Transplant", link: "#" },
@@ -601,7 +601,7 @@ export default function TreatmentServices() {
   const spine = [
     [
       { name: "Scoliosis Spine Surgery", link: "#" },
-      { name: "Spine Surgery", link: "/treatments/hip-replacement-surgery-in-india" },
+      { name: "Spine Surgery", link: "/treatments/best-spine-surgery-in-india" },
       { name: "Spine Tumor Surgery", link: "#" },
       { name: "Laminectomy", link: "#" },
       { name: "Spinal Fusion", link: "#" },
