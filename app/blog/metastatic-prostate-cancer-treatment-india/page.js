@@ -324,7 +324,7 @@ export default function MetastaticProstateCancerTreatmentIndia() {
       <div style={{ fontFamily: "Arial, Helvetica, sans-serif", background: "var(--color-bg)" }} className="min-h-screen text-[#1F2933]">
 
         {/* HERO */}
-        <header
+        <section
           className="relative overflow-hidden"
           style={{ background: "linear-gradient(120deg, var(--color-navy) 0%, var(--color-blue) 100%)" }}
         >
@@ -340,7 +340,7 @@ export default function MetastaticProstateCancerTreatmentIndia() {
               Explore advanced metastatic prostate cancer treatment in India with personalized care, targeted therapies, hormone therapy, chemotherapy, and expert oncology specialists.
             </p>
           </div>
-        </header>
+        </section>
 
         {/* PAGE BODY */}
         <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 lg:grid-cols-10 gap-10">

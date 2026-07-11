@@ -39,11 +39,6 @@ const articleSchema = {
   }
 };
 
-/* ---------------------------------------------------------------------
-   Article content — every paragraph / list from the source text.
-   A "block" is either a plain string (paragraph) or an object:
-     { list: { lead?, items: [...], trailing? } }
---------------------------------------------------------------------- */
 
 const sections = [
   {
@@ -288,7 +283,7 @@ export default function WhyChooseIndiaProstateCancerTreatment() {
       <div style={{ fontFamily: "Arial, Helvetica, sans-serif", background: "var(--color-bg)" }} className="min-h-screen text-[#1F2933]">
 
         {/* HERO */}
-        <header
+        <section
           className="relative overflow-hidden"
           style={{ background: "linear-gradient(120deg, var(--color-navy) 0%, var(--color-blue) 100%)" }}
         >
@@ -304,7 +299,7 @@ export default function WhyChooseIndiaProstateCancerTreatment() {
               Experienced specialists, robotic surgery, advanced radiation oncology, and personalized, patient-focused care — explore why international patients choose India for prostate cancer treatment.
             </p>
           </div>
-        </header>
+        </section>
 
         {/* PAGE BODY */}
         <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 lg:grid-cols-10 gap-10">

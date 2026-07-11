@@ -9,12 +9,6 @@ export const metadata = {
     "Discover the top 10 cancer hospitals in India offering advanced oncology care, experienced cancer specialists, robotic surgery, and comprehensive treatment for domestic and international patients.",
 };
 
-/* ---------------------------------------------------------------------
-   Brand tokens (matches Ekam logo + site):
-   Navy   #053161   Blue #6796cc   Mid-Blue #1B4F9C   BG #F5F8FC
-   Display/Headings: Montserrat   Body: Inter
---------------------------------------------------------------------- */
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -504,7 +498,7 @@ export default function TopCancerHospitalsIndia() {
       <div style={{ fontFamily: "'Inter', sans-serif", background: "#F5F8FC" }} className="min-h-screen text-[#1F2933]">
 
         {/* HERO */}
-        <header
+        <section
           className="relative overflow-hidden"
           style={{ background: "linear-gradient(120deg, #053161 0%, #6796cc 100%)" }}
         >
@@ -529,7 +523,7 @@ export default function TopCancerHospitalsIndia() {
               Discover the top 10 cancer hospitals in India offering advanced oncology care, experienced cancer specialists, robotic surgery, and comprehensive treatment for domestic and international patients.
             </p>
           </div>
-        </header>
+        </section>
 
         {/* RANK NAVIGATOR */}
         <div className="border-b" style={{ background: "#ffffff", borderColor: "#E1E8F0" }}>
