@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 import React from "react";
 import ContactForm from "../../../Component/ContactForm";
 import Sidebar from "../../../Component/Sidebar";
