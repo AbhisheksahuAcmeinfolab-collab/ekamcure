@@ -48,15 +48,27 @@ const articleSchema = {
 
 const sections = [
   {
-    id: "intro",
-    title: "Introduction",
-    blocks: [
-      "Metastatic prostate cancer represents an advanced stage of the disease in which cancer cells have spread beyond the prostate gland to other parts of the body. While metastatic prostate cancer is generally not considered curable in most cases, significant advancements in oncology have transformed how the disease is managed.",
-      "Modern treatment approaches can often control disease progression for extended periods, reduce symptoms, improve quality of life, and help patients maintain daily activities for many years.",
-      "India has become an important destination for advanced prostate cancer treatment, offering access to experienced oncology teams, multidisciplinary cancer centers, precision imaging technologies, targeted therapies, and personalized treatment strategies.",
-      "The goal of treatment is no longer focused solely on prolonging survival but also on maximizing quality of life while effectively managing the disease over the long term."
-    ]
-  },
+  id: "intro",
+  title: "Introduction",
+  blocks: [
+    "Metastatic prostate cancer represents an advanced stage of the disease in which cancer cells have spread beyond the prostate gland to other parts of the body. While metastatic prostate cancer is generally not considered curable in most cases, significant advancements in oncology have transformed how the disease is managed.",
+
+    "Modern treatment approaches can often control disease progression for extended periods, reduce symptoms, improve quality of life, and help patients maintain daily activities for many years.",
+
+    <>
+      India has become an important destination for advanced{" "}
+      <Link
+        href="/treatments/best-prostate-cancer-treatment-india"
+        className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+      >
+        prostate cancer treatment
+      </Link>
+      {", "}offering access to experienced oncology teams, multidisciplinary cancer centers, precision imaging technologies, targeted therapies, and personalized treatment strategies.
+    </>,
+
+    "The goal of treatment is no longer focused solely on prolonging survival but also on maximizing quality of life while effectively managing the disease over the long term."
+  ]
+},
   {
     id: "understanding-metastatic",
     title: "Understanding Metastatic Prostate Cancer",
