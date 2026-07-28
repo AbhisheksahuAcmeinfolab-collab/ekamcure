@@ -621,6 +621,125 @@ export default function TopCancerHospitalsIndia() {
               </p>
             </section>
 
+              {/* MORE RELATED LINKS */}
+                <section className="mb-10" id="related-links">
+                  <div className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] p-6 md:p-8">
+                    <div className="flex items-center gap-3 mb-8">
+                      <span
+                        className="w-1 h-10 rounded-full"
+                        style={{
+                          background: "linear-gradient(180deg, #E94E77 0%, #8E5CFF 100%)",
+                        }}
+                      />
+                      <h2
+                        className="text-2xl md:text-3xl font-bold"
+                        style={{
+                          color: "#053161",
+                          fontFamily: "'Montserrat', sans-serif",
+                        }}
+                      >
+                        More Related Links
+                      </h2>
+                    </div>
+                
+                    <div className="grid md:grid-cols-2 gap-5">
+                
+                      <a
+                        href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Prostate Cancer Treatment Cost in India
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/doctors/best-prostate-cancer-doctors-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Best Prostate Cancer Doctors in India
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/best-cancer-hospitals-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Best Cancer Hospitals in India
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/radiation-therapy-for-prostate-cancer-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Radiation Therapy for Prostate Cancer in India
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/prostate-cancer-survival-rate-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Prostate Cancer Survival Rate in India
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/why-choose-india-for-prostate-cancer-treatment"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Why Choose India for Prostate Cancer Treatment?
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/hormone-therapy-for-prostate-cancer-in-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Hormone Therapy for Prostate Cancer
+                        </span>
+                      </a>
+                
+                      <a
+                        href="/blog/metastatic-prostate-cancer-treatment-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Metastatic Prostate Cancer Treatment in India
+                        </span>
+                      </a>
+                
+                      <div className="md:col-span-2">
+                        <a
+                          href="/blog/medical-visa-cancer-treatment-india"
+                          className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        >
+                          <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                          <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                            Medical Visa for Cancer Treatment in India
+                          </span>
+                        </a>
+                      </div>
+                
+                    </div>
+                  </div>
+                </section>
+
           </div>
 
           {/* SIDEBAR */}
