@@ -1,5 +1,6 @@
 import Script from "next/script";
 import React from "react";
+import Link from "next/link";
 import ContactForm from "../../../Component/ContactForm";
 import Sidebar from "../../../Component/Sidebar";
 
@@ -498,6 +499,111 @@ export default function BestProstateCancerDoctorsIndia() {
                 Patients who invest time in selecting the right specialist often benefit from personalized care, informed treatment decisions, and a more structured cancer management journey. With a large network of experienced uro-oncologists and advanced cancer centers, India continues to be a trusted destination for patients seeking expert prostate cancer care.
               </p>
             </section>
+
+                  {/* MORE RELATED LINKS */}
+          <section className="mt-16 mb-10">
+            <div className="bg-white rounded-2xl shadow-lg border border-[#E1E8F0] p-8">
+          
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1.5 h-10 rounded-full bg-gradient-to-b from-[#1B4F9C] to-pink-500"></div>
+          
+                <h2
+                  className="text-2xl md:text-3xl font-semibold"
+                  style={{
+                    fontFamily: "'Montserrat', sans-serif",
+                    color: "#053161",
+                  }}
+                >
+                  More Related Links
+                </h2>
+              </div>
+          
+              <div className="grid md:grid-cols-2 gap-5">
+          
+                <Link
+                  href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Prostate Cancer Treatment Cost in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/top-10-cancer-hospitals-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Top 10 Cancer Hospitals in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/best-cancer-hospitals-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Best Cancer Hospitals in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/radiation-therapy-for-prostate-cancer-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Radiation Therapy for Prostate Cancer in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/prostate-cancer-survival-rate-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Prostate Cancer Survival Rate in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/why-choose-india-for-prostate-cancer-treatment"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Why Choose India for Prostate Cancer Treatment?
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/hormone-therapy-for-prostate-cancer-in-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Hormone Therapy for Prostate Cancer
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/metastatic-prostate-cancer-treatment-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Metastatic Prostate Cancer Treatment in India
+                  </span>
+                </Link>
+          
+                <Link
+                  href="/blog/medical-visa-cancer-treatment-india"
+                  className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300 md:col-span-2"
+                >
+                  <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Medical Visa for Cancer Treatment in India
+                  </span>
+                </Link>
+          
+              </div>
+            </div>
+          </section>
 
           </div>
 
