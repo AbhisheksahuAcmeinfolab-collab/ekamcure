@@ -43,14 +43,28 @@ const articleSchema = {
 
 const sections = [
   {
-    id: "intro",
-    title: "Introduction",
-    blocks: [
-      "Prostate cancer patients today have access to treatment options in many countries around the world. However, an increasing number of international patients are choosing India for their cancer care due to the combination of advanced medical expertise, modern healthcare infrastructure, internationally trained specialists, and patient-focused services.",
-      "India has established itself as one of the leading destinations for medical tourism, particularly in the field of oncology. Patients from Africa, the Middle East, Central Asia, Southeast Asia, and other regions travel to India seeking high-quality prostate cancer treatment delivered through globally recognized healthcare institutions.",
-      "For many patients, the decision extends beyond medical treatment alone. Factors such as accessibility, treatment timelines, multidisciplinary care, and personalized patient support also play an important role when selecting a destination for cancer treatment."
-    ]
-  },
+  id: "intro",
+  title: "Introduction",
+  blocks: [
+    "Prostate cancer patients today have access to treatment options in many countries around the world. However, an increasing number of international patients are choosing India for their cancer care due to the combination of advanced medical expertise, modern healthcare infrastructure, internationally trained specialists, and patient-focused services.",
+
+    <>
+      India has established itself as one of the leading destinations for
+      medical tourism, particularly in the field of oncology. Patients from
+      Africa, the Middle East, Central Asia, Southeast Asia, and other regions
+      travel to India seeking high-quality{" "}
+      <Link
+        href="/treatments/best-prostate-cancer-treatment-india"
+        className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+      >
+        prostate cancer treatment
+      </Link>{" "}
+      delivered through globally recognized healthcare institutions.
+    </>,
+
+    "For many patients, the decision extends beyond medical treatment alone. Factors such as accessibility, treatment timelines, multidisciplinary care, and personalized patient support also play an important role when selecting a destination for cancer treatment."
+  ]
+},
   {
     id: "specialists",
     title: "Access to Experienced Prostate Cancer Specialists",
