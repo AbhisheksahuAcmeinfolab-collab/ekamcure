@@ -560,9 +560,103 @@ export default function ProstateCancerTreatmentCostIndia() {
                     Understanding the prostate cancer treatment cost in India is essential for effective treatment planning. The total expense depends on multiple factors, including cancer stage, treatment method, hospital selection, and recovery requirements. With advanced medical technology, experienced specialists, and comparatively affordable healthcare services, India continues to be a preferred destination for patients seeking quality prostate cancer treatment while managing healthcare costs efficiently.
                   </p>
                 </div>
+
+                {/* MORE RELATED LINKS */}
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg p-8 mb-6">
+                <h3 className="text-2xl font-bold text-[#053161] mb-6 border-l-4 border-pink-500 pl-4">
+                  More Related Links
+                </h3>
+              
+                <div className="grid md:grid-cols-2 gap-4">
+              
+                  <Link
+                    href="/doctors/best-prostate-cancer-doctors-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Best Prostate Cancer Doctors in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/top-10-cancer-hospitals-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Top 10 Cancer Hospitals in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/best-cancer-hospitals-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Best Cancer Hospitals in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/radiation-therapy-for-prostate-cancer-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Radiation Therapy for Prostate Cancer in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/prostate-cancer-survival-rate-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Prostate Cancer Survival Rate in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/why-choose-india-for-prostate-cancer-treatment"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Why Choose India for Prostate Cancer Treatment?
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/hormone-therapy-for-prostate-cancer-in-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Hormone Therapy for Prostate Cancer
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/metastatic-prostate-cancer-treatment-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Metastatic Prostate Cancer Treatment in India
+                    </span>
+                  </Link>
+              
+                  <Link
+                    href="/blog/medical-visa-cancer-treatment-india"
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
+                  >
+                    <span className="font-semibold text-gray-800">
+                      Medical Visa for Cancer Treatment in India
+                    </span>
+                  </Link>
+              
+                </div>
+              </div>
+                
               </section>
 
             </div>
+
 
             {/* RIGHT SIDEBAR */}
             <div className="lg:col-span-3 order-1">
