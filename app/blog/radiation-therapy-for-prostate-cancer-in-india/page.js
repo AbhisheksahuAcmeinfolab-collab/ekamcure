@@ -128,15 +128,38 @@ const sections = [
     ]
   },
   {
-    id: "understanding-role",
-    title: "Understanding the Role of Radiation Therapy in Prostate Cancer",
-    blocks: [
-      "Prostate cancer behaves differently from many other cancers. Some tumors grow slowly and remain confined to the prostate gland, while others may spread to nearby tissues or distant organs. Radiation therapy can be adapted to different stages of the disease, making it a versatile treatment option.",
-      "The primary objective of radiation therapy is to damage the DNA inside cancer cells. Once the DNA is damaged, cancer cells lose their ability to grow and multiply. Over time, these damaged cells die and are naturally eliminated by the body.",
-      { list: { lead: "Radiation therapy may be recommended for:", items: ["Localized prostate cancer", "Intermediate-risk prostate cancer", "High-risk prostate cancer", "Locally advanced prostate cancer", "Recurrent prostate cancer", "Post-surgical treatment", "Symptom management in advanced disease"] } },
-      "Because prostate cancer treatment plans are highly individualized, radiation therapy may be delivered alone or as part of a broader treatment strategy."
-    ]
-  },
+  id: "understanding-role",
+  title: "Understanding the Role of Radiation Therapy in Prostate Cancer",
+  blocks: [
+    "Prostate cancer behaves differently from many other cancers. Some tumors grow slowly and remain confined to the prostate gland, while others may spread to nearby tissues or distant organs. Radiation therapy can be adapted to different stages of the disease, making it a versatile treatment option.",
+    "The primary objective of radiation therapy is to damage the DNA inside cancer cells. Once the DNA is damaged, cancer cells lose their ability to grow and multiply. Over time, these damaged cells die and are naturally eliminated by the body.",
+    {
+      list: {
+        lead: "Radiation therapy may be recommended for:",
+        items: [
+          "Localized prostate cancer",
+          "Intermediate-risk prostate cancer",
+          "High-risk prostate cancer",
+          "Locally advanced prostate cancer",
+          "Recurrent prostate cancer",
+          "Post-surgical treatment",
+          "Symptom management in advanced disease"
+        ]
+      }
+    },
+    <>
+      Because{" "}
+      <Link
+        href="/treatments/best-prostate-cancer-treatment-india"
+        className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+      >
+        prostate cancer treatment
+      </Link>{" "}
+      plans are highly individualized, radiation therapy may be delivered alone
+      or as part of a broader treatment strategy.
+    </>
+  ]
+},
   {
     id: "when-recommended",
     title: "When Is Radiation Therapy Recommended?",
@@ -617,6 +640,7 @@ function renderBlock(block, key) {
       </div>
     );
   }
+  return <React.Fragment key={key}>{block}</React.Fragment>;
 
   if (block.numbered) {
     return (
