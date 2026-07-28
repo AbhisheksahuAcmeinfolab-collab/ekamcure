@@ -63,7 +63,7 @@ const sections = [
       >
         prostate cancer treatment
       </Link>
-      {", "}offering access to experienced oncology teams, multidisciplinary cancer centers, precision imaging technologies, targeted therapies, and personalized treatment strategies.
+      , offering access to experienced oncology teams, multidisciplinary cancer centers, precision imaging technologies, targeted therapies, and personalized treatment strategies.
     </>,
 
     "The goal of treatment is no longer focused solely on prolonging survival but also on maximizing quality of life while effectively managing the disease over the long term."
