@@ -640,7 +640,7 @@ function renderBlock(block, key) {
       </div>
     );
   }
-  return <React.Fragment key={key}>{block}</React.Fragment>;
+  
 
   if (block.numbered) {
     return (
@@ -678,6 +678,8 @@ function renderBlock(block, key) {
       </div>
     );
   }
+
+  return <React.Fragment key={key}>{block}</React.Fragment>;
 
   return null;
 }
