@@ -765,10 +765,8 @@ export default function RadiationTherapyProstateCancerIndia() {
                 ))}
               </div>
             </section>
-              
-          </div>
 
-        {/* MORE RELATED LINKS */}
+            {/* MORE RELATED LINKS */}
                 <section className="mt-16 mb-10">
                     <div className="bg-white rounded-2xl shadow-lg border border-[#E1E8F0] p-8">
                 
@@ -849,6 +847,10 @@ export default function RadiationTherapyProstateCancerIndia() {
                         </div>
                     </div>
                 </section>
+                  
+          </div>
+
+        
 
           {/* SIDEBAR */}
           <div className="lg:col-span-3">
