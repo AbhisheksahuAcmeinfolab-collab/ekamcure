@@ -280,6 +280,14 @@ function renderBlock(block, key) {
     );
   }
 
+  if (React.isValidElement(block)) {
+  return (
+    <p key={key} className="text-[#3E4C59] leading-relaxed mb-3 last:mb-0">
+      {block}
+    </p>
+  );
+}
+
   if (block.list) {
     return (
       <div key={key} className="mb-3">
