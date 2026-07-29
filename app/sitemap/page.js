@@ -157,7 +157,7 @@ export default function SitemapPage() {
             marginBottom: "15px",
           }}
         >
-          HTML Sitemap
+          Sitemap
         </h1>
 
         <p
