@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "HTML Sitemap | Ekam Cure",
+  title: "Sitemap | Ekam Cure",
   description:
     "Browse all important pages of Ekam Cure including treatments, doctors, blogs, services and patient resources.",
 };
