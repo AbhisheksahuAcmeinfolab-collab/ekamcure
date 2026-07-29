@@ -292,16 +292,35 @@ function renderBlock(block, key) {
     );
   }
 
+  // JSX support (for Link components)
+  if (React.isValidElement(block)) {
+    return (
+      <p key={key} className="text-[#3E4C59] leading-relaxed mb-3 last:mb-0">
+        {block}
+      </p>
+    );
+  }
+
   if (block.list) {
     return (
       <div key={key} className="mb-3">
-        {block.list.lead && <p className="text-[#3E4C59] leading-relaxed mb-3">{block.list.lead}</p>}
+        {block.list.lead && (
+          <p className="text-[#3E4C59] leading-relaxed mb-3">
+            {block.list.lead}
+          </p>
+        )}
+
         <div className="flex flex-wrap gap-2 mb-3">
           {block.list.items.map((item, i) => (
             <Tag key={i}>{item}</Tag>
           ))}
         </div>
-        {block.list.trailing && <p className="text-[#3E4C59] leading-relaxed">{block.list.trailing}</p>}
+
+        {block.list.trailing && (
+          <p className="text-[#3E4C59] leading-relaxed">
+            {block.list.trailing}
+          </p>
+        )}
       </div>
     );
   }
