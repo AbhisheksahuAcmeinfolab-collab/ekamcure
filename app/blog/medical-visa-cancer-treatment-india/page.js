@@ -94,7 +94,6 @@ const sections = [
       </>,
 
       "Understanding the medical visa process can help patients and their families plan their travel more efficiently and avoid unnecessary delays before treatment begins."
-      "Understanding the medical visa process can help patients and their families plan their travel more efficiently and avoid unnecessary delays before treatment begins."
     ]
   },
   {
