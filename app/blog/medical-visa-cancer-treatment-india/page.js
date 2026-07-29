@@ -75,7 +75,25 @@ const sections = [
     blocks: [
       "India has become one of the world's leading destinations for cancer treatment, attracting thousands of international patients each year. With advanced oncology centers, experienced specialists, modern treatment technologies, and comprehensive patient support services, India offers access to high-quality cancer care for patients from across the globe.",
       "For international patients planning to travel to India for cancer treatment, obtaining the appropriate medical visa is an essential part of the treatment journey. A medical visa allows foreign nationals to enter India specifically for medical evaluation, treatment, surgery, follow-up care, and specialized healthcare services.",
-      "Whether patients require advanced breast cancer treatment in India or specialized prostate cancer treatment in India, Ekam assists with hospital selection, treatment planning, medical visa support, and complete care coordination for a seamless treatment experience.",
+      <>
+        Whether patients require advanced{" "}
+        <Link
+          href="/treatments/breast-cancer-treatment-in-india"
+          className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+        >
+          breast cancer treatment in India
+        </Link>{" "}
+        or specialized{" "}
+        <Link
+          href="/treatments/best-prostate-cancer-treatment-india"
+          className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+        >
+          prostate cancer treatment in India
+        </Link>
+        {", "}Ekam assists with hospital selection, treatment planning, medical visa support, and complete care coordination for a seamless treatment experience.
+      </>,
+
+      "Understanding the medical visa process can help patients and their families plan their travel more efficiently and avoid unnecessary delays before treatment begins."
       "Understanding the medical visa process can help patients and their families plan their travel more efficiently and avoid unnecessary delays before treatment begins."
     ]
   },
@@ -203,15 +221,40 @@ const sections = [
       "The country's healthcare ecosystem is well-equipped to manage the needs of overseas patients seeking specialized cancer care."
     ]
   },
+
   {
-    id: "how-ekam-helps",
-    title: "How Ekam Helps with Medical Visa Assistance",
-    blocks: [
-      "Navigating medical travel can be overwhelming for patients and families.",
-      { list: { lead: "Ekam supports international patients throughout the treatment journey by assisting with:", items: ["Hospital selection", "Medical case evaluation", "Treatment planning", "Visa guidance", "Travel coordination", "Accommodation support", "Follow-up care planning"] } },
-      "By helping patients connect with leading cancer specialists and hospitals in India, Ekam simplifies the process of accessing quality cancer care."
-    ]
-  },
+  id: "how-ekam-helps",
+  title: "How Ekam Helps with Medical Visa Assistance",
+  blocks: [
+    "Navigating medical travel can be overwhelming for patients and families.",
+    {
+      list: {
+        lead: (
+          <>
+            <Link
+              href="/services"
+              className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+            >
+              Ekam supports international patients
+            </Link>{" "}
+            throughout the treatment journey by assisting with:
+          </>
+        ),
+        items: [
+          "Hospital selection",
+          "Medical case evaluation",
+          "Treatment planning",
+          "Visa guidance",
+          "Travel coordination",
+          "Accommodation support",
+          "Follow-up care planning"
+        ]
+      }
+    },
+    "By helping patients connect with leading cancer specialists and hospitals in India, Ekam simplifies the process of accessing quality cancer care."
+  ]
+},
+    
   {
     id: "conclusion",
     title: "Conclusion",
