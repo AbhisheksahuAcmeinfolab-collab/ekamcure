@@ -60,6 +60,7 @@ export default function Footer() {
     { name: "Patient's Story", href: "/patient-story" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
+    { name: "Sitemap", href: "/sitemap" },
   ];
 
   return (
