@@ -48,14 +48,26 @@ const articleSchema = {
 
 const sections = [
   {
-    id: "intro",
-    title: "Introduction",
-    blocks: [
-      "Hormone therapy is one of the most important treatment approaches used in the management of prostate cancer. Unlike surgery or radiation therapy, hormone therapy does not directly remove or destroy tumors. Instead, it works by reducing the effect of male hormones that help prostate cancer cells grow and multiply.",
-      "Prostate cancer is often dependent on androgens, particularly testosterone, for its growth and survival. By lowering testosterone levels or blocking its action, hormone therapy can slow disease progression, shrink tumors, and improve disease control in many patients.",
-      "Hormone therapy has become an integral component of modern prostate cancer management and is commonly used in combination with other treatment strategies depending on the stage and characteristics of the disease."
-    ]
-  },
+  id: "intro",
+  title: "Introduction",
+  blocks: [
+    "Hormone therapy is one of the most important treatment approaches used in the management of prostate cancer. Unlike surgery or radiation therapy, hormone therapy does not directly remove or destroy tumors. Instead, it works by reducing the effect of male hormones that help prostate cancer cells grow and multiply.",
+
+    "Prostate cancer is often dependent on androgens, particularly testosterone, for its growth and survival. By lowering testosterone levels or blocking its action, hormone therapy can slow disease progression, shrink tumors, and improve disease control in many patients.",
+
+    <>
+      Hormone therapy has become an integral component of modern{" "}
+      <Link
+        href="/treatments/best-prostate-cancer-treatment-india"
+        className="text-[#053161] font-semibold hover:text-pink-600 underline transition-colors"
+      >
+        prostate cancer
+      </Link>{" "}
+      management and is commonly used in combination with other treatment
+      strategies depending on the stage and characteristics of the disease.
+    </>,
+  ]
+},
   {
     id: "understanding-testosterone",
     title: "Understanding the Relationship Between Testosterone and Prostate Cancer",
