@@ -288,7 +288,7 @@ Patients receive individualized treatment plans based on age, fertility history,
 
               </p>
               <p className="bg-white p-6 rounded-xl shadow mb-6">
-                In addition to advanced reproductive treatments, Ekam provides access to comprehensive healthcare services, including <a href="https://www.ekamfertility.com/heart-valve-surgery-in-india/" target="_blank" rel="noopener noreferrer"><strong> heart valve surgery in India </strong></a>, ensuring international patients receive expert care across multiple medical specialties.
+                In addition to advanced reproductive treatments, Ekam provides access to comprehensive healthcare services, including <a href="https://www.ekamcure.com/treatments/heart-valve-surgery-india" target="_blank" rel="noopener noreferrer"><strong> heart valve surgery in India </strong></a>, ensuring international patients receive expert care across multiple medical specialties.
               </p>
              
             </section>
