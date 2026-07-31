@@ -169,7 +169,7 @@ export default function SitemapPage() {
             fontSize: "18px",
           }}
         >
-          Browse all important pages of Ekam Cure from one place.
+          Browse all important pages of Ekamcure from one place
         </p>
       </section>
 
