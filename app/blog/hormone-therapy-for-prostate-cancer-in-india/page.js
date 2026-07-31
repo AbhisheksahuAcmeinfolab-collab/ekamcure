@@ -1,6 +1,6 @@
 import Script from "next/script";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import ContactForm from "../../../Component/ContactForm";
 import Sidebar from "../../../Component/Sidebar";
 
@@ -303,6 +303,14 @@ function renderBlock(block, key) {
       </p>
     );
   }
+
+  if (React.isValidElement(block)) {
+  return (
+    <p key={key} className="text-[#3E4C59] leading-relaxed mb-3 last:mb-0">
+      {block}
+    </p>
+  );
+}
 
   if (block.list) {
     return (
