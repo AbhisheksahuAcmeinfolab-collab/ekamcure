@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -522,7 +523,8 @@ const faqSchema =
         {/* Responsive Grid */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
           {specialties.map((item, index) => (
-            <div
+            <Link
+              href={item.link}
               key={index}
               className="w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300 flex flex-col sm:flex-row items-center overflow-hidden"
             >
@@ -543,7 +545,7 @@ const faqSchema =
                   {item.title}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center mt-10">
