@@ -67,7 +67,7 @@ const slides = [
 ];
 const specialties = [
   {
-    title: "Neurology Treatment",
+    title: "IVF Treatment in India",
     alt: "not found",
     icon: pic4,
     color: "bg-orange-500",
