@@ -528,15 +528,15 @@ const faqSchema =
               className="w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300 flex flex-col sm:flex-row items-center overflow-hidden"
             >
               {/* Left Half - Icon */}
-              <div className="w-full sm:w-1/2 flex items-center justify-center bg-[#D5E0F2] h-28 p-4">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={64}
-                  height={64}
-                  className="w-16 h-16 object-contain transition-transform duration-300 hover:scale-105"
-                />
-              </div>
+                <div className="w-full sm:w-1/2 flex items-center justify-center bg-[#D5E0F2] h-28 p-4">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={64}
+                    height={64}
+                    className="w-16 h-16 object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
 
               {/* Right Half - Title */}
               <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
