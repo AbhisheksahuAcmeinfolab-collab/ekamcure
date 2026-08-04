@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import Link from "next/link";
 import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -80,7 +79,7 @@ const specialties = [
     alt: "not found",
     icon: pic5,
     color: "bg-red-500 hover:bg-red-500",
-    link: "treatments/best-prostate-cancer-treatment-india",
+    link: "/treatments/best-prostate-cancer-treatment-india",
   },
   {
     title: "Breast Cancer Treatment in India",
