@@ -366,6 +366,15 @@ export default function ProstateCancerSurvivalRateIndia() {
         <div className="grid md:grid-cols-2 gap-5">
 
             <Link
+                href="/treatments/best-prostate-cancer-treatment-india"
+                className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
+            >
+                <span className="font-medium text-[#053161] group-hover:text-white transition">
+                    → Best Prostate Cancer Treatment in India
+                </span>
+            </Link>      
+
+            <Link
                 href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
                 className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
             >
@@ -439,7 +448,7 @@ export default function ProstateCancerSurvivalRateIndia() {
 
             <Link
                 href="/blog/medical-visa-cancer-treatment-india"
-                className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300 md:col-span-2"
+                className="group flex items-center justify-between bg-[#F8FAFD] border border-[#E1E8F0] rounded-xl px-5 py-4 hover:border-pink-500 hover:bg-gradient-to-r hover:from-[#053161] hover:to-[#6796cc] transition-all duration-300"
             >
                 <span className="font-medium text-[#053161] group-hover:text-white transition">
                     → Medical Visa for Cancer Treatment in India
