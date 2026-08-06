@@ -646,7 +646,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/treatments/best-prostate-cancer-treatment-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -656,7 +656,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -666,7 +666,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/doctors/best-prostate-cancer-doctors-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -676,7 +676,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/best-cancer-hospitals-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -686,7 +686,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/radiation-therapy-for-prostate-cancer-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -696,7 +696,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/prostate-cancer-survival-rate-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -706,7 +706,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/why-choose-india-for-prostate-cancer-treatment"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -716,7 +716,7 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/hormone-therapy-for-prostate-cancer-in-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
                         <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
                         <span className="text-lg font-medium" style={{ color: "#053161" }}>
@@ -726,37 +726,44 @@ export default function TopCancerHospitalsIndia() {
                 
                       <a
                         href="/blog/metastatic-prostate-cancer-treatment-india"
-                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
-                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
-                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                        <span
+                          className="mr-3 text-xl group-hover:translate-x-1 transition-transform"
+                          style={{ color: "#1B4F9C" }}
+                        >
+                          →
+                        </span>
+                        <span
+                          className="text-lg font-medium"
+                          style={{ color: "#053161" }}
+                        >
                           Metastatic Prostate Cancer Treatment in India
                         </span>
                       </a>
                       
-                        <a
-                          href="/blog/medical-visa-cancer-treatment-india"
-                          className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      <a
+                        href="/blog/medical-visa-cancer-treatment-india"
+                        className="group md:col-span-2 flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span
+                          className="mr-3 text-xl group-hover:translate-x-1 transition-transform"
+                          style={{ color: "#1B4F9C" }}
                         >
-                          <span
-                            className="mr-3 text-xl group-hover:translate-x-1 transition-transform"
-                            style={{ color: "#1B4F9C" }}
-                          >
-                            →
-                          </span>
-                        
-                          <span
-                            className="text-lg font-medium"
-                            style={{ color: "#053161" }}
-                          >
-                            Medical Visa for Cancer Treatment in India
-                          </span>
-                        </a>
+                          →
+                        </span>
+                      
+                        <span
+                          className="text-lg font-medium"
+                          style={{ color: "#053161" }}
+                        >
+                          Medical Visa for Cancer Treatment in India
+                        </span>
+                      </a>
+                      
                       </div>
-                
-                    </div>
-                  </div>
-                </section>
+                      </div>
+                      </section>
 
           </div>
 
