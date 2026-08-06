@@ -388,7 +388,14 @@ export default function BestCancerHospitalsIndia() {
                   </h2>
               
                   <div className="grid md:grid-cols-2 gap-4">
-              
+
+                    <a href="/treatments/best-prostate-cancer-treatment-india" className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-[#e5e7eb] hover:border-pink-400 hover:shadow-md transition-all duration-300">
+                      <span className="text-[#1B4F9C] group-hover:text-pink-600 text-lg transition-all">→</span>
+                      <span className="text-[#053161] font-medium group-hover:text-pink-600 transition-colors">
+                        Best Prostate Cancer Treatment in India
+                      </span>
+                    </a>
+                      
                     <a href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india" className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-[#e5e7eb] hover:border-pink-400 hover:shadow-md transition-all duration-300">
                       <span className="text-[#1B4F9C] group-hover:text-pink-600 text-lg transition-all">→</span>
                       <span className="text-[#053161] font-medium group-hover:text-pink-600 transition-colors">
