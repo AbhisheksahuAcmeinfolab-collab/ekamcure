@@ -733,14 +733,22 @@ export default function TopCancerHospitalsIndia() {
                           Metastatic Prostate Cancer Treatment in India
                         </span>
                       </a>
-                
-                      <div className="md:col-span-2">
+                      
                         <a
                           href="/blog/medical-visa-cancer-treatment-india"
                           className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                         >
-                          <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
-                          <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          <span
+                            className="mr-3 text-xl group-hover:translate-x-1 transition-transform"
+                            style={{ color: "#1B4F9C" }}
+                          >
+                            →
+                          </span>
+                        
+                          <span
+                            className="text-lg font-medium"
+                            style={{ color: "#053161" }}
+                          >
                             Medical Visa for Cancer Treatment in India
                           </span>
                         </a>
