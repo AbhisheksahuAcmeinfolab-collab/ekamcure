@@ -570,11 +570,11 @@ export default function ProstateCancerTreatmentCostIndia() {
                 <div className="grid md:grid-cols-2 gap-4">
 
                   <Link
-                    href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
+                    href="/treatments/best-prostate-cancer-treatment-india"
                     className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 border border-gray-200 hover:border-pink-500"
                   >
                     <span className="font-semibold text-gray-800">
-                      Prostate Cancer Treatment Cost in India
+                      Best Prostate Cancer Treatment in India
                     </span>
                   </Link>
 
