@@ -645,6 +645,16 @@ export default function TopCancerHospitalsIndia() {
                     <div className="grid md:grid-cols-2 gap-5">
                 
                       <a
+                        href="/treatments/best-prostate-cancer-treatment-india"
+                        className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
+                      >
+                        <span className="mr-3 text-xl group-hover:translate-x-1 transition-transform" style={{ color: "#1B4F9C" }}>→</span>
+                        <span className="text-lg font-medium" style={{ color: "#053161" }}>
+                          Best Prostate Cancer Treatment in India
+                        </span>
+                      </a>
+                
+                      <a
                         href="/cost-of-treatment/prostate-cancer-treatment-cost-in-india"
                         className="group flex items-center rounded-xl border border-[#E5EAF1] bg-[#F8FAFD] px-6 py-5 hover:border-[#1B4F9C] hover:bg-white transition-all duration-300"
                       >
