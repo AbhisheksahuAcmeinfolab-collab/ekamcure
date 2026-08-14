@@ -1,126 +1,164 @@
 import Link from "next/link";
 
-expo
-rt const metadata = {
+export const metadata = {
   title: "Hip Replacement Surgery Cost in India for International Patients",
   description:
     "Discover hip replacement surgery cost in India for international patients, including treatment options, cost factors, hospital stay, recovery, and travel considerations.",
 };
 
-export default function HipReplacementCostPage() {
-  return (
-    <main className="bg-[#F6F9FD] text-[#053161]">
-
-      {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
-          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
-          <div className="max-w-4xl">
-
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-2 mb-6 text-sm font-medium">
-              Medical Tourism • Orthopaedic Care
-            </div>
-
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-              Hip Replacement Surgery Cost in India for International Patients
-            </h1>
-
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              Discover hip replacement surgery cost in India for international
-              patients, including treatment options, cost factors, hospital stay,
-              recovery, and travel considerations.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-      {/* MAIN CONTENT */}
-      <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-
-        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
-
-          {/* ARTICLE */}
-          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
-
-            <div className="p-6 md:p-10 lg:p-12">
-
-              {/* INTRO */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-5">
-                  How Much Does Hip Replacement Surgery Cost in India?
-                </h2>
-
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  For international patients, the <strong>hip replacement surgery cost in India</strong> can vary depending on the type of surgery, implant selected, hospital, surgeon, medical condition, and length of hospital stay. As an indicative guide, published 2026 pricing from Indian healthcare providers places hip replacement treatment broadly in the range of <strong>USD 5,500 and above for a single hip</strong>, while costs can be higher at premium hospitals or when advanced implants and more complex procedures are required.
-                </p>
-
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  Some healthcare sources report wider ranges for hip replacement surgery in India because hospitals and treatment packages differ considerably. Therefore, international patients should treat online prices as <strong>indicative estimates rather than a final quotation</strong>. The actual treatment cost can only be determined after an orthopaedic surgeon reviews the patient's medical history, diagnostic reports, X-rays and other relevant investigations.
-                </p>
-
-                {/* COST TABLE */}
-                <div className="overflow-x-auto rounded-xl border border-[#DCE5F0] shadow-sm">
-                  <table className="w-full min-w-[650px] border-collapse">
-                    <thead>
-                      <tr className="bg-[#053161] text-white">
-                        <th className="text-left px-5 py-4 font-semibold">
-                          Treatment
-                        </th>
-                        <th className="text-left px-5 py-4 font-semibold">
-                          Indicative Cost in India*
-                        </th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr className="border-b border-[#E5EAF1]">
-                        <td className="px-5 py-4 font-medium">
-                          Single/Unilateral Hip Replacement
-                        </td>
-                        <td className="px-5 py-4">
-                          From around USD 5,500
-                        </td>
-                      </tr>
-
-                      <tr className="border-b border-[#E5EAF1] bg-[#F8FAFD]">
-                        <td className="px-5 py-4 font-medium">
-                          Total Hip Replacement
-                        </td>
-                        <td className="px-5 py-4">
-                          Varies according to implant, hospital and patient condition
-                        </td>
-                      </tr>
-
-                      <tr className="border-b border-[#E5EAF1]">
-                        <td className="px-5 py-4 font-medium">
-                          Bilateral Hip Replacement
-                        </td>
-                        <td className="px-5 py-4">
-                          Higher than single-hip replacement and depends on the treatment plan
-                        </td>
-                      </tr>
-
-                      <tr className="bg-[#F8FAFD]">
-                        <td className="px-5 py-4 font-medium">
-                          Revision Hip Replacement
-                        </td>
-                        <td className="px-5 py-4">
-                          Usually higher because it is a more complex procedure
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <p className="text-sm text-[#64748B] italic mt-4 leading-7">
-                  *These figures are indicative and should not be considered a fixed quotation. The final cost is determined by the treating hospital and surgeon after medical evaluation.
-                </p>
-              </section>
+                export default function HipReplacementCostPage() {
+                  return (
+                    <main className="bg-[#F6F9FD] text-[#053161]">
+                
+                      {/* HERO SECTION */}
+                      <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
+                        <div className="absolute inset-0 opacity-10">
+                          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
+                          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
+                        </div>
+                
+                        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
+                          <div className="max-w-4xl">
+                
+                            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-2 mb-6 text-sm font-medium">
+                              Medical Tourism • Orthopaedic Care
+                            </div>
+                
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
+                              Hip Replacement Surgery Cost in India for International Patients
+                            </h1>
+                
+                            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
+                              Discover hip replacement surgery cost in India for international
+                              patients, including treatment options, cost factors, hospital stay,
+                              recovery, and travel considerations.
+                            </p>
+                
+                          </div>
+                        </div>
+                      </section>
+                
+                      {/* MAIN CONTENT */}
+                      <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
+                
+                        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
+                
+                          {/* ARTICLE */}
+                          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
+                
+                            <div className="p-6 md:p-10 lg:p-12">
+                
+                              {/* INTRO */}
+                              <section className="mb-12">
+                
+                                <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-5">
+                                  How Much Does Hip Replacement Surgery Cost in India?
+                                </h2>
+                
+                                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                                  For international patients, the{" "}
+                                  <strong>hip replacement surgery cost in India</strong> can vary
+                                  depending on the type of surgery, implant selected, hospital,
+                                  surgeon, medical condition, and length of hospital stay. As an
+                                  indicative guide, published 2026 pricing from Indian healthcare
+                                  providers places hip replacement treatment broadly in the range
+                                  of <strong>USD 5,500 and above for a single hip</strong>, while
+                                  costs can be higher at premium hospitals or when advanced
+                                  implants and more complex procedures are required.
+                                </p>
+                
+                                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                                  Some healthcare sources report wider ranges for hip replacement
+                                  surgery in India because hospitals and treatment packages differ
+                                  considerably. Therefore, international patients should treat
+                                  online prices as{" "}
+                                  <strong>indicative estimates rather than a final quotation</strong>.
+                                  The actual treatment cost can only be determined after an
+                                  orthopaedic surgeon reviews the patient's medical history,
+                                  diagnostic reports, X-rays and other relevant investigations.
+                                </p>
+                
+                                {/* COST TABLE */}
+                                <div className="overflow-x-auto rounded-xl border border-[#DCE5F0] shadow-sm">
+                                  <table className="w-full min-w-[650px] border-collapse">
+                
+                                    <thead>
+                                      <tr className="bg-[#053161] text-white">
+                                        <th className="text-left px-5 py-4 font-semibold">
+                                          Treatment
+                                        </th>
+                
+                                        <th className="text-left px-5 py-4 font-semibold">
+                                          Indicative Cost in India*
+                                        </th>
+                                      </tr>
+                                    </thead>
+                
+                                    <tbody>
+                
+                                      <tr className="border-b border-[#E5EAF1]">
+                                        <td className="px-5 py-4 font-medium">
+                                          Single/Unilateral Hip Replacement
+                                        </td>
+                
+                                        <td className="px-5 py-4">
+                                          From around USD 5,500
+                                        </td>
+                                      </tr>
+                
+                                      <tr className="border-b border-[#E5EAF1] bg-[#F8FAFD]">
+                                        <td className="px-5 py-4 font-medium">
+                                          Total Hip Replacement
+                                        </td>
+                
+                                        <td className="px-5 py-4">
+                                          Varies according to implant, hospital and patient
+                                          condition
+                                        </td>
+                                      </tr>
+                
+                                      <tr className="border-b border-[#E5EAF1]">
+                                        <td className="px-5 py-4 font-medium">
+                                          Bilateral Hip Replacement
+                                        </td>
+                
+                                        <td className="px-5 py-4">
+                                          Higher than single-hip replacement and depends on the
+                                          treatment plan
+                                        </td>
+                                      </tr>
+                
+                                      <tr className="bg-[#F8FAFD]">
+                                        <td className="px-5 py-4 font-medium">
+                                          Revision Hip Replacement
+                                        </td>
+                
+                                        <td className="px-5 py-4">
+                                          Usually higher because it is a more complex procedure
+                                        </td>
+                                      </tr>
+                
+                                    </tbody>
+                                  </table>
+                                </div>
+                
+                                <p className="text-sm text-[#64748B] italic mt-4 leading-7">
+                                  *These figures are indicative and should not be considered a
+                                  fixed quotation. The final cost is determined by the treating
+                                  hospital and surgeon after medical evaluation.
+                                </p>
+                
+                              </section>
+                
+                            </div>
+                          </article>
+                
+                        </div>
+                      </div>
+                
+                    </main>
+                  );
+                }
 
 
               {/* WHAT IS INCLUDED */}
