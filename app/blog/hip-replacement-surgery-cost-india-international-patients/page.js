@@ -6,160 +6,125 @@ export const metadata = {
     "Discover hip replacement surgery cost in India for international patients, including treatment options, cost factors, hospital stay, recovery, and travel considerations.",
 };
 
-                export default function HipReplacementCostPage() {
-                  return (
-                    <main className="bg-[#F6F9FD] text-[#053161]">
-                
-                      {/* HERO SECTION */}
-                      <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
-                        <div className="absolute inset-0 opacity-10">
-                          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
-                          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
-                        </div>
-                
-                        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
-                          <div className="max-w-4xl">
-                
-                            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-2 mb-6 text-sm font-medium">
-                              Medical Tourism • Orthopaedic Care
-                            </div>
-                
-                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-                              Hip Replacement Surgery Cost in India for International Patients
-                            </h1>
-                
-                            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
-                              Discover hip replacement surgery cost in India for international
-                              patients, including treatment options, cost factors, hospital stay,
-                              recovery, and travel considerations.
-                            </p>
-                
-                          </div>
-                        </div>
-                      </section>
-                
-                      {/* MAIN CONTENT */}
-                      <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-                
-                        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
-                
-                          {/* ARTICLE */}
-                          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
-                
-                            <div className="p-6 md:p-10 lg:p-12">
-                
-                              {/* INTRO */}
-                              <section className="mb-12">
-                
-                                <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-5">
-                                  How Much Does Hip Replacement Surgery Cost in India?
-                                </h2>
-                
-                                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                                  For international patients, the{" "}
-                                  <strong>hip replacement surgery cost in India</strong> can vary
-                                  depending on the type of surgery, implant selected, hospital,
-                                  surgeon, medical condition, and length of hospital stay. As an
-                                  indicative guide, published 2026 pricing from Indian healthcare
-                                  providers places hip replacement treatment broadly in the range
-                                  of <strong>USD 5,500 and above for a single hip</strong>, while
-                                  costs can be higher at premium hospitals or when advanced
-                                  implants and more complex procedures are required.
-                                </p>
-                
-                                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                                  Some healthcare sources report wider ranges for hip replacement
-                                  surgery in India because hospitals and treatment packages differ
-                                  considerably. Therefore, international patients should treat
-                                  online prices as{" "}
-                                  <strong>indicative estimates rather than a final quotation</strong>.
-                                  The actual treatment cost can only be determined after an
-                                  orthopaedic surgeon reviews the patient's medical history,
-                                  diagnostic reports, X-rays and other relevant investigations.
-                                </p>
-                
-                                {/* COST TABLE */}
-                                <div className="overflow-x-auto rounded-xl border border-[#DCE5F0] shadow-sm">
-                                  <table className="w-full min-w-[650px] border-collapse">
-                
-                                    <thead>
-                                      <tr className="bg-[#053161] text-white">
-                                        <th className="text-left px-5 py-4 font-semibold">
-                                          Treatment
-                                        </th>
-                
-                                        <th className="text-left px-5 py-4 font-semibold">
-                                          Indicative Cost in India*
-                                        </th>
-                                      </tr>
-                                    </thead>
-                
-                                    <tbody>
-                
-                                      <tr className="border-b border-[#E5EAF1]">
-                                        <td className="px-5 py-4 font-medium">
-                                          Single/Unilateral Hip Replacement
-                                        </td>
-                
-                                        <td className="px-5 py-4">
-                                          From around USD 5,500
-                                        </td>
-                                      </tr>
-                
-                                      <tr className="border-b border-[#E5EAF1] bg-[#F8FAFD]">
-                                        <td className="px-5 py-4 font-medium">
-                                          Total Hip Replacement
-                                        </td>
-                
-                                        <td className="px-5 py-4">
-                                          Varies according to implant, hospital and patient
-                                          condition
-                                        </td>
-                                      </tr>
-                
-                                      <tr className="border-b border-[#E5EAF1]">
-                                        <td className="px-5 py-4 font-medium">
-                                          Bilateral Hip Replacement
-                                        </td>
-                
-                                        <td className="px-5 py-4">
-                                          Higher than single-hip replacement and depends on the
-                                          treatment plan
-                                        </td>
-                                      </tr>
-                
-                                      <tr className="bg-[#F8FAFD]">
-                                        <td className="px-5 py-4 font-medium">
-                                          Revision Hip Replacement
-                                        </td>
-                
-                                        <td className="px-5 py-4">
-                                          Usually higher because it is a more complex procedure
-                                        </td>
-                                      </tr>
-                
-                                    </tbody>
-                                  </table>
-                                </div>
-                
-                                <p className="text-sm text-[#64748B] italic mt-4 leading-7">
-                                  *These figures are indicative and should not be considered a
-                                  fixed quotation. The final cost is determined by the treating
-                                  hospital and surgeon after medical evaluation.
-                                </p>
-                
-                              </section>
-                
-                            </div>
-                          </article>
-                
-                        </div>
-                      </div>
-                
-                    </main>
-                  );
-                }
+export default function HipReplacementCostPage() {
+  return (
+    <main className="bg-[#F6F9FD] text-[#053161]">
+      {/* HERO SECTION */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
+          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
+        </div>
 
+        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-2 mb-6 text-sm font-medium">
+              Medical Tourism • Orthopaedic Care
+            </div>
+
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
+              Hip Replacement Surgery Cost in India for International Patients
+            </h1>
+
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
+              Discover hip replacement surgery cost in India for international
+              patients, including treatment options, cost factors, hospital stay,
+              recovery, and travel considerations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MAIN CONTENT */}
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
+          {/* ARTICLE */}
+          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
+            <div className="p-6 md:p-10 lg:p-12">
+              
+              {/* INTRO */}
+              <section className="mb-12">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-5">
+                  How Much Does Hip Replacement Surgery Cost in India?
+                </h2>
+
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                  For international patients, the{" "}
+                  <strong>hip replacement surgery cost in India</strong> can vary
+                  depending on the type of surgery, implant selected, hospital,
+                  surgeon, medical condition, and length of hospital stay. As an
+                  indicative guide, published 2026 pricing from Indian healthcare
+                  providers places hip replacement treatment broadly in the range
+                  of <strong>USD 5,500 and above for a single hip</strong>, while
+                  costs can be higher at premium hospitals or when advanced
+                  implants and more complex procedures are required.
+                </p>
+
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                  Some healthcare sources report wider ranges for hip replacement
+                  surgery in India because hospitals and treatment packages differ
+                  considerably. Therefore, international patients should treat
+                  online prices as{" "}
+                  <strong>indicative estimates rather than a final quotation</strong>.
+                  The actual treatment cost can only be determined after an
+                  orthopaedic surgeon reviews the patient's medical history,
+                  diagnostic reports, X-rays and other relevant investigations.
+                </p>
+
+                {/* COST TABLE */}
+                <div className="overflow-x-auto rounded-xl border border-[#DCE5F0] shadow-sm">
+                  <table className="w-full min-w-[650px] border-collapse">
+                    <thead>
+                      <tr className="bg-[#053161] text-white">
+                        <th className="text-left px-5 py-4 font-semibold">
+                          Treatment
+                        </th>
+                        <th className="text-left px-5 py-4 font-semibold">
+                          Indicative Cost in India*
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-[#E5EAF1]">
+                        <td className="px-5 py-4 font-medium">
+                          Single/Unilateral Hip Replacement
+                        </td>
+                        <td className="px-5 py-4">From around USD 5,500</td>
+                      </tr>
+                      <tr className="border-b border-[#E5EAF1] bg-[#F8FAFD]">
+                        <td className="px-5 py-4 font-medium">
+                          Total Hip Replacement
+                        </td>
+                        <td className="px-5 py-4">
+                          Varies according to implant, hospital and patient condition
+                        </td>
+                      </tr>
+                      <tr className="border-b border-[#E5EAF1]">
+                        <td className="px-5 py-4 font-medium">
+                          Bilateral Hip Replacement
+                        </td>
+                        <td className="px-5 py-4">
+                          Higher than single-hip replacement and depends on the treatment plan
+                        </td>
+                      </tr>
+                      <tr className="bg-[#F8FAFD]">
+                        <td className="px-5 py-4 font-medium">
+                          Revision Hip Replacement
+                        </td>
+                        <td className="px-5 py-4">
+                          Usually higher because it is a more complex procedure
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p className="text-sm text-[#64748B] italic mt-4 leading-7">
+                  *These figures are indicative and should not be considered a
+                  fixed quotation. The final cost is determined by the treating
+                  hospital and surgeon after medical evaluation.
+                </p>
+              </section>
 
               {/* WHAT IS INCLUDED */}
               <section className="mb-12">
@@ -167,11 +132,11 @@ export const metadata = {
                   What Is Included in the Hip Replacement Surgery Cost?
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The components included in a hospital package can vary. International patients should ask for a written cost estimate that clearly identifies what is included before travelling to India.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Depending on the hospital and package, the medical treatment cost may include:
                 </p>
 
@@ -190,15 +155,14 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   For example, some Indian healthcare providers specifically list pre-operative investigations, the implant, surgery, hospital stay, medicines and hospital consumables among package components, while other expenses such as flights, visa and accommodation outside the hospital may be excluded.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   International patients should not compare quotes based solely on the headline price because package inclusions vary throughout institutions. A lower quotation may exclude an implant, diagnostic tests, additional hospital days or other services that another hospital has included.
                 </p>
               </section>
-
 
               {/* FACTORS */}
               <section className="mb-12">
@@ -206,7 +170,7 @@ export const metadata = {
                   Factors That Affect Hip Replacement Surgery Cost in India
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   There is no single price for hip replacement surgery because every patient's treatment plan is different. The main factors that can influence the final cost include:
                 </p>
 
@@ -253,18 +217,17 @@ export const metadata = {
                 />
               </section>
 
-
               {/* INTERNATIONAL PATIENTS */}
               <section className="mb-12">
                 <SectionHeading>
                   Does the Cost Differ for International Patients?
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The <strong>medical procedure itself is generally determined by the same clinical considerations regardless of the patient's nationality</strong>, but international patients may require additional services related to travelling to India for treatment.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   These can include:
                 </p>
 
@@ -283,11 +246,10 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   These expenses should be considered separately when calculating the <strong>total budget for a medical trip to India</strong>.
                 </p>
               </section>
-
 
               {/* PERSONALIZED ESTIMATE */}
               <section className="mb-12">
@@ -295,15 +257,14 @@ export const metadata = {
                   Why International Patients Should Request a Personalized Cost Estimate
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Online cost ranges are useful for initial planning, but they cannot replace an individual medical assessment. The final quotation may change according to the diagnosis, severity of joint damage, recommended surgical technique, implant selection, medical history and hospital package.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   International patients can share their available medical records, X-rays, MRI/CT reports and previous treatment details with the healthcare team for an initial assessment. The treating hospital can assess the situation, decide whether hip replacement is necessary, and provide a more detailed treatment and cost estimate.
                 </p>
               </section>
-
 
               {/* EXTRA COST */}
               <section className="mb-12">
@@ -317,15 +278,15 @@ export const metadata = {
                   What Other Costs Should Patients from Other Countries Budget For?
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   When planning <strong>hip replacement surgery in India</strong>, international patients should look beyond the hospital surgery package and consider the complete cost of travelling to India and staying here during treatment and recovery.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Some expenses may be included in a hospital's treatment package, while others are usually paid separately. Before travelling, patients should request a detailed estimate that clearly separates <strong>medical expenses from travel and personal expenses</strong>.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The following are the main additional expenses to consider.
                 </p>
 
@@ -335,7 +296,7 @@ export const metadata = {
                   text="Before hip replacement surgery, the orthopaedic team may need to review the patient's previous medical records, X-rays, scans, blood reports and other investigations."
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   International patients may require:
                 </p>
 
@@ -350,7 +311,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The exact investigations depend on the patient's medical history and the hospital's requirements.
                 </p>
 
@@ -360,11 +321,11 @@ export const metadata = {
                   text="International patients travelling to India for medical treatment may need a Medical Visa or e-Medical Visa, depending on their nationality and eligibility."
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The Government of India's official visa portal recognizes medical treatment as an eligible purpose for an e-Visa for nationals of eligible countries. Visa requirements, fees and validity can vary by nationality and visa category.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Patients should check the latest requirements through the official Indian Visa Online portal before making travel arrangements.
                 </p>
 
@@ -385,7 +346,7 @@ export const metadata = {
                   text="Flight tickets are generally separate from the medical treatment cost."
                 />
 
-                <p className="ArticleText">The airfare can vary significantly depending on:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">The airfare can vary significantly depending on:</p>
 
                 <BulletList
                   items={[
@@ -399,7 +360,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Because hip replacement patients may have mobility limitations after surgery, international patients should discuss their travel plans with their treating medical team and consider appropriate assistance when booking flights.
                 </p>
 
@@ -409,7 +370,7 @@ export const metadata = {
                   text="Patients may need accommodation outside the hospital before admission or after discharge."
                 />
 
-                <p className="ArticleText">The total accommodation expense depends on:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">The total accommodation expense depends on:</p>
 
                 <BulletList
                   items={[
@@ -422,7 +383,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Some international patients may prefer serviced apartments or hotels located close to the hospital to make follow-up appointments and transportation easier.
                 </p>
 
@@ -432,7 +393,7 @@ export const metadata = {
                   text="Transportation between the airport, hospital, hotel and other medical facilities can be another expense."
                 />
 
-                <p className="ArticleText">International patients may need:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">International patients may need:</p>
 
                 <BulletList
                   items={[
@@ -444,7 +405,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Patients recovering from hip replacements might need a car that makes getting in and out easier and safer.
                 </p>
 
@@ -454,7 +415,7 @@ export const metadata = {
                   text="Some medicines and consumables may be included in the hospital package, while others may be billed separately depending on the hospital's package terms and the patient's clinical needs."
                 />
 
-                <p className="ArticleText">Potential expenses may include:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">Potential expenses may include:</p>
 
                 <BulletList
                   items={[
@@ -466,7 +427,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Patients should ask the hospital whether medicines during hospitalization and after discharge are included in the quoted treatment package.
                 </p>
 
@@ -476,7 +437,7 @@ export const metadata = {
                   text="Physiotherapy is an important part of recovery after hip replacement surgery. The number and duration of sessions can vary according to the patient's condition, mobility and rehabilitation plan."
                 />
 
-                <p className="ArticleText">Additional rehabilitation expenses may include:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">Additional rehabilitation expenses may include:</p>
 
                 <BulletList
                   items={[
@@ -488,7 +449,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The treating orthopaedic and rehabilitation teams should determine the appropriate recovery plan for each patient.
                 </p>
 
@@ -498,7 +459,7 @@ export const metadata = {
                   text="Many international patients travel with a spouse, relative or other attendant."
                 />
 
-                <p className="ArticleText">The accompanying person's expenses may include:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">The accompanying person's expenses may include:</p>
 
                 <BulletList
                   items={[
@@ -511,7 +472,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   These costs are normally separate from the patient's surgical package.
                 </p>
 
@@ -521,7 +482,7 @@ export const metadata = {
                   text="Patients should have extra cash on hand in case they need to stay in India longer than they had anticipated."
                 />
 
-                <p className="ArticleText">An extended stay may become necessary because of:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">An extended stay may become necessary because of:</p>
 
                 <BulletList
                   items={[
@@ -534,7 +495,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The treating team should determine when the patient is medically fit to travel.
                 </p>
 
@@ -544,7 +505,7 @@ export const metadata = {
                   text="Follow-up care can involve additional consultations, imaging, physiotherapy or other investigations."
                 />
 
-                <p className="ArticleText">International patients should clarify:</p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">International patients should clarify:</p>
 
                 <BulletList
                   items={[
@@ -556,11 +517,10 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   A clear post-treatment plan can help international patients understand their expected expenses before travelling to India.
                 </p>
               </section>
-
 
               {/* BUDGET */}
               <section className="mb-12">
@@ -568,7 +528,7 @@ export const metadata = {
                   Estimated Medical Tourism Budget for Hip Replacement in India
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The overall budget can be divided into four broad categories:
                 </p>
 
@@ -580,7 +540,6 @@ export const metadata = {
                         <th className="text-left px-5 py-4">Examples</th>
                       </tr>
                     </thead>
-
                     <tbody>
                       <tr className="border-b border-[#E5EAF1]">
                         <td className="px-5 py-4 font-semibold">Medical treatment</td>
@@ -588,21 +547,18 @@ export const metadata = {
                           Surgery, surgeon fees, implant, hospital stay, medicines and investigations
                         </td>
                       </tr>
-
                       <tr className="border-b border-[#E5EAF1] bg-[#F8FAFD]">
                         <td className="px-5 py-4 font-semibold">Travel</td>
                         <td className="px-5 py-4">
                           International flights and airport transfers
                         </td>
                       </tr>
-
                       <tr className="border-b border-[#E5EAF1]">
                         <td className="px-5 py-4 font-semibold">Stay in India</td>
                         <td className="px-5 py-4">
                           Hotel/accommodation, food and local transportation
                         </td>
                       </tr>
-
                       <tr className="bg-[#F8FAFD]">
                         <td className="px-5 py-4 font-semibold">Post-treatment</td>
                         <td className="px-5 py-4">
@@ -613,7 +569,7 @@ export const metadata = {
                   </table>
                 </div>
 
-                <p className="ArticleText mt-6">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mt-6 mb-5">
                   The actual amount can vary considerably from one patient to another. Therefore, international patients should avoid relying on a single online figure when planning their complete treatment budget.
                 </p>
 
@@ -621,7 +577,7 @@ export const metadata = {
                   How International Patients Can Reduce Unexpected Expenses
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   A detailed treatment quotation can make medical travel planning easier. Before confirming treatment, patients should ask the hospital or medical facilitator to clarify:
                 </p>
 
@@ -641,11 +597,10 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   This helps patients compare treatment options based on the <strong>total expected cost and services</strong>, rather than comparing only the advertised surgery price.
                 </p>
               </section>
-
 
               {/* PLAN COST */}
               <section className="mb-12">
@@ -653,15 +608,14 @@ export const metadata = {
                   Plan the Complete Cost Before Travelling to India
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   For an international patient, the actual financial commitment for hip replacement involves more than the operation itself. A realistic budget should account for <strong>medical treatment, flights, visa, accommodation, transportation, rehabilitation and possible additional days in India</strong>.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   Ekam can help international patients understand the treatment process, coordinate medical evaluation and connect with appropriate healthcare providers in India. However, the <strong>final medical treatment cost and clinical plan should be confirmed by the treating hospital and orthopaedic specialist</strong> after reviewing the patient's medical information.
                 </p>
               </section>
-
 
               {/* WHY INDIA */}
               <section className="mb-12">
@@ -675,11 +629,11 @@ export const metadata = {
                   Why Choose India for Hip Replacement Surgery?
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   India has become a destination for international patients seeking a range of orthopaedic procedures, including hip replacement surgery. Patients may consider India because of the availability of specialist orthopaedic care, advanced hospital infrastructure, different implant options and comparatively accessible treatment costs.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   However, the right destination and hospital should always be selected according to the patient's individual medical condition, surgeon's recommendation, hospital quality and overall treatment requirements—not cost alone.
                 </p>
 
@@ -687,11 +641,11 @@ export const metadata = {
                   Experienced Orthopaedic Specialists
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Hip replacement requires careful evaluation of the patient's joint condition, bone quality, medical history and mobility requirements.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   International patients may have access to orthopaedic surgeons in India who specialize in:
                 </p>
 
@@ -706,7 +660,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The appropriate surgical approach depends on the individual patient. A surgeon should evaluate the patient's medical records and diagnostic reports before recommending a specific procedure.
                 </p>
 
@@ -714,11 +668,11 @@ export const metadata = {
                   Hospitals with Modern Orthopaedic Facilities
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   International patients can choose from hospitals in several major Indian cities that provide orthopaedic and joint-replacement services.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Depending on the patient's requirements, treatment may be available in cities such as:
                 </p>
 
@@ -734,7 +688,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   When comparing hospitals, international patients should consider the orthopaedic department, surgeon's experience, hospital accreditation where applicable, infection-control standards, rehabilitation facilities, emergency support and international-patient services.
                 </p>
 
@@ -742,11 +696,11 @@ export const metadata = {
                   Access to Different Hip Replacement Options
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The appropriate type of hip replacement depends on factors such as the patient's age, diagnosis, bone condition, activity level and overall health.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Depending on the clinical situation, an orthopaedic surgeon may consider:
                 </p>
 
@@ -760,7 +714,7 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Patients should not select an implant solely because it is more expensive or marketed as superior. The implant should be selected by the treating orthopaedic surgeon based on the patient's individual clinical requirements.
                 </p>
 
@@ -768,11 +722,11 @@ export const metadata = {
                   Cost Can Be an Important Consideration
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   One reason international patients consider India is the potential difference in treatment costs compared with some high-cost healthcare markets.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   However, comparing only the surgery price can be misleading. Patients should compare:
                 </p>
 
@@ -790,11 +744,11 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   A complete treatment estimate provides a more meaningful basis for comparing destinations.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   For the latest indicative figures, see <strong>Hip Replacement Surgery Cost in India</strong>.
                 </p>
 
@@ -802,11 +756,11 @@ export const metadata = {
                   International Patient Support
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Travelling to another country for surgery involves more than arranging a hospital appointment. International patients may need assistance with medical coordination, documentation, travel planning and communication with healthcare providers.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Depending on the patient's requirements, medical tourism support may include:
                 </p>
 
@@ -825,11 +779,10 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   The exact services available depend on the patient's treatment plan and requirements.
                 </p>
               </section>
-
 
               {/* EKAM PROCESS */}
               <section className="mb-12">
@@ -837,11 +790,11 @@ export const metadata = {
                   How Ekam Helps International Patients Plan Hip Replacement Treatment
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Ekam assists international patients who are considering medical treatment in India by helping coordinate the healthcare journey.
                 </p>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The process can begin with sharing relevant medical information, such as:
                 </p>
 
@@ -856,47 +809,46 @@ export const metadata = {
                   ]}
                 />
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The information can then be used to coordinate an appropriate medical evaluation with a healthcare provider.
                 </p>
 
                 <ProcessCard
                   number="01"
-                  title="Share Your Medical Information"
+                  title="Step 1: Share Your Medical Information"
                   text="International patients can provide their available medical records and diagnostic reports for preliminary review."
                 />
 
                 <ProcessCard
                   number="02"
-                  title="Medical Evaluation and Treatment Planning"
+                  title="Step 2: Medical Evaluation and Treatment Planning"
                   text="The patient's case can be shared with an appropriate orthopaedic specialist or hospital for medical assessment. The treating doctor determines whether hip replacement is appropriate and which treatment approach may be suitable."
                 />
 
                 <ProcessCard
                   number="03"
-                  title="Receive a Treatment and Cost Estimate"
+                  title="Step 3: Receive a Treatment and Cost Estimate"
                   text="After medical evaluation, the hospital can provide an estimated treatment plan and associated medical costs. Patients should review what is included and excluded before making travel arrangements."
                 />
 
                 <ProcessCard
                   number="04"
-                  title="Plan Your Trip to India"
+                  title="Step 4: Plan Your Trip to India"
                   text="Once treatment is confirmed, international patients can arrange their travel, visa, accommodation and transportation according to the medical team's recommendations."
                 />
 
                 <ProcessCard
                   number="05"
-                  title="Hospital Admission and Surgery"
+                  title="Step 5: Hospital Admission and Surgery"
                   text="After arriving in India, the patient undergoes the required pre-operative evaluation. The treating orthopaedic team confirms the final treatment plan before surgery."
                 />
 
                 <ProcessCard
                   number="06"
-                  title="Recovery and Follow-up"
+                  title="Step 6: Recovery and Follow-up"
                   text="After surgery, the medical team monitors the patient's recovery and provides appropriate rehabilitation and follow-up recommendations. The timing of discharge and return travel should be determined by the treating medical team."
                 />
               </section>
-
 
               {/* CHOOSING HOSPITAL */}
               <section className="mb-12">
@@ -904,7 +856,7 @@ export const metadata = {
                   How to Choose the Right Hospital for Hip Replacement in India
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   International patients should consider several factors before selecting a hospital:
                 </p>
 
@@ -912,7 +864,7 @@ export const metadata = {
                   Hospital Accreditation and Quality Standards
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Where applicable, patients can check whether the hospital holds recognized healthcare accreditation and whether its relevant departments maintain appropriate quality and safety standards.
                 </p>
 
@@ -920,7 +872,7 @@ export const metadata = {
                   Orthopaedic Expertise
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Review the surgeon's qualifications, experience, area of specialization and experience with the type of hip replacement required.
                 </p>
 
@@ -928,7 +880,7 @@ export const metadata = {
                   Implant and Treatment Options
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Inquire about the different implant possibilities and the reasons for the recommendation of a specific implant for the patient's condition.
                 </p>
 
@@ -936,7 +888,7 @@ export const metadata = {
                   Complete Cost Transparency
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   Request a written estimate that clearly identifies:
                 </p>
 
@@ -959,16 +911,14 @@ export const metadata = {
                   Rehabilitation and Follow-up
                 </SectionHeading>
 
-                <p className="ArticleText">
+                <p className="text-[#425466] text-base md:text-lg leading-8">
                   Recovery does not end when the patient leaves the operating room. Ask about physiotherapy, follow-up appointments and arrangements for continued care after returning to the home country.
                 </p>
               </section>
 
-
-              {/* CTA */}
+              {/* CTA ESTIMATE */}
               <section className="mb-12">
                 <div className="rounded-2xl bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC] p-7 md:p-10 text-white shadow-lg">
-
                   <h2 className="text-2xl md:text-3xl font-bold mb-5">
                     Get a Personalized Hip Replacement Treatment Estimate
                   </h2>
@@ -984,7 +934,6 @@ export const metadata = {
                   <p className="text-white/90 leading-8">
                     If you are considering <strong>hip replacement surgery in India</strong>, you can share your medical reports with Ekam for assistance with treatment coordination and an indicative medical-cost estimate.
                   </p>
-
                 </div>
 
                 <div className="mt-5 rounded-xl border-l-4 border-[#E94E77] bg-[#FFF7FA] p-5">
@@ -994,7 +943,6 @@ export const metadata = {
                 </div>
               </section>
 
-
               {/* FAQ */}
               <section className="mb-12">
                 <SectionHeading>
@@ -1002,14 +950,13 @@ export const metadata = {
                 </SectionHeading>
 
                 <div className="space-y-4">
-
                   <FAQ
                     question="Is hip replacement cheaper in India for international patients?"
                     answer="India can offer comparatively lower treatment costs than some high-cost healthcare markets, but the total expense depends on the hospital, surgeon, implant, procedure, length of stay and additional medical requirements. International patients should compare complete treatment packages rather than surgery prices alone."
                   />
 
                   <FAQ
-                    question="How long should I stay in India for hip replacement?"
+                    question="How long should I stay in India for hip replacement surgery?"
                     answer="The required stay varies according to the procedure, recovery and treating doctor's advice. International patients should allow sufficient time for surgery, initial recovery, follow-up and medical clearance before planning their return journey."
                   />
 
@@ -1027,15 +974,12 @@ export const metadata = {
                     question="Can Ekam help international patients arrange hip replacement treatment?"
                     answer="Ekam can assist with healthcare coordination for international patients, including connecting patients with appropriate hospitals and specialists and helping coordinate aspects of the treatment journey. Medical decisions and treatment are provided by the treating healthcare professionals."
                   />
-
                 </div>
               </section>
-
 
               {/* FINAL SECTION */}
               <section>
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
-
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-5">
                     Start Planning Your Hip Replacement Treatment in India
                   </h2>
@@ -1047,20 +991,16 @@ export const metadata = {
                   <p className="text-[#425466] text-base md:text-lg leading-8 mt-5">
                     If you are considering hip replacement surgery in India, start by sharing your medical reports and treatment history for an initial assessment and treatment-coordination discussion.
                   </p>
-
                 </div>
               </section>
 
             </div>
           </article>
 
-
           {/* SIDEBAR */}
           <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-
             {/* CTA CARD */}
             <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
-
               <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
                 🏥
               </div>
@@ -1079,114 +1019,80 @@ export const metadata = {
               >
                 Get Treatment Assistance →
               </Link>
-
             </div>
-
 
             {/* QUICK NAVIGATION */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 On This Page
               </h3>
 
               <div className="space-y-3 text-sm">
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   How Much Does Hip Replacement Cost?
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   Factors Affecting Cost
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   Extra Costs for International Patients
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   Medical Tourism Budget
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   Why Choose India?
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   How Ekam Helps
                 </a>
-
                 <a
                   href="#"
                   className="block text-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   FAQs
                 </a>
-
               </div>
             </div>
 
-
             {/* KEY INFORMATION */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 Key Information
               </h3>
 
               <div className="space-y-4">
-
-                <InfoItem
-                  title="Treatment"
-                  value="Hip Replacement Surgery"
-                />
-
-                <InfoItem
-                  title="Location"
-                  value="India"
-                />
-
-                <InfoItem
-                  title="Patients"
-                  value="International Patients"
-                />
-
-                <InfoItem
-                  title="Indicative Cost"
-                  value="From around USD 5,500"
-                />
-
+                <InfoItem title="Treatment" value="Hip Replacement Surgery" />
+                <InfoItem title="Location" value="India" />
+                <InfoItem title="Patients" value="International Patients" />
+                <InfoItem title="Indicative Cost" value="From around USD 5,500" />
               </div>
             </div>
-
           </aside>
-
         </div>
       </div>
-
 
       {/* BOTTOM CTA */}
       <section className="bg-[#053161]">
         <div className="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-14 text-center">
-
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
             Start Your Treatment Journey in India
           </h2>
@@ -1201,14 +1107,11 @@ export const metadata = {
           >
             Contact Ekam →
           </Link>
-
         </div>
       </section>
-
     </main>
   );
 }
-
 
 /* =========================================================
    REUSABLE COMPONENTS
@@ -1221,7 +1124,6 @@ function SectionHeading({ children }) {
     </h2>
   );
 }
-
 
 function BulletList({ items }) {
   return (
@@ -1239,52 +1141,41 @@ function BulletList({ items }) {
   );
 }
 
-
 function NumberedSection({ number, title, text }) {
   return (
     <div className="flex gap-4 my-7">
-
       <div className="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-[#053161] to-[#6796CC] text-white flex items-center justify-center font-bold text-sm">
         {number}
       </div>
-
       <div>
         <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-2">
           {title}
         </h3>
-
         <p className="text-[#425466] text-base md:text-lg leading-8">
           {text}
         </p>
       </div>
-
     </div>
   );
 }
-
 
 function ProcessCard({ number, title, text }) {
   return (
     <div className="relative flex gap-5 p-5 md:p-6 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0] my-4 hover:shadow-md transition">
-
       <div className="w-12 h-12 shrink-0 rounded-xl bg-[#053161] text-white flex items-center justify-center font-bold">
         {number}
       </div>
-
       <div>
         <h3 className="text-lg md:text-xl font-bold text-[#053161] mb-2">
           {title}
         </h3>
-
         <p className="text-[#425466] leading-7">
           {text}
         </p>
       </div>
-
     </div>
   );
 }
-
 
 function FAQ({ question, answer }) {
   return (
@@ -1293,7 +1184,6 @@ function FAQ({ question, answer }) {
         <h3 className="text-lg md:text-xl font-bold text-[#053161] mb-3">
           {question}
         </h3>
-
         <p className="text-[#425466] leading-7">
           {answer}
         </p>
@@ -1302,14 +1192,12 @@ function FAQ({ question, answer }) {
   );
 }
 
-
 function InfoItem({ title, value }) {
   return (
     <div className="border-b border-[#E8EDF3] pb-4 last:border-0 last:pb-0">
       <p className="text-xs uppercase tracking-wide text-[#64748B] mb-1">
         {title}
       </p>
-
       <p className="font-semibold text-[#053161]">
         {value}
       </p>
