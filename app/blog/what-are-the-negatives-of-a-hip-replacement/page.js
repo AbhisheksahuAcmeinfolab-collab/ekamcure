@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export const metadata = {
@@ -349,7 +347,7 @@ export default function HipReplacementNegativesPage() {
                 Connect with Ekam Health Services to get expert opinion and treatment estimates from top hospitals in India.
               </p>
 
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-4" action="#" method="POST">
                 <div>
                   <label className="block text-xs font-semibold text-slate-700 mb-1">
                     Full Name *
