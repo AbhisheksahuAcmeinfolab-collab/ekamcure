@@ -3,9 +3,10 @@ import Link from "next/link";
 export const metadata = {
   title: "Hip Replacement Surgery Risks & Complications",
   description:
-    "Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems, and revision surgery.",
+    "Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems and revision surgery.",
   alternates: {
-    canonical: "https://www.ekamcure.com/blog/hip-replacement-surgery-risks-complications",
+    canonical:
+      "https://www.ekamcure.com/blog/hip-replacement-surgery-risks-complications",
   },
 };
 
@@ -30,7 +31,7 @@ export default function HipReplacementRisksPage() {
             </h1>
 
             <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems, and revision surgery.
+              Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems and revision surgery.
             </p>
           </div>
         </div>
@@ -94,61 +95,77 @@ export default function HipReplacementRisksPage() {
                 </p>
               </section>
 
-              {/* DETAILED COMPLICATIONS */}
+              {/* 15 RISKS DETAILED */}
               <section id="complications-explained" className="mb-12">
-                <SectionHeading>15 Potential Risks & Complications Explained</SectionHeading>
-
                 <div className="space-y-8 mt-6">
                   {/* 1. Infection */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>1. Infection</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Infection is one of the important complications that can occur after hip replacement surgery.
+                    </p>
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      Infection is one of the important complications that can occur after hip replacement surgery. An infection may develop around the surgical wound or, in more serious cases, around the artificial joint.
+                      An infection may develop around the surgical wound or, in more serious cases, around the artificial joint.
                     </p>
                     <div className="bg-[#FFF7FA] border border-[#FCDDEC] rounded-xl p-4 mb-4">
                       <span className="font-bold text-pink-600 block mb-2 text-sm md:text-base">Possible warning signs can include:</span>
                       <BulletList
                         items={[
                           "Increasing pain",
-                          "Redness around wound",
-                          "Swelling or wound drainage",
-                          "Fever or chills",
+                          "Redness around the wound",
+                          "Swelling",
+                          "Wound drainage",
+                          "Fever",
+                          "Chills",
                           "Feeling generally unwell",
                         ]}
                       />
                     </div>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      A suspected infection following surgery should be assessed promptly by a medical professional.
+                    </p>
                     <p className="text-[#425466] text-sm md:text-base leading-7">
-                      A suspected infection following surgery should be assessed promptly by a medical professional. Treatment depends on the type and severity of infection and may involve antibiotics, additional procedures or further surgery.
+                      Treatment depends on the type and severity of infection and may involve antibiotics, additional procedures or further surgery.
                     </p>
                   </div>
 
                   {/* 2. Blood Clots */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>2. Blood Clots</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Blood clots can develop in the veins after major surgery, particularly when mobility is temporarily reduced.
+                    </p>
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      Blood clots can develop in the veins after major surgery, particularly when mobility is temporarily reduced. A clot in a deep vein is known as deep vein thrombosis (DVT).
+                      A clot in a deep vein is known as deep vein thrombosis (DVT).
                     </p>
                     <SubHeading>Possible symptoms may include:</SubHeading>
                     <BulletList
                       items={[
                         "Swelling in the leg",
                         "Leg pain or tenderness",
-                        "Warmth or skin discoloration",
+                        "Warmth",
+                        "Skin discoloration",
                       ]}
                     />
                     <p className="text-[#425466] text-base md:text-lg leading-8 my-4">
                       A blood clot can sometimes travel to the lungs, causing a pulmonary embolism (PE), which can be a medical emergency.
                     </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Hospitals may use measures such as early mobilization, compression devices and prescribed medication to reduce the risk where appropriate.
+                    </p>
                     <p className="text-[#425466] text-sm md:text-base leading-7">
-                      Hospitals may use measures such as early mobilization, compression devices and prescribed medication to reduce the risk where appropriate. Patients should follow their medical team's instructions regarding movement and medications.
+                      Patients should follow their medical team's instructions regarding movement and medications.
                     </p>
                   </div>
 
                   {/* 3. Hip Dislocation */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>3. Hip Dislocation</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Dislocation occurs when the artificial ball moves out of the position where it normally sits within the artificial socket.
+                    </p>
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      Dislocation occurs when the artificial ball moves out of the position where it normally sits within the artificial socket. Dislocation can occur particularly during the early period following surgery, although it can also happen later.
+                      Dislocation can occur particularly during the early period following surgery, although it can also happen later.
                     </p>
                     <SubHeading>Possible symptoms include:</SubHeading>
                     <BulletList
@@ -159,41 +176,64 @@ export default function HipReplacementRisksPage() {
                         "A feeling that the joint has moved out of place",
                       ]}
                     />
-                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-4">
-                      A dislocated hip requires medical assessment. The risk of dislocation can be influenced by factors including surgical approach, implant design, patient anatomy, previous hip surgery and certain movements or activities.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-4">
+                      A dislocated hip requires medical assessment.
+                    </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      The risk of dislocation can be influenced by factors including surgical approach, implant design, patient anatomy, previous hip surgery and certain movements or activities.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
+                      Patients should follow the movement precautions provided by their surgeon.
                     </p>
                   </div>
 
                   {/* 4. Fracture Around the Implant */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>4. Fracture Around the Implant</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      A fracture can occur around the artificial hip implant (periprosthetic fracture). It can occur during surgery or later following trauma such as a fall.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      A fracture can occur around the artificial hip implant.
                     </p>
-                    <p className="text-[#425466] text-sm md:text-base leading-7 font-semibold text-[#053161] mb-2">The likelihood may be influenced by:</p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      This is sometimes called a periprosthetic fracture.
+                    </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      It can occur during surgery or later following trauma such as a fall.
+                    </p>
+                    <SubHeading>The likelihood may be influenced by:</SubHeading>
                     <BulletList
                       items={[
-                        "Bone quality & Osteoporosis",
-                        "Age and fall risks",
-                        "Previous surgery & implant factors",
+                        "Bone quality",
+                        "Age",
+                        "Osteoporosis",
+                        "Previous surgery",
+                        "Falls or trauma",
+                        "Implant-related factors",
                       ]}
                     />
+                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-4">
+                      Treatment depends on the location and severity of the fracture and may require surgical management.
+                    </p>
                   </div>
 
                   {/* 5. Nerve Injury */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>5. Nerve Injury</SubHeading>
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-3">
-                      Nerves around the hip can rarely be affected during surgery. A nerve injury may cause:
+                      Nerves around the hip can rarely be affected during surgery.
                     </p>
+                    <SubHeading>A nerve injury may cause:</SubHeading>
                     <BulletList
                       items={[
-                        "Numbness or tingling",
-                        "Weakness in the leg",
+                        "Numbness",
+                        "Tingling",
+                        "Weakness",
                         "Changes in sensation",
                       ]}
                     />
-                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-3">
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      The severity and recovery of nerve-related symptoms vary.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
                       Patients who develop new or worsening neurological symptoms after surgery should contact their medical team.
                     </p>
                   </div>
@@ -201,87 +241,224 @@ export default function HipReplacementRisksPage() {
                   {/* 6. Blood-Vessel Injury */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>6. Blood-Vessel Injury</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Blood vessels are located around the hip and can rarely be injured during surgery.
+                    </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      A significant vascular injury can require urgent treatment.
+                    </p>
                     <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Blood vessels are located around the hip and can rarely be injured during surgery. A significant vascular injury can require urgent treatment. The surgical team takes precautions to minimize this risk, but it cannot be completely eliminated.
+                      The surgical team takes precautions to minimize this risk, but it cannot be completely eliminated.
                     </p>
                   </div>
 
                   {/* 7. Leg-Length Difference */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>7. Leg-Length Difference</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-3">
-                      Some patients may notice that one leg feels different in length after hip replacement. A small difference can sometimes occur despite careful surgical planning.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      Some patients may notice that one leg feels different in length after hip replacement.
                     </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      A small difference can sometimes occur despite careful surgical planning.
+                    </p>
+                    <SubHeading>Patients may experience:</SubHeading>
                     <BulletList
                       items={[
                         "A feeling that one leg is longer or shorter",
-                        "Changes in walking pattern",
+                        "Changes in walking",
                         "Temporary discomfort while adapting",
                       ]}
                     />
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      In some cases, the perceived difference may be related to muscle tension or changes in hip mechanics rather than an actual significant difference in bone length.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
+                      Persistent symptoms should be evaluated by the treating specialist.
+                    </p>
                   </div>
 
                   {/* 8. Implant Loosening */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>8. Implant Loosening</SubHeading>
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-3">
-                      Over time, an artificial hip implant can become loose. Loosening may cause increasing pain, reduced function, difficulty walking, and a change in how the joint feels. If an implant becomes significantly loose, revision surgery may be considered.
+                      Over time, an artificial hip implant can become loose.
+                    </p>
+                    <SubHeading>Loosening may cause:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Increasing pain",
+                        "Reduced function",
+                        "Difficulty walking",
+                        "A change in how the joint feels",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      Implant loosening can result from several factors, including normal wear, bone response, implant-related factors or other problems.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
+                      If an implant becomes significantly loose, revision surgery may be considered.
                     </p>
                   </div>
 
                   {/* 9. Implant Wear */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>9. Implant Wear</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Hip implants are designed for long-term use, but their components can undergo wear over time depending on implant materials, patient activity, body weight, and implant positioning.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      Hip implants are designed for long-term use, but their components can undergo wear over time.
+                    </p>
+                    <SubHeading>Wear may be influenced by:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Implant materials",
+                        "Implant design",
+                        "Patient activity",
+                        "Body weight",
+                        "Implant positioning",
+                        "Length of time the implant has been in place",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      Significant wear can sometimes contribute to loosening or other implant-related problems.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7 italic">
+                      For detailed information about implant choices, see Hip Replacement Implant Types.
                     </p>
                   </div>
 
                   {/* 10. Persistent Hip Pain */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>10. Persistent Hip Pain</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      While pain relief is a main goal, some patients may continue to experience pain due to soft-tissue problems, implant issues, infection, nerve irritation, or spine-related causes.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                      One of the main goals of hip replacement is to reduce pain caused by the damaged hip joint.
+                    </p>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      However, some patients may continue to experience pain after surgery.
+                    </p>
+                    <SubHeading>Persistent pain can have several possible causes, including:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Soft-tissue problems",
+                        "Implant-related problems",
+                        "Infection",
+                        "Loosening",
+                        "Nerve-related symptoms",
+                        "Problems originating outside the hip",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-3">
+                      Persistent or worsening pain should be assessed rather than assumed to be a normal part of recovery.
                     </p>
                   </div>
 
                   {/* 11. Stiffness and Reduced Movement */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>11. Stiffness and Reduced Movement</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Some patients may experience stiffness post-surgery due to pre-existing conditions, scar tissue formation, or muscle weakness.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      Hip replacement is intended to improve function, but some patients may experience stiffness or reduced movement after surgery.
+                    </p>
+                    <SubHeading>Possible contributing factors include:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Pre-existing stiffness",
+                        "Muscle weakness",
+                        "Scar tissue",
+                        "Rehabilitation difficulties",
+                        "Other medical conditions",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-3">
+                      The degree of improvement varies between individuals.
                     </p>
                   </div>
 
                   {/* 12. Anaesthesia-Related Risks */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>12. Anaesthesia-Related Risks</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Anaesthesia risks depend on general health, age, heart/lung health, and current medications. An anaesthesiologist evaluates these risks prior to surgery.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      Hip replacement is performed using anaesthesia, and anaesthesia can carry its own risks.
+                    </p>
+                    <SubHeading>The level of risk depends on factors such as:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Age",
+                        "Heart and lung health",
+                        "Existing medical conditions",
+                        "Medications",
+                        "Type of anaesthesia",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      An anaesthesiologist evaluates the patient's health before surgery and determines the most appropriate anaesthesia plan.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
+                      Prior to the surgery, patients should correctly report their medications and medical history.
                     </p>
                   </div>
 
                   {/* 13. Wound-Healing Problems */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>13. Wound-Healing Problems</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Delayed wound healing can be influenced by diabetes, smoking, poor nutrition, or certain medications.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      After surgery, some people may have delayed wound healing.
+                    </p>
+                    <SubHeading>The risk may be influenced by factors such as:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Diabetes",
+                        "Smoking",
+                        "Poor nutrition",
+                        "Certain medications",
+                        "Reduced blood supply",
+                        "Other medical conditions",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-3">
+                      Patients should follow their medical team's wound-care instructions and report unusual drainage, increasing redness or other concerning changes.
                     </p>
                   </div>
 
-                  {/* 14. Blood Loss and Need for Transfusion */}
+                  {/* 14. Blood Loss and Need for Blood Transfusion */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <SubHeading>14. Blood Loss and Blood Transfusion</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      Blood loss occurs during major joint surgery. The surgical team monitors blood levels and provides transfusions or medical care if necessary.
+                    <SubHeading>14. Blood Loss and Need for Blood Transfusion</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      Blood loss can occur during major surgery.
+                    </p>
+                    <SubHeading>The amount varies depending on:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Surgical technique",
+                        "Patient characteristics",
+                        "Complexity of the procedure",
+                        "Whether the surgery is primary or revision surgery",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-base md:text-lg leading-8 my-3">
+                      Additional care or a blood transfusion can be necessary in some situations.
+                    </p>
+                    <p className="text-[#425466] text-sm md:text-base leading-7">
+                      The treating team can discuss this risk based on the patient's individual circumstances.
                     </p>
                   </div>
 
                   {/* 15. Implant Failure */}
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
                     <SubHeading>15. Implant Failure</SubHeading>
-                    <p className="text-[#425466] text-base md:text-lg leading-8">
-                      If an implant fails due to loosening, wear, structural fracture, or infection, revision surgery may be necessary to restore function.
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      Although modern hip implants are designed for long-term use, mechanical or biological problems can occur.
+                    </p>
+                    <SubHeading>Implant failure may be associated with:</SubHeading>
+                    <BulletList
+                      items={[
+                        "Loosening",
+                        "Wear",
+                        "Fracture",
+                        "Dislocation",
+                        "Infection",
+                        "Other implant-related problems",
+                      ]}
+                    />
+                    <p className="text-[#425466] text-sm md:text-base leading-7 mt-3">
+                      If the implant no longer functions appropriately, the patient may require further evaluation and potentially revision surgery.
                     </p>
                   </div>
                 </div>
@@ -291,56 +468,96 @@ export default function HipReplacementRisksPage() {
               <section id="revision-surgery" className="mb-12">
                 <SectionHeading>What Is Revision Hip Replacement Surgery?</SectionHeading>
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Revision hip replacement is surgery performed to address a problem with a previous hip replacement. Revision may become necessary because of infection, implant loosening, significant wear, repeated dislocation, or structural failure.
+                  Revision hip replacement is surgery performed to address a problem with a previous hip replacement.
+                </p>
+                <SubHeading>Revision may become necessary because of:</SubHeading>
+                <BulletList
+                  items={[
+                    "Infection",
+                    "Implant loosening",
+                    "Significant wear",
+                    "Repeated dislocation",
+                    "Fracture around the implant",
+                    "Implant failure",
+                    "Other complications",
+                  ]}
+                />
+                <p className="text-[#425466] text-base md:text-lg leading-8 my-4">
+                  Revision surgery can be more complex than the original hip replacement because the surgeon may need to manage existing implants, damaged bone or scar tissue.
                 </p>
                 <p className="text-[#425466] text-base md:text-lg leading-8 border-l-4 border-[#053161] pl-4 py-2 bg-[#F8FAFD]">
-                  Revision surgery can be more complex than primary hip replacement. Not every patient with a hip replacement will require revision surgery.
+                  Not every patient with a hip replacement will require revision surgery.
                 </p>
               </section>
 
               {/* HIGHER RISK FACTORS */}
               <section id="risk-factors" className="mb-12">
                 <SectionHeading>Who May Have a Higher Risk of Complications?</SectionHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  Risk factors that may affect surgical outcomes include:
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  Risk varies considerably between individuals.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-3 my-5">
-                  <ProblemCard text="Older Age & Medical Conditions" />
-                  <ProblemCard text="Heart, Lung, or Kidney Issues" />
-                  <ProblemCard text="Diabetes & High Blood Pressure" />
-                  <ProblemCard text="Higher Body Weight / Obesity" />
-                  <ProblemCard text="Smoking & Poor Circulation" />
-                  <ProblemCard text="Osteoporosis / Reduced Bone Quality" />
-                  <ProblemCard text="Previous Hip Surgeries" />
-                  <ProblemCard text="History of DVT or Infections" />
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-[#053161]">
+                  Factors that may affect surgical risk include:
+                </p>
+                <div className="space-y-4 my-6">
+                  <StatCheckCard title="Age" desc="Older patients may have additional medical conditions that can influence surgical risk and recovery." />
+                  <StatCheckCard title="Overall Health" desc="Heart disease, lung disease, diabetes, kidney problems and other medical conditions may affect treatment planning." />
+                  <StatCheckCard title="Obesity" desc="Higher body weight can affect surgical and post-operative risks in some patients." />
+                  <StatCheckCard title="Smoking" desc="Smoking may have an impact on the healing of wounds and the overall results of surgery." />
+                  <StatCheckCard title="Previous Hip Surgery" desc="Patients undergoing revision surgery or who have previously had surgery around the hip may have different risk profiles from those undergoing a first hip replacement." />
+                  <StatCheckCard title="Bone Quality" desc="Reduced bone density can affect implant fixation and fracture risk." />
+                  <StatCheckCard title="Medical History" desc="Previous blood clots, infections, allergies and medication use should be discussed with the treating medical team." />
                 </div>
               </section>
 
               {/* HOW RISK CAN BE REDUCED */}
               <section id="reducing-risks" className="mb-12">
-                <SectionHeading>How Can the Risk of Complications Be Reduced?</SectionHeading>
+                <SectionHeading>How Can the Risk of Hip Replacement Complications Be Reduced?</SectionHeading>
 
-                <div className="grid md:grid-cols-2 gap-6 my-6">
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                  No treatment can eliminate all surgical risks, but appropriate preparation and follow-up may help reduce avoidable problems.
+                </p>
+
+                <div className="space-y-6 my-6">
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <h3 className="text-xl font-bold text-[#053161] mb-4">Before Surgery</h3>
-                    <ul className="space-y-2 text-sm text-[#425466]">
-                      <li>• Provide a complete medical history</li>
-                      <li>• Discuss current medications & allergies</li>
-                      <li>• Stop smoking if advised by doctors</li>
-                      <li>• Manage existing conditions (diabetes, BP)</li>
-                      <li>• Follow pre-operative preparations</li>
-                    </ul>
+                    <SubHeading>Before Surgery</SubHeading>
+                    <span className="text-[#053161] font-semibold block mb-2">Patients should:</span>
+                    <BulletList
+                      items={[
+                        "Provide a complete medical history",
+                        "Inform the doctor about all medications",
+                        "Discuss allergies",
+                        "Complete recommended investigations",
+                        "Follow instructions regarding medications",
+                        "Stop smoking if advised",
+                        "Discuss weight management where appropriate",
+                        "Follow pre-operative instructions",
+                      ]}
+                    />
                   </div>
 
                   <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <h3 className="text-xl font-bold text-[#053161] mb-4">After Surgery</h3>
-                    <ul className="space-y-2 text-sm text-[#425466]">
-                      <li>• Follow medication & DVT protocols</li>
-                      <li>• Keep incision clean & follow wound care</li>
-                      <li>• Attend physical therapy sessions</li>
-                      <li>• Follow hip precautions (avoid dislocation positions)</li>
-                      <li>• Report unusual symptoms immediately</li>
-                    </ul>
+                    <SubHeading>During Treatment</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8">
+                      The medical team uses appropriate surgical, infection-control and monitoring procedures according to the patient's circumstances.
+                    </p>
+                  </div>
+
+                  <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                    <SubHeading>After Surgery</SubHeading>
+                    <span className="text-[#053161] font-semibold block mb-2">Patients should:</span>
+                    <BulletList
+                      items={[
+                        "Follow medication instructions",
+                        "Follow wound-care instructions",
+                        "Attend scheduled follow-up appointments",
+                        "Participate in recommended rehabilitation",
+                        "Follow movement precautions",
+                        "Use walking aids as instructed",
+                        "Avoid activities that the surgeon has restricted",
+                        "Report unusual symptoms promptly",
+                      ]}
+                    />
                   </div>
                 </div>
               </section>
@@ -348,28 +565,136 @@ export default function HipReplacementRisksPage() {
               {/* WARNING SIGNS */}
               <section id="warning-signs" className="mb-12">
                 <SectionHeading>Warning Signs After Hip Replacement</SectionHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-pink-600 bg-[#FFF7FA] p-4 rounded-xl border-l-4 border-pink-500">
-                  Contact your medical team immediately if you experience:
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  Patients should contact their medical team if they develop concerning symptoms such as:
                 </p>
-                <div className="grid sm:grid-cols-2 gap-3 my-5">
-                  <ProblemCard text="Severe or Increasing Pain" />
-                  <ProblemCard text="Fever, Chills, or Night Sweats" />
-                  <ProblemCard text="Redness, Swelling, or Wound Drainage" />
-                  <ProblemCard text="Sudden Inability to Bear Weight" />
-                  <ProblemCard text="Leg Swelling, Warmth, or Tenderness" />
-                  <ProblemCard text="Shortness of Breath / Chest Pain" />
+                <div className="bg-[#FFF7FA] border border-[#FCDDEC] rounded-2xl p-6 mb-6">
+                  <BulletList
+                    items={[
+                      "Increasing or severe pain",
+                      "Fever or chills",
+                      "Increasing redness or swelling",
+                      "Wound drainage",
+                      "Sudden difficulty walking",
+                      "New weakness or numbness",
+                      "Significant swelling in the leg",
+                      "Sudden shortness of breath",
+                      "Chest pain",
+                      "A suspected dislocation",
+                    ]}
+                  />
                 </div>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-2">
+                  Some symptoms require urgent medical evaluation.
+                </p>
+                <p className="text-[#425466] text-sm md:text-base leading-7">
+                  Patients should follow the emergency instructions provided by their treating hospital.
+                </p>
+              </section>
+
+              {/* ARE COMPLICATIONS COMMON */}
+              <section id="are-complications-common" className="mb-12">
+                <SectionHeading>Are Hip Replacement Complications Common?</SectionHeading>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  The likelihood of a complication depends on the individual patient and the type of procedure.
+                </p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  Many patients undergo hip replacement without experiencing a major complication, but no surgical procedure is completely risk-free.
+                </p>
+                <SubHeading>When evaluating risk, patients should consider:</SubHeading>
+                <BulletList
+                  items={[
+                    "Their personal health",
+                    "Type of hip condition",
+                    "Primary or revision surgery",
+                    "Surgical technique",
+                    "Implant selection",
+                    "Surgeon and hospital experience",
+                    "Rehabilitation plan",
+                  ]}
+                />
+                <p className="text-[#425466] text-[#053161] font-semibold text-base md:text-lg leading-8 mt-4">
+                  A surgeon can provide a more meaningful assessment after reviewing the patient's medical history and imaging.
+                </p>
+              </section>
+
+              {/* LONG TERM RISKS */}
+              <section id="long-term-risks" className="mb-12">
+                <SectionHeading>Does Hip Replacement Surgery Have Long-Term Risks?</SectionHeading>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  Yes. Some complications can occur months or years after surgery rather than immediately.
+                </p>
+                <SubHeading>Long-term concerns may include:</SubHeading>
+                <BulletList
+                  items={[
+                    "Implant wear",
+                    "Implant loosening",
+                    "Recurrent dislocation",
+                    "Periprosthetic fracture",
+                    "Infection",
+                    "Persistent pain",
+                    "Need for revision surgery",
+                  ]}
+                />
+                <p className="text-[#425466] text-base md:text-lg leading-8 my-4">
+                  This is one reason why patients may require ongoing follow-up after hip replacement.
+                </p>
+                <p className="text-[#425466] text-sm md:text-base leading-7 italic">
+                  For information about long-term outcomes, see [Hip Replacement Surgery Success Rate].
+                </p>
+              </section>
+
+              {/* INTERNATIONAL PATIENTS */}
+              <section id="international-patients" className="mb-12">
+                <SectionHeading>Hip Replacement Risks for International Patients</SectionHeading>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  International patients considering hip replacement in India should understand that travelling abroad for surgery introduces additional logistical considerations.
+                </p>
+                <SubHeading>Before travelling, patients should plan:</SubHeading>
+                <BulletList
+                  items={[
+                    "Medical evaluation",
+                    "Hospital selection",
+                    "Specialist consultation",
+                    "Medical visa",
+                    "Accommodation",
+                    "Transportation",
+                    "Rehabilitation",
+                    "Follow-up",
+                    "Return travel",
+                  ]}
+                />
+                <p className="text-[#425466] text-base md:text-lg leading-8 my-4">
+                  Patients should also discuss how follow-up will be managed if they return to their home country after surgery.
+                </p>
+                <p className="text-[#425466] text-sm md:text-base leading-7 italic">
+                  For more information, see [Hip Replacement Surgery for International Patients].
+                </p>
               </section>
 
               {/* QUESTIONS TO ASK */}
               <section id="questions-to-ask" className="mb-12">
                 <SectionHeading>Questions to Ask Your Hip Replacement Surgeon</SectionHeading>
-                <div className="space-y-4 my-6">
-                  <StatCheckCard title="Personalized Risk Profile" desc="What are my personal risks based on my age and medical history?" />
-                  <StatCheckCard title="Implant Choice" desc="Which type of implant is recommended for my bone quality and activity level?" />
-                  <StatCheckCard title="Complication Handling" desc="If complications or infection arise, how does the team manage them?" />
-                  <StatCheckCard title="Follow-up Plan" desc="How will follow-up consultations be handled if I am traveling back home?" />
-                </div>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                  Before deciding on surgery, international and domestic patients can ask:
+                </p>
+                <BulletList
+                  items={[
+                    "What are my personal risks from hip replacement?",
+                    "Why do you recommend surgery in my case?",
+                    "What complications are most relevant to my medical history?",
+                    "What can I do before surgery to reduce avoidable risks?",
+                    "What implant is being considered and why?",
+                    "If issues arise, how will they be handled?",
+                    "Which symptoms should prompt me to call the hospital?",
+                    "How long will I need follow-up?",
+                    "What happens if the implant needs revision?",
+                    "How should follow-up be managed after I return home?",
+                  ]}
+                />
+                <p className="text-[#425466] text-sm md:text-base leading-7 mt-4 italic">
+                  These questions can help patients understand their individual risk rather than relying on general statistics.
+                </p>
               </section>
 
               {/* FAQ SECTION */}
@@ -379,43 +704,73 @@ export default function HipReplacementRisksPage() {
                 <div className="space-y-4">
                   <FAQ
                     question="Is hip replacement surgery dangerous?"
-                    answer="Hip replacement is a major surgical procedure and carries potential risks, but it is an established treatment performed routinely for appropriate patients."
+                    answer="Hip replacement is a major surgical procedure and carries potential risks, but it is an established treatment performed routinely for appropriate patients. Individual risk varies according to health, age, diagnosis and other factors."
                   />
                   <FAQ
                     question="What is the most serious complication of hip replacement?"
-                    answer="Complications like deep infection, blood clots (DVT/PE), or major vascular injury are serious and require immediate medical intervention."
+                    answer="There is no single complication that is considered the most serious for every patient. Serious complications can include infection, blood clots, significant fracture, dislocation, vascular injury and other medical or surgical problems."
                   />
                   <FAQ
                     question="Can a hip replacement become infected?"
-                    answer="Yes. Infection can occur after hip replacement and may require antibiotics, additional procedures or revision surgery depending on its severity."
+                    answer="Yes. Infection can occur after hip replacement and may require antibiotics, additional procedures or surgery depending on its severity."
                   />
                   <FAQ
                     question="Can a hip replacement dislocate?"
-                    answer="Yes. An artificial hip can dislocate, particularly during early recovery. Patients should strictly follow movement restrictions."
+                    answer="Yes. An artificial hip can dislocate, particularly during certain periods after surgery. Patients should follow their surgeon's movement and activity recommendations."
+                  />
+                  <FAQ
+                    question="Can a hip replacement fail?"
+                    answer="Yes, although many implants function successfully for many years. Failure can occur because of infection, loosening, wear, fracture, dislocation or other problems."
+                  />
+                  <FAQ
+                    question="Will I need another hip replacement?"
+                    answer="Not necessarily. Some patients may eventually require revision surgery, but the likelihood varies depending on the patient, implant, activity, health and other factors."
+                  />
+                  <FAQ
+                    question="Does hip replacement cause leg-length difference?"
+                    answer="A difference in leg length can occur or be perceived after surgery. The clinical significance varies, and persistent symptoms should be assessed by the treating surgeon."
+                  />
+                  <FAQ
+                    question="How can I reduce my risk of complications?"
+                    answer="Following pre-operative instructions, providing an accurate medical history, taking prescribed medications correctly, following rehabilitation guidance and attending follow-up appointments can help support safe recovery."
                   />
                   <FAQ
                     question="Are the risks different for international patients?"
-                    answer="Surgical risks remain the same, but international patients must plan for travel, accommodation, flight timing post-surgery, and long-distance follow-up care."
+                    answer="The surgical risks are not inherently different simply because a patient is from another country. However, international patients have additional considerations such as travel, visa requirements, accommodation and arranging follow-up after returning home."
                   />
                 </div>
               </section>
 
-              {/* FINAL CTA BOX */}
-              <section>
+              {/* FINAL TAKEAWAY & CTA */}
+              <section id="final-takeaway">
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                    Get an Individualized Surgical Risk Assessment
+                    Final Takeaway
                   </h2>
               
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Understanding surgical risks is essential for making safe and informed medical decisions.
+                    Hip replacement surgery can significantly improve pain and mobility for appropriately selected patients, but it is important to understand the potential risks before treatment.
                   </p>
                   
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    For international patients considering hip replacement in India, EkamCure helps coordinate medical evaluations, hospital selections, and expert orthopaedic consultations.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Possible complications include infection, blood clots, dislocation, fracture, nerve or blood-vessel injury, persistent pain, implant loosening, implant wear and the possibility of revision surgery.
                   </p>
-              
-                  <div className="mb-6">
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    The level of risk is different for every patient. A qualified orthopaedic specialist should review the patient's medical history, imaging and overall health before discussing the expected benefits and individual risks of surgery.
+                  </p>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    For international patients considering treatment in India, medical decisions should be made based on individual clinical assessment rather than advertised success rates or cost alone.
+                  </p>
+
+                  <div className="border-t border-[#DCE5F0] pt-6 mt-6">
+                    <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-3">
+                      Considering Hip Replacement Surgery in India?
+                    </h3>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                      EkamCure can assist international patients with treatment coordination, hospital consultations and other aspects of planning medical care in India.
+                    </p>
                     <Link
                       href="/contact"
                       className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
@@ -425,7 +780,7 @@ export default function HipReplacementRisksPage() {
                   </div>
                     
                   <p className="text-xs md:text-sm text-gray-500 leading-relaxed border-t border-[#DCE5F0] pt-4 mt-6">
-                    <strong>Disclaimer:</strong> This page is for general educational purposes and does not replace medical advice. Individual outcomes vary. Treatment suitability and risks should be discussed with a qualified orthopaedic specialist.
+                    This article is for general educational purposes and does not replace medical advice. Individual risks and outcomes vary. Patients should discuss their specific circumstances with a qualified orthopaedic specialist.
                   </p>
                 </div>
               </section>
@@ -467,13 +822,13 @@ export default function HipReplacementRisksPage() {
                   Overview of Risks
                 </a>
                 <a href="#complications-explained" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  15 Risks Explained
+                  15 Risks Detailed
                 </a>
                 <a href="#revision-surgery" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Revision Surgery
                 </a>
                 <a href="#risk-factors" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  High Risk Factors
+                  Higher Risk Factors
                 </a>
                 <a href="#reducing-risks" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Reducing Risks
@@ -481,8 +836,23 @@ export default function HipReplacementRisksPage() {
                 <a href="#warning-signs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Warning Signs
                 </a>
+                <a href="#are-complications-common" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Are Complications Common?
+                </a>
+                <a href="#long-term-risks" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Long-Term Risks
+                </a>
+                <a href="#international-patients" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  International Patients
+                </a>
+                <a href="#questions-to-ask" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Questions to Ask
+                </a>
                 <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   FAQs
+                </a>
+                <a href="#final-takeaway" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Final Takeaway
                 </a>
               </div>
             </div>
@@ -508,7 +878,7 @@ function SectionHeading({ children }) {
 
 function SubHeading({ children }) {
   return (
-    <h3 className="text-xl md:text-2xl font-bold text-[#053161] mt-6 mb-3">
+    <h3 className="text-lg md:text-xl font-bold text-[#053161] mt-4 mb-2">
       {children}
     </h3>
   );
@@ -516,7 +886,7 @@ function SubHeading({ children }) {
 
 function BulletList({ items }) {
   return (
-    <ul className="space-y-2.5 my-4">
+    <ul className="space-y-2 my-3">
       {items.map((item, index) => (
         <li
           key={index}
@@ -527,15 +897,6 @@ function BulletList({ items }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function ProblemCard({ text }) {
-  return (
-    <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#FFF7FA] border border-[#FCDDEC]">
-      <span className="text-pink-600 font-bold">⚠️</span>
-      <span className="text-[#053161] text-sm md:text-base font-semibold">{text}</span>
-    </div>
   );
 }
 
