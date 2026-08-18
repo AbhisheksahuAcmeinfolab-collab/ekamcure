@@ -1,9 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Top 10 Hospitals in India 2026 for International Patients',
   description: 'Explore the top 10 hospitals in India for international patients in 2026, with key specialties, facilities, locations and medical tourism support.',
   alternates: {
@@ -133,7 +131,6 @@ const hospitals = [
 export default function TopHospitalsPage() {
   return (
     <main className="bg-slate-50 min-h-screen text-slate-800">
-      {/* Hero Section */}
       <section className="bg-gradient-to-r from-sky-100 via-white to-sky-50 border-b border-slate-200 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -165,7 +162,6 @@ export default function TopHospitalsPage() {
         </div>
       </section>
 
-      {/* Selection Criteria Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
@@ -191,7 +187,6 @@ export default function TopHospitalsPage() {
         </div>
       </section>
 
-      {/* Comparison Table Section */}
       <section id="comparison-table" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8">
           Quick Comparison of Top 10 Hospitals
@@ -220,7 +215,6 @@ export default function TopHospitalsPage() {
         </div>
       </section>
 
-      {/* Hospitals Detail Cards */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8">
           Top 10 Hospitals in India for International Patients in 2026
@@ -231,9 +225,8 @@ export default function TopHospitalsPage() {
           return (
             <div
               key={hospital.rank}
-              className={`bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden grid md:grid-cols-12 gap-0 items-center`}
+              className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden grid md:grid-cols-12 gap-0 items-center"
             >
-              {/* Image Container */}
               <div
                 className={`relative h-64 md:h-full min-h-[280px] md:col-span-5 bg-slate-200 ${
                   isEven ? 'md:order-last' : ''
@@ -252,7 +245,6 @@ export default function TopHospitalsPage() {
                 )}
               </div>
 
-              {/* Content Container */}
               <div className="p-6 md:p-8 md:col-span-7">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-sky-600 font-extrabold text-lg">#{hospital.rank}</span>
@@ -287,7 +279,6 @@ export default function TopHospitalsPage() {
         })}
       </section>
 
-      {/* Ekam Assistance Section */}
       <section id="ekam-assistance" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-sky-900 text-white p-8 md:p-12 rounded-2xl shadow-xl">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">How Ekam Can Help International Patients</h2>
@@ -314,7 +305,6 @@ export default function TopHospitalsPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8">
           Frequently Asked Questions
