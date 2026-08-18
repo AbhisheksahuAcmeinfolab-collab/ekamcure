@@ -7,6 +7,164 @@ export const metadata = {
 };
 
 export default function HipReplacementNegativesPage() {
+  const disadvantages = [
+    {
+      title: "1. Hip Replacement Is Major Surgery",
+      desc: "Hip replacement involves replacing damaged parts of the hip joint with artificial components.",
+      bullets: [
+        "Pre-operative assessment & Anaesthesia",
+        "Surgical intervention & Hospital monitoring",
+        "Rehabilitation & Structured follow-up care",
+      ],
+      note: "Patients should consider whether expected functional improvements justify surgical treatment based on individual symptoms.",
+    },
+    {
+      title: "2. Recovery Can Take Time",
+      desc: "Recovery is not immediate and varies from person to person. Regaining full mobility requires patience.",
+      bullets: [
+        "Rebuilding muscle strength & balance",
+        "Restoring mobility & walking confidence",
+        "Returning to normal daily function gradually",
+      ],
+      note: "Factors like age, general health, pre-op mobility, and rehab dedication strongly influence timeline.",
+    },
+    {
+      title: "3. Pain and Discomfort After Surgery",
+      desc: "While intended to eliminate long-term pain, early post-operative discomfort is normal.",
+      bullets: [
+        "Managed via prescribed medicines & ice therapy",
+        "Supported by structured physiotherapy",
+        "Requires gradual mobilization under guidance",
+      ],
+    },
+    {
+      title: "4. Physiotherapy May Be Required",
+      desc: "Rehabilitation plays a non-negotiable role in restoring joint function.",
+      bullets: [
+        "Restores joint movement and walking balance",
+        "Builds muscle strength around the artificial joint",
+        "Skipping exercises can hamper optimal functional recovery",
+      ],
+    },
+    {
+      title: "5. Some Activities May Need to Be Modified",
+      desc: "Certain high-impact or demanding activities may need to be limited during recovery or long-term.",
+      bullets: [
+        "Surgical approach & recovery progress dictate activity caps",
+        "Surgeon guidelines determine safe return to sports/work",
+      ],
+    },
+    {
+      title: "6. An Artificial Hip Is Not the Same as a Natural Hip",
+      desc: "An artificial joint offers immense pain relief, but may feel slightly different from a natural joint.",
+      bullets: [
+        "Subtle changes in movement, strength, or sensation around surgical site",
+        "Varying activity tolerance based on individual health",
+      ],
+    },
+    {
+      title: "7. Hip Implants Can Wear Over Time",
+      desc: "Modern implants are long-lasting, but friction over years can cause gradual mechanical wear.",
+      bullets: [
+        "Affected by implant materials & surgical design",
+        "Influenced by patient age, body weight, and physical activity levels",
+      ],
+    },
+    {
+      title: "8. Some Patients May Eventually Need Revision Surgery",
+      desc: "A younger or highly active patient may outlive their implant, requiring a secondary procedure.",
+      bullets: [
+        "Triggers include implant loosening, wear, dislocation, or infection",
+        "Younger patients face higher lifetime probability of revision",
+      ],
+    },
+    {
+      title: "9. There Can Be Surgical Risks",
+      desc: "Like any major operation, standard surgical risks exist.",
+      bullets: [
+        "Infection, blood clots, or joint dislocation",
+        "Rare nerve or blood-vessel damage",
+      ],
+      linkText: "Read detailed guide: Hip Replacement Surgery Risks and Complications",
+      linkHref: "/blog/hip-replacement-surgery-risks-and-complications",
+    },
+    {
+      title: "10. Some Patients May Continue to Experience Pain",
+      desc: "Surgery drastically reduces joint pain, but complete 100% elimination is not guaranteed for every patient.",
+      bullets: [
+        "Persistent pain can stem from nerve issues or non-joint causes",
+        "Requires immediate medical evaluation rather than assuming it is normal",
+      ],
+    },
+    {
+      title: "11. Recovery May Affect Work and Daily Life",
+      desc: "Temporary assistance is required for routine daily activities during initial recovery weeks.",
+      bullets: [
+        "Help with cooking, cleaning, shopping, and personal care",
+        "Planned leave from work and temporary driving restrictions",
+      ],
+    },
+    {
+      title: "12. Long-Term Follow-Up May Be Necessary",
+      desc: "Regular check-ups ensure your artificial joint remains in optimal condition.",
+      bullets: [
+        "Periodic X-rays to monitor implant stability",
+        "Preservation of surgical and implant documentation for future reference",
+      ],
+    },
+    {
+      title: "13. There May Be Financial Considerations",
+      desc: "Costs extend beyond the primary surgeon fee to overall medical and logistical care.",
+      bullets: [
+        "Hospital charges, implant costs, diagnostic tests, & physical therapy",
+        "Travel, visa, accommodation, and attendant costs for overseas patients",
+      ],
+      linkText: "Check detailed breakdown: Hip Replacement Surgery Cost in India",
+      linkHref: "/blog/hip-replacement-surgery-cost-in-india",
+    },
+    {
+      title: "14. International Patients Have Additional Planning Challenges",
+      desc: "Traveling abroad requires extra care with travel schedules and fit-to-fly clearances.",
+      bullets: [
+        "Coordinating medical records and overseas consultations",
+        "Planning return flights strictly based on surgeon approval, not default dates",
+      ],
+      linkText: "Learn more: Hip Replacement Surgery for International Patients",
+      linkHref: "/blog/hip-replacement-surgery-for-international-patients",
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "What is the biggest disadvantage of hip replacement?",
+      answer: "There is no single disadvantage for everyone. Primary concerns include the recovery timeline, activity modifications, risk of surgical complications, and potential implant revision in younger patients.",
+    },
+    {
+      question: "Does hip replacement have permanent disadvantages?",
+      answer: "Some patients may need long-term activity modifications (like avoiding high-impact running), though most regain excellent function for daily life.",
+    },
+    {
+      question: "Can you live a normal life after hip replacement?",
+      answer: "Yes! Most patients return to normal daily living, walking, swimming, golfing, and cycling without joint pain.",
+    },
+    {
+      question: "Can a hip replacement wear out?",
+      answer: "Yes. Modern hip implants last 15-25+ years, but physical wear or loosening can occur over decades.",
+    },
+    {
+      question: "Will I need another hip replacement in the future?",
+      answer: "Not necessarily. Many implants last a lifetime. Younger patients, however, have a higher chance of needing a revision later in life.",
+    },
+    {
+      question: "Is hip replacement worth it?",
+      answer: "For patients with severe arthritis or joint damage causing disabling pain, the benefits of mobility and pain relief almost always far outweigh the negatives.",
+    },
+    {
+      question: "What should international patients consider before having hip replacement in India?",
+      answer: "Plan for hospital selection, medical visa preparation, flight timing, stay duration, post-op rehab, and fit-to-fly clearances.",
+    },
+  ];
+
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
       {/* HERO SECTION */}
@@ -19,7 +177,7 @@ export default function HipReplacementNegativesPage() {
         <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-2 mb-6 text-sm font-medium">
-              Orthopaedic Insights • Surgical Risk Guide
+              Orthopaedic Insights • Surgical Considerations Guide
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
@@ -44,7 +202,7 @@ export default function HipReplacementNegativesPage() {
               {/* INTRODUCTION */}
               <section id="introduction" className="mb-12">
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  Hip replacement surgery is an effective treatment for joint damage, but like any major medical procedure, it carries specific risks, limitations, and potential drawbacks that patients should consider beforehand.
+                  Hip replacement surgery is an effective treatment for severe joint damage, but like any major medical procedure, it carries specific risks, limitations, and potential drawbacks that patients should consider beforehand.
                 </p>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
@@ -56,147 +214,34 @@ export default function HipReplacementNegativesPage() {
                 </p>
               </section>
 
-              {/* DETAILED DISADVANTAGES BREAKDOWN */}
-              <section id="main-disadvantages" className="mb-12">
+              {/* 14 MAIN DISADVANTAGES */}
+              <section id="disadvantages-list" className="mb-12">
                 <SectionHeading>Main Disadvantages & Limitations Breakdown</SectionHeading>
 
-                {/* ITEM 1 */}
-                <SubHeading>1. Hip Replacement Is Major Surgery</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Hip replacement involves replacing damaged parts of the hip joint with artificial components under anaesthesia.
-                </p>
-                <BulletList
-                  items={[
-                    "Pre-operative medical assessment & Anaesthesia preparation",
-                    "Invasive surgical intervention & post-op hospital monitoring",
-                    "Structured rehabilitation & ongoing follow-up care",
-                  ]}
-                />
-
-                {/* ITEM 2 */}
-                <SubHeading>2. Recovery Can Take Time</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Recovery is not immediate and varies from person to person. Regaining full mobility requires patience and active participation in rehab.
-                </p>
-                <BulletList
-                  items={[
-                    "Rebuilding muscle strength & balance around the joint",
-                    "Restoring mobility & walking confidence gradually",
-                    "Returning to normal daily function over several weeks or months",
-                  ]}
-                />
-
-                {/* ITEM 3 */}
-                <SubHeading>3. Pain and Discomfort After Surgery</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  While intended to eliminate long-term joint pain, early post-operative surgical discomfort is normal and expected.
-                </p>
-                <BulletList
-                  items={[
-                    "Managed via prescribed medications & cold therapy",
-                    "Supported by structured physiotherapy exercises",
-                    "Requires gradual mobilization under medical guidance",
-                  ]}
-                />
-
-                {/* ITEM 4 */}
-                <SubHeading>4. Physiotherapy May Be Required</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Rehabilitation plays a non-negotiable role in restoring joint function and achieving a optimal long-term result.
-                </p>
-                <BulletList
-                  items={[
-                    "Restores joint flexibility and walking gait",
-                    "Builds essential muscle strength around the artificial joint",
-                    "Skipping exercises can hamper optimal functional recovery",
-                  ]}
-                />
-
-                {/* ITEM 5 */}
-                <SubHeading>5. Some Activities May Need to Be Modified</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Certain high-impact or demanding activities may need to be limited during recovery or over the long term.
-                </p>
-                <BulletList
-                  items={[
-                    "Surgical approach & recovery progress dictate activity boundaries",
-                    "Surgeon guidelines determine safe return to sports, work, or heavy lifting",
-                  ]}
-                />
-
-                {/* ITEM 6 */}
-                <SubHeading>6. An Artificial Hip Is Not the Same as a Natural Hip</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  An artificial joint offers immense pain relief, but may feel subtly different from a healthy natural joint.
-                </p>
-                <BulletList
-                  items={[
-                    "Subtle changes in sensation, flex, or movement around the surgical site",
-                    "Varying activity tolerance based on individual health and bone quality",
-                  ]}
-                />
-
-                {/* ITEM 7 */}
-                <SubHeading>7. Hip Implants Can Wear Over Time</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Modern implants are highly durable, but friction over decades can cause gradual mechanical wear.
-                </p>
-                <BulletList
-                  items={[
-                    "Influenced by implant materials and surgical positioning precision",
-                    "Affected by patient age, body weight, and physical activity levels",
-                  ]}
-                />
-
-                {/* ITEM 8 */}
-                <SubHeading>8. Some Patients May Eventually Need Revision Surgery</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  A younger or highly active patient may outlive their implant, requiring a secondary revision procedure later in life.
-                </p>
-                <BulletList
-                  items={[
-                    "Triggers include implant loosening, material wear, dislocation, or infection",
-                    "Younger patients face a higher lifetime probability of secondary revision",
-                  ]}
-                />
-
-                {/* ITEM 9 */}
-                <SubHeading>9. Surgical Risks and Potential Complications</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Like any major surgical procedure, standard medical risks exist:
-                </p>
-                <div className="grid sm:grid-cols-2 gap-3 my-5">
-                  <ProblemCard text="Infection" />
-                  <ProblemCard text="Blood Clots (DVT)" />
-                  <ProblemCard text="Joint Dislocation" />
-                  <ProblemCard text="Implant Loosening" />
-                  <ProblemCard text="Leg-Length Difference" />
-                  <ProblemCard text="Nerve or Vessel Injury" />
-                </div>
-                <p className="text-[#425466] text-base md:text-lg leading-8">
-                  For a detailed review, see{" "}
-                  <Link
-                    href="/blog/hip-replacement-surgery-risks-and-complications"
-                    className="text-[#1B4F9C] font-semibold underline hover:text-pink-500"
-                  >
-                    Hip Replacement Surgery Risks and Complications
-                  </Link>.
-                </p>
-
-                {/* ITEM 10 */}
-                <SubHeading>10. Financial and Logistical Considerations</SubHeading>
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                  Costs extend beyond the surgeon fee to hospital stays, implants, physical therapy, and logistical arrangements for international patients.
-                </p>
-                <p className="text-[#425466] text-base md:text-lg leading-8">
-                  Check our detailed cost breakdown:{" "}
-                  <Link
-                    href="/blog/hip-replacement-surgery-cost-in-india"
-                    className="text-[#1B4F9C] font-semibold underline hover:text-pink-500"
-                  >
-                    Hip Replacement Surgery Cost in India
-                  </Link>.
-                </p>
+                {disadvantages.map((item, index) => (
+                  <div key={index} className="mb-8">
+                    <SubHeading>{item.title}</SubHeading>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-3">
+                      {item.desc}
+                    </p>
+                    {item.bullets && <BulletList items={item.bullets} />}
+                    {item.note && (
+                      <p className="text-[#425466] text-sm md:text-base leading-7 italic bg-[#F8FAFD] p-3.5 rounded-xl border border-[#E1E8F0] mt-3">
+                        {item.note}
+                      </p>
+                    )}
+                    {item.linkHref && (
+                      <p className="mt-3">
+                        <Link
+                          href={item.linkHref}
+                          className="text-[#1B4F9C] font-semibold underline hover:text-pink-500 text-base"
+                        >
+                          {item.linkText} →
+                        </Link>
+                      </p>
+                    )}
+                  </div>
+                ))}
               </section>
 
               {/* BENEFITS VS NEGATIVES */}
@@ -204,81 +249,63 @@ export default function HipReplacementNegativesPage() {
                 <SectionHeading>Are the Negatives Greater Than the Benefits?</SectionHeading>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  There is no single answer for everyone. For patients with severe joint damage and debilitating daily pain, the benefits of pain relief and restored mobility almost always far outweigh the potential negatives.
+                  There is no universal answer. For someone with severe joint damage and debilitating pain, benefits almost always outweigh disadvantages. For mild symptoms still manageable non-surgically, immediate surgery may not be necessary.
                 </p>
 
                 <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0] my-6">
                   <h3 className="text-xl font-bold text-[#053161] mb-3">Key Decision Factors:</h3>
                   <BulletList
                     items={[
-                      "Severity of hip symptoms and daily life disruption",
-                      "Response to prior non-surgical conservative treatments",
-                      "Overall medical health, age, and individual activity goals",
+                      "Symptom severity & daily life disruption",
+                      "Prior non-surgical treatment results",
+                      "Overall medical health & personal treatment goals",
                     ]}
                   />
                 </div>
               </section>
 
-              {/* NON-SURGICAL ALTERNATIVES */}
+              {/* ALTERNATIVES */}
               <section id="alternatives" className="mb-12">
-                <SectionHeading>Non-Surgical Alternatives to Consider First</SectionHeading>
+                <SectionHeading>When Might Hip Replacement Not Be the First Option?</SectionHeading>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  Before deciding on surgery, doctors typically recommend exploring conservative treatments:
+                  Doctors often recommend exploring conservative non-surgical treatments prior to total joint replacement:
                 </p>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 my-6">
                   <FeatureBox text="Activity Modification" />
                   <FeatureBox text="Physiotherapy & Exercise" />
                   <FeatureBox text="Weight Management" />
-                  <FeatureBox text="Targeted Pain Therapy" />
+                  <FeatureBox text="Targeted Pain Management" />
                   <FeatureBox text="Assistive Mobility Devices" />
-                  <FeatureBox text="Joint Injections" />
+                  <FeatureBox text="Underlying Condition Therapy" />
                 </div>
               </section>
 
-              {/* QUESTIONS FOR SURGEON */}
+              {/* QUESTIONS TO ASK */}
               <section id="questions-to-ask" className="mb-12">
                 <SectionHeading>Questions to Ask Your Surgeon</SectionHeading>
 
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  When discussing treatment options, ask your orthopaedic specialist:
-                </p>
-
                 <div className="space-y-3 my-6">
-                  <QuestionItem number="1" question="What are the main risks or negatives in my specific medical case?" />
-                  <QuestionItem number="2" question="How long is my personal recovery expected to take?" />
-                  <QuestionItem number="3" question="What activities will I need to permanently modify?" />
-                  <QuestionItem number="4" question="How long is my chosen implant expected to last?" />
-                  <QuestionItem number="5" question="Are there non-surgical alternatives I should try before proceeding?" />
+                  <QuestionItem number="1" question="What are the main disadvantages in my specific case?" />
+                  <QuestionItem number="2" question="What complications am I personally at higher risk for?" />
+                  <QuestionItem number="3" question="How long will my personal recovery take?" />
+                  <QuestionItem number="4" question="What activities will I need to permanently modify?" />
+                  <QuestionItem number="5" question="How long is my chosen implant expected to last?" />
+                  <QuestionItem number="6" question="What rehabilitation program will I need to follow?" />
+                  <QuestionItem number="7" question="When can I return to work and international travel?" />
+                  <QuestionItem number="8" question="Are there non-surgical alternatives I should try first?" />
                 </div>
               </section>
 
-              {/* FAQ SECTION */}
+              {/* FAQs */}
               <section id="faqs" className="mb-12">
                 <SectionHeading>Frequently Asked Questions</SectionHeading>
 
                 <div className="space-y-4">
-                  <FAQ
-                    question="What is the biggest disadvantage of hip replacement?"
-                    answer="There is no single disadvantage for everyone. Primary concerns include the recovery timeline, activity modifications, risk of surgical complications, and potential implant revision in younger patients."
-                  />
-                  <FAQ
-                    question="Does hip replacement have permanent disadvantages?"
-                    answer="Some patients may need long-term activity modifications (like avoiding high-impact sports or running), though most regain excellent function for daily life."
-                  />
-                  <FAQ
-                    question="Can you live a normal life after hip replacement?"
-                    answer="Yes! Most patients return to normal daily living, walking, swimming, golfing, and cycling without disabling joint pain."
-                  />
-                  <FAQ
-                    question="Can a hip replacement wear out?"
-                    answer="Yes. Modern hip implants last 15–25+ years, but physical friction or loosening can occur over decades."
-                  />
-                  <FAQ
-                    question="Is hip replacement worth it?"
-                    answer="For patients with severe arthritis or joint damage causing disabling pain, the benefits of mobility and pain relief almost always far outweigh the negatives."
-                  />
+                  {faqs.map((faq, idx) => (
+                    <FAQ key={idx} question={faq.question} answer={faq.answer} />
+                  ))}
                 </div>
               </section>
 
@@ -286,11 +313,11 @@ export default function HipReplacementNegativesPage() {
               <section>
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                    Get an Expert Opinion on Your Treatment Options
+                    Choose Treatment Based on Individual Assessment
                   </h2>
               
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Understanding surgical risks and expected outcomes requires a personalized evaluation. Connect with top joint-replacement specialists in India to review your medical reports and discuss the best approach for you.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Understanding surgical risks and expected outcomes requires a personalized evaluation. Connect with Ekam Health Services to get expert medical opinions from top joint-replacement specialists in India.
                   </p>
               
                   <div className="mb-6">
@@ -319,7 +346,7 @@ export default function HipReplacementNegativesPage() {
                 📊
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Get Your Assessment
+                Need Treatment Advice?
               </h3>
               <p className="text-white/85 text-sm leading-6 mb-5">
                 Have your medical history evaluated by leading joint-replacement specialists in India.
@@ -341,8 +368,8 @@ export default function HipReplacementNegativesPage() {
                 <a href="#introduction" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Introduction
                 </a>
-                <a href="#main-disadvantages" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Disadvantages Breakdown
+                <a href="#disadvantages-list" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  14 Main Disadvantages
                 </a>
                 <a href="#benefits-vs-negatives" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Benefits vs Negatives
@@ -351,7 +378,7 @@ export default function HipReplacementNegativesPage() {
                   Non-Surgical Alternatives
                 </a>
                 <a href="#questions-to-ask" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Questions to Ask Surgeon
+                  Questions to Ask
                 </a>
                 <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   FAQs
@@ -367,7 +394,7 @@ export default function HipReplacementNegativesPage() {
 }
 
 /* =========================================================
-   REUSABLE HELPER COMPONENTS
+   REUSABLE HELPER COMPONENTS (Same as page (5).js)
 ========================================================= */
 
 function SectionHeading({ children }) {
@@ -399,15 +426,6 @@ function BulletList({ items }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function ProblemCard({ text }) {
-  return (
-    <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#FFF7FA] border border-[#FCDDEC]">
-      <span className="text-pink-600 font-bold">⚠️</span>
-      <span className="text-[#053161] text-sm md:text-base font-semibold">{text}</span>
-    </div>
   );
 }
 
