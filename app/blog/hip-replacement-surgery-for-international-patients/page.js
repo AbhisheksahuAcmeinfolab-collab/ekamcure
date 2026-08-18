@@ -6,7 +6,7 @@ export const metadata = {
     "Learn about hip replacement surgery in India for international patients, including advanced treatment options, expert care, hospital facilities, and recovery.",
 };
 
-export default function HipReplacementInternationalPage() {
+function HipReplacementInternationalPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
       {/* HERO SECTION */}
@@ -290,36 +290,36 @@ export default function HipReplacementInternationalPage() {
               </section>
 
               {/* FINAL CTA BOX */}
-                <section>
-                  <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                      Start Planning Your Hip Replacement Treatment in India
-                    </h2>
-                
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
-                    </p>
-                    
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                      You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
-                    </p>
-                
-                    {/* BUTTON WITH MARGIN BOTTOM */}
-                    <div className="mb-6">
-                      <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
-                      >
-                        Request Treatment Assessment →
-                      </Link>
-                    </div>
-                      
-                    {/* MEDICAL DISCLAIMER NOTE */}
-                    <p className="text-xs md:text-sm text-gray-500 leading-relaxed border-t border-[#DCE5F0] pt-4 mt-6">
-                      <strong>Note:</strong> Medical information on this page is for general educational purposes and does not replace consultation with a qualified healthcare professional. Treatment suitability, surgical decisions, travel fitness and follow-up requirements should be determined by the treating medical team.
-                    </p>
+              <section>
+                <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
+                    Start Planning Your Hip Replacement Treatment in India
+                  </h2>
+              
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
+                  </p>
+                  
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
+                  </p>
+              
+                  {/* BUTTON WITH MARGIN BOTTOM */}
+                  <div className="mb-6">
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
+                    >
+                      Request Treatment Assessment →
+                    </Link>
                   </div>
-                </section>
+                    
+                  {/* MEDICAL DISCLAIMER NOTE */}
+                  <p className="text-xs md:text-sm text-gray-500 leading-relaxed border-t border-[#DCE5F0] pt-4 mt-6">
+                    <strong>Note:</strong> Medical information on this page is for general educational purposes and does not replace consultation with a qualified healthcare professional. Treatment suitability, surgical decisions, travel fitness and follow-up requirements should be determined by the treating medical team.
+                  </p>
+                </div>
+              </section>
 
             </div>
           </article>
@@ -365,9 +365,6 @@ export default function HipReplacementInternationalPage() {
                 </a>
                 <a href="#ekam-support-costs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
                   Ekam Support & Costs
-                </a>
-                <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  FAQs
                 </a>
               </div>
             </div>
@@ -427,17 +424,4 @@ function QuestionItem({ number, question }) {
   );
 }
 
-function FAQ({ question, answer }) {
-  return (
-    <div className="rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] overflow-hidden">
-      <div className="px-5 py-5 md:px-6">
-        <h3 className="text-lg md:text-xl font-bold text-[#053161] mb-3">
-          {question}
-        </h3>
-        <p className="text-[#425466] leading-7">
-          {answer}
-        </p>
-      </div>
-    </div>
-  );
-}
+export default HipReplacementInternationalPage;
