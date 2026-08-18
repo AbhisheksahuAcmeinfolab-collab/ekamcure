@@ -14,7 +14,7 @@ const hospitals = [
     rank: 1,
     name: 'Max Healthcare',
     location: 'Delhi NCR & Other Locations',
-    imgSrc: '/images/hospitals/max-healthcare.jpg',
+    imgSrc: '/images/Max Healthcare.png',
     specialties: ['Orthopaedics', 'Oncology', 'Cardiac Sciences', 'Neurosciences', 'Gastroenterology', 'Nephrology', 'Transplant Services', 'Critical Care'],
     whyChoose: [
       'Multispecialty and super-specialty departments led by medical experts.',
@@ -26,7 +26,7 @@ const hospitals = [
     rank: 2,
     name: 'Yatharth Hospitals',
     location: 'Delhi NCR Region',
-    imgSrc: '/images/hospitals/yatharth-hospital.jpg',
+    imgSrc: '/images/Yatharth Hospitals.png',
     specialties: ['Orthopaedics', 'Joint Replacement', 'Cardiology', 'Oncology', 'Neurology', 'Gastroenterology', 'Nephrology', 'Critical Care'],
     whyChoose: [
       'Strong focus on orthopaedic, surgical, and joint replacement infrastructure.',
@@ -38,7 +38,7 @@ const hospitals = [
     rank: 3,
     name: 'Apollo Hospitals',
     location: 'Multiple Cities Pan-India',
-    imgSrc: '/images/hospitals/apollo-hospital.jpg',
+    imgSrc: '/images/Apollo Hospitals.png',
     specialties: ['Cardiology', 'Oncology', 'Orthopaedics', 'Neurosurgery', 'Gastroenterology', 'Nephrology', 'Transplant Medicine', 'Fertility Care'],
     whyChoose: [
       'Pioneer in private healthcare with a massive network of specialist doctors.',
@@ -50,7 +50,7 @@ const hospitals = [
     rank: 4,
     name: 'Fortis Healthcare',
     location: 'Pan-India Presence',
-    imgSrc: '/images/hospitals/fortis-healthcare.jpg',
+    imgSrc: '/images/Fortis Healthcare.png',
     specialties: ['Cardiology', 'Oncology', 'Orthopaedics', 'Neurology', 'Gastroenterology', 'Renal Sciences', 'Transplantation', 'Critical Care'],
     whyChoose: [
       'Specialist-led treatment protocols across multi-specialty domains.',
@@ -63,7 +63,7 @@ const hospitals = [
     name: 'Medanta – The Medicity',
     location: 'Gurugram, Haryana (Delhi NCR)',
     badge: "Ranked No. 1 in India (Newsweek 2026)",
-    imgSrc: '/images/hospitals/medanta-gurugram.jpg',
+    imgSrc: '/images/Medanta – The Medicity.png',
     specialties: ['Cardiac Sciences', 'Oncology', 'Orthopaedics', 'Neurosciences', 'Gastroenterology', 'Organ Transplantation', 'Kidney & Urology Care'],
     whyChoose: [
       'Ranked top hospital in India based on quality metrics and patient outcomes.',
@@ -75,7 +75,7 @@ const hospitals = [
     rank: 6,
     name: 'Manipal Hospitals',
     location: 'Multiple Cities Pan-India',
-    imgSrc: '/images/hospitals/manipal-hospital.jpg',
+    imgSrc: '/images/Manipal Hospitals.png',
     specialties: ['Cardiology', 'Oncology', 'Orthopaedics', 'Neurosciences', 'Gastroenterology', 'Nephrology', 'Transplantation', 'Critical Care'],
     whyChoose: [
       'Extensive network giving patients freedom of location preference.',
@@ -86,7 +86,7 @@ const hospitals = [
     rank: 7,
     name: 'Yashoda Hospitals',
     location: 'Hyderabad',
-    imgSrc: '/images/hospitals/yashoda-hospital.jpg',
+    imgSrc: '/images/Yashoda Hospitals.png',
     specialties: ['Oncology', 'Cardiology', 'Neurology', 'Orthopaedics', 'Gastroenterology', 'Nephrology', 'Transplant Medicine', 'Critical Care'],
     whyChoose: [
       'Leading healthcare destination in Southern India.',
@@ -97,7 +97,7 @@ const hospitals = [
     rank: 8,
     name: 'Artemis Hospitals',
     location: 'Gurugram (Delhi NCR)',
-    imgSrc: '/images/hospitals/artemis-hospital.jpg',
+    imgSrc: '/images/Artemis Hospitals.png',
     specialties: ['Orthopaedics', 'Cardiology', 'Oncology', 'Neurology', 'Gastroenterology', 'Critical Care', 'Surgical Treatment'],
     whyChoose: [
       'JCI & NABH accredited super-specialty facility.',
@@ -108,7 +108,7 @@ const hospitals = [
     rank: 9,
     name: 'Kokilaben Dhirubhai Ambani Hospital',
     location: 'Mumbai',
-    imgSrc: '/images/hospitals/kokilaben-hospital.jpg',
+    imgSrc: '/images/Kokilaben Dhirubhai Ambani Hospital.png',
     specialties: ['Oncology', 'Orthopaedics', 'Cardiology', 'Neurosciences', 'Gastroenterology', 'Transplantation', 'Critical Care'],
     whyChoose: [
       'Premier multispecialty hospital in Western India.',
@@ -119,7 +119,7 @@ const hospitals = [
     rank: 10,
     name: 'BLK-Max Super Speciality Hospital',
     location: 'New Delhi',
-    imgSrc: '/images/hospitals/blk-max-hospital.jpg',
+    imgSrc: '/images/BLK-Max Super Speciality Hospital.png',
     specialties: ['Oncology', 'Bone Marrow Transplantation', 'Orthopaedics', 'Gastroenterology', 'Cardiac Care', 'Neurosciences', 'Critical Care'],
     whyChoose: [
       'One of Asia’s largest Bone Marrow Transplant centers.',
@@ -155,7 +155,7 @@ export default function TopHospitalsPage() {
             <p className="text-slate-600 mb-6">
               Need assistance selecting the right hospital or specialist? Connect with Ekam for medical record evaluation and cost estimates.
             </p>
-            <a href="#ekam-assistance" className="block text-center bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-lg transition">
+            <a href="/contact" className="block text-center bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-lg transition">
               Get Assistance
             </a>
           </div>
