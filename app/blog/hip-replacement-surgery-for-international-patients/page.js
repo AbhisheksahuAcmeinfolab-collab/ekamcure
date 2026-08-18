@@ -325,10 +325,13 @@ export default function HipReplacementInternationalPage() {
               <section>
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                    Start Planning Your Treatment in India
+                    Start Planning Your Hip Replacement Treatment in India
                   </h2>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Share your available medical reports and treatment history to begin your coordination process. Get personalized specialist evaluations and complete guidance.
+                    If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
+                  </p>
+                <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
                   </p>
                   <Link
                     href="/contact"
@@ -336,6 +339,9 @@ export default function HipReplacementInternationalPage() {
                   >
                     Request Treatment Assessment →
                   </Link>
+                      <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                        Medical information on this page is for general educational purposes and does not replace consultation with a qualified healthcare professional. Treatment suitability, surgical decisions, travel fitness and follow-up requirements should be determined by the treating medical team.
+                      </p>
                 </div>
               </section>
 
