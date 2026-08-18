@@ -289,63 +289,37 @@ export default function HipReplacementInternationalPage() {
                 </div>
               </section>
 
-              {/* FAQ SECTION */}
-              <section id="faqs" className="mb-12">
-                <SectionHeading>Frequently Asked Questions</SectionHeading>
-
-                <div className="space-y-4">
-                  <FAQ
-                    question="Can international patients get hip replacement surgery in India?"
-                    answer="Yes, international patients can seek hip replacement treatment in India subject to applicable medical, hospital, and visa requirements. Suitability for surgery is determined by a qualified orthopaedic specialist after clinical evaluation."
-                  />
-                  <FAQ
-                    question="Can I send my medical reports before travelling to India?"
-                    answer="Yes. You can share your available medical records, X-rays, and diagnostic reports with Ekam or the hospital for a preliminary opinion before traveling."
-                  />
-                  <FAQ
-                    question="Do I need to travel to India before getting a treatment plan?"
-                    answer="A preliminary opinion and estimated cost can be provided based on remote review. However, the final clinical decision and surgical plan require an in-person evaluation."
-                  />
-                  <FAQ
-                    question="Can I travel to India with a family member?"
-                    answer="Yes, international patients can travel with an attendant. India provides Medical Attendant visas for eligible companions."
-                  />
-                  <FAQ
-                    question="How long should I stay in India after hip replacement?"
-                    answer="The stay varies per patient depending on recovery, procedure type, and doctor recommendations. It is best to allow flexibility in your return travel plans."
-                  />
-                  <FAQ
-                    question="Can Ekam arrange my hip replacement treatment in India?"
-                    answer="Ekam helps coordinate all aspects of your treatment journey, including specialist connections, hospital planning, and medical travel coordination."
-                  />
-                </div>
-              </section>
-
               {/* FINAL CTA BOX */}
-              <section>
-                <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
-                  <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                    Start Planning Your Hip Replacement Treatment in India
-                  </h2>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
-                  </p>
+                <section>
+                  <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
+                      Start Planning Your Hip Replacement Treatment in India
+                    </h2>
                 
-                <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
-                  </p>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
-                  >
-                    Request Treatment Assessment →
-                  </Link>
-                      <br>
-                      <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                        Medical information on this page is for general educational purposes and does not replace consultation with a qualified healthcare professional. Treatment suitability, surgical decisions, travel fitness and follow-up requirements should be determined by the treating medical team.
-                      </p>
-                </div>
-              </section>
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                      If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
+                    </p>
+                    
+                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                      You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
+                    </p>
+                
+                    {/* BUTTON WITH MARGIN BOTTOM */}
+                    <div className="mb-6">
+                      <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
+                      >
+                        Request Treatment Assessment →
+                      </Link>
+                    </div>
+                      
+                    {/* MEDICAL DISCLAIMER NOTE */}
+                    <p className="text-xs md:text-sm text-gray-500 leading-relaxed border-t border-[#DCE5F0] pt-4 mt-6">
+                      <strong>Note:</strong> Medical information on this page is for general educational purposes and does not replace consultation with a qualified healthcare professional. Treatment suitability, surgical decisions, travel fitness and follow-up requirements should be determined by the treating medical team.
+                    </p>
+                  </div>
+                </section>
 
             </div>
           </article>
