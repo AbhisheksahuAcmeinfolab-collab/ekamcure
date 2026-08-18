@@ -258,7 +258,7 @@ export default function HipReplacementInternationalPage() {
                   </p>
                 </div>
 
-                <SectionHeading>How Much Does Hip Replacement Treatment Cost?</SectionHeading>
+                <SectionHeading>How Much Does Hip Replacement Treatment Cost for International Patients?</SectionHeading>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
                   The total expense for an international patient involves more than the surgical procedure itself. Potential expenses include medical treatment, implant, hospitalization, flights, visa, accommodation, and physiotherapy.
