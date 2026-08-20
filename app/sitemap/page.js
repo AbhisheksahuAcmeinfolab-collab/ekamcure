@@ -18,11 +18,12 @@ const sections = [
       ["Top Hospitals", "/top-hospitals"],
       ["Patient Story", "/patient-story"],
       ["Gallery", "/gallery"],
+      ["Fees", "/fees"],
     ],
   },
 
   {
-    title: "Cancer Treatment",
+    title: "Treatments & Specialities",
     links: [
       [
         "Best Prostate Cancer Treatment in India",
@@ -33,56 +34,74 @@ const sections = [
         "/treatments/breast-cancer-treatment-in-india",
       ],
       [
-        "Prostate Cancer Treatment Cost",
-        "/cost-of-treatment/prostate-cancer-treatment-cost-in-india",
+        "Heart Valve Surgery",
+        "/treatments/heart-valve-surgery-india",
       ],
       [
-        "Best Prostate Cancer Doctors",
-        "/doctors/best-prostate-cancer-doctors-in-india",
+        "Glaucoma Surgery for International Patients",
+        "/treatments/glaucoma-surgery-in-india-for-international-patients",
       ],
-    ],
-  },
-
-  {
-    title: "Other Treatments",
-    links: [
       [
-        "Hip Replacement Surgery",
+        "Kidney Transplant in India",
+        "/treatments/kidney-transplant-in-india",
+      ],
+      [
+        "Hip Replacement Surgery in India",
         "/treatments/hip-replacement-surgery-in-india",
       ],
       [
-        "Knee Replacement Surgery",
+        "Knee Replacement Surgery in India",
         "/treatments/knee-replacement-surgery-in-india",
+      ],
+      [
+        "Best Spine Surgery in India",
+        "/treatments/best-spine-surgery-in-india",
       ],
       [
         "Superficial Parotidectomy Surgery",
         "/treatments/superficial-parotidectomy-surgery-india",
       ],
       [
-        "Heart Valve Surgery",
-        "/treatments/heart-valve-surgery-india",
-      ],
-      [
-        "Glaucoma Surgery",
-        "/treatments/glaucoma-surgery-in-india-for-international-patients",
-      ],
-      [
-        "Best Spine Surgery",
-        "/treatments/best-spine-surgery-in-india",
-      ],
-      [
-        "Kidney Transplant",
-        "/treatments/kidney-transplant-in-india",
-      ],
-      [
-        "IVF Treatments",
+        "IVF Treatments in India",
         "/ivf-treatments-in-india",
       ],
     ],
   },
 
   {
-    title: "Blogs",
+    title: "Services & Top Hospitals",
+    links: [
+      [
+        "Medical Visa for Treatment in India",
+        "/services/medical-visa-for-treatment-in-india",
+      ],
+      [
+        "Top 10 Hospitals in India for International Patients",
+        "/top-hospitals/top-10-hospitals-india-for-international-patients",
+      ],
+      [
+        "Best Prostate Cancer Doctors in India",
+        "/doctors/best-prostate-cancer-doctors-in-india",
+      ],
+    ],
+  },
+
+  {
+    title: "Cost of Treatments",
+    links: [
+      [
+        "Prostate Cancer Treatment Cost in India",
+        "/cost-of-treatment/prostate-cancer-treatment-cost-in-india",
+      ],
+      [
+        "Hip Replacement Surgery Cost in India",
+        "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients",
+      ],
+    ],
+  },
+
+  {
+    title: "Blogs & Articles",
     links: [
       [
         "Top 10 Cancer Hospitals in India",
@@ -97,7 +116,7 @@ const sections = [
         "/blog/radiation-therapy-for-prostate-cancer-in-india",
       ],
       [
-        "Prostate Cancer Survival Rate",
+        "Prostate Cancer Survival Rate in India",
         "/blog/prostate-cancer-survival-rate-in-india",
       ],
       [
@@ -109,12 +128,32 @@ const sections = [
         "/blog/hormone-therapy-for-prostate-cancer-in-india",
       ],
       [
-        "Metastatic Prostate Cancer Treatment",
+        "Metastatic Prostate Cancer Treatment in India",
         "/blog/metastatic-prostate-cancer-treatment-india",
       ],
       [
         "Medical Visa for Cancer Treatment in India",
         "/blog/medical-visa-cancer-treatment-india",
+      ],
+      [
+        "Hip Replacement Surgery for International Patients",
+        "/blog/hip-replacement-surgery-for-international-patients",
+      ],
+      [
+        "Best Hospitals for Hip Replacement Surgery in India",
+        "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+      ],
+      [
+        "Hip Replacement Surgery Success Rate",
+        "/blog/hip-replacement-surgery-success-rate",
+      ],
+      [
+        "What Are the Negatives of a Hip Replacement",
+        "/blog/what-are-the-negatives-of-a-hip-replacement",
+      ],
+      [
+        "Hip Replacement Surgery Risks & Complications",
+        "/blog/hip-replacement-surgery-risks-complications",
       ],
     ],
   },
@@ -125,7 +164,6 @@ const sections = [
       ["Terms & Conditions", "/terms-and-condition"],
       ["Privacy Policy", "/privacy-policy"],
       ["Disclaimer", "/disclaimer"],
-      ["Fees", "/fees"],
     ],
   },
 ];
@@ -140,7 +178,6 @@ export default function SitemapPage() {
       }}
     >
       {/* Hero */}
-
       <section
         style={{
           background:
