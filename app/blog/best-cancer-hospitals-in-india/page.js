@@ -357,16 +357,13 @@ export default function BestCancerHospitalsIndia() {
             </section>
 
             {/* CONCLUSION */}
-            <section id="conclusion">
+            <section id="conclusion" className="mb-14">
               <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "var(--color-navy)" }}>
                 Conclusion
               </h2>
-              <blockquote
-                className="text-xl md:text-2xl leading-snug pl-6 border-l-4 mb-2"
-                style={{ fontWeight: 600, color: "var(--color-navy)", borderColor: "var(--color-blue)" }}
-              >
+              <p className="text-[#3E4C59] leading-relaxed">
                 {conclusionParagraph}
-              </blockquote>
+              </p>
             </section>
 
             {/* MORE RELATED LINKS */}
