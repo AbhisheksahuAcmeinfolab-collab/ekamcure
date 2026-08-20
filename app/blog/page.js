@@ -14,6 +14,7 @@ const blogs = [
     title: "Hip Replacement Surgery Risks and Complications",
     slug: "hip-replacement-surgery-risks-complications",
     category: "Joint Replacement",
+    image: "/blog-images/hip-replacement-surgery-risks-complications.jpg",
     description:
       "Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems and revision surgery.",
     readTime: "6 min read",
@@ -22,6 +23,7 @@ const blogs = [
     title: "Best Hospitals for Hip Replacement Surgery in India",
     slug: "best-hospitals-for-hip-replacement-surgery-in-india",
     category: "Joint Replacement",
+    image: "/blog-images/best-hospitals-for-hip-replacement-surgery-in-india.jpg",
     description:
       "Discover the top orthopedic hospitals and specialists in India offering advanced hip joint replacement options.",
     readTime: "7 min read",
@@ -30,6 +32,7 @@ const blogs = [
     title: "Hip Replacement Surgery for International Patients",
     slug: "hip-replacement-surgery-for-international-patients",
     category: "Medical Tourism",
+    image: "/blog-images/hip-replacement-surgery-for-international-patients.jpg",
     description:
       "A complete guide for international patients planning hip replacement surgery in India, covering travel, stay, and care.",
     readTime: "8 min read",
@@ -38,6 +41,7 @@ const blogs = [
     title: "Hip Replacement Surgery Success Rate",
     slug: "hip-replacement-surgery-success-rate",
     category: "Joint Replacement",
+    image: "/blog-images/hip-replacement-surgery-success-rate.jpg",
     description:
       "Understand long-term success rates, durability of modern implants, and factor-affecting outcomes after surgery.",
     readTime: "5 min read",
@@ -46,6 +50,7 @@ const blogs = [
     title: "What Are the Negatives of a Hip Replacement?",
     slug: "what-are-the-negatives-of-a-hip-replacement",
     category: "Joint Replacement",
+    image: "/blog-images/what-are-the-negatives-of-a-hip-replacement.jpg",
     description:
       "An honest look at limitations, lifestyle adjustments, and potential drawbacks after total hip replacement.",
     readTime: "5 min read",
@@ -54,6 +59,7 @@ const blogs = [
     title: "Best Cancer Hospitals in India",
     slug: "best-cancer-hospitals-in-india",
     category: "Oncology",
+    image: "/blog-images/best-cancer-hospitals-in-india.jpg",
     description:
       "Explore premier cancer care institutions in India with cutting-edge technology and renowned oncologists.",
     readTime: "8 min read",
@@ -62,6 +68,7 @@ const blogs = [
     title: "Top 10 Cancer Hospitals in India",
     slug: "top-10-cancer-hospitals-in-india",
     category: "Oncology",
+    image: "/blog-images/top-10-cancer-hospitals-in-india.jpg",
     description:
       "A detailed overview of the top 10 specialized oncology centers across India for advanced cancer care.",
     readTime: "9 min read",
@@ -70,6 +77,7 @@ const blogs = [
     title: "Prostate Cancer Survival Rate in India",
     slug: "prostate-cancer-survival-rate-in-india",
     category: "Oncology",
+    image: "/blog-images/prostate-cancer-survival-rate-in-india.jpg",
     description:
       "Statistical insights, stage-wise survival outcomes, and treatment efficiency for prostate cancer in India.",
     readTime: "6 min read",
@@ -78,6 +86,7 @@ const blogs = [
     title: "Hormone Therapy for Prostate Cancer in India",
     slug: "hormone-therapy-for-prostate-cancer-in-india",
     category: "Oncology",
+    image: "/blog-images/hormone-therapy-for-prostate-cancer-in-india.jpg",
     description:
       "How androgen deprivation therapy (ADT) works, costs, and options available for prostate cancer care.",
     readTime: "6 min read",
@@ -86,6 +95,7 @@ const blogs = [
     title: "Radiation Therapy for Prostate Cancer in India",
     slug: "radiation-therapy-for-prostate-cancer-in-india",
     category: "Oncology",
+    image: "/blog-images/radiation-therapy-for-prostate-cancer-in-india.jpg",
     description:
       "Comprehensive guide on modern radiation techniques like IMRT, IGRT, and CyberKnife for prostate cancer.",
     readTime: "7 min read",
@@ -94,6 +104,7 @@ const blogs = [
     title: "Metastatic Prostate Cancer Treatment in India",
     slug: "metastatic-prostate-cancer-treatment-india",
     category: "Oncology",
+    image: "/blog-images/metastatic-prostate-cancer-treatment-india.jpg",
     description:
       "Advanced therapeutic approaches, targeted therapies, and clinical care for stage IV prostate cancer.",
     readTime: "7 min read",
@@ -102,6 +113,7 @@ const blogs = [
     title: "Why Choose India for Prostate Cancer Treatment?",
     slug: "why-choose-india-for-prostate-cancer-treatment",
     category: "Medical Tourism",
+    image: "/blog-images/why-choose-india-for-prostate-cancer-treatment.jpg",
     description:
       "Key benefits, international medical standards, cost advantages, and expert doctors for prostate cancer.",
     readTime: "6 min read",
@@ -110,6 +122,7 @@ const blogs = [
     title: "Medical Visa for Cancer Treatment in India",
     slug: "medical-visa-cancer-treatment-india",
     category: "Medical Tourism",
+    image: "/blog-images/medical-visa-cancer-treatment-india.jpg",
     description:
       "Step-by-step process, required documents, and assistance for obtaining an Indian e-Medical Visa.",
     readTime: "5 min read",
@@ -131,7 +144,7 @@ export default function BlogListingPage() {
             Knowledge Hub & Medical Guides
           </div>
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Ekamcure Health Articles & Medical Insights
+            EkamCure Health Articles & Medical Insights
           </h1>
           <p className="text-white/85 text-base md:text-lg max-w-2xl mx-auto">
             Stay informed with expert guidance on orthopedic surgeries, advanced oncology treatments, and seamless medical travel to India.
@@ -153,25 +166,37 @@ export default function BlogListingPage() {
               key={idx}
               className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden group"
             >
-              <div className="p-6 md:p-7">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-pink-600 bg-[#FFF7FA] border border-[#FCDDEC] px-3 py-1 rounded-full">
-                    {blog.category}
-                  </span>
-                  <span className="text-xs text-gray-400 font-medium">
-                    {blog.readTime}
-                  </span>
+              <div>
+                {/* BLOG FEATURED IMAGE */}
+                <Link href={`/blog/${blog.slug}`} className="block overflow-hidden relative aspect-[16/9] bg-gray-100">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </Link>
+
+                <div className="p-6 md:p-7">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-pink-600 bg-[#FFF7FA] border border-[#FCDDEC] px-3 py-1 rounded-full">
+                      {blog.category}
+                    </span>
+                    <span className="text-xs text-gray-400 font-medium">
+                      {blog.readTime}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-[#053161] group-hover:text-[#1B4F9C] transition mb-3 line-clamp-2">
+                    <Link href={`/blog/${blog.slug}`}>
+                      {blog.title}
+                    </Link>
+                  </h3>
+
+                  <p className="text-[#425466] text-sm leading-relaxed line-clamp-3 mb-4">
+                    {blog.description}
+                  </p>
                 </div>
-
-                <h3 className="text-xl font-bold text-[#053161] group-hover:text-[#1B4F9C] transition mb-3 line-clamp-2">
-                  <Link href={`/blog/${blog.slug}`}>
-                    {blog.title}
-                  </Link>
-                </h3>
-
-                <p className="text-[#425466] text-sm leading-relaxed line-clamp-3 mb-4">
-                  {blog.description}
-                </p>
               </div>
 
               <div className="px-6 md:px-7 pb-6 pt-2 border-t border-[#F0F4F8] mt-auto">
