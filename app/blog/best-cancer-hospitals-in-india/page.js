@@ -179,6 +179,15 @@ const toc = [
   { href: "#conclusion", label: "Conclusion" }
 ];
 
+{/* BLOG FEATURED IMAGE */}
+<div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl mb-8 border border-[#E1E8F0]">
+  <img
+    src="/blog-images/hip-replacement-surgery-risks-complications.jpg"
+    alt="Hip Replacement Surgery Risks and Complications"
+    className="w-full h-full object-cover"
+  />
+</div>
+
 /* ---------------------------------------------------------------------
    Shared building blocks
 --------------------------------------------------------------------- */
