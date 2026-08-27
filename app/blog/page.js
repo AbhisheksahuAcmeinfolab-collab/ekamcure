@@ -144,7 +144,7 @@ export default function BlogListingPage() {
             Knowledge Hub & Medical Guides
           </div>
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            EkamCure Health Articles & Medical Insights
+            Ekamcure Health Articles & Medical Insights
           </h1>
           <p className="text-white/85 text-base md:text-lg max-w-2xl mx-auto">
             Stay informed with expert guidance on orthopedic surgeries, advanced oncology treatments, and seamless medical travel to India.
