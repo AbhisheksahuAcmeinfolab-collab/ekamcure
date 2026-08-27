@@ -20,37 +20,78 @@ const relatedArticles = [
   { title: "Total Budget for Medical Trip to India", href: "/blog/total-budget-medical-trip-to-india" },
   { title: "What Are the Negatives of a Hip Replacement", href: "/blog/what-are-the-negatives-of-a-hip-replacement" },
   { title: "Why Choose India for Prostate Cancer Treatment", href: "/blog/why-choose-india-for-prostate-cancer-treatment" },
-];      
+];
 
-      <main>
-        {/* HERO SECTION */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
-            <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
-          </div>
+export default function HipReplacementSuccessRatePage() {
+  return (
+    <main className="bg-[#F6F9FD] text-[#053161]">
+      {/* HERO SECTION */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
+          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
+        </div>
 
-          <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
-            <div className="max-w-4xl">
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 mb-6 text-xs md:text-sm font-medium">
-                Orthopaedic Insights • Clinical Outcomes Guide
-              </div>
-
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-                Hip Replacement Surgery Success Rate
-              </h1>
-
-              <p className="text-base md:text-xl text-white/90 leading-relaxed max-w-3xl">
-                Learn about the hip replacement surgery success rate, factors affecting treatment outcomes, recovery expectations, and important considerations.
-              </p>
+        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 mb-6 text-xs md:text-sm font-medium">
+              Orthopaedic Insights • Clinical Outcomes Guide
             </div>
-          </div>
-        </section>
 
-        {/* MAIN CONTENT CONTAINER */}
-        <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_340px] gap-8 lg:gap-10 items-start">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
+              Hip Replacement Surgery Success Rate
+            </h1>
+
+            <p className="text-base md:text-xl text-white/90 leading-relaxed max-w-3xl">
+              Learn about the hip replacement surgery success rate, factors affecting treatment outcomes, recovery expectations, and important considerations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MAIN CONTENT CONTAINER */}
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_340px] gap-8 lg:gap-10 items-start">
+          
+          {/* LEFT CONTAINER (IN THIS PAGE + ARTICLE CONTENT) */}
+          <div className="space-y-8">
             
+            {/* IN THIS PAGE NAVIGATION (TOP LEFT) */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-4">
+                In This Page
+              </h3>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm font-medium">
+                <a href="#introduction" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Introduction
+                </a>
+                <a href="#what-is-success-rate" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Success Rate Factors
+                </a>
+                <a href="#how-measured" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • How Success Is Measured
+                </a>
+                <a href="#how-long-lasts" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Implant Longevity
+                </a>
+                <a href="#factors-affecting" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Factors Affecting Outcomes
+                </a>
+                <a href="#age-groups" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Older vs Younger Patients
+                </a>
+                <a href="#complications-revision" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Complications & Revision
+                </a>
+                <a href="#evaluating-statistics" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Evaluating Statistics
+                </a>
+                <a href="#faqs" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • FAQs
+                </a>
+              </div>
+            </div>
+
             {/* ARTICLE CONTENT */}
             <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
               <div className="p-6 md:p-10 lg:p-12">
@@ -542,88 +583,53 @@ const relatedArticles = [
               </div>
             </article>
 
-            {/* SIDEBAR NAVIGATION */}
-            <aside className="space-y-6 lg:sticky lg:top-24">
-              
-              {/* 1. ON THIS PAGE (TOP) */}
-              <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#053161] mb-5">
-                  In This Page
-                </h3>
-                <div className="space-y-3 text-sm font-medium">
-                  <a href="#introduction" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Introduction
-                  </a>
-                  <a href="#what-is-success-rate" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Success Rate Factors
-                  </a>
-                  <a href="#how-measured" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    How Success Is Measured
-                  </a>
-                  <a href="#how-long-lasts" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Implant Longevity
-                  </a>
-                  <a href="#factors-affecting" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Factors Affecting Outcomes
-                  </a>
-                  <a href="#age-groups" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Older vs Younger Patients
-                  </a>
-                  <a href="#complications-revision" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Complications & Revision
-                  </a>
-                  <a href="#evaluating-statistics" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    Evaluating Statistics
-                  </a>
-                  <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-600 transition">
-                    FAQs
-                  </a>
-                </div>
-              </div>
-
-              {/* 2. GET YOUR ASSESSMENT (MIDDLE) */}
-              <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
-                <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
-                  📊
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Get Your Assessment
-                </h3>
-                <p className="text-white/85 text-sm leading-6 mb-5">
-                  Have your medical history evaluated by leading joint-replacement specialists in India.
-                </p>
-                <Link
-                  href="/contact"
-                  className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
-                >
-                  Get Started →
-                </Link>
-              </div>
-
-              {/* 3. RELATED ARTICLES (BOTTOM) */}
-              <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#053161] mb-5">
-                  Related Articles
-                </h3>
-                <div className="space-y-3 text-sm">
-                  {relatedArticles.map((article, index) => (
-                    <Link
-                      key={index}
-                      href={article.href}
-                      className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1 border-b border-gray-100 last:border-0"
-                    >
-                      • {article.title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-            </aside>
-
           </div>
+
+          {/* RIGHT SIDEBAR (GET ASSESSMENT + RELATED ARTICLES) */}
+          <aside className="space-y-6 lg:sticky lg:top-24">
+            
+            {/* 1. GET YOUR ASSESSMENT */}
+            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
+                📊
+              </div>
+              <h3 className="text-xl font-bold mb-3">
+                Get Your Assessment
+              </h3>
+              <p className="text-white/85 text-sm leading-6 mb-5">
+                Have your medical history evaluated by leading joint-replacement specialists in India.
+              </p>
+              <Link
+                href="/contact"
+                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
+              >
+                Get Started →
+              </Link>
+            </div>
+
+            {/* 2. RELATED ARTICLES */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5">
+                Related Articles
+              </h3>
+              <div className="space-y-3 text-sm">
+                {relatedArticles.map((article, index) => (
+                  <Link
+                    key={index}
+                    href={article.href}
+                    className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1 border-b border-gray-100 last:border-0"
+                  >
+                    • {article.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+          </aside>
+
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
 
