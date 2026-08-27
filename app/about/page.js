@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import img from "../../assets/recent/Common.webp";
 import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 import Img1 from "../../assets/newimage/vision.webp";
@@ -269,24 +269,33 @@ export default function AboutUs() {
                   </p>
 
                   <div className="flex justify-center md:justify-start space-x-4">
-                    {member.socials.linkedin && (
-                      <a
-                        href={member.socials.linkedin}
-                        className="text-blue-700 hover:text-blue-900 transition"
-                        target="_blank"
-                      >
-                        <FaLinkedin size={28} />
-                      </a>
-                    )}
-                    {member.socials.instagram && (
-                      <a
-                        href={member.socials.instagram}
-                        className="text-pink-600 hover:text-pink-800 transition"
-                        target="_blank"
-                      >
-                        <FaInstagram size={28} />
-                      </a>
-                    )}
+                    {member.socials.facebook && (
+                        <a
+                          href={member.socials.facebook}
+                          className="text-blue-600 hover:text-blue-800 transition"
+                          target="_blank"
+                        >
+                          <FaFacebook size={28} />
+                        </a>
+                      )}
+                      {member.socials.linkedin && (
+                        <a
+                          href={member.socials.linkedin}
+                          className="text-blue-700 hover:text-blue-900 transition"
+                          target="_blank"
+                        >
+                          <FaLinkedin size={28} />
+                        </a>
+                      )}
+                      {member.socials.instagram && (
+                        <a
+                          href={member.socials.instagram}
+                          className="text-pink-600 hover:text-pink-800 transition"
+                          target="_blank"
+                        >
+                          <FaInstagram size={28} />
+                        </a>
+                      )}
                   </div>
                 </div>
               </div>
