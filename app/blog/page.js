@@ -14,7 +14,7 @@ const blogs = [
     title: "Hip Replacement Surgery Risks and Complications",
     slug: "hip-replacement-surgery-risks-complications",
     category: "Joint Replacement",
-    image: "/blog-images/hip-replacement-surgery-risks-complications.jpg",
+    image: "/images/Hip Replacement Surgery Risks and Complications.png",
     description:
       "Learn about hip replacement surgery risks and complications, including infection, blood clots, dislocation, implant problems and revision surgery.",
     readTime: "6 min read",
@@ -23,7 +23,7 @@ const blogs = [
     title: "Best Hospitals for Hip Replacement Surgery in India",
     slug: "best-hospitals-for-hip-replacement-surgery-in-india",
     category: "Joint Replacement",
-    image: "/blog-images/best-hospitals-for-hip-replacement-surgery-in-india.jpg",
+    image: "/images/Best Hospitals for Hip Replacement Surgery in India.png",
     description:
       "Discover the top orthopedic hospitals and specialists in India offering advanced hip joint replacement options.",
     readTime: "7 min read",
@@ -32,7 +32,7 @@ const blogs = [
     title: "Hip Replacement Surgery for International Patients",
     slug: "hip-replacement-surgery-for-international-patients",
     category: "Medical Tourism",
-    image: "/blog-images/hip-replacement-surgery-for-international-patients.jpg",
+    image: "/images/Hip Replacement Surgery for International Patients.png",
     description:
       "A complete guide for international patients planning hip replacement surgery in India, covering travel, stay, and care.",
     readTime: "8 min read",
@@ -41,7 +41,7 @@ const blogs = [
     title: "Hip Replacement Surgery Success Rate",
     slug: "hip-replacement-surgery-success-rate",
     category: "Joint Replacement",
-    image: "/blog-images/hip-replacement-surgery-success-rate.jpg",
+    image: "/images/Hip Replacement Surgery Success Rate.png",
     description:
       "Understand long-term success rates, durability of modern implants, and factor-affecting outcomes after surgery.",
     readTime: "5 min read",
@@ -50,7 +50,7 @@ const blogs = [
     title: "What Are the Negatives of a Hip Replacement?",
     slug: "what-are-the-negatives-of-a-hip-replacement",
     category: "Joint Replacement",
-    image: "/blog-images/what-are-the-negatives-of-a-hip-replacement.jpg",
+    image: "/images/What Are the Negatives of a Hip Replacement.png",
     description:
       "An honest look at limitations, lifestyle adjustments, and potential drawbacks after total hip replacement.",
     readTime: "5 min read",
@@ -59,7 +59,7 @@ const blogs = [
     title: "Best Cancer Hospitals in India",
     slug: "best-cancer-hospitals-in-india",
     category: "Oncology",
-    image: "/blog-images/best-cancer-hospitals-in-india.jpg",
+    image: "/images/Best Cancer Hospitals in India.png",
     description:
       "Explore premier cancer care institutions in India with cutting-edge technology and renowned oncologists.",
     readTime: "8 min read",
@@ -68,7 +68,7 @@ const blogs = [
     title: "Top 10 Cancer Hospitals in India",
     slug: "top-10-cancer-hospitals-in-india",
     category: "Oncology",
-    image: "/blog-images/top-10-cancer-hospitals-in-india.jpg",
+    image: "/images/Top 10 Cancer Hospitals in India.png",
     description:
       "A detailed overview of the top 10 specialized oncology centers across India for advanced cancer care.",
     readTime: "9 min read",
@@ -77,7 +77,7 @@ const blogs = [
     title: "Prostate Cancer Survival Rate in India",
     slug: "prostate-cancer-survival-rate-in-india",
     category: "Oncology",
-    image: "/blog-images/prostate-cancer-survival-rate-in-india.jpg",
+    image: "/images/Prostate Cancer Survival Rate in India.png",
     description:
       "Statistical insights, stage-wise survival outcomes, and treatment efficiency for prostate cancer in India.",
     readTime: "6 min read",
@@ -86,7 +86,7 @@ const blogs = [
     title: "Hormone Therapy for Prostate Cancer in India",
     slug: "hormone-therapy-for-prostate-cancer-in-india",
     category: "Oncology",
-    image: "/blog-images/hormone-therapy-for-prostate-cancer-in-india.jpg",
+    image: "/images/Hormone Therapy for Prostate Cancer in India.png",
     description:
       "How androgen deprivation therapy (ADT) works, costs, and options available for prostate cancer care.",
     readTime: "6 min read",
@@ -95,7 +95,7 @@ const blogs = [
     title: "Radiation Therapy for Prostate Cancer in India",
     slug: "radiation-therapy-for-prostate-cancer-in-india",
     category: "Oncology",
-    image: "/blog-images/radiation-therapy-for-prostate-cancer-in-india.jpg",
+    image: "/images/Radiation Therapy for Prostate Cancer in India.png",
     description:
       "Comprehensive guide on modern radiation techniques like IMRT, IGRT, and CyberKnife for prostate cancer.",
     readTime: "7 min read",
@@ -104,7 +104,7 @@ const blogs = [
     title: "Metastatic Prostate Cancer Treatment in India",
     slug: "metastatic-prostate-cancer-treatment-india",
     category: "Oncology",
-    image: "/blog-images/metastatic-prostate-cancer-treatment-india.jpg",
+    image: "/images/Metastatic Prostate Cancer Treatment in India.png",
     description:
       "Advanced therapeutic approaches, targeted therapies, and clinical care for stage IV prostate cancer.",
     readTime: "7 min read",
@@ -113,7 +113,7 @@ const blogs = [
     title: "Why Choose India for Prostate Cancer Treatment?",
     slug: "why-choose-india-for-prostate-cancer-treatment",
     category: "Medical Tourism",
-    image: "/blog-images/why-choose-india-for-prostate-cancer-treatment.jpg",
+    image: "/images/Why Choose India for Prostate Cancer Treatment.png",
     description:
       "Key benefits, international medical standards, cost advantages, and expert doctors for prostate cancer.",
     readTime: "6 min read",
@@ -122,7 +122,7 @@ const blogs = [
     title: "Medical Visa for Cancer Treatment in India",
     slug: "medical-visa-cancer-treatment-india",
     category: "Medical Tourism",
-    image: "/blog-images/medical-visa-cancer-treatment-india.jpg",
+    image: "/images/Medical Visa for Cancer Treatment in India.png",
     description:
       "Step-by-step process, required documents, and assistance for obtaining an Indian e-Medical Visa.",
     readTime: "5 min read",
