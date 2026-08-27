@@ -86,10 +86,18 @@ export default function AboutUs() {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Left Side: YouTube Video Embed */}
           <div className="relative w-full md:w-1/2 flex justify-center">
-            <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/24yTN_Du0lY?si=7ChFSRItTSPmuUhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+          <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
+            <iframe 
+              className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/24yTN_Du0lY?si=7ChFSRItTSPmuUhr" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
           </div>
+        </div>
 
           {/* Right Side: Text Content */}
           <div className="md:w-1/2 text-justify md:text-left mt-2">
