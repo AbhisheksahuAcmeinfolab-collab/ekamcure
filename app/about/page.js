@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import img from "../../assets/recent/Common.webp";
 import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 import Img1 from "../../assets/newimage/vision.webp";
