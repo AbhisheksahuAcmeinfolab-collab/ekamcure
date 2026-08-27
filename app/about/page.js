@@ -22,8 +22,8 @@ export default function AboutUs() {
       description:
         "Udai Singh is a dedicated marketing expert and entrepreneur with over 15 years of experience, holding an MBA in Marketing. As the founder of Ekam Health Services and other ventures, Udai is committed to fostering well-being and enhancing access to healthcare solutions. His professional journey is driven by a passion for helping people and positively impacting lives. With deep expertise in digital strategy and brand growth, Udai combines visionary leadership with a compassionate approach to business, making a meaningful difference in every project he undertakes.",
       socials: {
-        linkedin: "#",
-        instagram: "#",
+        facebook: "https://www.facebook.com/udaisingh1",
+        instagram: "https://www.instagram.com/udaisingh1/",
       },
     },
     {
@@ -73,7 +73,7 @@ export default function AboutUs() {
         />
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
-            Our About
+            About Us
           </h1>
         </div>
       </div>
@@ -87,25 +87,13 @@ export default function AboutUs() {
           {/* Left Side: YouTube Video Embed */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/76eBbyVs1tk?si=aUDM-Pc7pyJ3MBoy"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                className="rounded-xl"
-              ></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/24yTN_Du0lY?si=7ChFSRItTSPmuUhr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
 
           {/* Right Side: Text Content */}
           <div className="md:w-1/2 text-justify md:text-left mt-2">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#032870] mb-4">
-              About Us!
-            </h2>
+            
             <p className="text-gray-600 leading-relaxed mb-4">
               Ekam excels in the medical travel industry, connecting global
               patients with top-tier healthcare facilities across India. Focused
