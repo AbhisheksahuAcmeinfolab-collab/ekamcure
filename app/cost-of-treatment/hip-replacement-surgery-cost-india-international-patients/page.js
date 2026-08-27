@@ -279,7 +279,16 @@ export default function HipReplacementCostPage() {
                 </SectionHeading>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  When planning <strong>hip replacement surgery in India</strong>, international patients should look beyond the hospital surgery package and consider the complete cost of travelling to India and staying here during treatment and recovery.
+                  When planning{" "}
+                  <strong>
+                    <a
+                      href="https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india"
+                      className="text-blue-600 hover:underline"
+                    >
+                      hip replacement surgery in India
+                    </a>
+                  </strong>
+                  , international patients should look beyond the hospital surgery package and consider the complete cost of travelling to India and staying here during treatment and recovery.
                 </p>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
@@ -749,7 +758,16 @@ export default function HipReplacementCostPage() {
                 </p>
 
                 <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                  For the latest indicative figures, see <strong>Hip Replacement Surgery Cost in India</strong>.
+                  For the latest indicative figures, see{" "}
+                  <strong>
+                    <a
+                      href="https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#cost-india"
+                      className="text-blue-600 hover:underline"
+                    >
+                      Hip Replacement Surgery Cost in India
+                    </a>
+                  </strong>
+                  .
                 </p>
 
                 <SectionHeading>
