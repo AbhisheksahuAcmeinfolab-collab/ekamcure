@@ -20,31 +20,7 @@ const relatedArticles = [
   { title: "Total Budget for Medical Trip to India", href: "/blog/total-budget-medical-trip-to-india" },
   { title: "What Are the Negatives of a Hip Replacement", href: "/blog/what-are-the-negatives-of-a-hip-replacement" },
   { title: "Why Choose India for Prostate Cancer Treatment", href: "/blog/why-choose-india-for-prostate-cancer-treatment" },
-];
-
-export default function HipReplacementSuccessRatePage() {
-  return (
-    <div className="min-h-screen bg-[#F6F9FD] text-[#053161]">
-      {/* HEADER NAVBAR */}
-      <header className="sticky top-0 z-50 bg-[#053161]/95 backdrop-blur-md border-b border-white/10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-5 md:px-8 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold tracking-tight text-white">
-            Ekam<span className="text-[#6796CC]">Cure</span>
-          </Link>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white/90">
-            <Link href="/" className="hover:text-white transition">Home</Link>
-            <Link href="/about" className="hover:text-white transition">About</Link>
-            <Link href="/blog" className="text-white font-semibold">Blog</Link>
-            <Link href="/contact" className="hover:text-white transition">Contact</Link>
-          </nav>
-          <Link
-            href="/contact"
-            className="bg-[#1B4F9C] hover:bg-white hover:text-[#053161] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all"
-          >
-            Get Assessment
-          </Link>
-        </div>
-      </header>
+];      
 
       <main>
         {/* HERO SECTION */}
