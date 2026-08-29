@@ -11,6 +11,16 @@ export const metadata = {
 
 const blogs = [
   {
+    title: "Hip Replacement Surgery Success Rate",
+    slug: "total-budget-medical-trip-to-india",
+    category: "Joint Replacement",
+    image: "/images/Hip Replacement Surgery Success Rate.png",
+    description:
+      "Hip replacement surgery is a commonly performed procedure for people with severe hip joint damage, persistent pain and reduced mobility.",
+    readTime: "6 min read",
+  },
+  
+  {
     title: "Hip Replacement Surgery Risks and Complications",
     slug: "hip-replacement-surgery-risks-complications",
     category: "Joint Replacement",
