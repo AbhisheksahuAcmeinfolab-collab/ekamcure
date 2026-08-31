@@ -7,60 +7,64 @@ export const metadata = {
 };
 
 function HipReplacementInternationalPage() {
-  // Related articles list for the sidebar
-  const relatedArticles = [
+  // 4 Specific Links for bottom "More Related Links" section
+  const moreRelatedLinks = [
     {
-        title: "Best Cancer Hospitals in India",
-        href: "/blog/best-cancer-hospitals-in-india",
-      },
-      {
-        title: "Best Hospitals for Hip Replacement Surgery in India",
-        href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
-      },
-      {
-        title: "Hip Replacement Surgery Risks and Complications",
-        href: "/blog/hip-replacement-surgery-risks-complications",
-      },
-      {
-        title: "Hip Replacement Surgery Success Rate",
-        href: "/blog/hip-replacement-surgery-success-rate",
-      },
-      {
-        title: "Hormone Therapy for Prostate Cancer in India",
-        href: "/blog/hormone-therapy-for-prostate-cancer-in-india",
-      },
-      {
-        title: "Medical Visa for Cancer Treatment in India",
-        href: "/blog/medical-visa-cancer-treatment-india",
-      },
-      {
-        title: "Metastatic Prostate Cancer Treatment in India",
-        href: "/blog/metastatic-prostate-cancer-treatment-india",
-      },
-      {
-        title: "Prostate Cancer Survival Rate in India",
-        href: "/blog/prostate-cancer-survival-rate-in-india",
-      },
-      {
-        title: "Radiation Therapy for Prostate Cancer in India",
-        href: "/blog/radiation-therapy-for-prostate-cancer-in-india",
-      },
-      {
-        title: "Top 10 Cancer Hospitals in India",
-        href: "/blog/top-10-cancer-hospitals-in-india",
-      },
-      {
-        title: "Total Budget Medical Trip to India",
-        href: "/blog/total-budget-medical-trip-to-india",
-      },
-      {
-        title: "What Are the Negatives of a Hip Replacement?",
-        href: "/blog/what-are-the-negatives-of-a-hip-replacement",
-      },
-      {
-        title: "Why Choose India for Prostate Cancer Treatment",
-        href: "/blog/why-choose-india-for-prostate-cancer-treatment",
-      },
+      title: "Best Hospitals for Hip Replacement Surgery in India",
+      href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+    },
+    {
+      title: "Hip Replacement Surgery Success Rate",
+      href: "/blog/hip-replacement-surgery-success-rate",
+    },
+    {
+      title: "What Are the Negatives of a Hip Replacement?",
+      href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+    },
+    {
+      title: "Hip Replacement Surgery Risks and Complications",
+      href: "/blog/hip-replacement-surgery-risks-complications",
+    },
+  ];
+
+  // All other blog articles for Sidebar "Related Articles"
+  const sidebarRelatedArticles = [
+    {
+      title: "Best Cancer Hospitals in India",
+      href: "/blog/best-cancer-hospitals-in-india",
+    },
+    {
+      title: "Hormone Therapy for Prostate Cancer in India",
+      href: "/blog/hormone-therapy-for-prostate-cancer-in-india",
+    },
+    {
+      title: "Medical Visa for Cancer Treatment in India",
+      href: "/blog/medical-visa-cancer-treatment-india",
+    },
+    {
+      title: "Metastatic Prostate Cancer Treatment in India",
+      href: "/blog/metastatic-prostate-cancer-treatment-india",
+    },
+    {
+      title: "Prostate Cancer Survival Rate in India",
+      href: "/blog/prostate-cancer-survival-rate-in-india",
+    },
+    {
+      title: "Radiation Therapy for Prostate Cancer in India",
+      href: "/blog/radiation-therapy-for-prostate-cancer-in-india",
+    },
+    {
+      title: "Top 10 Cancer Hospitals in India",
+      href: "/blog/top-10-cancer-hospitals-in-india",
+    },
+    {
+      title: "Total Budget Medical Trip to India",
+      href: "/blog/total-budget-medical-trip-to-india",
+    },
+    {
+      title: "Why Choose India for Prostate Cancer Treatment",
+      href: "/blog/why-choose-india-for-prostate-cancer-treatment",
+    },
   ];
 
   return (
@@ -378,7 +382,7 @@ function HipReplacementInternationalPage() {
                     <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
                       Start Planning Your Hip Replacement Treatment in India
                     </h2>
-                
+                    
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
                       If you are considering hip replacement surgery in India as an international patient, the first step is to understand your medical condition and obtain an appropriate specialist evaluation.
                     </p>
@@ -386,7 +390,7 @@ function HipReplacementInternationalPage() {
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
                       You can share your available medical reports and treatment history to begin the coordination process. Based on the medical evaluation, appropriate treatment options and healthcare providers can be discussed before you make travel arrangements.
                     </p>
-                
+                    
                     {/* BUTTON WITH MARGIN BOTTOM */}
                     <div className="mb-6">
                       <Link
@@ -404,20 +408,20 @@ function HipReplacementInternationalPage() {
                   </div>
                 </section>
 
-                {/* MORE RELATED LINKS SECTION */}
+                {/* MORE RELATED LINKS SECTION (4 SPECIFIC LINKS) */}
                 <section className="bg-[#F8FAFD] rounded-2xl border border-[#E1E8F0] p-6 md:p-8">
                   <h3 className="text-2xl font-bold text-[#053161] mb-6">
                     More Related Links
                   </h3>
                   <div className="grid sm:grid-cols-2 gap-4">
-                    {relatedArticles.map((link, idx) => (
+                    {moreRelatedLinks.map((link, idx) => (
                       <Link
                         key={idx}
                         href={link.href}
                         className="flex items-center justify-between gap-3 p-4 bg-white rounded-xl border border-[#E1E8F0] hover:border-[#1B4F9C] hover:shadow-md transition text-[#053161] font-medium text-sm md:text-base group"
                       >
                         <span>{link.title}</span>
-                        <span className="text-[#1B4F9C] group-hover:translate-x-1 transition-transform">
+                        <span className="text-[#1B4F9C] group-hover:translate-x-1 transition-transform shrink-0">
                           →
                         </span>
                       </Link>
@@ -451,13 +455,13 @@ function HipReplacementInternationalPage() {
               </Link>
             </div>
 
-            {/* 2. RELATED ARTICLES WIDGET */}
+            {/* 2. RELATED ARTICLES WIDGET (SIDEBAR WITH ALL OTHER LINKS) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 Related Articles
               </h3>
               <div className="space-y-4">
-                {relatedArticles.map((article, index) => (
+                {sidebarRelatedArticles.map((article, index) => (
                   <div key={index} className="border-b border-gray-100 last:border-0 pb-3 last:pb-0">
                     <Link
                       href={article.href}
