@@ -7,6 +7,26 @@ export const metadata = {
 };
 
 function HipReplacementInternationalPage() {
+  // Related links list excluding the current active page
+  const relatedLinks = [
+    {
+      title: "Best Hospitals for Hip Replacement Surgery in India",
+      href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+    },
+    {
+      title: "Hip Replacement Surgery Success Rate",
+      href: "/blog/hip-replacement-surgery-success-rate",
+    },
+    {
+      title: "What Are the Negatives of a Hip Replacement?",
+      href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+    },
+    {
+      title: "Hip Replacement Surgery Risks and Complications",
+      href: "/blog/hip-replacement-surgery-risks-complications",
+    },
+  ];
+
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
       {/* HERO SECTION */}
@@ -290,7 +310,7 @@ function HipReplacementInternationalPage() {
               </section>
 
               {/* FINAL CTA BOX */}
-              <section>
+              <section className="mb-12">
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
                     Start Planning Your Hip Replacement Treatment in India
@@ -321,34 +341,36 @@ function HipReplacementInternationalPage() {
                 </div>
               </section>
 
+              {/* MORE RELATED LINKS SECTION */}
+              <section className="bg-[#F8FAFD] rounded-2xl border border-[#E1E8F0] p-6 md:p-8">
+                <h3 className="text-2xl font-bold text-[#053161] mb-6">
+                  More Related Links
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {relatedLinks.map((link, idx) => (
+                    <Link
+                      key={idx}
+                      href={link.href}
+                      className="flex items-center justify-between gap-3 p-4 bg-white rounded-xl border border-[#E1E8F0] hover:border-[#1B4F9C] hover:shadow-md transition text-[#053161] font-medium text-sm md:text-base group"
+                    >
+                      <span>{link.title}</span>
+                      <span className="text-[#1B4F9C] group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+
             </div>
           </article>
 
           {/* SIDEBAR NAVIGATION */}
           <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            {/* CTA WIDGET */}
-            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
-                ✈️
-              </div>
-              <h3 className="text-xl font-bold mb-3">
-                Need Medical Assistance?
-              </h3>
-              <p className="text-white/85 text-sm leading-6 mb-5">
-                Share your reports to receive an initial medical assessment and travel guidance.
-              </p>
-              <Link
-                href="/contact"
-                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
-              >
-                Get Started Today →
-              </Link>
-            </div>
-
-            {/* QUICK LINKS */}
+            {/* QUICK LINKS (IN THIS PAGE) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5">
-                On This Page
+                In This Page
               </h3>
               <div className="space-y-3 text-sm">
                 <a href="#visa-preparation" className="block text-[#1B4F9C] hover:text-pink-500 transition">
@@ -367,6 +389,25 @@ function HipReplacementInternationalPage() {
                   Ekam Support & Costs
                 </a>
               </div>
+            </div>
+
+            {/* CTA WIDGET */}
+            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
+                ✈️
+              </div>
+              <h3 className="text-xl font-bold mb-3">
+                Get Your Assessment
+              </h3>
+              <p className="text-white/85 text-sm leading-6 mb-5">
+                Share your reports to receive an initial medical assessment and travel guidance.
+              </p>
+              <Link
+                href="/contact"
+                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
+              >
+                Get Started Today →
+              </Link>
             </div>
           </aside>
 
