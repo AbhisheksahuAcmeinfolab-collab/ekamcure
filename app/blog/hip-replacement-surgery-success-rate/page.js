@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default function HipReplacementSuccessRatePage() {
-  // 4 Specific Hip Replacement Links for bottom "More Related Links" section
+  // Links for bottom "More Related Links" section (Left side below article)
   const moreRelatedLinks = [
     {
       title: "Hip Replacement Surgery for International Patients",
@@ -27,7 +27,7 @@ export default function HipReplacementSuccessRatePage() {
     },
   ];
 
-  // Sidebar Related Articles
+  // Articles for Right Sidebar "Related Articles"
   const sidebarRelatedArticles = [
     {
       title: "Best Cancer Hospitals in India",
@@ -95,56 +95,12 @@ export default function HipReplacementSuccessRatePage() {
 
       {/* MAIN CONTENT CONTAINER */}
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-        {/* GRID STRUCTURE: LEFT SIDEBAR (320px) | RIGHT MAIN CONTENT (1fr) */}
-        <div className="grid lg:grid-cols-[320px_minmax(0,1fr)] gap-8 lg:gap-10">
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
           
-          {/* LEFT SIDEBAR - ASSESSMENT & RELATED ARTICLES */}
-          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start order-2 lg:order-1">
+          {/* LEFT SIDE: IN THIS PAGE + ARTICLE CONTENT + MORE RELATED LINKS */}
+          <div className="space-y-8">
             
-            {/* 1. GET YOUR ASSESSMENT WIDGET */}
-            <div className="rounded-2xl bg-[#053161] p-6 text-white shadow-lg">
-              <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-4 text-xl">
-                ✈️
-              </div>
-              <h3 className="text-xl font-bold mb-2">
-                Get Your Assessment
-              </h3>
-              <p className="text-white/85 text-sm leading-relaxed mb-5">
-                Have your medical history evaluated by leading joint-replacement specialists in India.
-              </p>
-              <Link
-                href="/contact"
-                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition text-sm"
-              >
-                Get Started →
-              </Link>
-            </div>
-
-            {/* 2. RELATED ARTICLES WIDGET */}
-            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-              <h3 className="text-xl font-bold text-[#053161] mb-5">
-                Related Articles
-              </h3>
-              <div className="space-y-3.5">
-                {sidebarRelatedArticles.map((article, index) => (
-                  <div key={index} className="border-b border-gray-100 last:border-0 pb-3 last:pb-0">
-                    <Link
-                      href={article.href}
-                      className="text-sm text-[#1B4F9C] hover:text-pink-500 font-medium leading-relaxed block transition"
-                    >
-                      • {article.title}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </aside>
-
-          {/* RIGHT SIDE CONTENT - IN THIS PAGE + ARTICLE + MORE RELATED LINKS */}
-          <div className="space-y-8 order-1 lg:order-2">
-            
-            {/* 1. IN THIS PAGE BOX */}
+            {/* IN THIS PAGE CARD (TOP OF ARTICLE CONTENT) */}
             <div className="bg-white rounded-2xl p-6 md:p-8 border border-[#E1E8F0] shadow-sm">
               <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-6">
                 In This Page
@@ -180,7 +136,7 @@ export default function HipReplacementSuccessRatePage() {
               </div>
             </div>
 
-            {/* 2. MAIN ARTICLE CONTENT */}
+            {/* MAIN ARTICLE BODY */}
             <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
               <div className="p-6 md:p-10 lg:p-12">
                 
@@ -670,7 +626,7 @@ export default function HipReplacementSuccessRatePage() {
                   </div>
                 </section>
 
-                {/* 3. MORE RELATED LINKS SECTION (4 SPECIFIC LINKS AT BOTTOM) */}
+                {/* MORE RELATED LINKS SECTION (4 SPECIFIC LINKS) */}
                 <section className="bg-[#F8FAFD] rounded-2xl border border-[#E1E8F0] p-6 md:p-8">
                   <h3 className="text-2xl font-bold text-[#053161] mb-6">
                     More Related Links
@@ -695,6 +651,49 @@ export default function HipReplacementSuccessRatePage() {
             </article>
 
           </div>
+
+          {/* RIGHT SIDEBAR: ASSESSMENT + RELATED ARTICLES */}
+          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+            
+            {/* GET YOUR ASSESSMENT CTA WIDGET */}
+            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
+                ✈️
+              </div>
+              <h3 className="text-xl font-bold mb-3">
+                Get Your Assessment
+              </h3>
+              <p className="text-white/85 text-sm leading-6 mb-5">
+                Have your medical history evaluated by leading joint-replacement specialists in India.
+              </p>
+              <Link
+                href="/contact"
+                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
+              >
+                Get Started →
+              </Link>
+            </div>
+
+            {/* RELATED ARTICLES WIDGET */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5">
+                Related Articles
+              </h3>
+              <div className="space-y-4">
+                {sidebarRelatedArticles.map((article, index) => (
+                  <div key={index} className="border-b border-gray-100 last:border-0 pb-3 last:pb-0">
+                    <Link
+                      href={article.href}
+                      className="text-sm text-[#1B4F9C] hover:text-pink-500 font-medium leading-relaxed block transition"
+                    >
+                      • {article.title}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </aside>
 
         </div>
       </div>
