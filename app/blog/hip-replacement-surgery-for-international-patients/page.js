@@ -10,21 +10,57 @@ function HipReplacementInternationalPage() {
   // Related articles list for the sidebar
   const relatedArticles = [
     {
-      title: "Best Hospitals for Hip Replacement Surgery in India",
-      href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
-    },
-    {
-      title: "Hip Replacement Surgery Success Rate",
-      href: "/blog/hip-replacement-surgery-success-rate",
-    },
-    {
-      title: "What Are the Negatives of a Hip Replacement?",
-      href: "/blog/what-are-the-negatives-of-a-hip-replacement",
-    },
-    {
-      title: "Hip Replacement Surgery Risks and Complications",
-      href: "/blog/hip-replacement-surgery-risks-complications",
-    },
+        title: "Best Cancer Hospitals in India",
+        href: "/blog/best-cancer-hospitals-in-india",
+      },
+      {
+        title: "Best Hospitals for Hip Replacement Surgery in India",
+        href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+      },
+      {
+        title: "Hip Replacement Surgery Risks and Complications",
+        href: "/blog/hip-replacement-surgery-risks-complications",
+      },
+      {
+        title: "Hip Replacement Surgery Success Rate",
+        href: "/blog/hip-replacement-surgery-success-rate",
+      },
+      {
+        title: "Hormone Therapy for Prostate Cancer in India",
+        href: "/blog/hormone-therapy-for-prostate-cancer-in-india",
+      },
+      {
+        title: "Medical Visa for Cancer Treatment in India",
+        href: "/blog/medical-visa-cancer-treatment-india",
+      },
+      {
+        title: "Metastatic Prostate Cancer Treatment in India",
+        href: "/blog/metastatic-prostate-cancer-treatment-india",
+      },
+      {
+        title: "Prostate Cancer Survival Rate in India",
+        href: "/blog/prostate-cancer-survival-rate-in-india",
+      },
+      {
+        title: "Radiation Therapy for Prostate Cancer in India",
+        href: "/blog/radiation-therapy-for-prostate-cancer-in-india",
+      },
+      {
+        title: "Top 10 Cancer Hospitals in India",
+        href: "/blog/top-10-cancer-hospitals-in-india",
+      },
+      {
+        title: "Total Budget Medical Trip to India",
+        href: "/blog/total-budget-medical-trip-to-india",
+      },
+      {
+        title: "What Are the Negatives of a Hip Replacement?",
+        href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+      },
+      {
+        title: "Why Choose India for Prostate Cancer Treatment",
+        href: "/blog/why-choose-india-for-prostate-cancer-treatment",
+      },
   ];
 
   return (
