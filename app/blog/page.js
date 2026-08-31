@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "EkamCure Health Blog | Latest Medical Insights & Guides",
+  title: "Ekamcure Health Blog | Latest Medical Insights & Guides",
   description:
     "Explore comprehensive medical guides on cancer treatments, joint replacements, medical visas, and top hospitals in India.",
   alternates: {
@@ -11,12 +11,12 @@ export const metadata = {
 
 const blogs = [
   {
-    title: "Hip Replacement Surgery Success Rate",
+    title: "Total Budget for a Medical Trip to India",
     slug: "total-budget-medical-trip-to-india",
     category: "Joint Replacement",
-    image: "/images/Hip Replacement Surgery Success Rate.png",
+    image: "/images/Total Budget for a Medical Trip to India.png",
     description:
-      "Hip replacement surgery is a commonly performed procedure for people with severe hip joint damage, persistent pain and reduced mobility.",
+      "Travelling to India for medical treatment involves more than paying for the medical procedure. International patients should also plan for flights, medical visas, accommodation, food, local transportation, diagnostic tests, medicines, follow-up care and unexpected expenses.",
     readTime: "6 min read",
   },
   
