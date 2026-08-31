@@ -705,26 +705,8 @@ function BestHospitalsHipReplacementPage() {
 
           {/* SIDEBAR NAVIGATION */}
           <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            {/* CTA WIDGET */}
-            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
-                🏥
-              </div>
-              <h3 className="text-xl font-bold mb-3">
-                Need Help Selecting a Hospital?
-              </h3>
-              <p className="text-white/85 text-sm leading-6 mb-5">
-                Share your medical reports to receive guidance on accredited hospitals and specialist options.
-              </p>
-              <Link
-                href="/contact"
-                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
-              >
-                Get Assistance →
-              </Link>
-            </div>
-
-            {/* ON THIS PAGE QUICK LINKS */}
+            
+            {/* ON THIS PAGE QUICK LINKS (MOVED TO TOP OF SIDEBAR) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 On This Page
@@ -755,6 +737,25 @@ function BestHospitalsHipReplacementPage() {
                   FAQs
                 </a>
               </div>
+            </div>
+
+            {/* CTA WIDGET */}
+            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
+                🏥
+              </div>
+              <h3 className="text-xl font-bold mb-3">
+                Need Help Selecting a Hospital?
+              </h3>
+              <p className="text-white/85 text-sm leading-6 mb-5">
+                Share your medical reports to receive guidance on accredited hospitals and specialist options.
+              </p>
+              <Link
+                href="/contact"
+                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
+              >
+                Get Assistance →
+              </Link>
             </div>
 
             {/* RELATED ARTICLES WIDGET (SIDEBAR WITH ALL OTHER LINKS) */}
