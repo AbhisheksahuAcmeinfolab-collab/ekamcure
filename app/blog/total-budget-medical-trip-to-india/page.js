@@ -1,15 +1,16 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Hip Replacement Surgery Success Rate",
+  title: "Total Budget for a Medical Trip to India",
   description:
-    "Learn about the hip replacement surgery success rate, factors affecting treatment outcomes, recovery expectations, and important considerations.",
+    "Plan your medical trip to India with estimated treatment, flights, visa, accommodation and other costs, plus a comparison with the USA, UK, Canada and Australia.",
 };
 
 const relatedArticles = [
   { title: "Best Cancer Hospitals in India", href: "/blog/best-cancer-hospitals-in-india" },
   { title: "Best Hospitals for Hip Replacement Surgery in India", href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india" },
   { title: "Hip Replacement Surgery for International Patients", href: "/blog/hip-replacement-surgery-for-international-patients" },
+  { title: "Hip Replacement Surgery Success Rate", href: "/blog/hip-replacement-surgery-success-rate" },
   { title: "Hip Replacement Surgery Risks & Complications", href: "/blog/hip-replacement-surgery-risks-complications" },
   { title: "Hormone Therapy for Prostate Cancer in India", href: "/blog/hormone-therapy-for-prostate-cancer-in-india" },
   { title: "Medical Visa for Cancer Treatment in India", href: "/blog/medical-visa-cancer-treatment-india" },
@@ -17,12 +18,11 @@ const relatedArticles = [
   { title: "Prostate Cancer Survival Rate in India", href: "/blog/prostate-cancer-survival-rate-in-india" },
   { title: "Radiation Therapy for Prostate Cancer in India", href: "/blog/radiation-therapy-for-prostate-cancer-in-india" },
   { title: "Top 10 Cancer Hospitals in India", href: "/blog/top-10-cancer-hospitals-in-india" },
-  { title: "Total Budget for Medical Trip to India", href: "/blog/total-budget-medical-trip-to-india" },
   { title: "What Are the Negatives of a Hip Replacement", href: "/blog/what-are-the-negatives-of-a-hip-replacement" },
   { title: "Why Choose India for Prostate Cancer Treatment", href: "/blog/why-choose-india-for-prostate-cancer-treatment" },
 ];
 
-export default function HipReplacementSuccessRatePage() {
+export default function TotalBudgetMedicalTripPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
       {/* HERO SECTION */}
@@ -35,15 +35,15 @@ export default function HipReplacementSuccessRatePage() {
         <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 mb-6 text-xs md:text-sm font-medium">
-              Orthopaedic Insights • Clinical Outcomes Guide
+              Medical Tourism • Financial Planning Guide
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-              Hip Replacement Surgery Success Rate
+              Total Budget for a Medical Trip to India
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              Learn about the hip replacement surgery success rate, factors affecting treatment outcomes, recovery expectations, and important considerations.
+              Plan your medical trip to India with estimated treatment, flights, visa, accommodation and other costs, plus a comparison with the USA, UK, Canada and Australia.
             </p>
           </div>
         </div>
@@ -53,10 +53,10 @@ export default function HipReplacementSuccessRatePage() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
         <div className="grid lg:grid-cols-[minmax(0,1fr)_340px] gap-8 lg:gap-10 items-start">
           
-          {/* LEFT CONTAINER (IN THIS PAGE + ARTICLE CONTENT) */}
+          {/* LEFT CONTAINER */}
           <div className="space-y-8">
             
-            {/* IN THIS PAGE NAVIGATION (TOP LEFT) */}
+            {/* IN THIS PAGE NAVIGATION */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-4">
                 In This Page
@@ -65,26 +65,29 @@ export default function HipReplacementSuccessRatePage() {
                 <a href="#introduction" className="text-[#1B4F9C] hover:text-pink-600 transition">
                   • Introduction
                 </a>
-                <a href="#what-is-success-rate" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Success Rate Factors
+                <a href="#cost-overview" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Medical Trip Cost Overview
                 </a>
-                <a href="#how-measured" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • How Success Is Measured
+                <a href="#potential-savings" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Potential Savings
                 </a>
-                <a href="#how-long-lasts" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Implant Longevity
+                <a href="#budget-breakdown" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Budget Components
                 </a>
-                <a href="#factors-affecting" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Factors Affecting Outcomes
+                <a href="#sample-budgets" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Sample Trip Budgets
                 </a>
-                <a href="#age-groups" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Older vs Younger Patients
+                <a href="#global-comparison" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • India vs Global Costs
                 </a>
-                <a href="#complications-revision" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Complications & Revision
+                <a href="#budget-planning" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Planning & Contingency
                 </a>
-                <a href="#evaluating-statistics" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Evaluating Statistics
+                <a href="#stay-duration" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Stay Duration
+                </a>
+                <a href="#ekam-support" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • How Ekam Helps
                 </a>
                 <a href="#faqs" className="text-[#1B4F9C] hover:text-pink-600 transition">
                   • FAQs
@@ -99,419 +102,290 @@ export default function HipReplacementSuccessRatePage() {
                 {/* INTRODUCTION */}
                 <section id="introduction" className="mb-12">
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Hip replacement surgery is a commonly performed procedure for people with severe hip joint damage, persistent pain and reduced mobility. For patients considering treatment, one of the most important questions is: How successful is hip replacement surgery?
+                    Travelling to India for medical treatment involves more than paying for the medical procedure. International patients should also plan for flights, medical visas, accommodation, food, local transportation, diagnostic tests, medicines, follow-up care and unexpected expenses.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    The answer depends on what is meant by “success.” Some patients may define success as significant pain relief, while doctors and researchers may assess outcomes using measures such as mobility, joint function, patient-reported improvement, complications and how long the implant remains functional.
+                    The total budget for a medical trip to India therefore depends on several factors, including the treatment required, hospital, city, length of stay, country of departure and whether a family member or medical attendant travels with the patient.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    For international patients considering hip replacement surgery in India, understanding these outcome measures can be more useful than relying on a single percentage advertised by a hospital or healthcare provider.
-                  </p>
-                </section>
-
-                {/* WHAT IS THE SUCCESS RATE */}
-                <section id="what-is-success-rate" className="mb-12">
-                  <SectionHeading>What Is the Success Rate of Hip Replacement Surgery?</SectionHeading>
-                  
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5 font-semibold text-[#053161]">
-                    There is no single success-rate percentage that applies to every hip replacement patient.
-                  </p>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Hip replacement outcomes can vary according to:
-                  </p>
-
-                  <BulletList
-                    items={[
-                      "The patient's age",
-                      "Underlying hip condition",
-                      "Overall health",
-                      "Bone quality",
-                      "Type of hip replacement",
-                      "Surgical technique",
-                      "Implant selection",
-                      "Rehabilitation",
-                      "Physical activity",
-                      "Weight and lifestyle factors",
-                      "Follow-up care",
-                    ]}
-                  />
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5">
-                    Clinical studies and joint-replacement registries often assess outcomes using implant survivorship, revision rates, pain relief, functional improvement and patient-reported outcomes rather than one universal “success rate.”
+                    For international patients comparing India with the USA, UK, Canada and Australia, India can offer substantially lower private treatment costs for many planned procedures. However, the correct comparison should always consider what is included in the treatment package and whether the patient would otherwise receive subsidized or publicly funded care in their home country.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 border-l-4 border-[#1B4F9C] pl-4 py-2 bg-[#F8FAFD] rounded-r-lg">
-                    Therefore, patients should be cautious when a website provides a very high success percentage without explaining how that percentage was measured.
+                    <strong>Important:</strong> The costs in this article are approximate planning ranges, not hospital quotations. Actual costs vary according to the patient&apos;s condition, hospital, doctor, treatment complexity, implant or medication requirements, length of stay and other individual factors.
                   </p>
                 </section>
 
-                {/* HOW IS SUCCESS MEASURED */}
-                <section id="how-measured" className="mb-12">
-                  <SectionHeading>How Is Hip Replacement Success Measured?</SectionHeading>
+                {/* COST OVERVIEW */}
+                <section id="cost-overview" className="mb-12">
+                  <SectionHeading>How Much Does a Medical Trip to India Cost?</SectionHeading>
+                  
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                    There is no single fixed price for a medical trip to India. A patient travelling for a specialist consultation may spend only a few thousand dollars, while someone undergoing major surgery or cancer treatment may require tens of thousands of dollars.
+                  </p>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-[#053161]">
+                    For international patients, the total budget can be divided into:
+                  </p>
+
+                  <div className="p-4 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0] mb-6 text-center font-bold text-[#053161] text-base md:text-lg">
+                    Medical Expenses + Travel Expenses + Stay Expenses + Follow-Up + Contingency
+                  </div>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    A broad planning range is:
+                  </p>
+
+                  <CostTable
+                    headers={["Type of Medical Trip", "Approximate Total Budget"]}
+                    rows={[
+                      ["Consultation / diagnostic visit", "$1,000 – $3,000"],
+                      ["Minor procedure / day-care treatment", "$2,000 – $5,000"],
+                      ["Major planned surgery", "$5,000 – $15,000+"],
+                      ["Complex surgery", "$10,000 – $25,000+"],
+                      ["Cancer treatment", "$8,000 – $50,000+"],
+                      ["Highly complex treatment", "$20,000 – $75,000+"],
+                    ]}
+                  />
+
+                  <p className="text-[#425466] text-sm leading-6 italic mt-3">
+                    * These are broad planning ranges. They should not be interpreted as standard package prices.
+                  </p>
+                </section>
+
+                {/* POTENTIAL SAVINGS */}
+                <section id="potential-savings" className="mb-12">
+                  <SectionHeading>How Much Can International Patients Save by Choosing India?</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                    The potential difference can be substantial for certain procedures. For example, estimates for hip replacement put India at approximately <strong>$6,000–$11,000</strong>, compared with around <strong>$35,000–$50,000+</strong> in the USA.
+                  </p>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                    For IVF, one comparison estimates approximately <strong>$1,800–$3,500</strong> in India, compared with approximately <strong>$15,000–$25,000</strong> in the USA, <strong>$6,500–$10,000</strong> in the UK, <strong>$10,000–$15,000</strong> in Canada and <strong>$7,000–$11,000</strong> in Australia.
+                  </p>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 italic bg-[#F8FAFD] p-4 rounded-xl border border-[#E1E8F0]">
+                    This does not mean patients should select India purely because of price. The appropriate hospital, specialist, treatment protocol, expected outcomes, accreditation, follow-up arrangements and total travel cost should also be considered.
+                  </p>
+                </section>
+
+                {/* BUDGET BREAKDOWN */}
+                <section id="budget-breakdown" className="mb-12">
+                  <SectionHeading>What Makes Up the Total Medical Trip Budget?</SectionHeading>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Several measures can be used to evaluate the outcome of hip replacement surgery.
+                    The medical procedure is usually the largest expense, but international patients should calculate several additional costs.
                   </p>
 
-                  <SubHeading>Pain Relief</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    One of the primary goals of hip replacement is to reduce pain caused by a damaged hip joint. A successful outcome may involve substantial improvement in pain and the patient's ability to perform everyday activities.
-                  </p>
-
-                  <SubHeading>Improved Mobility</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Hip replacement may help appropriate patients improve walking ability and general mobility. The degree of improvement varies from one patient to another and depends on pre-operative mobility, muscle strength, rehabilitation and other factors.
-                  </p>
-
-                  <SubHeading>Improved Daily Function</SubHeading>
+                  <SubHeading>1. Medical Treatment</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Doctors may also assess whether a patient can return to activities that were previously difficult because of hip pain. These may include:
+                    The treatment cost depends on medical condition, procedure type, hospital, specialist, complexity, length of stay, implants, medicines, diagnostics and follow-up care. For example, hip replacement surgery in India is currently listed by Ekam at approximately <strong>$6,000–$11,000</strong>.
+                  </p>
+
+                  <SubHeading>2. Diagnostic Tests ($60 – $350+)</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Investigations required upon arrival may include Blood tests, X-rays, MRI, CT scans, Ultrasound, ECG, Biopsy, and other specialist tests. For complex medical conditions, diagnostic expenses can be considerably higher.
+                  </p>
+
+                  <SubHeading>3. Medical Visa</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    India&apos;s official e-Visa system states that e-Medical and e-Medical Attendant visa fees are country-specific, and a 3% bank transaction charge applies.
                   </p>
                   <BulletList
                     items={[
-                      "Walking",
-                      "Climbing stairs",
-                      "Getting in and out of a chair",
-                      "Performing household activities",
-                      "Returning to work",
-                      "Participating in appropriate recreational activities",
+                      "Many eligible nationalities: $80",
+                      "United States: $100",
+                      "United Kingdom: $129",
+                      "Ukraine: $85 | UAE: $80",
                     ]}
                   />
 
-                  <SubHeading>Patient-Reported Outcomes</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Patients may complete standardized questionnaires that assess pain, physical function and quality of life. These measures provide information about how the patient experiences the outcome rather than relying only on imaging or surgical observations.
-                  </p>
-
-                  <SubHeading>Implant Survivorship</SubHeading>
+                  <SubHeading>4. International Flights</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Another important measure is how long the hip replacement remains functional without requiring revision surgery. This is often reported as implant survivorship over a specific period, such as 5, 10 or 15 years.
+                    Airfare depends heavily on the country of origin. Approximate return economy budgets:
                   </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    A survivorship figure should always be interpreted alongside its:
-                  </p>
-                  <BulletList
-                    items={[
-                      "Patient population",
-                      "Follow-up period",
-                      "Implant type",
-                      "Surgical technique",
-                      "Definition of revision",
-                    ]}
-                  />
-                  <p className="text-[#425466] text-base md:text-lg leading-8 italic bg-[#F8FAFD] p-4 rounded-xl border border-[#E1E8F0] mt-4">
-                    This is why a single percentage without context can be misleading.
-                  </p>
-                </section>
-
-                {/* HOW LONG DOES IT LAST */}
-                <section id="how-long-lasts" className="mb-12">
-                  <SectionHeading>How Long Does a Hip Replacement Last?</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Modern hip replacements can remain functional for many years, but longevity varies between patients. The lifespan of an implant can be influenced by:
-                  </p>
-
-                  <BulletList
-                    items={[
-                      "Implant design",
-                      "Implant materials",
-                      "Patient age",
-                      "Activity level",
-                      "Body weight",
-                      "Bone condition",
-                      "Surgical technique",
-                      "Implant positioning",
-                      "Infection or other complications",
-                      "Normal wear over time",
+                  <CostTable
+                    headers={["Origin", "Approximate Return Airfare"]}
+                    rows={[
+                      ["Bangladesh / Nepal", "$180 – $500"],
+                      ["Middle East", "$300 – $700"],
+                      ["Southeast Asia", "$350 – $800"],
+                      ["Africa", "$500 – $1,200+"],
+                      ["UK / Europe", "$600 – $1,300+"],
+                      ["USA / Canada", "$900 – $1,700+"],
+                      ["Australia", "$800 – $1,600+"],
                     ]}
                   />
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5 font-semibold text-pink-600 bg-[#FFF7FA] p-4 rounded-xl border-l-4 border-pink-500">
-                    You should therefore avoid presenting a fixed statement such as “every hip replacement lasts exactly 20 years.”
-                  </p>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8">
-                    Instead, patients should ask their surgeon about expected implant longevity based on their age, diagnosis, implant selection and individual circumstances.
-                  </p>
-                </section>
-
-                {/* FACTORS AFFECTING OUTCOMES */}
-                <section id="factors-affecting" className="mb-12">
-                  <SectionHeading>What Factors Can Affect Hip Replacement Outcomes?</SectionHeading>
-
-                  <SubHeading>Patient's Overall Health</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Medical conditions can affect surgical recovery and rehabilitation. Patients should inform their medical team about existing conditions, medications, allergies and previous surgeries before treatment.
-                  </p>
-
-                  <SubHeading>Age</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Age alone does not determine whether a patient will have a successful outcome. Doctors consider age together with overall health, bone quality, activity level and the reason for surgery.
-                  </p>
-
-                  <SubHeading>Severity of Hip Damage</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Patients with advanced joint damage may experience significant improvement after appropriate treatment, but the outcome depends on their individual condition.
-                  </p>
-
-                  <SubHeading>Surgeon Experience</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    The surgeon's training and experience with the relevant hip replacement procedure can be an important consideration. Patients should evaluate the surgeon's qualifications and experience rather than relying only on a hospital's advertised success percentage.
-                  </p>
-
-                  <SubHeading>Implant Selection</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    The implant should be selected according to the patient's anatomy, bone quality, age, activity level and clinical requirements. There is no single implant that is automatically the best choice for every patient.
-                  </p>
-
-                  <SubHeading>Rehabilitation</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Post-operative rehabilitation can play an important role in regaining strength, mobility and function. Patients should follow the rehabilitation plan provided by their treating medical team.
-                  </p>
-
-                  <SubHeading>Lifestyle and Activity</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    After recovery, patients should follow the activity recommendations provided by their surgeon and physiotherapy team. Appropriate activity can support general health, while certain high-impact activities may not be recommended for every patient.
-                  </p>
-                </section>
-
-                {/* AGE SPECIFICS */}
-                <section id="age-groups" className="mb-12">
-                  <SectionHeading>Hip Replacement Success Rate in Older Adults</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Hip replacement is frequently performed in older adults, but age by itself does not determine the outcome. Doctors may consider:
-                  </p>
-
-                  <BulletList
-                    items={[
-                      "General health",
-                      "Cardiovascular health",
-                      "Bone quality",
-                      "Muscle strength",
-                      "Existing medical conditions",
-                      "Mobility before surgery",
-                      "Ability to participate in rehabilitation",
-                    ]}
-                  />
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5">
-                    A healthy older patient may have a very different expected outcome from another patient of the same age with multiple medical conditions.
-                  </p>
-
-                  <SectionHeading>Hip Replacement Outcomes in Younger Patients</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Younger patients may also undergo hip replacement when significant joint damage affects their quality of life. However, younger patients may have different considerations because they potentially have more years of activity following surgery.
-                  </p>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold">
-                    The surgeon may therefore discuss:
-                  </p>
-
-                  <BulletList
-                    items={[
-                      "Implant selection",
-                      "Activity expectations",
-                      "Implant longevity",
-                      "Potential future revision",
-                      "Long-term follow-up",
-                    ]}
-                  />
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mt-4 italic">
-                    Treatment decisions should be individualized rather than based on age alone.
-                  </p>
-                </section>
-
-                {/* COMPLICATIONS & REVISION */}
-                <section id="complications-revision" className="mb-12">
-                  <SectionHeading>Can Hip Replacement Surgery Fail?</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Although hip replacement can provide substantial improvement for many appropriately selected patients, complications and failures can occur. Possible problems include:
-                  </p>
-
-                  <div className="grid sm:grid-cols-2 gap-3 my-5">
-                    <ProblemCard text="Infection" />
-                    <ProblemCard text="Dislocation" />
-                    <ProblemCard text="Fracture" />
-                    <ProblemCard text="Implant loosening" />
-                    <ProblemCard text="Wear" />
-                    <ProblemCard text="Persistent pain" />
-                    <ProblemCard text="Leg-length difference" />
-                    <ProblemCard text="Nerve or blood-vessel injury" />
-                    <ProblemCard text="Need for revision surgery" />
+                  <SubHeading>5. Accommodation (per night)</SubHeading>
+                  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 my-4">
+                    <PriceCard title="Budget Hotel" price="$12 – $30" />
+                    <PriceCard title="Mid-range Hotel" price="$30 – $60" />
+                    <PriceCard title="Comfortable Hotel" price="$60 – $120" />
+                    <PriceCard title="Premium Hotel" price="$120 – $250+" />
+                    <PriceCard title="Serviced Apartment" price="$35 – $100+" />
                   </div>
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5">
-                    The presence of a complication does not necessarily mean that the original surgery was unsuccessful. Some complications can be treated, while others may require additional surgery.
-                  </p>
-
-                  <SubHeading>What Is Revision Hip Replacement?</SubHeading>
-
+                  <SubHeading>6. Food & Daily Expenses</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Revision hip replacement is a procedure performed when an existing hip replacement requires correction, replacement or other surgical management. Reasons may include:
+                    A single international patient may budget <strong>$10 – $25 per day</strong>. For a patient travelling with an attendant, <strong>$20 – $50 per day</strong> is a practical planning range.
                   </p>
 
-                  <BulletList
-                    items={[
-                      "Implant loosening",
-                      "Wear",
-                      "Infection",
-                      "Dislocation",
-                      "Fracture",
-                      "Other implant-related problems",
-                    ]}
-                  />
+                  <SubHeading>7. Local Transportation ($120 – $350)</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Covers airport transfers, hotel-to-hospital visits, diagnostic centres, and pharmacies. Patients recovering from major surgery may require private transfers.
+                  </p>
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mt-4">
-                    Revision surgery can be more complex than primary hip replacement, and outcomes can differ depending on the reason for revision and the patient's overall condition.
+                  <SubHeading>8. Medicines & Supplies ($100 – $400+)</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Post-discharge medication costs. Cancer treatment, transplant care, or complex surgeries will require higher medication budgets.
+                  </p>
+
+                  <SubHeading>9. Follow-Up & Rehabilitation ($150 – $500+)</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Includes specialist consultations, imaging, blood tests, physiotherapy, wound assessment, and medication reviews.
+                  </p>
+
+                  <SubHeading>10. Attendant or Family Member Costs ($500 – $1,500+)</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    For a two-week trip, an attendant adds flight, visa, accommodation, food, and personal expenses.
                   </p>
                 </section>
 
-                {/* HOSPITAL COMPARISONS & IMPROVING CHANCES */}
-                <section id="evaluating-statistics" className="mb-12">
-                  <SectionHeading>Does a Higher Hospital Success Rate Mean Better Treatment?</SectionHeading>
+                {/* SAMPLE BUDGETS */}
+                <section id="sample-budgets" className="mb-12">
+                  <SectionHeading>Sample Trip Budget Calculations</SectionHeading>
 
+                  <SubHeading>Example 1: Total Budget for a 14-Day Medical Trip</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Not necessarily. Patients should be careful when comparing hospitals using percentages alone. A meaningful comparison should consider:
+                    Illustrative budget for an international patient travelling to India for a planned major procedure:
+                  </p>
+
+                  <CostTable
+                    headers={["Expense Head", "Approximate Cost"]}
+                    rows={[
+                      ["Medical treatment", "$5,000 – $10,000"],
+                      ["Diagnostic tests", "$100 – $350"],
+                      ["Medical visa", "$80 – $130+"],
+                      ["Return flight", "$500 – $1,300"],
+                      ["Accommodation (14 nights)", "$420 – $1,400"],
+                      ["Food", "$140 – $350"],
+                      ["Local transportation", "$120 – $350"],
+                      ["Medicines", "$100 – $400"],
+                      ["Follow-up / rehabilitation", "$150 – $500"],
+                      ["Contingency reserve", "$500 – $1,000"],
+                      ["Approximate Total", "$7,110 – $15,780+"],
+                    ]}
+                  />
+
+                  <SubHeading>Example 2: Hip Replacement Medical Trip</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Detailed sample budget for hip replacement surgery (Ekam estimate: $6,000–$11,000 for surgery):
+                  </p>
+
+                  <CostTable
+                    headers={["Expense Head", "Approximate Cost"]}
+                    rows={[
+                      ["Hip replacement procedure", "$6,000 – $11,000"],
+                      ["Diagnostic tests", "$100 – $350"],
+                      ["Medical visa", "$80 – $130+"],
+                      ["Return flight", "$600 – $1,700"],
+                      ["Accommodation", "$420 – $1,400"],
+                      ["Food", "$140 – $350"],
+                      ["Local transport", "$120 – $350"],
+                      ["Medicines", "$100 – $400"],
+                      ["Physiotherapy / follow-up", "$150 – $500+"],
+                      ["Contingency reserve", "$500 – $1,000"],
+                      ["Estimated Trip Total", "$8,210 – $16,180+"],
+                    ]}
+                  />
+                </section>
+
+                {/* GLOBAL COMPARISON */}
+                <section id="global-comparison" className="mb-12">
+                  <SectionHeading>India vs USA, UK, Canada & Australia: What to Compare?</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
+                    Price alone is not enough when comparing medical treatment between countries. International patients should evaluate:
                   </p>
 
                   <BulletList
                     items={[
-                      "How the hospital defines success",
-                      "Number of procedures performed",
-                      "Patient population",
-                      "Follow-up period",
-                      "Revision rates",
-                      "Complication reporting",
-                      "Surgeon expertise",
-                      "Type of procedures performed",
+                      "Medical Expertise: Experience of specialists in the required procedure.",
+                      "Hospital Facilities: Quality of OTs, ICUs, diagnostic imaging, and emergency care.",
+                      "Treatment Inclusions: Check if quoted prices include implants, specialist fees, tests, and rehabilitation.",
+                      "Travel Expenses: Flights, visas, and stay costs vary significantly by distance.",
+                      "Follow-Up Arrangements: How post-discharge care will be managed once back home.",
                     ]}
                   />
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5 border-l-4 border-[#053161] pl-4 py-2 bg-[#F8FAFD] rounded-r-lg">
-                    A hospital treating a large number of complex revision cases may have different outcome statistics from a hospital primarily treating straightforward primary hip replacements. Therefore, statistics should always be interpreted within their clinical context.
+                  <SubHeading>Why Is Treatment in India Less Expensive?</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Differences in treatment costs stem from lower healthcare operating costs, reduced administrative expenses, lower cost of living, and structured medical billing systems. Lower prices do not mean lower clinical standards.
                   </p>
+                </section>
 
-                  <SectionHeading>How Can Patients Improve Their Chances of a Good Outcome?</SectionHeading>
+                {/* PLANNING & CONTINGENCY */}
+                <section id="budget-planning" className="mb-12">
+                  <SectionHeading>How to Plan Your Medical Trip Budget</SectionHeading>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Patients cannot eliminate every surgical risk, but they can work with their medical team to prepare appropriately.
+                    Formula for realistic planning:
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-6 my-6">
-                    {/* BEFORE SURGERY */}
-                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h3 className="text-xl font-bold text-[#053161] mb-4">Before Surgery</h3>
-                      <p className="text-sm text-[#425466] mb-3">Patients may be advised to:</p>
-                      <ul className="space-y-2 text-sm text-[#425466]">
-                        <li>• Follow medical instructions</li>
-                        <li>• Control relevant medical conditions</li>
-                        <li>• Discuss current medications</li>
-                        <li>• Stop smoking if advised</li>
-                        <li>• Maintain appropriate nutrition</li>
-                        <li>• Complete recommended investigations</li>
-                        <li>• Understand the planned treatment</li>
-                        <li>• Ask questions about rehabilitation</li>
-                      </ul>
-                    </div>
-
-                    {/* AFTER SURGERY */}
-                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h3 className="text-xl font-bold text-[#053161] mb-4">After Surgery</h3>
-                      <p className="text-sm text-[#425466] mb-3">Patients should:</p>
-                      <ul className="space-y-2 text-sm text-[#425466]">
-                        <li>• Follow their surgeon's instructions</li>
-                        <li>• Attend recommended follow-up appointments</li>
-                        <li>• Follow physiotherapy guidance</li>
-                        <li>• Take prescribed medications as instructed</li>
-                        <li>• Follow wound-care instructions</li>
-                        <li>• Gradually increase activity according to medical advice</li>
-                        <li>• Report concerning symptoms promptly</li>
-                      </ul>
-                    </div>
+                  <div className="p-5 rounded-2xl bg-[#053161] text-white my-5 font-semibold text-center text-sm md:text-lg">
+                    Medical Treatment + Diagnostics + Visa + Flights + Accommodation + Food + Local Transport + Medicines + Follow-Up + Emergency Reserve = Total Budget
                   </div>
 
-                  <SectionHeading>Hip Replacement Success Rate for International Patients</SectionHeading>
+                  <SubHeading>Keep an Emergency Reserve</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Do not allocate 100% of available funds to planned costs. Keep at least <strong>$500–$1,500+</strong> as a contingency for extra tests, extended hospital stay, medication changes, or flight modifications.
+                  </p>
+                </section>
+
+                {/* STAY DURATION */}
+                <section id="stay-duration" className="mb-12">
+                  <SectionHeading>How Long Should You Stay in India?</SectionHeading>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    International patients should not assume that travelling to another country automatically produces a better outcome. The important considerations remain the same:
+                    Estimated duration based on the type of medical visit:
+                  </p>
+
+                  <CostTable
+                    headers={["Type of Medical Visit", "Possible Stay Duration"]}
+                    rows={[
+                      ["Specialist consultation", "3 – 7 days"],
+                      ["Diagnostic evaluation", "3 – 10 days"],
+                      ["Minor procedure", "5 – 14 days"],
+                      ["Major surgery", "2 – 4 weeks+"],
+                      ["Complex treatment", "Several weeks to months"],
+                    ]}
+                  />
+                </section>
+
+                {/* HOW EKAM HELPS */}
+                <section id="ekam-support" className="mb-12">
+                  <SectionHeading>How Ekam Can Help International Patients</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Planning treatment remotely requires coordinating multiple aspects. Ekam assists international patients with:
                   </p>
 
                   <BulletList
                     items={[
-                      "Appropriate diagnosis",
-                      "Qualified specialist",
-                      "Suitable hospital",
-                      "Appropriate implant",
-                      "Safe surgical care",
-                      "Rehabilitation",
-                      "Follow-up",
+                      "Medical record review and coordination",
+                      "Hospital and specialist selection",
+                      "Treatment cost estimate coordination",
+                      "Appointment scheduling",
+                      "Medical visa documentation support",
+                      "Airport transfer coordination",
+                      "Accommodation and local transport assistance",
+                      "Follow-up coordination after treatment",
                     ]}
                   />
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 my-5">
-                    International patients should also plan how they will continue medical care after returning home. Before leaving India, they should obtain relevant medical documentation and understand the treating team's recommendations for follow-up.
-                  </p>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    For more information, see{" "}
-                    <Link
-                      href="/blog/hip-replacement-surgery-for-international-patients"
-                      className="text-[#1B4F9C] font-semibold underline hover:text-pink-500"
-                    >
-                      Hip Replacement Surgery for International Patients
-                    </Link>.
-                  </p>
-
-                  <SectionHeading>How to Evaluate Hip Replacement Success Statistics</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    When a hospital or medical website publishes a success rate, ask:
-                  </p>
-
-                  <div className="space-y-4 my-6">
-                    <StatCheckCard
-                      title="What Does “Success” Mean?"
-                      desc="Does it refer to pain relief, patient satisfaction, improved mobility, implant survival, absence of revision surgery, or a combination of several outcomes?"
-                    />
-                    <StatCheckCard
-                      title="Over What Period?"
-                      desc="A 1-year outcome is vastly different from a 10-year implant-survival result."
-                    />
-                    <StatCheckCard
-                      title="Which Patients Were Included?"
-                      desc="Outcomes may differ according to age, diagnosis, primary vs revision surgery, health status, and activity level."
-                    />
-                    <StatCheckCard
-                      title="How Large Was the Patient Group?"
-                      desc="Results from a small group may not represent outcomes across a larger population."
-                    />
-                    <StatCheckCard
-                      title="Is the Information Independently Published?"
-                      desc="Peer-reviewed studies and established joint-replacement registries can provide more useful evidence than an unsupported marketing statement."
-                    />
-                  </div>
-
-                  <SectionHeading>Hip Replacement Success Rate: What Patients Should Understand</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Instead of asking only: <em>“What is the success rate?”</em> patients should ask:
-                  </p>
-
-                  <div className="p-5 rounded-2xl bg-[#053161] text-white my-5 font-semibold text-lg">
-                    “What outcomes can I reasonably expect from this procedure given my specific medical condition?”
-                  </div>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    The treating orthopaedic specialist can consider the patient's diagnosis, imaging, age, health, mobility and other factors when discussing expected outcomes. No surgeon or healthcare provider can guarantee a particular result.
-                  </p>
                 </section>
 
                 {/* FAQ SECTION */}
@@ -520,32 +394,40 @@ export default function HipReplacementSuccessRatePage() {
 
                   <div className="space-y-4">
                     <FAQ
-                      question="What is the success rate of hip replacement surgery?"
-                      answer="There is no single success percentage that applies to every patient. Outcomes are commonly assessed through pain relief, functional improvement, patient-reported outcomes, complications and implant survivorship."
+                      question="How much does a medical trip to India cost?"
+                      answer="A medical trip can range from approximately $1,000 for a consultation visit to $15,000 or more for major planned treatment. Complex treatments can cost considerably more."
                     />
                     <FAQ
-                      question="Is hip replacement surgery generally successful?"
-                      answer="Hip replacement is an established treatment for appropriately selected patients with significant hip joint damage. Many patients experience meaningful improvements in pain and function, although individual results vary."
+                      question="Is medical treatment cheaper in India than in the USA?"
+                      answer="Yes. For many planned procedures, private treatment in India is substantially less expensive than self-pay treatment in the USA. For instance, hip replacement ranges from $6,000–$11,000 in India compared with $35,000–$50,000+ in the USA."
                     />
                     <FAQ
-                      question="How long does a hip replacement last?"
-                      answer="Implant longevity varies between patients and depends on factors including implant type, patient characteristics, activity, surgical technique and other clinical factors. Long-term implant survivorship should be discussed with the treating surgeon."
+                      question="Is India cheaper than the UK, Canada and Australia?"
+                      answer="For elective private treatment, Indian prices are generally lower. However, comparisons do not apply directly to citizens receiving fully subsidized public healthcare in their home countries."
                     />
                     <FAQ
-                      question="Does age affect hip replacement success?"
-                      answer="Age is one factor among many. Overall health, diagnosis, bone quality, mobility, activity level and rehabilitation can also influence outcomes."
+                      question="How much does a hip replacement medical trip to India cost?"
+                      answer="A broad total planning budget ranges from $8,000 to $16,000+, including procedure costs, travel, stay, meals, transport, follow-up and contingency reserves."
                     />
                     <FAQ
-                      question="Can hip replacement need to be replaced?"
-                      answer="Yes. Some patients may eventually require revision surgery because of infection, loosening, wear, fracture, dislocation or other complications. The likelihood varies between patients and over time."
+                      question="How much does IVF cost in India compared with the USA?"
+                      answer="A standard IVF cycle in India is estimated at $1,800–$3,500, compared with approximately $15,000–$25,000 in the USA."
                     />
                     <FAQ
-                      question="Does the surgeon's experience affect outcomes?"
-                      answer="The surgeon's relevant training and experience are important considerations when choosing treatment. Patients should review qualifications and experience related to the specific procedure rather than relying solely on a hospital's advertised success rate."
+                      question="How much is a medical visa for India?"
+                      answer="Fees depend on nationality. E-Medical visas cost $100 for US citizens, $129 for UK citizens, and $80 for many other eligible nationalities, plus a 3% bank transaction charge."
                     />
                     <FAQ
-                      question="Can I guarantee a successful hip replacement?"
-                      answer="No. No responsible healthcare provider should guarantee a particular surgical outcome. A surgeon can discuss expected benefits, risks and factors that may influence the result based on an individual assessment."
+                      question="How much should I budget for accommodation?"
+                      answer="A general range is $12–$120 per night depending on hotel category and city location. Serviced apartments range from $35–$100+ per night."
+                    />
+                    <FAQ
+                      question="Does the medical treatment cost include flights and hotel?"
+                      answer="Usually not. Hospital quotes generally cover medical procedures and hospital stays only. Always request a detailed written inclusion list."
+                    />
+                    <FAQ
+                      question="Can Ekam help me estimate the total cost?"
+                      answer="Yes. Ekam coordinates medical history reviews, hospital treatment quotes, travel planning, and accommodation assistance to help you build an accurate budget."
                     />
                   </div>
                 </section>
@@ -554,15 +436,15 @@ export default function HipReplacementSuccessRatePage() {
                 <section>
                   <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                      Choose Treatment Based on Evidence, Not a Single Percentage
+                      Plan Your Medical Journey with Confidence
                     </h2>
                 
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      The success of hip replacement should be understood through pain relief, improved function, patient satisfaction, complication rates and long-term implant performance, rather than one headline percentage.
+                      The total budget for a medical trip to India should always account for all travel, stay, treatment, and contingency factors—not just the procedure cost.
                     </p>
                     
                     <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                      For patients considering hip replacement surgery in India, the best approach is to obtain an individual medical assessment and discuss expected outcomes with a qualified orthopaedic specialist.
+                      Let Ekam assist you in getting accurate treatment estimates, specialist consultations, and travel coordination.
                     </p>
                 
                     <div className="mb-6">
@@ -570,12 +452,12 @@ export default function HipReplacementSuccessRatePage() {
                         href="/contact"
                         className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
                       >
-                        Request a Personalized Hip Replacement Treatment Assessment →
+                        Request a Personalised Cost Estimate →
                       </Link>
                     </div>
                       
                     <p className="text-xs md:text-sm text-gray-500 leading-relaxed border-t border-[#DCE5F0] pt-4 mt-6">
-                      <strong>Disclaimer:</strong> This page is for general educational purposes and does not replace medical advice. Individual outcomes vary. Treatment suitability, expected results and risks should be discussed with the treating orthopaedic specialist.
+                      <strong>Disclaimer:</strong> This page is for general informational purposes only. All treatment, travel and accommodation figures are approximate planning ranges and not official quotations. Costs vary by patient condition, hospital, city, and length of stay. Always verify medical quotes and official visa guidelines before travelling.
                     </p>
                   </div>
                 </section>
@@ -585,19 +467,19 @@ export default function HipReplacementSuccessRatePage() {
 
           </div>
 
-          {/* RIGHT SIDEBAR (GET ASSESSMENT + RELATED ARTICLES) */}
+          {/* RIGHT SIDEBAR */}
           <aside className="space-y-6 lg:sticky lg:top-24">
             
             {/* 1. GET YOUR ASSESSMENT */}
             <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
               <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
-                📊
+                💰
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Get Your Assessment
+                Get Cost Estimate
               </h3>
               <p className="text-white/85 text-sm leading-6 mb-5">
-                Have your medical history evaluated by leading joint-replacement specialists in India.
+                Get an accurate medical treatment estimate and planning guide tailored to your requirements.
               </p>
               <Link
                 href="/contact"
@@ -669,20 +551,40 @@ function BulletList({ items }) {
   );
 }
 
-function ProblemCard({ text }) {
+function CostTable({ headers, rows }) {
   return (
-    <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#FFF7FA] border border-[#FCDDEC]">
-      <span className="text-pink-600 font-bold">⚠️</span>
-      <span className="text-[#053161] text-sm md:text-base font-semibold">{text}</span>
+    <div className="overflow-x-auto my-6 border border-[#E1E8F0] rounded-xl shadow-sm">
+      <table className="w-full text-left border-collapse">
+        <thead>
+          <tr className="bg-[#053161] text-white text-sm md:text-base">
+            {headers.map((header, idx) => (
+              <th key={idx} className="p-3.5 md:p-4 font-semibold border-b border-[#E1E8F0]">
+                {header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-[#E1E8F0] text-sm md:text-base text-[#425466]">
+          {rows.map((row, rIdx) => (
+            <tr key={rIdx} className={rIdx % 2 === 0 ? "bg-white" : "bg-[#F8FAFD]"}>
+              {row.map((cell, cIdx) => (
+                <td key={cIdx} className="p-3.5 md:p-4 font-medium text-[#053161]">
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
 
-function StatCheckCard({ title, desc }) {
+function PriceCard({ title, price }) {
   return (
-    <div className="p-4 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">{title}</h4>
-      <p className="text-[#425466] text-sm md:text-base leading-6">{desc}</p>
+    <div className="p-4 rounded-xl bg-[#FFF7FA] border border-[#FCDDEC] text-center">
+      <div className="text-[#053161] text-sm font-semibold mb-1">{title}</div>
+      <div className="text-pink-600 font-bold text-base md:text-lg">{price}</div>
     </div>
   );
 }
