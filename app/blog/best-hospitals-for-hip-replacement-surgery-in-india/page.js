@@ -7,6 +7,66 @@ export const metadata = {
 };
 
 function BestHospitalsHipReplacementPage() {
+  // 3 Specific Hip Replacement Links for bottom "More Related Links" section
+  const moreRelatedLinks = [
+    {
+      title: "Hip Replacement Surgery for International Patients",
+      href: "/blog/hip-replacement-surgery-for-international-patients",
+    },
+    {
+      title: "Hip Replacement Surgery Success Rate",
+      href: "/blog/hip-replacement-surgery-success-rate",
+    },
+    {
+      title: "What Are the Negatives of a Hip Replacement?",
+      href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+    },
+    {
+      title: "Hip Replacement Surgery Risks and Complications",
+      href: "/blog/hip-replacement-surgery-risks-complications",
+    },
+  ];
+
+  // All other blog articles for Sidebar "Related Articles"
+  const sidebarRelatedArticles = [
+    {
+      title: "Best Cancer Hospitals in India",
+      href: "/blog/best-cancer-hospitals-in-india",
+    },
+    {
+      title: "Hormone Therapy for Prostate Cancer in India",
+      href: "/blog/hormone-therapy-for-prostate-cancer-in-india",
+    },
+    {
+      title: "Medical Visa for Cancer Treatment in India",
+      href: "/blog/medical-visa-cancer-treatment-india",
+    },
+    {
+      title: "Metastatic Prostate Cancer Treatment in India",
+      href: "/blog/metastatic-prostate-cancer-treatment-india",
+    },
+    {
+      title: "Prostate Cancer Survival Rate in India",
+      href: "/blog/prostate-cancer-survival-rate-in-india",
+    },
+    {
+      title: "Radiation Therapy for Prostate Cancer in India",
+      href: "/blog/radiation-therapy-for-prostate-cancer-in-india",
+    },
+    {
+      title: "Top 10 Cancer Hospitals in India",
+      href: "/blog/top-10-cancer-hospitals-in-india",
+    },
+    {
+      title: "Total Budget Medical Trip to India",
+      href: "/blog/total-budget-medical-trip-to-india",
+    },
+    {
+      title: "Why Choose India for Prostate Cancer Treatment",
+      href: "/blog/why-choose-india-for-prostate-cancer-treatment",
+    },
+  ];
+
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
       {/* HERO SECTION */}
@@ -588,7 +648,7 @@ function BestHospitalsHipReplacementPage() {
               </section>
 
               {/* FINAL CTA BOX */}
-              <section>
+              <section className="mb-12">
                 <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
                     Choose a Hospital Based on Your Medical Needs
@@ -619,6 +679,27 @@ function BestHospitalsHipReplacementPage() {
                 </div>
               </section>
 
+              {/* MORE RELATED LINKS SECTION (4 SPECIFIC LINKS) */}
+              <section className="bg-[#F8FAFD] rounded-2xl border border-[#E1E8F0] p-6 md:p-8">
+                <h3 className="text-2xl font-bold text-[#053161] mb-6">
+                  More Related Links
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {moreRelatedLinks.map((link, idx) => (
+                    <Link
+                      key={idx}
+                      href={link.href}
+                      className="flex items-center justify-between gap-3 p-4 bg-white rounded-xl border border-[#E1E8F0] hover:border-[#1B4F9C] hover:shadow-md transition text-[#053161] font-medium text-sm md:text-base group"
+                    >
+                      <span>{link.title}</span>
+                      <span className="text-[#1B4F9C] group-hover:translate-x-1 transition-transform shrink-0">
+                        →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+
             </div>
           </article>
 
@@ -643,7 +724,7 @@ function BestHospitalsHipReplacementPage() {
               </Link>
             </div>
 
-            {/* QUICK LINKS */}
+            {/* ON THIS PAGE QUICK LINKS */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 On This Page
@@ -675,6 +756,26 @@ function BestHospitalsHipReplacementPage() {
                 </a>
               </div>
             </div>
+
+            {/* RELATED ARTICLES WIDGET (SIDEBAR WITH ALL OTHER LINKS) */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5">
+                Related Articles
+              </h3>
+              <div className="space-y-4">
+                {sidebarRelatedArticles.map((article, index) => (
+                  <div key={index} className="border-b border-gray-100 last:border-0 pb-3 last:pb-0">
+                    <Link
+                      href={article.href}
+                      className="text-sm text-[#1B4F9C] hover:text-pink-500 font-medium leading-relaxed block transition"
+                    >
+                      • {article.title}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </aside>
 
         </div>
