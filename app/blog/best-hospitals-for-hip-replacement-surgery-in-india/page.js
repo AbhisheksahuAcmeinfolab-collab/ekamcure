@@ -93,13 +93,48 @@ function BestHospitalsHipReplacementPage() {
         </div>
       </section>
 
-      {/* MAIN CONTENT CONTAINER */}
+      {/* MAIN CONTENT CONTAINER WITH 3-COLUMN GRID */}
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
+        <div className="grid lg:grid-cols-[260px_minmax(0,1fr)_300px] gap-8">
           
-          {/* ARTICLE CONTENT */}
-          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
-            <div className="p-6 md:p-10 lg:p-12">
+          {/* LEFT SIDEBAR - ON THIS PAGE */}
+          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start order-2 lg:order-1">
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5">
+                On This Page
+              </h3>
+              <div className="space-y-3 text-sm">
+                <a href="#introduction" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Introduction & Criteria
+                </a>
+                <a href="#how-to-choose" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  How to Choose
+                </a>
+                <a href="#top-hospitals" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Top 5 Hospitals
+                </a>
+                <a href="#best-cities" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Best Healthcare Cities
+                </a>
+                <a href="#comparison-framework" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Comparison Framework
+                </a>
+                <a href="#questions-evaluation" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Questions to Ask
+                </a>
+                <a href="#ekam-help-checklist" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  Ekam Assistance & Checklist
+                </a>
+                <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
+                  FAQs
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          {/* MIDDLE COLUMN - ARTICLE CONTENT */}
+          <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden order-1 lg:order-2">
+            <div className="p-6 md:p-8 lg:p-10">
               
               {/* INTRODUCTION */}
               <section id="introduction" className="mb-12">
@@ -703,42 +738,9 @@ function BestHospitalsHipReplacementPage() {
             </div>
           </article>
 
-          {/* SIDEBAR NAVIGATION */}
-          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+          {/* RIGHT SIDEBAR - CTA & RELATED ARTICLES */}
+          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start order-3">
             
-            {/* ON THIS PAGE QUICK LINKS (MOVED TO TOP OF SIDEBAR) */}
-            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-              <h3 className="text-xl font-bold text-[#053161] mb-5">
-                On This Page
-              </h3>
-              <div className="space-y-3 text-sm">
-                <a href="#introduction" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Introduction & Criteria
-                </a>
-                <a href="#how-to-choose" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  How to Choose
-                </a>
-                <a href="#top-hospitals" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Top 5 Hospitals
-                </a>
-                <a href="#best-cities" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Best Healthcare Cities
-                </a>
-                <a href="#comparison-framework" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Comparison Framework
-                </a>
-                <a href="#questions-evaluation" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Questions to Ask
-                </a>
-                <a href="#ekam-help-checklist" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  Ekam Assistance & Checklist
-                </a>
-                <a href="#faqs" className="block text-[#1B4F9C] hover:text-pink-500 transition">
-                  FAQs
-                </a>
-              </div>
-            </div>
-
             {/* CTA WIDGET */}
             <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
               <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
@@ -758,7 +760,7 @@ function BestHospitalsHipReplacementPage() {
               </Link>
             </div>
 
-            {/* RELATED ARTICLES WIDGET (SIDEBAR WITH ALL OTHER LINKS) */}
+            {/* RELATED ARTICLES WIDGET */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5">
                 Related Articles
