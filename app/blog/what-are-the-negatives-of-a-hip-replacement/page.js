@@ -265,7 +265,7 @@ export default function HipReplacementNegativesPage() {
                 <p className="text-[#425466] text-base md:text-lg leading-8">
                   For detailed information about complications, see{" "}
                   <Link
-                    href="/blog/hip-replacement-surgery-risks-and-complications"
+                    href="/blog/hip-replacement-surgery-risks-complications"
                     className="text-[#1B4F9C] font-semibold underline hover:text-pink-500"
                   >
                     Hip Replacement Surgery Risks and Complications
@@ -569,13 +569,14 @@ export default function HipReplacementNegativesPage() {
 
           {/* SIDEBAR NAVIGATION */}
           <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            {/* CTA WIDGET */}
+            
+            {/* 1. GET YOUR ASSESSMENT CARD */}
             <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
               <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
                 📊
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Need Treatment Advice?
+                Get Your Assessment
               </h3>
               <p className="text-white/85 text-sm leading-6 mb-5">
                 Share your medical reports with Ekam to begin the treatment-coordination process with an appropriate healthcare provider.
@@ -588,9 +589,42 @@ export default function HipReplacementNegativesPage() {
               </Link>
             </div>
 
-            {/* QUICK LINKS */}
+            {/* 2. RELATED ARTICLES WIDGET */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-              <h3 className="text-xl font-bold text-[#053161] mb-5">
+              <h3 className="text-xl font-bold text-[#053161] mb-5 border-b border-[#E1E8F0] pb-3">
+                Related Articles
+              </h3>
+              <div className="space-y-4 text-sm font-medium">
+                <Link
+                  href="/blog/hip-replacement-surgery-for-international-patients"
+                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
+                >
+                  Hip Replacement Surgery for International Patients
+                </Link>
+                <Link
+                  href="/blog/best-hospitals-for-hip-replacement-surgery-in-india"
+                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
+                >
+                  Best Hospitals for Hip Replacement Surgery in India
+                </Link>
+                <Link
+                  href="/blog/hip-replacement-surgery-success-rate"
+                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
+                >
+                  Hip Replacement Surgery Success Rate
+                </Link>
+                <Link
+                  href="/blog/hip-replacement-surgery-risks-complications"
+                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
+                >
+                  Hip Replacement Surgery Risks and Complications
+                </Link>
+              </div>
+            </div>
+
+            {/* 3. ON THIS PAGE (Table of Contents) */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5 border-b border-[#E1E8F0] pb-3">
                 On This Page
               </h3>
               <div className="space-y-3 text-sm">
@@ -617,6 +651,7 @@ export default function HipReplacementNegativesPage() {
                 </a>
               </div>
             </div>
+
           </aside>
 
         </div>
@@ -626,7 +661,7 @@ export default function HipReplacementNegativesPage() {
 }
 
 /* =========================================================
-   REUSABLE HELPER COMPONENTS (Exact same as page (5).js)
+   REUSABLE HELPER COMPONENTS
 ========================================================= */
 
 function SectionHeading({ children }) {
