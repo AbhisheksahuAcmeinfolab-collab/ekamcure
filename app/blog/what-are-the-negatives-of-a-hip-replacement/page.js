@@ -6,6 +6,45 @@ export const metadata = {
     "Learn about the negatives of a hip replacement, including potential risks, complications, side effects, recovery challenges, and long-term considerations.",
 };
 
+const relatedArticles = [
+  {
+    title: "Best Cancer Hospitals in India",
+    href: "/blog/best-cancer-hospitals-in-india",
+  },
+  {
+    title: "Hormone Therapy for Prostate Cancer in India",
+    href: "/blog/hormone-therapy-for-prostate-cancer-in-india",
+  },
+  {
+    title: "Medical Visa for Cancer Treatment in India",
+    href: "/blog/medical-visa-cancer-treatment-india",
+  },
+  {
+    title: "Metastatic Prostate Cancer Treatment in India",
+    href: "/blog/metastatic-prostate-cancer-treatment-india",
+  },
+  {
+    title: "Prostate Cancer Survival Rate in India",
+    href: "/blog/prostate-cancer-survival-rate-in-india",
+  },
+  {
+    title: "Radiation Therapy for Prostate Cancer in India",
+    href: "/blog/radiation-therapy-for-prostate-cancer-in-india",
+  },
+  {
+    title: "Top 10 Cancer Hospitals in India",
+    href: "/blog/top-10-cancer-hospitals-in-india",
+  },
+  {
+    title: "Total Budget Medical Trip to India",
+    href: "/blog/total-budget-medical-trip-to-india",
+  },
+  {
+    title: "Why Choose India for Prostate Cancer Treatment",
+    href: "/blog/why-choose-india-for-prostate-cancer-treatment",
+  },
+];
+
 export default function HipReplacementNegativesPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
@@ -601,30 +640,34 @@ export default function HipReplacementNegativesPage() {
             {/* 2. MORE RELATED LINKS (BOTTOM LEFT) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6 md:p-8">
               <h3 className="text-2xl font-bold text-[#053161] mb-6">More Related Links</h3>
-              <div className="space-y-4 text-base font-medium">
+              <div className="grid sm:grid-cols-2 gap-4">
                 <Link
                   href="/blog/hip-replacement-surgery-for-international-patients"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition border-b border-[#E1E8F0] pb-3"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
-                  Hip Replacement Surgery for International Patients
+                  <span>Hip Replacement Surgery for International Patients</span>
+                  <span>→</span>
                 </Link>
                 <Link
                   href="/blog/best-hospitals-for-hip-replacement-surgery-in-india"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition border-b border-[#E1E8F0] pb-3"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
-                  Best Hospitals for Hip Replacement Surgery in India
+                  <span>Best Hospitals for Hip Replacement Surgery in India</span>
+                  <span>→</span>
                 </Link>
                 <Link
                   href="/blog/hip-replacement-surgery-success-rate"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition border-b border-[#E1E8F0] pb-3"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
-                  Hip Replacement Surgery Success Rate
+                  <span>Hip Replacement Surgery Success Rate</span>
+                  <span>→</span>
                 </Link>
                 <Link
                   href="/blog/hip-replacement-surgery-risks-complications"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
-                  Hip Replacement Surgery Risks and Complications
+                  <span>Hip Replacement Surgery Risks and Complications</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
@@ -653,36 +696,21 @@ export default function HipReplacementNegativesPage() {
               </Link>
             </div>
 
-            {/* 2. RELATED ARTICLES WIDGET (BOTTOM RIGHT) */}
+            {/* 2. RELATED ARTICLES WIDGET (BOTTOM RIGHT - DYNAMIC ARRAY) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
               <h3 className="text-xl font-bold text-[#053161] mb-5 border-b border-[#E1E8F0] pb-3">
                 Related Articles
               </h3>
-              <div className="space-y-4 text-sm font-medium">
-                <Link
-                  href="/blog/hip-replacement-surgery-for-international-patients"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
-                >
-                  • Hip Replacement Surgery for International Patients
-                </Link>
-                <Link
-                  href="/blog/best-hospitals-for-hip-replacement-surgery-in-india"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
-                >
-                  • Best Hospitals for Hip Replacement Surgery in India
-                </Link>
-                <Link
-                  href="/blog/hip-replacement-surgery-success-rate"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
-                >
-                  • Hip Replacement Surgery Success Rate
-                </Link>
-                <Link
-                  href="/blog/hip-replacement-surgery-risks-complications"
-                  className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug"
-                >
-                  • Hip Replacement Surgery Risks and Complications
-                </Link>
+              <div className="space-y-3.5 text-sm font-medium">
+                {relatedArticles.map((article, index) => (
+                  <Link
+                    key={index}
+                    href={article.href}
+                    className="block text-[#1B4F9C] hover:text-pink-500 transition leading-snug border-b border-[#F0F4F8] pb-2.5 last:border-none last:pb-0"
+                  >
+                    • {article.title}
+                  </Link>
+                ))}
               </div>
             </div>
 
