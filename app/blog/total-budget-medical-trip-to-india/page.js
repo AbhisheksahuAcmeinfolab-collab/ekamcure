@@ -22,6 +22,17 @@ const relatedArticles = [
   { title: "Why Choose India for Prostate Cancer Treatment", href: "/blog/why-choose-india-for-prostate-cancer-treatment" },
 ];
 
+const moreRelatedLinks = [
+  { title: "Hip Replacement Surgery Cost in India for International Patients", href: "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients" },
+  { title: "Hip Replacement Surgery for International Patients", href: "/blog/hip-replacement-surgery-for-international-patients" },
+  { title: "Best Hospitals for Hip Replacement Surgery in India", href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india" },
+  { title: "Hip Replacement Surgery Success Rate", href: "/blog/hip-replacement-surgery-success-rate" },
+  { title: "What Are the Negatives of a Hip Replacement?", href: "/blog/what-are-the-negatives-of-a-hip-replacement" },
+  { title: "Hip Replacement Surgery Risks and Complications", href: "/blog/hip-replacement-surgery-risks-complications" },
+  { title: "Top 10 Hospitals in India 2026 for International Patients", href: "/top-hospitals/top-10-hospitals-india-for-international-patients" },
+  { title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process", href: "/services/medical-visa-for-treatment-in-india" },
+];
+
 export default function TotalBudgetMedicalTripPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
@@ -496,6 +507,24 @@ export default function TotalBudgetMedicalTripPage() {
               </h3>
               <div className="space-y-3 text-sm">
                 {relatedArticles.map((article, index) => (
+                  <Link
+                    key={index}
+                    href={article.href}
+                    className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1 border-b border-gray-100 last:border-0"
+                  >
+                    • {article.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* 3. MORE RELATED LINKS */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
+              <h3 className="text-xl font-bold text-[#053161] mb-5">
+                More Related Links
+              </h3>
+              <div className="space-y-3 text-sm">
+                {moreRelatedLinks.map((article, index) => (
                   <Link
                     key={index}
                     href={article.href}
