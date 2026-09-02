@@ -10,8 +10,8 @@ function BestHospitalsHipReplacementPage() {
   // 3 Specific Hip Replacement Links for bottom "More Related Links" section
   const moreRelatedLinks = [
     {
-    title: "Hip Replacement Surgery for International Patients",
-    href: "/blog/hip-replacement-surgery-for-international-patients",
+    title: "Hip Replacement Surgery Cost in India for International Patients",
+    href: "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients",
   },
   {
     title: "Hip Replacement Surgery for International Patients",
