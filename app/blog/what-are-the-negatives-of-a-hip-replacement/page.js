@@ -697,6 +697,13 @@ export default function HipReplacementNegativesPage() {
                   <span>Medical Visa for Treatment in India: Cost, Requirements & Application Process</span>
                   <span>→</span>
                 </Link>
+                    <Link
+                  href="/blog/total-budget-medical-trip-to-india"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
+                >
+                  <span>Total Budget for a Medical Trip to India</span>
+                  <span>→</span>
+                </Link>
               </div>
             </div>
 
