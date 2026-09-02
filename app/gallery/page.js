@@ -1,29 +1,25 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Your image imports
+// Image imports
 import img from "../../assets/recent/Gallery 1.webp";
 import pic23 from "../../assets/recent/Vidya Wati.png";
 import pic22 from "../../assets/recent/Shylotte Kativhu.png";
 import pic21 from "../../assets/recent/Deepak Dhookoo.png";
 import pic20 from "../../assets/recent/Bissun Prasad.png";
 import pic19 from "../../assets/recent/Christopher Muza3.png";
-//18
 import pic17 from "../../assets/recent/Adbul Aziim Ramzan.png";
 import pic16 from "../../assets/recent/Satish Chandra.png";
 import pic15 from "../../assets/recent/Kamurayi Mambayo2.png";
 import pic14 from "../../assets/recent/Shylotte Kativhu2.png";
-//13
 import pic12 from "../../assets/recent/Kamurayi Mambayo.png";
 import pic11 from "../../assets/recent/Christopher Muza2.png";
 import pic10 from "../../assets/recent/Brij Lata.png";
 import pic9 from "../../assets/recent/Narendra Chand.png";
-// import pic8 from "../../assets/recent/Patient(2).png";
 import pic7 from "../../assets/recent/SunilDuth Putty2.png";
 import pic6 from "../../assets/recent/Junior Goredema.png";
-// import pic5 from "../../assets/recent/Christopher Muza1.png";
 import pic4 from "../../assets/recent/Keshwan Prasad.png";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
 import pic2 from "../../assets/recent/SunilDuth Putty3.png";
@@ -41,10 +37,8 @@ import g10 from "../../assets/gallery/g-10.jpeg";
 import g11 from "../../assets/gallery/g-11.jpeg";
 import g12 from "../../assets/gallery/g-12.jpeg";
 import g13 from "../../assets/gallery/g-13.jpeg";
-// Your image and video data
-const images = [
 
-  // ✅ NEW PATIENT GALLERY IMAGES FIRST
+const images = [
   { src: g1, title: "Patient" },
   { src: g2, title: "Patient" },
   { src: g3, title: "Patient" },
@@ -58,8 +52,6 @@ const images = [
   { src: g11, title: "Patient" },
   { src: g12, title: "Patient" },
   { src: g13, title: "Patient" },
-
-  // ✅ EXISTING GALLERY
   { src: pic23, title: "Vidya Wati" },
   { src: pic22, title: "Shylotte Kativhu" },
   { src: pic21, title: "Deepak Dhookoo" },
@@ -85,364 +77,232 @@ const videos = [
   {
     src: "https://www.youtube.com/embed/FuX4pQNBNEY",
     title: "Mr. Kamurayi Mambayo",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Hip Replacement Surgery",
   },
   {
     src: "https://www.youtube.com/embed/76eBbyVs1tk",
-    title: "Shylotte’s",
-    desc: "Patient Story",
-    type: "youtube",
+    title: "Shylotte’s Journey",
+    desc: "Patient Recovery Story",
   },
   {
     src: "https://www.youtube.com/embed/kFUijCYIHAU",
     title: "Mr. Keshwan Prasad",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Medical Treatment Success",
   },
   {
     src: "https://www.youtube.com/embed/u--DGk3BKYk",
     title: "Mr. Aziim Ramzan",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "International Patient Story",
   },
   {
     src: "https://www.youtube.com/embed/12FGoVnCtzs",
     title: "Dennis Goredema",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Healing Journey in India",
   },
   {
     src: "https://www.youtube.com/embed/2UnjdXoTSNo",
     title: "Florence",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Success Story",
   },
   {
     src: "https://www.youtube.com/embed/-byO8roa5vI",
     title: "Sunilduth Putty",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Patient Testimonial",
   },
   {
     src: "https://www.youtube.com/embed/AjRSPGuUq50",
     title: "Kamal Prakash Nadi",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Treatment Experience",
   },
   {
     src: "https://www.youtube.com/embed/22At_3bi8q8",
     title: "Marie Line",
     desc: "Patient Story",
-    type: "youtube",
   },
   {
     src: "https://www.youtube.com/embed/n0NJUBqqGtk",
     title: "Miss Priscilla Danso",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "Patient Testimonial",
   },
   {
     src: "https://www.youtube.com/embed/DPQEiGFSWok",
     title: "Noor Mohammad",
-    desc: "Patient Story",
-    type: "youtube",
+    desc: "International Care Story",
   },
 ];
 
-/* 🎥 Mobile Reels View Component */
-const VideoReels = ({ videos }) => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const videoRefs = useRef([]);
-  const containerRef = useRef(null);
-
-  // Intersection Observer for autoplay on scroll
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const video = entry.target;
-          if (entry.isIntersecting) {
-            // Find the index of the video that is currently intersecting
-            const index = videoRefs.current.indexOf(video);
-            if (index !== -1) {
-              setCurrentVideoIndex(index);
-              video.play().catch(() => {});
-            }
-          } else {
-            video.pause();
-            video.currentTime = 0; // Rewind video for next play
-          }
-        });
-      },
-      // Ensure the video is mostly in view before playing
-      { threshold: 0.9 }
-    );
-
-    // Observe all videos
-    videoRefs.current.forEach((v) => v && observer.observe(v));
-
-    // Cleanup
-    return () => {
-      videoRefs.current.forEach((v) => v && observer.unobserve(v));
-    };
-  }, []);
-
-  return (
-    // Fixed height container with snapping scroll for Reels effect
-    <div className="columns-1 sm:columns-2 gap-6 space-y-6">
-      {videos.map((item, i) => (
-        <div key={i} className="w-full">
-          <iframe
-            width="100%"
-            height="250"
-            src={item.src}
-            title={item.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="rounded-lg w-full aspect-video"
-          />
-        </div>
-      ))}
-    </div>
-  );
-};
-
-// ----------------------------------------------------
-
 export default function Gallery() {
   const [active, setActive] = useState("mission");
-  const [openIndex, setOpenIndex] = useState(null);
-  const [loaded, setLoaded] = useState(false);
-  const videoRefs = useRef([]);
-  const [playingIndex, setPlayingIndex] = useState(null);
-
-  // Check if the screen is mobile (you can adjust this breakpoint)
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      // Assuming a mobile device is anything less than a medium screen (768px)
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Set initial state
-    handleResize();
-
-    // Add event listener for real-time responsiveness
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  /**
-   * 🔥 Handle Video Play/Click for Desktop
-   * 1. Pauses all other videos.
-   * 2. Plays the clicked video.
-   * 3. Set the playing index state.
-   */
-  const handleVideoClick = (index) => {
-    // Desktop: Stop other videos and play the clicked one
-    if (!isMobile) {
-      if (playingIndex !== index) {
-        // Pause the previously playing video
-        if (playingIndex !== null && videoRefs.current[playingIndex]) {
-          videoRefs.current[playingIndex].pause();
-        }
-
-        // Play the new video (optional: can be done via controls)
-        // videoRefs.current[index]?.play().catch(() => {});
-        setPlayingIndex(index);
-      }
-
-      // Also open the Lightbox (Popup)
-      setOpenIndex(index);
-    }
-  };
-
-  // Lightbox Navigation
-  const nextVideo = () => {
-    setOpenIndex((prev) => (prev + 1) % videos.length);
-  };
-  const prevVideo = () => {
-    setOpenIndex((prev) => (prev - 1 + videos.length) % videos.length);
-  };
-
-  // Lightbox Close handler - Pause the video when lightbox closes
-  const handleCloseLightbox = () => {
-    // If the video is playing in the lightbox, pause it on close
-    if (openIndex !== null && videoRefs.current[openIndex]) {
-      videoRefs.current[openIndex].pause();
-    }
-    setOpenIndex(null);
-  };
-
-  // Effect to ensure the correct video reference is playing in Lightbox
-  useEffect(() => {
-    if (openIndex !== null && videoRefs.current[openIndex]) {
-      // Stop the current video in the background grid if it's not the one in the lightbox
-      videoRefs.current.forEach((video, i) => {
-        if (video && i !== openIndex) {
-          video.pause();
-        }
-      });
-      // Start/Continue playing the video in the lightbox
-      videoRefs.current[openIndex].play().catch(() => {});
-    }
-  }, [openIndex]);   
 
   return (
-    <>
+    <main className="bg-[#F8FAFD] min-h-screen">
       {/* Banner Section */}
-      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
+      <div className="relative w-full h-[220px] md:h-[280px] bg-[#053161] flex items-center justify-center overflow-hidden">
         <Image
           src={img}
           alt="Gallery"
           fill
-          className="object-cover brightness-80"
+          priority
+          className="object-cover opacity-40 mix-blend-overlay"
         />
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white">Gallery</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-wide">
+            Our Gallery
+          </h1>
+          <p className="text-white/80 text-sm md:text-base mt-2 max-w-xl mx-auto font-light">
+            Visual highlights and real recovery stories of international patients treated in India.
+          </p>
         </div>
       </div>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          {/* ===== Toggle Switch ===== */}
-          <div className="flex justify-center items-center space-x-3 mb-10 ">
+      {/* Gallery Main Container */}
+      <section className="py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          
+          {/* ===== TOGGLE BUTTON ===== */}
+          <div className="flex justify-center items-center gap-4 mb-12">
             <span
-              className={`font-medium text-2xl ${
-                active === "mission" ? "text-gray-900" : "text-gray-500"
+              onClick={() => setActive("mission")}
+              className={`cursor-pointer font-semibold text-lg md:text-xl transition-colors ${
+                active === "mission" ? "text-[#053161]" : "text-gray-400"
               }`}
             >
               Our Photos
             </span>
-            {/* Toggle Button */}
+
             <button
               onClick={() =>
                 setActive(active === "mission" ? "vision" : "mission")
               }
-              className={`relative w-15 h-7 flex items-center rounded-full transition-all duration-500 ${
-                active === "mission" ? "bg-blue-600" : "bg-blue-600"
-              }`}
+              aria-label="Toggle Gallery Mode"
+              className="relative w-16 h-8 bg-[#053161] rounded-full p-1 transition-colors duration-300 focus:outline-none"
             >
-              <span
-                className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                  active === "mission" ? "translate-x-1" : "translate-x-8"
+              <div
+                className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                  active === "mission" ? "translate-x-0" : "translate-x-8"
                 }`}
-              ></span>
+              />
             </button>
+
             <span
-              className={`font-medium text-2xl ${
-                active === "vision" ? "text-gray-900" : "text-gray-500"
+              onClick={() => setActive("vision")}
+              className={`cursor-pointer font-semibold text-lg md:text-xl transition-colors ${
+                active === "vision" ? "text-[#053161]" : "text-gray-400"
               }`}
             >
               Our Videos
             </span>
           </div>
 
-          {/* ===== Content Blocks ===== */}
-          <div className="space-y-10">
-            {/* Mission Section (Photos) */}
-            {active === "mission" && (
-              <>
-                <section className="bg-white py-10 px-4">
-                  <div className="max-w-7xl mx-auto">
-                    <h2 className="text-2xl font-semibold mb-6 text-center">
-                      Photo Gallery
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                      {images.map((item, i) => (
-                        <motion.div
-                          key={i}
-                          className="relative group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-                          initial={{ opacity: 0, y: 30 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: i * 0.05 }}
-                        >
-                          {/* IMAGE */}
-                          <Image
-                            src={item.src}
-                            alt={`Portfolio ${i + 1}`}
-                            width={400}
-                            height={350}
-                            className="w-full h-70 object-cover transition-transform duration-500 ease-in-out 
-                            group-hover:scale-110 group-hover:rotate-[3deg]"
-                          />
-
-                          {/* SLIDE-UP OVERLAY */}
-                          <div
-                            className="
-                              absolute bottom-0 left-0 w-full
-                              bg-[rgba(0,0,0,0.6)] text-white
-                              py-3 px-4 text-[15px] sm:text-[17px] font-medium
-                              translate-y-full group-hover:translate-y-0
-                              transition-all duration-500 ease-out
-                            "
-                          >
-                            {item.title}
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </section>
-              </>
-            )}
-
-            {/* Vision Section (Videos) */}
-            {active === "vision" && (
-               <>
-    <section className="bg-[#f5f5f5] py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-
-        {/* Heading */}
-        <h2 className="text-4xl font-bold text-[#000] mb-10">
-          Patient Success Stories From Around The World International Patients Sharing Their Healing Journeys in India 
-
-        </h2>
-
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-          {videos.map((item, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-md overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+          {/* ===== PHOTOS SECTION ===== */}
+          {active === "mission" && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
             >
-              {/* Video */}
-              <div className="relative w-full overflow-hidden">
-                <iframe
-                  src={item.src}
-                  title={item.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-[260px] md:h-[300px]"
-                ></iframe>
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#053161]">
+                  Photo Gallery
+                </h2>
+                <div className="w-16 h-1 bg-pink-500 mx-auto mt-2 rounded-full" />
               </div>
 
-              {/* Content */}
-              <div className="p-4 text-center">
-                <h3 className="text-[24px] leading-[36px] font-normal text-[#111]">
-                  {item.title}
-                </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {images.map((item, i) => (
+                  <motion.div
+                    key={i}
+                    className="group relative bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl transition-all duration-300"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.03 }}
+                  >
+                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-100">
+                      <Image
+                        src={item.src}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-4 bg-white">
+                      <p className="text-[#053161] font-semibold text-center text-base line-clamp-1">
+                        {item.title}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          )}
 
-                <p className="text-[20px] leading-[32px] text-[#222] mt-2">
-                  {item.desc}
+          {/* ===== VIDEOS SECTION ===== */}
+          {active === "vision" && (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              {/* Header Box */}
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+                <span className="inline-block px-3 py-1 bg-blue-50 text-[#1B4F9C] text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">
+                  Patient Experiences
+                </span>
+                <h2 className="text-2xl md:text-4xl font-bold text-[#053161] leading-tight mb-4">
+                  Patient Success Stories From Around The World
+                </h2>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  Hear directly from our international patients sharing their real healing journeys and experiences in India.
                 </p>
               </div>
-            </div>
-          ))}
 
-        </div>
-      </div>
-    </section>
-  </>
-            )}
-          </div>
+              {/* Video Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                {videos.map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                  >
+                    {/* Responsive iFrame Wrapper */}
+                    <div className="relative w-full aspect-video bg-black">
+                      <iframe
+                        src={item.src}
+                        title={item.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full border-0"
+                      />
+                    </div>
+
+                    {/* Meta Detail Container */}
+                    <div className="p-5 flex flex-col justify-between flex-grow bg-white">
+                      <div>
+                        <h3 className="text-lg md:text-xl font-bold text-[#053161] mb-1 leading-snug">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-gray-500 font-medium">
+                          {item.desc}
+                        </p>
+                      </div>
+
+                      <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-[#1B4F9C] font-semibold">
+                        <span>Ekam Health Care</span>
+                        <span className="flex items-center gap-1">
+                          ▶ Watch Video
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
         </div>
       </section>
-    </>
+    </main>
   );
 }
-
