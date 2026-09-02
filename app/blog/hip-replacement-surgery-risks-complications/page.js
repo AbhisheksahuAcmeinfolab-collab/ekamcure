@@ -51,6 +51,10 @@ const relatedArticles = [
 
 const moreRelatedLinks = [
   {
+    title: "Hip Replacement Surgery Cost in India for International Patients",
+    href: "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients",
+  },
+  {
     title: "Hip Replacement Surgery for International Patients",
     href: "/blog/hip-replacement-surgery-for-international-patients",
   },
@@ -65,6 +69,14 @@ const moreRelatedLinks = [
   {
     title: "What Are the Negatives of a Hip Replacement?",
     href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+  },
+  {
+    title: "Top 10 Hospitals in India 2026 for International Patients",
+    href: "/top-hospitals/top-10-hospitals-india-for-international-patients",
+  },
+  {
+    title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process",
+    href: "/services/medical-visa-for-treatment-in-india",
   },
 ];
 
