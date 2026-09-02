@@ -75,15 +75,35 @@ const images = [
 
 const videos = [
   {
-    src: "https://www.youtube.com/embed/FuX4pQNBNEY",
-    title: "Mr. Kamurayi Mambayo Testimonial",
-    desc: "Successful Hip Replacement Surgery Journey in India",
+    src: "https://www.youtube.com/embed/22At_3bi8q8?si=yTyz8090Y7BJM77V",
+    title: "Marie Line (Mauritius) ",
+    desc: "Successful Knee Replacement Recovery Journey in India",
     featured: true,
   },
   {
-    src: "https://www.youtube.com/embed/76eBbyVs1tk",
-    title: "From Treatment to Recovery: Shylotte's Story",
+    src: "https://www.youtube.com/embed/FuX4pQNBNEY",
+    title: "Mr. Kamurayi Mambayo Testimonial",
+    desc: "Successful Hip Replacement Surgery Journey in India",
+  },
+  {
+    src: "https://www.youtube.com/embed/jMaLr0QkPZk?si=wJLFhahTJxnaC0Re",
+    title: "From Fiji to New Delhi: Mr. Suresh Chand's Successful Heart Valve Surgery Journey",
     desc: "Complete treatment and hospital recovery experience",
+  },
+  {
+    src: "https://www.youtube.com/embed/BTFTSevzZZs?si=0XiDRaul4aqpbJMz",
+    title: "Patient Success Story | Ms. Heeramatee Bhurtan, Mauritius",
+    desc: "Complete treatment and hospital recovery experience",
+  },
+  {
+    src: "https://www.youtube.com/embed/tpSRme1ZaZU?si=K8CrNklfEOfXBoXi",
+    title: "Spinal Compression Surgery Success Story | Neurosurgery in India",
+    desc: "Ekam Health Services | Complete treatment and hospital recovery experience",
+  },
+  {
+    src: "https://www.youtube.com/embed/DPQEiGFSWok?si=r4-IIFy1xHYXRAcV",
+    title: "A Journey of Hope and Healing | Patient Story from South Africa",
+    desc: "Ekam Health Services | Complete treatment and hospital recovery experience",
   },
   {
     src: "https://www.youtube.com/embed/kFUijCYIHAU",
