@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -39,19 +39,19 @@ import g12 from "../../assets/gallery/g-12.jpeg";
 import g13 from "../../assets/gallery/g-13.jpeg";
 
 const images = [
-  { src: g1, title: "Patient" },
-  { src: g2, title: "Patient" },
-  { src: g3, title: "Patient" },
-  { src: g4, title: "Patient" },
-  { src: g5, title: "Patient" },
-  { src: g6, title: "Patient" },
-  { src: g7, title: "Patient" },
-  { src: g8, title: "Patient" },
-  { src: g9, title: "Patient" },
-  { src: g10, title: "Patient" },
-  { src: g11, title: "Patient" },
-  { src: g12, title: "Patient" },
-  { src: g13, title: "Patient" },
+  { src: g1, title: "International Patient Care" },
+  { src: g2, title: "Successful Recovery Visit" },
+  { src: g3, title: "Hospital Assistance" },
+  { src: g4, title: "Patient Support Team" },
+  { src: g5, title: "Consultation Guidance" },
+  { src: g6, title: "Post-Surgery Care" },
+  { src: g7, title: "Medical Escort Service" },
+  { src: g8, title: "Patient Journey India" },
+  { src: g9, title: "Specialist Consultation" },
+  { src: g10, title: "Hospital Transfer" },
+  { src: g11, title: "Medical Visa Support" },
+  { src: g12, title: "Treatment Success" },
+  { src: g13, title: "Ekam Health Care Team" },
   { src: pic23, title: "Vidya Wati" },
   { src: pic22, title: "Shylotte Kativhu" },
   { src: pic21, title: "Deepak Dhookoo" },
@@ -76,122 +76,120 @@ const images = [
 const videos = [
   {
     src: "https://www.youtube.com/embed/FuX4pQNBNEY",
-    title: "Mr. Kamurayi Mambayo",
-    desc: "Hip Replacement Surgery",
+    title: "Mr. Kamurayi Mambayo Testimonial",
+    desc: "Successful Hip Replacement Surgery Journey in India",
+    featured: true,
   },
   {
     src: "https://www.youtube.com/embed/76eBbyVs1tk",
-    title: "Shylotte’s Journey",
-    desc: "Patient Recovery Story",
+    title: "From Treatment to Recovery: Shylotte's Story",
+    desc: "Complete treatment and hospital recovery experience",
   },
   {
     src: "https://www.youtube.com/embed/kFUijCYIHAU",
     title: "Mr. Keshwan Prasad",
-    desc: "Medical Treatment Success",
+    desc: "Medical treatment and care story",
   },
   {
     src: "https://www.youtube.com/embed/u--DGk3BKYk",
-    title: "Mr. Aziim Ramzan",
-    desc: "International Patient Story",
+    title: "Mr. Aziim Ramzan Testimonial",
+    desc: "International Patient shares his recovery journey",
   },
   {
     src: "https://www.youtube.com/embed/12FGoVnCtzs",
     title: "Dennis Goredema",
-    desc: "Healing Journey in India",
+    desc: "Successful treatment journey with Ekam Care",
   },
   {
     src: "https://www.youtube.com/embed/2UnjdXoTSNo",
-    title: "Florence",
-    desc: "Success Story",
+    title: "Florence - Healing Journey",
+    desc: "High quality medical care experience in India",
   },
   {
     src: "https://www.youtube.com/embed/-byO8roa5vI",
     title: "Sunilduth Putty",
-    desc: "Patient Testimonial",
+    desc: "Patient feedback and overall service rating",
   },
   {
     src: "https://www.youtube.com/embed/AjRSPGuUq50",
     title: "Kamal Prakash Nadi",
-    desc: "Treatment Experience",
+    desc: "Treatment guidance & hospital coordination story",
   },
   {
     src: "https://www.youtube.com/embed/22At_3bi8q8",
     title: "Marie Line",
-    desc: "Patient Story",
+    desc: "Personalized medical trip experience in India",
   },
   {
     src: "https://www.youtube.com/embed/n0NJUBqqGtk",
     title: "Miss Priscilla Danso",
-    desc: "Patient Testimonial",
+    desc: "Patient testimonial on specialized treatment",
   },
   {
     src: "https://www.youtube.com/embed/DPQEiGFSWok",
     title: "Noor Mohammad",
-    desc: "International Care Story",
+    desc: "Healing experience & care assistance",
   },
 ];
 
 export default function Gallery() {
   const [active, setActive] = useState("mission");
+  const featuredVideo = videos.find((v) => v.featured) || videos[0];
+  const regularVideos = videos.filter((v) => !v.featured);
 
   return (
-    <main className="bg-[#F8FAFD] min-h-screen">
-      {/* Banner Section */}
-      <div className="relative w-full h-[220px] md:h-[280px] bg-[#053161] flex items-center justify-center overflow-hidden">
+    <main className="bg-[#F6F9FD] min-h-screen">
+      {/* ===== HERO BANNER SECTION ===== */}
+      <div className="relative w-full h-[240px] md:h-[320px] bg-gradient-to-r from-[#053161] via-[#1B4F9C] to-[#053161] flex items-center justify-center overflow-hidden">
         <Image
           src={img}
-          alt="Gallery"
+          alt="Gallery Banner"
           fill
           priority
-          className="object-cover opacity-40 mix-blend-overlay"
+          className="object-cover opacity-25 mix-blend-overlay"
         />
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-wide">
-            Our Gallery
+        <div className="relative z-10 text-center px-4 max-w-3xl">
+          <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-3">
+            Ekam Media Center
+          </span>
+          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+            Patient Stories & Gallery
           </h1>
-          <p className="text-white/80 text-sm md:text-base mt-2 max-w-xl mx-auto font-light">
-            Visual highlights and real recovery stories of international patients treated in India.
+          <p className="text-white/80 text-sm md:text-base mt-3 leading-relaxed font-light">
+            Real experiences, recovery moments, and healing journeys of our global patients receiving treatment in India.
           </p>
         </div>
       </div>
 
-      {/* Gallery Main Container */}
+      {/* ===== MAIN SECTION ===== */}
       <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          
-          {/* ===== TOGGLE BUTTON ===== */}
-          <div className="flex justify-center items-center gap-4 mb-12">
-            <span
-              onClick={() => setActive("mission")}
-              className={`cursor-pointer font-semibold text-lg md:text-xl transition-colors ${
-                active === "mission" ? "text-[#053161]" : "text-gray-400"
-              }`}
-            >
-              Our Photos
-            </span>
 
-            <button
-              onClick={() =>
-                setActive(active === "mission" ? "vision" : "mission")
-              }
-              aria-label="Toggle Gallery Mode"
-              className="relative w-16 h-8 bg-[#053161] rounded-full p-1 transition-colors duration-300 focus:outline-none"
-            >
-              <div
-                className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                  active === "mission" ? "translate-x-0" : "translate-x-8"
+          {/* ===== TOGGLE FILTER ===== */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex items-center bg-white p-1.5 rounded-full border border-[#E1E8F0] shadow-sm">
+              <button
+                onClick={() => setActive("mission")}
+                className={`flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 ${
+                  active === "mission"
+                    ? "bg-[#053161] text-white shadow-md"
+                    : "text-[#425466] hover:text-[#053161]"
                 }`}
-              />
-            </button>
-
-            <span
-              onClick={() => setActive("vision")}
-              className={`cursor-pointer font-semibold text-lg md:text-xl transition-colors ${
-                active === "vision" ? "text-[#053161]" : "text-gray-400"
-              }`}
-            >
-              Our Videos
-            </span>
+              >
+                <span>📷</span> Photo Gallery
+              </button>
+              
+              <button
+                onClick={() => setActive("vision")}
+                className={`flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 ${
+                  active === "vision"
+                    ? "bg-[#053161] text-white shadow-md"
+                    : "text-[#425466] hover:text-[#053161]"
+                }`}
+              >
+                <span>🎥</span> Video Testimonials
+              </button>
+            </div>
           </div>
 
           {/* ===== PHOTOS SECTION ===== */}
@@ -201,18 +199,20 @@ export default function Gallery() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <div className="text-center mb-8">
+              <div className="flex flex-col items-center mb-8 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#053161]">
-                  Photo Gallery
+                  Captured Moments
                 </h2>
-                <div className="w-16 h-1 bg-pink-500 mx-auto mt-2 rounded-full" />
+                <p className="text-gray-500 text-sm mt-1">
+                  Our international patients with doctors and hospital coordinators
+                </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {images.map((item, i) => (
                   <motion.div
                     key={i}
-                    className="group relative bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl transition-all duration-300"
+                    className="group bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -224,11 +224,11 @@ export default function Gallery() {
                         alt={item.title}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="object-cover group-hover:scale-108 transition-transform duration-500"
                       />
                     </div>
-                    <div className="p-4 bg-white">
-                      <p className="text-[#053161] font-semibold text-center text-base line-clamp-1">
+                    <div className="p-4 bg-white border-t border-gray-50">
+                      <p className="text-[#053161] font-semibold text-sm line-clamp-1 text-center">
                         {item.title}
                       </p>
                     </div>
@@ -245,27 +245,52 @@ export default function Gallery() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              {/* Header Box */}
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-                <span className="inline-block px-3 py-1 bg-blue-50 text-[#1B4F9C] text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">
-                  Patient Experiences
-                </span>
-                <h2 className="text-2xl md:text-4xl font-bold text-[#053161] leading-tight mb-4">
-                  Patient Success Stories From Around The World
+              <div className="text-center max-w-2xl mx-auto mb-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#053161]">
+                  Video Testimonials
                 </h2>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  Hear directly from our international patients sharing their real healing journeys and experiences in India.
+                <p className="text-gray-500 text-sm mt-1">
+                  Watch international patients share their journey and treatment outcome in India.
                 </p>
               </div>
 
-              {/* Video Grid */}
+              {/* HERO FEATURED VIDEO CARD */}
+              <div className="mb-12 bg-white rounded-3xl border border-[#E1E8F0] shadow-md p-5 md:p-8 grid lg:grid-cols-12 gap-6 items-center">
+                <div className="lg:col-span-7 aspect-video rounded-2xl overflow-hidden shadow-inner bg-black">
+                  <iframe
+                    src={featuredVideo.src}
+                    title={featuredVideo.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                  />
+                </div>
+                <div className="lg:col-span-5 flex flex-col justify-center">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-50 text-pink-600 rounded-full text-xs font-bold uppercase tracking-wider w-fit mb-3">
+                    ★ Featured Story
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#053161] leading-tight mb-3">
+                    {featuredVideo.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
+                    {featuredVideo.desc}
+                  </p>
+                  <div className="p-4 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0] flex items-center gap-3">
+                    <span className="text-2xl">🩺</span>
+                    <span className="text-xs md:text-sm font-semibold text-[#053161]">
+                      Facilitated by Ekam Health Services India
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* REGULAR VIDEO GRID */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {videos.map((item, i) => (
+                {regularVideos.map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+                    className="bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
                   >
-                    {/* Responsive iFrame Wrapper */}
                     <div className="relative w-full aspect-video bg-black">
                       <iframe
                         src={item.src}
@@ -277,21 +302,20 @@ export default function Gallery() {
                       />
                     </div>
 
-                    {/* Meta Detail Container */}
-                    <div className="p-5 flex flex-col justify-between flex-grow bg-white">
+                    <div className="p-5 flex flex-col justify-between flex-grow">
                       <div>
-                        <h3 className="text-lg md:text-xl font-bold text-[#053161] mb-1 leading-snug">
+                        <h3 className="text-base md:text-lg font-bold text-[#053161] mb-1 leading-snug">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-gray-500 font-medium">
+                        <p className="text-xs md:text-sm text-gray-500 line-clamp-2">
                           {item.desc}
                         </p>
                       </div>
 
-                      <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-[#1B4F9C] font-semibold">
-                        <span>Ekam Health Care</span>
-                        <span className="flex items-center gap-1">
-                          ▶ Watch Video
+                      <div className="mt-5 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold">
+                        <span className="text-gray-400">Patient Journey</span>
+                        <span className="text-[#1B4F9C] flex items-center gap-1">
+                          ▶ Play Testimonial
                         </span>
                       </div>
                     </div>
