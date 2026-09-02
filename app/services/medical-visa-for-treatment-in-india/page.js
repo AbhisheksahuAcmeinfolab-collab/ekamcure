@@ -36,6 +36,10 @@ const moreRelatedLinks = [
     title: "Top 10 Hospitals in India 2026 for International Patients",
     href: "https://www.ekamcure.com/top-hospitals/top-10-hospitals-india-for-international-patients",
   },
+  {
+    title: "Total Budget for a Medical Trip to India",
+    href: "/blog/total-budget-medical-trip-to-india",
+  },
 ];
 
 const relatedArticles = [
