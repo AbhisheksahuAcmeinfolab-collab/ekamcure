@@ -476,6 +476,24 @@ export default function TotalBudgetMedicalTripPage() {
               </div>
             </article>
 
+            {/* MORE RELATED LINKS (LEFT BOTTOM) */}
+            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-5">
+                More Related Links
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-3 text-sm">
+                {moreRelatedLinks.map((article, index) => (
+                  <Link
+                    key={index}
+                    href={article.href}
+                    className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1.5 border-b border-gray-100"
+                  >
+                    • {article.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
           </div>
 
           {/* RIGHT SIDEBAR */}
@@ -507,24 +525,6 @@ export default function TotalBudgetMedicalTripPage() {
               </h3>
               <div className="space-y-3 text-sm">
                 {relatedArticles.map((article, index) => (
-                  <Link
-                    key={index}
-                    href={article.href}
-                    className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1 border-b border-gray-100 last:border-0"
-                  >
-                    • {article.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* 3. MORE RELATED LINKS */}
-            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-              <h3 className="text-xl font-bold text-[#053161] mb-5">
-                More Related Links
-              </h3>
-              <div className="space-y-3 text-sm">
-                {moreRelatedLinks.map((article, index) => (
                   <Link
                     key={index}
                     href={article.href}
