@@ -37,6 +37,10 @@ export default function HipReplacementSuccessRatePage() {
     title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process",
     href: "/services/medical-visa-for-treatment-in-india",
   },
+    {
+    title: "Total Budget for a Medical Trip to India",
+    href: "/blog/total-budget-medical-trip-to-india",
+  },
   ];
 
   // Articles for Right Sidebar "Related Articles"
