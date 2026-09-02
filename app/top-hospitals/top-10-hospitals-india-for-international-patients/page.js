@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Top 10 Hospitals in India 2026 for International Patients',
@@ -125,6 +126,37 @@ const hospitals = [
       'One of Asia’s largest Bone Marrow Transplant centers.',
       'Prime location in central New Delhi with comprehensive international support.',
     ],
+  },
+];
+
+const moreRelatedLinks = [
+  {
+    title: "Hip Replacement Surgery Cost in India for International Patients",
+    href: "/blog/hip-replacement-surgery-cost-in-india-for-international-patients",
+  },
+  {
+    title: "Hip Replacement Surgery for International Patients",
+    href: "/blog/hip-replacement-surgery-for-international-patients",
+  },
+  {
+    title: "Best Hospitals for Hip Replacement Surgery in India",
+    href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+  },
+  {
+    title: "Hip Replacement Surgery Success Rate",
+    href: "/blog/hip-replacement-surgery-success-rate",
+  },
+  {
+    title: "What Are the Negatives of a Hip Replacement?",
+    href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+  },
+  {
+    title: "Hip Replacement Surgery Risks and Complications",
+    href: "/blog/hip-replacement-surgery-risks-complications",
+  },
+  {
+    title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process",
+    href: "/services/medical-visa-for-treatment-in-india",
   },
 ];
 
@@ -333,6 +365,26 @@ export default function TopHospitalsPage() {
               <p className="text-slate-600 text-sm leading-relaxed">{faq.a}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* MORE RELATED LINKS SECTION */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">
+            More Related Links
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+            {moreRelatedLinks.map((link, idx) => (
+              <Link
+                key={idx}
+                href={link.href}
+                className="p-3.5 rounded-xl border border-slate-200 bg-slate-50 text-sky-700 hover:text-amber-600 hover:border-amber-300 font-medium transition block"
+              >
+                • {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>
