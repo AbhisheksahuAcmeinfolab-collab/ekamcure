@@ -642,31 +642,59 @@ export default function HipReplacementNegativesPage() {
               <h3 className="text-2xl font-bold text-[#053161] mb-6">More Related Links</h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <Link
+                  href="/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
+                >
+                  <span>Hip Replacement Surgery Cost in India for International Patients</span>
+                  <span>→</span>
+                </Link>
+                    
+                 <Link
                   href="/blog/hip-replacement-surgery-for-international-patients"
                   className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   <span>Hip Replacement Surgery for International Patients</span>
                   <span>→</span>
                 </Link>
-                <Link
+
+
+                    <Link
                   href="/blog/best-hospitals-for-hip-replacement-surgery-in-india"
                   className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   <span>Best Hospitals for Hip Replacement Surgery in India</span>
                   <span>→</span>
                 </Link>
-                <Link
+
+                    <Link
                   href="/blog/hip-replacement-surgery-success-rate"
                   className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   <span>Hip Replacement Surgery Success Rate</span>
                   <span>→</span>
                 </Link>
+                    
                 <Link
                   href="/blog/hip-replacement-surgery-risks-complications"
                   className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
                 >
                   <span>Hip Replacement Surgery Risks and Complications</span>
+                  <span>→</span>
+                </Link>
+
+                 <Link
+                  href="/top-hospitals/top-10-hospitals-india-for-international-patients"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
+                >
+                  <span>Top 10 Hospitals in India 2026 for International Patients</span>
+                  <span>→</span>
+                </Link>
+
+                    <Link
+                  href="/services/medical-visa-for-treatment-in-india"
+                  className="flex items-center justify-between p-4 rounded-xl border border-[#E1E8F0] bg-[#F8FAFD] text-[#1B4F9C] font-semibold hover:border-[#1B4F9C] hover:text-pink-500 transition"
+                >
+                  <span>Medical Visa for Treatment in India: Cost, Requirements & Application Process</span>
                   <span>→</span>
                 </Link>
               </div>
