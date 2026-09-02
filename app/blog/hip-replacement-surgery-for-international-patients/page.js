@@ -10,21 +10,33 @@ function HipReplacementInternationalPage() {
   // 4 Specific Links for bottom "More Related Links" section
   const moreRelatedLinks = [
     {
-      title: "Best Hospitals for Hip Replacement Surgery in India",
-      href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
-    },
-    {
-      title: "Hip Replacement Surgery Success Rate",
-      href: "/blog/hip-replacement-surgery-success-rate",
-    },
-    {
-      title: "What Are the Negatives of a Hip Replacement?",
-      href: "/blog/what-are-the-negatives-of-a-hip-replacement",
-    },
-    {
-      title: "Hip Replacement Surgery Risks and Complications",
-      href: "/blog/hip-replacement-surgery-risks-complications",
-    },
+    title: "Hip Replacement Surgery Cost in India for International Patients",
+    href: "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients",
+  },
+  {
+    title: "Best Hospitals for Hip Replacement Surgery in India",
+    href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india",
+  },
+  {
+    title: "Hip Replacement Surgery Success Rate",
+    href: "/blog/hip-replacement-surgery-success-rate",
+  },
+  {
+    title: "What Are the Negatives of a Hip Replacement?",
+    href: "/blog/what-are-the-negatives-of-a-hip-replacement",
+  },
+  {
+    title: "Hip Replacement Surgery Risks and Complications",
+    href: "/blog/hip-replacement-surgery-risks-complications",
+  },
+  {
+    title: "Top 10 Hospitals in India 2026 for International Patients",
+    href: "/top-hospitals/top-10-hospitals-india-for-international-patients",
+  },
+  {
+    title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process",
+    href: "/services/medical-visa-for-treatment-in-india",
+  },
   ];
 
   // All other blog articles for Sidebar "Related Articles"
