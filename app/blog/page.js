@@ -11,6 +11,16 @@ export const metadata = {
 
 const blogs = [
   {
+    title: "Types of Cataract Surgery in India: Safest Surgery & Best Age for Cataract Treatment",
+    slug: "types-of-cataract-surgery-in-india",
+    category: "Eye Surgery",
+    image: "/images/Types of Cataract Surgery in India Safest Surgery & Best Age for Cataract Treatment.png",
+    description:
+      "Cataract is one of the most common causes of vision impairment, particularly among older adults.",
+    readTime: "2 min read",
+  },
+  
+  {
     title: "Total Budget for a Medical Trip to India",
     slug: "total-budget-medical-trip-to-india",
     category: "Joint Replacement",
