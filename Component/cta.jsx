@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // Router import karein
 
 const phoneCodes = [
   { flag: "🇮🇳", code: "+91", label: "India" },
   { flag: "🇳🇬", code: "+234", label: "Nigeria" },
   { flag: "🇰🇪", code: "+254", label: "Kenya" },
-  { flag: "🇹🇿", code: "+255", label: "Tanzania" },
+  { flag: "🇹ℤ", code: "+255", label: "Tanzania" },
   { flag: "🇺🇬", code: "+256", label: "Uganda" },
   { flag: "🇪🇹", code: "+251", label: "Ethiopia" },
   { flag: "🇸🇩", code: "+249", label: "Sudan" },
@@ -18,26 +19,29 @@ const phoneCodes = [
 ];
 
 export default function CTA() {
+  const router = useRouter(); // Router initialize karein
   const [phoneCode, setPhoneCode] = useState({ flag: "🇮🇳", code: "+91" });
   const [dropOpen, setDropOpen] = useState(false);
   const [mobile, setMobile] = useState("");
   const [name, setName] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!mobile.trim() || !name.trim()) return;
 
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3500);
+    // API submission call (agar backend/email integration ho)
+
+    // Form clear karein
     setMobile("");
     setName("");
+
+    // Thank You page par redirect karein (Path apne according change kar sakte hain)
+    router.push("/thank-you");
   };
 
   return (
     <section className="w-full flex justify-center py-16 px-4">
       <div className="w-full max-w-5xl">
-        {/* icon */}
         <div className="flex justify-center mb-4">
           <div className="w-14 h-14 flex items-center justify-center rounded-full bg-teal-100">
             📞
@@ -51,12 +55,6 @@ export default function CTA() {
         <p className="text-center text-sm text-gray-500 mb-5">
           Fill the form and we’ll call you back shortly.
         </p>
-
-        {submitted && (
-          <p className="text-center text-green-600 mb-4">
-            ✅ Thank you! We will call you shortly.
-          </p>
-        )}
 
         {/* FORM */}
         <form
