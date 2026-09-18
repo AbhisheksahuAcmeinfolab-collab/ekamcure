@@ -44,7 +44,7 @@ export default function Navbar() {
         },
       ],
     },
-    { name: "Video Gallery", href: "/patient-story" },
+    { name: "Video Gallery", href: "/video-gallery" },
     { name: "Photo Gallery", href: "/gallery" },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact" },
