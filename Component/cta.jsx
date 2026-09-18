@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Router import karein
+import { useRouter } from "next/navigation";
 
 const phoneCodes = [
   { flag: "🇮🇳", code: "+91", label: "India" },
   { flag: "🇳🇬", code: "+234", label: "Nigeria" },
   { flag: "🇰🇪", code: "+254", label: "Kenya" },
-  { flag: "🇹ℤ", code: "+255", label: "Tanzania" },
+  { flag: "🇹🇿", code: "+255", label: "Tanzania" },
   { flag: "🇺🇬", code: "+256", label: "Uganda" },
   { flag: "🇪🇹", code: "+251", label: "Ethiopia" },
   { flag: "🇸🇩", code: "+249", label: "Sudan" },
@@ -19,7 +19,7 @@ const phoneCodes = [
 ];
 
 export default function CTA() {
-  const router = useRouter(); // Router initialize karein
+  const router = useRouter();
   const [phoneCode, setPhoneCode] = useState({ flag: "🇮🇳", code: "+91" });
   const [dropOpen, setDropOpen] = useState(false);
   const [mobile, setMobile] = useState("");
@@ -29,14 +29,8 @@ export default function CTA() {
     e.preventDefault();
     if (!mobile.trim() || !name.trim()) return;
 
-    // API submission call (agar backend/email integration ho)
-
-    // Form clear karein
-    setMobile("");
-    setName("");
-
-    // Thank You page par redirect karein (Path apne according change kar sakte hain)
-    router.push("/thank-you");
+    // Direct redirect to Ekamcure thank-you page
+    router.push("/contact/thank-you");
   };
 
   return (
