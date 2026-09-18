@@ -43,7 +43,7 @@ export default function CTA() {
         </div>
 
         <h3 className="text-center font-bold text-lg mb-1">
-          Get a Call Back From Our Health Advisor
+          Get a Call Back From Our Health Adviser
         </h3>
 
         <p className="text-center text-sm text-gray-500 mb-5">
