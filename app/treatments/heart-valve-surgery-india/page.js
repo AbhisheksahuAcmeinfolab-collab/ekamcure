@@ -1120,6 +1120,24 @@ export default function HeartValveSurgery() {
                 </p>
               </div>
             </section>
+          {/* REAL PATIENTS STORIES - YOUTUBE VIDEO */}
+            <section id="real-patients-stories" className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
+                Real Patients Stories
+              </h2>
+              <div className="bg-white p-4 rounded-xl shadow overflow-hidden">
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/jMaLr0QkPZk"
+                    title="Real Patients Stories"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </section>
+                    
 
             <CTA />
           </div>
