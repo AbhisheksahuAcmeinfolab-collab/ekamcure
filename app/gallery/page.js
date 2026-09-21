@@ -7,7 +7,6 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 // Image imports
 import img from "../../assets/recent/Gallery 1.webp";
 import pic23 from "../../assets/recent/Vidya Wati.png";
-import pic22 from "../../assets/recent/Shylotte Kativhu.png";
 import pic21 from "../../assets/recent/Deepak Dhookoo.png";
 import pic20 from "../../assets/recent/Bissun Prasad.png";
 import pic19 from "../../assets/recent/Christopher Muza3.png";
@@ -35,8 +34,6 @@ import g7 from "../../assets/gallery/g-7.jpeg";
 import g8 from "../../assets/gallery/g-8.jpg";
 import g9 from "../../assets/gallery/g-9.jpeg";
 import g11 from "../../assets/gallery/g-11.jpeg";
-import g12 from "../../assets/gallery/g-12.jpeg";
-import g13 from "../../assets/gallery/g-13.jpeg";
 
 const images = [
   { src: g1, title: "Marie Line (Mauritius)" },
@@ -45,14 +42,11 @@ const images = [
   { src: g4, title: "Fiji Patient" },
   { src: g5, title: "Eugenia Bepu" },
   { src: g6, title: "Mrs. Bhunu Letitia Tambudzai" },
-  { src: g7, title: "Amit Kumar , Fiji" },
+  { src: g7, title: "Amit Kumar (Fiji)" },
   { src: g8, title: "Mr. Vedanand Prayag" },
   { src: g9, title: "Patient Dubey" },
   { src: g11, title: "Medical Visa Support" },
-  { src: g12, title: "Treatment Success" },
-  { src: g13, title: "Ekam Health Care Team" },
   { src: pic23, title: "Vidya Wati" },
-  { src: pic22, title: "Shylotte Kativhu" },
   { src: pic21, title: "Deepak Dhookoo" },
   { src: pic20, title: "Bissun Prasad" },
   { src: pic19, title: "Christopher Muza" },
