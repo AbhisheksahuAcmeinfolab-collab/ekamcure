@@ -2313,7 +2313,7 @@ The choice depends on fracture pattern and overall joint condition.
 </section>
 
 {/* REAL PATIENTS STORIES - YOUTUBE VIDEO */}
-<div className="bg-white rounded-2xl shadow-xl p-6 mt-8 border-t-4 border-pink-500">
+<div className="bg-white rounded-2xl shadow-xl p-6 mt-8 mb-16 border-t-4 border-pink-500">
   <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
     Real Patients Stories
   </h3>
