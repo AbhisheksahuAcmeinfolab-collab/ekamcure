@@ -45,7 +45,7 @@ const images = [
   { src: g7, title: "Amit Kumar (Fiji)" },
   { src: g8, title: "Mr. Vedanand Prayag" },
   { src: g9, title: "Patient Dubey" },
-  { src: g11, title: "Medical Visa Support" },
+  { src: g11, title: "Florence" },
   { src: pic23, title: "Vidya Wati" },
   { src: pic21, title: "Deepak Dhookoo" },
   { src: pic20, title: "Bissun Prasad" },
