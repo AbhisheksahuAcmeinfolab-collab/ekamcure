@@ -22,6 +22,7 @@ import pic4 from "../../assets/recent/Keshwan Prasad.png";
 import pic3 from "../../assets/recent/Abdullah AI Mamun.webp";
 import pic2 from "../../assets/recent/SunilDuth Putty3.png";
 import pic1 from "../../assets/recent/Yogita Singh.png";
+
 import g1 from "../../assets/gallery/g-1.jpeg";
 import g2 from "../../assets/gallery/g-2.jpeg";
 import g3 from "../../assets/gallery/g-3.jpeg";
@@ -55,7 +56,6 @@ const images = [
   { src: pic19, title: "Christopher Muza" },
   { src: pic17, title: "Adbul Aziim Ramzan" },
   { src: pic16, title: "Satish Chandra" },
-  { src: pic15, title: "Kamurayi Mambayo" },
   { src: pic14, title: "Shylotte Kativhu" },
   { src: pic12, title: "Kamurayi Mambayo" },
   { src: pic10, title: "Brij Lata" },
