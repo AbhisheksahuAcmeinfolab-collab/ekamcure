@@ -2312,6 +2312,22 @@ The choice depends on fracture pattern and overall joint condition.
   </div>
 </section>
 
+{/* REAL PATIENTS STORIES - YOUTUBE VIDEO */}
+<div className="bg-white rounded-2xl shadow-xl p-6 mt-8 border-t-4 border-pink-500">
+  <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+    Real Patients Stories
+  </h3>
+  <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/FuX4pQNBNEY"
+      title="Real Patients Stories"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
 {/* REQUEST FREE COST ESTIMATE */}
 <section className="mb-16">
   <h3 className="text-2xl font-bold text-pink-600 mb-6">
@@ -2328,22 +2344,6 @@ The choice depends on fracture pattern and overall joint condition.
     </p>
   </div>
 </section>
-
-  {/* REAL PATIENTS STORIES - YOUTUBE VIDEO */}
-<div className="bg-white rounded-2xl shadow-xl p-6 mt-8 border-t-4 border-pink-500">
-  <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
-    Real Patients Stories
-  </h3>
-  <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md">
-    <iframe
-      className="w-full h-full"
-      src="https://www.youtube.com/embed/FuX4pQNBNEY"
-      title="Real Patients Stories"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
 
             </div>
 
