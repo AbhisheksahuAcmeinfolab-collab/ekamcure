@@ -11,7 +11,6 @@ import pic20 from "../../assets/recent/Bissun Prasad.png";
 import pic19 from "../../assets/recent/Christopher Muza3.png";
 import pic17 from "../../assets/recent/Adbul Aziim Ramzan.png";
 import pic16 from "../../assets/recent/Satish Chandra.png";
-import pic15 from "../../assets/recent/Kamurayi Mambayo2.png";
 import pic14 from "../../assets/recent/Shylotte Kativhu2.png";
 import pic12 from "../../assets/recent/Kamurayi Mambayo.png";
 import pic11 from "../../assets/recent/Christopher Muza2.png";
@@ -32,21 +31,20 @@ import g6 from "../../assets/gallery/g-6.jpeg";
 import g7 from "../../assets/gallery/g-7.jpeg";
 import g8 from "../../assets/gallery/g-8.jpg";
 import g9 from "../../assets/gallery/g-9.jpeg";
-import g10 from "../../assets/gallery/g-10.jpeg";
 import g11 from "../../assets/gallery/g-11.jpeg";
 import g12 from "../../assets/gallery/g-12.jpeg";
 import g13 from "../../assets/gallery/g-13.jpeg";
 
 const images = [
-  { src: g1, title: "International Patient Care" },
-  { src: g2, title: "Successful Recovery Visit" },
-  { src: g3, title: "Hospital Assistance" },
-  { src: g4, title: "Patient Support Team" },
-  { src: g5, title: "Consultation Guidance" },
-  { src: g6, title: "Post-Surgery Care" },
-  { src: g7, title: "Medical Escort Service" },
-  { src: g8, title: "Patient Journey India" },
-  { src: g9, title: "Specialist Consultation" },
+  { src: g1, title: "Marie Line (Mauritius)" },
+  { src: g2, title: "Zimbabwe Patient" },
+  { src: g3, title: "Kamal Prakash" },
+  { src: g4, title: "Fiji Patient" },
+  { src: g5, title: "Eugenia Bepu" },
+  { src: g6, title: "Mrs. Bhunu Letitia Tambudzai" },
+  { src: g7, title: "Amit Kumar , Fiji" },
+  { src: g8, title: "Mr. Vedanand Prayag" },
+  { src: g9, title: "Patient Dubey" },
   { src: g10, title: "Hospital Transfer" },
   { src: g11, title: "Medical Visa Support" },
   { src: g12, title: "Treatment Success" },
@@ -61,7 +59,6 @@ const images = [
   { src: pic15, title: "Kamurayi Mambayo" },
   { src: pic14, title: "Shylotte Kativhu" },
   { src: pic12, title: "Kamurayi Mambayo" },
-  { src: pic11, title: "Christopher Muza" },
   { src: pic10, title: "Brij Lata" },
   { src: pic9, title: "Narendra Chand" },
   { src: pic7, title: "Sunilduth Putty" },
