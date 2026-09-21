@@ -106,7 +106,7 @@ export default function PhotoGallery() {
             Ekam Photo Gallery
           </span>
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
-            Our Patient Moments & Gallery
+            Gallery
           </h1>
           <p className="text-white/80 text-sm md:text-base mt-3 leading-relaxed font-light">
             Glimpses of recovery moments, doctor consultations, and medical support experiences of our global patients in India.
