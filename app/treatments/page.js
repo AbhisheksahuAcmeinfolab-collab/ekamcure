@@ -218,13 +218,13 @@ export default function TreatmentServices() {
   const ophthalmology = [
     [
       { name: "Refractive Surgery", link: "#" },
-      { name: "Cornea Transplant Surgery", link: "#" },
+      { name: "Cornea Transplant Surgery", link: "/treatments/eye-care/laser-cataract-surgery-in-india" },
       { name: "Laser Eye Surgery", link: "#" },
       { name: "LASIK Surgery", link: "#" },
       { name: "PRK Surgery", link: "#" },
     ],
     [
-      { name: "Cataract Surgery", link: "#" },
+      { name: "Cataract Surgery", link: "/treatments/eye-care/cornea-transplant-surgery-in-india" },
       { name: "Glaucoma Surgery", link: "/treatments/glaucoma-surgery-in-india-for-international-patients" },
       { name: "Vitreoretinal Surgery", link: "#" },
       { name: "Retinal Detachment Surgery", link: "#" },
