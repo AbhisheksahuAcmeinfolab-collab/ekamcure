@@ -146,7 +146,14 @@ export default function CorneaTransplantSurgeryPage() {
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Ekam helps international patients from Mauritius, Fiji, Ghana, the Maldives and other countries coordinate their corneal transplant journey in India. Our support can include connecting patients with suitable ophthalmologists and hospitals, arranging medical consultations, coordinating treatment information and estimates, and assisting with practical aspects of travelling to India for treatment.
+                    Ekam helps international patients from Mauritius, Fiji, Ghana, the Maldives, and other countries coordinate their corneal transplant journey in India. Our support can include connecting patients with suitable ophthalmologists and hospitals, arranging medical consultations, coordinating treatment information and estimates, and assisting with practical aspects of travelling to India for treatment. Patients exploring other options for vision correction can also learn more about{" "}
+                    <Link
+                      href="/treatments/eye-care/laser-cataract-surgery-in-india"
+                      className="text-blue-600 hover:underline"
+                    >
+                      <strong>Laser Cataract Surgery in India</strong>
+                    </Link>{" "}
+                    including the treatment process and what to consider when planning eye care in India.
                   </p>
                 </section>
 
