@@ -14,6 +14,10 @@ import {
   ShieldCheck,
   CheckCircle,
   Zap,
+  ChevronRight,
+  Award,
+  HeartHandshake,
+  UserCheck,
 } from "lucide-react";
 
 export const metadata = {
@@ -63,29 +67,67 @@ export default function IVFTreatmentInIndia() {
         }}
       />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
-        {/* HERO */}
+        
+        {/* IMPROVED HERO BANNER */}
         <div
-          className="relative text-white h-[400px] overflow-hidden bg-cover bg-center flex items-center justify-center"
+          className="relative text-white py-12 md:py-16 lg:py-20 overflow-hidden bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage: "url('/banner/ivf-banner.png')",
           }}
         >
-          {/* Black overlay */}
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          {/* Gradient Overlay for high contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
 
-          {/* Optional gradient overlay */}
+          {/* Decorative Subtle Radial Glow */}
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage:
-                "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)",
+                "radial-gradient(circle at 50% 50%, rgba(219, 39, 119, 0.15) 0%, transparent 70%)",
             }}
           ></div>
 
-          <div className="relative z-10 text-center px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className="relative z-10 max-w-5xl mx-auto text-center px-4">
+            {/* Breadcrumb Navigation */}
+            <nav className="flex justify-center items-center gap-2 text-xs md:text-sm text-pink-200 mb-4 font-medium">
+              <Link href="/" className="hover:text-white transition">Home</Link>
+              <ChevronRight className="w-3 h-3 text-pink-400" />
+              <Link href="/treatments" className="hover:text-white transition">Treatments</Link>
+              <ChevronRight className="w-3 h-3 text-pink-400" />
+              <span className="text-white">IVF Treatment in India</span>
+            </nav>
+
+            {/* Tagline Badge */}
+            <div className="inline-flex items-center gap-2 bg-pink-500/20 backdrop-blur-md border border-pink-400/30 px-3 py-1 rounded-full text-xs md:text-sm font-semibold text-pink-200 mb-4">
+              <Zap className="w-4 h-4 text-pink-400" />
+              <span>World-Class Reproductive Care & High Success Rates</span>
+            </div>
+
+            {/* Main Title */}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white drop-shadow-md">
               IVF Treatment in India
             </h1>
+
+            {/* Sub-text */}
+            <p className="mt-3 text-sm md:text-base lg:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed font-light">
+              Advanced Fertility Solutions, Experienced Specialists & Affordable International Care
+            </p>
+
+            {/* Trust Badges Bar */}
+            <div className="mt-8 pt-6 border-t border-white/10 grid grid-cols-3 gap-2 md:gap-6 max-w-3xl mx-auto text-pink-100 text-xs md:text-sm">
+              <div className="flex items-center justify-center gap-1.5 md:gap-2">
+                <ShieldCheck className="w-4 h-4 md:w-5 md:h-5 text-pink-400 shrink-0" />
+                <span className="font-medium">95%+ Satisfaction Rate</span>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 md:gap-2">
+                <Award className="w-4 h-4 md:w-5 md:h-5 text-pink-400 shrink-0" />
+                <span className="font-medium">Top IVF Hospitals</span>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 md:gap-2">
+                <UserCheck className="w-4 h-4 md:w-5 md:h-5 text-pink-400 shrink-0" />
+                <span className="font-medium">Global Patient Support</span>
+              </div>
+            </div>
           </div>
         </div>
 
