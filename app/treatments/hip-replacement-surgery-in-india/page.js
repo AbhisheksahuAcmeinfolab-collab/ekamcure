@@ -29,77 +29,16 @@ export default function HipReplacementIndia() {
         <div className="w-full px-4 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
-            {/* LEFT SIDEBAR (FORM + SIDEBAR CONTENT) */}
+            {/* LEFT SIDEBAR (FORM + SIDEBAR COMPONENT) */}
             <div className="lg:col-span-3 order-1">
-              <div className="lg:sticky lg:top-24">
-                <div className="shadow-lg">
+              <div className="lg:sticky lg:top-24 space-y-6">
+                <div className="shadow-lg rounded-xl overflow-hidden">
                   {/* Contact Form */}
                   <ContactForm />
                 </div>
 
-                {/* SIDEBAR CONTENT BELOW FORM */}
-                <div className="mt-6 p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-500">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
-                    Related Treatments
-                  </h3>
-                  <ul className="space-y-3 text-sm text-gray-700">
-                    <li>
-                      <Link href="/treatments/best-spine-surgery-in-india" className="hover:text-pink-600 transition-colors">
-                        • Spine Surgery in India
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/ivf-treatments-in-india" className="hover:text-pink-600 transition-colors">
-                        • IVF Treatments in India
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/breast-cancer-treatment-in-india" className="hover:text-pink-600 transition-colors">
-                        • Breast Cancer Treatment
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/heart-valve-surgery-india" className="hover:text-pink-600 transition-colors">
-                        • Heart Valve Surgery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/glaucoma-surgery-in-india-for-international-patients" className="hover:text-pink-600 transition-colors">
-                        • Glaucoma Surgery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/knee-replacement-surgery-in-india" className="hover:text-pink-600 transition-colors">
-                        • Knee Replacement Surgery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/superficial-parotidectomy-surgery-india" className="hover:text-pink-600 transition-colors">
-                        • Superficial Parotidectomy Surgery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/best-prostate-cancer-treatment-india" className="hover:text-pink-600 transition-colors">
-                        • Prostate Cancer Treatment
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/kidney-transplant-in-india" className="hover:text-pink-600 transition-colors">
-                        • Kidney Transplant
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/eye-care/cornea-transplant-surgery-in-india" className="hover:text-pink-600 transition-colors">
-                        • Cornea Transplant Surgery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/treatments/eye-care/laser-cataract-surgery-in-india" className="hover:text-pink-600 transition-colors">
-                        • Laser Cataract Surgery
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                {/* DYNAMIC SIDEBAR COMPONENT */}
+                <Sidebar />
               </div>
             </div>
 
@@ -2384,28 +2323,20 @@ export default function HipReplacementIndia() {
               </section>
 
               {/* CALL TO ACTION BUTTON SECTION */}
-                <div className="mt-12 mb-8 text-center bg-white rounded-2xl shadow-xl p-8 border-t-4 border-pink-500">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                    Need Expert Medical Advice or Free Consultation?
-                  </h3>
-                  <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-                    Connect with top healthcare specialists in India and get personalized treatment plans tailored to your needs.
-                  </p>
-                  <a
-                    href="tel:+919990205353"
-                    className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-                  >
-                    Book Free Consultation Now (+91-9990205353)
-                  </a>
-                </div>
-
-                  {/* SIDEBAR */}
-                  <div className="lg:col-span-3 order-1">
-                    <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
-                      <ContactForm />
-                      <Sidebar />
-                    </div>
-                  </div>
+              <div className="mt-12 mb-8 text-center bg-white rounded-2xl shadow-xl p-8 border-t-4 border-pink-500">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                  Need Expert Medical Advice or Free Consultation?
+                </h3>
+                <p className="text-gray-600 mb-6 max-w-xl mx-auto">
+                  Connect with top healthcare specialists in India and get personalized treatment plans tailored to your needs.
+                </p>
+                <a
+                  href="tel:+919990205353"
+                  className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  Book Free Consultation Now (+91-9990205353)
+                </a>
+              </div>
 
             </div>
 
