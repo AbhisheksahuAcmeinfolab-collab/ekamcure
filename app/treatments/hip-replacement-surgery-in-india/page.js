@@ -30,11 +30,33 @@ export default function HipReplacementIndia() {
         <div className="w-full px-4 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
+            {/* LEFT SIDEBAR (FORM + SIDEBAR CONTENT) */}
+            <div className="lg:col-span-3 order-1">
+              <div className="lg:sticky lg:top-24">
+                <div className="shadow-lg">
+                  {/* Contact Form */}
+                  <ContactForm />
+                </div>
 
-            
+                {/* SIDEBAR CONTENT BELOW FORM */}
+                <div className="mt-6 p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-500">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                    Sidebar Title
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    Yahan aap apna sidebar content, quick links, ya assistance details add kar sakte hain.
+                  </p>
+                  <ul className="space-y-2 text-sm text-gray-700">
+                    <li>• Quick Assistance</li>
+                    <li>• Expert Consultation</li>
+                    <li>• 24/7 Medical Support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-            {/* LEFT CONTENT */}
-            <div className="lg:col-span-7 order-2 lg:order-1">
+            {/* RIGHT MAIN CONTENT */}
+            <div className="lg:col-span-7 order-2">
              {/* TABLE OF CONTENTS */}
               <div className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-pink-500 mb-10">
                 <div className="flex items-center mb-6">
@@ -2345,19 +2367,6 @@ The choice depends on fracture pattern and overall joint condition.
   </div>
 </section>
 
-            </div>
-
-            {/* RIGHT SIDEBAR */}
-            <div className="lg:col-span-3 order-1 lg:order-2">
-              <div className="lg:sticky lg:top-24">
-                <div className="shadow-lg">
-                  {/* <h3 className="text-xl font-bold mb-4 text-blue-900">
-                    Book Free Consultation
-                  </h3> */}
-
-                  <ContactForm />
-                </div>
-              </div>
             </div>
 
           </div>
