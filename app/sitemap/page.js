@@ -65,6 +65,14 @@ const sections = [
         "IVF Treatments in India",
         "/ivf-treatments-in-india",
       ],
+      [
+        "Laser Cataract Surgery in India",
+        "/treatments/eye-care/laser-cataract-surgery-in-india",
+      ],
+      [
+        "Cornea Transplant Surgery in India",
+        "/treatments/eye-care/cornea-transplant-surgery-in-india",
+      ],
     ],
   },
 
@@ -154,6 +162,14 @@ const sections = [
       [
         "Hip Replacement Surgery Risks & Complications",
         "/blog/hip-replacement-surgery-risks-complications",
+      ],
+      [
+        "Total Budget Medical Trip to India",
+        "/blog/total-budget-medical-trip-to-india",
+      ],
+      [
+        "Types of Cataract Surgery in India",
+        "/blog/types-of-cataract-surgery-in-india",
       ],
     ],
   },
