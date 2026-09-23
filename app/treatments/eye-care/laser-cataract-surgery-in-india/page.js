@@ -154,7 +154,14 @@ export default function LaserCataractSurgeryPage() {
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    A cataract develops when the natural lens of the eye becomes cloudy, leading to symptoms such as blurred vision, glare, difficulty seeing at night and faded colours. Cataract surgery removes the cloudy lens and replaces it with an artificial intraocular lens.
+                    A cataract develops when the natural lens of the eye becomes cloudy, leading to symptoms such as blurred vision, glare, difficulty seeing at night, and faded colours. Cataract surgery removes the cloudy lens and replaces it with an artificial intraocular lens. For patients with other corneal conditions that affect vision,{" "}
+                    <Link
+                      href="/treatments/eye-care/cornea-transplant-surgery-in-india"
+                      className="text-blue-600 hover:underline"
+                    >
+                      <strong>Cornea Transplant Surgery in India</strong>
+                    </Link>{" "}
+                    may be considered when recommended by an ophthalmologist after a detailed eye evaluation.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-[#053161]">
