@@ -2383,20 +2383,20 @@ export default function HipReplacementIndia() {
               </section>
 
               {/* CALL TO ACTION BUTTON SECTION */}
-              <div className="mt-12 mb-8 text-center bg-white rounded-2xl shadow-xl p-8 border-t-4 border-pink-500">
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                  Need Expert Medical Advice or Free Consultation?
-                </h3>
-                <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-                  Connect with top healthcare specialists in India and get personalized treatment plans tailored to your needs.
-                </p>
-                <a
-                  href="#contact-form"
-                  className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-                >
-                  Book Free Consultation Now
-                </a>
-              </div>
+                <div className="mt-12 mb-8 text-center bg-white rounded-2xl shadow-xl p-8 border-t-4 border-pink-500">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                    Need Expert Medical Advice or Free Consultation?
+                  </h3>
+                  <p className="text-gray-600 mb-6 max-w-xl mx-auto">
+                    Connect with top healthcare specialists in India and get personalized treatment plans tailored to your needs.
+                  </p>
+                  <a
+                    href="tel:+919990205353"
+                    className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                  >
+                    Book Free Consultation Now (+91-9990205353)
+                  </a>
+                </div>
 
             </div>
 
