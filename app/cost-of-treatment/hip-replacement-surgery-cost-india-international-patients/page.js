@@ -367,7 +367,14 @@ export default function HipReplacementCostPage() {
                   />
 
                   <p className="text-[#425466] text-base md:text-lg leading-8">
-                    These expenses should be considered separately when calculating the <strong>total budget for a medical trip to India</strong>.
+                    These expenses should be considered separately when calculating the{" "}
+                    <Link
+                      href="/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients"
+                      className="text-blue-600 hover:underline"
+                    >
+                      <strong>total budget for a medical trip to India</strong>
+                    </Link>
+                    .
                   </p>
                 </section>
 
