@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
+import Sidebar from "../../Component/Sidebar";
 
 export const metadata = {
   title: "Hip Replacement Surgery in India 2026 | Cost & Surgeons",
@@ -2397,6 +2398,14 @@ export default function HipReplacementIndia() {
                     Book Free Consultation Now (+91-9990205353)
                   </a>
                 </div>
+
+                  {/* SIDEBAR */}
+                  <div className="lg:col-span-3 order-1">
+                    <div className="sticky top-25 flex flex-col gap-2 bg-gray-100 rounded-xl shadow">
+                      <ContactForm />
+                      <Sidebar />
+                    </div>
+                  </div>
 
             </div>
 
