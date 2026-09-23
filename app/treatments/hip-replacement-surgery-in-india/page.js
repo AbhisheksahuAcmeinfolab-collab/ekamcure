@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
-import Sidebar from "../../Component/Sidebar";
 
 export const metadata = {
   title: "Hip Replacement Surgery in India 2026 | Cost & Surgeons",
@@ -29,16 +28,77 @@ export default function HipReplacementIndia() {
         <div className="w-full px-4 lg:px-8 py-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
 
-            {/* LEFT SIDEBAR (FORM + SIDEBAR COMPONENT) */}
+            {/* LEFT SIDEBAR (FORM + SIDEBAR CONTENT) */}
             <div className="lg:col-span-3 order-1">
-              <div className="lg:sticky lg:top-24 space-y-6">
-                <div className="shadow-lg rounded-xl overflow-hidden">
+              <div className="lg:sticky lg:top-24">
+                <div className="shadow-lg">
                   {/* Contact Form */}
                   <ContactForm />
                 </div>
 
-                {/* DYNAMIC SIDEBAR COMPONENT */}
-                <Sidebar />
+                {/* SIDEBAR CONTENT BELOW FORM */}
+                <div className="mt-6 p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-500">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                    Related Treatments
+                  </h3>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <li>
+                      <Link href="/treatments/best-spine-surgery-in-india" className="hover:text-pink-600 transition-colors">
+                        • Spine Surgery in India
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/ivf-treatments-in-india" className="hover:text-pink-600 transition-colors">
+                        • IVF Treatments in India
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/breast-cancer-treatment-in-india" className="hover:text-pink-600 transition-colors">
+                        • Breast Cancer Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/heart-valve-surgery-india" className="hover:text-pink-600 transition-colors">
+                        • Heart Valve Surgery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/glaucoma-surgery-in-india-for-international-patients" className="hover:text-pink-600 transition-colors">
+                        • Glaucoma Surgery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/knee-replacement-surgery-in-india" className="hover:text-pink-600 transition-colors">
+                        • Knee Replacement Surgery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/superficial-parotidectomy-surgery-india" className="hover:text-pink-600 transition-colors">
+                        • Superficial Parotidectomy Surgery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/best-prostate-cancer-treatment-india" className="hover:text-pink-600 transition-colors">
+                        • Prostate Cancer Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/kidney-transplant-in-india" className="hover:text-pink-600 transition-colors">
+                        • Kidney Transplant
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/eye-care/cornea-transplant-surgery-in-india" className="hover:text-pink-600 transition-colors">
+                        • Cornea Transplant Surgery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/treatments/eye-care/laser-cataract-surgery-in-india" className="hover:text-pink-600 transition-colors">
+                        • Laser Cataract Surgery
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
