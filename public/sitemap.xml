@@ -1,152 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.ekamcure.com/</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/about</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/contact</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/services</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/top-hospitals</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/patient-story</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/gallery</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/fees</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/ivf-treatments-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/best-prostate-cancer-treatment-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/breast-cancer-treatment-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/heart-valve-surgery-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/glaucoma-surgery-in-india-for-international-patients</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/kidney-transplant-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/knee-replacement-surgery-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/best-spine-surgery-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/services/medical-visa-for-treatment-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/top-hospitals/top-10-hospitals-india-for-international-patients</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/cost-of-treatment/prostate-cancer-treatment-cost-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/doctors/best-prostate-cancer-doctors-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/top-10-cancer-hospitals-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/best-cancer-hospitals-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/radiation-therapy-for-prostate-cancer-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/prostate-cancer-survival-rate-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/why-choose-india-for-prostate-cancer-treatment</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/hormone-therapy-for-prostate-cancer-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/metastatic-prostate-cancer-treatment-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/medical-visa-cancer-treatment-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/hip-replacement-surgery-for-international-patients</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/best-hospitals-for-hip-replacement-surgery-in-india</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/hip-replacement-surgery-success-rate</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/what-are-the-negatives-of-a-hip-replacement</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-    <url>
-        <loc>https://www.ekamcure.com/blog/hip-replacement-surgery-risks-complications</loc>
-        <lastmod>2026-08-20</lastmod>
-    </url>
-
+<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
+<script/>
+<url>
+<loc>https://www.ekamcure.com/</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/about</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/contact</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/services</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/top-hospitals</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/patient-story</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/gallery</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/fees</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/ivf-treatments-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/best-prostate-cancer-treatment-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/breast-cancer-treatment-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/heart-valve-surgery-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/glaucoma-surgery-in-india-for-international-patients</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/kidney-transplant-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/knee-replacement-surgery-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/best-spine-surgery-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/services/medical-visa-for-treatment-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/top-hospitals/top-10-hospitals-india-for-international-patients</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/cost-of-treatment/prostate-cancer-treatment-cost-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/doctors/best-prostate-cancer-doctors-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/top-10-cancer-hospitals-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/best-cancer-hospitals-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/radiation-therapy-for-prostate-cancer-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/prostate-cancer-survival-rate-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/why-choose-india-for-prostate-cancer-treatment</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/hormone-therapy-for-prostate-cancer-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/metastatic-prostate-cancer-treatment-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/medical-visa-cancer-treatment-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/hip-replacement-surgery-for-international-patients</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/best-hospitals-for-hip-replacement-surgery-in-india</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/hip-replacement-surgery-success-rate</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/what-are-the-negatives-of-a-hip-replacement</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/hip-replacement-surgery-risks-complications</loc>
+<lastmod>2026-08-20</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/total-budget-medical-trip-to-india</loc>
+<lastmod>2026-09-23</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/eye-care/laser-cataract-surgery-in-india</loc>
+<lastmod>2026-09-23</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/blog/types-of-cataract-surgery-in-india</loc>
+<lastmod>2026-09-23</lastmod>
+</url>
+<url>
+<loc>https://www.ekamcure.com/treatments/eye-care/cornea-transplant-surgery-in-india</loc>
+<lastmod>2026-09-23</lastmod>
+</url>
 </urlset>
