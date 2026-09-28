@@ -22,23 +22,36 @@ export default function BoneMarrowTransplantHospitals() {
             {/* MAIN CONTENT AREA */}
             <main className="lg:col-span-2 space-y-12">
               
-              {/* HERO / INTRO SECTION */}
-              <section className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
-                  Bone Marrow Transplant Hospitals in India
-                </h1>
-                
-                <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                  A bone marrow transplant, also known as a stem cell transplant, is a specialised treatment used for selected blood cancers, blood disorders and certain conditions affecting the blood-forming system. Because the treatment involves detailed testing, specialised medical teams and prolonged monitoring, choosing an appropriate transplant hospital is an important part of the treatment journey.
-                </p>
-                
-                <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                  India has hospitals with dedicated haematology, haemato-oncology and stem cell transplant departments. For patients travelling from overseas, the decision may also involve consultation arrangements, medical records, treatment estimates, accommodation and follow-up planning.
-                </p>
-                
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  Ekam helps international patients coordinate these aspects and connect with appropriate hospitals and specialists in India based on their individual medical requirements.
-                </p>
+              {/* HERO & BANNER SECTION */}
+              <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                {/* BLOG BANNER IMAGE */}
+                <div className="relative w-full h-64 sm:h-80 md:h-96">
+                  <Image
+                    src="/banner/bone-marrow-transplant-hospitals.jpg" // Apna banner image path yahan check/change kar lein
+                    alt="Bone Marrow Transplant Hospitals in India"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="p-6 sm:p-8">
+                  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Bone Marrow Transplant Hospitals in India
+                  </h1>
+                  
+                  <p className="text-gray-700 leading-relaxed text-lg mb-4">
+                    A bone marrow transplant, also known as a stem cell transplant, is a specialised treatment used for selected blood cancers, blood disorders and certain conditions affecting the blood-forming system. Because the treatment involves detailed testing, specialised medical teams and prolonged monitoring, choosing an appropriate transplant hospital is an important part of the treatment journey.
+                  </p>
+                  
+                  <p className="text-gray-700 leading-relaxed text-lg mb-4">
+                    India has hospitals with dedicated haematology, haemato-oncology and stem cell transplant departments. For patients travelling from overseas, the decision may also involve consultation arrangements, medical records, treatment estimates, accommodation and follow-up planning.
+                  </p>
+                  
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Ekam helps international patients coordinate these aspects and connect with appropriate hospitals and specialists in India based on their individual medical requirements.
+                  </p>
+                </div>
               </section>
 
               {/* WHAT MAKES A HOSPITAL SUITABLE */}
