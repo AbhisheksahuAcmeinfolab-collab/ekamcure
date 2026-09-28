@@ -1,10 +1,10 @@
 import Script from "next/script";
 import React from "react";
 import Link from "next/link";
-import CTA from "../../../Component/cta.jsx";
+import CTA from "../../../../Component/cta.jsx";
 import Image from "next/image";
-import ContactForm from "../../../Component/ContactForm.jsx";
-import Sidebar from "../../../Component/Sidebar.jsx";
+import ContactForm from "../../../../Component/ContactForm.jsx";
+import Sidebar from "../../../../Component/Sidebar.jsx";
 
 import {
   Activity,
