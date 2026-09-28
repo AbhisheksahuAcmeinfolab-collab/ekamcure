@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import CTA from "../../../Component/cta.jsx";
 import ContactForm from "../../../Component/ContactForm.jsx";
 import Sidebar from "../../../Component/Sidebar.jsx";
@@ -24,21 +23,14 @@ const moreRelatedLinks = [
 export default function TypesOfCataractSurgeryInIndiaPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
-      {/* HERO SECTION WITH SINGLE BANNER IMAGE */}
+      {/* HERO SECTION (NO EXTRA BANNER IMAGE CONTAINER) */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
-        {/* HERO BANNER IMAGE CONTAINER */}
-        <div className="relative w-full h-64 sm:h-80 md:h-96">
-          <Image
-            src="/banner/cataract-surgery-in-india.jpg"
-            alt="Types of Cataract Surgery in India"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#053161] via-transparent to-black/20" />
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
+          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
+        <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 mb-6 text-xs md:text-sm font-medium">
               Ophthalmology • Eye Care Guide
@@ -57,9 +49,9 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
 
       {/* MAIN CONTENT CONTAINER */}
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-14">
-        <div className="grid lg:grid-cols-[minmax(0,1fr)_340px] gap-8 lg:gap-10 items-start">
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_360px] gap-8 lg:gap-10 items-start">
           
-          {/* LEFT CONTAINER */}
+          {/* LEFT CONTAINER (ARTICLE & MAIN CONTENT) */}
           <div className="space-y-8">
             
             {/* IN THIS PAGE NAVIGATION */}
@@ -583,16 +575,13 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
                   </div>
                 </section>
 
-                {/* CTA COMPONENT */}
+                {/* CTA COMPONENT AT END OF ARTICLE */}
                 <CTA />
 
               </div>
             </article>
 
-            {/* CONTACT FORM COMPONENT */}
-            <ContactForm />
-
-            {/* MORE RELATED LINKS (LEFT BOTTOM) */}
+            {/* MORE RELATED LINKS (BOTTOM LEFT) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-5">
                 More Related Links
@@ -612,8 +601,12 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
 
           </div>
 
-          {/* RIGHT SIDEBAR COMPONENT */}
+          {/* RIGHT SIDEBAR (CONTAINS CONTACT FORM & SIDEBAR COMPONENTS) */}
           <aside className="space-y-6 lg:sticky lg:top-24">
+            {/* CONTACT FORM ADDED IN RIGHT SIDEBAR */}
+            <ContactForm />
+
+            {/* SIDEBAR COMPONENT */}
             <Sidebar />
           </aside>
 
