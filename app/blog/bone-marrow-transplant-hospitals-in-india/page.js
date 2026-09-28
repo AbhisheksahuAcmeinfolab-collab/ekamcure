@@ -1,27 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import CTA from "../../../Component/cta.jsx";
+import ContactForm from "../../../Component/ContactForm.jsx";
+import Sidebar from "../../../Component/Sidebar.jsx";
 
 export const metadata = {
   title: "Types of Cataract Surgery in India: Safest Surgery & Best Age",
   description:
     "Explore the types of cataract surgery in India, including phaco, MSICS and laser surgery. Learn about safety, the best age and treatment options.",
 };
-
-const relatedArticles = [
-  { title: "Best Cancer Hospitals in India", href: "/blog/best-cancer-hospitals-in-india" },
-  { title: "Best Hospitals for Hip Replacement Surgery in India", href: "/blog/best-hospitals-for-hip-replacement-surgery-in-india" },
-  { title: "Hip Replacement Surgery for International Patients", href: "/blog/hip-replacement-surgery-for-international-patients" },
-  { title: "Hip Replacement Surgery Success Rate", href: "/blog/hip-replacement-surgery-success-rate" },
-  { title: "Hip Replacement Surgery Risks & Complications", href: "/blog/hip-replacement-surgery-risks-complications" },
-  { title: "Hormone Therapy for Prostate Cancer in India", href: "/blog/hormone-therapy-for-prostate-cancer-in-india" },
-  { title: "Medical Visa for Cancer Treatment in India", href: "/blog/medical-visa-cancer-treatment-india" },
-  { title: "Metastatic Prostate Cancer Treatment in India", href: "/blog/metastatic-prostate-cancer-treatment-india" },
-  { title: "Prostate Cancer Survival Rate in India", href: "/blog/prostate-cancer-survival-rate-in-india" },
-  { title: "Radiation Therapy for Prostate Cancer in India", href: "/blog/radiation-therapy-for-prostate-cancer-in-india" },
-  { title: "Top 10 Cancer Hospitals in India", href: "/blog/top-10-cancer-hospitals-in-india" },
-  { title: "What Are the Negatives of a Hip Replacement", href: "/blog/what-are-the-negatives-of-a-hip-replacement" },
-  { title: "Why Choose India for Prostate Cancer Treatment", href: "/blog/why-choose-india-for-prostate-cancer-treatment" },
-];
 
 const moreRelatedLinks = [
   { title: "Hip Replacement Surgery Cost in India for International Patients", href: "/cost-of-treatment/hip-replacement-surgery-cost-india-international-patients" },
@@ -37,17 +24,12 @@ const moreRelatedLinks = [
 export default function TypesOfCataractSurgeryInIndiaPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
-      {/* HERO SECTION WITH BANNER IMAGE */}
+      {/* HERO SECTION WITH SINGLE BANNER IMAGE */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
-          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white" />
-        </div>
-
         {/* HERO BANNER IMAGE CONTAINER */}
         <div className="relative w-full h-64 sm:h-80 md:h-96">
           <Image
-            src="/banner/cataract-surgery-in-india.jpg" // Image ka path zarourat ke hisaab se update kar lein
+            src="/banner/cataract-surgery-in-india.jpg"
             alt="Types of Cataract Surgery in India"
             fill
             priority
@@ -601,46 +583,14 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
                   </div>
                 </section>
 
-                {/* CONCLUSION / FINAL CTA BOX */}
-                <section>
-                  <div className="rounded-2xl border border-[#DCE5F0] bg-[#F8FAFD] p-6 md:p-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#053161] mb-4">
-                      Conclusion
-                    </h2>
-                
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      Modern cataract surgery offers several treatment approaches, including phacoemulsification, MSICS and femtosecond laser-assisted cataract surgery. The best option depends on the patient&apos;s cataract, eye health, visual requirements and the surgeon&apos;s assessment.
-                    </p>
-                    
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                      There is also no fixed “best age” for cataract surgery. Rather than waiting for a particular birthday or for the cataract to become mature, patients should consider surgery when declining vision begins to affect everyday activities.
-                    </p>
-
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                      If you are considering cataract surgery in India, an ophthalmologist can assess your eyes, explain the available techniques and recommend the most appropriate procedure and IOL for your individual needs.
-                    </p>
-
-                    <h3 className="text-xl md:text-2xl font-bold text-[#053161] mb-3">
-                      Get Cataract Treatment in India with Ekam
-                    </h3>
-
-                    <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                      Ekam can help international patients coordinate ophthalmology consultations, identify suitable hospitals, understand treatment options and arrange support during their medical journey in India.
-                    </p>
-                
-                    <div className="mb-6">
-                      <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center rounded-xl bg-[#053161] text-white px-7 py-3.5 font-bold hover:bg-[#1B4F9C] transition"
-                      >
-                        Request a personalised cataract treatment consultation with Ekam today →
-                      </Link>
-                    </div>
-                  </div>
-                </section>
+                {/* CTA COMPONENT */}
+                <CTA />
 
               </div>
             </article>
+
+            {/* CONTACT FORM COMPONENT */}
+            <ContactForm />
 
             {/* MORE RELATED LINKS (LEFT BOTTOM) */}
             <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6 md:p-8">
@@ -662,46 +612,9 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
 
           </div>
 
-          {/* RIGHT SIDEBAR */}
+          {/* RIGHT SIDEBAR COMPONENT */}
           <aside className="space-y-6 lg:sticky lg:top-24">
-            
-            {/* 1. GET YOUR ASSESSMENT */}
-            <div className="rounded-2xl bg-gradient-to-br from-[#053161] to-[#1B4F9C] p-6 text-white shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5 text-2xl">
-                👁️
-              </div>
-              <h3 className="text-xl font-bold mb-3">
-                Get Consultation
-              </h3>
-              <p className="text-white/85 text-sm leading-6 mb-5">
-                Get an expert eye assessment and treatment planning guide tailored to your requirements.
-              </p>
-              <Link
-                href="/contact"
-                className="block text-center bg-white text-[#053161] rounded-xl px-5 py-3 font-bold hover:bg-[#F8FAFD] transition"
-              >
-                Get Started →
-              </Link>
-            </div>
-
-            {/* 2. RELATED ARTICLES */}
-            <div className="bg-white rounded-2xl border border-[#E1E8F0] shadow-sm p-6">
-              <h3 className="text-xl font-bold text-[#053161] mb-5">
-                Related Articles
-              </h3>
-              <div className="space-y-3 text-sm">
-                {relatedArticles.map((article, index) => (
-                  <Link
-                    key={index}
-                    href={article.href}
-                    className="block text-[#425466] hover:text-[#1B4F9C] hover:font-semibold transition-all py-1 border-b border-gray-100 last:border-0"
-                  >
-                    • {article.title}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
+            <Sidebar />
           </aside>
 
         </div>
