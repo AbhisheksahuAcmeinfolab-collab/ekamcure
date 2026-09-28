@@ -370,7 +370,7 @@ export default function BoneMarrowTransplantInIndia() {
               </div>
             </section>
 
-            {/* DOCTORS SECTION */}
+           {/* DOCTORS SECTION */}
             <section id="experienced-bone-marrow-transplant-doctors-in-india" className="mb-16">
               <h2 className="text-3xl font-bold border-b-4 border-pink-500 inline-block pb-2 mb-6 text-gray-900">
                 Experienced Bone Marrow Transplant Doctors in India
@@ -378,40 +378,73 @@ export default function BoneMarrowTransplantInIndia() {
               <p className="bg-white p-6 rounded-xl shadow text-gray-700 mb-6">
                 Choosing the right specialist is an important part of planning bone marrow transplant treatment in India. The appropriate doctor may depend on the patient's age, diagnosis, treatment history and type of transplant being considered. International patients can review specialist profiles and discuss their medical records with the treating hospital before travelling.
               </p>
-
+            
               <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
-                  <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. Satyaranjan Das – Max Healthcare</h3>
-                  <p className="text-gray-700 leading-relaxed mb-3">
-                    Dr. Satyaranjan Das is associated with Cancer Care/Oncology at Max Healthcare. Max Healthcare lists Bone Marrow Transplant among its transplant medicine services. International patients can review his official profile and discuss consultation options based on their medical requirements.
-                  </p>
-                  <p className="text-pink-600 font-semibold text-sm">
-                    Doctor Profile: Dr. Satyaranjan Das – Max Healthcare
-                  </p>
+                {/* Dr. Satyaranjan Das */}
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500 flex flex-col md:flex-row gap-6 items-center md:items-start">
+                  <div className="relative w-36 h-36 flex-shrink-0 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
+                    <Image
+                      src="/doctor/Dr. Satyaranjan Das – Max Healthcare.png"
+                      alt="Dr. Satyaranjan Das"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. Satyaranjan Das – Max Healthcare</h3>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      Dr. Satyaranjan Das is associated with Cancer Care/Oncology at Max Healthcare. Max Healthcare lists Bone Marrow Transplant among its transplant medicine services. International patients can review his official profile and discuss consultation options based on their medical requirements.
+                    </p>
+                    <p className="text-pink-600 font-semibold text-sm">
+                      Doctor Profile: Dr. Satyaranjan Das – Max Healthcare
+                    </p>
+                  </div>
                 </div>
-
-                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
-                  <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. Chandrika Verma – Max Healthcare</h3>
-                  <p className="text-gray-700 leading-relaxed mb-3">
-                    Dr. Chandrika Verma is a Paediatric Oncology specialist at Max Healthcare. Her expertise may be relevant for children requiring evaluation and treatment for blood cancers and related conditions, including cases where bone marrow transplant may be considered.
-                  </p>
-                  <p className="text-pink-600 font-semibold text-sm">
-                    Doctor Profile: Dr. Chandrika Verma – Max Healthcare
-                  </p>
+            
+                {/* Dr. Chandrika Verma */}
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500 flex flex-col md:flex-row gap-6 items-center md:items-start">
+                  <div className="relative w-36 h-36 flex-shrink-0 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
+                    <Image
+                      src="/doctor/Dr. Chandrika Verma – Max Healthcare.png"
+                      alt="Dr. Chandrika Verma"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. Chandrika Verma – Max Healthcare</h3>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      Dr. Chandrika Verma is a Paediatric Oncology specialist at Max Healthcare. Her expertise may be relevant for children requiring evaluation and treatment for blood cancers and related conditions, including cases where bone marrow transplant may be considered.
+                    </p>
+                    <p className="text-pink-600 font-semibold text-sm">
+                      Doctor Profile: Dr. Chandrika Verma – Max Healthcare
+                    </p>
+                  </div>
                 </div>
-
-                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500">
-                  <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. (Maj) Ravi Shankar – Yatharth Hospitals</h3>
-                  <p className="text-gray-700 leading-relaxed mb-3">
-                    Dr. (Maj) Ravi Shankar is a Consultant in Paediatric Haemato-Oncology & BMT at Yatharth Hospitals. His profile is particularly relevant for paediatric patients requiring haematology, oncology or bone marrow transplant evaluation.
-                  </p>
-                  <p className="text-pink-600 font-semibold text-sm">
-                    Doctor Profile: Dr. Ravi Shankar – Yatharth Hospitals
-                  </p>
+            
+                {/* Dr. (Maj) Ravi Shankar */}
+                <div className="bg-white p-6 rounded-xl shadow border-l-4 border-pink-500 flex flex-col md:flex-row gap-6 items-center md:items-start">
+                  <div className="relative w-36 h-36 flex-shrink-0 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
+                    <Image
+                      src="/doctor/Dr. (Maj) Ravi Shankar – Yatharth Hospitals.png"
+                      alt="Dr. (Maj) Ravi Shankar"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-gray-800 mb-1">Dr. (Maj) Ravi Shankar – Yatharth Hospitals</h3>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      Dr. (Maj) Ravi Shankar is a Consultant in Paediatric Haemato-Oncology & BMT at Yatharth Hospitals. His profile is particularly relevant for paediatric patients requiring haematology, oncology or bone marrow transplant evaluation.
+                    </p>
+                    <p className="text-pink-600 font-semibold text-sm">
+                      Doctor Profile: Dr. Ravi Shankar – Yatharth Hospitals
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>
-
+            
             {/* HOW EKAM CAN HELP */}
             <section id="how-ekam-can-help-international-patients" className="mb-16">
               <h2 className="text-3xl font-bold border-b-4 border-pink-500 inline-block pb-2 mb-6 text-gray-900">
