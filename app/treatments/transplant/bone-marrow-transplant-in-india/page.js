@@ -2,13 +2,42 @@ import Script from "next/script";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ContactForm from "../../../Component/ContactForm";
+
+// Make sure the import path matches your directory case-sensitively (e.g. @/components/ContactForm)
+import ContactForm from "@/components/ContactForm"; 
 
 export const metadata = {
   title: "Bone Marrow Transplant in India | Cost & Treatment",
   description:
     "Explore bone marrow transplant in India, including treatment types, cost, recovery, risks and international patient support with Ekam.",
 };
+
+const doctors = [
+  {
+    name: "Dr. Satyaranjan Das",
+    hospital: "Max Healthcare",
+    role: "Oncology & Transplant Medicine Specialist",
+    image: "/doctor/Dr. Satyaranjan Das – Max Healthcare.png", // Replace with your image path
+    description:
+      "Dr. Satyaranjan Das is associated with Cancer Care/Oncology at Max Healthcare. Max Healthcare lists Bone Marrow Transplant among its transplant medicine services. International patients can review his official profile and discuss consultation options based on their medical requirements.",
+  },
+  {
+    name: "Dr. Chandrika Verma",
+    hospital: "Max Healthcare",
+    role: "Paediatric Oncology Specialist",
+    image: "/doctor/Dr. Chandrika Verma – Max Healthcare.png", // Replace with your image path
+    description:
+      "Dr. Chandrika Verma is a Paediatric Oncology specialist at Max Healthcare. Her expertise may be relevant for children requiring evaluation and treatment for blood cancers and related conditions, including cases where bone marrow transplant may be considered.",
+  },
+  {
+    name: "Dr. (Maj) Ravi Shankar",
+    hospital: "Yatharth Hospitals",
+    role: "Consultant - Paediatric Haemato-Oncology & BMT",
+    image: "/doctor/Dr. (Maj) Ravi Shankar – Yatharth Hospitals.png", // Replace with your image path
+    description:
+      "Dr. (Maj) Ravi Shankar is a Consultant in Paediatric Haemato-Oncology & BMT at Yatharth Hospitals. His profile is particularly relevant for paediatric patients requiring haematology, oncology or bone marrow transplant evaluation.",
+  },
+];
 
 export default function BoneMarrowTransplantIndia() {
   return (
@@ -119,7 +148,7 @@ export default function BoneMarrowTransplantIndia() {
 
                 <div className="bg-white rounded-xl shadow-lg p-8 mt-8">
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    A specialized treatment for some blood malignancies, blood disorders, immune system disorders, and other diseases involving the bone marrow or blood-forming cells is bone marrow transplantation, also referred to as stem cell transplantation. A specialized treatment for some blood malignancies, blood disorders, immune system disorders, and other diseases involving the bone marrow or blood-forming cells is bone marrow transplantation, also referred to as stem cell transplantation.
+                    A specialized treatment for some blood malignancies, blood disorders, immune system disorders, and other diseases involving the bone marrow or blood-forming cells is bone marrow transplantation, also referred to as stem cell transplantation.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed mb-4">
@@ -374,7 +403,7 @@ export default function BoneMarrowTransplantIndia() {
                 </div>
               </section>
 
-              {/* EXPERIENCED DOCTORS */}
+              {/* EXPERIENCED DOCTORS WITH IMAGES */}
               <section className="mb-16" id="experienced-doctors">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Experienced Bone Marrow Transplant Doctors in India
@@ -386,43 +415,42 @@ export default function BoneMarrowTransplantIndia() {
                   </p>
                 </div>
 
-                {/* DR. SATYARANJAN DAS */}
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg p-8 mb-8">
-                  <h3 className="text-2xl font-bold text-pink-600 mb-4">
-                    Dr. Satyaranjan Das – Max Healthcare
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Dr. Satyaranjan Das is associated with Cancer Care/Oncology at Max Healthcare. Max Healthcare lists Bone Marrow Transplant among its transplant medicine services. International patients can review his official profile and discuss consultation options based on their medical requirements.
-                  </p>
-                  <p className="font-semibold text-gray-800">
-                    Doctor Profile: Dr. Satyaranjan Das – Max Healthcare
-                  </p>
-                </div>
+                {/* DOCTOR CARDS WITH PHOTOS */}
+                <div className="space-y-8">
+                  {doctors.map((doc, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white rounded-2xl shadow-lg overflow-hidden border border-pink-100 p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 hover:shadow-xl transition-shadow"
+                    >
+                      <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-2xl overflow-hidden flex-shrink-0 bg-gray-100 border-2 border-pink-200 shadow-md">
+                        <Image
+                          src={doc.image}
+                          alt={doc.name}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 144px, 176px"
+                        />
+                      </div>
 
-                {/* DR. CHANDRIKA VERMA */}
-                <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-                  <h3 className="text-2xl font-bold text-pink-600 mb-4">
-                    Dr. Chandrika Verma – Max Healthcare
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Dr. Chandrika Verma is a Paediatric Oncology specialist at Max Healthcare. Her expertise may be relevant for children requiring evaluation and treatment for blood cancers and related conditions, including cases where bone marrow transplant may be considered.
-                  </p>
-                  <p className="font-semibold text-gray-800">
-                    Doctor Profile: Dr. Chandrika Verma – Max Healthcare
-                  </p>
-                </div>
-
-                {/* DR. (MAJ) RAVI SHANKAR */}
-                <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl shadow-lg p-8">
-                  <h3 className="text-2xl font-bold text-pink-600 mb-4">
-                    Dr. (Maj) Ravi Shankar – Yatharth Hospitals
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Dr. (Maj) Ravi Shankar is a Consultant in Paediatric Haemato-Oncology & BMT at Yatharth Hospitals. His profile is particularly relevant for paediatric patients requiring haematology, oncology or bone marrow transplant evaluation.
-                  </p>
-                  <p className="font-semibold text-gray-800">
-                    Doctor Profile: Dr. Ravi Shankar – Yatharth Hospitals
-                  </p>
+                      <div className="flex-1 text-center md:text-left">
+                        <span className="inline-block bg-pink-100 text-pink-700 font-semibold text-xs px-3 py-1 rounded-full mb-2">
+                          {doc.hospital}
+                        </span>
+                        <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                          {doc.name}
+                        </h3>
+                        <p className="text-pink-600 font-medium text-sm mb-3">
+                          {doc.role}
+                        </p>
+                        <p className="text-gray-700 leading-relaxed text-sm mb-4">
+                          {doc.description}
+                        </p>
+                        <p className="font-semibold text-xs text-gray-500 uppercase tracking-wider">
+                          Doctor Profile: {doc.name} – {doc.hospital}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </section>
 
