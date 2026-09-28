@@ -4,9 +4,9 @@ import ContactForm from "../../../Component/ContactForm.jsx";
 import Sidebar from "../../../Component/Sidebar.jsx";
 
 export const metadata = {
-  title: "Types of Cataract Surgery in India: Safest Surgery & Best Age",
+  title: "Bone Marrow Transplant Hospitals in India",
   description:
-    "Explore the types of cataract surgery in India, including phaco, MSICS and laser surgery. Learn about safety, the best age and treatment options.",
+    "Explore bone marrow transplant hospitals in India, treatment options, specialist care, costs, and support for international patients travelling to India.",
 };
 
 const moreRelatedLinks = [
@@ -20,10 +20,10 @@ const moreRelatedLinks = [
   { title: "Medical Visa for Treatment in India: Cost, Requirements & Application Process", href: "/services/medical-visa-for-treatment-in-india" },
 ];
 
-export default function TypesOfCataractSurgeryInIndiaPage() {
+export default function BoneMarrowTransplantHospitalsInIndiaPage() {
   return (
     <main className="bg-[#F6F9FD] text-[#053161]">
-      {/* HERO SECTION (NO EXTRA BANNER IMAGE CONTAINER) */}
+      {/* HERO SECTION (BANNER IMAGE REMOVED) */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#053161] via-[#1B4F9C] to-[#6796CC]">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white" />
@@ -33,15 +33,15 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
         <div className="relative max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white rounded-full px-4 py-1.5 mb-6 text-xs md:text-sm font-medium">
-              Ophthalmology • Eye Care Guide
+              Haematology • Stem Cell Treatment Guide
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-              Types of Cataract Surgery in India: Safest Surgery & Best Age for Cataract Treatment
+              Bone Marrow Transplant Hospitals in India
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              Cataract is one of the most common causes of vision impairment, particularly among older adults. Learn about surgical types, safety, timing, and treatment in India.
+              A bone marrow transplant, also known as a stem cell transplant, is a specialised treatment used for selected blood cancers, blood disorders and certain conditions affecting the blood-forming system.
             </p>
           </div>
         </div>
@@ -60,32 +60,29 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
                 In This Page
               </h3>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm font-medium">
-                <a href="#introduction" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                <a href="#overview" className="text-[#1B4F9C] hover:text-pink-600 transition">
                   • Overview
                 </a>
-                <a href="#3-types" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • 3 Types of Cataract Surgery
+                <a href="#suitable-hospital" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • What Makes a Hospital Suitable?
                 </a>
-                <a href="#types-in-india" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Types of Cataract Surgery in India
+                <a href="#hospitals-in-india" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • BMT Hospitals in India
                 </a>
-                <a href="#safest-surgery" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • What Is the Safest Cataract Surgery?
+                <a href="#how-selected" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • How Right Hospital is Selected
                 </a>
-                <a href="#best-age" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • What Is the Best Age?
+                <a href="#cost" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Cost in India
                 </a>
-                <a href="#what-happens" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • What Happens During Surgery
+                <a href="#patient-journey" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Patient Journey
                 </a>
-                <a href="#which-is-best" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Which Cataract Surgery Is Best for You?
+                <a href="#questions-to-ask" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • Questions to Ask
                 </a>
-                <a href="#international-patients" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • Cataract Surgery in India for International Patients
-                </a>
-                <a href="#choose-surgeon" className="text-[#1B4F9C] hover:text-pink-600 transition">
-                  • How to Choose a Cataract Surgeon in India
+                <a href="#ekam-support" className="text-[#1B4F9C] hover:text-pink-600 transition">
+                  • How Ekam Helps
                 </a>
                 <a href="#faqs" className="text-[#1B4F9C] hover:text-pink-600 transition">
                   • FAQs
@@ -97,433 +94,293 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
             <article className="bg-white rounded-2xl shadow-sm border border-[#E1E8F0] overflow-hidden">
               <div className="p-6 md:p-10 lg:p-12">
                 
-                {/* INTRODUCTION */}
-                <section id="introduction" className="mb-12">
+                {/* OVERVIEW SECTION */}
+                <section id="overview" className="mb-12">
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Cataract is one of the most common causes of vision impairment, particularly among older adults. It occurs when the natural lens of the eye becomes cloudy, causing symptoms such as blurred vision, glare, difficulty seeing at night, faded colours and problems with reading or driving. Cataract surgery is the definitive treatment when the cataract begins to interfere with everyday activities.
+                    A bone marrow transplant, also known as a stem cell transplant, is a specialised treatment used for selected blood cancers, blood disorders and certain conditions affecting the blood-forming system. Because the treatment involves detailed testing, specialised medical teams and prolonged monitoring, choosing an appropriate transplant hospital is an important part of the treatment journey.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Modern cataract surgery has evolved considerably, with techniques ranging from conventional phacoemulsification to manual small-incision cataract surgery (MSICS) and femtosecond laser-assisted cataract surgery (FLACS). Each technique has specific applications, benefits and limitations.
+                    India has hospitals with dedicated haematology, haemato-oncology and stem cell transplant departments. For patients travelling from overseas, the decision may also involve consultation arrangements, medical records, treatment estimates, accommodation and follow-up planning.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    For international patients considering cataract treatment in India, understanding these options can help when discussing treatment with an ophthalmologist.
+                    Ekam helps international patients coordinate these aspects and connect with appropriate hospitals and specialists in India based on their individual medical requirements.
                   </p>
                 </section>
 
-                {/* WHAT ARE THE 3 TYPES */}
-                <section id="3-types" className="mb-12">
-                  <SectionHeading>What Are the 3 Types of Cataract Surgery?</SectionHeading>
+                {/* WHAT MAKES A HOSPITAL SUITABLE */}
+                <section id="suitable-hospital" className="mb-12">
+                  <SectionHeading>What Makes a Bone Marrow Transplant Hospital Suitable?</SectionHeading>
                   
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    When discussing the main surgical approaches used for cataract removal, three important techniques are:
-                  </p>
-
-                  <BulletList
-                    items={[
-                      "Phacoemulsification cataract surgery",
-                      "Manual Small-Incision Cataract Surgery (MSICS/SICS)",
-                      "Femtosecond Laser-Assisted Cataract Surgery (FLACS)",
-                    ]}
-                  />
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    All three procedures aim to remove the cloudy natural lens and, in most modern cataract operations, replace it with an artificial intraocular lens (IOL).
+                    There is no single hospital that is appropriate for every patient. The right transplant centre depends on the patient&apos;s diagnosis, age, previous treatment, general health and the type of transplant being considered.
                   </p>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-6 font-semibold text-[#053161]">
-                    Let&apos;s understand each technique in more detail.
+                    Before selecting a hospital, patients may consider the following factors:
                   </p>
 
-                  <SubHeading>1. Phacoemulsification Cataract Surgery</SubHeading>
+                  <SubHeading>Specialist Transplant Team</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Phacoemulsification is one of the most widely used modern cataract surgery techniques.
+                    Bone marrow transplantation requires coordination between different areas of medical care. A hospital may have haematologists, haemato-oncologists, transplant specialists, intensive-care teams, laboratory specialists and other healthcare professionals involved in patient management.
                   </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    During the procedure, the surgeon makes a small incision in the eye and uses an ultrasound-powered instrument to break the cloudy lens into smaller pieces. The lens material is then removed, and an artificial intraocular lens is implanted.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Modern phacoemulsification generally uses a small incision, which can contribute to faster recovery compared with older large-incision cataract techniques.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    Patients should ask which specialist will assess their case and whether the hospital manages their particular condition.
                   </p>
 
-                  <div className="my-6 p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <h4 className="text-lg font-bold text-[#053161] mb-3">
-                      Advantages of Phacoemulsification
-                    </h4>
-                    <BulletList
-                      items={[
-                        "Small surgical incision",
-                        "Established surgical technique",
-                        "Usually allows relatively quick visual recovery",
-                        "Suitable for many routine cataract cases",
-                        "Multiple IOL options can be considered",
-                        "Widely available in modern eye hospitals",
-                      ]}
-                    />
-                  </div>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-8">
-                    Phacoemulsification remains an important standard technique for cataract surgery and may be an appropriate option for many patients.
-                  </p>
-
-                  <SubHeading>2. Manual Small-Incision Cataract Surgery (MSICS)</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Manual Small-Incision Cataract Surgery, commonly called MSICS or SICS, is another cataract removal technique, particularly useful in settings where access to expensive phacoemulsification equipment may be limited.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    The surgeon creates a self-sealing small incision and manually removes the cataractous lens. An intraocular lens is then implanted.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    MSICS can be particularly useful for certain dense or advanced cataracts and in high-volume or resource-sensitive settings. Evidence indicates that MSICS and phacoemulsification can produce comparable visual outcomes in many settings, although the techniques have different characteristics and recovery profiles.
-                  </p>
-
-                  <div className="my-6 p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <h4 className="text-lg font-bold text-[#053161] mb-3">
-                      Advantages of MSICS
-                    </h4>
-                    <BulletList
-                      items={[
-                        "Smaller incision than traditional ECCE",
-                        "Does not require the same level of phacoemulsification technology",
-                        "Can be cost-effective",
-                        "Useful for selected dense cataracts",
-                        "Can provide good visual outcomes when appropriately performed",
-                      ]}
-                    />
-                  </div>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-8">
-                    The suitability of MSICS depends on the cataract, eye health, surgeon expertise and available facilities.
-                  </p>
-
-                  <SubHeading>3. Femtosecond Laser-Assisted Cataract Surgery (FLACS)</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Femtosecond Laser-Assisted Cataract Surgery (FLACS) uses a femtosecond laser to assist the surgeon with selected steps of cataract surgery.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-3 font-semibold text-[#053161]">
-                    Depending on the system and treatment plan, the laser can assist with:
+                  <SubHeading>Transplant Options</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-3">
+                    The transplant approach varies from one patient to another. Depending on the medical situation, a transplant centre may provide procedures such as:
                   </p>
                   <BulletList
                     items={[
-                      "Corneal incisions",
-                      "Anterior capsulotomy",
-                      "Cataract fragmentation",
-                      "Selected astigmatism-management procedures",
+                      "Autologous stem cell transplantation",
+                      "Allogeneic stem cell transplantation",
+                      "Haploidentical transplantation",
+                      "Transplants using different appropriate stem-cell sources",
                     ]}
                   />
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    The surgeon still performs the essential lens removal and IOL implantation steps. Therefore, laser cataract surgery should not be understood as a completely automated procedure.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    The treating team decides which approach is medically appropriate after reviewing the patient&apos;s condition.
                   </p>
 
-                  <div className="my-6 p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                    <h4 className="text-lg font-bold text-[#053161] mb-3">
-                      Potential Advantages of FLACS
-                    </h4>
-                    <BulletList
-                      items={[
-                        "Computer-assisted precision for selected surgical steps",
-                        "More reproducible capsulotomy in some circumstances",
-                        "Can reduce the amount of ultrasound energy required for lens fragmentation in selected cases",
-                        "May be useful when advanced IOLs or astigmatism management are part of the treatment plan",
-                      ]}
-                    />
-                  </div>
-
+                  <SubHeading>Pre-Transplant Testing</SubHeading>
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    However, the availability of laser technology does not automatically mean that FLACS is the best option for every patient. Evidence has not consistently demonstrated superior clinical outcomes compared with well-performed conventional phacoemulsification for routine cataract cases.
+                    A transplant programme generally requires detailed preparation before the procedure. The evaluation may involve blood investigations, imaging, organ-function testing, disease-specific tests and other assessments.
+                  </p>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    For donor-based transplantation, additional compatibility and donor investigations may also be required.
+                  </p>
+
+                  <SubHeading>Donor and Stem Cell Facilities</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Patients who require an allogeneic transplant may need an appropriate donor. The medical team assesses donor compatibility and determines which donor or stem-cell source can be considered.
+                  </p>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    Patients should discuss donor testing and stem-cell collection with the hospital before making treatment arrangements.
+                  </p>
+
+                  <SubHeading>Monitoring and Supportive Care</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    The period following transplantation can require close medical observation. A suitable centre should have the facilities and medical support required for monitoring blood counts, infections, treatment-related effects and other potential complications.
+                  </p>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    The level of monitoring varies according to the transplant procedure and individual patient requirements.
                   </p>
                 </section>
 
-                {/* TYPES OF CATARACT SURGERY IN INDIA */}
-                <section id="types-in-india" className="mb-12">
-                  <SectionHeading>Types of Cataract Surgery in India</SectionHeading>
+                {/* HOSPITALS IN INDIA */}
+                <section id="hospitals-in-india" className="mb-12">
+                  <SectionHeading>Bone Marrow Transplant Hospitals in India</SectionHeading>
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    Patients looking for cataract surgery in India may encounter several surgical options depending on their diagnosis, cataract density, eye health, hospital facilities and surgeon&apos;s expertise.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    India has several hospital groups with specialised oncology, haematology and stem cell transplant services. The services available can differ between hospitals and locations, so international patients should confirm the relevant programme before travelling.
                   </p>
 
-                  <CostTable
-                    headers={["Cataract Surgery Type", "Main Technology", "Common Use", "Key Consideration"]}
-                    rows={[
-                      ["Phacoemulsification", "Ultrasound", "Routine cataract surgery", "Widely used modern technique"],
-                      ["MSICS / SICS", "Manual small-incision technique", "Selected cataracts, including dense cataracts", "Cost-effective and less technology-dependent"],
-                      ["FLACS", "Femtosecond laser + lens-removal technique", "Selected patients and advanced surgical planning", "May provide greater precision for selected steps"],
-                      ["ECCE", "Manual extracapsular extraction", "Selected advanced/complex cases", "Larger incision; less common for routine modern cases"],
+                  <div className="space-y-6">
+                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="text-xl font-bold text-[#053161] mb-2">Max Healthcare</h4>
+                      <p className="text-[#425466] text-base md:text-lg leading-8">
+                        Max Healthcare has specialised departments covering cancer care, haematology and transplant-related treatment. Patients can undergo an evaluation with an appropriate specialist to determine whether a bone marrow or stem cell transplant may be considered for their condition. Patients should share their medical history and available reports before travelling so that the medical team can determine the next steps.
+                      </p>
+                    </div>
+
+                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="text-xl font-bold text-[#053161] mb-2">Yatharth Hospitals</h4>
+                      <p className="text-[#425466] text-base md:text-lg leading-8">
+                        Yatharth Hospitals provides specialised services in areas including haematology and haemato-oncology. Its specialist teams include doctors involved in paediatric haemato-oncology and bone marrow transplantation. The appropriate treatment pathway is decided following a detailed medical assessment.
+                      </p>
+                    </div>
+
+                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="text-xl font-bold text-[#053161] mb-2">Apollo Hospitals</h4>
+                      <p className="text-[#425466] text-base md:text-lg leading-8">
+                        Apollo Hospitals provides specialised cancer and haematology services, including stem cell and bone marrow transplant programmes at selected locations. Patients should confirm the availability of the required transplant service and relevant specialist at the particular Apollo hospital they are considering.
+                      </p>
+                    </div>
+
+                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="text-xl font-bold text-[#053161] mb-2">Fortis Healthcare</h4>
+                      <p className="text-[#425466] text-base md:text-lg leading-8">
+                        Fortis Healthcare provides specialised medical care across oncology and haematology, with transplant-related services available at selected centres. Patients can request a specialist evaluation to understand whether transplantation is suitable for their diagnosis and treatment history.
+                      </p>
+                    </div>
+
+                    <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="text-xl font-bold text-[#053161] mb-2">Medanta – The Medicity</h4>
+                      <p className="text-[#425466] text-base md:text-lg leading-8">
+                        Medanta provides specialised services in cancer care and haematology through multidisciplinary teams. Patients considering transplantation can undergo an assessment to determine their eligibility and potential treatment pathway.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                {/* HOW RIGHT HOSPITAL IS SELECTED */}
+                <section id="how-selected" className="mb-12">
+                  <SectionHeading>How Is the Right Hospital Selected for an International Patient?</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    For patients travelling from another country, hospital selection can involve additional considerations. Medical suitability should remain the starting point, followed by practical factors related to the patient&apos;s journey.
+                  </p>
+                  
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-3 font-semibold text-[#053161]">
+                    Patients may compare:
+                  </p>
+
+                  <BulletList
+                    items={[
+                      "Specialist expertise relevant to their diagnosis",
+                      "Type of transplant available",
+                      "Diagnostic and laboratory facilities",
+                      "Donor evaluation and compatibility testing",
+                      "Inpatient and post-transplant monitoring",
+                      "Availability of supportive medical services",
+                      "Expected duration of treatment and hospital stay",
+                      "Follow-up requirements",
+                      "Estimated treatment expenses",
+                      "International patient coordination services",
                     ]}
                   />
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mt-4">
-                    Traditional extracapsular cataract extraction (ECCE) remains an option in specific circumstances, but modern small-incision techniques have substantially reduced the need for traditional large-incision surgery.
+                    A hospital should be selected after reviewing the patient&apos;s medical records and discussing the treatment plan with the relevant specialist.
                   </p>
                 </section>
 
-                {/* WHAT IS THE SAFEST CATARACT SURGERY */}
-                <section id="safest-surgery" className="mb-12">
-                  <SectionHeading>What Is the Safest Cataract Surgery?</SectionHeading>
+                {/* COST SECTION */}
+                <section id="cost" className="mb-12">
+                  <SectionHeading>Bone Marrow Transplant Cost in India</SectionHeading>
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    There is no single cataract surgery technique that can be called the safest for every patient.
+                    The total expense of a bone marrow transplant can differ significantly between patients. There is no universal price because treatment requirements depend on the individual&apos;s medical situation.
                   </p>
+
                   <p className="text-[#425466] text-base md:text-lg leading-8 mb-3 font-semibold text-[#053161]">
-                    The safest approach is generally the one that is appropriate for the patient&apos;s:
-                  </p>
-                  <BulletList
-                    items={[
-                      "Cataract type and density",
-                      "Corneal health",
-                      "Retina and optic nerve condition",
-                      "Previous eye surgery",
-                      "Other eye diseases",
-                      "Overall medical condition",
-                      "Desired visual outcome",
-                      "IOL requirements",
-                      "Surgeon expertise and available technology",
-                    ]}
-                  />
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Modern cataract surgery is generally considered a safe and effective procedure, but every surgery carries potential risks.
-                  </p>
-
-                  <SubHeading>Is Laser Cataract Surgery Safer Than Phacoemulsification?</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Not necessarily.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    FLACS can provide greater precision and repeatability for certain surgical steps, and it may offer advantages in selected clinical situations. However, current evidence does not establish that FLACS is universally safer or provides better outcomes than conventional phacoemulsification for routine cataract cases.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Therefore, patients should not choose a cataract procedure simply because it uses a laser.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Instead, the ophthalmologist should determine which approach offers the most appropriate balance of safety, visual outcomes and practicality for the individual patient.
-                  </p>
-
-                  <SubHeading>Is Phacoemulsification Safe?</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Phacoemulsification is an established modern cataract surgery technique and is widely used.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    The procedure uses a small incision and ultrasound energy to fragment the cloudy lens before it is removed. An IOL is then implanted to replace the natural lens.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    As with any eye surgery, potential complications can occur. These may include infection, inflammation, retinal problems, changes in eye pressure, posterior capsule opacification or problems involving the IOL.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    The individual risk depends on the patient&apos;s eye health and the complexity of the surgery.
-                  </p>
-
-                  <SubHeading>Is MSICS Safe?</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    MSICS can be a safe and effective cataract surgery technique when performed by an experienced surgeon in an appropriate patient.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    It has particular value in settings where reducing equipment requirements and treatment costs is important. Studies summarized by the American Academy of Ophthalmology&apos;s EyeWiki indicate that MSICS and phacoemulsification can produce similar visual outcomes in many patients, although individual results and complication profiles vary.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    For a patient with a very dense cataract, the surgeon may consider MSICS or another technique depending on the clinical situation.
-                  </p>
-                </section>
-
-                {/* BEST AGE FOR CATARACT SURGERY */}
-                <section id="best-age" className="mb-12">
-                  <SectionHeading>What Is the Best Age for Cataract Surgery?</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    There is no fixed age at which everyone should have cataract surgery.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    A person does not need to wait until a particular age, such as 60, 65 or 70, before having cataract surgery.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Instead, surgery is generally considered when the cataract begins to interfere significantly with the person&apos;s vision and daily activities.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-3 font-semibold text-[#053161]">
-                    For example, surgery may become appropriate when cataracts make it difficult to:
-                  </p>
-                  <BulletList
-                    items={[
-                      "Read books or newspapers",
-                      "Use a computer or mobile phone",
-                      "Drive safely",
-                      "Recognise faces",
-                      "Watch television",
-                      "Work",
-                      "Walk safely in unfamiliar environments",
-                      "See clearly in low-light conditions",
-                    ]}
-                  />
-
-                  <SubHeading>Cataract Surgery at 50</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Some people develop visually significant cataracts in their 40s or 50s.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    If the cataract substantially affects vision and daily life, surgery may be appropriate after an eye examination. Age alone should not determine whether surgery is recommended.
-                  </p>
-
-                  <SubHeading>Cataract Surgery at 60</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Many age-related cataract patients begin considering surgery around this stage of life, but there is no requirement to wait until 60.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    If vision is significantly affected, cataract surgery may be discussed earlier.
-                  </p>
-
-                  <SubHeading>Cataract Surgery at 70 or Older</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Older adults can also undergo cataract surgery if their general health and eye condition make surgery appropriate.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    The decision should be based on visual needs, overall health, eye health and the expected benefits of treatment.
-                  </p>
-
-                  <SubHeading>Should You Wait for the Cataract to Become Mature?</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Usually, there is no need to deliberately wait until a cataract becomes very advanced.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Historically, patients were sometimes advised to wait until the cataract became “mature.” Modern cataract surgery allows treatment based primarily on the patient&apos;s visual needs and the impact of cataract on daily life.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Waiting too long may make the cataract harder to manage in some cases, particularly if it becomes very dense.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    The appropriate timing should therefore be discussed with an ophthalmologist.
-                  </p>
-                </section>
-
-                {/* WHAT HAPPENS DURING CATARACT SURGERY */}
-                <section id="what-happens" className="mb-12">
-                  <SectionHeading>What Happens During Cataract Surgery?</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
-                    Although the exact technique varies, modern cataract surgery generally follows these steps:
-                  </p>
-
-                  <div className="space-y-4">
-                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 1: Eye Examination</h4>
-                      <p className="text-[#425466] leading-7">The ophthalmologist examines the eyes and measures the eye to plan the procedure and calculate the appropriate IOL.</p>
-                    </div>
-
-                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 2: Anaesthesia</h4>
-                      <p className="text-[#425466] leading-7">Cataract surgery is commonly performed using local or topical anaesthesia. Patients are usually awake during the procedure.</p>
-                    </div>
-
-                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 3: Cataract Removal</h4>
-                      <p className="text-[#425466] leading-7">The surgeon uses the selected technique to remove the cloudy natural lens.</p>
-                    </div>
-
-                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 4: IOL Implantation</h4>
-                      <p className="text-[#425466] leading-7">An artificial intraocular lens is implanted inside the eye to replace the natural lens.</p>
-                    </div>
-
-                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
-                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 5: Postoperative Monitoring</h4>
-                      <p className="text-[#425466] leading-7">After surgery, the patient receives postoperative instructions, medications and follow-up arrangements.</p>
-                    </div>
-                  </div>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mt-6">
-                    In many cases, cataract surgery is performed as a day-care procedure, allowing the patient to return home the same day.
-                  </p>
-                </section>
-
-                {/* WHICH CATARACT SURGERY IS BEST FOR YOU */}
-                <section id="which-is-best" className="mb-12">
-                  <SectionHeading>Which Cataract Surgery Is Best for You?</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    The best cataract surgery is not necessarily the newest or most expensive option.
-                  </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-[#053161]">
-                    An ophthalmologist may consider:
+                    Factors that can affect the overall cost include:
                   </p>
 
                   <BulletList
                     items={[
-                      "For routine cataracts: Phacoemulsification may be an appropriate choice for many patients.",
-                      "For selected dense or advanced cataracts: MSICS or another surgical approach may be considered depending on the eye and surgeon's assessment.",
-                      "For selected patients seeking laser-assisted treatment: FLACS may assist with specific surgical steps and may be considered when its potential benefits are relevant to the patient's treatment plan.",
-                      "For patients with astigmatism: A toric IOL or selected corneal-incision techniques may be considered.",
-                      "For patients seeking reduced dependence on glasses: Advanced IOL options such as multifocal, trifocal or EDOF lenses may be discussed if the patient's eyes are suitable.",
+                      "Type of transplant",
+                      "Underlying disease",
+                      "Pre-transplant investigations",
+                      "Donor evaluation",
+                      "Stem cell collection",
+                      "Conditioning treatment",
+                      "Hospitalisation",
+                      "Medicines",
+                      "Blood and platelet support",
+                      "Management of complications",
+                      "Follow-up treatment",
                     ]}
                   />
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 mt-4">
-                    The final choice should be made after a detailed ophthalmic examination.
+                    International patients should request a personalised estimate after their medical records have been reviewed. The initial estimate may change if additional investigations or treatment become necessary.
                   </p>
                 </section>
 
-                {/* INTERNATIONAL PATIENTS */}
-                <section id="international-patients" className="mb-12">
-                  <SectionHeading>Cataract Surgery in India for International Patients</SectionHeading>
+                {/* PATIENT JOURNEY */}
+                <section id="patient-journey" className="mb-12">
+                  <SectionHeading>Bone Marrow Transplant Journey for International Patients</SectionHeading>
 
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    India has a large network of ophthalmology hospitals and specialists offering different cataract surgery techniques.
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-6">
+                    Travelling to India for a complex medical procedure requires preparation before arrival. Ekam can help patients coordinate the different stages of the journey.
                   </p>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4 font-semibold text-[#053161]">
-                    International patients may consider India for cataract treatment because they can access:
+
+                  <div className="space-y-4 mb-8">
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 1: Share Medical Information</h4>
+                      <p className="text-[#425466] leading-7">Patients can provide available medical records, laboratory results, imaging reports, biopsy reports and previous treatment details for initial review.</p>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 2: Specialist Review</h4>
+                      <p className="text-[#425466] leading-7">The relevant specialist reviews the available information and may recommend additional investigations or a consultation before confirming the treatment approach.</p>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 3: Hospital Coordination</h4>
+                      <p className="text-[#425466] leading-7">Once a suitable treatment pathway is identified, Ekam can assist with coordinating the consultation and hospital-related arrangements.</p>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 4: Treatment Planning</h4>
+                      <p className="text-[#425466] leading-7">The treating hospital develops the medical plan. Depending on the case, this may involve donor evaluation, conditioning therapy, stem cell collection and transplantation.</p>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 5: Travel and Stay Arrangements</h4>
+                      <p className="text-[#425466] leading-7">International patients may need assistance with accommodation, local transportation and other practical arrangements during their stay in India.</p>
+                    </div>
+
+                    <div className="p-5 rounded-xl bg-[#F8FAFD] border border-[#E1E8F0]">
+                      <h4 className="font-bold text-[#053161] text-base md:text-lg mb-1">Step 6: Post-Transplant Follow-Up</h4>
+                      <p className="text-[#425466] leading-7">Bone marrow transplantation does not end when the patient leaves the hospital. Follow-up appointments, investigations and medicines may continue for an extended period. The treating specialist determines the required follow-up schedule.</p>
+                    </div>
+                  </div>
+
+                  <SubHeading>Support for Patients from Other Countries</SubHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Ekam also supports international patients travelling from Nigeria, Kenya, Tanzania, Uganda, Ethiopia, Sudan, South Sudan, Zambia, Zimbabwe, Rwanda, DR Congo, Sierra Leone, Liberia, Malawi, Papua New Guinea and Solomon Islands.
+                  </p>
+                  <p className="text-[#425466] text-base md:text-lg leading-8">
+                    The support provided can vary according to the patient&apos;s medical and travel requirements. Patients can contact Ekam to discuss their individual treatment needs and understand the available international patient assistance.
+                  </p>
+                </section>
+
+                {/* QUESTIONS TO ASK */}
+                <section id="questions-to-ask" className="mb-12">
+                  <SectionHeading>Questions to Ask Before Choosing a Bone Marrow Transplant Hospital</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Before travelling to India, patients may find it useful to discuss the following questions with the hospital:
                   </p>
 
                   <BulletList
                     items={[
-                      "Experienced ophthalmologists",
-                      "Modern eye hospitals",
-                      "Phacoemulsification",
-                      "Femtosecond laser-assisted cataract surgery at selected centres",
-                      "Different IOL options",
-                      "Diagnostic eye testing",
-                      "Postoperative follow-up",
-                      "International patient coordination",
+                      "Does the hospital treat my specific condition?",
+                      "Which transplant specialist will evaluate my case?",
+                      "What medical reports should I provide?",
+                      "Will I need donor compatibility testing?",
+                      "Which type of transplant may be considered?",
+                      "What investigations are required before treatment?",
+                      "What is included in the estimated treatment cost?",
+                      "How long could the hospital stay be?",
+                      "What follow-up care will I need after transplantation?",
+                      "What arrangements should I make before travelling to India?",
+                    ]}
+                  />
+                </section>
+
+                {/* HOW EKAM HELPS */}
+                <section id="ekam-support" className="mb-12">
+                  <SectionHeading>How Ekam Helps International Patients</SectionHeading>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Planning treatment in another country can involve multiple medical and logistical steps. Ekam helps international patients coordinate these steps by assisting with specialist consultations, hospital communication and treatment planning.
+                  </p>
+
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-3 font-semibold text-[#053161]">
+                    Depending on the patient&apos;s requirements, support may include:
+                  </p>
+
+                  <BulletList
+                    items={[
+                      "Medical record coordination",
+                      "Specialist consultation coordination",
+                      "Hospital coordination",
+                      "Treatment cost estimates",
+                      "Travel assistance",
+                      "Accommodation support",
+                      "Local coordination during treatment",
+                      "Follow-up coordination",
                     ]}
                   />
 
                   <p className="text-[#425466] text-base md:text-lg leading-8 italic bg-[#F8FAFD] p-4 rounded-xl border border-[#E1E8F0] mt-4">
-                    However, patients should choose a hospital and surgeon based on clinical suitability, experience, technology, postoperative care and overall treatment plan, rather than cost alone.
-                  </p>
-                </section>
-
-                {/* HOW TO CHOOSE A CATARACT SURGEON */}
-                <section id="choose-surgeon" className="mb-12">
-                  <SectionHeading>How to Choose a Cataract Surgeon in India</SectionHeading>
-
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-5">
-                    When selecting a cataract surgeon, consider:
-                  </p>
-
-                  <SubHeading>Experience</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Ask about the surgeon&apos;s experience with the recommended cataract procedure.
-                  </p>
-
-                  <SubHeading>Technology</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Check whether the hospital has the technology required for your specific treatment.
-                  </p>
-
-                  <SubHeading>IOL Options</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Ask which IOLs are available and why a particular lens has been recommended.
-                  </p>
-
-                  <SubHeading>Complication Management</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    A good cataract centre should have appropriate facilities and expertise to manage potential complications.
-                  </p>
-
-                  <SubHeading>Follow-Up Care</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Ask how postoperative monitoring will be arranged, especially if you are travelling internationally.
-                  </p>
-
-                  <SubHeading>Complete Treatment Cost</SubHeading>
-                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
-                    Request a detailed quotation covering surgery, IOL, investigations, hospital charges and follow-up care.
+                    Ekam does not determine whether a patient requires transplantation. The diagnosis, eligibility for transplantation, treatment method and final medical decisions are made by the treating healthcare professionals after clinical evaluation.
                   </p>
                 </section>
 
@@ -533,46 +390,41 @@ export default function TypesOfCataractSurgeryInIndiaPage() {
 
                   <div className="space-y-4">
                     <FAQ
-                      question="What are the 3 main types of cataract surgery?"
-                      answer="Phacoemulsification, femtosecond laser-assisted cataract surgery (FLACS), and manual small-incision cataract surgery (MSICS/SICS) are the three contemporary methods that are frequently addressed. Traditional ECCE may still be used in selected cases."
+                      question="Which hospitals provide bone marrow transplant treatment in India?"
+                      answer="Several hospitals in India provide specialised haematology, haemato-oncology and stem cell transplant services. These include major hospital groups such as Max Healthcare, Yatharth Hospitals, Apollo Hospitals, Fortis Healthcare and Medanta. Availability of specific transplant programmes can vary by hospital and location."
                     />
                     <FAQ
-                      question="What is the safest cataract surgery?"
-                      answer="There isn't a particular method that works best for every patient. The safest approach depends on the cataract, eye health, surgeon expertise and available technology. Both conventional phacoemulsification and FLACS can be safe, while MSICS is also an established option in appropriate settings."
+                      question="What is the cost of a bone marrow transplant in India?"
+                      answer="The cost depends on the transplant type, patient's condition, investigations, donor requirements, hospital stay, medicines and other treatment-related factors. An individual estimate should be obtained after medical assessment."
                     />
                     <FAQ
-                      question="Is laser cataract surgery safer than normal cataract surgery?"
-                      answer="FLACS can provide greater precision for selected surgical steps, but evidence does not show that it is universally safer or clinically superior to conventional phacoemulsification for routine cases."
+                      question="Can international patients receive bone marrow transplant treatment in India?"
+                      answer="International patients can seek evaluation and treatment at specialised Indian hospitals, subject to medical assessment, treatment suitability and hospital acceptance."
                     />
                     <FAQ
-                      question="What is the best age for cataract surgery?"
-                      answer="There is no universal best age. Surgery is generally considered when the cataract begins to interfere with vision and daily activities."
+                      question="How can I choose a bone marrow transplant hospital in India?"
+                      answer="Consider the hospital's relevant specialist team, transplant services, diagnostic facilities, donor evaluation capabilities, supportive care and follow-up arrangements. The patient's medical requirements should guide the final decision."
                     />
                     <FAQ
-                      question="Can cataract surgery be done at 50?"
-                      answer="Yes. Cataract surgery can be performed at 50 or younger when a cataract significantly affects vision and the ophthalmologist determines that surgery is appropriate."
+                      question="Can Ekam arrange a consultation with a bone marrow transplant specialist?"
+                      answer="Ekam can help international patients coordinate specialist consultations by collecting relevant medical information and communicating with appropriate hospitals according to the patient's requirements."
                     />
                     <FAQ
-                      question="Can cataract surgery be done after 70?"
-                      answer="Yes. Age alone does not prevent cataract surgery. The patient's general health, eye health, visual needs and expected benefits should be assessed."
-                    />
-                    <FAQ
-                      question="Is phacoemulsification better than MSICS?"
-                      answer="Neither technique is universally better for every patient. Phacoemulsification offers small-incision surgery and is widely used, while MSICS can be particularly useful in resource-sensitive settings and selected dense cataracts. The appropriate technique depends on the individual case."
-                    />
-                    <FAQ
-                      question="Is laser cataract surgery worth the additional cost?"
-                      answer="It depends on the individual patient. FLACS can provide additional precision for selected surgical steps, but routine cases have not consistently shown superior clinical outcomes compared with conventional phacoemulsification."
-                    />
-                    <FAQ
-                      question="Does cataract surgery permanently remove cataracts?"
-                      answer="The cloudy natural lens is removed during cataract surgery and replaced with an artificial IOL. A cataract does not grow back in the implanted lens, although posterior capsule opacification can occur later and may be treated separately."
-                    />
-                    <FAQ
-                      question="Can international patients undergo cataract surgery in India?"
-                      answer="Yes. International patients can seek cataract treatment in India after an ophthalmologist determines that surgery is appropriate. Medical travel coordinators such as Ekam can assist with specialist consultation, hospital coordination, treatment planning and other aspects of the medical journey."
+                      question="Do all bone marrow transplant patients need a donor?"
+                      answer="No. An autologous transplant uses the patient's own stem cells. An allogeneic transplant uses stem cells obtained from another person. The patient's condition and medical evaluation determine the best course of action."
                     />
                   </div>
+                </section>
+
+                {/* CONCLUSION */}
+                <section className="mb-12">
+                  <SectionHeading>Conclusion</SectionHeading>
+                  <p className="text-[#425466] text-base md:text-lg leading-8 mb-4">
+                    Choosing among bone marrow transplant hospitals in India should begin with the patient&apos;s medical requirements rather than simply comparing hospitals or prices. Specialist expertise, transplant facilities, donor assessment, supportive care and follow-up planning are important considerations.
+                  </p>
+                  <p className="text-[#425466] text-base md:text-lg leading-8">
+                    For international patients, medical coordination is equally important. Ekam can assist patients from Mauritius, Fiji, Ghana, Maldives and other countries with specialist consultations, hospital coordination, treatment estimates and practical arrangements for their medical journey in India.
+                  </p>
                 </section>
 
                 {/* CTA COMPONENT AT END OF ARTICLE */}
@@ -649,35 +501,6 @@ function BulletList({ items }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function CostTable({ headers, rows }) {
-  return (
-    <div className="overflow-x-auto my-6 border border-[#E1E8F0] rounded-xl shadow-sm">
-      <table className="w-full text-left border-collapse">
-        <thead>
-          <tr className="bg-[#053161] text-white text-sm md:text-base">
-            {headers.map((header, idx) => (
-              <th key={idx} className="p-3.5 md:p-4 font-semibold border-b border-[#E1E8F0]">
-                {header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-[#E1E8F0] text-sm md:text-base text-[#425466]">
-          {rows.map((row, rIdx) => (
-            <tr key={rIdx} className={rIdx % 2 === 0 ? "bg-white" : "bg-[#F8FAFD]"}>
-              {row.map((cell, cIdx) => (
-                <td key={cIdx} className="p-3.5 md:p-4 font-medium text-[#053161]">
-                  {cell}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   );
 }
 
