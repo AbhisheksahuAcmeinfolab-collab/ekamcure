@@ -10,166 +10,158 @@ export const metadata = {
     "Explore Hip Replacement Surgery in India 2026 including Total Hip Replacement Cost India, Robotic Hip Replacement Cost India & treatment for international patients.",
 };
 
-      export default function HipReplacementIndia() {
-            const schemaData = {
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "MedicalWebPage",
-                  "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#webpage",
-                  "url": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india",
-                  "name": "Hip Replacement Surgery in India | Best Orthopedic Specialists & Cost",
-                  "description": "Comprehensive guide to hip replacement surgery in India for international patients, covering procedure types, costs, top orthopedic hospitals, success rates, and medical travel assistance.",
-                  "inLanguage": "en",
-                  "about": {
-                    "@type": "MedicalProcedure",
-                    "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#procedure",
-                    "name": "Hip Replacement Surgery",
-                    "alternateName": "Total Hip Arthroplasty",
-                    "procedureType": {
-                      "@type": "MedicalProcedureType",
-                      "name": "SurgicalProcedure"
-                    },
-                    "bodyLocation": "Hip Joint",
-                    "description": "A surgical procedure in which a damaged or diseased hip joint is replaced with a prosthetic implant to relieve pain, restore mobility, and improve joint function."
-                  },
-                  "publisher": {
-                    "@type": "MedicalOrganization",
-                    "@id": "https://www.ekamcure.com/#organization",
-                    "name": "Ekam Cure",
-                    "url": "https://www.ekamcure.com/",
-                    "logo": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
-                    "telephone": "09990205353",
-                    "email": "info@ekamcure.com",
-                    "address": {
-                      "@type": "PostalAddress",
-                      "streetAddress": "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
-                      "addressLocality": "Noida",
-                      "addressRegion": "Uttar Pradesh",
-                      "postalCode": "201304",
-                      "addressCountry": "IN"
-                    },
-                    "areaServed": [
-                      { "@type": "Continent", "name": "Africa" },
-                      { "@type": "Country", "name": "Kenya" },
-                      { "@type": "Country", "name": "Ghana" },
-                      { "@type": "Country", "name": "Mauritius" },
-                      { "@type": "Country", "name": "Fiji" },
-                      { "@type": "Country", "name": "Zimbabwe" },
-                      { "@type": "Country", "name": "South Africa" }
-                    ]
-                  }
-                },
-                {
-                  "@type": "BreadcrumbList",
-                  "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#breadcrumb",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://www.ekamcure.com/"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "name": "Treatments",
-                      "item": "https://www.ekamcure.com/treatments"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 3,
-                      "name": "Hip Replacement Surgery in India",
-                      "item": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india"
-                    }
-                  ]
-                },
-                {
-                  "@type": "FAQPage",
-                  "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#faq",
-                  "mainEntity": [
-                    {
-                      "@type": "Question",
-                      "name": "How Long Does Hip Replacement Surgery Take?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "The procedure typically lasts a few hours. Duration depends on complexity, patient anatomy, and whether it is a primary or revision surgery. Preoperative preparation and postoperative monitoring add additional time in the hospital setting."
-                      }
-                    },
-                    {
-                      "@type": "Question",
-                      "name": "Is Hip Replacement Safe for Elderly Patients?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes, hip replacement is commonly performed in elderly individuals with severe arthritis or fractures. Safety depends more on overall health status than age alone. Preoperative evaluations assess heart function, blood parameters, and anesthesia fitness to minimize risk. Many elderly patients regain significant independence after surgery."
-                      }
-                    },
-                    {
-                      "@type": "Question",
-                      "name": "When Can I Travel Back Home?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "For international patients, travel timing depends on recovery progress and medical clearance. Surgeons typically recommend staying in India for follow-up evaluation before long-distance travel. Clearance ensures wound healing and reduces clot risk. Each case is assessed individually."
-                      }
-                    },
-                    {
-                      "@type": "Question",
-                      "name": "Will My Implant Trigger Airport Security?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Hip implants may occasionally trigger metal detectors at airports. While implant identification cards are not always mandatory, your surgeon can provide documentation if needed. Security personnel are familiar with joint replacement implants."
-                      }
-                    },
-                    {
-                      "@type": "Question",
-                      "name": "How Long Before I Can Walk Normally?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Most patients begin walking with assistance within 24 hours after surgery. Walking improves steadily over weeks with physiotherapy. Many patients regain comfortable, independent walking within a few months, depending on overall health and rehabilitation commitment."
-                      }
-                    }
-                  ]
-                }
-              ]
-            };
-          
-            return (
-              <>
-                {/* Schema Script via Next.js Script Component */}
-                <Script
-                  id="hip-replacement-schema"
-                  type="application/ld+json"
-                  dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-                />
-          
-                <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
-                  {/* HERO SECTION */}
-                  <div className="relative bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 overflow-hidden">
-                    <div className="max-w-7xl mx-auto px-4 text-center">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        Hip Replacement Surgery in India
-                      </h1>
-                    </div>
-                  </div>
-          
-                  {/* PAGE LAYOUT */}
-                  <div className="w-full px-4 lg:px-8 py-10">
-                    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
-                      {/* LEFT SIDEBAR (FORM + SIDEBAR CONTENT) */}
-                      <div className="lg:col-span-3 order-1">
-                        <div className="lg:sticky lg:top-24">
-                          <div className="shadow-lg">
-                            {/* Contact Form */}
-                            <ContactForm />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </>
-            );
+export default function HipReplacementIndia() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#webpage",
+        "url": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india",
+        "name": "Hip Replacement Surgery in India | Best Orthopedic Specialists & Cost",
+        "description": "Comprehensive guide to hip replacement surgery in India for international patients, covering procedure types, costs, top orthopedic hospitals, success rates, and medical travel assistance.",
+        "inLanguage": "en",
+        "about": {
+          "@type": "MedicalProcedure",
+          "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#procedure",
+          "name": "Hip Replacement Surgery",
+          "alternateName": "Total Hip Arthroplasty",
+          "procedureType": {
+            "@type": "MedicalProcedureType",
+            "name": "SurgicalProcedure"
+          },
+          "bodyLocation": "Hip Joint",
+          "description": "A surgical procedure in which a damaged or diseased hip joint is replaced with a prosthetic implant to relieve pain, restore mobility, and improve joint function."
+        },
+        "publisher": {
+          "@type": "MedicalOrganization",
+          "@id": "https://www.ekamcure.com/#organization",
+          "name": "Ekam Cure",
+          "url": "https://www.ekamcure.com/",
+          "logo": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
+          "telephone": "09990205353",
+          "email": "info@ekamcure.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
+            "addressLocality": "Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201304",
+            "addressCountry": "IN"
+          },
+          "areaServed": [
+            { "@type": "Continent", "name": "Africa" },
+            { "@type": "Country", "name": "Kenya" },
+            { "@type": "Country", "name": "Ghana" },
+            { "@type": "Country", "name": "Mauritius" },
+            { "@type": "Country", "name": "Fiji" },
+            { "@type": "Country", "name": "Zimbabwe" },
+            { "@type": "Country", "name": "South Africa" }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.ekamcure.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Treatments",
+            "item": "https://www.ekamcure.com/treatments"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hip Replacement Surgery in India",
+            "item": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india"
           }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.ekamcure.com/treatments/hip-replacement-surgery-in-india#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How Long Does Hip Replacement Surgery Take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The procedure typically lasts a few hours. Duration depends on complexity, patient anatomy, and whether it is a primary or revision surgery. Preoperative preparation and postoperative monitoring add additional time in the hospital setting."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Hip Replacement Safe for Elderly Patients?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, hip replacement is commonly performed in elderly individuals with severe arthritis or fractures. Safety depends more on overall health status than age alone. Preoperative evaluations assess heart function, blood parameters, and anesthesia fitness to minimize risk. Many elderly patients regain significant independence after surgery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When Can I Travel Back Home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For international patients, travel timing depends on recovery progress and medical clearance. Surgeons typically recommend staying in India for follow-up evaluation before long-distance travel. Clearance ensures wound healing and reduces clot risk. Each case is assessed individually."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will My Implant Trigger Airport Security?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hip implants may occasionally trigger metal detectors at airports. While implant identification cards are not always mandatory, your surgeon can provide documentation if needed. Security personnel are familiar with joint replacement implants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How Long Before I Can Walk Normally?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most patients begin walking with assistance within 24 hours after surgery. Walking improves steadily over weeks with physiotherapy. Many patients regain comfortable, independent walking within a few months, depending on overall health and rehabilitation commitment."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
+  return (
+    <>
+      {/* Schema Script via Next.js Script Component */}
+      <Script
+        id="hip-replacement-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+
+      <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
+        {/* HERO SECTION */}
+        <div className="relative bg-gradient-to-r from-[#053161] to-[#6796cc] text-white py-20 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Hip Replacement Surgery in India
+            </h1>
+          </div>
+        </div>
+
+        {/* PAGE LAYOUT */}
+        <div className="w-full px-4 lg:px-8 py-10">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-10 gap-8">
+            {/* LEFT SIDEBAR (FORM + SIDEBAR CONTENT) */}
+            <div className="lg:col-span-3 order-1">
+              <div className="lg:sticky lg:top-24">
+                <div className="shadow-lg">
+                  {/* Contact Form */}
+                  <ContactForm />
+                </div>
 
                 {/* SIDEBAR CONTENT BELOW FORM */}
                 <div className="mt-6 p-6 bg-white rounded-xl shadow-lg border-t-4 border-pink-500">
@@ -2499,45 +2491,9 @@ export const metadata = {
                   ></iframe>
                 </div>
               </div>
-
-              {/* REQUEST FREE COST ESTIMATE */}
-              <section className="mb-16">
-                <h3 className="text-2xl font-bold text-pink-600 mb-6">
-                  Request a Free Cost Estimate & Surgeon Recommendation
-                </h3>
-
-                <div className="bg-gradient-to-r from-[#053161] to-[#6796cc] rounded-xl shadow-lg p-8 text-white">
-                  <p className="mb-4">
-                    If you or a loved one is exploring hip replacement surgery in India, taking the first step begins with professional guidance.
-                  </p>
-
-                  <p>
-                    Reach out for a personalized case review, detailed cost estimate, and surgeon recommendation tailored to your medical needs. Your journey toward pain-free mobility can begin with informed, confident decisions.
-                  </p>
-                </div>
-              </section>
-
-              {/* CALL TO ACTION BUTTON SECTION */}
-              <div className="mt-12 mb-8 text-center bg-white rounded-2xl shadow-xl p-8 border-t-4 border-pink-500">
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                  Need Expert Medical Advice or Free Consultation?
-                </h3>
-                <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-                  Connect with top healthcare specialists in India and get personalized treatment plans tailored to your needs.
-                </p>
-                <a
-                  href="tel:+919990205353"
-                  className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-                >
-                  Call Us
-                </a>
-              </div>
-
             </div>
-
           </div>
         </div>
-
       </div>
     </>
   );
