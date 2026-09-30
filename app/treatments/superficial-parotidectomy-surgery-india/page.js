@@ -4,129 +4,138 @@ import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "../../../Component/ContactForm";
 import Sidebar from "../../../Component/Sidebar";
+
 export const metadata = {
   title: "Superficial Parotidectomy Surgery in India | Treatment & Cost",
   description:
     "Learn about superficial parotidectomy surgery in India, including procedure, treatment options, recovery, and cost comparison with other countries.",
 };
 
-const breadcrumbSchema = {
+const graphSchema = {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.ekamcure.com/"
+      "@type": "MedicalWebPage",
+      "@id": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india#webpage",
+      "url": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india",
+      "name": "Superficial Parotidectomy Surgery in India | Best Specialists & Cost",
+      "description": "Comprehensive guide to Superficial Parotidectomy Surgery in India for international patients, covering parotid gland tumor removal, facial nerve preservation, surgical techniques, cost, and top ENT/head and neck surgeons.",
+      "inLanguage": "en",
+      "about": {
+        "@type": "MedicalProcedure",
+        "@id": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india#procedure",
+        "name": "Superficial Parotidectomy",
+        "alternateName": "Superficial Parotid Gland Surgery",
+        "procedureType": {
+          "@type": "MedicalProcedureType",
+          "name": "SurgicalProcedure"
+        },
+        "bodyLocation": "Parotid Gland",
+        "description": "A surgical procedure involving the removal of the superficial lobe of the parotid salivary gland, typically performed to remove benign or localized malignant tumors while preserving the facial nerve."
+      },
+      "publisher": {
+        "@type": "MedicalOrganization",
+        "@id": "https://www.ekamcure.com/#organization",
+        "name": "Ekam Cure",
+        "url": "https://www.ekamcure.com/",
+        "logo": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
+        "telephone": "09990205353",
+        "email": "info@ekamcure.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
+          "addressLocality": "Noida",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "201304",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          {
+            "@type": "Continent",
+            "name": "Africa"
+          },
+          {
+            "@type": "Country",
+            "name": "Kenya"
+          },
+          {
+            "@type": "Country",
+            "name": "Ghana"
+          },
+          {
+            "@type": "Country",
+            "name": "Mauritius"
+          },
+          {
+            "@type": "Country",
+            "name": "Fiji"
+          },
+          {
+            "@type": "Country",
+            "name": "Zimbabwe"
+          },
+          {
+            "@type": "Country",
+            "name": "South Africa"
+          }
+        ]
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Treatments",
-      "item": "https://www.ekamcure.com/treatments"
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.ekamcure.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Treatments",
+          "item": "https://www.ekamcure.com/treatments"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Superficial Parotidectomy Surgery in India",
+          "item": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Superficial Parotidectomy Surgery",
-      "item": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india"
+      "@type": "FAQPage",
+      "@id": "https://www.ekamcure.com/treatments/superficial-parotidectomy-surgery-india#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is superficial parotidectomy a major surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, superficial parotidectomy is considered a significant surgical procedure because it involves operating near the facial nerve and major salivary glands. However, experienced surgeons use specialized techniques to perform the surgery safely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does recovery usually take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Recovery time varies depending on the patient's condition, the extent of surgery, and overall health. Most patients gradually resume normal activities after their doctor confirms adequate healing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there risks associated with parotidectomy surgery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possible risks include facial nerve weakness, infection, swelling, and other surgical complications. Doctors discuss these risks with patients before surgery to help them understand the procedure."
+          }
+        }
+      ]
     }
   ]
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is superficial parotidectomy a major surgery?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, superficial parotidectomy is considered a significant surgical procedure because it involves operating near the facial nerve and major salivary glands. However, experienced surgeons use specialized techniques to perform the surgery safely."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does recovery usually take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Recovery time varies depending on the patient's condition, the extent of surgery, and overall health. Most patients gradually resume normal activities after their doctor confirms adequate healing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there risks associated with parotidectomy surgery?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Possible risks include facial nerve weakness, infection, swelling, and other surgical complications. Doctors discuss these risks with patients before surgery to help them understand the procedure."
-      }
-    }
-  ]
-};
-
-const medicalWebPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "mainEntity": {
-    "@type": "MedicalProcedure",
-    "name": "Superficial Parotidectomy Surgery",
-    "alternateName": "Parotid Gland Surgery",
-    "description": "A surgical procedure to remove tumors or abnormal growths from the superficial lobe of the parotid gland while preserving the facial nerve.",
-    "procedureType": "SurgicalProcedure",
-    "bodyLocation": "Parotid Gland",
-    "indication": [
-      {
-        "@type": "MedicalIndication",
-        "name": "Benign Parotid Tumors"
-      },
-      {
-        "@type": "MedicalIndication",
-        "name": "Pleomorphic Adenoma"
-      },
-      {
-        "@type": "MedicalIndication",
-        "name": "Early-stage Malignant Tumors"
-      }
-    ],
-    "outcome": "Removal of parotid mass with facial nerve preservation",
-    "preparation": "Pre-surgical evaluation including CT/MRI scans and Fine Needle Aspiration (FNA) biopsy.",
-    "howItWorks": "The surgeon makes an incision near the ear, identifies and protects the facial nerve, and removes the affected superficial lobe of the parotid gland.",
-    "followup": "Wound care, monitoring facial nerve function, and management of potential complications like Frey's syndrome."
-  },
-  "audience": {
-    "@type": "Patient",
-    "healthCondition": {
-      "@type": "MedicalCondition",
-      "name": "Parotid Gland Tumors"
-    }
-  },
-  "lastReviewed": "2024-05-20"
-};
-
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Medical Facilitation for Parotid Surgery",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Ekam Cure",
-    "image": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
-    "telephone": "+919990205353",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Delhi",
-      "addressCountry": "IN"
-    }
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "lowPrice": "1500",
-    "highPrice": "2800",
-    "description": "Estimated cost for superficial parotidectomy surgery in India."
-  }
 };
 
 export default function SuperficialParotidectomyIndia() {
@@ -134,24 +143,9 @@ export default function SuperficialParotidectomyIndia() {
     <>
       {/* ── Schema.org JSON-LD Scripts ── */}
       <Script
-        id="schema-breadcrumb"
+        id="schema-graph"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <Script
-        id="schema-faq"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Script
-        id="schema-medical-webpage"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }}
-      />
-      <Script
-        id="schema-service"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graphSchema) }}
       />
 
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
