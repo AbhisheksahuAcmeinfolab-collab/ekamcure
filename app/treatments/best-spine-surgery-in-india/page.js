@@ -27,39 +27,130 @@ export default function BestSpineSurgeryInIndia() {
   return (
     <>
       <Script
-        id="spine-surgery-faq-schema"
+        id="spine-surgery-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
+            "@graph": [
               {
-                "@type": "Question",
-                name: "What is the success rate of spine surgery in India?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Success depends on the procedure and condition treated. Surgeries such as discectomy and decompression generally show favorable outcomes when patients are properly selected and rehabilitation is followed.",
+                "@type": "MedicalWebPage",
+                "@id": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india#webpage",
+                "url": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india",
+                "name": "Best Spine Surgery in India | Advanced Minimally Invasive Spine Treatment",
+                "description": "Comprehensive guide to spine surgery in India covering minimally invasive spine procedures, spinal fusion, discectomy, costs, recovery expectations, and top specialists.",
+                "inLanguage": "en",
+                "about": {
+                  "@type": "MedicalProcedure",
+                  "@id": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india#procedure",
+                  "name": "Spine Surgery",
+                  "alternateName": "Spinal Surgery Treatment",
+                  "procedureType": {
+                    "@type": "MedicalProcedureType",
+                    "name": "SurgicalProcedure"
+                  },
+                  "bodyLocation": "Spine and Spinal Cord",
+                  "description": "Surgical procedures performed to relieve back pain, correct spinal deformities, and decompress spinal nerves, including procedures such as discectomy, laminectomy, and spinal fusion."
                 },
+                "publisher": {
+                  "@type": "MedicalOrganization",
+                  "@id": "https://www.ekamcure.com/#organization",
+                  "name": "Ekam Cure",
+                  "url": "https://www.ekamcure.com/",
+                  "logo": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
+                  "telephone": "09990205353",
+                  "email": "info@ekamcure.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
+                    "addressLocality": "Noida",
+                    "addressRegion": "Uttar Pradesh",
+                    "postalCode": "201304",
+                    "addressCountry": "IN"
+                  },
+                  "areaServed": [
+                    { "@type": "Continent", "name": "Africa" },
+                    { "@type": "Country", "name": "Kenya" },
+                    { "@type": "Country", "name": "Ghana" },
+                    { "@type": "Country", "name": "Mauritius" },
+                    { "@type": "Country", "name": "Fiji" },
+                    { "@type": "Country", "name": "Zimbabwe" },
+                    { "@type": "Country", "name": "South Africa" }
+                  ]
+                }
               },
               {
-                "@type": "Question",
-                name: "How long does spine surgery recovery take?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Recovery varies by procedure. Minimally invasive surgeries may allow faster recovery, while fusion surgeries require longer healing time due to bone fusion.",
-                },
+                "@type": "BreadcrumbList",
+                "@id": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.ekamcure.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Treatments",
+                    "item": "https://www.ekamcure.com/treatments"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Best Spine Surgery in India",
+                    "item": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india"
+                  }
+                ]
               },
               {
-                "@type": "Question",
-                name: "Can spine surgery completely cure back pain?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Spine surgery primarily treats structural causes of pain and nerve compression. While many patients experience significant relief, complete elimination of back pain is not guaranteed in all cases.",
-                },
-              },
-            ],
-          }),
+                "@type": "FAQPage",
+                "@id": "https://www.ekamcure.com/treatments/best-spine-surgery-in-india#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is the success rate of spine surgery in India?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Success depends on the procedure and condition treated. Surgeries such as discectomy and decompression generally show favorable outcomes when patients are properly selected and rehabilitation is followed."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is spine surgery safe?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Spine surgery is generally safe when performed by experienced surgeons in well-equipped hospitals. Like all surgeries, it carries risks, but modern techniques reduce complications."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does spine surgery recovery take?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Recovery varies by procedure. Minimally invasive surgeries may allow faster recovery, while fusion surgeries require longer healing time due to bone fusion."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can spine surgery completely cure back pain?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Spine surgery primarily treats structural causes of pain and nerve compression. While many patients experience significant relief, complete elimination of back pain is not guaranteed in all cases."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How do I choose the best spine surgeon in India?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Look for a board-certified orthopedic or neurosurgeon with fellowship training in spine surgery, experience in minimally invasive techniques, and transparent communication about risks and outcomes."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
         }}
       />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
