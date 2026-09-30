@@ -31,38 +31,140 @@ export default function IVFTreatmentInIndia() {
   return (
     <>
       <Script
-        id="ivf-treatment-faq-schema"
+        id="ivf-treatment-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
+            "@graph": [
               {
-                "@type": "Question",
-                name: "Is IVF treatment in India safe for international patients?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, many fertility hospitals and IVF centers in India follow internationally accepted medical standards and use advanced reproductive technologies for patient care.",
+                "@type": "MedicalWebPage",
+                "@id": "https://www.ekamcure.com/ivf-treatments-in-india#webpage",
+                "url": "https://www.ekamcure.com/ivf-treatments-in-india",
+                "name": "IVF Treatment in India | Best IVF Centre & Infertility Treatment India",
+                "description": "Affordable IVF and fertility treatments in India for international patients. Complete medical tourism support including hospital selection, medical visa, and treatment planning.",
+                "inLanguage": "en",
+                "about": {
+                  "@type": "MedicalProcedure",
+                  "@id": "https://www.ekamcure.com/ivf-treatments-in-india#ivf-procedure",
+                  "name": "In Vitro Fertilization (IVF)",
+                  "alternateName": "IVF Treatment",
+                  "bodyLocation": "Uterus and Ovaries",
+                  "description": "In Vitro Fertilization is a medical procedure used to help with fertility and assist with the conception of a child."
                 },
+                "publisher": {
+                  "@type": "MedicalOrganization",
+                  "@id": "https://www.ekamcure.com/#organization",
+                  "name": "Ekam Cure",
+                  "url": "https://www.ekamcure.com/",
+                  "logo": "https://www.ekamcure.com/_next/static/media/Ekam-logo-300x133.bd70579a.webp",
+                  "telephone": "09990205353",
+                  "email": "info@ekamcure.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
+                    "addressLocality": "Noida",
+                    "addressRegion": "Uttar Pradesh",
+                    "postalCode": "201304",
+                    "addressCountry": "IN"
+                  }
+                }
               },
               {
-                "@type": "Question",
-                name: "What is the success rate of IVF treatment?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "IVF success rates vary depending on factors such as age, fertility condition, embryo quality, and overall reproductive health. Fertility specialists can provide individualized guidance after evaluation.",
-                },
+                "@type": "BreadcrumbList",
+                "@id": "https://www.ekamcure.com/ivf-treatments-in-india#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.ekamcure.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Treatments",
+                    "item": "https://www.ekamcure.com/treatments"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "IVF Treatments in India",
+                    "item": "https://www.ekamcure.com/ivf-treatments-in-india"
+                  }
+                ]
               },
               {
-                "@type": "Question",
-                name: "How long should international patients stay in India for IVF treatment?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The duration depends on the treatment plan, but many IVF procedures may require patients to stay for a few weeks for monitoring, egg retrieval, embryo transfer, and recovery.",
-                },
-              },
-            ],
+                "@type": "FAQPage",
+                "@id": "https://www.ekamcure.com/ivf-treatments-in-india#faq",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Is IVF treatment in India safe for international patients?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, many fertility hospitals and IVF centers in India follow internationally accepted medical standards and use advanced reproductive technologies for patient care."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long should international patients stay in India for IVF treatment?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "The duration depends on the treatment plan, but many IVF procedures may require patients to stay for a few weeks for monitoring, egg retrieval, embryo transfer, and recovery."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can Ekam Cure help with medical visas?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, Ekam Cure assists international patients with medical visa guidance, treatment coordination, and travel planning."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is the success rate of IVF treatment?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "IVF success rates vary depending on factors such as age, fertility condition, embryo quality, and overall reproductive health. Fertility specialists can provide individualized guidance after evaluation."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is India affordable for fertility treatment?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, India is considered one of the most affordable destinations for advanced fertility care compared to many Western countries."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What fertility treatments are available in India?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "India offers IVF, ICSI, IUI, fertility preservation, donor programs, genetic testing, laparoscopy, hysteroscopy, and several advanced reproductive procedures."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can international patients consult fertility doctors online before traveling?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, many fertility specialists in India provide online consultations and medical record reviews for international patients before treatment planning."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What should patients carry while traveling for IVF treatment?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Patients should carry medical reports, previous fertility treatment records, hormonal test results, identification documents, and prescribed medications."
+                    }
+                  }
+                ]
+              }
+            ]
           }),
         }}
       />
