@@ -13,10 +13,10 @@ import pic32 from "../assets/hospitals/saroj.webp";
 import pic33 from "../assets/hospitals/seven hills.webp";
 
 const hospitals = [
-  { name: "Gleaneagles Global Hospital", img: pic24 },
-  { name: "Manipal Hospital", img: pic25 },
-  { name: "Global Hospital", img: pic26 },
-  { name: "Bombay Hospital", img: pic28 },
+  { name: "Appasamy Hospitals", img: pic24 },
+  { name: "Asian Hospital", img: pic25 },
+  { name: "Godrej Memorial Hospital", img: pic26 },
+  { name: "MGM Hospital", img: pic28 },
   { name: "Kauvery Hospital", img: pic29 },
   { name: "Moolchand Hospital", img: pic30 },
   { name: "Primus Hospital", img: pic31 },
