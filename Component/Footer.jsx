@@ -84,7 +84,7 @@ export default function Footer() {
 </Link>
 
             <p>
-              Ekamcure is a healthcare facilitator seeking to make health and
+              Ekam is a healthcare facilitator seeking to make health and
               wellness easier for people of international residents, their
               families, and their friends.
             </p>
