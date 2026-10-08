@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { MessageCircle, FileText } from "lucide-react";
 import img from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
@@ -66,14 +67,14 @@ export default function Navbar() {
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={120}
-                height={50}
+                width={115}
+                height={48}
                 className="rounded-md"
               />
             </Link>
 
             {/* Navigation Links */}
-            <div className="flex items-center space-x-7">
+            <div className="flex items-center space-x-5 lg:space-x-6">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -82,7 +83,7 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-5">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
+                      className={`flex items-center gap-1 font-semibold transition duration-200 text-xs lg:text-sm ${
                         isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
@@ -123,9 +124,30 @@ export default function Navbar() {
               })}
 
               {/* GTranslate Desktop */}
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="gtranslate_wrapper gtranslate_desktop"></div>
               </div>
+            </div>
+
+            {/* Desktop Right Action Buttons */}
+            <div className="flex items-center gap-2.5">
+              <a
+                href="https://wa.me/919990205353"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200"
+              >
+                <MessageCircle className="w-4 h-4 text-emerald-600" />
+                <span>WhatsApp</span>
+              </a>
+
+              <a
+                href="/contact"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#053161] hover:bg-[#1B4F9C] text-white font-semibold text-xs shadow-sm transition"
+              >
+                <FileText className="w-4 h-4" />
+                <span>Get Quote</span>
+              </a>
             </div>
           </div>
 
@@ -140,8 +162,8 @@ export default function Navbar() {
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={105}
-                height={42}
+                width={100}
+                height={40}
                 className="rounded-md"
               />
             </Link>
@@ -245,14 +267,25 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Mobile Bottom CTA */}
-        <div className="p-5 border-t bg-gray-50">
+        {/* Mobile Bottom CTA Buttons */}
+        <div className="p-5 border-t bg-gray-50 flex gap-3">
+          <a
+            href="https://wa.me/919990205353"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="flex-1 py-3 text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>WhatsApp</span>
+          </a>
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="block w-full py-3 text-center bg-[#053161] hover:bg-[#1B4F9C] text-white font-bold rounded-xl shadow-md transition"
+            className="flex-1 py-3 text-center bg-[#053161] hover:bg-[#1B4F9C] text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
           >
-            Get Free Consultation
+            <FileText className="w-4 h-4" />
+            <span>Get Quote</span>
           </Link>
         </div>
       </div>
