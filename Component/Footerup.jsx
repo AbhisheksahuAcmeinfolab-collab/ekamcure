@@ -21,6 +21,7 @@ import pic40 from "../assets/hospitals/fortis.webp";
 import pic41 from "../assets/hospitals/The Sight Avenue.png";
 import pic42 from "../assets/hospitals/Eye 7.png";
 import pic43 from "../assets/hospitals/Zeeva Fertility.png";
+import pic44 from "../assets/hospitals/metro.webp";
 
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
@@ -42,10 +43,10 @@ const hospitals = [
   { name: "The Sight Avenue", img: pic41 },
   { name: "Eye7 Eye Hospitals", img: pic42 },
   { name: "Zeeva Fertility", img: pic43 },
+  { name: "Metro Hospital", img: pic44 },
 ];
 
 export default function Footerup() {
-  // 2x duplication is mathematically perfect for 0% to -50% infinite translation
   const repeatedHospitals = [...hospitals, ...hospitals];
 
   return (
@@ -71,13 +72,13 @@ export default function Footerup() {
         {/* Right Side Blur Mask */}
         <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none" />
 
-        {/* Scrolling Track */}
+        {/* Scrolling Track - Duration 45 for faster smooth scroll */}
         <motion.div
           className="flex gap-6 sm:gap-8 items-center w-max"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            duration: 65,
+            duration: 45,
             ease: "linear",
           }}
           whileHover={{ animationPlayState: "paused" }}
