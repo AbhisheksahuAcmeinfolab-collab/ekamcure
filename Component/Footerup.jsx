@@ -14,6 +14,13 @@ import pic33 from "../assets/hospitals/seven hills.webp";
 import pic34 from "../assets/hospitals/max.webp";
 import pic35 from "../assets/hospitals/yatharth.webp";
 import pic36 from "../assets/hospitals/Sharda Hospital.png";
+import pic37 from "../assets/hospitals/manipal.webp";
+import pic38 from "../assets/hospitals/apollo.webp";
+import pic39 from "../assets/hospitals/psri.webp";
+import pic40 from "../assets/hospitals/fortis.webp";
+import pic41 from "../assets/hospitals/The Sight Avenue.png";
+import pic42 from "../assets/hospitals/Eye 7.png";
+import pic43 from "../assets/hospitals/Zeeva Fertility.png";
 
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
@@ -28,15 +35,18 @@ const hospitals = [
   { name: "Max Hospital", img: pic34 },
   { name: "Yatharth Hospital", img: pic35 },
   { name: "Sharda Hospital", img: pic36 },
+  { name: "Manipal Hospital", img: pic37 },
+  { name: "Apollo Hospital", img: pic38 },
+  { name: "PSRI Hospital", img: pic39 },
+  { name: "Fortis Hospital", img: pic40 },
+  { name: "The Sight Avenue", img: pic41 },
+  { name: "Eye7 Eye Hospitals", img: pic42 },
+  { name: "Zeeva Fertility", img: pic43 },
 ];
 
 export default function Footerup() {
-  const repeatedHospitals = [
-    ...hospitals,
-    ...hospitals,
-    ...hospitals,
-    ...hospitals,
-  ];
+  // 2x duplication is mathematically perfect for 0% to -50% infinite translation
+  const repeatedHospitals = [...hospitals, ...hospitals];
 
   return (
     <section className="py-12 bg-gradient-to-b from-slate-50 via-white to-blue-50/20 overflow-hidden relative border-t border-slate-100">
@@ -67,7 +77,7 @@ export default function Footerup() {
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            duration: 55,
+            duration: 65,
             ease: "linear",
           }}
           whileHover={{ animationPlayState: "paused" }}
