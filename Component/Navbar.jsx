@@ -73,15 +73,15 @@ export default function Navbar() {
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={135}
+                width={130}
                 height={55}
                 className="object-contain"
                 priority
               />
             </Link>
 
-            {/* Navigation Links - Clean Font & Spacing */}
-            <div className="flex items-center space-x-6 lg:space-x-8">
+            {/* Navigation Links - Proper spacing from logo */}
+            <div className="flex items-center space-x-6 lg:space-x-8 ml-8 lg:ml-12">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -90,13 +90,13 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-6">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1.5 font-medium tracking-wide transition duration-200 text-[15px] ${
-                        isActive ? "text-[#053161] font-semibold" : "text-gray-700 hover:text-[#053161]"
+                      className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
+                        isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
                       {item.name}
                       {hasSubmenu && (
-                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180 text-gray-500" />
+                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                       )}
                     </Link>
 
@@ -119,18 +119,18 @@ export default function Navbar() {
               })}
 
               {/* GTranslate Desktop */}
-              <div className="hidden lg:block">
+              <div className="hidden lg:block ml-2">
                 <div className="gtranslate_wrapper gtranslate_desktop"></div>
               </div>
             </div>
 
-            {/* Desktop Right Action Buttons - Full Text & Reference Style */}
+            {/* Desktop Right Action Buttons */}
             <div className="flex items-center gap-3.5 flex-shrink-0">
               <a
                 href="https://wa.me/919990205353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4.5 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-medium text-xs lg:text-sm transition border border-emerald-200/80 shadow-sm"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200/80 shadow-sm"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600 flex-shrink-0" />
                 <span>Chat on WhatsApp</span>
@@ -138,7 +138,7 @@ export default function Navbar() {
 
               <a
                 href="/contact"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-medium text-xs lg:text-sm shadow-md transition"
+                className="flex items-center gap-2 px-4.5 py-2.5 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-semibold text-xs shadow-md transition"
               >
                 <FileText className="w-4 h-4 text-white flex-shrink-0" />
                 <span>Get a Free Quote</span>
@@ -222,7 +222,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-medium text-gray-800 hover:text-[#053161] text-base"
+                    className="font-semibold text-gray-800 hover:text-[#053161] text-base"
                   >
                     {item.name}
                   </Link>
