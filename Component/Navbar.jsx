@@ -63,7 +63,7 @@ export default function Navbar() {
 
   return (
     <nav className="menu-bar bg-white shadow-md sticky top-0 z-50 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
           
           {/* ---------- Desktop View ---------- */}
@@ -73,15 +73,15 @@ export default function Navbar() {
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={130}
+                width={135}
                 height={55}
                 className="object-contain"
                 priority
               />
             </Link>
 
-            {/* Navigation Links - Centered & Perfectly Aligned */}
-            <div className="flex items-center space-x-6">
+            {/* Navigation Links - Clean Font & Spacing */}
+            <div className="flex items-center space-x-6 lg:space-x-8">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -90,19 +90,19 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-6">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
-                        isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
+                      className={`flex items-center gap-1.5 font-medium tracking-wide transition duration-200 text-[15px] ${
+                        isActive ? "text-[#053161] font-semibold" : "text-gray-700 hover:text-[#053161]"
                       }`}
                     >
                       {item.name}
                       {hasSubmenu && (
-                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180 text-gray-500" />
                       )}
                     </Link>
 
                     {/* Desktop Hover Submenu */}
                     {hasSubmenu && (
-                      <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
+                      <div className="absolute left-0 top-full hidden group-hover:block w-60 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
                         {item.submenu.map((sub) => (
                           <Link
                             key={sub.name}
@@ -124,24 +124,24 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Desktop Right Action Buttons - Reference Style */}
-            <div className="flex items-center gap-3 flex-shrink-0">
+            {/* Desktop Right Action Buttons - Full Text & Reference Style */}
+            <div className="flex items-center gap-3.5 flex-shrink-0">
               <a
                 href="https://wa.me/919990205353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200/80 shadow-sm"
+                className="flex items-center gap-2 px-4.5 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-medium text-xs lg:text-sm transition border border-emerald-200/80 shadow-sm"
               >
-                <MessageCircle className="w-4 h-4 text-emerald-600" />
-                <span>WhatsApp</span>
+                <MessageCircle className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <span>Chat on WhatsApp</span>
               </a>
 
               <a
                 href="/contact"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-semibold text-xs shadow-md transition"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-medium text-xs lg:text-sm shadow-md transition"
               >
-                <FileText className="w-4 h-4 text-white" />
-                <span>Get Quote</span>
+                <FileText className="w-4 h-4 text-white flex-shrink-0" />
+                <span>Get a Free Quote</span>
               </a>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-semibold text-gray-800 hover:text-[#053161] text-base"
+                    className="font-medium text-gray-800 hover:text-[#053161] text-base"
                   >
                     {item.name}
                   </Link>
@@ -259,24 +259,24 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Bottom CTA Buttons */}
-        <div className="p-5 border-t bg-gray-50 flex gap-3">
+        <div className="p-5 border-t bg-gray-50 flex flex-col gap-2.5">
           <a
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
-            className="flex-1 py-3 text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
+            className="w-full py-3 text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-2"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>WhatsApp</span>
+            <span>Chat on WhatsApp</span>
           </a>
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="flex-1 py-3 text-center bg-[#0d6efd] hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
+            className="w-full py-3 text-center bg-[#0d6efd] hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-2"
           >
             <FileText className="w-4 h-4" />
-            <span>Get Quote</span>
+            <span>Get a Free Quote</span>
           </Link>
         </div>
       </div>
