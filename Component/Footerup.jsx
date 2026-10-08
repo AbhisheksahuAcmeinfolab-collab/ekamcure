@@ -11,6 +11,9 @@ import pic30 from "../assets/hospitals/moolchand.webp";
 import pic31 from "../assets/hospitals/primus.webp";
 import pic32 from "../assets/hospitals/saroj.webp";
 import pic33 from "../assets/hospitals/seven hills.webp";
+import pic34 from "../assets/hospitals/max.webp";
+import pic35 from "../assets/hospitals/yatharth.webp";
+import pic36 from "../assets/hospitals/Sharda Hospital.png";
 
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
@@ -22,10 +25,12 @@ const hospitals = [
   { name: "Primus Hospital", img: pic31 },
   { name: "Saroj Hospital", img: pic32 },
   { name: "Seven Hills Hospital", img: pic33 },
+  { name: "Max Hospital", img: pic34 },
+  { name: "Yatharth Hospital", img: pic35 },
+  { name: "Sharda Hospital", img: pic36 },
 ];
 
 export default function Footerup() {
-  // Duplicating array for seamless infinite scroll
   const repeatedHospitals = [
     ...hospitals,
     ...hospitals,
@@ -56,13 +61,13 @@ export default function Footerup() {
         {/* Right Side Blur Mask */}
         <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none" />
 
-        {/* Scrolling Track - Duration 50 for smooth slow speed */}
+        {/* Scrolling Track */}
         <motion.div
           className="flex gap-6 sm:gap-8 items-center w-max"
           animate={{ x: ["0%", "-50%"] }}
           transition={{
             repeat: Infinity,
-            duration: 50,
+            duration: 55,
             ease: "linear",
           }}
           whileHover={{ animationPlayState: "paused" }}
