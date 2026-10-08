@@ -62,31 +62,32 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="menu-bar bg-white shadow-md sticky top-0 z-50 py-2 transition-colors duration-300">
+    <nav className="menu-bar bg-white shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center justify-between h-20">
           
           {/* ---------- Desktop View ---------- */}
-          <div className="hidden xl:flex justify-between w-full items-center">
+          <div className="hidden xl:flex items-center justify-between w-full">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-4">
+            <Link href="/" className="flex items-center flex-shrink-0">
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={115}
-                height={48}
-                className="rounded-md"
+                width={130}
+                height={55}
+                className="object-contain"
+                priority
               />
             </Link>
 
-            {/* Navigation Links */}
+            {/* Navigation Links - Centered & Perfectly Aligned */}
             <div className="flex items-center space-x-6">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
 
                 return (
-                  <div key={item.name} className="relative group py-5">
+                  <div key={item.name} className="relative group py-6">
                     <Link
                       href={item.href}
                       className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
@@ -123,13 +124,13 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Desktop Sleek Action Buttons */}
-            <div className="flex items-center gap-2">
+            {/* Desktop Right Action Buttons - Reference Style */}
+            <div className="flex items-center gap-3 flex-shrink-0">
               <a
                 href="https://wa.me/919990205353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200/80"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200/80 shadow-sm"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600" />
                 <span>WhatsApp</span>
@@ -137,16 +138,16 @@ export default function Navbar() {
 
               <a
                 href="/contact"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#053161] hover:bg-[#1B4F9C] text-white font-semibold text-xs shadow-sm transition"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-semibold text-xs shadow-md transition"
               >
-                <FileText className="w-4 h-4 text-blue-200" />
+                <FileText className="w-4 h-4 text-white" />
                 <span>Get Quote</span>
               </a>
             </div>
           </div>
 
           {/* ---------- Mobile Header Bar ---------- */}
-          <div className="flex xl:hidden justify-between items-center w-full">
+          <div className="flex xl:hidden justify-between items-center w-full py-2">
             <div className="w-8">
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
             </div>
@@ -156,9 +157,10 @@ export default function Navbar() {
               <Image
                 src={img}
                 alt="Ekam Logo"
-                width={100}
-                height={40}
-                className="rounded-md"
+                width={110}
+                height={45}
+                className="object-contain"
+                priority
               />
             </Link>
 
@@ -197,7 +199,7 @@ export default function Navbar() {
       >
         {/* Mobile Menu Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b">
-          <Image src={img} alt="Ekam Logo" width={90} height={36} />
+          <Image src={img} alt="Ekam Logo" width={100} height={40} className="object-contain" />
           <button
             onClick={() => setIsOpen(false)}
             className="p-2 text-gray-600 hover:text-red-500 rounded-full"
@@ -271,7 +273,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="flex-1 py-3 text-center bg-[#053161] hover:bg-[#1B4F9C] text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
+            className="flex-1 py-3 text-center bg-[#0d6efd] hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition text-sm flex items-center justify-center gap-1.5"
           >
             <FileText className="w-4 h-4" />
             <span>Get Quote</span>
