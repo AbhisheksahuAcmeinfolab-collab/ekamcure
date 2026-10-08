@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { MessageCircle, FileText } from "lucide-react";
+import { MessageCircle, FileText, ChevronDown } from "lucide-react";
 import img from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
@@ -45,8 +45,14 @@ export default function Navbar() {
         },
       ],
     },
-    { name: "Video Gallery", href: "/video-gallery" },
-    { name: "Photo Gallery", href: "/gallery" },
+    {
+      name: "Gallery",
+      href: "/gallery",
+      submenu: [
+        { name: "Video Gallery", href: "/video-gallery" },
+        { name: "Photo Gallery", href: "/gallery" },
+      ],
+    },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact" },
   ];
@@ -74,7 +80,7 @@ export default function Navbar() {
             </Link>
 
             {/* Navigation Links */}
-            <div className="flex items-center space-x-5 lg:space-x-6">
+            <div className="flex items-center space-x-6">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -83,31 +89,19 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-5">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition duration-200 text-xs lg:text-sm ${
+                      className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
                         isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
                       {item.name}
                       {hasSubmenu && (
-                        <svg
-                          className="w-4 h-4 transition-transform group-hover:rotate-180"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
+                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                       )}
                     </Link>
 
                     {/* Desktop Hover Submenu */}
                     {hasSubmenu && (
-                      <div className="absolute left-0 top-full hidden group-hover:block w-72 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
+                      <div className="absolute left-0 top-full hidden group-hover:block w-56 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
                         {item.submenu.map((sub) => (
                           <Link
                             key={sub.name}
@@ -129,13 +123,13 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Desktop Right Action Buttons */}
-            <div className="flex items-center gap-2.5">
+            {/* Desktop Sleek Action Buttons */}
+            <div className="flex items-center gap-2">
               <a
                 href="https://wa.me/919990205353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200"
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs transition border border-emerald-200/80"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600" />
                 <span>WhatsApp</span>
@@ -143,9 +137,9 @@ export default function Navbar() {
 
               <a
                 href="/contact"
-                className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#053161] hover:bg-[#1B4F9C] text-white font-semibold text-xs shadow-sm transition"
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#053161] hover:bg-[#1B4F9C] text-white font-semibold text-xs shadow-sm transition"
               >
-                <FileText className="w-4 h-4" />
+                <FileText className="w-4 h-4 text-blue-200" />
                 <span>Get Quote</span>
               </a>
             </div>
@@ -235,14 +229,9 @@ export default function Navbar() {
                       onClick={() => toggleMobileSubmenu(item.name)}
                       className="p-1 text-gray-500 hover:text-[#053161]"
                     >
-                      <svg
+                      <ChevronDown
                         className={`w-5 h-5 transition-transform ${isSubOpen ? "rotate-180" : ""}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                      </svg>
+                      />
                     </button>
                   )}
                 </div>
