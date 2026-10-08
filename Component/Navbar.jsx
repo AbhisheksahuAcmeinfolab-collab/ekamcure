@@ -80,8 +80,8 @@ export default function Navbar() {
               />
             </Link>
 
-            {/* Navigation Links - Logo se door, aur aapas me compact spacing */}
-            <div className="flex items-center space-x-4 lg:space-x-5 ml-10 lg:ml-16">
+            {/* Navigation Links - Slightly closer to logo */}
+            <div className="flex items-center space-x-4 lg:space-x-5 ml-6 lg:ml-10">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
