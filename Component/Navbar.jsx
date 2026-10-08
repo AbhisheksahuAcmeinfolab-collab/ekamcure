@@ -68,7 +68,7 @@ export default function Navbar() {
           
           {/* ---------- Desktop View ---------- */}
           <div className="hidden xl:flex items-center justify-between w-full">
-            {/* Logo - Shifted slightly right for clean breathing space */}
+            {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0 ml-2 lg:ml-4">
               <Image
                 src={img}
@@ -80,7 +80,7 @@ export default function Navbar() {
               />
             </Link>
 
-            {/* Navigation Links - Centered & Clean Spacing */}
+            {/* Navigation Links - Font size increased to text-[15px] */}
             <div className="flex items-center space-x-4 lg:space-x-6 ml-8 lg:ml-12">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
@@ -90,7 +90,7 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-6">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition duration-200 text-sm ${
+                      className={`flex items-center gap-1 font-semibold transition duration-200 text-[15px] ${
                         isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
@@ -126,7 +126,7 @@ export default function Navbar() {
 
             {/* Desktop Right Action Buttons */}
             <div className="flex items-center gap-3.5 flex-shrink-0">
-              {/* WhatsApp Button with Official Green & Logo */}
+              {/* WhatsApp Button */}
               <a
                 href="https://wa.me/919990205353"
                 target="_blank"
