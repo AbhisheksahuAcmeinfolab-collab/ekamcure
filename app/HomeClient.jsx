@@ -323,40 +323,32 @@ const faqSchema =
     <main className="bg-white ">
       <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
         {/* Background Image + Overlay */}
-        <div className="absolute inset-0 bg-dark">
-          <AnimatePresence mode="">
-            {/* <motion.div
-              key={heroCurrent}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              className="absolute inset-0" */}
-            <motion.div
-              key={heroCurrent}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              className="absolute inset-0"
-              >
-
-              <Image
-                src={slides[heroCurrent].img}
-                alt={slides[heroCurrent].title}
-                fill
-                className="object-cover object-center"
-                priority
-              />
+          <div className="absolute inset-0 bg-dark">
+            <AnimatePresence mode="wait">
               <motion.div
+                key={heroCurrent}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-cyan-700/50 to-blue-600/30 mix-blend-multiply"
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={slides[heroCurrent].img}
+                  alt={slides[heroCurrent].title || "Ekam Banner"}
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-cyan-900/50 to-blue-900/40 mix-blend-multiply"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
         {/* Content */}
         <div className="relative z-10 text-center px-1 md:px-12 lg:px-20 max-w-4xl">
