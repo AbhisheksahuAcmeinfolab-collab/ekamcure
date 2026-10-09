@@ -6,30 +6,26 @@ import Footer from "@/Component/Footer";
 import Footerup from "@/Component/Footerup";
 import "./globals.css";
 import Script from "next/script";
-import Canonical from "../Component/Canonical";
 import BackToTopProgress from '@/Component/BackToTopProgress';
+
 export const defaultMetadata = {
-  
   author: "Ekam Cure",
   publisher: "Ekam Cure",
   robots: "index, follow",
   openGraph: {
     title: "Trusted Medical Tourism & Healthcare Company in India- Ekam",
-  description:
-    "Ekam connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
+    description:
+      "Ekam connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
     images: ["/og-home.jpg"],
     type: "website",
   },
 };
 
 export default function RootLayout({ children }) {
-  
-
   return (
     <html lang="en">
       <head>
         {/* Basic Metadata */}
-        
         <meta name="author" content={defaultMetadata.author} />
         <meta name="publisher" content={defaultMetadata.publisher} />
         <meta name="robots" content={defaultMetadata.robots} />
@@ -41,10 +37,9 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content={defaultMetadata.openGraph.type} />
         <meta name="google-site-verification" content="lgeYJo-n2hX5ARZ4Oaa_oqOTMBldRm6ofEI8VkeStjE" />
 
-{/* Canonical */}
-        <Canonical />
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`
@@ -59,9 +54,9 @@ export default function RootLayout({ children }) {
 
       <body suppressHydrationWarning={true}>
         {/* <!-- Google Tag Manager (noscript) --> */}
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBQZV94"
-height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-{/* <!-- End Google Tag Manager (noscript) --> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZBQZV94"
+        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
 
         {/* GTranslate Scripts */}
         <Script
@@ -102,7 +97,7 @@ height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
         <Footerup />
         <Footer />
         {/* Back To Top Progress */}
-      <BackToTopProgress />
+        <BackToTopProgress />
       </body>
     </html>
   );
