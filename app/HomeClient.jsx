@@ -351,49 +351,55 @@ const faqSchema =
           </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-1 md:px-12 lg:px-20 max-w-4xl">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={heroCurrent + "-content"}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              <motion.p
-                className="uppercase xl:text-4xl lg:text-2xl md:text-2xl sm:text-5xl tracking-[0.4em] text-cyan-300 font-semibold"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
+          <div className="relative z-10 text-center px-4 md:px-12 lg:px-20 max-w-4xl mx-auto">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={heroCurrent + "-content"}
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -25 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
               >
-                {slides[heroCurrent].subtitle}
-              </motion.p>
-
-              <motion.p
-                className="mt-40 sm:mt-30 text-4xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold text-gray-200 max-w-2xl mx-auto"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-              >
-                {slides[heroCurrent].desc}
-              </motion.p>
-
-              <div className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap">
-                
-                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
-                  <a href="/contact" rel="noopener noreferrer">
-                    Get Quote!
-                  </a>
-                </button>
-                <button className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:scale-105 duration-300">
-                  <a href="/contact" rel="noopener noreferrer" >
-                    Become Partner!
-                  </a>
-                </button>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+                {slides[heroCurrent].subtitle && (
+                  <motion.p
+                    className="uppercase xl:text-4xl lg:text-2xl md:text-2xl sm:text-5xl tracking-[0.4em] text-cyan-300 font-semibold mb-4"
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                  >
+                    {slides[heroCurrent].subtitle}
+                  </motion.p>
+                )}
+          
+                <motion.p
+                  className="mt-6 sm:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold text-gray-200 max-w-3xl mx-auto leading-snug"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.7 }}
+                >
+                  {slides[heroCurrent].desc}
+                </motion.p>
+          
+                <motion.div 
+                  className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.6, duration: 0.5 }}
+                >
+                  <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
+                    <a href="/contact" rel="noopener noreferrer">
+                      Get Quote!
+                    </a>
+                  </button>
+                  <button className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:scale-105 duration-300">
+                    <a href="/contact" rel="noopener noreferrer">
+                      Become Partner!
+                    </a>
+                  </button>
+                </motion.div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
         {/* Hero Indicators */}
         <div className="absolute bottom-8 flex gap-3 justify-center w-full z-20">
