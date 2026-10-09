@@ -323,8 +323,8 @@ const faqSchema =
     <main className="bg-white ">
       <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
         {/* Background Image + Overlay */}
-          <div className="absolute inset-0 bg-dark">
-            <AnimatePresence mode="wait">
+          <div className="absolute inset-0 bg-black">
+            <AnimatePresence mode="sync">
               <motion.div
                 key={heroCurrent}
                 initial={{ opacity: 0 }}
@@ -344,7 +344,7 @@ const faqSchema =
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
-                  className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-cyan-900/50 to-blue-900/40 mix-blend-multiply"
+                  className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-cyan-700/50 to-blue-600/30 mix-blend-multiply"
                 />
               </motion.div>
             </AnimatePresence>
