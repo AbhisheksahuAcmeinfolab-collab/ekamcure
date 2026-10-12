@@ -205,7 +205,14 @@ export default function ProstateCancerTreatmentIndia() {
                   If you’ve been diagnosed with prostate cancer and you’re from Zimbabwe, Botswana, Fiji, or anywhere across Africa and the Pacific, you’re probably weighing your options right now. The anxiety is real — you want the best doctors, the most advanced technology, and a treatment plan you can trust. You also need it to be affordable, accessible, and without the long waiting lists.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Here’s what many international patients don’t know: India has become the world’s most trusted destination for prostate cancer treatment. Not because it’s cheap (though it is), but because the outcomes are exceptional. At Ekam Health Services, we’ve helped over 200 prostate cancer patients from your region successfully complete treatment and return home cancer-free.
+                  Here’s what many international patients don’t know: India has become the world’s most trusted destination for prostate cancer treatment. Not because it’s cheap (though it is), but because the outcomes are exceptional. At{" "}
+                  <Link 
+                    href="https://www.ekamcure.com/" 
+                    className="text-pink-600 hover:underline font-semibold"
+                  >
+                    Ekam Health Services
+                  </Link>
+                  , we’ve helped over 200 prostate cancer patients from your region successfully complete treatment and return home cancer-free.
                 </p>
               </div>
 
@@ -391,6 +398,17 @@ export default function ProstateCancerTreatmentIndia() {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Prostate Cancer Treatment Cost Comparison: India vs. Your Region
                 </h2>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Compare the cost of At{" "}
+                  <Link 
+                    href="https://www.ekamcure.com/cost-of-treatment/prostate-cancer-treatment-cost-in-india" 
+                    className="text-pink-600 hover:underline font-semibold"
+                  >
+                    prostate cancer treatment in India
+                  </Link>
+                  with treatment expenses in other countries and understand the factors that can affect the overall cost, including the treatment approach, cancer stage, hospital, and required procedures.
+                </p>
 
                 <div className="bg-white rounded-xl shadow-lg p-8 mt-8 mb-6">
                   <h3 className="text-xl font-bold text-pink-600 mb-4">Robotic Prostatectomy Cost</h3>
@@ -634,8 +652,29 @@ export default function ProstateCancerTreatmentIndia() {
                   </ul>
                   <div className="bg-pink-50 p-6 rounded-xl border border-pink-200 mt-4 text-gray-700">
                     <p className="font-bold text-pink-700 mb-2">Contact Ekam Health Services:</p>
-                    <p>📱 WhatsApp: +91-9990205353</p>
-                    <p>✉️ Email: info@ekamcure.com</p>
+                    
+                    <p>
+                      📱 WhatsApp:{" "}
+                      <a 
+                        href="https://wa.me/919990205353" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-pink-600 hover:underline font-semibold"
+                      >
+                        +91-9990205353
+                      </a>
+                    </p>
+                  
+                    <p>
+                      ✉️ Email:{" "}
+                      <a 
+                        href="mailto:info@ekamcure.com"
+                        className="text-pink-600 hover:underline font-semibold"
+                      >
+                        info@ekamcure.com
+                      </a>
+                    </p>
+                  
                     <p>🕒 Hours: Monday-Friday 9 AM - 6 PM IST (response within 2 hours)</p>
                     <p>🌐 Languages: English, Shona, Setswana, Fijian</p>
                   </div>
