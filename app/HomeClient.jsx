@@ -19,7 +19,6 @@ import pic10 from "../assets/newimage/Kidney Transplant in India for Internation
 import pic11 from "../assets/newimage/Knee Replacement Surgery in India.png";
 import pic12 from "../assets/newimage/Best Spine Surgery in India.png";
 import pic13 from "../assets/newimage/Superficial Parotidectomy Surgery in India.png";
-// import pic14 from "../assets/newimage/Orthopedic Treatment.webp";
 
 import pic15 from "../assets/recent/Abdullah AI Mamun.webp";
 import pic16 from "../assets/recent/Christopher Muza3.png";
@@ -35,12 +34,12 @@ export const metadata = {
   title: "Trusted Medical Tourism & Healthcare Company in India- Ekam",
   description:
     "Ekam connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
-    keywords :"medical tourism in India, healthcare services India, EkamCure",
+  keywords: "medical tourism in India, healthcare services India, EkamCure",
 
   openGraph: {
     title: "EkamCure – Trusted Medical Tourism & Healthcare in India",
-  description:
-    "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
+    description:
+      "EkamCure connects international patients with top hospitals and doctors in India, offering safe, affordable, and quality healthcare services.",
     images: ["/og-home.jpg"],
   },
 };
@@ -190,13 +189,13 @@ const patients = [
 ];
 
 export default function Home() {
-  const [heroCurrent, setHeroCurrent] = useState(0); // For hero slider
+  const [heroCurrent, setHeroCurrent] = useState(0);
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setHeroCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000); // 5 seconds per slide
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -208,121 +207,121 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
   const currentPatient = patients[current];
-const faqSchema = 
-  {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Is breast cancer treatable if detected early?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Early detection allows timely medical intervention and structured treatment planning. Doctors can often offer multiple treatment options when the disease is identified at an early stage."
-    }
-  },{
-    "@type": "Question",
-    "name": "How long does breast cancer treatment usually take?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments last a few months, while others may involve long-term follow-up care."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can breast cancer treatment be personalized?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, treatment is commonly personalized based on tumor characteristics, medical condition, and patient needs. Doctors aim to choose therapies that provide the best balance of effectiveness and tolerance."
-    }
-  },{
-    "@type": "Question",
-    "name": "When should someone consult a breast cancer specialist?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A specialist should be consulted if persistent breast changes, unusual symptoms, or abnormal test results are noticed. Early consultation helps ensure accurate diagnosis and timely care."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is breast cancer and how does it start?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Breast cancer develops when abnormal cells in breast tissue begin to grow uncontrollably. These changes usually occur due to genetic or hormonal factors that affect normal cell regulation. Over time, these abnormal cells may form a lump or mass and require medical evaluation."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the early signs of breast cancer in women?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Early signs may include a new lump in the breast or underarm, changes in breast size or shape, skin dimpling, or nipple-related changes. These symptoms are not always painful, which is why regular awareness and timely medical consultation are important."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the stages of breast cancer?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Breast cancer is classified into stages based on tumor size, lymph node involvement, and spread. Early stages are limited to the breast, while advanced stages involve nearby or distant organs. Staging helps doctors plan the most appropriate treatment approach."
-    }
-  },{
-    "@type": "Question",
-    "name": "How is breast cancer diagnosed?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Diagnosis usually involves a combination of clinical examination, imaging tests such as mammography or ultrasound, and a biopsy. The biopsy confirms whether cancer cells are present and helps doctors understand the type of breast cancer."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the best breast cancer treatment options in India?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Treatment options may include surgery, chemotherapy, radiation therapy, hormone therapy, or targeted therapy. The choice depends on cancer stage, tumor characteristics, and the patient’s overall health. Treatment planning is always personalized by specialists."
-    }
-  },{
-    "@type": "Question",
-    "name": "How much does breast cancer treatment cost in India?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost of breast cancer treatment in India varies depending on treatment type, hospital facilities, and duration of care. Since each patient’s treatment plan is different, doctors usually provide cost estimates only after reviewing medical reports."
-    }
-  },{
-    "@type": "Question",
-    "name": "Who are breast cancer specialists in India?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Breast cancer is treated by a team of specialists that may include surgical oncologists, medical oncologists, and radiation oncologists. These experts work together to design and manage a coordinated treatment plan for each patient."
-    }
-  },{
-    "@type": "Question",
-    "name": "Is breast cancer treatable if detected early?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "When breast cancer is detected at an early stage, treatment options are usually broader and more structured. Early diagnosis allows doctors to begin timely care and plan treatment more effectively."
-    }
-  },{
-    "@type": "Question",
-    "name": "How long does breast cancer treatment usually take?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments are completed within months, while others may require ongoing follow-up and long-term care planning."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can I book an appointment with a breast cancer specialist online in India?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Many hospitals and cancer centers in India offer online appointment or consultation options. This allows patients to share reports, seek expert guidance, and plan further evaluation conveniently."
-    }
-  }]
-};
+  
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Is breast cancer treatable if detected early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Early detection allows timely medical intervention and structured treatment planning. Doctors can often offer multiple treatment options when the disease is identified at an early stage."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does breast cancer treatment usually take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments last a few months, while others may involve long-term follow-up care."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can breast cancer treatment be personalized?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, treatment is commonly personalized based on tumor characteristics, medical condition, and patient needs. Doctors aim to choose therapies that provide the best balance of effectiveness and tolerance."
+      }
+    },{
+      "@type": "Question",
+      "name": "When should someone consult a breast cancer specialist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A specialist should be consulted if persistent breast changes, unusual symptoms, or abnormal test results are noticed. Early consultation helps ensure accurate diagnosis and timely care."
+      }
+    },{
+      "@type": "Question",
+      "name": "What is breast cancer and how does it start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Breast cancer develops when abnormal cells in breast tissue begin to grow uncontrollably. These changes usually occur due to genetic or hormonal factors that affect normal cell regulation. Over time, these abnormal cells may form a lump or mass and require medical evaluation."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the early signs of breast cancer in women?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Early signs may include a new lump in the breast or underarm, changes in breast size or shape, skin dimpling, or nipple-related changes. These symptoms are not always painful, which is why regular awareness and timely medical consultation are important."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the stages of breast cancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Breast cancer is classified into stages based on tumor size, lymph node involvement, and spread. Early stages are limited to the breast, while advanced stages involve nearby or distant organs. Staging helps doctors plan the most appropriate treatment approach."
+      }
+    },{
+      "@type": "Question",
+      "name": "How is breast cancer diagnosed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Diagnosis usually involves a combination of clinical examination, imaging tests such as mammography or ultrasound, and a biopsy. The biopsy confirms whether cancer cells are present and helps doctors understand the type of breast cancer."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the best breast cancer treatment options in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatment options may include surgery, chemotherapy, radiation therapy, hormone therapy, or targeted therapy. The choice depends on cancer stage, tumor characteristics, and the patient’s overall health. Treatment planning is always personalized by specialists."
+      }
+    },{
+      "@type": "Question",
+      "name": "How much does breast cancer treatment cost in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost of breast cancer treatment in India varies depending on treatment type, hospital facilities, and duration of care. Since each patient’s treatment plan is different, doctors usually provide cost estimates only after reviewing medical reports."
+      }
+    },{
+      "@type": "Question",
+      "name": "Who are breast cancer specialists in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Breast cancer is treated by a team of specialists that may include surgical oncologists, medical oncologists, and radiation oncologists. These experts work together to design and manage a coordinated treatment plan for each patient."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is breast cancer treatable if detected early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When breast cancer is detected at an early stage, treatment options are usually broader and more structured. Early diagnosis allows doctors to begin timely care and plan treatment more effectively."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does breast cancer treatment usually take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments are completed within months, while others may require ongoing follow-up and long-term care planning."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I book an appointment with a breast cancer specialist online in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many hospitals and cancer centers in India offer online appointment or consultation options. This allows patients to share reports, seek expert guidance, and plan further evaluation conveniently."
+      }
+    }]
+  };
+
   return (
-<>
- <Script
+    <>
+      <Script
         id="faq-schema"
         type="application/ld+json"
-        strategy="beforeInteractive" // Head me inject karne ke liye
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-    <main className="bg-white ">
-      <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
-        {/* Background Image + Overlay */}
+      <main className="bg-white">
+        <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
           <div className="absolute inset-0 bg-black">
             <AnimatePresence mode="sync">
               <motion.div
@@ -350,7 +349,6 @@ const faqSchema =
             </AnimatePresence>
           </div>
 
-        {/* Content */}
           <div className="relative z-10 text-center px-4 md:px-12 lg:px-20 max-w-4xl mx-auto">
             <AnimatePresence mode="wait">
               <motion.div
@@ -401,131 +399,165 @@ const faqSchema =
             </AnimatePresence>
           </div>
 
-        {/* Hero Indicators */}
-        <div className="absolute bottom-8 flex gap-3 justify-center w-full z-20">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setHeroCurrent(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${i === heroCurrent
-                ? "bg-cyan-400 scale-125"
-                : "bg-white/40 hover:bg-white/70"
-                }`}
-            />
-          ))}
-        </div>
-      </section>
+          <div className="absolute bottom-8 flex gap-3 justify-center w-full z-20">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setHeroCurrent(i)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${i === heroCurrent
+                  ? "bg-cyan-400 scale-125"
+                  : "bg-white/40 hover:bg-white/70"
+                  }`}
+              />
+            ))}
+          </div>
+        </section>
 
-      {/* About & Services Section */}
-      <section className="w-full py-16 bg-gray-50 mb-2">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* About Us */}
-          <div className="bg-blue-900 text-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+        {/* Naya Content Section (Added right after Hero and before About & Services) */}
+        <section className="py-16 bg-white border-b border-gray-100">
+          <div className="max-w-5xl mx-auto px-6 text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#053161] mb-6 leading-tight">
+              Medical Treatment in India with Complete Support for International Patients
+            </h1>
+            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+              Get access to experienced doctors, leading hospitals, personalised treatment plans, transparent cost estimates, and end-to-end support for your healthcare journey in India.
+            </p>
+            <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed max-w-4xl mx-auto">
+              From your first consultation to hospital coordination, travel assistance and follow-up care, EkamCure helps international patients navigate treatment in India with confidence.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              <Link
+                href="/treatments"
+                className="bg-gradient-to-r from-blue-900 to-blue-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                Find Your Treatment
+              </Link>
+              <a
+                href="tel:+919990205353"
+                className="bg-pink-600 hover:bg-pink-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                Talk to a Care Coordinator
+              </a>
+            </div>
+
+            <div className="pt-6 border-t border-gray-200 flex flex-wrap justify-center items-center gap-4 text-sm md:text-base font-semibold text-[#053161]">
+              <span className="hover:text-pink-600 transition">International Patient Support</span>
+              <span className="text-gray-300">•</span>
+              <span className="hover:text-pink-600 transition">Doctor Consultations</span>
+              <span className="text-gray-300">•</span>
+              <span className="hover:text-pink-600 transition">Hospital Coordination</span>
+              <span className="text-gray-300">•</span>
+              <span className="hover:text-pink-600 transition">Treatment Planning</span>
+            </div>
+          </div>
+        </section>
+
+        {/* About & Services Section */}
+        <section className="w-full py-16 bg-gray-50 mb-2">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-blue-900 text-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+              <div>
+                <h2 className="text-3xl font-bold mb-4 border-b-2 border-white inline-block pb-1">
+                  ABOUT US
+                </h2>
+                <p className="text-lg leading-relaxed mb-6">
+                  Ekam is a premier medical travel facilitator dedicated to
+                  connecting patients with top healthcare providers in India.
+                  Offering personalized services, Ekam streamlines the medical
+                  tourism process, ensuring patients receive quality care, expert
+                  consultations, and support throughout their journey. With a
+                  focus on patient safety and satisfaction, Ekam transforms
+                  healthcare experiences across borders.
+                </p>
+              </div>
+              <Link
+                href="/about"
+                className="inline-block py-2 rounded-md transition"
+              >
+                Read More
+              </Link>
+            </div>
+
             <div>
-              <h2 className="text-3xl font-bold mb-4 border-b-2 border-white inline-block pb-1">
-                ABOUT US
+              <h2 className="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-900 inline-block pb-1">
+                SERVICES
               </h2>
-              <p className="text-lg leading-relaxed mb-6">
-                Ekam is a premier medical travel facilitator dedicated to
-                connecting patients with top healthcare providers in India.
-                Offering personalized services, Ekam streamlines the medical
-                tourism process, ensuring patients receive quality care, expert
-                consultations, and support throughout their journey. With a
-                focus on patient safety and satisfaction, Ekam transforms
-                healthcare experiences across borders.
-              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="flex items-start space-x-4">
+                  <FaUserMd className="text-orange-500 text-3xl" />
+                  <div>
+                    <h3 className="font-bold text-blue-900 text-lg">
+                      DOCTOR AND HOSPITAL SELECTION
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Identifying top medical professionals and facilities
+                      tailored to your specific treatment needs.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <FaHandshake className="text-orange-500 text-3xl" />
+                  <div>
+                    <h3 className="font-bold text-blue-900 text-lg">
+                      COST NEGOTIATION
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Collaborating with hospitals to negotiate the best possible
+                      rates for your medical care.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <FaPassport className="text-orange-500 text-3xl" />
+                  <div>
+                    <h3 className="font-bold text-blue-900 text-lg">
+                      VISA ASSISTANCE
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Guiding you through the visa application process to ensure a
+                      smooth travel experience.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <FaHeadset className="text-orange-500 text-3xl" />
+                  <div>
+                    <h3 className="font-bold text-blue-900 text-lg">
+                      ON-SITE SUPPORT
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Providing accompaniment to medical appointments, ensuring
+                      you have assistance during your healthcare journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <Link
-              href="/about"
-              className="inline-block py-2 rounded-md transition"
-            >
-              Read More
-            </Link>
           </div>
+        </section>
 
-          {/* Services */}
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-900 inline-block pb-1">
-              SERVICES
+        {/* Small Slider Section */}
+        <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
+          <div className="text-center mb-10 md:mb-14">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-black">
+              Explore{" "}
+              <span className="text-blue-900 font-bold">Top Treatments</span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="flex items-start space-x-4">
-                <FaUserMd className="text-orange-500 text-3xl" />
-                <div>
-                  <h3 className="font-bold text-blue-900 text-lg">
-                    DOCTOR AND HOSPITAL SELECTION
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Identifying top medical professionals and facilities
-                    tailored to your specific treatment needs.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <FaHandshake className="text-orange-500 text-3xl" />
-                <div>
-                  <h3 className="font-bold text-blue-900 text-lg">
-                    COST NEGOTIATION
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Collaborating with hospitals to negotiate the best possible
-                    rates for your medical care.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <FaPassport className="text-orange-500 text-3xl" />
-                <div>
-                  <h3 className="font-bold text-blue-900 text-lg">
-                    VISA ASSISTANCE
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Guiding you through the visa application process to ensure a
-                    smooth travel experience.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <FaHeadset className="text-orange-500 text-3xl" />
-                <div>
-                  <h3 className="font-bold text-blue-900 text-lg">
-                    ON-SITE SUPPORT
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Providing accompaniment to medical appointments, ensuring
-                    you have assistance during your healthcare journey.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
+              We handle treatments that range from life-saving surgeries to
+              procedures that restore confidence. Some of the most sought-after
+              treatments include
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Small Slider Section */}
-      <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white ">
-        {/* Heading */}
-        <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-black">
-            Explore{" "}
-            <span className="text-blue-900 font-bold">Top Treatments</span>
-          </h2>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
-            We handle treatments that range from life-saving surgeries to
-            procedures that restore confidence. Some of the most sought-after
-            treatments include
-          </p>
-        </div>
-
-        {/* Responsive Grid */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
-          {specialties.map((item, index) => (
-            <Link
-              href={item.link}
-              key={index}
-              className="w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300 flex flex-col sm:flex-row items-center overflow-hidden"
-            >
-              {/* Left Half - Icon */}
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
+            {specialties.map((item, index) => (
+              <Link
+                href={item.link}
+                key={index}
+                className="w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300 flex flex-col sm:flex-row items-center overflow-hidden"
+              >
                 <div className="w-full sm:w-1/2 flex items-center justify-center bg-[#D5E0F2] h-28 p-4">
                   <Image
                     src={item.icon}
@@ -536,151 +568,134 @@ const faqSchema =
                   />
                 </div>
 
-              {/* Right Half - Title */}
-              <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
-                <p className="text-gray-900 text-center text-sm sm:text-base leading-snug">
-                  {item.title}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-        <div className="flex justify-center mt-10">
-          <a
-            href="/treatments"
-            className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
-          >
-            View All →
-          </a>
-        </div>
-      </section>
-
-      <section className="bg-white dark:text-black py-12 px-4 md:px-10">
-        {/* Heading */}
-        <div className="text-center mb-10 ">
-          <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
-            Patient <span className="text-blue-900">Success Stories</span>
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
-            Every patient journey tells a story of hope and healing.
-          </p>
-        </div>
-
-        {/* Overlapping Boxes */}
-        <div className="relative max-w-xl mx-auto xl:w-[570px]">
-          {/* DESKTOP VIEW */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentPatient.name}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.6 }}
-              className="relative flex flex-col md:flex-row items-start md:items-center"
+                <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
+                  <p className="text-gray-900 text-center text-sm sm:text-base leading-snug">
+                    {item.title}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="flex justify-center mt-10">
+            <a
+              href="/treatments"
+              className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
             >
-              {/* DESKTOP VIEW */}
-              {/* Text Box */}
-              <div className="hidden md:flex w-full">
-                <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-black">
-                    {currentPatient.name}
-                  </h3>
-                  <ul className="text-gray-700 space-y-1 text-sm md:text-base">
-                    <li>
-                      <strong>Native Country:</strong> {currentPatient.country}
-                    </li>
-                    <li>
-                      <strong>Treatment:</strong> {currentPatient.treatment}
-                    </li>
-                    <li>
-                      <strong>Hospital:</strong> {currentPatient.hospital}
-                    </li>
-                    <li>
-                      <strong>Location:</strong> {currentPatient.location}
-                    </li>
-                  </ul>
-                </div>
+              View All →
+            </a>
+          </div>
+        </section>
 
-                {/* Overlapping Image Box */}
-                <div
-                  className="lg:right-[-200px]
-                 md:absolute md:top-1/2 md:right-[-50px]
-                 md:-translate-y-1/2
-                 w-[230px] sm:w-[260px] md:w-[280px]
-                 mt-6 md:mt-0
-                 bg-white border-2 border-blue-900 rounded-xl
-                 overflow-hidden shadow-lg z-20
-                 "
-                >
-                  <Image
-                    src={currentPatient.media}
-                    alt={currentPatient.name}
-                    className="object-cover w-full h-55 scale-75"
-                  />
-                </div>
-              </div>
+        <section className="bg-white dark:text-black py-12 px-4 md:px-10">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
+              Patient <span className="text-blue-900">Success Stories</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
+              Every patient journey tells a story of hope and healing.
+            </p>
+          </div>
 
-              {/* MOBILE VIEW */}
-              <div className="relative flex md:hidden w-full justify-center -ml-8">
-                {/* Text Box */}
-                <div
-                  className="
-                   bg-white border-2 border-blue-900 rounded-2xl
-                   p-6 shadow-md
-                   w-[60%]
-                   relative z-10
-                 "
-                >
-                  <h3 className="text-xl md:text-2xl font-semibold mb-3">
-                    {currentPatient.name}
-                  </h3>
-                  <ul className="text-gray-700 space-y-1 text-sm md:text-base">
-                    <li>
-                      <strong>Native Country:</strong> {currentPatient.country}
-                    </li>
-                    <li>
-                      <strong>Treatment:</strong> {currentPatient.treatment}
-                    </li>
-                    <li>
-                      <strong>Hospital:</strong> {currentPatient.hospital}
-                    </li>
-                    <li>
-                      <strong>Location:</strong> {currentPatient.location}
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className="absolute top-1/2 right-[-11px] -translate-y-1/2
-                   w-[130px] sm:w-[100px]
+          <div className="relative max-w-xl mx-auto xl:w-[570px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentPatient.name}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+                className="relative flex flex-col md:flex-row items-start md:items-center"
+              >
+                <div className="hidden md:flex w-full">
+                  <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-black">
+                      {currentPatient.name}
+                    </h3>
+                    <ul className="text-gray-700 space-y-1 text-sm md:text-base">
+                      <li>
+                        <strong>Native Country:</strong> {currentPatient.country}
+                      </li>
+                      <li>
+                        <strong>Treatment:</strong> {currentPatient.treatment}
+                      </li>
+                      <li>
+                        <strong>Hospital:</strong> {currentPatient.hospital}
+                      </li>
+                      <li>
+                        <strong>Location:</strong> {currentPatient.location}
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    className="lg:right-[-200px]
+                   md:absolute md:top-1/2 md:right-[-50px]
+                   md:-translate-y-1/2
+                   w-[230px] sm:w-[260px] md:w-[280px]
+                   mt-6 md:mt-0
                    bg-white border-2 border-blue-900 rounded-xl
-                   overflow-hidden shadow-lg z-10
-                 "
-                >
-                  <Image
-                    src={currentPatient.media}
-                    alt={currentPatient.name}
-                    className="
-                     object-cover w-full h-40
-                     scale-75
-                   "
-                  />
+                   overflow-hidden shadow-lg z-20"
+                  >
+                    <Image
+                      src={currentPatient.media}
+                      alt={currentPatient.name}
+                      className="object-cover w-full h-55 scale-75"
+                    />
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-10">
-          <a
-            href="/patient-story"
-            className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
-          >
-            View All →
-          </a>
-        </div>
-      </section>
-    </main>
+                <div className="relative flex md:hidden w-full justify-center -ml-8">
+                  <div
+                    className="bg-white border-2 border-blue-900 rounded-2xl
+                     p-6 shadow-md
+                     w-[60%]
+                     relative z-10"
+                  >
+                    <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                      {currentPatient.name}
+                    </h3>
+                    <ul className="text-gray-700 space-y-1 text-sm md:text-base">
+                      <li>
+                        <strong>Native Country:</strong> {currentPatient.country}
+                      </li>
+                      <li>
+                        <strong>Treatment:</strong> {currentPatient.treatment}
+                      </li>
+                      <li>
+                        <strong>Hospital:</strong> {currentPatient.hospital}
+                      </li>
+                      <li>
+                        <strong>Location:</strong> {currentPatient.location}
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    className="absolute top-1/2 right-[-11px] -translate-y-1/2
+                     w-[130px] sm:w-[100px]
+                     bg-white border-2 border-blue-900 rounded-xl
+                     overflow-hidden shadow-lg z-10"
+                  >
+                    <Image
+                      src={currentPatient.media}
+                      alt={currentPatient.name}
+                      className="object-cover w-full h-40 scale-75"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          <div className="text-center mt-10">
+            <a
+              href="/patient-story"
+              className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
+            >
+              View All →
+            </a>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
