@@ -1,8 +1,13 @@
-"use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Banner Image Import
+// Metadata export for SEO
+export const metadata = {
+  title: "Patient Stories & Expert Healthcare Videos | Ekam Cure",
+  description:
+    "Watch patient testimonials, expert doctor insights, and medical treatment guides. Explore how Ekam Cure connects international patients with top hospitals in India.",
+};
+
+// Banner Image Import (Path adjust kar lena agar zaroorat ho)
 import img from "../../assets/recent/Gallery 1.webp";
 
 const videos = [
@@ -157,13 +162,9 @@ export default function VideoGallery() {
           {/* REGULAR VIDEO GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {regularVideos.map((item, i) => (
-              <motion.div
+              <div
                 key={i}
                 className="bg-white rounded-2xl overflow-hidden border border-[#E1E8F0] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.03 }}
               >
                 <div className="relative w-full aspect-video bg-black">
                   <iframe
@@ -193,7 +194,7 @@ export default function VideoGallery() {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
