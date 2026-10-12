@@ -227,7 +227,7 @@ export default function ProstateCancerTreatmentIndia() {
                     Patients who catch prostate cancer in Stage 1 or 2 have survival rates above 95%. Patients diagnosed in Stage 3 or 4 still have excellent options in India, but early detection absolutely changes the trajectory of treatment.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
-                    Many international patients tell us they were diagnosed late in their home countries because screening programs are limited, PSA tests aren’t routine, urologists trained in prostate cancer management are scarce, and cost barriers prevent follow-up care. In India, prostate cancer diagnosis and staging happen within 2-3 weeks. You’re not waiting months. This speed matters.
+                    Manyy international patients tell us they were diagnosed late in their home countries because screening programs are limited, PSA tests aren’t routine, urologists trained in prostate cancer management are scarce, and cost barriers prevent follow-up care. In India, prostate cancer diagnosis and staging happen within 2-3 weeks. You’re not waiting months. This speed matters.
                   </p>
                 </div>
               </section>
