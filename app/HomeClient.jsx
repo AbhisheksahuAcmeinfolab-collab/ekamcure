@@ -364,27 +364,34 @@ export default function Home() {
         <section className="w-full py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* About Us Card - Optimized Padding & Spacing */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-7 md:p-9 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
-              <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
-              <div>
-                <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
-                  WHO WE ARE
-                </span>
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight">
-                  ABOUT US
-                </h2>
-                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light">
-                  Ekam is a premier medical travel facilitator dedicated to connecting patients with top healthcare providers in India. Offering personalized services, Ekam streamlines the medical tourism process, ensuring patients receive quality care, expert consultations, and support throughout their journey.
-                </p>
+            {/* About Us Card - Matched Height & Filled Gap */}
+              <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-7 md:p-9 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
+                <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+                
+                <div>
+                  <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
+                    WHO WE ARE
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight">
+                    ABOUT US
+                  </h2>
+                  
+                  <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light mb-4">
+                    Ekam Health Services is a premier medical travel facilitator dedicated to connecting international patients with world-class healthcare providers and top accredited hospitals in India.
+                  </p>
+              
+                  <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light">
+                    We streamline your complete medical journey by offering personalized care plans, expert doctor consultations, transparent cost estimates, visa assistance, and 24/7 on-ground support to ensure a safe and seamless recovery.
+                  </p>
+                </div>
+              
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-6"
+                >
+                  Read More <FaArrowRight className="text-xs" />
+                </Link>
               </div>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-6"
-              >
-                Read More <FaArrowRight className="text-xs" />
-              </Link>
-            </div>
 
             {/* Services Grid */}
             <div className="lg:col-span-7 flex flex-col justify-between">
