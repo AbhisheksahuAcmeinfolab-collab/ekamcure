@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight } from "react-icons/fa";
+import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
@@ -159,7 +159,7 @@ const patients = [
   {
     name: "Sunilduth Putty",
     country: "Mauritius",
-    treatment: "Cardiac surgery ",
+    treatment: "Cardiac surgery",
     hospital: "Max Super Speciality Hospital",
     location: "Noida Sec-128, India",
     media: pic18,
@@ -191,12 +191,20 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % patients.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
   const currentPatient = patients[current];
   
+  const handlePrevPatient = () => {
+    setCurrent((prev) => (prev === 0 ? patients.length - 1 : prev - 1));
+  };
+
+  const handleNextPatient = () => {
+    setCurrent((prev) => (prev + 1) % patients.length);
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -312,35 +320,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* INTRO CONTENT SECTION */}
-        <section className="py-16 bg-white border-b border-gray-100">
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#053161] mb-6 leading-tight">
+        {/* INTRO CONTENT SECTION - FONT SIZE REDUCED & BALANCED */}
+        <section className="py-12 md:py-16 bg-white border-b border-gray-100">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#053161] mb-4 md:mb-6 leading-snug">
               Medical Treatment in India with Complete Support for International Patients
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed font-medium">
               Get access to experienced doctors, leading hospitals, personalised treatment plans, transparent cost estimates, and end-to-end support for your healthcare journey in India.
             </p>
-            <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-gray-600 text-sm md:text-base mb-8 leading-relaxed max-w-3xl mx-auto">
               From your first consultation to hospital coordination, travel assistance and follow-up care, EkamCure helps international patients navigate treatment in India with confidence.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Link
                 href="/treatments"
-                className="bg-gradient-to-r from-blue-900 to-blue-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-r from-blue-900 to-blue-700 text-white font-bold px-7 py-3 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm md:text-base"
               >
                 Find Your Treatment
               </Link>
               <a
                 href="tel:+919990205353"
-                className="bg-pink-600 hover:bg-pink-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-pink-600 hover:bg-pink-700 text-white font-bold px-7 py-3 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm md:text-base"
               >
                 Talk to a Care Coordinator
               </a>
             </div>
 
-            <div className="pt-6 border-t border-gray-200 flex flex-wrap justify-center items-center gap-4 text-sm md:text-base font-semibold text-[#053161]">
+            <div className="pt-6 border-t border-gray-200 flex flex-wrap justify-center items-center gap-3 md:gap-5 text-xs md:text-sm font-semibold text-[#053161]">
               <span className="hover:text-pink-600 transition">International Patient Support</span>
               <span className="text-gray-300">•</span>
               <span className="hover:text-pink-600 transition">Doctor Consultations</span>
@@ -352,75 +360,75 @@ export default function Home() {
           </div>
         </section>
 
-        {/* REDESIGNED: ABOUT US & SERVICES SECTION */}
-        <section className="w-full py-20 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* ABOUT US & SERVICES SECTION - EQUAL HEIGHT MATCHED */}
+        <section className="w-full py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* About Us Card (Enhanced Premium Look) */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-8 md:p-10 rounded-3xl shadow-2xl relative overflow-hidden flex flex-col justify-between border border-blue-800">
+            {/* About Us Card - Matched Height using flex flex-col justify-between */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-8 md:p-10 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
               <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
               <div>
                 <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-4 border border-white/10">
-                  Who We Are
+                  WHO WE ARE
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight">
                   ABOUT US
                 </h2>
-                <p className="text-blue-100/90 text-base md:text-lg leading-relaxed mb-8 font-light">
+                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed mb-6 font-light">
                   Ekam is a premier medical travel facilitator dedicated to connecting patients with top healthcare providers in India. Offering personalized services, Ekam streamlines the medical tourism process, ensuring patients receive quality care, expert consultations, and support throughout their journey.
                 </p>
               </div>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-white font-semibold bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition w-fit border border-white/20 shadow-sm"
+                className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-auto"
               >
                 Read More <FaArrowRight className="text-xs" />
               </Link>
             </div>
 
-            {/* Services Grid (Enhanced Modern Cards) */}
-            <div className="lg:col-span-7">
-              <div className="mb-8">
+            {/* Services Grid - Matched Height */}
+            <div className="lg:col-span-7 flex flex-col justify-between">
+              <div className="mb-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-semibold tracking-wider uppercase mb-2">
-                  What We Offer
+                  WHAT WE OFFER
                 </span>
                 <h2 className="text-3xl md:text-4xl font-extrabold text-[#053161] tracking-tight">
                   OUR SERVICES
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 h-full">
                 {[
                   {
-                    icon: <FaUserMd className="text-orange-500 text-2xl" />,
+                    icon: <FaUserMd className="text-orange-500 text-xl" />,
                     title: "DOCTOR & HOSPITAL SELECTION",
                     desc: "Identifying top medical professionals and facilities tailored to your specific treatment needs."
                   },
                   {
-                    icon: <FaHandshake className="text-orange-500 text-2xl" />,
+                    icon: <FaHandshake className="text-orange-500 text-xl" />,
                     title: "COST NEGOTIATION",
                     desc: "Collaborating with hospitals to negotiate the best possible rates for your medical care."
                   },
                   {
-                    icon: <FaPassport className="text-orange-500 text-2xl" />,
+                    icon: <FaPassport className="text-orange-500 text-xl" />,
                     title: "VISA ASSISTANCE",
                     desc: "Guiding you through the visa application process to ensure a smooth travel experience."
                   },
                   {
-                    icon: <FaHeadset className="text-orange-500 text-2xl" />,
+                    icon: <FaHeadset className="text-orange-500 text-xl" />,
                     title: "ON-SITE SUPPORT",
                     desc: "Providing accompaniment to medical appointments, ensuring assistance during your journey."
                   }
                 ].map((service, idx) => (
                   <div 
                     key={idx}
-                    className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                    className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-start"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mb-4 shadow-inner">
+                    <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center mb-3 shadow-inner">
                       {service.icon}
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#053161] text-base mb-2">
+                      <h3 className="font-bold text-[#053161] text-sm md:text-base mb-1.5">
                         {service.title}
                       </h3>
                       <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
@@ -435,169 +443,166 @@ export default function Home() {
           </div>
         </section>
 
-        {/* REDESIGNED: EXPLORE TOP TREATMENTS SECTION */}
-        <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold tracking-wider uppercase mb-3">
-              Specialized Care
+        {/* EXPLORE TOP TREATMENTS SECTION */}
+        <section className="py-16 md:py-20 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold tracking-wider uppercase mb-2">
+              SPECIALIZED CARE
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#053161] tracking-tight">
               Explore Top Treatments
             </h2>
-            <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
+            <p className="text-gray-600 mt-3 text-sm md:text-base leading-relaxed">
               We handle treatments that range from life-saving surgeries to procedures that restore confidence. Some of the most sought-after treatments include:
             </p>
           </div>
 
-          {/* Premium Treatment Grid */}
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {specialties.map((item, index) => (
               <Link
                 href={item.link}
                 key={index}
-                className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden"
+                className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden"
               >
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-15 transition-opacity" />
-                
-                <div className="w-20 h-20 rounded-2xl bg-[#F0F5FD] flex items-center justify-center mb-5 p-3 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-2xl bg-[#F0F5FD] flex items-center justify-center mb-4 p-2.5 group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src={item.icon}
                     alt={item.title}
-                    width={64}
-                    height={64}
+                    width={56}
+                    height={56}
                     className="w-full h-full object-contain"
                   />
                 </div>
 
-                <h3 className="text-gray-800 font-bold text-sm sm:text-base leading-snug group-hover:text-blue-900 transition-colors">
+                <h3 className="text-gray-800 font-bold text-xs sm:text-sm leading-snug group-hover:text-blue-900 transition-colors">
                   {item.title}
                 </h3>
 
-                <span className="mt-4 text-xs font-semibold text-blue-600 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="mt-3 text-xs font-semibold text-blue-600 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   Explore →
                 </span>
               </Link>
             ))}
           </div>
 
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-10">
             <a
               href="/treatments"
-              className="inline-flex items-center gap-2 bg-[#053161] hover:bg-blue-800 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 bg-[#053161] hover:bg-blue-800 text-white font-bold px-7 py-3 rounded-full shadow-md transition-all hover:scale-105 text-sm md:text-base"
             >
               View All Treatments →
             </a>
           </div>
         </section>
 
-        {/* PATIENT SUCCESS STORIES SECTION */}
-        <section className="bg-gray-50 py-16 px-4 md:px-10">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
-              Patient <span className="text-blue-900">Success Stories</span>
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm md:text-base">
-              Every patient journey tells a story of hope and healing.
-            </p>
-          </div>
+        {/* REDESIGNED: PATIENT SUCCESS STORIES SECTION */}
+        <section className="bg-gradient-to-br from-blue-950 via-[#053161] to-blue-900 text-white py-16 md:py-20 px-4 md:px-10 relative overflow-hidden">
+          <div className="max-w-6xl mx-auto relative z-10">
+            
+            {/* Header */}
+            <div className="text-center mb-12">
+              <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
+                TESTIMONIALS
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Patient <span className="text-cyan-400">Success Stories</span>
+              </h2>
+              <p className="text-blue-100/80 max-w-xl mx-auto mt-2 text-sm md:text-base font-light">
+                Every patient journey tells a story of hope, healing, and world-class healthcare in India.
+              </p>
+            </div>
 
-          <div className="relative max-w-xl mx-auto xl:w-[570px]">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentPatient.name}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.6 }}
-                className="relative flex flex-col md:flex-row items-start md:items-center"
+            {/* Testimonial Card Slider Container */}
+            <div className="relative max-w-4xl mx-auto">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentPatient.name}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center"
+                >
+                  {/* Left Column: Image */}
+                  <div className="md:col-span-5 flex justify-center">
+                    <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-xl">
+                      <Image
+                        src={currentPatient.media}
+                        alt={currentPatient.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Right Column: Information */}
+                  <div className="md:col-span-7 flex flex-col justify-center">
+                    <FaQuoteLeft className="text-3xl text-cyan-400/60 mb-3" />
+                    
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                      {currentPatient.name}
+                    </h3>
+
+                    <div className="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-medium w-fit mb-4 border border-cyan-400/30">
+                      <span>{currentPatient.treatment}</span>
+                    </div>
+
+                    <div className="space-y-2 text-sm text-blue-100/90 font-light mb-6">
+                      <p className="flex items-center gap-2">
+                        <FaMapMarkerAlt className="text-pink-400 flex-shrink-0" />
+                        <span><strong>Native Country:</strong> {currentPatient.country}</span>
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <FaHospital className="text-cyan-400 flex-shrink-0" />
+                        <span><strong>Hospital:</strong> {currentPatient.hospital} ({currentPatient.location})</span>
+                      </p>
+                    </div>
+
+                    {/* Slider Navigation Controls */}
+                    <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                      <div className="flex gap-2">
+                        {patients.map((_, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => setCurrent(idx)}
+                            className={`w-2.5 h-2.5 rounded-full transition-all ${
+                              idx === current ? "bg-cyan-400 w-6" : "bg-white/30"
+                            }`}
+                          />
+                        ))}
+                      </div>
+
+                      <div className="flex gap-2">
+                        <button
+                          onClick={handlePrevPatient}
+                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
+                        >
+                          <FaChevronLeft className="text-xs" />
+                        </button>
+                        <button
+                          onClick={handleNextPatient}
+                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
+                        >
+                          <FaChevronRight className="text-xs" />
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* View All Stories Button */}
+            <div className="text-center mt-10">
+              <Link
+                href="/patient-story"
+                className="inline-flex items-center gap-2 text-cyan-300 hover:text-white font-semibold transition text-sm md:text-base border-b border-cyan-400/40 pb-0.5"
               >
-                <div className="hidden md:flex w-full">
-                  <div className="bg-white border-2 border-blue-900 rounded-2xl h-[270px] p-6 md:p-8 shadow-md lg:w-5xl md:w-[80%] relative z-20">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-black">
-                      {currentPatient.name}
-                    </h3>
-                    <ul className="text-gray-700 space-y-1 text-sm md:text-base">
-                      <li>
-                        <strong>Native Country:</strong> {currentPatient.country}
-                      </li>
-                      <li>
-                        <strong>Treatment:</strong> {currentPatient.treatment}
-                      </li>
-                      <li>
-                        <strong>Hospital:</strong> {currentPatient.hospital}
-                      </li>
-                      <li>
-                        <strong>Location:</strong> {currentPatient.location}
-                      </li>
-                    </ul>
-                  </div>
+                View All Patient Stories →
+              </Link>
+            </div>
 
-                  <div
-                    className="lg:right-[-200px]
-                   md:absolute md:top-1/2 md:right-[-50px]
-                   md:-translate-y-1/2
-                   w-[230px] sm:w-[260px] md:w-[280px]
-                   mt-6 md:mt-0
-                   bg-white border-2 border-blue-900 rounded-xl
-                   overflow-hidden shadow-lg z-20"
-                  >
-                    <Image
-                      src={currentPatient.media}
-                      alt={currentPatient.name}
-                      className="object-cover w-full h-55 scale-75"
-                    />
-                  </div>
-                </div>
-
-                <div className="relative flex md:hidden w-full justify-center -ml-8">
-                  <div
-                    className="bg-white border-2 border-blue-900 rounded-2xl
-                     p-6 shadow-md
-                     w-[60%]
-                     relative z-10"
-                  >
-                    <h3 className="text-xl md:text-2xl font-semibold mb-3">
-                      {currentPatient.name}
-                    </h3>
-                    <ul className="text-gray-700 space-y-1 text-sm md:text-base">
-                      <li>
-                        <strong>Native Country:</strong> {currentPatient.country}
-                      </li>
-                      <li>
-                        <strong>Treatment:</strong> {currentPatient.treatment}
-                      </li>
-                      <li>
-                        <strong>Hospital:</strong> {currentPatient.hospital}
-                      </li>
-                      <li>
-                        <strong>Location:</strong> {currentPatient.location}
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    className="absolute top-1/2 right-[-11px] -translate-y-1/2
-                     w-[130px] sm:w-[100px]
-                     bg-white border-2 border-blue-900 rounded-xl
-                     overflow-hidden shadow-lg z-10"
-                  >
-                    <Image
-                      src={currentPatient.media}
-                      alt={currentPatient.name}
-                      className="object-cover w-full h-40 scale-75"
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          <div className="text-center mt-10">
-            <a
-              href="/patient-story"
-              className="text-blue-600 font-medium flex items-center justify-center gap-2 hover:underline"
-            >
-              View All →
-            </a>
           </div>
         </section>
       </main>
