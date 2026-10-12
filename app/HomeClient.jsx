@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import { FaUserMd, FaPassport, FaHandshake, FaHeadset } from "react-icons/fa";
+import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
@@ -64,78 +64,66 @@ const slides = [
     desc: "Your Path to Quality Care Abroad – Trusted Partners, Exceptional Care",
   },
 ];
+
 const specialties = [
   {
     title: "IVF Treatment in India",
     alt: "not found",
     icon: pic4,
-    color: "bg-orange-500",
-    className: "hover:bg-orange-500",
     link: "/ivf-treatments-in-india",
   },
   {
     title: "Best Prostate Cancer Treatment in India",
     alt: "not found",
     icon: pic5,
-    color: "bg-red-500 hover:bg-red-500",
     link: "/treatments/best-prostate-cancer-treatment-india",
   },
   {
     title: "Breast Cancer Treatment in India",
     alt: "not found",
     icon: pic6,
-    color: "bg-blue-500 hover:bg-blue-500",
     link: "/treatments/breast-cancer-treatment-in-india",
   },
   {
     title: "Glaucoma Surgery in India for International Patients",
     alt: "not found",
     icon: pic7,
-    color: "bg-green-500 hover:bg-green-500",
     link: "/treatments/glaucoma-surgery-in-india-for-international-patients",
   },
   {
     title: "Heart Valve Surgery in India",
     alt: "not found",
     icon: pic8,
-    color: "bg-orange-500",
-    className: "hover:bg-orange-500",
     link: "/treatments/heart-valve-surgery-india",
   },
   {
     title: "Hip Replacement Surgery in India",
     alt: "not found",
     icon: pic9,
-    color: "bg-red-500 hover:bg-red-500",
     link: "/treatments/hip-replacement-surgery-in-india",
   },
   {
     title: "Kidney Transplant in India for International Patients",
     alt: "not found",
     icon: pic10,
-    color: "bg-blue-500 hover:bg-blue-500",
     link: "/treatments/kidney-transplant-in-india",
   },
   {
     title: "Knee Replacement Surgery in India",
     alt: "not found",
     icon: pic11,
-    color: "bg-green-500 hover:bg-green-500",
     link: "/treatments/knee-replacement-surgery-in-india",
   },
   {
     title: "Best Spine Surgery in India",
     alt: "not found",
     icon: pic12,
-    color: "bg-orange-500",
-    className: "hover:bg-orange-500",
     link: "/treatments/best-spine-surgery-in-india",
   },
   {
     title: "Superficial Parotidectomy Surgery in India",
     alt: "not found",
     icon: pic13,
-    color: "bg-red-500 hover:bg-red-500",
     link: "/treatments/superficial-parotidectomy-surgery-india",
   },
 ];
@@ -206,6 +194,7 @@ export default function Home() {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
   const currentPatient = patients[current];
   
   const faqSchema = {
@@ -217,97 +206,6 @@ export default function Home() {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Early detection allows timely medical intervention and structured treatment planning. Doctors can often offer multiple treatment options when the disease is identified at an early stage."
-      }
-    },{
-      "@type": "Question",
-      "name": "How long does breast cancer treatment usually take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments last a few months, while others may involve long-term follow-up care."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can breast cancer treatment be personalized?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, treatment is commonly personalized based on tumor characteristics, medical condition, and patient needs. Doctors aim to choose therapies that provide the best balance of effectiveness and tolerance."
-      }
-    },{
-      "@type": "Question",
-      "name": "When should someone consult a breast cancer specialist?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A specialist should be consulted if persistent breast changes, unusual symptoms, or abnormal test results are noticed. Early consultation helps ensure accurate diagnosis and timely care."
-      }
-    },{
-      "@type": "Question",
-      "name": "What is breast cancer and how does it start?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Breast cancer develops when abnormal cells in breast tissue begin to grow uncontrollably. These changes usually occur due to genetic or hormonal factors that affect normal cell regulation. Over time, these abnormal cells may form a lump or mass and require medical evaluation."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are the early signs of breast cancer in women?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Early signs may include a new lump in the breast or underarm, changes in breast size or shape, skin dimpling, or nipple-related changes. These symptoms are not always painful, which is why regular awareness and timely medical consultation are important."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are the stages of breast cancer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Breast cancer is classified into stages based on tumor size, lymph node involvement, and spread. Early stages are limited to the breast, while advanced stages involve nearby or distant organs. Staging helps doctors plan the most appropriate treatment approach."
-      }
-    },{
-      "@type": "Question",
-      "name": "How is breast cancer diagnosed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Diagnosis usually involves a combination of clinical examination, imaging tests such as mammography or ultrasound, and a biopsy. The biopsy confirms whether cancer cells are present and helps doctors understand the type of breast cancer."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are the best breast cancer treatment options in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Treatment options may include surgery, chemotherapy, radiation therapy, hormone therapy, or targeted therapy. The choice depends on cancer stage, tumor characteristics, and the patient’s overall health. Treatment planning is always personalized by specialists."
-      }
-    },{
-      "@type": "Question",
-      "name": "How much does breast cancer treatment cost in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost of breast cancer treatment in India varies depending on treatment type, hospital facilities, and duration of care. Since each patient’s treatment plan is different, doctors usually provide cost estimates only after reviewing medical reports."
-      }
-    },{
-      "@type": "Question",
-      "name": "Who are breast cancer specialists in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Breast cancer is treated by a team of specialists that may include surgical oncologists, medical oncologists, and radiation oncologists. These experts work together to design and manage a coordinated treatment plan for each patient."
-      }
-    },{
-      "@type": "Question",
-      "name": "Is breast cancer treatable if detected early?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "When breast cancer is detected at an early stage, treatment options are usually broader and more structured. Early diagnosis allows doctors to begin timely care and plan treatment more effectively."
-      }
-    },{
-      "@type": "Question",
-      "name": "How long does breast cancer treatment usually take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Treatment duration varies depending on cancer stage, therapy type, and individual response. Some treatments are completed within months, while others may require ongoing follow-up and long-term care planning."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I book an appointment with a breast cancer specialist online in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many hospitals and cancer centers in India offer online appointment or consultation options. This allows patients to share reports, seek expert guidance, and plan further evaluation conveniently."
       }
     }]
   };
@@ -321,6 +219,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="bg-white">
+        {/* HERO SECTION */}
         <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
           <div className="absolute inset-0 bg-black">
             <AnimatePresence mode="sync">
@@ -413,7 +312,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Naya Content Section (Added right after Hero and before About & Services) */}
+        {/* INTRO CONTENT SECTION */}
         <section className="py-16 bg-white border-b border-gray-100">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#053161] mb-6 leading-tight">
@@ -453,140 +352,146 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About & Services Section */}
-        <section className="w-full py-16 bg-gray-50 mb-2">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-blue-900 text-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+        {/* REDESIGNED: ABOUT US & SERVICES SECTION */}
+        <section className="w-full py-20 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* About Us Card (Enhanced Premium Look) */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-8 md:p-10 rounded-3xl shadow-2xl relative overflow-hidden flex flex-col justify-between border border-blue-800">
+              <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
               <div>
-                <h2 className="text-3xl font-bold mb-4 border-b-2 border-white inline-block pb-1">
+                <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-4 border border-white/10">
+                  Who We Are
+                </span>
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight">
                   ABOUT US
                 </h2>
-                <p className="text-lg leading-relaxed mb-6">
-                  Ekam is a premier medical travel facilitator dedicated to
-                  connecting patients with top healthcare providers in India.
-                  Offering personalized services, Ekam streamlines the medical
-                  tourism process, ensuring patients receive quality care, expert
-                  consultations, and support throughout their journey. With a
-                  focus on patient safety and satisfaction, Ekam transforms
-                  healthcare experiences across borders.
+                <p className="text-blue-100/90 text-base md:text-lg leading-relaxed mb-8 font-light">
+                  Ekam is a premier medical travel facilitator dedicated to connecting patients with top healthcare providers in India. Offering personalized services, Ekam streamlines the medical tourism process, ensuring patients receive quality care, expert consultations, and support throughout their journey.
                 </p>
               </div>
               <Link
                 href="/about"
-                className="inline-block py-2 rounded-md transition"
+                className="inline-flex items-center gap-2 text-white font-semibold bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition w-fit border border-white/20 shadow-sm"
               >
-                Read More
+                Read More <FaArrowRight className="text-xs" />
               </Link>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-900 border-b-2 border-blue-900 inline-block pb-1">
-                SERVICES
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="flex items-start space-x-4">
-                  <FaUserMd className="text-orange-500 text-3xl" />
-                  <div>
-                    <h3 className="font-bold text-blue-900 text-lg">
-                      DOCTOR AND HOSPITAL SELECTION
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-1">
-                      Identifying top medical professionals and facilities
-                      tailored to your specific treatment needs.
-                    </p>
+            {/* Services Grid (Enhanced Modern Cards) */}
+            <div className="lg:col-span-7">
+              <div className="mb-8">
+                <span className="inline-block px-3.5 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-semibold tracking-wider uppercase mb-2">
+                  What We Offer
+                </span>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-[#053161] tracking-tight">
+                  OUR SERVICES
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  {
+                    icon: <FaUserMd className="text-orange-500 text-2xl" />,
+                    title: "DOCTOR & HOSPITAL SELECTION",
+                    desc: "Identifying top medical professionals and facilities tailored to your specific treatment needs."
+                  },
+                  {
+                    icon: <FaHandshake className="text-orange-500 text-2xl" />,
+                    title: "COST NEGOTIATION",
+                    desc: "Collaborating with hospitals to negotiate the best possible rates for your medical care."
+                  },
+                  {
+                    icon: <FaPassport className="text-orange-500 text-2xl" />,
+                    title: "VISA ASSISTANCE",
+                    desc: "Guiding you through the visa application process to ensure a smooth travel experience."
+                  },
+                  {
+                    icon: <FaHeadset className="text-orange-500 text-2xl" />,
+                    title: "ON-SITE SUPPORT",
+                    desc: "Providing accompaniment to medical appointments, ensuring assistance during your journey."
+                  }
+                ].map((service, idx) => (
+                  <div 
+                    key={idx}
+                    className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mb-4 shadow-inner">
+                      {service.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-[#053161] text-base mb-2">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        {service.desc}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <FaHandshake className="text-orange-500 text-3xl" />
-                  <div>
-                    <h3 className="font-bold text-blue-900 text-lg">
-                      COST NEGOTIATION
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-1">
-                      Collaborating with hospitals to negotiate the best possible
-                      rates for your medical care.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <FaPassport className="text-orange-500 text-3xl" />
-                  <div>
-                    <h3 className="font-bold text-blue-900 text-lg">
-                      VISA ASSISTANCE
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-1">
-                      Guiding you through the visa application process to ensure a
-                      smooth travel experience.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <FaHeadset className="text-orange-500 text-3xl" />
-                  <div>
-                    <h3 className="font-bold text-blue-900 text-lg">
-                      ON-SITE SUPPORT
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-1">
-                      Providing accompaniment to medical appointments, ensuring
-                      you have assistance during your healthcare journey.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
+
           </div>
         </section>
 
-        {/* Small Slider Section */}
-        <section className="py-12 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
-          <div className="text-center mb-10 md:mb-14">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-black">
-              Explore{" "}
-              <span className="text-blue-900 font-bold">Top Treatments</span>
+        {/* REDESIGNED: EXPLORE TOP TREATMENTS SECTION */}
+        <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 bg-white">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold tracking-wider uppercase mb-3">
+              Specialized Care
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#053161] tracking-tight">
+              Explore Top Treatments
             </h2>
-            <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
-              We handle treatments that range from life-saving surgeries to
-              procedures that restore confidence. Some of the most sought-after
-              treatments include
+            <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
+              We handle treatments that range from life-saving surgeries to procedures that restore confidence. Some of the most sought-after treatments include:
             </p>
           </div>
 
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 justify-items-center">
+          {/* Premium Treatment Grid */}
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {specialties.map((item, index) => (
               <Link
                 href={item.link}
                 key={index}
-                className="w-full max-w-[260px] sm:max-w-[280px] md:max-w-[300px] bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300 flex flex-col sm:flex-row items-center overflow-hidden"
+                className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group relative overflow-hidden"
               >
-                <div className="w-full sm:w-1/2 flex items-center justify-center bg-[#D5E0F2] h-28 p-4">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-15 transition-opacity" />
+                
+                <div className="w-20 h-20 rounded-2xl bg-[#F0F5FD] flex items-center justify-center mb-5 p-3 group-hover:scale-110 transition-transform duration-300">
                   <Image
                     src={item.icon}
                     alt={item.title}
                     width={64}
                     height={64}
-                    className="w-16 h-16 object-contain transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-contain"
                   />
                 </div>
 
-                <div className="w-full sm:w-1/2 flex items-center justify-center px-3 py-3 sm:py-0">
-                  <p className="text-gray-900 text-center text-sm sm:text-base leading-snug">
-                    {item.title}
-                  </p>
-                </div>
+                <h3 className="text-gray-800 font-bold text-sm sm:text-base leading-snug group-hover:text-blue-900 transition-colors">
+                  {item.title}
+                </h3>
+
+                <span className="mt-4 text-xs font-semibold text-blue-600 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Explore →
+                </span>
               </Link>
             ))}
           </div>
-          <div className="flex justify-center mt-10">
+
+          <div className="flex justify-center mt-12">
             <a
               href="/treatments"
-              className="text-blue-600 font-medium flex items-center gap-2 hover:underline"
+              className="inline-flex items-center gap-2 bg-[#053161] hover:bg-blue-800 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all hover:scale-105"
             >
-              View All →
+              View All Treatments →
             </a>
           </div>
         </section>
 
-        <section className="bg-white dark:text-black py-12 px-4 md:px-10">
+        {/* PATIENT SUCCESS STORIES SECTION */}
+        <section className="bg-gray-50 py-16 px-4 md:px-10">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-semibold dark:text-grey">
               Patient <span className="text-blue-900">Success Stories</span>
