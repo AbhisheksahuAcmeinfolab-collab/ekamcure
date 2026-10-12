@@ -320,7 +320,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* INTRO CONTENT SECTION - FONT SIZE REDUCED & BALANCED */}
+        {/* INTRO CONTENT SECTION */}
         <section className="py-12 md:py-16 bg-white border-b border-gray-100">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#053161] mb-4 md:mb-6 leading-snug">
@@ -360,33 +360,33 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ABOUT US & SERVICES SECTION - EQUAL HEIGHT MATCHED */}
+        {/* ABOUT US & SERVICES SECTION - GAP FIXED */}
         <section className="w-full py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* About Us Card - Matched Height using flex flex-col justify-between */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-8 md:p-10 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
+            {/* About Us Card - Optimized Padding & Spacing */}
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-7 md:p-9 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
               <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
               <div>
-                <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-4 border border-white/10">
+                <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
                   WHO WE ARE
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight">
                   ABOUT US
                 </h2>
-                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed mb-6 font-light">
+                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light">
                   Ekam is a premier medical travel facilitator dedicated to connecting patients with top healthcare providers in India. Offering personalized services, Ekam streamlines the medical tourism process, ensuring patients receive quality care, expert consultations, and support throughout their journey.
                 </p>
               </div>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-auto"
+                className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-6"
               >
                 Read More <FaArrowRight className="text-xs" />
               </Link>
             </div>
 
-            {/* Services Grid - Matched Height */}
+            {/* Services Grid */}
             <div className="lg:col-span-7 flex flex-col justify-between">
               <div className="mb-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-semibold tracking-wider uppercase mb-2">
@@ -495,11 +495,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* REDESIGNED: PATIENT SUCCESS STORIES SECTION */}
+        {/* PATIENT SUCCESS STORIES SECTION */}
         <section className="bg-gradient-to-br from-blue-950 via-[#053161] to-blue-900 text-white py-16 md:py-20 px-4 md:px-10 relative overflow-hidden">
           <div className="max-w-6xl mx-auto relative z-10">
             
-            {/* Header */}
             <div className="text-center mb-12">
               <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
                 TESTIMONIALS
@@ -512,7 +511,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Testimonial Card Slider Container */}
             <div className="relative max-w-4xl mx-auto">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -523,7 +521,6 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
                   className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center"
                 >
-                  {/* Left Column: Image */}
                   <div className="md:col-span-5 flex justify-center">
                     <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-xl">
                       <Image
@@ -535,7 +532,6 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Right Column: Information */}
                   <div className="md:col-span-7 flex flex-col justify-center">
                     <FaQuoteLeft className="text-3xl text-cyan-400/60 mb-3" />
                     
@@ -558,7 +554,6 @@ export default function Home() {
                       </p>
                     </div>
 
-                    {/* Slider Navigation Controls */}
                     <div className="flex items-center justify-between pt-4 border-t border-white/10">
                       <div className="flex gap-2">
                         {patients.map((_, idx) => (
@@ -593,11 +588,11 @@ export default function Home() {
               </AnimatePresence>
             </div>
 
-            {/* View All Stories Button */}
+            {/* View All Stories Button Styled Properly */}
             <div className="text-center mt-10">
               <Link
                 href="/patient-story"
-                className="inline-flex items-center gap-2 text-cyan-300 hover:text-white font-semibold transition text-sm md:text-base border-b border-cyan-400/40 pb-0.5"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 text-sm md:text-base border border-cyan-300/30"
               >
                 View All Patient Stories →
               </Link>
