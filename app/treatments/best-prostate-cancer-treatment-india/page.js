@@ -405,7 +405,7 @@ export default function ProstateCancerTreatmentIndia() {
                     href="https://www.ekamcure.com/cost-of-treatment/prostate-cancer-treatment-cost-in-india" 
                     className="text-pink-600 hover:underline font-semibold"
                   >
-                    prostate cancer treatment in India
+                    prostate cancer treatment in India 
                   </Link>
                    with treatment expenses in other countries and understand the factors that can affect the overall cost, including the treatment approach, cancer stage, hospital, and required procedures.
                 </p>
