@@ -13,7 +13,7 @@ import img from "../../assets/recent/Gallery 1.webp";
 const videos = [
   {
     src: "https://www.youtube.com/embed/22At_3bi8q8?si=yTyz8090Y7BJM77V",
-    title: "Mmarie Line (Mauritius)",
+    title: "Marie Line (Mauritius)",
     desc: "Successful Knee Replacement Recovery Journey in India",
     featured: true,
   },
