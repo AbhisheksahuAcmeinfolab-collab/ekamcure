@@ -24,7 +24,7 @@ export default function Footer() {
       icon: MdLocationOn,
       label: "Office Address",
       text: "LOGIX TECHNOVA, Block B, Sector 132, Noida, Uttar Pradesh 201304",
-      href: "https://maps.google.com?q=Delhi,India",
+      href: "https://maps.app.goo.gl/W74MRe62Jmurf4P66",
     },
     {
       icon: MdEmail,
