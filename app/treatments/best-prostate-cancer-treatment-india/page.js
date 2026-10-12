@@ -407,7 +407,7 @@ export default function ProstateCancerTreatmentIndia() {
                   >
                     prostate cancer treatment in India
                   </Link>
-                  with treatment expenses in other countries and understand the factors that can affect the overall cost, including the treatment approach, cancer stage, hospital, and required procedures.
+                   with treatment expenses in other countries and understand the factors that can affect the overall cost, including the treatment approach, cancer stage, hospital, and required procedures.
                 </p>
 
                 <div className="bg-white rounded-xl shadow-lg p-8 mt-8 mb-6">
