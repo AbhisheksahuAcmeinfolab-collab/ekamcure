@@ -1,91 +1,80 @@
 "use client";
 import Image from "next/image";
-import img1 from "../assets/image/img1.png";
-import img2 from "../assets/image/img2.png";
-import img3 from "../assets/newimage/what.webp";
+import Link from "next/link";
+import { FileText } from "lucide-react";
+import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
+import imgPartner from "../assets/image/img1.png";
 
 export default function TopHeader() {
   return (
     <>
       {/* 🖥️ Desktop Top Header */}
-      <div className="t-header hidden md:flex bg-[#053161] text-white text-sm xl:px-16 lg:px-10 md:px-6 py-2.5 justify-between items-center shadow-md">
+      <div className="t-header hidden md:flex bg-[#053161] text-white text-sm xl:px-12 lg:px-8 md:px-4 py-3 justify-between items-center shadow-md">
         
-        {/* Left Side: White Logo */}
+        {/* Left Side: White Ekam Logo */}
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
-              src="/_next/static/media/Ekam-logo-300x133.bd70579a.webp" 
+              src={imgLogo}
               alt="Ekam Logo"
-              width={125}
+              width={130}
               height={50}
               className="object-contain filter brightness-0 invert"
               priority
             />
-          </a>
+          </Link>
         </div>
 
-        {/* Right Side: Button Links as shown in Image 2 */}
-        <div className="flex items-center gap-7">
-          {/* WhatsApp / Phone Button */}
+        {/* Right Side: Exact Rounded Pill Buttons (Matching Second Screenshot) */}
+        <div className="flex items-center gap-3">
+          
+          {/* WhatsApp Green Pill Button */}
           <a
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:opacity-90 transition duration-300 cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs shadow-md transition-transform hover:scale-105"
           >
-            <Image
-              src={img3}
-              alt="WhatsApp"
-              width={20}
-              height={20}
-              className="rounded-md"
-            />
-            <span className="font-semibold text-xs tracking-wide text-white">
-              (+91) 9990205353
-            </span>
+            <svg className="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
           </a>
 
-          {/* Become Partner Button (# Link) */}
+          {/* Get Free Quote Blue Pill Button */}
+          <Link
+            href="/contact"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#0d6efd] hover:bg-blue-700 text-white font-semibold text-xs shadow-md transition-transform hover:scale-105"
+          >
+            <FileText className="w-4 h-4 text-white flex-shrink-0" />
+            <span>Get a Free Quote</span>
+          </Link>
+
+          {/* Become Partner Cyan Pill Button */}
           <a
             href="#"
-            className="flex items-center gap-2 hover:opacity-90 transition duration-300 cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a8ff] hover:bg-sky-600 text-white font-semibold text-xs shadow-md transition-transform hover:scale-105"
           >
             <Image
-              src={img1}
-              alt="Partner"
-              width={22}
-              height={22}
-              className="rounded-md object-contain"
+              src={imgPartner}
+              alt="Partner Icon"
+              width={16}
+              height={16}
+              className="object-contain filter brightness-0 invert"
             />
-            <span className="font-semibold text-xs tracking-wide text-white">
-              Become Partner!
-            </span>
+            <span>Become a Partner!</span>
           </a>
 
-          {/* Get Quote Button */}
-          <a
-            href="/contact"
-            className="flex items-center gap-2 hover:opacity-90 transition duration-300 cursor-pointer"
-          >
-            <Image
-              src={img2}
-              alt="Quote"
-              width={22}
-              height={22}
-              className="rounded-md object-contain"
-            />
-            <span className="font-semibold text-xs tracking-wide text-white">
-              Get Quote!
-            </span>
-          </a>
         </div>
       </div>
 
       {/* Mobile Bottom Navigation Bar */}
-      <div className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
-      style={{ perspective: "1px" }}>
+      <div
+        className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
+        style={{ perspective: "1px" }}
+      >
         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
-          <a
+          <Link
             href="/contact"
             className="flex flex-col items-center justify-center flex-1 text-xs"
           >
@@ -95,7 +84,7 @@ export default function TopHeader() {
               className="w-[36px] h-[36px] mb-1 object-contain"
             />
             <span className="font-bold text-[12px]">Get Quote</span>
-          </a>
+          </Link>
 
           <a
             href="#"
