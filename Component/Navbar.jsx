@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
+import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,9 +64,9 @@ export default function Navbar() {
   return (
     <nav className="menu-bar bg-white shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-14">
+        <div className="flex items-center justify-between h-14 md:h-16">
           
-          {/* ---------- Desktop View (Menu Starts Left, No Extra Logo) ---------- */}
+          {/* ---------- Desktop View ---------- */}
           <div className="hidden xl:flex items-center justify-between w-full">
             <div className="flex items-center space-x-6 lg:space-x-8">
               {navItems.map((item) => {
@@ -85,7 +87,6 @@ export default function Navbar() {
                       )}
                     </Link>
 
-                    {/* Submenu Dropdown */}
                     {hasSubmenu && (
                       <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
                         {item.submenu.map((sub) => (
@@ -104,20 +105,30 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* GTranslate Desktop */}
             <div className="hidden lg:block">
               <div className="gtranslate_wrapper gtranslate_desktop"></div>
             </div>
           </div>
 
-          {/* ---------- Mobile View ---------- */}
+          {/* ---------- Mobile Header Bar (With Center Logo) ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full py-2">
-            <div className="w-8">
+            <div className="w-10">
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
             </div>
 
-            <span className="font-bold text-[#053161]">Menu</span>
+            {/* Center Ekam Logo */}
+            <Link href="/" className="flex justify-center">
+              <Image
+                src={imgLogo}
+                alt="Ekam Logo"
+                width={110}
+                height={45}
+                className="object-contain"
+                priority
+              />
+            </Link>
 
+            {/* Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none"
@@ -146,7 +157,13 @@ export default function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b">
-          <span className="font-bold text-[#053161]">Navigation</span>
+          <Image
+            src={imgLogo}
+            alt="Ekam Logo"
+            width={100}
+            height={40}
+            className="object-contain"
+          />
           <button
             onClick={() => setIsOpen(false)}
             className="p-2 text-gray-600 hover:text-red-500 rounded-full"
