@@ -64,9 +64,8 @@ export default function Navbar() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-14">
           
-          {/* ---------- Desktop View (Menu Start Left, No Logo) ---------- */}
+          {/* ---------- Desktop View (Menu Starts Left, No Extra Logo) ---------- */}
           <div className="hidden xl:flex items-center justify-between w-full">
-            {/* Navigation Links Starting From Far Left */}
             <div className="flex items-center space-x-6 lg:space-x-8">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
@@ -111,7 +110,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* ---------- Mobile View Bar ---------- */}
+          {/* ---------- Mobile View ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full py-2">
             <div className="w-8">
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
