@@ -25,7 +25,7 @@ export default function TopHeader() {
           </Link>
         </div>
 
-        {/* Right Side: Exact Rounded Pill Buttons (Matching Second Screenshot) */}
+        {/* Right Side: Exact Rounded Pill Buttons */}
         <div className="flex items-center gap-3">
           
           {/* WhatsApp Green Pill Button */}
@@ -68,9 +68,9 @@ export default function TopHeader() {
         </div>
       </div>
 
-      {/* Mobile Bottom Navigation Bar */}
+      {/* Mobile Bottom Fixed Navigation Bar */}
       <div
-        className="fixed bottom-0 right-0 left-0 z-[100] bg-white border-t border-gray-300 shadow-lg md:hidden transform-gpu will-change-transform"
+        className="fixed bottom-0 right-0 left-0 z-[90] bg-white border-t border-gray-200 shadow-2xl md:hidden transform-gpu will-change-transform"
         style={{ perspective: "1px" }}
       >
         <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
@@ -81,9 +81,9 @@ export default function TopHeader() {
             <img
               src="/images/img2.png"
               alt="Get Quote"
-              className="w-[36px] h-[36px] mb-1 object-contain"
+              className="w-[34px] h-[34px] mb-1 object-contain"
             />
-            <span className="font-bold text-[12px]">Get Quote</span>
+            <span className="font-bold text-[11px]">Get Quote</span>
           </Link>
 
           <a
@@ -93,9 +93,9 @@ export default function TopHeader() {
             <img
               src="/images/img1.png"
               alt="Partner"
-              className="w-[36px] h-[36px] mb-1 object-contain"
+              className="w-[34px] h-[34px] mb-1 object-contain"
             />
-            <span className="font-bold text-[12px]">Partner</span>
+            <span className="font-bold text-[11px]">Partner</span>
           </a>
 
           <a
@@ -107,9 +107,9 @@ export default function TopHeader() {
             <img
               src="/images/what.webp"
               alt="Chat"
-              className="w-[32px] h-[32px] mb-1 object-contain"
+              className="w-[30px] h-[30px] mb-1 object-contain"
             />
-            <span className="font-bold text-[12px]">Chat</span>
+            <span className="font-bold text-[11px]">Chat</span>
           </a>
         </div>
       </div>
