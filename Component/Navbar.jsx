@@ -45,14 +45,8 @@ export default function Navbar() {
         },
       ],
     },
-    {
-      name: "Gallery",
-      href: "/gallery",
-      submenu: [
-        { name: "Video Gallery", href: "/video-gallery" },
-        { name: "Photo Gallery", href: "/gallery" },
-      ],
-    },
+    { name: "Photo Gallery", href: "/gallery" },
+    { name: "Video Gallery", href: "/video-gallery" },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact" },
   ];
