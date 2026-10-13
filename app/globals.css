@@ -93,13 +93,13 @@ body.dark-mode .progress-wrap svg path {
   color: #fff;
   stroke: #fff;
 }
-/* Mobile view par Back-to-Top button ko WhatsApp button ke upar shift karne ke liye */
+/* Mobile view par Back-to-Top button ko WhatsApp button ke upar properly shift karne ke liye */
 @media (max-width: 768px) {
   .scroll-to-top, 
   .back-to-top, 
   [class*="scroll-top"],
   [class*="back-to-top"] {
-    bottom: 140px !important;
+    bottom: 165px !important;
     right: 20px !important;
     z-index: 40 !important;
   }
