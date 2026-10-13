@@ -10,7 +10,6 @@ export default function TopHeader() {
     <>
       {/* 🖥️ Desktop Top Header */}
       <div className="t-header hidden md:flex bg-[#053161] text-white text-sm xl:px-12 lg:px-8 md:px-4 py-3 justify-between items-center shadow-md">
-        
         {/* Left Side: White Ekam Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -27,7 +26,6 @@ export default function TopHeader() {
 
         {/* Right Side: Exact Rounded Pill Buttons */}
         <div className="flex items-center gap-3">
-          
           {/* WhatsApp Green Pill Button */}
           <a
             href="https://wa.me/919990205353"
@@ -64,52 +62,48 @@ export default function TopHeader() {
             />
             <span>Become a Partner!</span>
           </a>
-
         </div>
       </div>
 
-      {/* Mobile Bottom Fixed Navigation Bar */}
-      <div
-        className="fixed bottom-0 right-0 left-0 z-[90] bg-white border-t border-gray-200 shadow-2xl md:hidden transform-gpu will-change-transform"
-        style={{ perspective: "1px" }}
-      >
-        <div className="flex justify-evenly items-center py-2 text-[#053161] text-center w-full">
+      {/* 📱 Mobile Bottom Navigation Bar (No Extra Space) */}
+      <div className="fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-gray-200 shadow-[0_-4px_10px_rgba(0,0,0,0.08)] md:hidden">
+        <div className="flex justify-around items-center h-14 text-[#053161] text-center w-full px-2">
           <Link
             href="/contact"
-            className="flex flex-col items-center justify-center flex-1 text-xs"
+            className="flex flex-col items-center justify-center flex-1 h-full"
           >
             <img
               src="/images/img2.png"
               alt="Get Quote"
-              className="w-[34px] h-[34px] mb-1 object-contain"
+              className="w-[28px] h-[28px] object-contain"
             />
-            <span className="font-bold text-[11px]">Get Quote</span>
+            <span className="font-bold text-[10px] mt-0.5">Get Quote</span>
           </Link>
 
           <a
             href="#"
-            className="flex flex-col items-center justify-center flex-1 text-xs"
+            className="flex flex-col items-center justify-center flex-1 h-full"
           >
             <img
               src="/images/img1.png"
               alt="Partner"
-              className="w-[34px] h-[34px] mb-1 object-contain"
+              className="w-[28px] h-[28px] object-contain"
             />
-            <span className="font-bold text-[11px]">Partner</span>
+            <span className="font-bold text-[10px] mt-0.5">Partner</span>
           </a>
 
           <a
             href="https://wa.me/919990205353"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center flex-1 text-xs"
+            className="flex flex-col items-center justify-center flex-1 h-full"
           >
             <img
               src="/images/what.webp"
               alt="Chat"
-              className="w-[30px] h-[30px] mb-1 object-contain"
+              className="w-[26px] h-[26px] object-contain"
             />
-            <span className="font-bold text-[11px]">Chat</span>
+            <span className="font-bold text-[10px] mt-0.5">Chat</span>
           </a>
         </div>
       </div>
