@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
-import img from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,47 +60,35 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="menu-bar bg-white shadow-md sticky top-0 z-50 transition-colors duration-300">
+    <nav className="menu-bar bg-white shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14">
           
-          {/* ---------- Desktop View ---------- */}
+          {/* ---------- Desktop View (Menu Start Left, No Logo) ---------- */}
           <div className="hidden xl:flex items-center justify-between w-full">
-            {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0 ml-2 lg:ml-4">
-              <Image
-                src={img}
-                alt="Ekam Logo"
-                width={130}
-                height={55}
-                className="object-contain"
-                priority
-              />
-            </Link>
-
-            {/* Navigation Links */}
-            <div className="flex items-center space-x-6 lg:space-x-8 mx-auto">
+            {/* Navigation Links Starting From Far Left */}
+            <div className="flex items-center space-x-6 lg:space-x-8">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
 
                 return (
-                  <div key={item.name} className="relative group py-6">
+                  <div key={item.name} className="relative group py-4">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition duration-200 text-[15px] ${
+                      className={`flex items-center gap-1 font-bold transition duration-200 text-[15px] ${
                         isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
                       {item.name}
                       {hasSubmenu && (
-                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180 text-gray-600" />
                       )}
                     </Link>
 
-                    {/* Desktop Hover Submenu */}
+                    {/* Submenu Dropdown */}
                     {hasSubmenu && (
-                      <div className="absolute left-0 top-full hidden group-hover:block w-60 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
+                      <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
                         {item.submenu.map((sub) => (
                           <Link
                             key={sub.name}
@@ -125,44 +111,29 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* ---------- Mobile Header Bar ---------- */}
+          {/* ---------- Mobile View Bar ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full py-2">
             <div className="w-8">
               <div className="gtranslate_wrapper gtranslate_mobile"></div>
             </div>
 
-            {/* Center Logo */}
-            <Link href="/" className="flex justify-center">
-              <Image
-                src={img}
-                alt="Ekam Logo"
-                width={110}
-                height={45}
-                className="object-contain"
-                priority
-              />
-            </Link>
+            <span className="font-bold text-[#053161]">Menu</span>
 
-            {/* Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none"
               aria-label="Toggle Menu"
             >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
+
         </div>
       </div>
 
-      {/* ---------- Mobile Slide Drawer Backdrop ---------- */}
+      {/* ---------- Mobile Side Drawer ---------- */}
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
@@ -170,15 +141,13 @@ export default function Navbar() {
         />
       )}
 
-      {/* ---------- Mobile Side Drawer Menu ---------- */}
       <div
         className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white z-50 shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden flex flex-col ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Mobile Menu Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b">
-          <Image src={img} alt="Ekam Logo" width={100} height={40} className="object-contain" />
+          <span className="font-bold text-[#053161]">Navigation</span>
           <button
             onClick={() => setIsOpen(false)}
             className="p-2 text-gray-600 hover:text-red-500 rounded-full"
@@ -189,7 +158,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu Items */}
         <div className="flex-1 overflow-y-auto px-5 py-4 space-y-1">
           {navItems.map((item) => {
             const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -217,7 +185,6 @@ export default function Navbar() {
                   )}
                 </div>
 
-                {/* Mobile Submenu Items */}
                 {hasSubmenu && isSubOpen && (
                   <div className="pl-4 pb-3 space-y-2 bg-gray-50 rounded-lg p-2 mb-2">
                     {item.submenu.map((sub) => (
