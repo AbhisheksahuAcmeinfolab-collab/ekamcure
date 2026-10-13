@@ -65,7 +65,6 @@ export default function Footer() {
       <footer className="footer-s bg-gradient-to-r from-blue-950 to-blue-900 text-gray-300 dark:bg-white pb-20 md:pb-0">
         {/* Top Section */}
         <div className="max-w-7xl mx-auto px-2 py-14 text-align grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {/* Column 1 */}
           <div>
             <Link href="/">
               <Image
@@ -113,7 +112,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4 border-b-2 border-cyan-500 inline-block">
               OUR SERVICES
@@ -138,7 +136,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4 border-b-2 border-cyan-500 inline-block">
               QUICK LINKS
@@ -216,12 +213,12 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* WhatsApp Floating Button - Mobile par bottom fixed bar ke upar safely positioned */}
+      {/* WhatsApp Floating Button - Hidden on Mobile (`hidden md:flex`), visible on Desktop */}
       <a
         href="https://wa.me/919990205353"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-20 md:bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+        className="hidden md:flex fixed bottom-6 right-6 z-50 items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
         aria-label="Contact on WhatsApp"
       >
         <svg
