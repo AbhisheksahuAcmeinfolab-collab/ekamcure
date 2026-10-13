@@ -93,3 +93,21 @@ body.dark-mode .progress-wrap svg path {
   color: #fff;
   stroke: #fff;
 }
+/* Mobile view floating buttons fix */
+@media (max-width: 768px) {
+  /* WhatsApp Floating Widget Uplift */
+  .whatsapp-float, 
+  [class*="whatsapp"], 
+  .wa-float-btn {
+    bottom: 75px !important;
+    z-index: 80 !important;
+  }
+
+  /* Back to Top Floating Arrow Uplift */
+  .scroll-to-top, 
+  .back-to-top, 
+  [class*="scroll-top"] {
+    bottom: 75px !important;
+    z-index: 80 !important;
+  }
+}
