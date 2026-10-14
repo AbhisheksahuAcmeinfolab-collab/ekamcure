@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Search, X, Sparkles, Menu } from "lucide-react";
+import { ChevronDown, Search, X, Sparkles, Menu, Globe } from "lucide-react";
 import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
 
 // All treatments configured according to your folder structure
@@ -129,11 +129,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100 max-w-full overflow-x-hidden">
+      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-40 transition-colors duration-300 border-b border-gray-100 max-w-full overflow-x-hidden">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="flex items-center justify-between h-14 md:h-16 gap-4">
             
-            {/* ---------- Desktop View (Starting directly with Home) ---------- */}
+            {/* ---------- Desktop Navigation ---------- */}
             <div className="hidden xl:flex items-center space-x-6 xl:space-x-7 flex-shrink-0">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
@@ -173,7 +173,7 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* ---------- Desktop Search Bar (Right Side) ---------- */}
+            {/* ---------- Desktop Search Bar ---------- */}
             <div className="hidden xl:flex items-center gap-4 relative flex-1 justify-end" ref={searchRef}>
               <div className="relative w-72 lg:w-80 xl:w-96 transition-all duration-300">
                 <input
@@ -241,7 +241,7 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* ---------- Mobile Header Bar ---------- */}
+            {/* ---------- Mobile Top Bar ---------- */}
             <div className="flex xl:hidden justify-between items-center w-full py-2">
               <Link href="/" className="flex justify-start">
                 <Image
@@ -254,10 +254,10 @@ export default function Navbar() {
                 />
               </Link>
 
-              {/* Mobile Actions: Search + Menu Hamburger */}
+              {/* Mobile Actions */}
               <div className="flex items-center gap-1">
                 <button
-                  onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}
+                  onClick={() => setIsMobileSearchOpen(true)}
                   className="p-2 text-gray-700 hover:text-[#053161] rounded-full hover:bg-gray-100 active:scale-95 transition"
                   aria-label="Open Search"
                 >
@@ -279,7 +279,7 @@ export default function Navbar() {
 
         {/* ---------- Mobile Overlay Search Drawer ---------- */}
         {isMobileSearchOpen && (
-          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[999] xl:hidden flex flex-col p-4 animate-fadeIn">
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] xl:hidden flex flex-col p-4 animate-fadeIn">
             <div className="bg-white rounded-2xl p-4 shadow-xl w-full max-w-md mx-auto relative">
               <div className="flex items-center justify-between pb-3 border-b mb-3">
                 <span className="font-bold text-[#053161] flex items-center gap-1.5">
@@ -330,20 +330,21 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* ---------- Mobile Navigation Drawer ---------- */}
+        {/* ---------- Mobile Side Drawer Overlay ---------- */}
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black/50 z-[998] xl:hidden transition-opacity"
+            className="fixed inset-0 bg-black/60 backdrop-blur-xs z-[9998] xl:hidden transition-opacity"
           />
         )}
 
+        {/* ---------- Mobile Menu Slide-over Drawer ---------- */}
         <div
-          className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white z-[999] shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden flex flex-col ${
+          className={`fixed inset-y-0 right-0 w-[85%] max-w-sm bg-white z-[9999] shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden flex flex-col ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between px-5 py-4 border-b">
+          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-gray-50/50">
             <Image
               src={imgLogo}
               alt="Ekam Logo"
@@ -353,13 +354,13 @@ export default function Navbar() {
             />
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 text-gray-600 hover:text-red-500 rounded-full"
+              className="p-2 text-gray-500 hover:text-red-500 rounded-full hover:bg-gray-100"
             >
               <X className="w-6 h-6" />
             </button>
           </div>
 
-          <div className="flex-1 overflow-y-auto px-5 py-4 space-y-1">
+          <div className="flex-1 overflow-y-auto px-5 py-3 space-y-1">
             {navItems.map((item) => {
               const hasSubmenu = item.submenu && item.submenu.length > 0;
               const isSubOpen = activeMobileSubmenu === item.name;
@@ -377,7 +378,7 @@ export default function Navbar() {
                     {hasSubmenu && (
                       <button
                         onClick={() => toggleMobileSubmenu(item.name)}
-                        className="p-1 text-gray-500 hover:text-[#053161]"
+                        className="p-1.5 text-gray-500 hover:text-[#053161] rounded-md hover:bg-gray-100"
                       >
                         <ChevronDown
                           className={`w-5 h-5 transition-transform ${isSubOpen ? "rotate-180" : ""}`}
@@ -387,13 +388,13 @@ export default function Navbar() {
                   </div>
 
                   {hasSubmenu && isSubOpen && (
-                    <div className="pl-4 pb-3 space-y-2 bg-gray-50 rounded-lg p-2 mb-2">
+                    <div className="pl-3 pb-3 space-y-1.5 bg-blue-50/50 rounded-lg p-2 mb-2">
                       {item.submenu.map((sub) => (
                         <Link
                           key={sub.name}
                           href={sub.href}
                           onClick={() => setIsOpen(false)}
-                          className="block text-sm text-gray-600 hover:text-[#053161] font-medium py-1"
+                          className="block text-sm text-gray-700 hover:text-[#053161] font-medium py-1.5 px-2 rounded hover:bg-white"
                         >
                           {sub.name}
                         </Link>
@@ -407,9 +408,11 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ---------- Fixed Bottom-Left Language Switcher Widget (Desktop & Mobile) ---------- */}
-      <div className="fixed bottom-20 md:bottom-6 left-4 z-[80] transition-all">
-        <div className="gtranslate_wrapper shadow-lg rounded-xl overflow-hidden border border-gray-200 bg-white"></div>
+      {/* ---------- Fixed Bottom-Left Language Switcher Widget ---------- */}
+      <div className="fixed bottom-20 md:bottom-6 left-4 z-[80]">
+        <div className="min-w-[120px] min-h-[38px] bg-white/90 backdrop-blur-md border border-gray-200/80 shadow-lg rounded-full flex items-center justify-center px-3 py-1 text-xs font-medium text-gray-700">
+          <div className="gtranslate_wrapper flex items-center gap-1.5"></div>
+        </div>
       </div>
     </>
   );
