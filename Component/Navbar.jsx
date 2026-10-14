@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Search, X } from "lucide-react";
+import { ChevronDown, Search, X, Sparkles } from "lucide-react";
 import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
 
 // All treatments configured according to your folder structure
@@ -37,6 +37,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const searchRef = useRef(null);
+  const inputRef = useRef(null);
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -103,6 +104,18 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Keyboard shortcut (CTRL + K) to focus search bar
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   const handleSelectTreatment = (href) => {
     router.push(href);
     setSearchQuery("");
@@ -115,12 +128,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="menu-bar bg-white shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
-      <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-14 md:h-16 gap-4">
+    <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
+      <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
+        <div className="flex items-center justify-between h-14 md:h-16 gap-6">
           
-          {/* ---------- Desktop View (Left Navigation Links) ---------- */}
-          <div className="hidden xl:flex items-center space-x-5 lg:space-x-6">
+          {/* ---------- Desktop View (Left Aligned Links Starting Clean) ---------- */}
+          <div className="hidden xl:flex items-center space-x-6 xl:space-x-7 flex-shrink-0">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -129,13 +142,15 @@ export default function Navbar() {
                 <div key={item.name} className="relative group py-4">
                   <Link
                     href={item.href}
-                    className={`flex items-center gap-1 font-bold transition duration-200 text-[14px] xl:text-[15px] ${
-                      isActive ? "text-[#053161]" : "text-gray-800 hover:text-[#053161]"
+                    className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[14px] xl:text-[15px] ${
+                      isActive
+                        ? "text-[#053161] font-bold"
+                        : "text-gray-700 hover:text-[#053161]"
                     }`}
                   >
                     {item.name}
                     {hasSubmenu && (
-                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180 text-gray-600" />
+                      <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-gray-500" />
                     )}
                   </Link>
 
@@ -157,48 +172,68 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* ---------- Premium Desktop Search Bar (Right Side) ---------- */}
-          <div className="hidden xl:flex items-center gap-4 relative" ref={searchRef}>
-            <div className="relative w-64 lg:w-72">
+          {/* ---------- Ultra Premium Desktop Search Bar (Right Side) ---------- */}
+          <div className="hidden xl:flex items-center gap-4 relative flex-1 justify-end" ref={searchRef}>
+            <div className="relative w-72 lg:w-80 xl:w-96 transition-all duration-300">
               <input
+                ref={inputRef}
                 type="text"
-                placeholder="Search treatment..."
+                placeholder="Search treatment (e.g. IVF, Kidney, Eye Care)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setIsSearchFocused(true)}
-                className="w-full pl-9 pr-8 py-2 text-sm bg-gray-50 border border-gray-200 rounded-full focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#053161] focus:border-transparent transition-all shadow-inner text-gray-800 placeholder-gray-400"
+                className={`w-full pl-10 pr-16 py-2 text-sm bg-gray-50/80 border rounded-full text-gray-800 placeholder-gray-400 transition-all shadow-sm ${
+                  isSearchFocused
+                    ? "bg-white border-[#053161] ring-4 ring-[#053161]/10 shadow-md"
+                    : "border-gray-200 hover:border-gray-300"
+                }`}
               />
-              <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <Search className={`w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors ${
+                isSearchFocused ? "text-[#053161]" : "text-gray-400"
+              }`} />
               
-              {searchQuery && (
+              {/* Shortcut badge or Clear button */}
+              {searchQuery ? (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 p-0.5 rounded-full hover:bg-gray-100"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
+              ) : (
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-semibold text-gray-400 bg-gray-200/60 px-1.5 py-0.5 rounded border border-gray-300/50 pointer-events-none hidden lg:inline-block">
+                  ⌘K
+                </span>
               )}
             </div>
 
-            {/* Desktop Search Dropdown */}
+            {/* Desktop Search Results Dropdown */}
             {isSearchFocused && searchQuery.trim().length > 0 && (
-              <div className="absolute right-0 top-full mt-2 w-80 bg-white border border-gray-100 shadow-2xl rounded-2xl py-2 z-50 max-h-80 overflow-y-auto">
-                <div className="px-4 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-50">
-                  Treatments ({searchResults.length})
+              <div className="absolute right-0 top-full mt-2 w-96 bg-white border border-gray-100 shadow-2xl rounded-2xl py-2 z-50 max-h-80 overflow-y-auto divide-y divide-gray-50 animate-fadeIn">
+                <div className="px-4 py-2 text-[11px] font-bold text-gray-400 uppercase tracking-wider flex items-center justify-between">
+                  <span>Treatments Found</span>
+                  <span className="bg-blue-50 text-[#053161] px-2 py-0.5 rounded-full text-[10px]">
+                    {searchResults.length} Results
+                  </span>
                 </div>
                 {searchResults.length > 0 ? (
                   searchResults.map((item) => (
                     <button
                       key={item.href}
                       onClick={() => handleSelectTreatment(item.href)}
-                      className="w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#053161] font-medium transition flex items-center gap-2"
+                      className="w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-white hover:text-[#053161] font-medium transition flex items-center justify-between group"
                     >
-                      <Search className="w-3.5 h-3.5 text-gray-400" />
-                      <span>{item.name}</span>
+                      <div className="flex items-center gap-2.5">
+                        <Sparkles className="w-4 h-4 text-cyan-500 opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-transform" />
+                        <span>{item.name}</span>
+                      </div>
+                      <span className="text-xs text-[#053161] opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                        View →
+                      </span>
                     </button>
                   ))
                 ) : (
-                  <div className="px-4 py-3 text-sm text-gray-500 text-center">
+                  <div className="px-4 py-6 text-sm text-gray-500 text-center">
                     No matching treatment found.
                   </div>
                 )}
@@ -235,10 +270,10 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}
-                className="p-2 text-gray-700 hover:text-[#053161]"
+                className="p-2 text-gray-700 hover:text-[#053161] rounded-full hover:bg-gray-100"
                 aria-label="Open Search"
               >
-                <Search className="w-6 h-6" />
+                <Search className="w-5 h-5" />
               </button>
 
               <button
@@ -258,10 +293,13 @@ export default function Navbar() {
 
       {/* ---------- Mobile Overlay Search Drawer ---------- */}
       {isMobileSearchOpen && (
-        <div className="fixed inset-0 bg-black/60 z-50 xl:hidden flex flex-col p-4 animate-fadeIn">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 xl:hidden flex flex-col p-4 animate-fadeIn">
           <div className="bg-white rounded-2xl p-4 shadow-xl w-full max-w-md mx-auto relative">
             <div className="flex items-center justify-between pb-3 border-b mb-3">
-              <span className="font-bold text-[#053161]">Search Treatment</span>
+              <span className="font-bold text-[#053161] flex items-center gap-1.5">
+                <Search className="w-4 h-4 text-[#053161]" />
+                Search Treatment
+              </span>
               <button
                 onClick={() => setIsMobileSearchOpen(false)}
                 className="p-1 text-gray-500 hover:text-red-500 rounded-full"
