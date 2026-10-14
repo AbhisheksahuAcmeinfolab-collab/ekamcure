@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
 
 export default function Navbar() {
@@ -56,9 +56,9 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
-        <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
+    <div className="w-full overflow-x-hidden">
+      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100 w-full">
+        <div className="max-w-[1440px] mx-auto px-4 xl:px-12 w-full">
           <div className="flex items-center justify-between h-16 md:h-20 gap-6">
             
             {/* ---------- Desktop View: Original Logo on Left + Menu Centered/Spread ---------- */}
@@ -138,9 +138,7 @@ export default function Navbar() {
                 className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100"
                 aria-label="Toggle Menu"
               >
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <Menu className="w-7 h-7" />
               </button>
             </div>
 
@@ -172,7 +170,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="p-2 text-gray-600 hover:text-red-500 rounded-full"
             >
-              ✕
+              <X className="w-6 h-6" />
             </button>
           </div>
 
@@ -226,8 +224,8 @@ export default function Navbar() {
 
       {/* ---------- Fixed Bottom-Left Language Switcher Widget (Desktop & Mobile) ---------- */}
       <div className="fixed bottom-20 md:bottom-6 left-4 z-[80] transition-all">
-        <div className="gtranslate_wrapper shadow-lg rounded-xl overflow-hidden border border-gray-200 bg-white"></div>
+        <div className="gtranslate_wrapper shadow-lg rounded-xl overflow-hidden border border-gray-200 bg-white min-w-[90px] min-h-[36px] flex items-center justify-center p-1"></div>
       </div>
-    </>
+    </div>
   );
 }
