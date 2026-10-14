@@ -56,176 +56,168 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full overflow-x-hidden">
-      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100 w-full">
-        <div className="max-w-[1440px] mx-auto px-4 xl:px-12 w-full">
-          <div className="flex items-center justify-between h-16 md:h-20 gap-6">
-            
-            {/* ---------- Desktop View: Original Logo on Left + Menu Centered/Spread ---------- */}
-            <div className="hidden xl:flex items-center justify-between w-full">
-              {/* Left Original Logo */}
-              <div className="flex items-center flex-shrink-0">
-                <Link href="/" className="flex items-center">
-                  <Image
-                    src={imgLogo}
-                    alt="Ekam Logo"
-                    width={130}
-                    height={55}
-                    className="object-contain"
-                    priority
-                  />
-                </Link>
-              </div>
-
-              {/* Navigation Menu Items with Equal Spacing */}
-              <div className="flex items-center space-x-6 xl:space-x-8">
-                {navItems.map((item) => {
-                  const isActive = pathname === item.href;
-                  const hasSubmenu = item.submenu && item.submenu.length > 0;
-
-                  return (
-                    <div key={item.name} className="relative group py-4">
-                      <Link
-                        href={item.href}
-                        className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[15px] ${
-                          isActive
-                            ? "text-[#053161] font-bold"
-                            : "text-gray-700 hover:text-[#053161]"
-                        }`}
-                      >
-                        {item.name}
-                        {hasSubmenu && (
-                          <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-gray-500" />
-                        )}
-                      </Link>
-
-                      {hasSubmenu && (
-                        <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50 animate-fadeIn">
-                          {item.submenu.map((sub) => (
-                            <Link
-                              key={sub.name}
-                              href={sub.href}
-                              className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#053161] font-medium transition"
-                            >
-                              {sub.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* ---------- Mobile Header Bar ---------- */}
-            <div className="flex xl:hidden justify-between items-center w-full py-2">
-              {/* Left Original Logo */}
-              <Link href="/" className="flex justify-start">
+    <nav className="menu-bar bg-white shadow-sm sticky top-0 z-50 w-full border-b border-gray-100">
+      <div className="max-w-[1440px] mx-auto px-4 xl:px-12 w-full">
+        <div className="flex items-center justify-between h-16 md:h-20 gap-6">
+          
+          {/* ---------- Desktop View ---------- */}
+          <div className="hidden xl:flex items-center justify-between w-full">
+            <div className="flex items-center flex-shrink-0">
+              <Link href="/" className="flex items-center">
                 <Image
                   src={imgLogo}
                   alt="Ekam Logo"
-                  width={110}
-                  height={45}
+                  width={130}
+                  height={55}
                   className="object-contain"
                   priority
                 />
               </Link>
-
-              {/* Right Mobile Hamburger Button */}
-              <button
-                onClick={() => setIsOpen(true)}
-                className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100"
-                aria-label="Toggle Menu"
-              >
-                <Menu className="w-7 h-7" />
-              </button>
             </div>
 
+            <div className="flex items-center space-x-6 xl:space-x-8">
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+                const hasSubmenu = item.submenu && item.submenu.length > 0;
+
+                return (
+                  <div key={item.name} className="relative group py-4">
+                    <Link
+                      href={item.href}
+                      className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[15px] ${
+                        isActive
+                          ? "text-[#053161] font-bold"
+                          : "text-gray-700 hover:text-[#053161]"
+                      }`}
+                    >
+                      {item.name}
+                      {hasSubmenu && (
+                        <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-gray-500" />
+                      )}
+                    </Link>
+
+                    {hasSubmenu && (
+                      <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50">
+                        {item.submenu.map((sub) => (
+                          <Link
+                            key={sub.name}
+                            href={sub.href}
+                            className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#053161] font-medium transition"
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
 
-        {/* ---------- Mobile Side Drawer (Navigation Menu) ---------- */}
-        {isOpen && (
-          <div
-            onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black/50 z-[998] xl:hidden transition-opacity"
-          />
-        )}
+          {/* ---------- Mobile View Header Bar ---------- */}
+          <div className="flex xl:hidden justify-between items-center w-full py-2">
+            <Link href="/" className="flex justify-start">
+              <Image
+                src={imgLogo}
+                alt="Ekam Logo"
+                width={110}
+                height={45}
+                className="object-contain"
+                priority
+              />
+            </Link>
 
-        <div
-          className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white z-[999] shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden flex flex-col ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <div className="flex items-center justify-between px-5 py-4 border-b">
-            <Image
-              src={imgLogo}
-              alt="Ekam Logo"
-              width={100}
-              height={40}
-              className="object-contain"
-            />
             <button
-              onClick={() => setIsOpen(false)}
-              className="p-2 text-gray-600 hover:text-red-500 rounded-full"
+              onClick={() => setIsOpen(true)}
+              className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100"
+              aria-label="Open Menu"
             >
-              <X className="w-6 h-6" />
+              <Menu className="w-7 h-7" />
             </button>
           </div>
 
-          <div className="flex-1 overflow-y-auto px-5 py-4 space-y-1">
-            {navItems.map((item) => {
-              const hasSubmenu = item.submenu && item.submenu.length > 0;
-              const isSubOpen = activeMobileSubmenu === item.name;
+        </div>
+      </div>
 
-              return (
-                <div key={item.name} className="border-b border-gray-100 last:border-none">
-                  <div className="flex items-center justify-between py-3">
-                    <Link
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="font-semibold text-gray-800 hover:text-[#053161] text-base"
+      {/* ---------- Mobile Drawer Overlay ---------- */}
+      {isOpen && (
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 bg-black/60 z-[99998] xl:hidden transition-opacity"
+        />
+      )}
+
+      {/* ---------- Mobile Side Drawer Menu ---------- */}
+      <div
+        className={`fixed inset-y-0 right-0 w-[85%] max-w-[320px] bg-white z-[99999] shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden flex flex-col ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between px-5 py-4 border-b">
+          <Image
+            src={imgLogo}
+            alt="Ekam Logo"
+            width={100}
+            height={40}
+            className="object-contain"
+          />
+          <button
+            onClick={() => setIsOpen(false)}
+            className="p-2 text-gray-600 hover:text-red-500 rounded-full hover:bg-gray-100"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-5 py-4 space-y-1">
+          {navItems.map((item) => {
+            const hasSubmenu = item.submenu && item.submenu.length > 0;
+            const isSubOpen = activeMobileSubmenu === item.name;
+
+            return (
+              <div key={item.name} className="border-b border-gray-100 last:border-none">
+                <div className="flex items-center justify-between py-3">
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="font-semibold text-gray-800 hover:text-[#053161] text-base"
+                  >
+                    {item.name}
+                  </Link>
+                  {hasSubmenu && (
+                    <button
+                      onClick={() => toggleMobileSubmenu(item.name)}
+                      className="p-1 text-gray-500 hover:text-[#053161]"
                     >
-                      {item.name}
-                    </Link>
-                    {hasSubmenu && (
-                      <button
-                        onClick={() => toggleMobileSubmenu(item.name)}
-                        className="p-1 text-gray-500 hover:text-[#053161]"
-                      >
-                        <ChevronDown
-                          className={`w-5 h-5 transition-transform ${isSubOpen ? "rotate-180" : ""}`}
-                        />
-                      </button>
-                    )}
-                  </div>
-
-                  {hasSubmenu && isSubOpen && (
-                    <div className="pl-4 pb-3 space-y-2 bg-gray-50 rounded-lg p-2 mb-2">
-                      {item.submenu.map((sub) => (
-                        <Link
-                          key={sub.name}
-                          href={sub.href}
-                          onClick={() => setIsOpen(false)}
-                          className="block text-sm text-gray-600 hover:text-[#053161] font-medium py-1"
-                        >
-                          {sub.name}
-                        </Link>
-                      ))}
-                    </div>
+                      <ChevronDown
+                        className={`w-5 h-5 transition-transform duration-200 ${
+                          isSubOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
                   )}
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </nav>
 
-      {/* ---------- Fixed Bottom-Left Language Switcher Widget (Desktop & Mobile) ---------- */}
-      <div className="fixed bottom-20 md:bottom-6 left-4 z-[80] transition-all">
-        <div className="gtranslate_wrapper shadow-lg rounded-xl overflow-hidden border border-gray-200 bg-white min-w-[90px] min-h-[36px] flex items-center justify-center p-1"></div>
+                {hasSubmenu && isSubOpen && (
+                  <div className="pl-3 pb-3 space-y-2 bg-gray-50 rounded-lg p-2 mb-2">
+                    {item.submenu.map((sub) => (
+                      <Link
+                        key={sub.name}
+                        href={sub.href}
+                        onClick={() => setIsOpen(false)}
+                        className="block text-sm text-gray-600 hover:text-[#053161] font-medium py-1"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }
