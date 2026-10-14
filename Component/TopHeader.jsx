@@ -8,8 +8,8 @@ import imgPartner from "../assets/image/img1.png";
 export default function TopHeader() {
   return (
     <>
-      {/* 🖥️ Desktop Top Header */}
-      <div className="t-header hidden md:flex bg-[#053161] text-white text-sm xl:px-12 lg:px-8 md:px-4 py-3 justify-between items-center shadow-md">
+      {/* 🖥️ Desktop Top Header with Premium Gradient Background */}
+      <div className="t-header hidden md:flex bg-gradient-to-r from-blue-950 via-[#073b75] to-blue-900 text-white text-sm xl:px-12 lg:px-8 md:px-4 py-3 justify-between items-center shadow-[0_4px_20px_rgba(3,24,48,0.25)] border-b border-blue-800/40">
         {/* Left Side: White Ekam Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -18,7 +18,7 @@ export default function TopHeader() {
               alt="Ekam Logo"
               width={130}
               height={50}
-              className="object-contain filter brightness-0 invert"
+              className="object-contain filter brightness-0 invert drop-shadow-sm"
               priority
             />
           </Link>
@@ -65,7 +65,7 @@ export default function TopHeader() {
         </div>
       </div>
 
-      {/* 📱 Mobile Bottom Navigation Bar (Updated to match Desktop Style & Increased Size) */}
+      {/* 📱 Mobile Bottom Navigation Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.12)] md:hidden">
         <div className="flex justify-evenly items-center h-16 text-center w-full px-2 gap-1.5">
           {/* Get Quote Blue Button */}
