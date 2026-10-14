@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Search, X, Sparkles } from "lucide-react";
+import { ChevronDown, Search, X, Sparkles, Menu } from "lucide-react";
 import imgLogo from "../assets/newimage/Ekam-logo-300x133.webp";
 
 // All treatments configured according to your folder structure
@@ -129,9 +129,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100">
+      <nav className="menu-bar bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-gray-100 max-w-full overflow-x-hidden">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
-          <div className="flex items-center justify-between h-14 md:h-16 gap-6">
+          <div className="flex items-center justify-between h-14 md:h-16 gap-4">
             
             {/* ---------- Desktop View (Starting directly with Home) ---------- */}
             <div className="hidden xl:flex items-center space-x-6 xl:space-x-7 flex-shrink-0">
@@ -173,7 +173,7 @@ export default function Navbar() {
               })}
             </div>
 
-            {/* ---------- Ultra Premium Desktop Search Bar (Right Side) ---------- */}
+            {/* ---------- Desktop Search Bar (Right Side) ---------- */}
             <div className="hidden xl:flex items-center gap-4 relative flex-1 justify-end" ref={searchRef}>
               <div className="relative w-72 lg:w-80 xl:w-96 transition-all duration-300">
                 <input
@@ -193,7 +193,6 @@ export default function Navbar() {
                   isSearchFocused ? "text-[#053161]" : "text-gray-400"
                 }`} />
                 
-                {/* Shortcut badge or Clear button */}
                 {searchQuery ? (
                   <button
                     onClick={() => setSearchQuery("")}
@@ -244,7 +243,6 @@ export default function Navbar() {
 
             {/* ---------- Mobile Header Bar ---------- */}
             <div className="flex xl:hidden justify-between items-center w-full py-2">
-              {/* Left Ekam Logo */}
               <Link href="/" className="flex justify-start">
                 <Image
                   src={imgLogo}
@@ -256,11 +254,11 @@ export default function Navbar() {
                 />
               </Link>
 
-              {/* Right Mobile Actions (Search + Menu Hamburger) */}
-              <div className="flex items-center gap-2">
+              {/* Mobile Actions: Search + Menu Hamburger */}
+              <div className="flex items-center gap-1">
                 <button
                   onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}
-                  className="p-2 text-gray-700 hover:text-[#053161] rounded-full hover:bg-gray-100"
+                  className="p-2 text-gray-700 hover:text-[#053161] rounded-full hover:bg-gray-100 active:scale-95 transition"
                   aria-label="Open Search"
                 >
                   <Search className="w-5 h-5" />
@@ -268,12 +266,10 @@ export default function Navbar() {
 
                 <button
                   onClick={() => setIsOpen(true)}
-                  className="p-1.5 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100"
-                  aria-label="Toggle Menu"
+                  className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100 active:scale-95 transition"
+                  aria-label="Open Menu"
                 >
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
+                  <Menu className="w-6 h-6" />
                 </button>
               </div>
             </div>
@@ -334,7 +330,7 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* ---------- Mobile Side Drawer (Navigation Menu) ---------- */}
+        {/* ---------- Mobile Navigation Drawer ---------- */}
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
