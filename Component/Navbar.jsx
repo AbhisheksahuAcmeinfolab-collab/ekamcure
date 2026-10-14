@@ -132,7 +132,7 @@ export default function Navbar() {
       <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
         <div className="flex items-center justify-between h-14 md:h-16 gap-6">
           
-          {/* ---------- Desktop View (Left Aligned Links Starting Clean) ---------- */}
+          {/* ---------- Desktop View (Starting directly with Home) ---------- */}
           <div className="hidden xl:flex items-center space-x-6 xl:space-x-7 flex-shrink-0">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -239,23 +239,12 @@ export default function Navbar() {
                 )}
               </div>
             )}
-
-            {/* Language Translator */}
-            <div className="hidden lg:block">
-              <div className="gtranslate_wrapper gtranslate_desktop"></div>
-            </div>
           </div>
 
           {/* ---------- Mobile Header Bar ---------- */}
           <div className="flex xl:hidden justify-between items-center w-full py-2">
-            <div className="flex items-center gap-2">
-              <div className="w-8">
-                <div className="gtranslate_wrapper gtranslate_mobile"></div>
-              </div>
-            </div>
-
             {/* Center Ekam Logo */}
-            <Link href="/" className="flex justify-center">
+            <Link href="/" className="flex justify-start">
               <Image
                 src={imgLogo}
                 alt="Ekam Logo"
