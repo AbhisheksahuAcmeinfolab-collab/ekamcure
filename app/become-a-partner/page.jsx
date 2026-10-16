@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { 
   CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, 
   Users, HeartHandshake, Building2, Stethoscope, Sparkles, Heart, Activity,
@@ -17,7 +16,6 @@ export default function BecomeAPartnerPage() {
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 bg-blue-800/60 border border-blue-700/50 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 text-cyan-300 backdrop-blur-sm">
                 <Sparkles className="w-3.5 h-3.5" /> Free to apply. We reply within 2 business days.
@@ -47,7 +45,6 @@ export default function BecomeAPartnerPage() {
               </div>
             </div>
 
-            {/* Right Visual Card */}
             <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
               <div className="relative w-full max-w-md aspect-square bg-gradient-to-tr from-cyan-500/20 to-blue-400/10 rounded-3xl p-8 border border-white/10 backdrop-blur-md flex flex-col items-center justify-center text-center">
                 <div className="w-24 h-24 rounded-full bg-cyan-400/20 border border-cyan-300/40 flex items-center justify-center mb-6 text-cyan-300 shadow-xl">
@@ -66,7 +63,6 @@ export default function BecomeAPartnerPage() {
       <section className="py-12 bg-slate-50 border-b border-gray-100">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <FileText className="w-6 h-6" />
@@ -76,7 +72,6 @@ export default function BecomeAPartnerPage() {
                 <p className="text-sm text-gray-500">Agreed in writing before your first case</p>
               </div>
             </div>
-
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Clock className="w-6 h-6" />
@@ -86,7 +81,6 @@ export default function BecomeAPartnerPage() {
                 <p className="text-sm text-gray-500">Fast treatment plans and itemised quotes</p>
               </div>
             </div>
-
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <ShieldCheck className="w-6 h-6" />
@@ -96,9 +90,7 @@ export default function BecomeAPartnerPage() {
                 <p className="text-sm text-gray-500">We work through you at every single stage</p>
               </div>
             </div>
-
           </div>
-
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-base sm:text-lg text-gray-700 italic bg-white py-3 px-6 rounded-full border border-gray-200/60 inline-block shadow-xs">
               &quot;Ekam means <strong>&apos;one&apos;</strong>: one team and one point of contact for every patient and every partner.&quot;
@@ -114,9 +106,7 @@ export default function BecomeAPartnerPage() {
             <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Who can partner with us</h2>
             <p className="text-gray-600">Each partner type has its own process, so you only deal with what matters to you.</p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Users className="w-7 h-7" />
@@ -129,7 +119,6 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Case updates on WhatsApp</li>
               </ul>
             </div>
-
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <HeartHandshake className="w-7 h-7" />
@@ -142,7 +131,6 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> A fixed, transparent support amount per patient</li>
               </ul>
             </div>
-
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Building2 className="w-7 h-7" />
@@ -155,7 +143,6 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Discharge summaries and itemised invoices in English for every case</li>
               </ul>
             </div>
-
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group flex flex-col justify-between">
               <div>
                 <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
@@ -174,12 +161,11 @@ export default function BecomeAPartnerPage() {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* 🏥 4. Our Partner Hospitals */}
+      {/* 🏥 4. Our Partner Hospitals (Visual Logo Badge Cards) */}
       <section className="py-16 bg-blue-50/60 border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mb-3">Our partner hospitals</h2>
@@ -187,23 +173,28 @@ export default function BecomeAPartnerPage() {
             We match each patient to the right hospital and specialist from our network of 10+ accredited hospitals in India.
           </p>
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {["Max Healthcare", "Apollo Hospitals", "Fortis Healthcare", "Yatharth Hospitals"].map((hospital, idx) => (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Max Healthcare", code: "Max" },
+              { name: "Apollo Hospitals", code: "Apollo" },
+              { name: "Fortis Healthcare", code: "Fortis" },
+              { name: "Yatharth Hospitals", code: "Yatharth" },
+            ].map((hospital, idx) => (
               <div 
                 key={idx}
-                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-400 group cursor-default"
+                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-blue-500 group cursor-default"
               >
-                <div className="w-10 h-10 rounded-full bg-blue-50 text-[#053161] flex items-center justify-center group-hover:bg-[#053161] group-hover:text-white transition-colors">
-                  <Building2 className="w-5 h-5" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-900 to-[#073b75] text-white flex items-center justify-center font-black text-xl shadow-md border border-blue-800 group-hover:scale-110 transition-transform">
+                  {hospital.code}
                 </div>
-                <span className="font-bold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital}</span>
+                <span className="font-extrabold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital.name}</span>
+                <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">NABH / JCI Accredited</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      
       {/* 🩺 5. Treatments Families Ask Us About Most */}
       <section className="py-20">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
@@ -211,7 +202,6 @@ export default function BecomeAPartnerPage() {
             <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Treatments families ask us about most</h2>
             <p className="text-gray-600">You can send us any case. These are the ones we are asked about every day:</p>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
             {[
               { name: "Heart Surgery & Valve Surgery", icon: Heart },
@@ -237,7 +227,6 @@ export default function BecomeAPartnerPage() {
               );
             })}
           </div>
-
           <div className="text-center">
             <Link
               href="/treatments"
@@ -257,7 +246,6 @@ export default function BecomeAPartnerPage() {
             <h2 className="text-3xl font-extrabold mb-4 text-white">Our commitments to partners</h2>
             <p className="text-gray-400">Complete transparency and dedicated support for every step.</p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Payout terms in writing", desc: "You see your fee and when it is paid before you send your first case." },
@@ -336,7 +324,6 @@ export default function BecomeAPartnerPage() {
             <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Grow with us</h2>
             <p className="text-gray-600">The more families you guide, the more support you get from us.</p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 1</div>
@@ -347,7 +334,6 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> WhatsApp support</li>
               </ul>
             </div>
-
             <div className="bg-gradient-to-b from-white to-blue-50/30 p-8 rounded-3xl border-2 border-[#053161] shadow-xl relative transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group">
               <div className="absolute -top-3.5 right-6 bg-[#053161] text-white text-[11px] font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">Most Popular</div>
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 2</div>
@@ -358,7 +344,6 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Early access to new programmes</li>
               </ul>
             </div>
-
             <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 3</div>
               <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Senior partner</h3>
@@ -378,7 +363,6 @@ export default function BecomeAPartnerPage() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-extrabold text-[#053161] mb-4">From first message to first payout in 5 steps</h2>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
             {[
               { step: "1", title: "Apply", desc: "Fill in the short form below or message us on WhatsApp.", icon: Send },
@@ -432,7 +416,6 @@ export default function BecomeAPartnerPage() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Frequently asked questions</h2>
           </div>
-
           <div className="space-y-4">
             {[
               { q: "How and when am I paid?", a: "You receive a fixed fee for each completed treatment, paid within 60 Days of the patient's discharge. The amount and schedule are written in your partner agreement before you send your first case." },
@@ -453,7 +436,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 📝 Application Form with WhatsApp Action */}
+      {/* 📝 Application Form */}
       <section id="apply-form" className="py-20 bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white relative">
         <div className="max-w-[800px] mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
