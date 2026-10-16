@@ -179,7 +179,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 🏥 4. Our Partner Hospitals (Image Visual Badges Instead of Icons) */}
+      {/* 🏥 4. Our Partner Hospitals */}
       <section className="py-16 bg-blue-50/60 border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mb-3">Our partner hospitals</h2>
@@ -187,28 +187,23 @@ export default function BecomeAPartnerPage() {
             We match each patient to the right hospital and specialist from our network of 10+ accredited hospitals in India.
           </p>
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { name: "Max Healthcare", code: "Max" },
-              { name: "Apollo Hospitals", code: "Apollo" },
-              { name: "Fortis Healthcare", code: "Fortis" },
-              { name: "Yatharth Hospitals", code: "Yatharth" },
-            ].map((hospital, idx) => (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {["Max Healthcare", "Apollo Hospitals", "Fortis Healthcare", "Yatharth Hospitals"].map((hospital, idx) => (
               <div 
                 key={idx}
-                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-blue-500 group cursor-default"
+                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-400 group cursor-default"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-900 to-[#073b75] text-white flex items-center justify-center font-black text-xl shadow-md border border-blue-800 group-hover:scale-110 transition-transform">
-                  {hospital.code}
+                <div className="w-10 h-10 rounded-full bg-blue-50 text-[#053161] flex items-center justify-center group-hover:bg-[#053161] group-hover:text-white transition-colors">
+                  <Building2 className="w-5 h-5" />
                 </div>
-                <span className="font-extrabold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital.name}</span>
-                <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">NABH / JCI Accredited</span>
+                <span className="font-bold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      
       {/* 🩺 5. Treatments Families Ask Us About Most */}
       <section className="py-20">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
