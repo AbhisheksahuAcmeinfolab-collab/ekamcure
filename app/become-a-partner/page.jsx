@@ -1,19 +1,17 @@
-"app/become-a-partner/page.jsx";
+"use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { 
   CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, 
   Users, HeartHandshake, Building2, Stethoscope, Sparkles, Heart, Activity,
-  Dna, Award, Send, UserCheck, Shield, DollarSign
+  Dna, Send, UserCheck, Shield, DollarSign, Handshake
 } from "lucide-react";
-import imgPartnerHero from "../assets/image/img1.png"; // Replace with your transparent hero image asset path if available
 
 export default function BecomeAPartnerPage() {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans overflow-x-hidden">
       
-      {/* 🚀 1. Hero Banner with Right-Side Transparent Visual */}
+      {/* 🚀 1. Hero Banner */}
       <section className="bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white py-16 lg:py-20 relative overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -48,17 +46,14 @@ export default function BecomeAPartnerPage() {
               </div>
             </div>
 
-            {/* Right Transparent Visual Illustration */}
+            {/* Right Visual Icon Card */}
             <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
-              <div className="relative w-full max-w-md aspect-square bg-gradient-to-tr from-cyan-500/20 to-blue-400/10 rounded-3xl p-6 border border-white/10 backdrop-blur-md flex items-center justify-center">
-                <Image
-                  src={imgPartnerHero}
-                  alt="Become Ekam Partner"
-                  width={380}
-                  height={380}
-                  className="object-contain filter drop-shadow-[0_20px_30px_rgba(0,0,0,0.3)] transition-transform duration-500 hover:scale-105"
-                  priority
-                />
+              <div className="relative w-full max-w-md aspect-square bg-gradient-to-tr from-cyan-500/20 to-blue-400/10 rounded-3xl p-8 border border-white/10 backdrop-blur-md flex flex-col items-center justify-center text-center">
+                <div className="w-24 h-24 rounded-full bg-cyan-400/20 border border-cyan-300/40 flex items-center justify-center mb-6 text-cyan-300 shadow-xl">
+                  <Handshake className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">Partner With Us</h3>
+                <p className="text-sm text-cyan-100">Guiding families together for world-class healthcare in India.</p>
               </div>
             </div>
 
@@ -66,12 +61,11 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 💎 2. Trust Badges with Smooth Hover Interactions */}
+      {/* 💎 2. Trust Badges */}
       <section className="py-12 bg-slate-50 border-b border-gray-100">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             
-            {/* Card 1 */}
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <FileText className="w-6 h-6" />
@@ -82,7 +76,6 @@ export default function BecomeAPartnerPage() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Clock className="w-6 h-6" />
@@ -93,7 +86,6 @@ export default function BecomeAPartnerPage() {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
               <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <ShieldCheck className="w-6 h-6" />
@@ -114,7 +106,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 👥 3. Who Can Partner With Us (Section Styling & Cards Hover) */}
+      {/* 👥 3. Who Can Partner With Us */}
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -124,7 +116,6 @@ export default function BecomeAPartnerPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            {/* Box 1 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Users className="w-7 h-7" />
@@ -138,7 +129,6 @@ export default function BecomeAPartnerPage() {
               </ul>
             </div>
 
-            {/* Box 2 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <HeartHandshake className="w-7 h-7" />
@@ -152,7 +142,6 @@ export default function BecomeAPartnerPage() {
               </ul>
             </div>
 
-            {/* Box 3 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Building2 className="w-7 h-7" />
@@ -166,7 +155,6 @@ export default function BecomeAPartnerPage() {
               </ul>
             </div>
 
-            {/* Box 4 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group flex flex-col justify-between">
               <div>
                 <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
@@ -190,7 +178,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 🏥 4. Our Partner Hospitals (Visual Logos / Cards) */}
+      {/* 🏥 4. Our Partner Hospitals */}
       <section className="py-16 bg-blue-50/60 border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mb-3">Our partner hospitals</h2>
@@ -214,7 +202,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 🩺 5. Treatments Families Ask Us About Most (Visual Icon Cards) */}
+      {/* 🩺 5. Treatments Families Ask Us About Most */}
       <section className="py-20">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -260,7 +248,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* ⭐ 6. Our Commitments to Partners (Grid + Hover Highlight) */}
+      {/* ⭐ 6. Our Commitments to Partners */}
       <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -339,7 +327,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 📈 7. Grow With Us (Redesigned Cards & Hover Effects) */}
+      {/* 📈 7. Grow With Us */}
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -348,8 +336,6 @@ export default function BecomeAPartnerPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Level 1 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 1</div>
               <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Member</h3>
@@ -360,7 +346,6 @@ export default function BecomeAPartnerPage() {
               </ul>
             </div>
 
-            {/* Level 2 (Featured) */}
             <div className="bg-gradient-to-b from-white to-blue-50/30 p-8 rounded-3xl border-2 border-[#053161] shadow-xl relative transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group">
               <div className="absolute -top-3.5 right-6 bg-[#053161] text-white text-[11px] font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">Most Popular</div>
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 2</div>
@@ -372,7 +357,6 @@ export default function BecomeAPartnerPage() {
               </ul>
             </div>
 
-            {/* Level 3 */}
             <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
               <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 3</div>
               <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Senior partner</h3>
@@ -382,12 +366,11 @@ export default function BecomeAPartnerPage() {
                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> A say in how we serve your country</li>
               </ul>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* 🧭 8. From First Message to First Payout in 5 Steps (Interactive Flow) */}
+      {/* 🧭 8. From First Message to First Payout in 5 Steps */}
       <section className="py-20">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -401,21 +384,18 @@ export default function BecomeAPartnerPage() {
               { step: "3", title: "Send a case", desc: "Share patient reports with consent. We reply with a plan and quote.", icon: FileText },
               { step: "4", title: "We manage", desc: "Visa, travel, hospital and stay, with updates at each stage.", icon: Shield },
               { step: "5", title: "Get paid", desc: "Your fee is paid on the schedule in your agreement.", icon: DollarSign },
-            ].map((item, idx) => {
-              const IconComp = item.icon;
-              return (
-                <div 
-                  key={idx}
-                  className="bg-slate-50 p-6 rounded-3xl border border-gray-200/80 transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:border-blue-400 group cursor-default flex flex-col items-center"
-                >
-                  <div className="w-12 h-12 rounded-2xl bg-[#053161] text-white flex items-center justify-center font-extrabold text-lg mb-4 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300 shadow-md">
-                    {item.step}
-                  </div>
-                  <h3 className="font-bold text-[#053161] text-base mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h3>
-                  <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
+            ].map((item, idx) => (
+              <div 
+                key={idx}
+                className="bg-slate-50 p-6 rounded-3xl border border-gray-200/80 transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:border-blue-400 group cursor-default flex flex-col items-center"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-[#053161] text-white flex items-center justify-center font-extrabold text-lg mb-4 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300 shadow-md">
+                  {item.step}
                 </div>
-              );
-            })}
+                <h3 className="font-bold text-[#053161] text-base mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h3>
+                <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
