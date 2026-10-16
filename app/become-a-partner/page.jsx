@@ -1,15 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
 import { 
   CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, 
   Users, HeartHandshake, Building2, Stethoscope, Sparkles, Heart, Activity,
   Dna, Send, UserCheck, Shield, DollarSign, Handshake
 } from "lucide-react";
-import PartnerForm from "@/components/PartnerForm"; // Optional: or keep form client component inline if preferred
-
-export const metadata = {
-  title: "Become an Ekam Partner | Refer Patients for Treatment in India",
-  description: "Partner with Ekamcure to help families from Africa, the Pacific and beyond get treatment in India. Clear quotes, written payout terms and one team handling visa, travel and hospital.",
-};
 
 export default function BecomeAPartnerPage() {
   return (
@@ -50,7 +47,7 @@ export default function BecomeAPartnerPage() {
               </div>
             </div>
 
-            {/* Right Visual Icon Card */}
+            {/* Right Visual Card */}
             <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
               <div className="relative w-full max-w-md aspect-square bg-gradient-to-tr from-cyan-500/20 to-blue-400/10 rounded-3xl p-8 border border-white/10 backdrop-blur-md flex flex-col items-center justify-center text-center">
                 <div className="w-24 h-24 rounded-full bg-cyan-400/20 border border-cyan-300/40 flex items-center justify-center mb-6 text-cyan-300 shadow-xl">
@@ -182,7 +179,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 🏥 4. Our Partner Hospitals */}
+      {/* 🏥 4. Our Partner Hospitals (Image Visual Badges Instead of Icons) */}
       <section className="py-16 bg-blue-50/60 border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mb-3">Our partner hospitals</h2>
@@ -190,16 +187,22 @@ export default function BecomeAPartnerPage() {
             We match each patient to the right hospital and specialist from our network of 10+ accredited hospitals in India.
           </p>
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {["Max Healthcare", "Apollo Hospitals", "Fortis Healthcare", "Yatharth Hospitals"].map((hospital, idx) => (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Max Healthcare", code: "Max" },
+              { name: "Apollo Hospitals", code: "Apollo" },
+              { name: "Fortis Healthcare", code: "Fortis" },
+              { name: "Yatharth Hospitals", code: "Yatharth" },
+            ].map((hospital, idx) => (
               <div 
                 key={idx}
-                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-400 group cursor-default"
+                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-blue-500 group cursor-default"
               >
-                <div className="w-10 h-10 rounded-full bg-blue-50 text-[#053161] flex items-center justify-center group-hover:bg-[#053161] group-hover:text-white transition-colors">
-                  <Building2 className="w-5 h-5" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-900 to-[#073b75] text-white flex items-center justify-center font-black text-xl shadow-md border border-blue-800 group-hover:scale-110 transition-transform">
+                  {hospital.code}
                 </div>
-                <span className="font-bold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital}</span>
+                <span className="font-extrabold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital.name}</span>
+                <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">NABH / JCI Accredited</span>
               </div>
             ))}
           </div>
@@ -455,7 +458,7 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 📝 Application Form with Working WhatsApp Handler */}
+      {/* 📝 Application Form with WhatsApp Action */}
       <section id="apply-form" className="py-20 bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white relative">
         <div className="max-w-[800px] mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
@@ -480,7 +483,7 @@ export default function BecomeAPartnerPage() {
               const encodedUrl = `https://wa.me/919990205353?text=${encodeURIComponent(whatsappMessage)}`;
               window.open(encodedUrl, "_blank");
               
-              alert("Application ready! Redirecting to WhatsApp to send your details to our team.");
+              alert("Application submitted! Opening WhatsApp to send your application details.");
               form.reset();
             }}
             className="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6 border border-white/25"
