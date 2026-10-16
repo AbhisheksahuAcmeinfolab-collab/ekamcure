@@ -2,198 +2,256 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, Award, Users, HeartHandshake, Building2, Stethoscope, Sparkles } from "lucide-react";
+import { 
+  CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, 
+  Users, HeartHandshake, Building2, Stethoscope, Sparkles, Heart, Activity,
+  Dna, Award, Send, UserCheck, Shield, DollarSign
+} from "lucide-react";
+import imgPartnerHero from "../assets/image/img1.png"; // Replace with your transparent hero image asset path if available
 
 export default function BecomeAPartnerPage() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-sans">
+    <div className="min-h-screen bg-white text-gray-800 font-sans overflow-x-hidden">
       
-      {/* 🚀 Hero Section */}
-      <section className="bg-gradient-to-r from-blue-950 via-[#073b75] to-blue-900 text-white py-16 lg:py-24 relative overflow-hidden">
+      {/* 🚀 1. Hero Banner with Right-Side Transparent Visual */}
+      <section className="bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white py-16 lg:py-20 relative overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-blue-800/60 border border-blue-700/50 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 text-cyan-300">
-              <Sparkles className="w-3.5 h-3.5" /> Free to apply. We reply within 2 business days.
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Content */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 bg-blue-800/60 border border-blue-700/50 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 text-cyan-300 backdrop-blur-sm">
+                <Sparkles className="w-3.5 h-3.5" /> Free to apply. We reply within 2 business days.
+              </div>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                Become an Ekam Partner: Refer Patients for Treatment in India
+              </h1>
+              <p className="text-base sm:text-lg text-gray-200 mb-8 leading-relaxed">
+                Families in your community already ask you where to go for treatment. With Ekam, you will have the answer. When someone needs surgery or specialist care, they ask a person they trust. With Ekam behind you, you can give them a treatment plan, a clear price, help with the medical visa and a place to stay in India, and you stay their trusted contact throughout.
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href="#apply-form"
+                  className="px-7 py-3.5 rounded-full bg-[#00a8ff] hover:bg-sky-500 text-white font-bold text-base shadow-lg shadow-sky-500/25 transition-all duration-300 hover:scale-105 active:scale-95"
+                >
+                  Become a partner
+                </a>
+                <a
+                  href="https://wa.me/919990205353"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-7 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-lg shadow-emerald-500/25 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2"
+                >
+                  <MessageSquare className="w-5 h-5" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
-              Become an Ekam Partner: Refer Patients for Treatment in India
-            </h1>
-            <p className="text-lg lg:text-xl text-gray-200 mb-8 leading-relaxed">
-              Families in your community already ask you where to go for treatment. With Ekam, you will have the answer. When someone needs surgery or specialist care, they ask a person they trust. With Ekam behind you, you can give them a treatment plan, a clear price, help with the medical visa and a place to stay in India, and you stay their trusted contact throughout.
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="#apply-form"
-                className="px-7 py-3.5 rounded-full bg-[#00a8ff] hover:bg-sky-600 text-white font-bold text-base shadow-lg transition-transform hover:scale-105"
-              >
-                Become a partner
-              </a>
-              <a
-                href="https://wa.me/919990205353"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-7 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-lg transition-transform hover:scale-105 flex items-center gap-2"
-              >
-                <MessageSquare className="w-5 h-5" />
-                <span>Chat on WhatsApp</span>
-              </a>
+
+            {/* Right Transparent Visual Illustration */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
+              <div className="relative w-full max-w-md aspect-square bg-gradient-to-tr from-cyan-500/20 to-blue-400/10 rounded-3xl p-6 border border-white/10 backdrop-blur-md flex items-center justify-center">
+                <Image
+                  src={imgPartnerHero}
+                  alt="Become Ekam Partner"
+                  width={380}
+                  height={380}
+                  className="object-contain filter drop-shadow-[0_20px_30px_rgba(0,0,0,0.3)] transition-transform duration-500 hover:scale-105"
+                  priority
+                />
+              </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 💎 Trust Badges & Introduction */}
-      <section className="py-12 bg-gray-50 border-b border-gray-100">
+      {/* 💎 2. Trust Badges with Smooth Hover Interactions */}
+      <section className="py-12 bg-slate-50 border-b border-gray-100">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
+              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <FileText className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900">Written payout terms</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-[#053161] transition-colors">Written payout terms</h3>
                 <p className="text-sm text-gray-500">Agreed in writing before your first case</p>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0">
+
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
+              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <Clock className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900">Quotes within 48 hours</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-[#053161] transition-colors">Quotes within 48 hours</h3>
                 <p className="text-sm text-gray-500">Fast treatment plans and itemised quotes</p>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0">
+
+            {/* Card 3 */}
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-400 group">
+              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#053161] flex items-center justify-center flex-shrink-0 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900">You stay the first contact</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-[#053161] transition-colors">You stay the first contact</h3>
                 <p className="text-sm text-gray-500">We work through you at every single stage</p>
               </div>
             </div>
+
           </div>
 
           <div className="text-center max-w-3xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed italic">
-              "Ekam means &quot;one&quot;: one team and one point of contact for every patient and every partner."
+            <p className="text-base sm:text-lg text-gray-700 italic bg-white py-3 px-6 rounded-full border border-gray-200/60 inline-block shadow-xs">
+              &quot;Ekam means <strong>&apos;one&apos;</strong>: one team and one point of contact for every patient and every partner.&quot;
             </p>
           </div>
         </div>
       </section>
 
-      {/* 👥 Who Can Partner With Us */}
-      <section className="py-20">
+      {/* 👥 3. Who Can Partner With Us (Section Styling & Cards Hover) */}
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Who can partner with us</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Who can partner with us</h2>
             <p className="text-gray-600">Each partner type has its own process, so you only deal with what matters to you.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Referral agents */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6">
-                <Users className="w-6 h-6" />
+            
+            {/* Box 1 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
+                <Users className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-[#053161] mb-3">Referral agents and facilitators</h3>
-              <p className="text-gray-600 mb-4">You work with patients in your country. Send us their reports and we return a treatment plan, hospital options and an itemised quote.</p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> A fixed fee per completed case, agreed in writing</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Co-branded quotes and brochures</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Case updates on WhatsApp</li>
+              <p className="text-gray-600 mb-6 leading-relaxed">You work with patients in your country. Send us their reports and we return a treatment plan, hospital options and an itemised quote.</p>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> A fixed fee per completed case, agreed in writing</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Co-branded quotes and brochures</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Case updates on WhatsApp</li>
               </ul>
             </div>
 
-            {/* Community health ambassadors */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6">
-                <HeartHandshake className="w-6 h-6" />
+            {/* Box 2 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
+                <HeartHandshake className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-[#053161] mb-3">Community health ambassadors</h3>
-              <p className="text-gray-600 mb-4">You are the trusted person in a village, church, mosque, temple or diaspora group. Families come to you first.</p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Simple onboarding and training</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> We explain reports and costs, so you can guide families with confidence</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> A fixed, transparent support amount per patient</li>
+              <p className="text-gray-600 mb-6 leading-relaxed">You are the trusted person in a village, church, mosque, temple or diaspora group. Families come to you first.</p>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Simple onboarding and training</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> We explain reports and costs, so you can guide families with confidence</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> A fixed, transparent support amount per patient</li>
               </ul>
             </div>
 
-            {/* Insurers, medical aid */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6">
-                <Building2 className="w-6 h-6" />
+            {/* Box 3 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
+                <Building2 className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-[#053161] mb-3">Insurers, medical aid schemes, employers and NGOs</h3>
-              <p className="text-gray-600 mb-4">Offer members treatment in India with costs you can predict and check.</p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Cost estimates before treatment, ready for your pre-authorisation process</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Case updates for your case managers</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Discharge summaries and itemised invoices in English for every case</li>
+              <p className="text-gray-600 mb-6 leading-relaxed">Offer members treatment in India with costs you can predict and check.</p>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Cost estimates before treatment, ready for your pre-authorisation process</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Case updates for your case managers</li>
+                <li className="flex items-center gap-2.5"><CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" /> Discharge summaries and itemised invoices in English for every case</li>
               </ul>
             </div>
 
-            {/* Hospitals and doctors */}
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            {/* Box 4 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200/80 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6">
-                  <Stethoscope className="w-6 h-6" />
+                <div className="w-14 h-14 rounded-2xl bg-blue-50 text-[#053161] flex items-center justify-center mb-6 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
+                  <Stethoscope className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-[#053161] mb-3">Hospitals and doctors</h3>
-                <p className="text-gray-600 mb-4">Are you a hospital or specialist interested in treating international patients through Ekam? Visit our page for hospitals and doctors.</p>
+                <p className="text-gray-600 mb-6 leading-relaxed">Are you a hospital or specialist interested in treating international patients through Ekam? Visit our page for hospitals and doctors.</p>
               </div>
-              <div className="mt-6">
+              <div className="mt-4">
                 <Link
                   href="/top-hospitals"
-                  className="inline-flex items-center gap-2 text-[#053161] font-bold hover:underline"
+                  className="inline-flex items-center gap-2 text-[#053161] font-bold group-hover:text-blue-600 transition-colors"
                 >
                   <span>Visit top hospitals page</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 🏥 Our Partner Hospitals */}
-      <section className="py-16 bg-blue-50/50 border-y border-gray-100">
+      {/* 🏥 4. Our Partner Hospitals (Visual Logos / Cards) */}
+      <section className="py-16 bg-blue-50/60 border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12 text-center">
-          <h2 className="text-2xl font-bold text-[#053161] mb-4">Our partner hospitals</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mb-3">Our partner hospitals</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
             We match each patient to the right hospital and specialist from our network of 10+ accredited hospitals in India.
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-6">
-            <span className="px-6 py-3 bg-white rounded-xl shadow-sm font-bold text-[#053161] border border-gray-200">Max Healthcare</span>
-            <span className="px-6 py-3 bg-white rounded-xl shadow-sm font-bold text-[#053161] border border-gray-200">Apollo Hospitals</span>
-            <span className="px-6 py-3 bg-white rounded-xl shadow-sm font-bold text-[#053161] border border-gray-200">Fortis Healthcare</span>
-            <span className="px-6 py-3 bg-white rounded-xl shadow-sm font-bold text-[#053161] border border-gray-200">Yatharth Hospitals</span>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {["Max Healthcare", "Apollo Hospitals", "Fortis Healthcare", "Yatharth Hospitals"].map((hospital, idx) => (
+              <div 
+                key={idx}
+                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-blue-400 group cursor-default"
+              >
+                <div className="w-10 h-10 rounded-full bg-blue-50 text-[#053161] flex items-center justify-center group-hover:bg-[#053161] group-hover:text-white transition-colors">
+                  <Building2 className="w-5 h-5" />
+                </div>
+                <span className="font-bold text-[#053161] text-base group-hover:text-blue-600 transition-colors">{hospital}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 🩺 Treatments Families Ask About */}
+      {/* 🩺 5. Treatments Families Ask Us About Most (Visual Icon Cards) */}
       <section className="py-20">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Treatments families ask us about most</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Treatments families ask us about most</h2>
             <p className="text-gray-600">You can send us any case. These are the ones we are asked about every day:</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10">
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">Heart surgery & valve surgery</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">Kidney transplant</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">Knee replacement</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">Hip replacement</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">Spine surgery</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100">IVF Treatment</div>
-            <div className="bg-gray-50 p-5 rounded-2xl text-center font-semibold text-gray-800 border border-gray-100" colSpan="2">Cancer treatment</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
+            {[
+              { name: "Heart Surgery & Valve Surgery", icon: Heart },
+              { name: "Kidney Transplant", icon: Activity },
+              { name: "Knee Replacement", icon: Activity },
+              { name: "Hip Replacement", icon: Activity },
+              { name: "Spine Surgery", icon: Dna },
+              { name: "IVF Treatment", icon: Sparkles },
+              { name: "Cancer Treatment", icon: Stethoscope },
+              { name: "Organ Transplants", icon: ShieldCheck },
+            ].map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div 
+                  key={idx}
+                  className="bg-slate-50 p-6 rounded-2xl border border-gray-200/80 text-center transition-all duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-xl hover:border-blue-400 group cursor-default"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-blue-100/60 text-[#053161] flex items-center justify-center mx-auto mb-4 group-hover:bg-[#053161] group-hover:text-white transition-colors duration-300">
+                    <IconComp className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-gray-800 text-sm sm:text-base group-hover:text-[#053161] transition-colors">{item.name}</h3>
+                </div>
+              );
+            })}
           </div>
+
           <div className="text-center">
             <Link
               href="/treatments"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#053161] text-white font-semibold hover:bg-blue-900 transition"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#053161] text-white font-bold hover:bg-blue-900 shadow-md transition-all duration-300 hover:scale-105"
             >
               <span>See all treatments</span>
               <ArrowRight className="w-4 h-4" />
@@ -202,89 +260,78 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* ⭐ Our Commitments to Partners */}
-      <section className="py-20 bg-gray-50">
+      {/* ⭐ 6. Our Commitments to Partners (Grid + Hover Highlight) */}
+      <section className="py-20 bg-slate-900 text-white">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Our commitments to partners</h2>
+            <h2 className="text-3xl font-extrabold mb-4 text-white">Our commitments to partners</h2>
+            <p className="text-gray-400">Complete transparency and dedicated support for every step.</p>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">Payout terms in writing</h3>
-              <p className="text-sm text-gray-600">You see your fee and when it is paid before you send your first case.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">A quote within 48 hours</h3>
-              <p className="text-sm text-gray-600">Send the reports and receive a treatment plan, hospital options and itemised costs.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">Clear billing</h3>
-              <p className="text-sm text-gray-600">Every estimate shows what is included, so families know the cost before they travel.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">You stay the first contact</h3>
-              <p className="text-sm text-gray-600">We work through you and keep you informed at every stage.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">One named contact person</h3>
-              <p className="text-sm text-gray-600">One person for questions and escalations, reachable on WhatsApp.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">Visa to airport pickup</h3>
-              <p className="text-sm text-gray-600">Medical visa invitation letters, accommodation, airport transfers, hospital coordination & interpreter.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">Accredited hospitals</h3>
-              <p className="text-sm text-gray-600">We work only with NABH or JCI accredited hospitals, matched to each case.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-[#053161] mb-2">Patient privacy</h3>
-              <p className="text-sm text-gray-600">Medical reports are shared only with hospitals quoting on the case, with patient consent.</p>
-            </div>
+            {[
+              { title: "Payout terms in writing", desc: "You see your fee and when it is paid before you send your first case." },
+              { title: "A quote within 48 hours", desc: "Send the reports and receive a treatment plan, hospital options and itemised costs." },
+              { title: "Clear billing", desc: "Every estimate shows what is included, so families know the cost before they travel." },
+              { title: "You stay the first contact", desc: "We work through you and keep you informed at every stage." },
+              { title: "One named contact person", desc: "One person for questions and escalations, reachable on WhatsApp." },
+              { title: "Visa to airport pickup", desc: "Medical visa invitation letters, accommodation, airport transfers & interpreter." },
+              { title: "Accredited hospitals", desc: "We work only with NABH or JCI accredited hospitals, matched to each case." },
+              { title: "Patient privacy", desc: "Medical reports are shared only with hospitals quoting on the case, with consent." },
+            ].map((item, idx) => (
+              <div 
+                key={idx}
+                className="bg-slate-800/80 p-6 rounded-2xl border border-slate-700/80 transition-all duration-300 hover:-translate-y-1.5 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/10 group"
+              >
+                <div className="w-8 h-1 rounded-full bg-cyan-500 mb-4 group-hover:w-16 transition-all duration-300"></div>
+                <h3 className="font-bold text-lg text-white mb-2 group-hover:text-cyan-300 transition-colors">{item.title}</h3>
+                <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 📊 Referring with Ekam, Step by Step */}
+      {/* 📊 Comparison Table */}
       <section className="py-20">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Referring with Ekam, step by step</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Referring with Ekam, step by step</h2>
           </div>
-          <div className="overflow-x-auto shadow-sm rounded-2xl border border-gray-200 bg-white">
+          <div className="overflow-x-auto shadow-xl rounded-3xl border border-gray-200 bg-white">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-[#053161] text-white">
-                  <th className="p-4 font-bold">The task</th>
-                  <th className="p-4 font-bold">On your own</th>
-                  <th className="p-4 font-bold bg-blue-900">With Ekam</th>
+                  <th className="p-5 font-bold text-base">The task</th>
+                  <th className="p-5 font-bold text-base">On your own</th>
+                  <th className="p-5 font-bold text-base bg-blue-900">With Ekam</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 text-sm">
-                <tr>
-                  <td className="p-4 font-semibold text-gray-900">Reading reports and choosing a hospital</td>
-                  <td className="p-4 text-gray-600">Hours of research</td>
-                  <td className="p-4 text-blue-900 font-medium bg-blue-50/50">Matched by our team to the right specialist</td>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-5 font-bold text-gray-900">Reading reports and choosing a hospital</td>
+                  <td className="p-5 text-gray-600">Hours of research</td>
+                  <td className="p-5 text-blue-950 font-bold bg-blue-50/60">Matched by our team to the right specialist</td>
                 </tr>
-                <tr>
-                  <td className="p-4 font-semibold text-gray-900">Getting a cost estimate</td>
-                  <td className="p-4 text-gray-600">Emails and waiting</td>
-                  <td className="p-4 text-blue-900 font-medium bg-blue-50/50">Itemised quote within 48 hours</td>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-5 font-bold text-gray-900">Getting a cost estimate</td>
+                  <td className="p-5 text-gray-600">Emails and waiting</td>
+                  <td className="p-5 text-blue-950 font-bold bg-blue-50/60">Itemised quote within 48 hours</td>
                 </tr>
-                <tr>
-                  <td className="p-4 font-semibold text-gray-900">Medical visa and travel</td>
-                  <td className="p-4 text-gray-600">Forms and uncertainty</td>
-                  <td className="p-4 text-blue-900 font-medium bg-blue-50/50">Visa invitation letter and travel planning</td>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-5 font-bold text-gray-900">Medical visa and travel</td>
+                  <td className="p-5 text-gray-600">Forms and uncertainty</td>
+                  <td className="p-5 text-blue-950 font-bold bg-blue-50/60">Visa invitation letter and travel planning</td>
                 </tr>
-                <tr>
-                  <td className="p-4 font-semibold text-gray-900">Stay and airport pickup</td>
-                  <td className="p-4 text-gray-600">Arranged by the family</td>
-                  <td className="p-4 text-blue-900 font-medium bg-blue-50/50">Arranged by our team in India</td>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-5 font-bold text-gray-900">Stay and airport pickup</td>
+                  <td className="p-5 text-gray-600">Arranged by the family</td>
+                  <td className="p-5 text-blue-950 font-bold bg-blue-50/60">Arranged by our team in India</td>
                 </tr>
-                <tr>
-                  <td className="p-4 font-semibold text-gray-900">Keeping everyone updated</td>
-                  <td className="p-4 text-gray-600">Constant calls</td>
-                  <td className="p-4 text-blue-900 font-medium bg-blue-50/50">Regular updates on WhatsApp</td>
+                <tr className="hover:bg-slate-50 transition-colors">
+                  <td className="p-5 font-bold text-gray-900">Keeping everyone updated</td>
+                  <td className="p-5 text-gray-600">Constant calls</td>
+                  <td className="p-5 text-blue-950 font-bold bg-blue-50/60">Regular updates on WhatsApp</td>
                 </tr>
               </tbody>
             </table>
@@ -292,98 +339,99 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 📈 Grow With Us */}
-      <section className="py-20 bg-blue-50/50 border-y border-gray-100">
+      {/* 📈 7. Grow With Us (Redesigned Cards & Hover Effects) */}
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white border-y border-gray-200/60">
         <div className="max-w-[1440px] mx-auto px-4 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Grow with us</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Grow with us</h2>
             <p className="text-gray-600">The more families you guide, the more support you get from us.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
-              <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Level 1</div>
-              <h3 className="text-2xl font-bold text-[#053161] mb-4">Member</h3>
-              <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Partner agreement and onboarding</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Cost sheets and process guides</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> WhatsApp support</li>
+            
+            {/* Level 1 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+              <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 1</div>
+              <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Member</h3>
+              <ul className="space-y-4 text-sm text-gray-700">
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Partner agreement and onboarding</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Cost sheets and process guides</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> WhatsApp support</li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border-2 border-[#053161] shadow-md relative">
-              <div className="absolute -top-3 right-6 bg-[#053161] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Popular</div>
-              <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Level 2</div>
-              <h3 className="text-2xl font-bold text-[#053161] mb-4">Trusted partner</h3>
-              <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Priority quotes</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Co-branded materials</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Early access to new programmes</li>
+            {/* Level 2 (Featured) */}
+            <div className="bg-gradient-to-b from-white to-blue-50/30 p-8 rounded-3xl border-2 border-[#053161] shadow-xl relative transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group">
+              <div className="absolute -top-3.5 right-6 bg-[#053161] text-white text-[11px] font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">Most Popular</div>
+              <div className="inline-block text-xs font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 2</div>
+              <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Trusted partner</h3>
+              <ul className="space-y-4 text-sm text-gray-700">
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Priority quotes</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Co-branded materials</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Early access to new programmes</li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm">
-              <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Level 3</div>
-              <h3 className="text-2xl font-bold text-[#053161] mb-4">Senior partner</h3>
-              <ul className="space-y-3 text-sm text-gray-700">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> A named account manager</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> Invitations to regional events</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-green-600" /> A say in how we serve your country</li>
+            {/* Level 3 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+              <div className="inline-block text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider mb-3">Level 3</div>
+              <h3 className="text-2xl font-extrabold text-[#053161] mb-6">Senior partner</h3>
+              <ul className="space-y-4 text-sm text-gray-700">
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> A named account manager</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> Invitations to regional events</li>
+                <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" /> A say in how we serve your country</li>
               </ul>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 🧭 5 Steps */}
+      {/* 🧭 8. From First Message to First Payout in 5 Steps (Interactive Flow) */}
       <section className="py-20">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">From first message to first payout in 5 steps</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">From first message to first payout in 5 steps</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#053161] text-white flex items-center justify-center font-bold mx-auto mb-4">1</div>
-              <h3 className="font-bold text-[#053161] mb-2">Apply</h3>
-              <p className="text-xs text-gray-600">Fill in the short form below or message us on WhatsApp.</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#053161] text-white flex items-center justify-center font-bold mx-auto mb-4">2</div>
-              <h3 className="font-bold text-[#053161] mb-2">Get verified</h3>
-              <p className="text-xs text-gray-600">We call you, check your background and sign a simple agreement.</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#053161] text-white flex items-center justify-center font-bold mx-auto mb-4">3</div>
-              <h3 className="font-bold text-[#053161] mb-2">Send a case</h3>
-              <p className="text-xs text-gray-600">Share patient reports with consent. We reply with a plan and quote.</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#053161] text-white flex items-center justify-center font-bold mx-auto mb-4">4</div>
-              <h3 className="font-bold text-[#053161] mb-2">We manage</h3>
-              <p className="text-xs text-gray-600">Visa, travel, hospital and stay, with updates at each stage.</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#053161] text-white flex items-center justify-center font-bold mx-auto mb-4">5</div>
-              <h3 className="font-bold text-[#053161] mb-2">Get paid</h3>
-              <p className="text-xs text-gray-600">Your fee is paid on the schedule in your agreement.</p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+            {[
+              { step: "1", title: "Apply", desc: "Fill in the short form below or message us on WhatsApp.", icon: Send },
+              { step: "2", title: "Get verified", desc: "We call you, check your background and sign a simple agreement.", icon: UserCheck },
+              { step: "3", title: "Send a case", desc: "Share patient reports with consent. We reply with a plan and quote.", icon: FileText },
+              { step: "4", title: "We manage", desc: "Visa, travel, hospital and stay, with updates at each stage.", icon: Shield },
+              { step: "5", title: "Get paid", desc: "Your fee is paid on the schedule in your agreement.", icon: DollarSign },
+            ].map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div 
+                  key={idx}
+                  className="bg-slate-50 p-6 rounded-3xl border border-gray-200/80 transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:border-blue-400 group cursor-default flex flex-col items-center"
+                >
+                  <div className="w-12 h-12 rounded-2xl bg-[#053161] text-white flex items-center justify-center font-extrabold text-lg mb-4 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300 shadow-md">
+                    {item.step}
+                  </div>
+                  <h3 className="font-bold text-[#053161] text-base mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h3>
+                  <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* 📹 Founder Note & YouTube Video */}
-      <section className="py-20 bg-gray-50 border-t border-gray-100">
+      <section className="py-20 bg-slate-50 border-t border-gray-200/60">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-blue-600 font-bold uppercase tracking-widest text-xs">A note from our founder</span>
-              <h2 className="text-3xl font-bold text-[#053161] mt-2 mb-6">Udai Singh, Founder, Ekam Health Services</h2>
-              <blockquote className="text-lg text-gray-700 italic border-l-4 border-[#053161] pl-4 mb-6 leading-relaxed">
+              <h2 className="text-3xl font-extrabold text-[#053161] mt-2 mb-6">Udai Singh, Founder, Ekam Health Services</h2>
+              <blockquote className="text-lg text-gray-700 italic border-l-4 border-[#053161] pl-5 mb-6 leading-relaxed">
                 &quot;When we started Ekam, we wanted every patient to feel they had one trusted team beside them. Our partners are the heart of that promise, and we want to grow with you.&quot;
               </blockquote>
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-200 aspect-video bg-black">
+            <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200 aspect-video bg-black">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/24yTN_Du0lY"
@@ -396,59 +444,42 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* ❓ Frequently Asked Questions */}
+      {/* ❓ FAQ Section */}
       <section className="py-20">
         <div className="max-w-[1000px] mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-[#053161] mb-4">Frequently asked questions</h2>
+            <h2 className="text-3xl font-extrabold text-[#053161] mb-4">Frequently asked questions</h2>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">How and when am I paid?</h3>
-              <p className="text-gray-600 text-sm">You receive a fixed fee for each completed treatment, paid within 60 Days of the patient&apos;s discharge. The amount and schedule are written in your partner agreement before you send your first case.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Does the patient pay more because they came through me?</h3>
-              <p className="text-gray-600 text-sm">No. The patient pays the same package price as they would if they came to us directly.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Can I work from outside India?</h3>
-              <p className="text-gray-600 text-sm">Yes. Most of our partners refer patients from their own country. Everything after the referral is handled by our team in India.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Do I need a medical background?</h3>
-              <p className="text-gray-600 text-sm">No. Honesty, trust in your community and putting patients first matter most. Medical or social-sector experience helps.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Which countries can partners join from?</h3>
-              <p className="text-gray-600 text-sm">Any country. We especially welcome partners in Zimbabwe, Botswana, Fiji, Mauritius and across Africa and the Pacific.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">How fast will I hear back after applying?</h3>
-              <p className="text-gray-600 text-sm">Within 2 business days. For anything urgent, message us on WhatsApp.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Can my organisation join with several team members?</h3>
-              <p className="text-gray-600 text-sm">Yes. Tell us about your team in the application and we will set everyone up together.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-              <h3 className="font-bold text-lg text-[#053161] mb-2">Who talks to the patient?</h3>
-              <p className="text-gray-600 text-sm">You stay the first contact. Our coordinator joins whenever you want help with plans, costs or travel.</p>
-            </div>
+          <div className="space-y-4">
+            {[
+              { q: "How and when am I paid?", a: "You receive a fixed fee for each completed treatment, paid within 60 Days of the patient's discharge. The amount and schedule are written in your partner agreement before you send your first case." },
+              { q: "Does the patient pay more because they came through me?", a: "No. The patient pays the same package price as they would if they came to us directly." },
+              { q: "Can I work from outside India?", a: "Yes. Most of our partners refer patients from their own country. Everything after the referral is handled by our team in India." },
+              { q: "Do I need a medical background?", a: "No. Honesty, trust in your community and putting patients first matter most. Medical or social-sector experience helps." },
+              { q: "Which countries can partners join from?", a: "Any country. We especially welcome partners in Zimbabwe, Botswana, Fiji, Mauritius and across Africa and the Pacific." },
+              { q: "How fast will I hear back after applying?", a: "Within 2 business days. For anything urgent, message us on WhatsApp." },
+              { q: "Can my organisation join with several team members?", a: "Yes. Tell us about your team in the application and we will set everyone up together." },
+              { q: "Who talks to the patient?", a: "You stay the first contact. Our coordinator joins whenever you want help with plans, costs or travel." },
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-200/80 shadow-xs transition-all duration-200 hover:border-blue-400">
+                <h3 className="font-bold text-base sm:text-lg text-[#053161] mb-2">{faq.q}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 📝 Apply to Become a Partner Form Section */}
+      {/* 📝 Application Form */}
       <section id="apply-form" className="py-20 bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white relative">
         <div className="max-w-[800px] mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Apply to become a partner</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Apply to become a partner</h2>
             <p className="text-gray-200">Fill out the short form below and we will get back to you within 2 business days.</p>
           </div>
 
-          <form className="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6">
+          <form className="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6 border border-white/20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Full name *</label>
@@ -456,7 +487,7 @@ export default function BecomeAPartnerPage() {
                   type="text"
                   required
                   placeholder="Enter your full name"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -465,7 +496,7 @@ export default function BecomeAPartnerPage() {
                   type="text"
                   required
                   placeholder="e.g. Zimbabwe, Fiji, Kenya..."
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
             </div>
@@ -477,7 +508,7 @@ export default function BecomeAPartnerPage() {
                   type="tel"
                   required
                   placeholder="+1234567890"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
               <div>
@@ -486,7 +517,7 @@ export default function BecomeAPartnerPage() {
                   type="email"
                   required
                   placeholder="name@example.com"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
             </div>
@@ -495,7 +526,7 @@ export default function BecomeAPartnerPage() {
               <label className="block text-sm font-semibold text-gray-700 mb-2">Partner type *</label>
               <select
                 required
-                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
               >
                 <option value="">Select partner type</option>
                 <option value="agent">Agent or facilitator</option>
@@ -511,15 +542,15 @@ export default function BecomeAPartnerPage() {
                 <input
                   type="text"
                   placeholder="Your company or group name"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Message (optional)</label>
                 <input
                   type="text"
-                  placeholder="Tell us a bit about your community or work"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none"
+                  placeholder="Tell us a bit about your work"
+                  className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
               </div>
             </div>
@@ -538,7 +569,7 @@ export default function BecomeAPartnerPage() {
 
             <button
               type="submit"
-              className="w-full py-4 rounded-xl bg-[#0d6efd] hover:bg-blue-700 text-white font-bold text-base shadow-lg transition"
+              className="w-full py-4 rounded-xl bg-[#0d6efd] hover:bg-blue-700 text-white font-bold text-base shadow-lg transition-all duration-300 hover:scale-[1.01] active:scale-[0.99]"
             >
               Submit application
             </button>
