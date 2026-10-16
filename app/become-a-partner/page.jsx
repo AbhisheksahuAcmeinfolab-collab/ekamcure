@@ -1,11 +1,15 @@
-"use client";
-
 import Link from "next/link";
 import { 
   CheckCircle2, Clock, ShieldCheck, FileText, ArrowRight, MessageSquare, 
   Users, HeartHandshake, Building2, Stethoscope, Sparkles, Heart, Activity,
   Dna, Send, UserCheck, Shield, DollarSign, Handshake
 } from "lucide-react";
+import PartnerForm from "@/components/PartnerForm"; // Optional: or keep form client component inline if preferred
+
+export const metadata = {
+  title: "Become an Ekam Partner | Refer Patients for Treatment in India",
+  description: "Partner with Ekamcure to help families from Africa, the Pacific and beyond get treatment in India. Clear quotes, written payout terms and one team handling visa, travel and hospital.",
+};
 
 export default function BecomeAPartnerPage() {
   return (
@@ -451,20 +455,42 @@ export default function BecomeAPartnerPage() {
         </div>
       </section>
 
-      {/* 📝 Application Form */}
+      {/* 📝 Application Form with Working WhatsApp Handler */}
       <section id="apply-form" className="py-20 bg-gradient-to-br from-blue-950 via-[#073b75] to-blue-900 text-white relative">
         <div className="max-w-[800px] mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Apply to become a partner</h2>
-            <p className="text-gray-200">Fill out the short form below and we will get back to you within 2 business days.</p>
+            <p className="text-gray-200">Fill out the short form below and we will connect with you within 2 business days.</p>
           </div>
 
-          <form className="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6 border border-white/20">
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.target;
+              const name = form.fullName.value;
+              const country = form.country.value;
+              const phone = form.whatsapp.value;
+              const email = form.email.value;
+              const partnerType = form.partnerType.value;
+              const org = form.organisation.value;
+              const msg = form.message.value;
+
+              const whatsappMessage = `Hello Ekam Team,\n\nI want to apply to become an Ekam Partner.\n\n*Name:* ${name}\n*Country:* ${country}\n*WhatsApp:* ${phone}\n*Email:* ${email}\n*Partner Type:* ${partnerType}\n*Organisation:* ${org || "N/A"}\n*Message:* ${msg || "N/A"}`;
+              
+              const encodedUrl = `https://wa.me/919990205353?text=${encodeURIComponent(whatsappMessage)}`;
+              window.open(encodedUrl, "_blank");
+              
+              alert("Application ready! Redirecting to WhatsApp to send your details to our team.");
+              form.reset();
+            }}
+            className="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6 border border-white/25"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Full name *</label>
                 <input
                   type="text"
+                  name="fullName"
                   required
                   placeholder="Enter your full name"
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
@@ -474,6 +500,7 @@ export default function BecomeAPartnerPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Country *</label>
                 <input
                   type="text"
+                  name="country"
                   required
                   placeholder="e.g. Zimbabwe, Fiji, Kenya..."
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
@@ -486,6 +513,7 @@ export default function BecomeAPartnerPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">WhatsApp number *</label>
                 <input
                   type="tel"
+                  name="whatsapp"
                   required
                   placeholder="+1234567890"
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
@@ -495,6 +523,7 @@ export default function BecomeAPartnerPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
                 <input
                   type="email"
+                  name="email"
                   required
                   placeholder="name@example.com"
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
@@ -505,14 +534,15 @@ export default function BecomeAPartnerPage() {
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Partner type *</label>
               <select
+                name="partnerType"
                 required
                 className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
               >
                 <option value="">Select partner type</option>
-                <option value="agent">Agent or facilitator</option>
-                <option value="ambassador">Community ambassador</option>
-                <option value="insurer">Insurer, medical aid, employer or NGO</option>
-                <option value="other">Other</option>
+                <option value="Agent or facilitator">Agent or facilitator</option>
+                <option value="Community ambassador">Community ambassador</option>
+                <option value="Insurer, medical aid, employer or NGO">Insurer, medical aid, employer or NGO</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -521,6 +551,7 @@ export default function BecomeAPartnerPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Organisation (optional)</label>
                 <input
                   type="text"
+                  name="organisation"
                   placeholder="Your company or group name"
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
@@ -529,6 +560,7 @@ export default function BecomeAPartnerPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Message (optional)</label>
                 <input
                   type="text"
+                  name="message"
                   placeholder="Tell us a bit about your work"
                   className="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#053161] focus:outline-none transition-all"
                 />
