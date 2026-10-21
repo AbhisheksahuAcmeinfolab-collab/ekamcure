@@ -35,7 +35,7 @@ export default function TopHeader() {
 
           {/* Become Partner Cyan Pill Button */}
           <a
-            href="#"
+            href="/become-a-partner"
             className="flex items-center gap-2 px-4.5 py-1.5 rounded-full bg-[#00a8ff] hover:bg-sky-600 text-white font-semibold text-sm shadow-md transition-transform hover:scale-105"
           >
             <Image
