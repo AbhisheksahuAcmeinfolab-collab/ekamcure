@@ -297,7 +297,7 @@ export default function Home() {
                     </a>
                   </button>
                   <button className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:scale-105 duration-300">
-                    <a href="/contact" rel="noopener noreferrer">
+                    <a href="/become-a-partner" rel="noopener noreferrer">
                       Become Partner!
                     </a>
                   </button>
