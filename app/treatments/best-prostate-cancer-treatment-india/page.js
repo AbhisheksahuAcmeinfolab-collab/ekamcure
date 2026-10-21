@@ -493,7 +493,7 @@ export default function ProstateCancerTreatmentIndia() {
                       <div>
                         <div className="flex items-center gap-4 mb-4">
                           <img
-                            src="/doctor/dr-vipin.png"
+                            src="/doctor/dr-rajesh-ahlawat.png"
                             alt="Dr. Prof. Rajesh Ahlawat"
                             className="w-20 h-20 rounded-full object-cover shadow-md border-2 border-blue-200 flex-shrink-0"
                           />
@@ -511,7 +511,7 @@ export default function ProstateCancerTreatmentIndia() {
                       <div>
                         <div className="flex items-center gap-4 mb-4">
                           <img
-                            src="/doctor/dr-devendra.png"
+                            src="/doctor/Dr. Pankaj Wadhwa.jpg"
                             alt="Dr. Pankaj Wadhwa"
                             className="w-20 h-20 rounded-full object-cover shadow-md border-2 border-pink-200 flex-shrink-0"
                           />
