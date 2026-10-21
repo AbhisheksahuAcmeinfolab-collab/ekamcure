@@ -476,7 +476,7 @@ export default function ProstateCancerTreatmentIndia() {
                 </div>
               </section>
 
-              {/* SECTION: DOCTOR CREDENTIALS */}
+              {/* SECTION: DOCTOR CREDENTIALS (UPDATED WITH DOCTOR IMAGES) */}
               <section className="mb-16" id="doctor-credentials">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 pb-4 border-b-4 border-pink-500 inline-block">
                   Why These Surgeons Are Different: Credentials That Matter
@@ -488,22 +488,42 @@ export default function ProstateCancerTreatmentIndia() {
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="p-6 bg-blue-50 rounded-xl border border-blue-200">
-                      <h3 className="text-xl font-bold text-[#053161] mb-2">Dr. Rajesh Ahlawat</h3>
-                      <p className="text-xs font-bold text-pink-600 mb-3">Group Chairman - Urology & Chairman - Centre of Excellence of Prostate & Urological Cancers</p>
-                      <p className="text-sm">Completed urology training at AIIMS Delhi and further trained at Mayo Clinic (Minnesota) and Memorial Sloan Kettering (New York). 41+ years experience with over 3,000 prostate cancer surgeries performed.</p>
+                    {/* Dr. Rajesh Ahlawat */}
+                    <div className="p-6 bg-blue-50 rounded-xl border border-blue-200 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center gap-4 mb-4">
+                          <img
+                            src="/doctor/dr-vipin.png"
+                            alt="Dr. Prof. Rajesh Ahlawat"
+                            className="w-20 h-20 rounded-full object-cover shadow-md border-2 border-blue-200 flex-shrink-0"
+                          />
+                          <div>
+                            <h3 className="text-xl font-bold text-[#053161]">Dr. Rajesh Ahlawat</h3>
+                            <p className="text-xs font-bold text-pink-600 mt-1">Group Chairman - Urology & Chairman - Centre of Excellence of Prostate & Urological Cancers</p>
+                          </div>
+                        </div>
+                        <p className="text-sm">Completed urology training at AIIMS Delhi and further trained at Mayo Clinic (Minnesota) and Memorial Sloan Kettering (New York). 41+ years experience with over 3,000 prostate cancer surgeries performed.</p>
+                      </div>
                     </div>
 
-                    <div className="p-6 bg-pink-50 rounded-xl border border-pink-200">
-                      <h3 className="text-xl font-bold text-[#053161] mb-2">Dr. Pankaj Wadhwa</h3>
-                      <p className="text-xs font-bold text-pink-600 mb-3">Senior Director - Uro-Oncology, Robotic Surgery & Endourology</p>
-                      <p className="text-sm">Trained at PGI Chandigarh with FSSR (Fellowship in Robotic Surgery) from Roswell Park Cancer Institute (Buffalo, NY). Performs 130 robotic prostatectomies per year with 4,000+ total robotic cases.</p>
+                    {/* Dr. Pankaj Wadhwa */}
+                    <div className="p-6 bg-pink-50 rounded-xl border border-pink-200 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center gap-4 mb-4">
+                          <img
+                            src="/doctor/dr-devendra.png"
+                            alt="Dr. Pankaj Wadhwa"
+                            className="w-20 h-20 rounded-full object-cover shadow-md border-2 border-pink-200 flex-shrink-0"
+                          />
+                          <div>
+                            <h3 className="text-xl font-bold text-[#053161]">Dr. Pankaj Wadhwa</h3>
+                            <p className="text-xs font-bold text-pink-600 mt-1">Senior Director - Uro-Oncology, Robotic Surgery & Endourology</p>
+                          </div>
+                        </div>
+                        <p className="text-sm">Trained at PGI Chandigarh with FSSR (Fellowship in Robotic Surgery) from Roswell Park Cancer Institute (Buffalo, NY). Performs 130 robotic prostatectomies per year with 4,000+ total robotic cases.</p>
+                      </div>
                     </div>
                   </div>
-
-                  <p className="p-4 bg-purple-50 rounded-lg font-medium text-gray-800 text-sm">
-                    <strong>Measurable Difference:</strong> Dr. Wadhwa's complication rate is 3.5% (vs national avg 6-8%), continence rate is 99% (vs 95%), and potency preservation rate is 88% (vs 78%).
-                  </p>
                 </div>
               </section>
 
