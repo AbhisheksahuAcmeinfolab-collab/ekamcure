@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight, FaWhatsapp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
@@ -286,21 +286,27 @@ export default function Home() {
                 </motion.p>
           
                 <motion.div 
-                  className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap"
+                  className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap items-center"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6, duration: 0.5 }}
                 >
-                  <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300">
-                    <a href="/contact" rel="noopener noreferrer">
-                      Get Quote!
-                    </a>
-                  </button>
-                  <button className="bg-white/10 hover:bg-white/20 border border-cyan-300 text-cyan-200 font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:scale-105 duration-300">
-                    <a href="/become-a-partner" rel="noopener noreferrer">
-                      Become Partner!
-                    </a>
-                  </button>
+                  <a 
+                    href="/contact" 
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300 inline-block"
+                  >
+                    Get a free Quote!
+                  </a>
+                  <a
+                    href="https://wa.me/919990205353"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-8 py-3 rounded-full shadow-lg transition-transform hover:scale-105 duration-300 flex items-center gap-2"
+                  >
+                    <FaWhatsapp className="text-xl" />
+                    <span>Chat on WhatsApp</span>
+                  </a>
                 </motion.div>
               </motion.div>
             </AnimatePresence>
