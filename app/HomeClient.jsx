@@ -296,7 +296,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300 inline-block"
                   >
-                    Get a free Quote!
+                    Get a free Quote
                   </a>
                   <a
                     href="https://wa.me/919990205353"
