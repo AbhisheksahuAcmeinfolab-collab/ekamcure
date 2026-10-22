@@ -5,7 +5,7 @@ import hosImg from "../../assets/recent/hospitalmg.webp";
 import hos1 from "../../assets/hospitals/max.webp";
 import hos2 from "../../assets/hospitals/yatharth.webp";
 import hos3 from "../../assets/hospitals/fortis.webp";
-import hos4 from "../../assets/hospitals/psri.webp";
+import hos4 from "../../assets/hospitals/Sharda Care.png";
 import hos5 from "../../assets/hospitals/apollo.webp";
 import hos6 from "../../assets/hospitals/action cancer.webp";
 import hos7 from "../../assets/hospitals/manipal.webp";
@@ -27,8 +27,8 @@ import hos22 from "../../assets/hospitals/miot.webp";
 import hos23 from "../../assets/hospitals/vs.webp";
 import hos24 from "../../assets/hospitals/sooriya.webp";
 import hos25 from "../../assets/hospitals/appasamy.webp";
-import hos26 from "../../assets/hospitals/seven hills.webp";
-import hos27 from "../../assets/hospitals/godrej.webp";
+import hos26 from "../../assets/hospitals/Medanta.png";
+// import hos27 from "../../assets/hospitals/godrej.webp";
 import hos28 from "../../assets/hospitals/moolchand.webp";
 import hos29 from "../../assets/hospitals/saroj.webp";
 import hos30 from "../../assets/hospitals/primus.webp";
@@ -41,7 +41,7 @@ export default function TopHospitals() {
     { src: hos1, alt: "Max Healthcare" },
     { src: hos2, alt: "Yatharth Hospital" },
     { src: hos3, alt: "Fortis Healthcare" },
-    { src: hos4, alt: "PSRI Hospital" },
+    { src: hos4, alt: "Sharda Hospital" },
     { src: hos5, alt: "Apollo Hospitals" },
     { src: hos6, alt: "Action Cancer Hospital" },
     { src: hos7, alt: "Manipal Hospital" },
@@ -63,8 +63,8 @@ export default function TopHospitals() {
     { src: hos23, alt: "VS Hospital" },
     { src: hos24, alt: "Sooriya Hospital" },
     { src: hos25, alt: "Appasamy Hospitals" },
-    { src: hos26, alt: "Seven Hills Hospital" },
-    { src: hos27, alt: "Godrej Memorial Hospital" },
+    { src: hos26, alt: "Medanta Hospital" },
+    // { src: hos27, alt: "Godrej Memorial Hospital" },
     { src: hos28, alt: "Moolchand Hospital" },
     { src: hos29, alt: "Saroj Hospital" },
     { src: hos30, alt: "Primus Super Speciality Hospital" },
