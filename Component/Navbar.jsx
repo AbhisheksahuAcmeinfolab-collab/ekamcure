@@ -56,26 +56,26 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="menu-bar bg-white shadow-sm sticky top-0 z-50 w-full border-b border-gray-100">
+    <nav className="menu-bar bg-white/80 backdrop-blur-md fixed top-0 z-50 w-full border-b border-gray-200/50 transition-all duration-300">
       <div className="max-w-[1440px] mx-auto px-4 xl:px-12 w-full">
-        <div className="flex items-center justify-between h-16 md:h-20 gap-6">
+        <div className="flex items-center justify-between h-20 md:h-24 gap-6">
           
           {/* ---------- Desktop View ---------- */}
           <div className="hidden xl:flex items-center justify-between w-full">
             <div className="flex items-center flex-shrink-0">
-              <Link href="/" className="flex items-center">
+              <Link href="/" className="flex items-center py-2">
                 <Image
                   src={imgLogo}
                   alt="Ekam Logo"
-                  width={130}
-                  height={55}
-                  className="object-contain"
+                  width={150}
+                  height={65}
+                  className="object-contain hover:scale-105 transition-transform duration-300"
                   priority
                 />
               </Link>
             </div>
 
-            <div className="flex items-center space-x-6 xl:space-x-8">
+            <div className="flex items-center space-x-6 xl:space-x-7">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -84,25 +84,25 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-4">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[15px] ${
+                      className={`flex items-center gap-1.5 font-semibold transition-all duration-200 text-base ${
                         isActive
                           ? "text-[#053161] font-bold"
-                          : "text-gray-700 hover:text-[#053161]"
+                          : "text-gray-800 hover:text-[#053161]"
                       }`}
                     >
                       {item.name}
                       {hasSubmenu && (
-                        <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180 text-gray-500" />
+                        <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180 text-gray-500" />
                       )}
                     </Link>
 
                     {hasSubmenu && (
-                      <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 z-50">
+                      <div className="absolute left-0 top-full hidden group-hover:block w-64 bg-white/95 backdrop-blur-lg border border-gray-100 shadow-2xl rounded-2xl py-3 z-50">
                         {item.submenu.map((sub) => (
                           <Link
                             key={sub.name}
                             href={sub.href}
-                            className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#053161] font-medium transition"
+                            className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#053161] font-semibold transition-colors"
                           >
                             {sub.name}
                           </Link>
@@ -116,13 +116,13 @@ export default function Navbar() {
           </div>
 
           {/* ---------- Mobile View Header Bar ---------- */}
-          <div className="flex xl:hidden justify-between items-center w-full py-2">
+          <div className="flex xl:hidden justify-between items-center w-full py-3">
             <Link href="/" className="flex justify-start">
               <Image
                 src={imgLogo}
                 alt="Ekam Logo"
-                width={110}
-                height={45}
+                width={130}
+                height={55}
                 className="object-contain"
                 priority
               />
@@ -130,10 +130,10 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsOpen(true)}
-              className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-lg hover:bg-gray-100"
+              className="p-2 text-gray-800 hover:text-[#053161] focus:outline-none rounded-xl hover:bg-gray-100/60"
               aria-label="Open Menu"
             >
-              <Menu className="w-7 h-7" />
+              <Menu className="w-8 h-8" />
             </button>
           </div>
 
@@ -144,7 +144,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/60 z-[99998] xl:hidden transition-opacity"
+          className="fixed inset-0 bg-black/60 z-[99998] xl:hidden transition-opacity backdrop-blur-xs"
         />
       )}
 
@@ -158,8 +158,8 @@ export default function Navbar() {
           <Image
             src={imgLogo}
             alt="Ekam Logo"
-            width={100}
-            height={40}
+            width={120}
+            height={50}
             className="object-contain"
           />
           <button
@@ -177,11 +177,11 @@ export default function Navbar() {
 
             return (
               <div key={item.name} className="border-b border-gray-100 last:border-none">
-                <div className="flex items-center justify-between py-3">
+                <div className="flex items-center justify-between py-3.5">
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-semibold text-gray-800 hover:text-[#053161] text-base"
+                    className="font-bold text-gray-800 hover:text-[#053161] text-base"
                   >
                     {item.name}
                   </Link>
@@ -200,13 +200,13 @@ export default function Navbar() {
                 </div>
 
                 {hasSubmenu && isSubOpen && (
-                  <div className="pl-3 pb-3 space-y-2 bg-gray-50 rounded-lg p-2 mb-2">
+                  <div className="pl-3 pb-3 space-y-2 bg-slate-50 rounded-xl p-3 mb-2">
                     {item.submenu.map((sub) => (
                       <Link
                         key={sub.name}
                         href={sub.href}
                         onClick={() => setIsOpen(false)}
-                        className="block text-sm text-gray-600 hover:text-[#053161] font-medium py-1"
+                        className="block text-sm text-gray-700 hover:text-[#053161] font-semibold py-1.5"
                       >
                         {sub.name}
                       </Link>
