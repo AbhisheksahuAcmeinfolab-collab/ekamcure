@@ -4,19 +4,19 @@ import Image from "next/image";
 
 import pic24 from "../assets/hospitals/appasamy.webp";
 import pic25 from "../assets/hospitals/asian hospital.webp";
-import pic26 from "../assets/hospitals/godrej.webp";
+import pic26 from "../assets/hospitals/Medanta.png";
 import pic28 from "../assets/hospitals/mgm.webp";
 import pic29 from "../assets/hospitals/kauvery.webp";
 import pic30 from "../assets/hospitals/moolchand.webp";
 import pic31 from "../assets/hospitals/primus.webp";
 import pic32 from "../assets/hospitals/saroj.webp";
-import pic33 from "../assets/hospitals/seven hills.webp";
+// import pic33 from "../assets/hospitals/seven hills.webp";
 import pic34 from "../assets/hospitals/max.webp";
 import pic35 from "../assets/hospitals/yatharth.webp";
-import pic36 from "../assets/hospitals/Sharda Hospital.png";
+import pic36 from "../assets/hospitals/Sharda Care.png";
 import pic37 from "../assets/hospitals/manipal.webp";
 import pic38 from "../assets/hospitals/apollo.webp";
-import pic39 from "../assets/hospitals/psri.webp";
+// import pic39 from "../assets/hospitals/psri.webp";
 import pic40 from "../assets/hospitals/fortis.webp";
 import pic41 from "../assets/hospitals/The Sight Avenue.png";
 import pic42 from "../assets/hospitals/Eye 7.png";
@@ -26,19 +26,19 @@ import pic44 from "../assets/hospitals/metro.webp";
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
   { name: "Asian Hospital", img: pic25 },
-  { name: "Godrej Memorial Hospital", img: pic26 },
+  { name: "Medanta", img: pic26 },
   { name: "MGM Hospital", img: pic28 },
   { name: "Kauvery Hospital", img: pic29 },
   { name: "Moolchand Hospital", img: pic30 },
   { name: "Primus Hospital", img: pic31 },
   { name: "Saroj Hospital", img: pic32 },
-  { name: "Seven Hills Hospital", img: pic33 },
+  // { name: "Seven Hills Hospital", img: pic33 },
   { name: "Max Hospital", img: pic34 },
   { name: "Yatharth Hospital", img: pic35 },
   { name: "Sharda Hospital", img: pic36 },
   { name: "Manipal Hospital", img: pic37 },
   { name: "Apollo Hospital", img: pic38 },
-  { name: "PSRI Hospital", img: pic39 },
+  // { name: "PSRI Hospital", img: pic39 },
   { name: "Fortis Hospital", img: pic40 },
   { name: "The Sight Avenue", img: pic41 },
   { name: "Eye7 Eye Hospitals", img: pic42 },
