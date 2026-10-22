@@ -66,41 +66,10 @@ export default function Footer() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Top Contact Bar Card */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
-          <div className="rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl p-6 md:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-white/10">
-              {infoItems.map(({ icon: Icon, label, text, href }, i) => (
-                <a
-                  key={i}
-                  href={href}
-                  target={href.startsWith("http") ? "_blank" : "_self"}
-                  rel="noopener noreferrer"
-                  className={`flex items-center gap-4 group transition-all duration-300 p-3 rounded-2xl hover:bg-white/10 ${
-                    i !== 0 ? "md:pl-8" : ""
-                  }`}
-                >
-                  <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg group-hover:scale-110 transition-transform duration-300 shrink-0">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <div className="overflow-hidden">
-                    <p className="text-xs uppercase tracking-wider text-cyan-300 font-medium">
-                      {label}
-                    </p>
-                    <p className="text-sm md:text-base font-bold text-white group-hover:text-cyan-200 transition-colors truncate">
-                      {text}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
-            {/* Col 1: Logo & About */}
+            {/* Col 1: Logo, About & Social Icons */}
             <div className="lg:col-span-5 space-y-6">
               <Link href="/" className="inline-block">
                 <Image
@@ -197,6 +166,37 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Info Card Section (Shifted Below Social Icons & Main Links) */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-10">
+          <div className="rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl p-6 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-white/10">
+              {infoItems.map(({ icon: Icon, label, text, href }, i) => (
+                <a
+                  key={i}
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-4 group transition-all duration-300 p-3 rounded-2xl hover:bg-white/10 ${
+                    i !== 0 ? "md:pl-8" : ""
+                  }`}
+                >
+                  <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-xs uppercase tracking-wider text-cyan-300 font-medium">
+                      {label}
+                    </p>
+                    <p className="text-sm md:text-base font-bold text-white group-hover:text-cyan-200 transition-colors truncate">
+                      {text}
+                    </p>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
