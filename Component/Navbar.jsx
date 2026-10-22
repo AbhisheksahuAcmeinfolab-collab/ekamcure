@@ -67,8 +67,8 @@ export default function Navbar() {
                 <Image
                   src={imgLogo}
                   alt="Ekam Logo"
-                  width={130}
-                  height={55}
+                  width={150}
+                  height={65}
                   className="object-contain"
                   priority
                 />
@@ -84,7 +84,7 @@ export default function Navbar() {
                   <div key={item.name} className="relative group py-4">
                     <Link
                       href={item.href}
-                      className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[15px] ${
+                      className={`flex items-center gap-1 font-semibold transition-all duration-200 text-[16px] ${
                         isActive
                           ? "text-[#053161] font-bold"
                           : "text-gray-700 hover:text-[#053161]"
