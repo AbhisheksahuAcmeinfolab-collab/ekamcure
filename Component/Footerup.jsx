@@ -10,18 +10,30 @@ import pic29 from "../assets/hospitals/kauvery.webp";
 import pic30 from "../assets/hospitals/moolchand.webp";
 import pic31 from "../assets/hospitals/primus.webp";
 import pic32 from "../assets/hospitals/saroj.webp";
-// import pic33 from "../assets/hospitals/seven hills.webp";
+import pic33 from "../assets/hospitals/action cancer.webp";
 import pic34 from "../assets/hospitals/max.webp";
 import pic35 from "../assets/hospitals/yatharth.webp";
 import pic36 from "../assets/hospitals/Sharda Care.png";
 import pic37 from "../assets/hospitals/manipal.webp";
 import pic38 from "../assets/hospitals/apollo.webp";
-// import pic39 from "../assets/hospitals/psri.webp";
+import pic39 from "../assets/hospitals/blk.webp";
 import pic40 from "../assets/hospitals/fortis.webp";
 import pic41 from "../assets/hospitals/The Sight Avenue.png";
 import pic42 from "../assets/hospitals/Eye 7.png";
 import pic43 from "../assets/hospitals/Zeeva Fertility.png";
 import pic44 from "../assets/hospitals/metro.webp";
+import pic45 from "../assets/hospitals/kohinoor.webp";
+import pic46 from "../assets/hospitals/asian.webp";
+import pic47 from "../assets/hospitals/global.webp";
+import pic48 from "../assets/hospitals/bombay.webp";
+import pic49 from "../assets/hospitals/glaneagles.webp";
+import pic50 from "../assets/hospitals/sims.webp";
+import pic51 from "../assets/hospitals/parvathy.webp";
+import pic52 from "../assets/hospitals/arthmis.webp";
+import pic53 from "../assets/hospitals/vijaya.webp";
+import pic54 from "../assets/hospitals/miot.webp";
+import pic55 from "../assets/hospitals/vs.webp";
+import pic56 from "../assets/hospitals/sooriya.webp"";
 
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
@@ -32,18 +44,30 @@ const hospitals = [
   { name: "Moolchand Hospital", img: pic30 },
   { name: "Primus Hospital", img: pic31 },
   { name: "Saroj Hospital", img: pic32 },
-  // { name: "Seven Hills Hospital", img: pic33 },
+  { name: "Action Cancer Hospital", img: pic33 },
   { name: "Max Hospital", img: pic34 },
   { name: "Yatharth Hospital", img: pic35 },
   { name: "Sharda Hospital", img: pic36 },
   { name: "Manipal Hospital", img: pic37 },
   { name: "Apollo Hospital", img: pic38 },
-  // { name: "PSRI Hospital", img: pic39 },
+  { name: "BLK Hospital, img: pic39 },
   { name: "Fortis Hospital", img: pic40 },
   { name: "The Sight Avenue", img: pic41 },
   { name: "Eye7 Eye Hospitals", img: pic42 },
   { name: "Zeeva Fertility", img: pic43 },
   { name: "Metro Hospital", img: pic44 },
+  { name: "Kohinoor Hospital", img: pic45 },
+  { name: "Asian Heart Institute", img: pic46 },
+  { name: "Global Hospital", img: pic47 },
+  { name: "Bombay Hospital", img: pic48 },
+  { name: "Glaneagles Hospital", img: pic49 },
+  { name: "SIMS Hospital", img: pic50 },
+  { name: "Parvathy Hospital", img: pic51 },
+  { name: "Arthmis Hospital", img: pic52 },
+  { name: "Vijaya Hospital", img: pic53 },
+  { name: "MIOT Hospital", img: pic54 },
+  { name: "VS Hospital", img: pic55 },
+  { name: "Sooriya Hospital", img: pic56 },
 ];
 
 export default function Footerup() {
