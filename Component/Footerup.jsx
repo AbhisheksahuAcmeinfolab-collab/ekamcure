@@ -33,7 +33,7 @@ import pic52 from "../assets/hospitals/arthmis.webp";
 import pic53 from "../assets/hospitals/vijaya.webp";
 import pic54 from "../assets/hospitals/miot.webp";
 import pic55 from "../assets/hospitals/vs.webp";
-import pic56 from "../assets/hospitals/sooriya.webp"";
+import pic56 from "../assets/hospitals/sooriya.webp";
 
 const hospitals = [
   { name: "Appasamy Hospitals", img: pic24 },
@@ -50,7 +50,7 @@ const hospitals = [
   { name: "Sharda Hospital", img: pic36 },
   { name: "Manipal Hospital", img: pic37 },
   { name: "Apollo Hospital", img: pic38 },
-  { name: "BLK Hospital, img: pic39 },
+  { name: "BLK Hospital", img: pic39 },
   { name: "Fortis Hospital", img: pic40 },
   { name: "The Sight Avenue", img: pic41 },
   { name: "Eye7 Eye Hospitals", img: pic42 },
