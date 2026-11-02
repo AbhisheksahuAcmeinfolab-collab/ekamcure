@@ -3,9 +3,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import img from "../../assets/recent/Common.webp";
+import doctorImg from "../../assets/recent/about img.webp"; // replace with your actual image
 import Img1 from "../../assets/newimage/vision.webp";
 import Img2 from "../../assets/newimage/vission2.webp";
-import Img3 from "../../assets/newimage/Udai Sir.webp";
+import Img3 from "../../assets/newimage/Udai Sir.webp"; // replace with correct image paths
 import Img4 from "../../assets/newimage/sanu Das.webp";
 import Img5 from "../../assets/newimage/Pratap Sir.webp";
 import Img6 from "../../assets/newimage/Vijay kumar.webp";
@@ -41,7 +42,7 @@ export default function AboutUs() {
       title: "Patient Coordinator, Ekam Health Services",
       image: Img4,
       description:
-        "With 3 years of diverse industry experience, Sanu Das excels as a Patient Coordinator at Ekam Health Services. Guided by a strong, patient-centric approach, he is committed to providing compassionate and personalized support for individuals navigating their healthcare journey. His focus on patient well-being and his dedication to seamless care coordination make him a trusted and invaluable resource for patients seeking quality medical care.",
+        "With 3 years of diverse industry experience, Sanu Das excels as a Patient Coordinator at Ekam Health Services. Guided by a strong, patient-centric approach, he is committed to providing compassionate and personalized support for individuals navigating their healthcare journey. Rohit’s focus on patient well-being and his dedication to seamless care coordination make him a trusted and invaluable resource for patients seeking quality medical care.",
       socials: {
         linkedin: "#",
         instagram: "#",
@@ -52,7 +53,7 @@ export default function AboutUs() {
       title: "Patient Coordinator, Ekam Health Services",
       image: Img6,
       description:
-        "With years of cross-industry experience, Vijay Kumar leads with dedication as a Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, he embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated professional, he brings integrity and warmth to each interaction, making him a trusted guide for patients navigating their healthcare journey.",
+        "With 2.5 years of experience across multiple industries, Rahul Kanodia leads as the Chief Consultant and Patient Coordinator at Ekam Health Services. Known for his unwavering honesty, reliability, and deep compassion, Rahul embodies a patient-centric approach, ensuring every individual receives attentive and personalized care. A dedicated devotee of ISKCON, he brings integrity and warmth to each interaction, making him a trusted guide for patients navigating their healthcare journey. Rahul’s commitment to helping others and his reputation as an exceptional human being make him an invaluable asset to Ekam Health Services Linkedin.",
       socials: {
         linkedin: "#",
         instagram: "#",
@@ -61,210 +62,248 @@ export default function AboutUs() {
   ];
 
   return (
-    <main className="bg-white overflow-hidden">
-      {/* Banner Section - Premium Overlay */}
-      <div className="relative w-full h-[260px] md:h-[300px] flex items-center justify-center bg-[#021428] isolate">
+    <>
+      {/* Banner Section */}
+      <div className="relative w-full h-[200px] md:h-[200px] bg-blue-100 flex items-center justify-center">
         <Image
           src={img}
-          alt="About Us Banner"
+          alt="Our Banner"
           fill
-          className="object-cover object-center opacity-40 scale-105"
-          priority
+          className="object-cover brightness-80 w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-[#053161]/80 to-indigo-950/90" />
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-3">
-          <span className="inline-block px-4 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-semibold tracking-wider uppercase border border-cyan-400/30">
-            Ekam Health Services
-          </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-white">
             About Us
           </h1>
         </div>
       </div>
 
-      {/* Main Intro Section */}
-      <section className="py-16 md:py-24 px-6 md:px-16 max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          
-          {/* Left Side: YouTube Video Embed with Glow */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="w-full max-w-[540px] aspect-video rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(5,49,97,0.25)] border border-gray-100 relative group">
-              <iframe 
-                className="w-full h-full rounded-3xl transition-transform duration-500 group-hover:scale-105"
-                src="https://www.youtube.com/embed/24yTN_Du0lY?si=7ChFSRItTSPmuUhr" 
-                title="Ekam Health Services Video" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen
-              ></iframe>
-            </div>
+      {/* // Outer container with padding  */}
+
+      {/* Content Container (to center and limit width) */}
+
+      <section className="bg-white py-16 px-6 md:px-16">
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* Left Side: YouTube Video Embed */}
+          <div className="relative w-full md:w-1/2 flex justify-center">
+          <div className="video-frame w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-[0_10px_25px_rgba(3,40,112,0.3)] transition-all duration-400 ease-in-out hover:scale-[1.03] hover:shadow-[0_15px_35px_rgba(3,40,112,0.4)] relative before:content-[''] before:absolute before:inset-0 before:border-[3px] before:border-[#032870] before:rounded-xl before:opacity-50 before:pointer-events-none">
+            <iframe 
+              className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/24yTN_Du0lY?si=7ChFSRItTSPmuUhr" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
           </div>
+        </div>
 
           {/* Right Side: Text Content */}
-          <div className="w-full lg:w-1/2 space-y-6 text-gray-700">
-            <div>
-              <span className="text-blue-600 font-bold text-xs uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
-                Global Healthcare Facilitator
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#053161] mt-3 tracking-tight">
-                Connecting International Patients with Top-Tier Care in India
-              </h2>
-            </div>
-
-            <p className="text-sm md:text-base leading-relaxed text-gray-600">
-              Ekam excels in the medical travel industry, connecting global patients with top-tier healthcare facilities across India. Focused on providing a seamless healthcare journey, the company manages every aspect, from initial consultation to post-treatment follow-up, to ensure a comprehensive and stress-free experience for each patient.
+          <div className="md:w-1/2 text-justify md:text-left mt-2">
+            
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Ekam excels in the medical travel industry, connecting global
+              patients with top-tier healthcare facilities across India. Focused
+              on providing a seamless healthcare journey, the company manages
+              every aspect, from initial consultation to post-treatment
+              follow-up, to ensure a comprehensive and stress-free experience
+              for each patient. By handling essential logistics, including
+              medical consultations and hospital appointments, Ekam prioritizes
+              patient safety and convenience, tailoring their services to meet
+              the individual needs of each client.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              With a commitment to accessibility and high standards, Ekam
+              transforms medical tourism into a structured, patient-focused
+              service. The company&apos;s expertise in cross-border medical care
+              helps patients navigate complex healthcare systems, empowering
+              them to receive quality treatment without the usual complications
+              of international travel. Through Ekam&apos;s network and support,
+              patients benefit from transparent, efficient medical care
+              solutions, making quality healthcare achievable for individuals
+              worldwide.
             </p>
 
-            <p className="text-sm md:text-base leading-relaxed text-gray-600">
-              With a commitment to accessibility and high standards, Ekam transforms medical tourism into a structured, patient-focused service. Through our network and support, patients benefit from transparent, efficient medical care solutions worldwide.
-            </p>
-
-            <div className="pt-2">
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#053161] to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 text-sm md:text-base"
-              >
-                <span>Book an Appointment</span>
-                <span>→</span>
-              </a>
-            </div>
+            <a
+              href="/contact"
+              className="inline-block bg-[#032870] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#043d9c] transition-all"
+            >
+              Book an Appointment →
+            </a>
           </div>
-
         </div>
       </section>
 
-      {/* Mission & Vision Toggle Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          
-          {/* Toggle Switch */}
-          <div className="flex justify-center items-center space-x-4 mb-12">
-            <span className={`font-bold text-lg md:text-xl transition-colors ${active === "mission" ? "text-[#053161]" : "text-gray-400"}`}>
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          {/* ===== Toggle Switch ===== */}
+          <div className="flex justify-center items-center space-x-3 mb-10">
+            <span
+              className={`font-medium text-2xl ${
+                active === "mission" ? "text-gray-900" : "text-gray-500"
+              }`}
+            >
               Our Mission
             </span>
 
+            {/* Toggle Button */}
             <button
-              onClick={() => setActive(active === "mission" ? "vision" : "mission")}
-              className="relative w-16 h-8 flex items-center bg-[#053161] rounded-full p-1 shadow-inner cursor-pointer transition-all duration-300"
+              onClick={() =>
+                setActive(active === "mission" ? "vision" : "mission")
+              }
+              className={`relative w-15 h-7 flex items-center rounded-full transition-all duration-500 ${
+                active === "mission" ? "bg-blue-600" : "bg-blue-600"
+              }`}
             >
               <span
-                className={`w-6 h-6 bg-cyan-400 rounded-full shadow-md transform transition-transform duration-300 ${
-                  active === "mission" ? "translate-x-0" : "translate-x-8"
+                className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                  active === "mission" ? "translate-x-1" : "translate-x-8"
                 }`}
-              />
+              ></span>
             </button>
 
-            <span className={`font-bold text-lg md:text-xl transition-colors ${active === "vision" ? "text-[#053161]" : "text-gray-400"}`}>
+            <span
+              className={`font-medium text-2xl ${
+                active === "vision" ? "text-gray-900" : "text-gray-500"
+              }`}
+            >
               Our Vision
             </span>
           </div>
 
-          {/* Content Block */}
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-            {active === "mission" ? (
-              <div className="flex flex-col md:flex-row items-center gap-8 text-left">
-                <div className="relative w-full md:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-md">
-                  <Image src={Img2} alt="Mission" fill className="object-cover" />
+          {/* ===== Content Blocks ===== */}
+          <div className="space-y-10">
+            {/* Mission Section */}
+            {active === "mission" && (
+              <>
+                {/* Block 1 */}
+                <div className="flex flex-col md:flex-row items-center gap-8 text-left">
+                  <div className="relative w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-md">
+                    <Image
+                      src={Img2}
+                      alt="Mission Image"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="md:w-1/2 text-justify">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                      Mission
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Ekam Health Services aims to revolutionize the medical
+                      tourism industry by delivering comprehensive, personalized
+                      healthcare solutions that bridge international patients
+                      with India&apos;s top medical providers. Our mission is to
+                      ensure that each patient receives exceptional care through
+                      seamless coordination of medical consultations, hospital
+                      appointments, and travel arrangements. By upholding the
+                      highest standards of safety, integrity, and patient
+                      satisfaction, we strive to make world-class healthcare
+                      accessible stress-free for individuals around the globe.
+                    </p>
+                  </div>
                 </div>
-                <div className="w-full md:w-1/2 space-y-4">
-                  <h3 className="text-2xl md:text-3xl font-extrabold text-[#053161]">
-                    Our Mission
-                  </h3>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Ekam Health Services aims to revolutionize the medical tourism industry by delivering comprehensive, personalized healthcare solutions that bridge international patients with India&apos;s top medical providers. We strive to make world-class healthcare accessible and stress-free for individuals around the globe.
-                  </p>
+              </>
+            )}
+
+            {/* Vision Section */}
+            {active === "vision" && (
+              <>
+                {/* Block 1 */}
+                <div className="flex flex-col md:flex-row items-center gap-8 text-left">
+                  <div className="relative w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-md">
+                    <Image
+                      src={Img1}
+                      alt="Vision Image"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="md:w-1/2 text-justify">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                      Vision
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      To be the global leader in medical travel facilitation,
+                      transforming the way people access quality healthcare
+                      across borders. Ekam Health Services envisions a world
+                      where medical treatment is easily attainable, irrespective
+                      of geographic boundaries, and where every patient enjoys a
+                      tailored, compassionate, and transparent healthcare
+                      journey. Through our dedication to innovation, quality,
+                      and patient-centric care, we seek to redefine medical
+                      tourism and empower individuals worldwide to pursue
+                      optimal health outcomes with confidence and ease.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div className="flex flex-col md:flex-row items-center gap-8 text-left">
-                <div className="relative w-full md:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-md">
-                  <Image src={Img1} alt="Vision" fill className="object-cover" />
-                </div>
-                <div className="w-full md:w-1/2 space-y-4">
-                  <h3 className="text-2xl md:text-3xl font-extrabold text-[#053161]">
-                    Our Vision
-                  </h3>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    To be the global leader in medical travel facilitation, transforming the way people access quality healthcare across borders. Ekam Health Services envisions a world where medical treatment is easily attainable, compassionate, and transparent for everyone.
-                  </p>
-                </div>
-              </div>
+              </>
             )}
           </div>
-
         </div>
       </section>
 
-      {/* Our Team Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold tracking-wider uppercase mb-2">
-              Leadership & Experts
-            </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#053161] tracking-tight">
-              Meet Our Team
-            </h2>
-          </div>
+      <section className="bg-white">
+        <div className="container mx-auto px-14">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 relative after:block after:w-16 after:h-1 after:bg-blue-600 after:mx-auto after:mt-3">
+            Our Team
+          </h2>
 
-          <div className="grid grid-cols-1 gap-8">
+          <div className="flex flex-col gap-10">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-gradient-to-br from-gray-50 to-white p-7 md:p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300"
+                className="flex flex-col md:flex-row items-center md:items-start gap-6 bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-36 h-36 md:w-44 md:h-44 flex-shrink-0 relative rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                <div className="w-40 h-40 flex-shrink-0">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover"
+                    className="rounded-xl object-cover w-full h-full"
                   />
                 </div>
 
-                <div className="flex flex-col text-center md:text-left flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold text-[#053161]">
+                <div className="flex flex-col text-justify md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900">
                     {member.name}
                   </h3>
-                  <p className="text-sm md:text-base font-semibold text-cyan-700 mb-3">
+                  <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
                     {member.title}
                   </p>
-                  <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-5">
+                  <p className="text-gray-600 text-sm md:text-base mb-4">
                     {member.description}
                   </p>
 
-                  <div className="flex justify-center md:justify-start space-x-3">
+                  <div className="flex justify-center md:justify-start space-x-4">
                     {member.socials.facebook && (
-                      <a
-                        href={member.socials.facebook}
-                        className="w-9 h-9 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white flex items-center justify-center transition shadow-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaFacebook size={16} />
-                      </a>
-                    )}
-                    {member.socials.linkedin && (
-                      <a
-                        href={member.socials.linkedin}
-                        className="w-9 h-9 rounded-full bg-blue-50 text-blue-700 hover:bg-blue-700 hover:text-white flex items-center justify-center transition shadow-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaLinkedin size={16} />
-                      </a>
-                    )}
-                    {member.socials.instagram && (
-                      <a
-                        href={member.socials.instagram}
-                        className="w-9 h-9 rounded-full bg-pink-50 text-pink-600 hover:bg-pink-600 hover:text-white flex items-center justify-center transition shadow-sm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaInstagram size={16} />
-                      </a>
-                    )}
+                        <a
+                          href={member.socials.facebook}
+                          className="text-blue-600 hover:text-blue-800 transition"
+                          target="_blank"
+                        >
+                          <FaFacebook size={28} />
+                        </a>
+                      )}
+                      {member.socials.linkedin && (
+                        <a
+                          href={member.socials.linkedin}
+                          className="text-blue-700 hover:text-blue-900 transition"
+                          target="_blank"
+                        >
+                          <FaLinkedin size={28} />
+                        </a>
+                      )}
+                      {member.socials.instagram && (
+                        <a
+                          href={member.socials.instagram}
+                          className="text-pink-600 hover:text-pink-800 transition"
+                          target="_blank"
+                        >
+                          <FaInstagram size={28} />
+                        </a>
+                      )}
                   </div>
                 </div>
               </div>
@@ -272,6 +311,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
