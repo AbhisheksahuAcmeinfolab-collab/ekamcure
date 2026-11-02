@@ -189,11 +189,10 @@ export default function Home() {
     setLoading(true);
 
     try {
-      // 1. Send data to existing backend API route (/api/send) to email info@ekamcure.com
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.fullName);
       formDataToSend.append("phone", `(${formData.country}) ${formData.whatsapp}`);
-      formDataToSend.append("email", "patient@ekamcure.com"); // fallback/default field if required by API
+      formDataToSend.append("email", "patient@ekamcure.com");
       formDataToSend.append("message", `Treatment Needed: ${formData.treatment}\nCondition: ${formData.condition || "N/A"}`);
       if (formData.reportFile) {
         formDataToSend.append("report", formData.reportFile);
@@ -208,19 +207,16 @@ export default function Home() {
       const data = await res.json();
 
       if (res.ok && data.success) {
-        // 2. Open WhatsApp with pre-filled enquiry message
         const message = `Hello Ekam Health Services,%0A%0A*New Enquiry from Website:*%0A- Full Name: ${formData.fullName}%0A- Country: ${formData.country}%0A- WhatsApp: ${formData.whatsapp}%0A- Treatment Needed: ${formData.treatment}%0A- Condition: ${formData.condition || "N/A"}%0A%0APlease find my medical details attached/shared.`;
         const whatsappUrl = `https://wa.me/919990205353?text=${message}`;
         window.open(whatsappUrl, "_blank");
 
-        // 3. Redirect to thank you page
         router.push("/contact/thank-you");
       } else {
         alert(data.message || "Failed to send message.");
       }
     } catch (err) {
       console.error("FORM ERROR:", err);
-      // Fallback to direct WhatsApp if API encounters network issues
       const message = `Hello Ekam Health Services,%0A%0A*New Enquiry from Website:*%0A- Full Name: ${formData.fullName}%0A- Country: ${formData.country}%0A- WhatsApp: ${formData.whatsapp}%0A- Treatment Needed: ${formData.treatment}%0A- Condition: ${formData.condition || "N/A"}`;
       window.open(`https://wa.me/919990205353?text=${message}`, "_blank");
     }
@@ -258,56 +254,55 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="bg-white">
-        {/* HERO SECTION - PREMIUM REDESIGNED */}
-        <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden bg-[#021428] isolate pt-28 pb-16">
+        {/* HERO SECTION - ORIGINAL PREMIUM DESIGN */}
+        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#031d3b] isolate pt-24 pb-16">
           <div className="absolute inset-0 z-0">
             <Image
               src={pic1}
               alt="Ekam Medical Tourism Banner"
               fill
-              className="object-cover object-center opacity-35 scale-105 transform transition-transform duration-1000"
+              className="object-cover object-center opacity-30 scale-105 transform"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-950/95 via-[#053161]/90 to-indigo-950/90" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.15),transparent_50%)]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-[#053161]/90 to-blue-900/80" />
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               
               <div className="lg:col-span-7 text-white space-y-6">
-                <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/40 px-4 py-1.5 rounded-full text-cyan-300 text-xs font-semibold tracking-wider uppercase shadow-lg shadow-cyan-900/20">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/30 px-4 py-1.5 rounded-full text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
                   <span>Free Plan in 24 Hours</span>
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-                  Treatment in India for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-200">International Patients</span>
+                  Treatment in India for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200">International Patients</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-200 font-light leading-relaxed">
                   Send us your medical reports. We match you with the right hospital and doctor, and give you a clear cost estimate before you travel.
                 </p>
 
-                <ul className="space-y-3 text-sm sm:text-base text-gray-200 font-medium pt-1">
+                <ul className="space-y-2.5 text-sm sm:text-base text-gray-200 font-medium pt-1">
                   <li className="flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
                     <span>Trusted partner hospitals across India</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
                     <span>One coordinator from first message to follow-up</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
                     <span>Visa letter, airport pickup, stay and interpreter handled for you</span>
                   </li>
                 </ul>
 
-                <div className="flex flex-wrap gap-4 pt-3">
+                <div className="flex flex-wrap gap-4 pt-2">
                   <a 
                     href="#lead-form" 
-                    className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-cyan-500/20 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-7 py-3.5 rounded-full shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 text-sm sm:text-base"
                   >
                     <span>Get a free quote</span>
                     <FaArrowRight className="text-xs" />
@@ -316,7 +311,7 @@ export default function Home() {
                     href="https://wa.me/919990205353"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-7 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
                   >
                     <FaWhatsapp className="text-xl" />
                     <span>Chat on WhatsApp</span>
@@ -333,42 +328,33 @@ export default function Home() {
                   ].map((badge, idx) => {
                     const IconComponent = badge.icon;
                     return (
-                      <div key={idx} className="bg-white/5 backdrop-blur-md border border-white/10 p-3 rounded-2xl text-center flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition">
-                        <div className="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-300">
-                          <IconComponent className="text-sm" />
-                        </div>
-                        <span className="text-[11px] font-semibold text-gray-200 leading-tight">{badge.title}</span>
+                      <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1.5">
+                        <IconComponent className="text-cyan-400 text-sm" />
+                        <span className="text-[11px] font-medium text-gray-300 leading-tight">{badge.title}</span>
                       </div>
                     );
                   })}
                 </div>
+
               </div>
 
-              {/* RIGHT COLUMN: Ultra-Premium Glassmorphic Lead Form connected to /api/send */}
+              {/* RIGHT COLUMN: Original Lead Form Design with API integration */}
               <div id="lead-form" className="lg:col-span-5">
-                <div className="bg-white rounded-3xl p-7 sm:p-9 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-gray-100 text-gray-800 relative overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600" />
-                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl pointer-events-none" />
-
-                  <div className="flex justify-between items-start mb-6">
-                    <div>
-                      <h3 className="text-2xl font-extrabold text-[#053161] tracking-tight">
-                        Get your free quote
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Fill in your details for a personalized medical treatment plan.
-                      </p>
-                    </div>
-                    <span className="bg-blue-50 text-blue-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase border border-blue-100">
-                      24h Response
-                    </span>
+                <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/20 text-gray-800 relative">
+                  <div className="absolute -top-3 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+                    Fast Response
                   </div>
+
+                  <h3 className="text-2xl font-extrabold text-[#053161] mb-1">
+                    Get your free quote
+                  </h3>
+                  <p className="text-xs text-gray-500 mb-5">
+                    Share your details and medical condition for a customized treatment plan.
+                  </p>
 
                   <form onSubmit={handleFormSubmit} className="space-y-4">
                     <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
-                        <FaUser className="text-blue-600 text-[11px]" /> Full Name *
-                      </label>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name *</label>
                       <input
                         type="text"
                         name="fullName"
@@ -376,15 +362,13 @@ export default function Home() {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder="Enter your full name"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
                       />
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
-                          <FaGlobe className="text-blue-600 text-[11px]" /> Country *
-                        </label>
+                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Country *</label>
                         <input
                           type="text"
                           name="country"
@@ -392,13 +376,11 @@ export default function Home() {
                           value={formData.country}
                           onChange={handleInputChange}
                           placeholder="e.g. Zimbabwe, Fiji"
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
-                          <FaWhatsapp className="text-green-600 text-xs" /> WhatsApp No. *
-                        </label>
+                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">WhatsApp No. *</label>
                         <input
                           type="tel"
                           name="whatsapp"
@@ -406,21 +388,19 @@ export default function Home() {
                           value={formData.whatsapp}
                           onChange={handleInputChange}
                           placeholder="+263 XXX XXX"
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
-                        <FaStethoscope className="text-blue-600 text-[11px]" /> Treatment Needed *
-                      </label>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Treatment Needed *</label>
                       <select
                         name="treatment"
                         required
                         value={formData.treatment}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 text-gray-700 transition"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 text-gray-700"
                       >
                         <option value="">Select Treatment</option>
                         <option value="Prostate Cancer Treatment">Prostate Cancer Treatment</option>
@@ -436,40 +416,40 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1">Describe Condition (Optional)</label>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Describe Condition (Optional)</label>
                       <textarea
                         name="condition"
                         rows="2"
                         value={formData.condition}
                         onChange={handleInputChange}
                         placeholder="Briefly describe symptoms or diagnosis..."
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 resize-none transition"
+                        className="w-full px-4 py-2 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 resize-none"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1">Upload Medical Reports (Optional)</label>
-                      <div className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl border border-dashed border-gray-300 bg-blue-50/40 hover:bg-blue-50 transition cursor-pointer">
-                        <FaPaperclip className="text-blue-600 text-sm shrink-0" />
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Upload Medical Reports (Optional)</label>
+                      <div className="flex items-center gap-2 px-3 py-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+                        <FaPaperclip className="text-gray-400 text-sm shrink-0" />
                         <input
                           type="file"
                           onChange={handleFileChange}
                           accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-                          className="w-full text-xs text-gray-600 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"
+                          className="w-full text-xs text-gray-500 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer"
                         />
                       </div>
                       {formData.reportFile && (
-                        <p className="text-[11px] text-emerald-600 mt-1 font-semibold">Selected: {formData.reportFile.name}</p>
+                        <p className="text-[11px] text-emerald-600 mt-1 font-medium">Selected: {formData.reportFile.name}</p>
                       )}
                     </div>
 
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full bg-gradient-to-r from-[#25D366] to-emerald-600 hover:from-[#20ba5a] hover:to-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-green-500/20 transition-all duration-300 flex items-center justify-center gap-2.5 text-base hover:scale-[1.02] disabled:opacity-75"
+                      className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-base hover:scale-[1.02] disabled:opacity-75"
                     >
                       {loading ? (
-                        <span>Submitting & Sending...</span>
+                        <span>Submitting...</span>
                       ) : (
                         <>
                           <FaWhatsapp className="text-xl" />
@@ -644,126 +624,42 @@ export default function Home() {
                     alt={item.title}
                     width={56}
                     height={56}
-                    className="w-full h-full object-contain"
+                    className="object-contain w-full h-full"
                   />
                 </div>
-
-                <h3 className="text-gray-800 font-bold text-xs sm:text-sm leading-snug group-hover:text-blue-900 transition-colors">
+                <h3 className="font-bold text-gray-800 text-xs md:text-sm group-hover:text-blue-900 transition-colors">
                   {item.title}
                 </h3>
-
-                <span className="mt-3 text-xs font-semibold text-blue-600 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                  Explore →
-                </span>
               </Link>
             ))}
-          </div>
-
-          <div className="flex justify-center mt-10">
-            <a
-              href="/treatments"
-              className="inline-flex items-center gap-2 bg-[#053161] hover:bg-blue-800 text-white font-bold px-7 py-3 rounded-full shadow-md transition-all hover:scale-105 text-sm md:text-base"
-            >
-              View All Treatments →
-            </a>
           </div>
         </section>
 
         {/* PATIENT SUCCESS STORIES SECTION */}
-        <section className="bg-gradient-to-br from-blue-950 via-[#053161] to-blue-900 text-white py-16 md:py-20 px-4 md:px-10 relative overflow-hidden">
-          <div className="max-w-6xl mx-auto relative z-10">
-            
-            <div className="text-center mb-12">
-              <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
-                TESTIMONIALS
-              </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
-                Patient <span className="text-cyan-400">Success Stories</span>
-              </h2>
-              <p className="text-blue-100/80 max-w-xl mx-auto mt-2 text-sm md:text-base font-light">
-                Every patient journey tells a story of hope, healing, and world-class healthcare in India.
-              </p>
+        <section className="py-16 bg-slate-900 text-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold">Patient Success Stories</h2>
             </div>
-
-            <div className="relative max-w-4xl mx-auto">
-              {patients[current] && (
-                <div className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center">
-                  <div className="md:col-span-5 flex justify-center">
-                    <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-xl">
-                      <Image
-                        src={patients[current].media}
-                        alt={patients[current].name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="md:col-span-7 flex flex-col justify-center">
-                    <FaQuoteLeft className="text-3xl text-cyan-400/60 mb-3" />
-                    
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                      {patients[current].name}
-                    </h3>
-
-                    <div className="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-medium w-fit mb-4 border border-cyan-400/30">
-                      <span>{patients[current].treatment}</span>
-                    </div>
-
-                    <div className="space-y-2 text-sm text-blue-100/90 font-light mb-6">
-                      <p className="flex items-center gap-2">
-                        <FaMapMarkerAlt className="text-pink-400 flex-shrink-0" />
-                        <span><strong>Native Country:</strong> {patients[current].country}</span>
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <FaHospital className="text-cyan-400 flex-shrink-0" />
-                        <span><strong>Hospital:</strong> {patients[current].hospital} ({patients[current].location})</span>
-                      </p>
-                    </div>
-
-                    <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                      <div className="flex gap-2">
-                        {patients.map((_, idx) => (
-                          <button
-                            key={idx}
-                            onClick={() => setCurrent(idx)}
-                            className={`w-2.5 h-2.5 rounded-full transition-all ${
-                              idx === current ? "bg-cyan-400 w-6" : "bg-white/30"
-                            }`}
-                          />
-                        ))}
-                      </div>
-
-                      <div className="flex gap-2">
-                        <button
-                          onClick={handlePrevPatient}
-                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
-                        >
-                          <FaChevronLeft className="text-xs" />
-                        </button>
-                        <button
-                          onClick={handleNextPatient}
-                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
-                        >
-                          <FaChevronRight className="text-xs" />
-                        </button>
-                      </div>
-                    </div>
-
+            {patients[current] && (
+              <div className="bg-white/10 p-6 rounded-2xl grid md:grid-cols-12 gap-6 items-center">
+                <div className="md:col-span-4 flex justify-center">
+                  <div className="relative w-40 h-40 rounded-xl overflow-hidden">
+                    <Image src={patients[current].media} alt={patients[current].name} fill className="object-cover" />
                   </div>
                 </div>
-              )}
-            </div>
-
-            <div className="text-center mt-10">
-              <Link
-                href="/patient-story"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 text-sm md:text-base border border-cyan-300/30"
-              >
-                View All Patient Stories →
-              </Link>
-            </div>
-
+                <div className="md:col-span-8">
+                  <h3 className="text-2xl font-bold">{patients[current].name}</h3>
+                  <p className="text-cyan-300 text-sm mt-1">{patients[current].treatment} - {patients[current].country}</p>
+                  <p className="text-gray-300 text-sm mt-3">Hospital: {patients[current].hospital} ({patients[current].location})</p>
+                  
+                  <div className="flex gap-3 mt-6">
+                    <button onClick={handlePrevPatient} className="px-4 py-2 bg-white/20 rounded-lg text-sm">Prev</button>
+                    <button onClick={handleNextPatient} className="px-4 py-2 bg-white/20 rounded-lg text-sm">Next</button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </section>
       </main>
