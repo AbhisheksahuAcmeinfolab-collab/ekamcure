@@ -5,7 +5,7 @@ import Script from "next/script";
 import { 
   FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, 
   FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight, 
-  FaWhatsapp, FaCheckCircle, FaShieldAlt, FaClock, FaUserCheck, FaPhoneAlt, FaPaperclip 
+  FaWhatsapp, FaCheckCircle, FaShieldAlt, FaClock, FaUserCheck, FaPhoneAlt, FaPaperclip, FaUser, FaGlobe, FaStethoscope 
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -183,11 +183,8 @@ export default function Home() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    
-    // 1. Save to CRM & Email info@ekamcure.com simulation / API handler logic
     console.log("Saving to CRM & sending email to info@ekamcure.com...", formData);
 
-    // 2. Format WhatsApp Redirect Message
     const message = `Hello Ekam Health Services,%0A%0A*New Enquiry from Website:*%0A- Full Name: ${formData.fullName}%0A- Country: ${formData.country}%0A- WhatsApp: ${formData.whatsapp}%0A- Treatment Needed: ${formData.treatment}%0A- Condition: ${formData.condition || "N/A"}%0A%0APlease find my medical details attached/shared.`;
     
     const whatsappUrl = `https://wa.me/919990205353?text=${message}`;
@@ -224,32 +221,33 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="bg-white">
-        {/* HERO SECTION - PREMIUM REDESIGN WITH LEFT CONTENT & RIGHT LEAD FORM */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#031d3b] isolate pt-24 pb-16">
-          {/* Background Image & Overlay */}
+        {/* HERO SECTION - PREMIUM REDESIGNED */}
+        <section className="relative min-h-[88vh] flex items-center justify-center overflow-hidden bg-[#021428] isolate pt-28 pb-16">
+          {/* Background Image & Premium Dual Gradient Overlay */}
           <div className="absolute inset-0 z-0">
             <Image
               src={pic1}
               alt="Ekam Medical Tourism Banner"
               fill
-              className="object-cover object-center opacity-30 scale-105 transform animate-pulse duration-10000"
+              className="object-cover object-center opacity-35 scale-105 transform transition-transform duration-1000"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-[#053161]/90 to-blue-900/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-950/95 via-[#053161]/90 to-indigo-950/90" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.15),transparent_50%)]" />
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               
               {/* LEFT COLUMN: Hero Text, Bullet Points, Action Buttons & Badges */}
               <div className="lg:col-span-7 text-white space-y-6">
-                <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/30 px-4 py-1.5 rounded-full text-cyan-300 text-xs font-semibold tracking-wider uppercase">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+                <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/40 px-4 py-1.5 rounded-full text-cyan-300 text-xs font-semibold tracking-wider uppercase shadow-lg shadow-cyan-900/20">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
                   <span>Free Plan in 24 Hours</span>
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-                  Treatment in India for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200">International Patients</span>
+                  Treatment in India for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-teal-200 to-blue-200">International Patients</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-200 font-light leading-relaxed">
@@ -257,26 +255,26 @@ export default function Home() {
                 </p>
 
                 {/* Key Bullet Points */}
-                <ul className="space-y-2.5 text-sm sm:text-base text-gray-200 font-medium pt-1">
+                <ul className="space-y-3 text-sm sm:text-base text-gray-200 font-medium pt-1">
                   <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
                     <span>Trusted partner hospitals across India</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
                     <span>One coordinator from first message to follow-up</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span className="w-6 h-6 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center shrink-0 border border-cyan-400/30 font-bold text-xs">✓</span>
                     <span>Visa letter, airport pickup, stay and interpreter handled for you</span>
                   </li>
                 </ul>
 
                 {/* Action Buttons */}
-                <div className="flex flex-wrap gap-4 pt-2">
+                <div className="flex flex-wrap gap-4 pt-3">
                   <a 
                     href="#lead-form" 
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-7 py-3.5 rounded-full shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 text-sm sm:text-base"
+                    className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-cyan-500/20 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
                   >
                     <span>Get a free quote</span>
                     <FaArrowRight className="text-xs" />
@@ -285,7 +283,7 @@ export default function Home() {
                     href="https://wa.me/919990205353"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-7 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-green-500/20 transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
                   >
                     <FaWhatsapp className="text-xl" />
                     <span>Chat on WhatsApp</span>
@@ -303,9 +301,11 @@ export default function Home() {
                   ].map((badge, idx) => {
                     const IconComponent = badge.icon;
                     return (
-                      <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1.5">
-                        <IconComponent className="text-cyan-400 text-sm" />
-                        <span className="text-[11px] font-medium text-gray-300 leading-tight">{badge.title}</span>
+                      <div key={idx} className="bg-white/5 backdrop-blur-md border border-white/10 p-3 rounded-2xl text-center flex flex-col items-center justify-center gap-2 hover:bg-white/10 transition">
+                        <div className="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-300">
+                          <IconComponent className="text-sm" />
+                        </div>
+                        <span className="text-[11px] font-semibold text-gray-200 leading-tight">{badge.title}</span>
                       </div>
                     );
                   })}
@@ -313,23 +313,33 @@ export default function Home() {
 
               </div>
 
-              {/* RIGHT COLUMN: Lead Form (Beside Hero Text) */}
+              {/* RIGHT COLUMN: Ultra-Premium Glassmorphic Lead Form */}
               <div id="lead-form" className="lg:col-span-5">
-                <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/20 text-gray-800 relative">
-                  <div className="absolute -top-3 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
-                    Fast Response
-                  </div>
+                <div className="bg-white rounded-3xl p-7 sm:p-9 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-gray-100 text-gray-800 relative overflow-hidden">
+                  {/* Decorative Header Glow */}
+                  <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600" />
+                  
+                  <div className="absolute -top-6 -right-6 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl pointer-events-none" />
 
-                  <h3 className="text-2xl font-extrabold text-[#053161] mb-1">
-                    Get your free quote
-                  </h3>
-                  <p className="text-xs text-gray-500 mb-5">
-                    Share your details and medical condition for a customized treatment plan.
-                  </p>
+                  <div className="flex justify-between items-start mb-6">
+                    <div>
+                      <h3 className="text-2xl font-extrabold text-[#053161] tracking-tight">
+                        Get your free quote
+                      </h3>
+                      <p className="text-xs text-gray-500 mt-1">
+                        Fill in your details for a personalized medical treatment plan.
+                      </p>
+                    </div>
+                    <span className="bg-blue-50 text-blue-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase border border-blue-100">
+                      24h Response
+                    </span>
+                  </div>
 
                   <form onSubmit={handleFormSubmit} className="space-y-4">
                     <div>
-                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name *</label>
+                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
+                        <FaUser className="text-blue-600 text-[11px]" /> Full Name *
+                      </label>
                       <input
                         type="text"
                         name="fullName"
@@ -337,13 +347,15 @@ export default function Home() {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder="Enter your full name"
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
                       />
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Country *</label>
+                        <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
+                          <FaGlobe className="text-blue-600 text-[11px]" /> Country *
+                        </label>
                         <input
                           type="text"
                           name="country"
@@ -351,11 +363,13 @@ export default function Home() {
                           value={formData.country}
                           onChange={handleInputChange}
                           placeholder="e.g. Zimbabwe, Fiji"
-                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">WhatsApp No. *</label>
+                        <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
+                          <FaWhatsapp className="text-green-600 text-xs" /> WhatsApp No. *
+                        </label>
                         <input
                           type="tel"
                           name="whatsapp"
@@ -363,19 +377,21 @@ export default function Home() {
                           value={formData.whatsapp}
                           onChange={handleInputChange}
                           placeholder="+263 XXX XXX"
-                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 transition"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Treatment Needed *</label>
+                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1 flex items-center gap-1.5">
+                        <FaStethoscope className="text-blue-600 text-[11px]" /> Treatment Needed *
+                      </label>
                       <select
                         name="treatment"
                         required
                         value={formData.treatment}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 text-gray-700"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 text-gray-700 transition"
                       >
                         <option value="">Select Treatment</option>
                         <option value="Prostate Cancer Treatment">Prostate Cancer Treatment</option>
@@ -391,37 +407,37 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Describe Condition (Optional)</label>
+                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1">Describe Condition (Optional)</label>
                       <textarea
                         name="condition"
                         rows="2"
                         value={formData.condition}
                         onChange={handleInputChange}
                         placeholder="Briefly describe symptoms or diagnosis..."
-                        className="w-full px-4 py-2 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 resize-none"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 text-sm bg-gray-50/60 resize-none transition"
                       />
                     </div>
 
                     {/* Report File Upload Field */}
                     <div>
-                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Upload Medical Reports (Optional)</label>
-                      <div className="flex items-center gap-2 px-3 py-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
-                        <FaPaperclip className="text-gray-400 text-sm shrink-0" />
+                      <label className="block text-xs font-bold text-gray-700 uppercase mb-1">Upload Medical Reports (Optional)</label>
+                      <div className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl border border-dashed border-gray-300 bg-blue-50/40 hover:bg-blue-50 transition cursor-pointer">
+                        <FaPaperclip className="text-blue-600 text-sm shrink-0" />
                         <input
                           type="file"
                           onChange={handleFileChange}
                           accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-                          className="w-full text-xs text-gray-500 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer"
+                          className="w-full text-xs text-gray-600 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"
                         />
                       </div>
                       {formData.reportFile && (
-                        <p className="text-[11px] text-emerald-600 mt-1 font-medium">Selected: {formData.reportFile.name}</p>
+                        <p className="text-[11px] text-emerald-600 mt-1 font-semibold">Selected: {formData.reportFile.name}</p>
                       )}
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-base hover:scale-[1.02]"
+                      className="w-full bg-gradient-to-r from-[#25D366] to-emerald-600 hover:from-[#20ba5a] hover:to-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-green-500/20 transition-all duration-300 flex items-center justify-center gap-2.5 text-base hover:scale-[1.02]"
                     >
                       <FaWhatsapp className="text-xl" />
                       <span>Send on WhatsApp</span>
@@ -478,40 +494,38 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ABOUT US & SERVICES SECTION - GAP FIXED */}
+        {/* ABOUT US & SERVICES SECTION */}
         <section className="w-full py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* About Us Card - Matched Height & Filled Gap */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-7 md:p-9 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
-                <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#053161] via-[#084282] to-[#1B4F9C] text-white p-7 md:p-9 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-blue-800 h-full">
+              <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none" />
+              
+              <div>
+                <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
+                  WHO WE ARE
+                </span>
+                <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight">
+                  ABOUT US
+                </h2>
                 
-                <div>
-                  <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
-                    WHO WE ARE
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-extrabold mb-4 tracking-tight">
-                    ABOUT US
-                  </h2>
-                  
-                  <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light mb-4">
-                    Ekam Health Services is a premier medical travel facilitator dedicated to connecting international patients with world-class healthcare providers and top accredited hospitals in India.
-                  </p>
-              
-                  <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light">
-                    We streamline your complete medical journey by offering personalized care plans, expert doctor consultations, transparent cost estimates, visa assistance, and 24/7 on-ground support to ensure a safe and seamless recovery.
-                  </p>
-                </div>
-              
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-6"
-                >
-                  Read More <FaArrowRight className="text-xs" />
-                </Link>
+                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light mb-4">
+                  Ekam Health Services is a premier medical travel facilitator dedicated to connecting international patients with world-class healthcare providers and top accredited hospitals in India.
+                </p>
+            
+                <p className="text-blue-100/90 text-sm md:text-base leading-relaxed font-light">
+                  We streamline your complete medical journey by offering personalized care plans, expert doctor consultations, transparent cost estimates, visa assistance, and 24/7 on-ground support to ensure a safe and seamless recovery.
+                </p>
               </div>
+            
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 text-white text-sm font-semibold bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition w-fit border border-white/20 shadow-sm mt-6"
+              >
+                Read More <FaArrowRight className="text-xs" />
+              </Link>
+            </div>
 
-            {/* Services Grid */}
             <div className="lg:col-span-7 flex flex-col justify-between">
               <div className="mb-6">
                 <span className="inline-block px-3.5 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-semibold tracking-wider uppercase mb-2">
@@ -706,7 +720,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* View All Stories Button Styled Properly */}
             <div className="text-center mt-10">
               <Link
                 href="/patient-story"
