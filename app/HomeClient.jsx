@@ -624,42 +624,126 @@ export default function Home() {
                     alt={item.title}
                     width={56}
                     height={56}
-                    className="object-contain w-full h-full"
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="font-bold text-gray-800 text-xs md:text-sm group-hover:text-blue-900 transition-colors">
+
+                <h3 className="text-gray-800 font-bold text-xs sm:text-sm leading-snug group-hover:text-blue-900 transition-colors">
                   {item.title}
                 </h3>
+
+                <span className="mt-3 text-xs font-semibold text-blue-600 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Explore →
+                </span>
               </Link>
             ))}
+          </div>
+
+          <div className="flex justify-center mt-10">
+            <a
+              href="/treatments"
+              className="inline-flex items-center gap-2 bg-[#053161] hover:bg-blue-800 text-white font-bold px-7 py-3 rounded-full shadow-md transition-all hover:scale-105 text-sm md:text-base"
+            >
+              View All Treatments →
+            </a>
           </div>
         </section>
 
         {/* PATIENT SUCCESS STORIES SECTION */}
-        <section className="py-16 bg-slate-900 text-white">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold">Patient Success Stories</h2>
+        <section className="bg-gradient-to-br from-blue-950 via-[#053161] to-blue-900 text-white py-16 md:py-20 px-4 md:px-10 relative overflow-hidden">
+          <div className="max-w-6xl mx-auto relative z-10">
+            
+            <div className="text-center mb-12">
+              <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-3 border border-white/10">
+                TESTIMONIALS
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Patient <span className="text-cyan-400">Success Stories</span>
+              </h2>
+              <p className="text-blue-100/80 max-w-xl mx-auto mt-2 text-sm md:text-base font-light">
+                Every patient journey tells a story of hope, healing, and world-class healthcare in India.
+              </p>
             </div>
-            {patients[current] && (
-              <div className="bg-white/10 p-6 rounded-2xl grid md:grid-cols-12 gap-6 items-center">
-                <div className="md:col-span-4 flex justify-center">
-                  <div className="relative w-40 h-40 rounded-xl overflow-hidden">
-                    <Image src={patients[current].media} alt={patients[current].name} fill className="object-cover" />
+
+            <div className="relative max-w-4xl mx-auto">
+              {patients[current] && (
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center">
+                  <div className="md:col-span-5 flex justify-center">
+                    <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-xl">
+                      <Image
+                        src={patients[current].media}
+                        alt={patients[current].name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="md:col-span-7 flex flex-col justify-center">
+                    <FaQuoteLeft className="text-3xl text-cyan-400/60 mb-3" />
+                    
+                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                      {patients[current].name}
+                    </h3>
+
+                    <div className="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-medium w-fit mb-4 border border-cyan-400/30">
+                      <span>{patients[current].treatment}</span>
+                    </div>
+
+                    <div className="space-y-2 text-sm text-blue-100/90 font-light mb-6">
+                      <p className="flex items-center gap-2">
+                        <FaMapMarkerAlt className="text-pink-400 flex-shrink-0" />
+                        <span><strong>Native Country:</strong> {patients[current].country}</span>
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <FaHospital className="text-cyan-400 flex-shrink-0" />
+                        <span><strong>Hospital:</strong> {patients[current].hospital} ({patients[current].location})</span>
+                      </p>
+                    </div>
+
+                    <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                      <div className="flex gap-2">
+                        {patients.map((_, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => setCurrent(idx)}
+                            className={`w-2.5 h-2.5 rounded-full transition-all ${
+                              idx === current ? "bg-cyan-400 w-6" : "bg-white/30"
+                            }`}
+                          />
+                        ))}
+                      </div>
+
+                      <div className="flex gap-2">
+                        <button
+                          onClick={handlePrevPatient}
+                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
+                        >
+                          <FaChevronLeft className="text-xs" />
+                        </button>
+                        <button
+                          onClick={handleNextPatient}
+                          className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition border border-white/10"
+                        >
+                          <FaChevronRight className="text-xs" />
+                        </button>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-                <div className="md:col-span-8">
-                  <h3 className="text-2xl font-bold">{patients[current].name}</h3>
-                  <p className="text-cyan-300 text-sm mt-1">{patients[current].treatment} - {patients[current].country}</p>
-                  <p className="text-gray-300 text-sm mt-3">Hospital: {patients[current].hospital} ({patients[current].location})</p>
-                  
-                  <div className="flex gap-3 mt-6">
-                    <button onClick={handlePrevPatient} className="px-4 py-2 bg-white/20 rounded-lg text-sm">Prev</button>
-                    <button onClick={handleNextPatient} className="px-4 py-2 bg-white/20 rounded-lg text-sm">Next</button>
-                  </div>
-                </div>
-              </div>
-            )}
+              )}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href="/patient-story"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 text-sm md:text-base border border-cyan-300/30"
+              >
+                View All Patient Stories →
+              </Link>
+            </div>
+
           </div>
         </section>
       </main>
