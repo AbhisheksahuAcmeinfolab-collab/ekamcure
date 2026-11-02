@@ -1,14 +1,16 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import { FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight, FaWhatsapp } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
+import { 
+  FaUserMd, FaPassport, FaHandshake, FaHeadset, FaArrowRight, 
+  FaQuoteLeft, FaMapMarkerAlt, FaHospital, FaChevronLeft, FaChevronRight, 
+  FaWhatsapp, FaCheckCircle, FaShieldAlt, FaClock, FaUserCheck, FaPhoneAlt, FaPaperclip 
+} from "react-icons/fa";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 import pic1 from "../assets/newimage/front1.webp";
-import pic2 from "../assets/newimage/front2.webp";
-import pic3 from "../assets/newimage/front3.webp";
 import pic4 from "../assets/newimage/IVF Treatment in India.png";
 import pic5 from "../assets/newimage/Best Prostate Cancer Treatment in India.png";
 import pic6 from "../assets/newimage/Breast Cancer Treatment in India.png";
@@ -43,27 +45,6 @@ export const metadata = {
     images: ["/og-home.jpg"],
   },
 };
-
-const slides = [
-  {
-    img: pic1,
-    subtitle: "",
-    title: "",
-    desc: "Bringing World-Class Healthcare Closer to You - Seamlessly, Securely, Successfully",
-  },
-  {
-    img: pic2,
-    subtitle: "",
-    title: "",
-    desc: "Experience the Best of Indian Healthcare – Personalized, Efficient, and Hassle-Free",
-  },
-  {
-    img: pic3,
-    subtitle: "",
-    title: "",
-    desc: "Your Path to Quality Care Abroad – Trusted Partners, Exceptional Care",
-  },
-];
 
 const specialties = [
   {
@@ -177,26 +158,42 @@ const patients = [
 ];
 
 export default function Home() {
-  const [heroCurrent, setHeroCurrent] = useState(0);
   const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHeroCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % patients.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const currentPatient = patients[current];
   
+  // Lead Form State
+  const [formData, setFormData] = useState({
+    fullName: "",
+    country: "",
+    whatsapp: "",
+    treatment: "",
+    condition: "",
+    reportFile: null,
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleFileChange = (e) => {
+    if (e.target.files && e.target.files[0]) {
+      setFormData((prev) => ({ ...prev, reportFile: e.target.files[0] }));
+    }
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    
+    // 1. Save to CRM & Email info@ekamcure.com simulation / API handler logic
+    console.log("Saving to CRM & sending email to info@ekamcure.com...", formData);
+
+    // 2. Format WhatsApp Redirect Message
+    const message = `Hello Ekam Health Services,%0A%0A*New Enquiry from Website:*%0A- Full Name: ${formData.fullName}%0A- Country: ${formData.country}%0A- WhatsApp: ${formData.whatsapp}%0A- Treatment Needed: ${formData.treatment}%0A- Condition: ${formData.condition || "N/A"}%0A%0APlease find my medical details attached/shared.`;
+    
+    const whatsappUrl = `https://wa.me/919990205353?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   const handlePrevPatient = () => {
     setCurrent((prev) => (prev === 0 ? patients.length - 1 : prev - 1));
   };
@@ -227,111 +224,226 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="bg-white">
-        {/* HERO SECTION */}
-        <section className="hero-section relative h-[75vh] sm:h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-white isolate">
-          <div className="absolute inset-0 bg-black">
-            <AnimatePresence mode="sync">
-              <motion.div
-                key={heroCurrent}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-                className="absolute inset-0"
-              >
-                <Image
-                  src={slides[heroCurrent].img}
-                  alt={slides[heroCurrent].title || "Ekam Banner"}
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-cyan-700/50 to-blue-600/30 mix-blend-multiply"
-                />
-              </motion.div>
-            </AnimatePresence>
+        {/* HERO SECTION - PREMIUM REDESIGN WITH LEFT CONTENT & RIGHT LEAD FORM */}
+        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#031d3b] isolate pt-24 pb-16">
+          {/* Background Image & Overlay */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={pic1}
+              alt="Ekam Medical Tourism Banner"
+              fill
+              className="object-cover object-center opacity-30 scale-105 transform animate-pulse duration-10000"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-[#053161]/90 to-blue-900/80" />
           </div>
 
-          <div className="relative z-10 text-center px-4 md:px-12 lg:px-20 max-w-4xl mx-auto">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={heroCurrent + "-content"}
-                initial={{ opacity: 0, y: 25 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -25 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-              >
-                {slides[heroCurrent].subtitle && (
-                  <motion.p
-                    className="uppercase xl:text-4xl lg:text-2xl md:text-2xl sm:text-5xl tracking-[0.4em] text-cyan-300 font-semibold mb-4"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2, duration: 0.6 }}
-                  >
-                    {slides[heroCurrent].subtitle}
-                  </motion.p>
-                )}
-          
-                <motion.p
-                  className="mt-6 sm:mt-8 text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-4xl font-bold text-gray-200 max-w-3xl mx-auto leading-snug"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4, duration: 0.7 }}
-                >
-                  {slides[heroCurrent].desc}
-                </motion.p>
-          
-                <motion.div 
-                  className="mt-8 sm:mb-4 flex justify-center gap-4 flex-wrap items-center"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.6, duration: 0.5 }}
-                >
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              
+              {/* LEFT COLUMN: Hero Text, Bullet Points, Action Buttons & Badges */}
+              <div className="lg:col-span-7 text-white space-y-6">
+                <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400/30 px-4 py-1.5 rounded-full text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+                  <span>Free Plan in 24 Hours</span>
+                </div>
+
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                  Treatment in India for <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200">International Patients</span>
+                </h1>
+
+                <p className="text-base sm:text-lg text-gray-200 font-light leading-relaxed">
+                  Send us your medical reports. We match you with the right hospital and doctor, and give you a clear cost estimate before you travel.
+                </p>
+
+                {/* Key Bullet Points */}
+                <ul className="space-y-2.5 text-sm sm:text-base text-gray-200 font-medium pt-1">
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span>Trusted partner hospitals across India</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span>One coordinator from first message to follow-up</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="w-5 h-5 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">✓</span>
+                    <span>Visa letter, airport pickup, stay and interpreter handled for you</span>
+                  </li>
+                </ul>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap gap-4 pt-2">
                   <a 
-                    href="/contact" 
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full shadow-xl transition-transform hover:scale-105 duration-300 inline-block"
+                    href="#lead-form" 
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-7 py-3.5 rounded-full shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 text-sm sm:text-base"
                   >
-                    Get a free Quote
+                    <span>Get a free quote</span>
+                    <FaArrowRight className="text-xs" />
                   </a>
                   <a
                     href="https://wa.me/919990205353"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-8 py-3 rounded-full shadow-lg transition-transform hover:scale-105 duration-300 flex items-center gap-2"
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold px-7 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 inline-flex items-center gap-2.5 text-sm sm:text-base"
                   >
                     <FaWhatsapp className="text-xl" />
                     <span>Chat on WhatsApp</span>
                   </a>
-                </motion.div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+                </div>
 
-          <div className="absolute bottom-8 flex gap-3 justify-center w-full z-20">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setHeroCurrent(i)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${i === heroCurrent
-                  ? "bg-cyan-400 scale-125"
-                  : "bg-white/40 hover:bg-white/70"
-                  }`}
-              />
-            ))}
+                {/* 5 Verified Badges */}
+                <div className="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                  {[
+                    { title: "Price in writing", icon: FaShieldAlt },
+                    { title: "No hidden fees", icon: FaCheckCircle },
+                    { title: "Plan in 24 hours", icon: FaClock },
+                    { title: "One coordinator", icon: FaUserCheck },
+                    { title: "24/7 helpline", icon: FaPhoneAlt },
+                  ].map((badge, idx) => {
+                    const IconComponent = badge.icon;
+                    return (
+                      <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 p-2.5 rounded-xl text-center flex flex-col items-center justify-center gap-1.5">
+                        <IconComponent className="text-cyan-400 text-sm" />
+                        <span className="text-[11px] font-medium text-gray-300 leading-tight">{badge.title}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+              </div>
+
+              {/* RIGHT COLUMN: Lead Form (Beside Hero Text) */}
+              <div id="lead-form" className="lg:col-span-5">
+                <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/20 text-gray-800 relative">
+                  <div className="absolute -top-3 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+                    Fast Response
+                  </div>
+
+                  <h3 className="text-2xl font-extrabold text-[#053161] mb-1">
+                    Get your free quote
+                  </h3>
+                  <p className="text-xs text-gray-500 mb-5">
+                    Share your details and medical condition for a customized treatment plan.
+                  </p>
+
+                  <form onSubmit={handleFormSubmit} className="space-y-4">
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name *</label>
+                      <input
+                        type="text"
+                        name="fullName"
+                        required
+                        value={formData.fullName}
+                        onChange={handleInputChange}
+                        placeholder="Enter your full name"
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Country *</label>
+                        <input
+                          type="text"
+                          name="country"
+                          required
+                          value={formData.country}
+                          onChange={handleInputChange}
+                          placeholder="e.g. Zimbabwe, Fiji"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">WhatsApp No. *</label>
+                        <input
+                          type="tel"
+                          name="whatsapp"
+                          required
+                          value={formData.whatsapp}
+                          onChange={handleInputChange}
+                          placeholder="+263 XXX XXX"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Treatment Needed *</label>
+                      <select
+                        name="treatment"
+                        required
+                        value={formData.treatment}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 text-gray-700"
+                      >
+                        <option value="">Select Treatment</option>
+                        <option value="Prostate Cancer Treatment">Prostate Cancer Treatment</option>
+                        <option value="Breast Cancer Treatment">Breast Cancer Treatment</option>
+                        <option value="IVF & Fertility Treatment">IVF & Fertility Treatment</option>
+                        <option value="Heart Valve / Cardiac Surgery">Heart Valve / Cardiac Surgery</option>
+                        <option value="Kidney Transplant">Kidney Transplant</option>
+                        <option value="Knee / Hip Replacement">Knee / Hip Replacement</option>
+                        <option value="Spine Surgery">Spine Surgery</option>
+                        <option value="Glaucoma / Eye Surgery">Glaucoma / Eye Surgery</option>
+                        <option value="Other Medical Treatment">Other Medical Treatment</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Describe Condition (Optional)</label>
+                      <textarea
+                        name="condition"
+                        rows="2"
+                        value={formData.condition}
+                        onChange={handleInputChange}
+                        placeholder="Briefly describe symptoms or diagnosis..."
+                        className="w-full px-4 py-2 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 text-sm bg-gray-50/50 resize-none"
+                      />
+                    </div>
+
+                    {/* Report File Upload Field */}
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-700 uppercase mb-1">Upload Medical Reports (Optional)</label>
+                      <div className="flex items-center gap-2 px-3 py-2 rounded-xl border border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+                        <FaPaperclip className="text-gray-400 text-sm shrink-0" />
+                        <input
+                          type="file"
+                          onChange={handleFileChange}
+                          accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                          className="w-full text-xs text-gray-500 file:mr-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer"
+                        />
+                      </div>
+                      {formData.reportFile && (
+                        <p className="text-[11px] text-emerald-600 mt-1 font-medium">Selected: {formData.reportFile.name}</p>
+                      )}
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-base hover:scale-[1.02]"
+                    >
+                      <FaWhatsapp className="text-xl" />
+                      <span>Send on WhatsApp</span>
+                    </button>
+
+                    <p className="text-[11px] text-center text-gray-500 leading-relaxed pt-1">
+                      You can share reports on WhatsApp after sending. Your details stay private.
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
         {/* INTRO CONTENT SECTION */}
         <section className="py-12 md:py-16 bg-white border-b border-gray-100">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#053161] mb-4 md:mb-6 leading-snug">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#053161] mb-4 md:mb-6 leading-snug">
               Medical Treatment in India with Complete Support for International Patients
-            </h1>
+            </h2>
             <p className="text-base md:text-lg text-gray-700 mb-4 leading-relaxed font-medium">
               Get access to experienced doctors, leading hospitals, personalised treatment plans, transparent cost estimates, and end-to-end support for your healthcare journey in India.
             </p>
@@ -525,20 +637,13 @@ export default function Home() {
             </div>
 
             <div className="relative max-w-4xl mx-auto">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentPatient.name}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.5 }}
-                  className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center"
-                >
+              {patients[current] && (
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl border border-white/15 p-6 md:p-10 shadow-2xl grid md:grid-cols-12 gap-8 items-center">
                   <div className="md:col-span-5 flex justify-center">
                     <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-xl">
                       <Image
-                        src={currentPatient.media}
-                        alt={currentPatient.name}
+                        src={patients[current].media}
+                        alt={patients[current].name}
                         fill
                         className="object-cover"
                       />
@@ -549,21 +654,21 @@ export default function Home() {
                     <FaQuoteLeft className="text-3xl text-cyan-400/60 mb-3" />
                     
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                      {currentPatient.name}
+                      {patients[current].name}
                     </h3>
 
                     <div className="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-medium w-fit mb-4 border border-cyan-400/30">
-                      <span>{currentPatient.treatment}</span>
+                      <span>{patients[current].treatment}</span>
                     </div>
 
                     <div className="space-y-2 text-sm text-blue-100/90 font-light mb-6">
                       <p className="flex items-center gap-2">
                         <FaMapMarkerAlt className="text-pink-400 flex-shrink-0" />
-                        <span><strong>Native Country:</strong> {currentPatient.country}</span>
+                        <span><strong>Native Country:</strong> {patients[current].country}</span>
                       </p>
                       <p className="flex items-center gap-2">
                         <FaHospital className="text-cyan-400 flex-shrink-0" />
-                        <span><strong>Hospital:</strong> {currentPatient.hospital} ({currentPatient.location})</span>
+                        <span><strong>Hospital:</strong> {patients[current].hospital} ({patients[current].location})</span>
                       </p>
                     </div>
 
@@ -597,8 +702,8 @@ export default function Home() {
                     </div>
 
                   </div>
-                </motion.div>
-              </AnimatePresence>
+                </div>
+              )}
             </div>
 
             {/* View All Stories Button Styled Properly */}
